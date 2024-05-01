@@ -6,12 +6,6 @@
       <atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
     <description>KidQuant</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
-    <image>
-      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
-      <title>KidQuant</title>
-      <link>http://localhost:4321/</link>
-    </image>
-    
     <item>
       <title>Example Talk</title>
       <link>http://localhost:4321/talk/example-talk/</link>
@@ -41,7 +35,7 @@
 &lt;p&gt;Now I&amp;rsquo;m going to further expand upon why diversification helps to maximize risk-adjusted returns, and express the limits of diversification.&lt;/p&gt;
 &lt;h3 id=&#34;what-makes-a-portfolio&#34;&gt;What Makes a Portfolio?&lt;/h3&gt;
 &lt;p&gt;We can define a &lt;em&gt;portfolio&lt;/em&gt; as a combination of $N$ assets with $N$ portfolio weights that sum to unity:&lt;/p&gt;
-&lt;p&gt;$$\bold{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.$$&lt;/p&gt;
+&lt;p&gt;$$\textbf{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.$$&lt;/p&gt;
 &lt;p&gt;The weight, $w_N$, represents the proportion of the $n$th asset in the portfolio. If $M_n$ and $P_n$ are the number and price of the $n$th asset, then $w_n$ is simply the total value of the $n$th asset normalized by the value of the portfolio:&lt;/p&gt;
 &lt;p&gt;$$w_n=\frac{M_nP_n}{M_1P_1+\ldots+M_nP_N}$$&lt;/p&gt;
 &lt;p&gt;Weights can be negative, such we could &lt;em&gt;short sell&lt;/em&gt; an asset (profiting from asset price going down). Also, weights could be greater than unity, meaning that we are using leverage. We won&amp;rsquo;t get into these complicated scenarios and use only the basic assumptions in the summary of our portfolio.&lt;/p&gt;
@@ -127,53 +121,78 @@
 &lt;p&gt;Now that we have defined what a portfolio is, we can outline what we want to do. We can construct a portfolio that maximizes reward and minimizes risk, where &amp;ldquo;reward&amp;rdquo; is defined as overal portfolio return and &amp;ldquo;risk&amp;rdquo; is defined as the volatility ($\sigma$ or $\sigma^2$) of that return.&lt;/p&gt;
 &lt;h3 id=&#34;diversification-with-uncorrelated-assets&#34;&gt;Diversification with uncorrelated assets&lt;/h3&gt;
 &lt;p&gt;We can derive the mean-variance analysis by calculating the mean (expected return) and the variance on that portfolio. Let $R_n$ denote the return on the $n$th asset in a portfolio. By definition, its mean and variance are&lt;/p&gt;
-&lt;p&gt;$$
+
+
+
+$$
 \begin{aligned}
-\mathbb{E}[\mathbb{R_n}]\overset{\Delta}{=}&amp;amp;\mu_n,\
-\mathbb{V}[R_n]=&amp;amp;\mathbb{E}[(R_n-\mu_n)^2]\overset{\Delta}{=}\sigma^2_{n}.\
+\mathbb{E}[\mathbb{R_n}]\overset{\Delta}{=}&amp;\mu_n,\\
+\mathbb{V}[R_n]=&amp;\mathbb{E}[(R_n-\mu_n)^2]\overset{\Delta}{=}\sigma^2_{n}.\\
 \end{aligned}
-$$&lt;/p&gt;
+$$
+
 &lt;p&gt;Now let $R_p$ denote the return on the entire portfolio, this is the quantity we&amp;rsquo;re interested in. By the linearity of expectation, we have&lt;/p&gt;
-&lt;p&gt;$$
+
+
+
+$$
 \begin{aligned}
-R_p\overset{\Delta}{=}&amp;amp;w_1R_1+\dots+w_NR_N,\
-\Downarrow &amp;amp; \
-\mathbb{E}[R_p]=&amp;amp;\mathbb{E}[w_1R_1+\dots+w_NR_N]\
-=&amp;amp;w_1\mathbb{E}[R_1]+\dots+w_N\mathbb{E}[R_N]\
-=&amp;amp;w_1\mu_1+\dots+w_N\mu_N\
-\overset{\Delta}{=}&amp;amp;\mu_p
+R_p\overset{\Delta}{=}&amp;w_1R_1+\dots+w_NR_N,\\
+\Downarrow &amp; \\
+\mathbb{E}[R_p]=&amp;\mathbb{E}[w_1R_1+\dots+w_NR_N]\\
+=&amp;w_1\mathbb{E}[R_1]+\dots+w_N\mathbb{E}[R_N]\\
+=&amp;w_1\mu_1+\dots+w_N\mu_N\\
+\overset{\Delta}{=}&amp;\mu_p
 \end{aligned}
-$$&lt;/p&gt;
-&lt;p&gt;The first line of this equation is just an accounting identity. It&amp;rsquo;s how we would calculate the return on our portfolio given weights $\bold{w}$ and returns $R_1,\ldots,R_N$. The variance of our portfolio&amp;rsquo;s return is&lt;/p&gt;
-&lt;p&gt;$$
+$$
+
+&lt;p&gt;The first line of this equation is just an accounting identity. It&amp;rsquo;s how we would calculate the return on our portfolio given weights $\textbf{w}$ and returns $R_1,\ldots,R_N$. The variance of our portfolio&amp;rsquo;s return is&lt;/p&gt;
+
+
+
+$$
 \begin{aligned}
-\mathbb{V}[R_p]&amp;amp;=\mathbb{E}[(R_p-\mu_p)^2]\
-&amp;amp;=\mathbb{E}\Big[\big((w_1R_1+\dots+w_NR_N)-(w_1\mu_1+\dots+w_N\mu_N)\big)^2\Big]\
-&amp;amp;=\mathbb{E}\Big[\big((w_1(R_1-\mu_1)+\dots+w_n(R_N-\mu_N)\big)^2\Big]\
-&amp;amp;\overset{\Delta}{=}\sigma^2_p.
+\mathbb{V}[R_p]&amp;=\mathbb{E}[(R_p-\mu_p)^2]\\
+&amp;=\mathbb{E}\Big[\big((w_1R_1+\dots+w_NR_N)-(w_1\mu_1+\dots+w_N\mu_N)\big)^2\Big]\\
+&amp;=\mathbb{E}\Big[\big((w_1(R_1-\mu_1)+\dots+w_n(R_N-\mu_N)\big)^2\Big]\\
+&amp;\overset{\Delta}{=}\sigma^2_p.
 \end{aligned}
-$$&lt;/p&gt;
+$$
+
 &lt;p&gt;If we have $N$ assets in our portfolio, and we square the term in the last line in this equation, we get $N^2$ terms inside this expectation. We can write the variance for a single combination $R_n$ and $R_m$ as:&lt;/p&gt;
-&lt;p&gt;$$
+
+
+
+$$
 \begin{aligned}
-\mathbb{E}[w_nw_m(R_n-\mu_n)(R_m-\mu_m)]&amp;amp;=w_nw_m\mathbb{E}[(R_n-\mu)(R_m-\mu)]\
-&amp;amp;=w_nw_m\text{Cov}[R_n,R_m]\
-&amp;amp;=w_nw_m\sigma_{nm}\
-&amp;amp;=w_nw_m\sigma_n\sigma_m\rho_{nm},
+\mathbb{E}[w_nw_m(R_n-\mu_n)(R_m-\mu_m)]&amp;=w_nw_m\mathbb{E}[(R_n-\mu)(R_m-\mu)]\\
+&amp;=w_nw_m\text{Cov}[R_n,R_m]\\
+&amp;=w_nw_m\sigma_{nm}\\
+&amp;=w_nw_m\sigma_n\sigma_m\rho_{nm},
 \end{aligned}
-$$&lt;/p&gt;
+$$
+
 &lt;p&gt;where $\sigma_{nm}$ and $\rho_{nm}$ are the covariance and correlation between the $n$th and $m$th assets respectively. This provides some basic definitions from probability. Recard that&lt;/p&gt;
 &lt;p&gt;$$
 \rho_{mn}=\frac{\text{Cov}[R_n, R_m]}{\sigma_n\sigma_m}.
 $$&lt;/p&gt;
 &lt;p&gt;Now here&amp;rsquo;s the main point: The variance of our portfolio is a function of the covariances between the assets in the portfolio. We can represent this compactly using a covariance matrix:&lt;/p&gt;
-&lt;p&gt;$$
+
+
+
+$$
 \begin{bmatrix}
-w_1^2\sigma_1^2 &amp;amp; \dots &amp;amp;w_1w_N\sigma_{1N}\
-\vdots &amp;amp; \ddots &amp;amp; \vdots \
-w_Nw_1\sigma_{N1} &amp;amp; \dots &amp;amp; w^2_N\sigma^2_N\
-\end{bmatrix}=
-$$&lt;/p&gt;
+w_1^2\sigma_1^2 &amp; \dots &amp;w_1w_N\sigma_{1N}\\
+\vdots &amp; \ddots &amp; \vdots \\
+w_Nw_1\sigma_{N1} &amp; \dots &amp; w^2_N\sigma^2_N\\
+\end{bmatrix}=\textbf{w}^T
+\begin{bmatrix}
+\sigma^2_1 &amp; \dots &amp; \sigma_{1N} \\
+\vdots &amp; \ddots &amp; \vdots \\
+\sigma_{N1} &amp; \dots &amp; \sigma^2_{N} \\
+\end{bmatrix}\textbf{w}
+$$
+
 &lt;p&gt;Notice that there are $N$ variance terms (the diagonal of the covariance matrix), while there are $N^2-N$ covariance terms (everything else in the matrix). What this means is that the correlations between assets controls our portfolio&amp;rsquo;s volatility. Positive or negative correlation between asset controls our portfolio&amp;rsquo;s volatility. Positive or negative correlation between assets can increase portfolio volatility, while uncorrelated assets decrease volatility.&lt;/p&gt;
 &lt;h3 id=&#34;mean-variance-analysis&#34;&gt;Mean-variance analysis&lt;/h3&gt;
 &lt;h3 id=&#34;limits-of-diversification&#34;&gt;Limits of diversification&lt;/h3&gt;

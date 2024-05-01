@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 30, 2024 --><html lang="en-us" >
+<!-- Last Published: May 1, 2024 --><html lang="en-us" >
 
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
@@ -846,7 +846,7 @@
 <p>Now I&rsquo;m going to further expand upon why diversification helps to maximize risk-adjusted returns, and express the limits of diversification.</p>
 <h3 id="what-makes-a-portfolio">What Makes a Portfolio?</h3>
 <p>We can define a <em>portfolio</em> as a combination of $N$ assets with $N$ portfolio weights that sum to unity:</p>
-<p>$$\bold{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.$$</p>
+<p>$$\textbf{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.$$</p>
 <p>The weight, $w_N$, represents the proportion of the $n$th asset in the portfolio. If $M_n$ and $P_n$ are the number and price of the $n$th asset, then $w_n$ is simply the total value of the $n$th asset normalized by the value of the portfolio:</p>
 <p>$$w_n=\frac{M_nP_n}{M_1P_1+\ldots+M_nP_N}$$</p>
 <p>Weights can be negative, such we could <em>short sell</em> an asset (profiting from asset price going down). Also, weights could be greater than unity, meaning that we are using leverage. We won&rsquo;t get into these complicated scenarios and use only the basic assumptions in the summary of our portfolio.</p>
@@ -932,53 +932,78 @@
 <p>Now that we have defined what a portfolio is, we can outline what we want to do. We can construct a portfolio that maximizes reward and minimizes risk, where &ldquo;reward&rdquo; is defined as overal portfolio return and &ldquo;risk&rdquo; is defined as the volatility ($\sigma$ or $\sigma^2$) of that return.</p>
 <h3 id="diversification-with-uncorrelated-assets">Diversification with uncorrelated assets</h3>
 <p>We can derive the mean-variance analysis by calculating the mean (expected return) and the variance on that portfolio. Let $R_n$ denote the return on the $n$th asset in a portfolio. By definition, its mean and variance are</p>
-<p>$$
+
+
+
+$$
 \begin{aligned}
-\mathbb{E}[\mathbb{R_n}]\overset{\Delta}{=}&amp;\mu_n,\
-\mathbb{V}[R_n]=&amp;\mathbb{E}[(R_n-\mu_n)^2]\overset{\Delta}{=}\sigma^2_{n}.\
+\mathbb{E}[\mathbb{R_n}]\overset{\Delta}{=}&\mu_n,\\
+\mathbb{V}[R_n]=&\mathbb{E}[(R_n-\mu_n)^2]\overset{\Delta}{=}\sigma^2_{n}.\\
 \end{aligned}
-$$</p>
+$$
+
 <p>Now let $R_p$ denote the return on the entire portfolio, this is the quantity we&rsquo;re interested in. By the linearity of expectation, we have</p>
-<p>$$
+
+
+
+$$
 \begin{aligned}
-R_p\overset{\Delta}{=}&amp;w_1R_1+\dots+w_NR_N,\
-\Downarrow &amp; \
-\mathbb{E}[R_p]=&amp;\mathbb{E}[w_1R_1+\dots+w_NR_N]\
-=&amp;w_1\mathbb{E}[R_1]+\dots+w_N\mathbb{E}[R_N]\
-=&amp;w_1\mu_1+\dots+w_N\mu_N\
-\overset{\Delta}{=}&amp;\mu_p
+R_p\overset{\Delta}{=}&w_1R_1+\dots+w_NR_N,\\
+\Downarrow & \\
+\mathbb{E}[R_p]=&\mathbb{E}[w_1R_1+\dots+w_NR_N]\\
+=&w_1\mathbb{E}[R_1]+\dots+w_N\mathbb{E}[R_N]\\
+=&w_1\mu_1+\dots+w_N\mu_N\\
+\overset{\Delta}{=}&\mu_p
 \end{aligned}
-$$</p>
-<p>The first line of this equation is just an accounting identity. It&rsquo;s how we would calculate the return on our portfolio given weights $\bold{w}$ and returns $R_1,\ldots,R_N$. The variance of our portfolio&rsquo;s return is</p>
-<p>$$
+$$
+
+<p>The first line of this equation is just an accounting identity. It&rsquo;s how we would calculate the return on our portfolio given weights $\textbf{w}$ and returns $R_1,\ldots,R_N$. The variance of our portfolio&rsquo;s return is</p>
+
+
+
+$$
 \begin{aligned}
-\mathbb{V}[R_p]&amp;=\mathbb{E}[(R_p-\mu_p)^2]\
-&amp;=\mathbb{E}\Big[\big((w_1R_1+\dots+w_NR_N)-(w_1\mu_1+\dots+w_N\mu_N)\big)^2\Big]\
-&amp;=\mathbb{E}\Big[\big((w_1(R_1-\mu_1)+\dots+w_n(R_N-\mu_N)\big)^2\Big]\
-&amp;\overset{\Delta}{=}\sigma^2_p.
+\mathbb{V}[R_p]&=\mathbb{E}[(R_p-\mu_p)^2]\\
+&=\mathbb{E}\Big[\big((w_1R_1+\dots+w_NR_N)-(w_1\mu_1+\dots+w_N\mu_N)\big)^2\Big]\\
+&=\mathbb{E}\Big[\big((w_1(R_1-\mu_1)+\dots+w_n(R_N-\mu_N)\big)^2\Big]\\
+&\overset{\Delta}{=}\sigma^2_p.
 \end{aligned}
-$$</p>
+$$
+
 <p>If we have $N$ assets in our portfolio, and we square the term in the last line in this equation, we get $N^2$ terms inside this expectation. We can write the variance for a single combination $R_n$ and $R_m$ as:</p>
-<p>$$
+
+
+
+$$
 \begin{aligned}
-\mathbb{E}[w_nw_m(R_n-\mu_n)(R_m-\mu_m)]&amp;=w_nw_m\mathbb{E}[(R_n-\mu)(R_m-\mu)]\
-&amp;=w_nw_m\text{Cov}[R_n,R_m]\
-&amp;=w_nw_m\sigma_{nm}\
-&amp;=w_nw_m\sigma_n\sigma_m\rho_{nm},
+\mathbb{E}[w_nw_m(R_n-\mu_n)(R_m-\mu_m)]&=w_nw_m\mathbb{E}[(R_n-\mu)(R_m-\mu)]\\
+&=w_nw_m\text{Cov}[R_n,R_m]\\
+&=w_nw_m\sigma_{nm}\\
+&=w_nw_m\sigma_n\sigma_m\rho_{nm},
 \end{aligned}
-$$</p>
+$$
+
 <p>where $\sigma_{nm}$ and $\rho_{nm}$ are the covariance and correlation between the $n$th and $m$th assets respectively. This provides some basic definitions from probability. Recard that</p>
 <p>$$
 \rho_{mn}=\frac{\text{Cov}[R_n, R_m]}{\sigma_n\sigma_m}.
 $$</p>
 <p>Now here&rsquo;s the main point: The variance of our portfolio is a function of the covariances between the assets in the portfolio. We can represent this compactly using a covariance matrix:</p>
-<p>$$
+
+
+
+$$
 \begin{bmatrix}
-w_1^2\sigma_1^2 &amp; \dots &amp;w_1w_N\sigma_{1N}\
-\vdots &amp; \ddots &amp; \vdots \
-w_Nw_1\sigma_{N1} &amp; \dots &amp; w^2_N\sigma^2_N\
-\end{bmatrix}=
-$$</p>
+w_1^2\sigma_1^2 & \dots &w_1w_N\sigma_{1N}\\
+\vdots & \ddots & \vdots \\
+w_Nw_1\sigma_{N1} & \dots & w^2_N\sigma^2_N\\
+\end{bmatrix}=\textbf{w}^T
+\begin{bmatrix}
+\sigma^2_1 & \dots & \sigma_{1N} \\
+\vdots & \ddots & \vdots \\
+\sigma_{N1} & \dots & \sigma^2_{N} \\
+\end{bmatrix}\textbf{w}
+$$
+
 <p>Notice that there are $N$ variance terms (the diagonal of the covariance matrix), while there are $N^2-N$ covariance terms (everything else in the matrix). What this means is that the correlations between assets controls our portfolio&rsquo;s volatility. Positive or negative correlation between asset controls our portfolio&rsquo;s volatility. Positive or negative correlation between assets can increase portfolio volatility, while uncorrelated assets decrease volatility.</p>
 <h3 id="mean-variance-analysis">Mean-variance analysis</h3>
 <h3 id="limits-of-diversification">Limits of diversification</h3>

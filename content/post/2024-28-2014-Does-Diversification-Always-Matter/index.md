@@ -22,6 +22,8 @@ markup: mmark
 image:
   placement: 2
   preview_only: false
+
+math: true
 ---
 
 I've previously talked about Modern Portfolio Theory (MPT) and diversification in the past, the assumptions underlying MPT, and the construction of an Portfolio Frontier (PF). When most people think of diversifying their portfolio, they think of limiting their downside risk. However, it is possible construct a portfolio that still maximizes return with the least amount of volatility (choosing a portfolio that lies somewhere along the PF).
@@ -32,7 +34,7 @@ Now I'm going to further expand upon why diversification helps to maximize risk-
 
 We can define a _portfolio_ as a combination of $N$ assets with $N$ portfolio weights that sum to unity:
 
-$$\bold{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.$$
+$$\textbf{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.$$
 
 The weight, $w_N$, represents the proportion of the $n$th asset in the portfolio. If $M_n$ and $P_n$ are the number and price of the $n$th asset, then $w_n$ is simply the total value of the $n$th asset normalized by the value of the portfolio:
 
@@ -68,15 +70,18 @@ Now that we have defined what a portfolio is, we can outline what we want to do.
 
 We can derive the mean-variance analysis by calculating the mean (expected return) and the variance on that portfolio. Let $R_n$ denote the return on the $n$th asset in a portfolio. By definition, its mean and variance are
 
+{{< math >}}
 $$
 \begin{aligned}
 \mathbb{E}[\mathbb{R_n}]\overset{\Delta}{=}&\mu_n,\\
 \mathbb{V}[R_n]=&\mathbb{E}[(R_n-\mu_n)^2]\overset{\Delta}{=}\sigma^2_{n}.\\
 \end{aligned}
 $$
+{{< /math >}}
 
 Now let $R_p$ denote the return on the entire portfolio, this is the quantity we're interested in. By the linearity of expectation, we have
 
+{{< math >}}
 $$
 \begin{aligned}
 R_p\overset{\Delta}{=}&w_1R_1+\dots+w_NR_N,\\
@@ -87,9 +92,11 @@ R_p\overset{\Delta}{=}&w_1R_1+\dots+w_NR_N,\\
 \overset{\Delta}{=}&\mu_p
 \end{aligned}
 $$
+{{</ math >}}
 
-The first line of this equation is just an accounting identity. It's how we would calculate the return on our portfolio given weights $\bold{w}$ and returns $R_1,\ldots,R_N$. The variance of our portfolio's return is
+The first line of this equation is just an accounting identity. It's how we would calculate the return on our portfolio given weights $\textbf{w}$ and returns $R_1,\ldots,R_N$. The variance of our portfolio's return is
 
+{{< math >}}
 $$
 \begin{aligned}
 \mathbb{V}[R_p]&=\mathbb{E}[(R_p-\mu_p)^2]\\
@@ -98,9 +105,11 @@ $$
 &\overset{\Delta}{=}\sigma^2_p.
 \end{aligned}
 $$
+{{</ math >}}
 
 If we have $N$ assets in our portfolio, and we square the term in the last line in this equation, we get $N^2$ terms inside this expectation. We can write the variance for a single combination $R_n$ and $R_m$ as:
 
+{{< math >}}
 $$
 \begin{aligned}
 \mathbb{E}[w_nw_m(R_n-\mu_n)(R_m-\mu_m)]&=w_nw_m\mathbb{E}[(R_n-\mu)(R_m-\mu)]\\
@@ -109,6 +118,7 @@ $$
 &=w_nw_m\sigma_n\sigma_m\rho_{nm},
 \end{aligned}
 $$
+{{</ math >}}
 
 where $\sigma_{nm}$ and $\rho_{nm}$ are the covariance and correlation between the $n$th and $m$th assets respectively. This provides some basic definitions from probability. Recard that
 
@@ -118,13 +128,20 @@ $$
 
 Now here's the main point: The variance of our portfolio is a function of the covariances between the assets in the portfolio. We can represent this compactly using a covariance matrix: 
 
+{{< math >}}
 $$
 \begin{bmatrix}
 w_1^2\sigma_1^2 & \dots &w_1w_N\sigma_{1N}\\
 \vdots & \ddots & \vdots \\
 w_Nw_1\sigma_{N1} & \dots & w^2_N\sigma^2_N\\
-\end{bmatrix}=
+\end{bmatrix}=\textbf{w}^T
+\begin{bmatrix}
+\sigma^2_1 & \dots & \sigma_{1N} \\
+\vdots & \ddots & \vdots \\
+\sigma_{N1} & \dots & \sigma^2_{N} \\
+\end{bmatrix}\textbf{w}
 $$
+{{</ math >}}
 
 Notice that there are $N$ variance terms (the diagonal of the covariance matrix), while there are $N^2-N$ covariance terms (everything else in the matrix). What this means is that the correlations between assets controls our portfolio's volatility. Positive or negative correlation between asset controls our portfolio's volatility. Positive or negative correlation between assets can increase portfolio volatility, while uncorrelated assets decrease volatility.
 
