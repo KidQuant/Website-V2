@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quantitiative Finance | KidQuant</title>
+    <link>https://kidquant.com/tag/quantitiative-finance/</link>
+      <atom:link href="https://kidquant.com/tag/quantitiative-finance/index.xml" rel="self" type="application/rss+xml" />
+    <description>Quantitiative Finance</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 04 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <title>Quantitiative Finance</title>
+      <link>https://kidquant.com/tag/quantitiative-finance/</link>
+    </image>
+    
+    <item>
+      <title>Pairs Trading Strategies in Python</title>
+      <link>https://kidquant.com/project/pairs-trading-strategies-in-python/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/project/pairs-trading-strategies-in-python/</guid>
+      <description>&lt;h2 id=&#34;pairs-trading-strategies-using-python&#34;&gt;Pairs Trading Strategies Using Python&lt;/h2&gt;
+&lt;p&gt;When it comes to making money in the stock market, there are a myriad of different ways to make money. And it seems that in the finance community, everywhere you go, people are telling you that you should learn Python. After all, Python is a popular programming language which can be used in all types of fields, including data science. There are a large number of packages that can help you meet your goals, and many companies use Python for development of data-centric applications and scientific computation, which is associated with the financial world.&lt;/p&gt;
+&lt;p&gt;Most of all Python can help us utilize many different trading strategies that (without it) would by very difficult to analyze by hand or with spreadsheets. One of the trading strategies we will talk about is referred to as &lt;strong&gt;Pairs Trading.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;pairs-trading&#34;&gt;Pairs Trading&lt;/h3&gt;
+&lt;p&gt;Pairs trading is a form of &lt;em&gt;mean-reversion&lt;/em&gt; that has a distinct advantage of always being hedged against market movements. It is generally a high alpha strategy when backed up by some rigorous statistics. The stratey is based on mathematical analysis.&lt;/p&gt;
+&lt;p&gt;The prinicple is as follows. Let&amp;rsquo;s say you have a pair of securities X and Y that have some underlying economic link. An example might be two companies that manufacture the same product, or two companies in one supply chain. If we can model this economic link with a mathematical model, we can make trades on it.&lt;/p&gt;
+&lt;p&gt;In order to understand pairs trading, we need to understand three mathematical concepts: &lt;strong&gt;Stationarity, Integration, and Cointegration.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This will assume everyone knows the basics of &lt;a href=&#34;http://mathworld.wolfram.com/HypothesisTesting.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hypothesis testing&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pandas&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;statsmodels&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;statsmodels.api&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;sm&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;statsmodels.tsa.stattools&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;coint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;adfuller&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;plt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;seaborn&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;sns&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sns&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;whitegrid&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;stationaritynon-stationarity&#34;&gt;Stationarity/Non-Stationarity&lt;/h3&gt;
+&lt;p&gt;Stationarity is the most commonly untested assumption in time series analysis. We generally assume that data is stationary when the parameters of the data generating process do not change over time. Else consider two series: A and B. Series A will generate a stationary time series with fixed parameters, while B will change over time.&lt;/p&gt;
+&lt;p&gt;We will create a function that creates a z-score for probability density function. The probability density for a Gaussian distribution is:&lt;/p&gt;
+&lt;p&gt;$$ p(x) = \frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-\frac{(x-\mu)^{2}}{2\sigma^{2}}}$$&lt;/p&gt;
+&lt;p&gt;where $\mu$ is the mean and  $\sigma$ the standard deviation. The square of the standard deviation, $\sigma^{2}$, is the variance. The empircal rule dictates that 66% of the data should be somewhere between $x+\sigma$ and $x-\sigma$, which implies that the function &lt;code&gt;numpy.random.normal&lt;/code&gt; is more likely to return samples lying close to the mean, rather than those far away.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;generate_data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;mu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;sigma&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;random&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;normal&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sigma&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;From there, we can create two plots that exhibit a stationary and non-stationary time series. The left time series will be stationary, whereas the right will be non-stationary.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/statonarity_comparison.png&#34; alt=&#34;stationarity comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;why-stationarity-is-important&#34;&gt;Why Stationarity is Important&lt;/h3&gt;
+&lt;p&gt;Many statistical tests require that the data being tested are stationary. Using certain statistics on a non-stationary data set may lead to garbage results. As an example, let&amp;rsquo;s take an average through our non-stationary $B$.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/average_timeseries_seriesB.png&#34; alt=&#34;Averge time series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The computed mean will show that the mean of all data points, but won&amp;rsquo;t be useful for any forecasting of the future state. It&amp;rsquo;s meaningless when compared with any specific time, as it&amp;rsquo;s a collection of different states at different times mashed together. This is just a simple and clear example of why non-stationarity can distort the analysis, much more subtle problems can arise in practice.&lt;/p&gt;
+&lt;h4 id=&#34;augmented-dickey-fuller&#34;&gt;Augmented Dickey Fuller&lt;/h4&gt;
+&lt;p&gt;In order to test for stationarity, we need to test for something called a &lt;em&gt;unit root&lt;/em&gt;. Autoregressive unit root test is based on the following hypothesis test:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+H_{0} &amp;amp; : \phi =\ 1\ \implies y_{t} \sim I(0) \ | \ (unit \ root) \
+H_{1} &amp;amp; : |\phi| &amp;lt;\ 1\ \implies y_{t} \sim I(0) \ | \ (stationary)  \
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s referred to as a unit root tet because under the null hypothesis, the autoregressive polynominal of $\mathcal{z}_{t},\ \phi (\mathcal{z})=\ (1-\phi \mathcal{z}) \ = 0$, has a root equal to unity.&lt;/p&gt;
+&lt;p&gt;$y_{t}$ is trend stationary under the null hypothesis. If $y_{t}$is then first differenced, it becomes:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\Delta y_{t} &amp;amp; = \delta\ + \Delta\mathcal{z}&lt;em&gt;{t} \
+\Delta \mathcal{z} &amp;amp; = \phi\Delta\mathcal{z}&lt;/em&gt;{t-1}\ +\ \varepsilon_{t}\ -\ \varepsilon_{t-1} \
+\end{aligned}
+.$$&lt;/p&gt;
+&lt;p&gt;The test statistic is&lt;/p&gt;
+&lt;p&gt;$$ t_{\phi=1}=\frac{\hat{\phi}-1}{SE(\hat{\phi})}$$&lt;/p&gt;
+&lt;p&gt;$\hat{\phi}$ is the least square estimate, and SE($\hat{\phi}$) is the usual standard error estimate. The test is a one-sided left tail test. If {$y_{t}$} is stationary, then it can be shown that&lt;/p&gt;
+&lt;p&gt;$$\sqrt{T}(\hat{\phi}-\phi)\xrightarrow[\text{}]{\text{d}}N(0,(1-\phi^{2}))$$&lt;/p&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;p&gt;$$\hat{\phi}\overset{\text{A}}{\sim}N\bigg(\phi,\frac{1}{T}(1-\phi^{2}) \bigg)$$&lt;/p&gt;
+&lt;p&gt;and it follows that $t_{\phi=1}\overset{\text{A}}{\sim}N(0,1).$ However, under the null hypothesis of non-stationarity, the above result gives&lt;/p&gt;
+&lt;p&gt;$$
+\hat{\phi}\overset{\text{A}}{\sim} N(0,1)
+$$&lt;/p&gt;
+&lt;p&gt;The following function will allow us to check for stationarity using the Augmented Dickey-Fuller (ADF) test.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;stationarity_test&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cutoff&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# H_0 in adfuller is unit root exists (non-stationary)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# We must observe significant p-value to convince ourselves that the series is stationary&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;pvalue&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;adfuller&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pvalue&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cutoff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;p-value = &amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pvalue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39; The series &amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;X&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39; is likely stationary.&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;p-value = &amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;stationarity_test&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;stationarity_test&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;B&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;p-value = 4.0811223061569216e-17 The series A is likely stationary.&lt;br&gt;
+p-value = 0.7317208279589542 The series B is likely non-stationary.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;cointegration&#34;&gt;Cointegration&lt;/h3&gt;
+&lt;p&gt;The correlations between financial quantities are notoriously unstable. Nevertheless, correlations are regularly used in almost all multivariate financial problems. An alternative statistical measure to correlation is cointegration. This is probably a more robust measure of linkage between two financial quantities, but as yet there is little derivatives theory based on this concept.&lt;/p&gt;
+&lt;p&gt;Two stocks may be perfectly correlated over short timescales, yet diverge in the long run, with one growing and the other decaying. Conversely, two stocks may follow each other, never being more than a certain distance apart, but with any correlation, positive, negative, or varying. If we are delta hedging, then maybe the short timescale correlation matters, but not if we are holding stocks for a long time in an unhedged portfolio.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve constructed an example of two cointegrated series. We&amp;rsquo;ll plot the difference between the two now so we can see how this looks.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/cointegration_spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h4 id=&#34;testing-for-cointegration&#34;&gt;Testing for Cointegration&lt;/h4&gt;
+&lt;p&gt;The steps in the cointegration test procdure:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Test for a unit root in each component series $y_{t}$ individually, using the univariate unit root tests, says ADF, PP test.&lt;/li&gt;
+&lt;li&gt;If the unit root cannot be rejected, then the next step is to test cointegration among the components, i.e., to test whether $\alpha Y_{t}$ is I(0).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If we find that the time series as a unit root, then we move on to the cointegration process. There are three main methods for testing for cointegration: Johansen, Engle-Granger, and Phillips-Ouliaris. We will primarily use the Engle-Granger test.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s consider the regression model for $y_{t}$:&lt;/p&gt;
+&lt;p&gt;$$y_{1t} = \delta D_{t} + \phi_{1t}y_{2t} + \phi_{m-1} y_{mt} + \varepsilon_{t} $$&lt;/p&gt;
+&lt;p&gt;$D_{t}$ is the deterministic term. From there, we can test whether $\varepsilon_{t}$ is $I(1)$ or $I(0)$. The hypothesis test is as follows:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+H_{0} &amp;amp; :  \varepsilon_{t} \sim I(1) \implies y_{t} \ (no \ cointegration)  \
+H_{1} &amp;amp; : \varepsilon_{t} \sim I(0) \implies y_{t} \ (cointegration)  \
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;If  the time series is cointegrated, then $y_{t}$ is cointegrated with a &lt;em&gt;normalized cointegration vector&lt;/em&gt; $\alpha = (1, \phi_{1}, \ldots,\phi_{m-1}).$&lt;/p&gt;
+&lt;p&gt;We also use residuals $\varepsilon_{t}$ for unit root test.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+H_{0} &amp;amp; :  \lambda = 0 \ (Unit \ Root)  \
+H_{1} &amp;amp; : \lambda &amp;lt; 1 \ (Stationary)  \
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;This hypothesis test is for the model:&lt;/p&gt;
+&lt;p&gt;$$\Delta\varepsilon_{t}=\lambda\varepsilon_{t-1}+\sum^{p-1}&lt;em&gt;{j=1}\varphi\Delta\varepsilon&lt;/em&gt;{t-j}+\alpha_{t}$$&lt;/p&gt;
+&lt;p&gt;The test statistic for the following equation:&lt;/p&gt;
+&lt;p&gt;$$t_{\lambda}=\frac{\hat{\lambda}}{s_{\hat{\lambda}}} $$&lt;/p&gt;
+&lt;p&gt;Now that you understand what it means for these time series to be cointegrated, we can test for it and measure it using python:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;score&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pvalue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;coint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pvalue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;correlation-vs-cointegration&#34;&gt;Correlation vs. Cointegration&lt;/h4&gt;
+&lt;p&gt;Correlation and cointegration, while theoretically similar, are anything but similar. To demonstrate this, we can look at examples of these time series that are correlated, but not cointegrated.&lt;/p&gt;
+&lt;p&gt;A simple example is two series that just diverge.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/diverge.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Next, we can print the correlation coefficient, $r$, and the cointegration test.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Correlation: &amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X_diverging&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;corr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Y_diverging&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;score&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pvalue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;coint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X_diverging&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Y_diverging&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Cointegration test p-value: &amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pvalue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Correlation: 0.9918846224870514&lt;br&gt;
+Cointegration test p-value: 0.915621777573125&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As we can see, there is a very strong (nearly perfect) correlation between series X and Y. However, our p-value for the cointegration test yields a result of 0.7092, which means there is no cointegration between time series X and Y.&lt;/p&gt;
+&lt;p&gt;Another example of this case is a normally distributed series and a sqaure wave.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/squared_wave.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Although the correlation is incredibly low, the p-value shows that these time series are cointegrated.&lt;/p&gt;
+&lt;h3 id=&#34;data-science-in-trading&#34;&gt;Data Science in Trading&lt;/h3&gt;
+&lt;p&gt;Before we begin, I’ll first define a function that makes it easy to find cointegrated security pairs using the concepts we’ve already covered.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;find_cointegrated_pairs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;shape&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;score_matrix&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;zeros&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;pvalue_matrix&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ones&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;keys&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;keys&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;pairs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;S1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;keys&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;S2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;keys&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;result&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;coint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;S1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;score&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;pvalue&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;score_matrix&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;score&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;pvalue_matrix&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pvalue&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pvalue&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.05&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;pairs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;keys&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;keys&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;score_matrix&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pvalue_matrix&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pairs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We are looking through a set of tech companies to see if any of them are cointegrated. We&amp;rsquo;ll start by defining the list of securities we want to look through. Then we&amp;rsquo;ll get the pricing data for each security from the year 2013 - 2018.&lt;/p&gt;
+&lt;p&gt;As mentioned before, we have formulated an economic hypothesis that there is some sort of link between a subset of securities within the tech sector, and we want to test whether there are any cointegrated pairs. This incurs significantly less multiple comparisons bias than searching through hundreds of securities and slightly more than forming a hypothesis for an individual test.&lt;/p&gt;
+&lt;p&gt;We have decided to analyze the following technology stocks: AAPL, ADBE, SYMC, EBAY, MSFT, QCOM, HPQ, JNPR, AMD, and IBM.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve also decided to include the S&amp;amp;P 500 in our analysis, just in case there was equity that was cointegrated with the entire market.&lt;/p&gt;
+&lt;p&gt;After extracting the historical prices, we will create a heatmap that will show the p-values of the cointegrated test between each pair of stocks. The heatmap will mask all pairs with a p-value greater than 0.05.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/heatmap.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Our algorithm listed two pairs that are cointegrated: AAPL/EBAY, and ABDE/MSFT. We will analyze the ABDE/MSFT equity pair.&lt;/p&gt;
+&lt;h4 id=&#34;calculating-the-spread&#34;&gt;Calculating the Spread&lt;/h4&gt;
+&lt;p&gt;Now we can plot the spread of these time series. To actually calculate the spread, we use a linear regression to get the coefficient for the linear combination to construct between our two securities, as mentioned with the Engle-Granger method before.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Alternatively, we can examine the ration between the time series.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/ratio.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Regardless of whether or not we use the spread approach or the ratio approach, we can see that our first plot pair ADBE/SYMC tends to move around the mean. We now need to standardize this ratio because the absolute ratio might not be the most ideal way of analyzing this trend. For this, we need to use z-scores.&lt;/p&gt;
+&lt;p&gt;A z-score is the number of standard deviations a data point is from the mean. More importantly, the number of standard deviations above or below the population mean is from the raw score. The z-score is calculated by the following:&lt;/p&gt;
+&lt;p&gt;$$\mathcal{z}&lt;em&gt;{i}=\frac{x&lt;/em&gt;{i}-\bar{x}}{s} $$&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/standard_deviation.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;By setting two other lines placed at the z-score of 1 and -1, we can clearly see that for the most part, any big divergences from the mean eventually converge back. This is precisely what we want for a pairs trading strategy.&lt;/p&gt;
+&lt;h3 id=&#34;trading-signals&#34;&gt;Trading Signals&lt;/h3&gt;
+&lt;p&gt;When conducting any type of trading strategy, it&amp;rsquo;s always important to clearly define and delineate at what point you will actually make a trade. As in, what is the best indicator that I need to buy or sell a particular stock?&lt;/p&gt;
+&lt;h4 id=&#34;setup-rules&#34;&gt;Setup rules&lt;/h4&gt;
+&lt;p&gt;We&amp;rsquo;re going to use the ratio time series that we&amp;rsquo;ve created to see if it tells us whether to buy or sell a particular moment in time. We&amp;rsquo;ll start off by creating a prediction variable $Y$. If the ratio is positive, it will signal a &amp;ldquo;buy,&amp;rdquo; otherwise, it will signal a sell. The prediction model is as follows:&lt;/p&gt;
+&lt;p&gt;$$Y_{t} = sign(Ratio_{t+1}-Ratio_{t}) $$&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s great about pair trading signals is that we don&amp;rsquo;t need to know absolutes about where the prices will go, all we need to know is where it&amp;rsquo;s heading: up or down.&lt;/p&gt;
+&lt;h4 id=&#34;train-test-split&#34;&gt;Train Test Split&lt;/h4&gt;
+&lt;p&gt;When training and testing a model, it&amp;rsquo;s common to have splits of 70/30 or 80/20. We only used a time series of 252 points (which is the number of trading days in a year). Before training and splitting the data, we will add more data points in each time series.&lt;/p&gt;
+&lt;h4 id=&#34;feature-engineering&#34;&gt;Feature Engineering&lt;/h4&gt;
+&lt;p&gt;We need to find out what features are actually important in determining the direction of the ratio moves. Knowing that the ratios always eventually revert back to the mean, maybe the moving averages and metrics related to the mean will be important.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s try using these features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;60 day Moving Average of Ratio&lt;/li&gt;
+&lt;li&gt;5 day Moving Average of Ratio&lt;/li&gt;
+&lt;li&gt;60 day Standard Deviation&lt;/li&gt;
+&lt;li&gt;z score&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/rolling_mean.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h4 id=&#34;creating-a-model&#34;&gt;Creating a Model&lt;/h4&gt;
+&lt;p&gt;A standard normal distribution has a mean of 0 and a standard deviation 1. Looking at the plot, it&amp;rsquo;s pretty clear that if the time series moves 1 standard deviation beyond the mean, it tends to revert back towards the mean. Using these models, we can create the following trading signals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Buy(1) whenever the z-score is below -1, meaning we expect the ratio to increase.&lt;/li&gt;
+&lt;li&gt;Sell(-1) whenever the z-score is above 1, meaning we expect the ratio to decrease.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;training-optimizing&#34;&gt;Training Optimizing&lt;/h4&gt;
+&lt;p&gt;We can use our model on actual data&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Trading_Signals.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;areas-of-improvement-and-further-steps&#34;&gt;Areas of Improvement and Further Steps&lt;/h3&gt;
+&lt;p&gt;This is by no means a perfect strategy and the implementation of our strategy isn&amp;rsquo;t the best. However, there are several things that can be improved upon.&lt;/p&gt;
+&lt;h4 id=&#34;1-using-more-securities-and-more-varied-time-ranges&#34;&gt;1. Using more securities and more varied time ranges&lt;/h4&gt;
+&lt;p&gt;For the pairs trading strategy cointegration test, I only used a handful of stocks. Naturally (and in practice) it would be more useful to use clusters within an industry. I only use the time range of only 5 years, which may not be representative of stock market volatility.&lt;/p&gt;
+&lt;h4 id=&#34;2-dealing-with-overfitting&#34;&gt;2. Dealing with overfitting&lt;/h4&gt;
+&lt;p&gt;Anything related to data analysis and training models has much to do with the problem of overfitting. There are many different ways to deal with overfitting like validation, such as Kalman filters, and other statistical methods.&lt;/p&gt;
+&lt;h4 id=&#34;3-adjusting-the-trading-signals&#34;&gt;3. Adjusting the trading signals&lt;/h4&gt;
+&lt;p&gt;Our trading algorithm fails to account for stock prices that overlap and cross each other. Considering that the code only calls for a buy or sell given its ratio, it doesn&amp;rsquo;t take into account which stock is actually higher or lower.&lt;/p&gt;
+&lt;h4 id=&#34;4-more-advanced-methods&#34;&gt;4. More advanced methods&lt;/h4&gt;
+&lt;p&gt;This is just the tip of the iceberg of what you can do with algorithmic pairs trading. It&amp;rsquo;s simple because it only deals with moving averages and ratios. If you want to use more complicated statistics, feel free to do so. Other complex examples include subjects such as the Hurst exponent, half-life mean reversion, and Kalman Filters.&lt;/p&gt;
+&lt;h3 id=&#34;github-code&#34;&gt;GitHub Code&lt;/h3&gt;
+&lt;p&gt;Click here for the full &lt;a href=&#34;https://github.com/Hedgology/Pairs-Trading-With-Python&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github Code&lt;/a&gt; and explainations.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unemployment | KidQuant</title>
+    <link>https://kidquant.com/tag/unemployment/</link>
+      <atom:link href="https://kidquant.com/tag/unemployment/index.xml" rel="self" type="application/rss+xml" />
+    <description>Unemployment</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <title>Unemployment</title>
+      <link>https://kidquant.com/tag/unemployment/</link>
+    </image>
+    
+    <item>
+      <title>How The Beveridge Curve Reveals Current Labor Market Bifurcation</title>
+      <link>https://kidquant.com/post/2019-10-10-latest-jolts-survey-shows-labor-market-bifurcation/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2019-10-10-latest-jolts-survey-shows-labor-market-bifurcation/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s a lot of talks these days about an economic slow down that could potentially occur in the United States. If this is true, the evidence of this has yet to appear in the labor market. The BLS posted an unemployment rate of 3.5% for September 2019, down 0.2% from the previous month. The economy also created 136,000 jobs, which is slightly less than what was expected, previous months were revised upwards [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;It was initially assumed that the unemployment couldn&amp;rsquo;t go much lower, due to something called NAIRU: the &lt;strong&gt;Non-Accelerating Inflation Rate of Unemployment&lt;/strong&gt;. Without getting into deep economic theory, NAIRU (not to be confused with the natural unemployment rate) describes the level at which it would be difficult for the unemployment rate to decline, due to the inability of firms to attract new talent at the prevailing market wage.&lt;/p&gt;
+&lt;p&gt;As such, the only way to attract new workers would be to raise wages, which would force firms to rates prices to offset their cost, which would raise consumer prices overall. Are the historical lows of the unemployment rate evidence of further slack in the labor market?&lt;/p&gt;
+&lt;h2 id=&#34;what-does-jolts-tell-us&#34;&gt;What does JOLTS tell us?&lt;/h2&gt;
+&lt;p&gt;JOLTS, or the Jobs Openings and Labor Turnovers Survey, is another measure of labor utilization, similar to the establishment and population surveys of the BLS [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. The survey tracks job openings, hires, and total separations (whether voluntary or involuntary) of the labor force. The BLS reports JOLTS with a two-month lag, as opposed to the employment situation, which is reported with a one-month lag.&lt;/p&gt;
+&lt;h3 id=&#34;job-openings&#34;&gt;Job Openings&lt;/h3&gt;
+&lt;p&gt;Total job openings for August 2019 were reported at 7.05 million, which is lower the 7.34 million print during the same time a year ago. This brings the job openings rate to 4.4%.&lt;/p&gt;
+&lt;h3 id=&#34;hires&#34;&gt;Hires&lt;/h3&gt;
+&lt;p&gt;Total hires were reported at 5.77 million, again lower than the 5.82 million figure posted a year ago. The hires for August is 3.8%.&lt;/p&gt;
+&lt;h3 id=&#34;separations&#34;&gt;Separations&lt;/h3&gt;
+&lt;p&gt;Separations are reported in two different categories: quits and layoffs. The number of quits decreased in August to 3.52 million; however, still the highest level ever. At the same time, the number of layoffs was 1.78 million. Altogether, the number of separations for August is
+5.63 million.&lt;/p&gt;
+&lt;p&gt;This brings the quits rate to 2.3%, the layoffs rate to 1.2%, and the total separations rate to 3.7%.&lt;/p&gt;
+&lt;h2 id=&#34;beveriedge-curve&#34;&gt;Beveriedge Curve&lt;/h2&gt;
+&lt;p&gt;Conventional economic wisdom tells us that there is an inverse relationship between the job openings rate and the unemployment rate. Why is this; shouldn&amp;rsquo;t more employment generally lead to fewer job vacancies? This is not necessarily the case. Higher unemployment is usually associated with recessions, and when recessions occur, firms are less likely to expand their workforce; hence, a lower job openings rate. The relationship can be illustrated in what is known as &lt;strong&gt;The Beveridge Curve&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Latest-JOLTS-Survey/Beveridge_Curve.png&#34; alt=&#34;Beveridge Curve Plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The Beveridge Curve plots the job openings rate with respect to the unemployment rate [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;]. During an expansion, the job openings rate is high, and the unemployment rate is low, which causes the curve to move towards plots upward and to the left. During a contraction, the job openings rate is low, and the unemployment rate is high, which causes a movement along the curve in the opposite direction.  Basic Econ 101, pretty much.&lt;/p&gt;
+&lt;p&gt;As we all learn in Econ 101, things become more interesting when we&amp;rsquo;re dealing with &lt;em&gt;shifts&lt;/em&gt; in the curve, which can indicate a structural change in the economy. This shift can be due to industry-based structural mismatching or geographical changes. If we examine the relationship between unemployment and job openings, this appears to be the case.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Latest-JOLTS-Survey/plotted_beveridge_curve.png&#34; alt=&#34;Beveridge Curve Plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The following Beveridge Curve is one that I have created in python, using data from the Federal Reserve Economic Database (FRED), which was extracted through Quandl [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;] [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;It would seem that the curve started to shift around 2010, a couple of months after the end of the Great Recession. However, when the recovery started in 2009, the curve did not retrace the previous pattern from 2000-2009. What does this shift in The Beveridge Curve mean?&lt;/p&gt;
+&lt;p&gt;We can look back at a random period from nearly 20 years ago when the unemployment rate was near 4.0%. The job openings rate hovered around 3.0%. More than a decade later, the job openings rate increased to 4.5% with the same level of unemployment. So, for any level of unemployment (horizontal axis), there appears to be a higher rate of job openings (vertical axis).&lt;/p&gt;
+&lt;p&gt;More than 10 years after the Great Recession, employers seem to be reluctant to fill their job openings. Put it another way, it appears that employers are having a difficult time finding a match when posting job opportunities, whether internally or externally. Following periods of economic decline, it isn&amp;rsquo;t uncommon to find high levels of unqualified candidates. This mismatch usually lasts about three years, on average, according to some research [&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;As mentioned before, the unemployment rate is near historic lows. Who could possibly suffer from this structural shift?&lt;/p&gt;
+&lt;h2 id=&#34;your-first-big-break-after-college&#34;&gt;Your First Big Break After College&lt;/h2&gt;
+&lt;p&gt;It should go without saying that college graduates do relatively well compared to those without a college degree. Also, people who graduate into a strong labor market are more likely to earn more through their careers than people who join the labor market during a recession. According to data from the New York Federal Reserve, the unemployment rate for recent college graduates is 3.8% [&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Latest-JOLTS-Survey/un_rate_college_20_24.png&#34; alt=&#34;Unemployment Rate College Grads&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Also, the BLS shows that the unemployment rate for college graduates between the age of 20 - 24 is around 6.1%, which is nearly double the national average. As you can see from the following chart, the data is very noisy; dropping during the beginning of the year and rising towards the middle (usually the summer). This is because, as you can imagine, during the beginning of the year, students are actively enrolled in school, so they aren&amp;rsquo;t counted as part of the labor market. Once they graduate (usually during the summer), they begin actively looking for work. From that point onward, recent graduates are officially counted among the unemployment statistics.&lt;/p&gt;
+&lt;p&gt;The real cause of concern may be the &lt;em&gt;underemployment rate,&lt;/em&gt; which describes a situation where workers of high skill levels and high educational attainment are working in relatively low-skilled, low-wage jobs. This rate usually varies, but Gallup estimates that the underemployment rate is somewhere around 12.1% [&lt;a href=&#34;#8&#34;&gt;8&lt;/a&gt;]. This all ties into the shift in the Beveridge curve, and why employers are more reluctant to fill their job openings. But why is this the case? How do we know that the shortfall of recent college graduates has caused this shift?&lt;/p&gt;
+&lt;h3 id=&#34;entry-level-not-so-entry&#34;&gt;Entry-Level Not So Entry&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://i2.wp.com/talent.works/wp-content/uploads/2018/03/entry-level-jobs-years-experience-1.png?w=1067&amp;amp;ssl=1&#34; alt=&#34;3 years of experience for your first job&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;A prevailing, and yet and unfortunately, Catch-22 persists in the labor market. Some firms won&amp;rsquo;t hire you without the necessary (or related) experience; however, you&amp;rsquo;ll never get the required experience if the firms aren&amp;rsquo;t willing to take a chance on you. As our economy becomes more specialized and highly competitive, it would seem that this issue will continue to persist.  Some research conducted by Kushal Chakrabarti of TalentWorks has found that 61% of all entry-level jobs require 3+ years of experience [&lt;a href=&#34;#9&#34;&gt;9&lt;/a&gt;]? How can this be?&lt;/p&gt;
+&lt;p&gt;The process was rather simple. A random sample of 95,363 jobs was analyzed. From there, you can parse through the types of jobs being offered and the experience they require. Some interesting details were discovered:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The amount of experience required for any position increases by 2.8% every year. At this rate, the graduating class of 2032 will need 4 years of experience just to get their first job.&lt;/li&gt;
+&lt;li&gt;With those three years of experience, you will qualify for roughly 75% of all entry-level jobs being offered. An extreme difference from the labor market conditions of our parents, who could be eligible for most entry-level jobs with merely a college diploma.&lt;/li&gt;
+&lt;li&gt;Very few of the entry-level jobs you&amp;rsquo;ll find on websites such as LinkedIn or Indeed (LinkedIn is the largest culprit of this in my experience) are actually entry-level positions. These days, internships are considered the new entry-level job [&lt;a href=&#34;#10&#34;&gt;10&lt;/a&gt;].&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://i1.wp.com/talent.works/wp-content/uploads/2018/03/job-search-pain-in-the-ass-1.png?w=2280&amp;amp;ssl=1&#34; alt=&#34;Time Spent Looking For Work&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;So what gives? Why are so many firms trying to discourage recent college graduates from applying to what should be entry-level positions? Maybe recent college grads are just unprepared for the workplace. That certainly seems to be the view of most employers, according to a survey conducted by the National Association of College and Employers (NACE) [&lt;a href=&#34;#11&#34;&gt;11&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;The results of this survey indicate that college graduates tend to overestimate their abilities when it comes to areas like professionalism, work ethic, oval/written communication, and critical thinking skills.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://www.insidehighered.com/sites/default/server_files/media/Chart1.jpg&#34; alt=&#34;Recent College Grads Survey&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Whether this is true or not, the fact that employers believe this is true presents an obstacle for recent college grads. Today, employers are getting impatient, and they prefer workers who don&amp;rsquo;t need to be trained to do their jobs. We can also come up with a plethora of other reasons for this disparity. Still, this issue is significantly related to the shift in The Beveridge Curve, a mismatch between the skills employers require the skills the workforce possesses.&lt;/p&gt;
+&lt;h2 id=&#34;what-can-be-done-if-it-should-be-done&#34;&gt;What Can Be Done, If It Should Be Done?&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s unclear what can be done about this structural change if there is anything at all that can be done about it. Is it unreasonable to ask employers to become more realistic about the job requirements for the jobs they offer? Should our universities start reducing the number of curriculums that are impractical and a waste of time? I don&amp;rsquo;t have the answers to these questions; however, we do know that there is an evident labor market inefficiency that isn&amp;rsquo;t going away. For whatever reason, employers are posting more job openings but don&amp;rsquo;t like what they&amp;rsquo;re seeing among possible candidates.&lt;/p&gt;
+&lt;h2 id=&#34;sources-a-name1a&#34;&gt;Sources &lt;a name=&#34;1&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;[1] &lt;a href=&#34;https://www.bls.gov/news.release/empsit.nr0.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bureau of Labor Statistics | Employment Situation&lt;/a&gt;
+&lt;a name=&#34;2&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[2] &lt;a href=&#34;https://www.bls.gov/news.release/pdf/jolts.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bureau of Labor Statistics | Jobs Openings and Labor Turnovers Survey&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://en.wikipedia.org/wiki/Beveridge_curve&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia | The Beveridge Curve&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://fred.stlouisfed.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Federal Reserve Economic Database (FRED)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;5&#34;&gt;5&lt;/a&gt;] &lt;a href=&#34;https://www.quandl.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quandl | The world&amp;rsquo;s most powerful database&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;6&#34;&gt;6&lt;/a&gt;] &lt;a href=&#34;https://www.richmondfed.org/publications/research/econ_focus/2018/q3/feature1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Richmond Federal Reserve | Help Wanted: Employers are having a hard time hiring. Not enough workers or not the right skills?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;7&#34;&gt;7&lt;/a&gt;] &lt;a href=&#34;https://www.newyorkfed.org/research/college-labor-market/college-labor-market_unemployment.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Federal Reserve Bank of New York | Unemployment Rates for College Graduates and Other Groups&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;8&#34;&gt;8&lt;/a&gt;] &lt;a href=&#34;https://smartasset.com/retirement/how-many-americans-are-underemployed&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SmartAssets | How many Americans are Underemployed&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;9&#34;&gt;9&lt;/a&gt;] &lt;a href=&#34;https://talent.works/2018/03/28/the-science-of-the-job-search-part-iii-61-of-entry-level-jobs-require-3-years-of-experience/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TalentWorks | The science of the job search - Part III&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;10&#34;&gt;10&lt;/a&gt;] &lt;a href=&#34;https://www.washingtonpost.com/news/grade-point/wp/2015/05/18/are-internships-the-only-way-for-recent-college-grads-to-grab-entry-level-jobs/?noredirect=on&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Washington Post | Are internships the only way for recent college grads to grab entry level jobs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;11&#34;&gt;11&lt;/a&gt;] &lt;a href=&#34;https://www.naceweb.org/job-market/trends-and-predictions/job-outlook-fall-recruiting-for-the-class-of-2018/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;National Association of College and Employers | Job Outlook: Fall recruiting for the class of 2018&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

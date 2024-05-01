@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coronavirus | KidQuant</title>
+    <link>https://kidquant.com/tag/coronavirus/</link>
+      <atom:link href="https://kidquant.com/tag/coronavirus/index.xml" rel="self" type="application/rss+xml" />
+    <description>Coronavirus</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 12 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <title>Coronavirus</title>
+      <link>https://kidquant.com/tag/coronavirus/</link>
+    </image>
+    
+    <item>
+      <title>New York State of Decline</title>
+      <link>https://kidquant.com/post/2020-09-12-ny-state-of-decline/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-09-12-ny-state-of-decline/</guid>
+      <description>&lt;p&gt;Have you ever wondered how New York became America&amp;rsquo;s financial center? It&amp;rsquo;s not like the New York Stock Exchange is the only securities market in the country. Sure, there&amp;rsquo;s the NASDAQ (another in New York), but there is one in Miami, Chicago, and Philidelphia. In fact, Philadelphia initially obtained financial supremacy in the country with the establishment of the Bank of Pennsylvania in 1780.&lt;/p&gt;
+&lt;p&gt;From what I learned during my Finance undergraduate studies, it all amounts to pure luck why Philadephia isn&amp;rsquo;t America&amp;rsquo;s financial center. The main reason why economic supremacy shifted from Philly was NYC&amp;rsquo;s geographical advantage with the Erie Canal construction. The Erie Canal connected to the Hudson River to the Great Lakes and the fastest-growing places in the Appalachian Mountains. The canal helped solidify New York&amp;rsquo;s position as America&amp;rsquo;s center for commercial trade.&lt;/p&gt;
+&lt;p&gt;Point of this history lesson: nothing lasts forever. If a country, region, state, or area loses its comparative advantage, it may also lose its overall economic advantage. Enter James Altucher, author of the &lt;em&gt;NYC is Dead Forever. Here&amp;rsquo;s Why&lt;/em&gt; article [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. He wrote a scathing rebuke of the current situation involving New York City, arguing, although the city has been through a lot, this time is different. James obviously addressed all of the crucial points, which are undeniably true. Why else would high profile individuals such as Jerry Seinfield, Mark Cuban, and Bill De&amp;rsquo;Blasio respond to an article on LinkedIn?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not going to say whether I agree with the points raised in the article; there&amp;rsquo;s not a lot that I can add to strengthen the &amp;ldquo;New York is Dead&amp;rdquo; argument. We can debate what it would mean for an entire city to be &amp;ldquo;dead,&amp;rdquo; whether it&amp;rsquo;s fewer people choosing to travel to NYC or high-net-worth individuals and established industries choosing to relocate to other areas. What I can say is that the threats to New York&amp;rsquo;s financial position are &lt;strong&gt;real&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For example, James outlines that many people in March/April relocated when the Pandemic situation in NYC worsened; the second wave of people left when crime was spiraling out of control. Some may suggest that the stores of New Yorkers fleeing the city in droves may be greatly exaggerated [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. It&amp;rsquo;s possible that the COVID pandemic merely exacerbated what many New Yorkers have been feeling all along: &amp;ldquo;I gotta get out of here.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Anyone who knows anything about living in New York understands how unfeasible it is to maintain a decent standard of living unless you&amp;rsquo;re very poor or wealthy [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/NY-State-Of-Decline/ny_pop_change.PNG&#34; alt=&#34;Population Change&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The following map shows the population change of New York counties within the last 9 years. The plot measures cumulative growth since April 2010; each county is shaded in a different color. The closer the shade is to blue, the larger the population growth within the last 9 years (and vice versa). As we can see, change in the NY population has been on a steady decline.&lt;/p&gt;
+&lt;p&gt;All of the five boroughs, except Richmond County (Staten Island), are the only counties with experienced population growth within the same period, albeit very modest. Regardless, Census Bureau data suggest that NYC has been bleeding residents as early as 2016 [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;It isn&amp;rsquo;t clear whether COVID and crime are the final straw for many life-long New Yorkers. Instead, the current situation has allowed people to imagine the possibility of becoming life-long somewhere-elsers. As James pointed out, people are willing to tolerate the higher taxes and cost of living because of business/employment opportunities and culture.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/NY-State-Of-Decline/ny_ue_rate.PNG&#34; alt=&#34;Unemployment Rate&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Above is a plot of the same region, except this measures the August Unemployment by county. The vast majority of areas in New York have an unemployment rate similar to the national average of 8.4 percent. In stark contrast, the five boroughs (and the surrounding areas) have unemployment rates significantly above the national average, ranging from 12 percent to as high as 20 percent. This unemployment level is consistent with the severe COVID restrictions still imposed on many industries in the city.&lt;/p&gt;
+&lt;p&gt;Keep in mind, NYC and New York as a whole have not experienced a second wave in the same way other cities across the globe have. Governor Cuomo once suggested that people were &amp;ldquo;fleeing other states because it&amp;rsquo;s a safe state.&amp;rdquo; [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;] While there is nothing to indicate that people have weighed the opportunity cost of looking for work as opposed to catching COVID,. Instead, people have decided that it&amp;rsquo;s too expensive to live in NYC for all of the city&amp;rsquo;s headache.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s be realistic; changes in mortgage rates and what people are looking for in a home provide an incentive for people who were already considering moving. The largest incentive for people living in the city (doesn&amp;rsquo;t matter which city) is the cost [&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;]. In addition, ~80 percent of NYC employees live in the five boroughs; with NYC-based firms offering more flexible work-from-home policies, that number is likely to decline [&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;]. Lastly, the COVID Pandemic prevents NYC residents from fully enjoying local amenities, which lowers the incentive to live here.&lt;/p&gt;
+&lt;p&gt;Of course, if there is no incentive to live here, there is also no incentive to conduct business here. Manhattan Borough President Gale Brewer counted 335 street-level vacancies along Broadway (a ~80 increase from three years ago), a major shopping area/tourist attraction in NYC [&lt;a href=&#34;#8&#34;&gt;8&lt;/a&gt;]. Other industries are just as amenable to the effects of the pandemic as well. Still, the one affected industry that has the power to effectively reshape NYC is, of course, the &lt;strong&gt;Financial sector&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Two years ago, New Yorkers (at least, NYC-based finance employees) debated where the next financial hotspot would be, and for a long time, that hotspot appeared to be Hudson Yards. Today, as work-from-home policies have reduced the need for employees in office environments, financial firms are considering reducing its physical presence by at least 20%, according to a study released by the Partnership for New York City [&lt;a href=&#34;#9&#34;&gt;9&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;The same study has also pointed out that 1 in four office employers intend to reduce their footprint by at least a fifth, and about 16 percent expect to move jobs out of the city. Companies also expect only 10 percent of their employees to return to the office by the end of summer and just 40 percent by the year-end. The lack of mobility is expected to shrink economic activity by 13 percent this year.&lt;/p&gt;
+&lt;p&gt;In a personal anecdote, I was expected to return back to the office in mid-September; however, my firm has left work-from-home optional for many employees. From what I here, the office is mostly empty, which should surprise no one. As long as resturants and businesses remain closed, as long as the number of businesses&lt;/p&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://www.linkedin.com/pulse/nyc-dead-forever-heres-why-james-altucher/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;James Altucher | NYC Is Dead Forever. Here&amp;rsquo;s Why&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://nypost.com/2020/08/11/new-yorkers-flee-nyc-in-droves/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;New York Post | New Yorkers Keep Moving To The Suburbs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://money.cnn.com/calculator/pf/cost-of-living/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CNBC Money | Cost of Living City Calculator&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://fred.stlouisfed.org/graph/fredgraph.png?g=w7H1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FRED | Resident Population in NYC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;5&#34;&gt;5&lt;/a&gt;] &lt;a href=&#34;https://twitter.com/thehill/status/1285337437867212802?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1285337437867212802%7Ctwgr%5Eshare_0&amp;amp;ref_url=https%3A%2F%2Fdw-site-staging.dailywire.com%2Fnews%2Fandrew-cuomo-claims-people-are-now-fleeing-to-new-york-because-its-safe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Hill | New York State Governor Andrew Cuomo Press Conference&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;6&#34;&gt;6&lt;/a&gt;] &lt;a href=&#34;https://www.redfin.com/blog/wfh-leaving-new-york-san-francisco/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RedFin | Post-Pandemic Migration from Expensive Cities Likely&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;7&#34;&gt;7&lt;/a&gt;] &lt;a href=&#34;https://www1.nyc.gov/assets/planning/download/pdf/planning-level/housing-economy/nyc-ins-and-out-of-commuting.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NYC Planning Department | The Ins and Outs of NYC Commuting&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;8&#34;&gt;8&lt;/a&gt;] &lt;a href=&#34;https://www.wsj.com/articles/business-vacancies-rise-on-new-york-citys-broadway-11599652800#:~:text=Coronavirus%20pandemic%20strains%20companies%20along,street-level%20vacancies%20along%20Broadway.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wall Street Journal | Business Vacanies Rise on New York City&amp;rsquo;s Broadway&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;9&#34;&gt;9&lt;/a&gt;] &lt;a href=&#34;https://pfnyc.org/wp-content/uploads/2020/07/actionandcollaboration.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Partnership for New York City | A Call for Action and Collaboration&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COVID Vs. Economy</title>
+      <link>https://kidquant.com/post/2020-08-22-covid-vs-economy/</link>
+      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-08-22-covid-vs-economy/</guid>
+      <description>&lt;p&gt;On this blog, I&amp;rsquo;ve talked about the Mathematics of Pandemics. I&amp;rsquo;ve even talked about the Politics of Pandemics. I&amp;rsquo;m long overdue to discuss the &amp;ldquo;Economics of Pandemics;&amp;rdquo; however, theorizing the potential effects of an inadequate response was pretty pointless, as anyone who has lived through the Great Recession would tell you. After all, &amp;ldquo;ignorance on fire is sometimes better than knowledge on ice,&amp;rdquo; as the saying goes.&lt;/p&gt;
+&lt;p&gt;Regardless of whether or not our economic response to COVID was sufficient, the discussion was always framed in a false dichotomy: protecting the vulnerable versus protecting the economy. If one is a pragmatic, normal-thinking individual, these two are not necessarily mutually exclusive. As early as March 27th, the IGM Chicago Forum surveyed more than 40 professional economists regarding the economic lockdowns in response to the COVID-19 crisis. The vast majority of respondents agree (88%) believe that a comprehensive policy response would involve tolerating a massive contraction in economic activity until the spread has dropped significantly (Question A) [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;So the United States, along with other nations around the world, instituted their lockdowns policy. We initiated our 15 Days to Slow The Spread, which quickly became 30 Days to Slow The Spread. Although most states have very minor COVID restrictions (staying six feet apart, no gatherings greater than 20 people, etc.), other places that were more severely affected are imposing more strict regulations. [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;] It just so happens that the places with the strictest COVID regulation are also home to the largest economies in the U.S.&lt;/p&gt;
+&lt;p&gt;Although most states have partially reopened (except for California), the U.S. economy contracted by a whopping -32.9% in the second quarter.&lt;/p&gt;
+&lt;p&gt;If that sounds like a big number, that&amp;rsquo;s because it is a big number. The Bureau of Economic Analysis calculates GDP on an annualized basis; this facilitates comparison of growth rates over various periods. In other words, the -32.9% figure is what we would get if the economy sustained its growth (or, in this case, decline) for one year. When used to measure very short-term changes (such as locking down for one or two months), it can be misleading. As such, it&amp;rsquo;s probably better to use Year-over-year change, which would record a -9.5% decline.&lt;/p&gt;
+&lt;h3 id=&#34;an-invisible-threat-ever-lurking&#34;&gt;An Invisible Threat Ever Lurking&lt;/h3&gt;
+&lt;p&gt;Regardless of how economic growth is measured, the catch-22 is unavoidable. COVID is so bad, it warrants locking down the economy to control its spread, but the economy is bad because we are locked down to prevent the spread of COVID. What a paradox&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Of course, the risk of infection is very real; we can&amp;rsquo;t expect things to go back to &amp;ldquo;normal&amp;rdquo; if the risk of transmission is still high. Some would point out that the economic contraction was only severe &lt;em&gt;because&lt;/em&gt; we failed to control the spread of COVID. The only problem with this theory is that the United States had the slowest contraction out of all the nations which successfully controlled the spread.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/us_gdp_global.png&#34; alt=&#34;US vs Global GDP&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The virus ravaged Italy and Spain, and they have instituted strict lockdowns in return. Other places in Europe, which did not want to become the next Italy, instituted strict lockdowns. (Canada is included, for no other reason than it is our neighbor to the north) Some may argue that these nations made a significant trade-off; they chose to protect lives over the economy, and now the economy will be better off in the long-run.&lt;/p&gt;
+&lt;p&gt;Except now all of these places are relaxing their COVID restrictions and the virus is starting to spread again. Cases are starting to spike in France, while infections are slowly increasing in Germany.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/france_spain_covid.png&#34; alt=&#34;France and Spain&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The following places are experiencing an uptick in COVID-19 cases:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spain, Italy, United Kingdom, Belgium, Neterlands, Switzerland, Greece, Portugal, Denmark, Norway, Japan, Australia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What do all of these places have in common? These regions were assumed to be in control of the virus [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;]. Now the virus is out of control and these regions are either experiencing a large surge (Japan), or a steady increase in cases (United Kingdom). Whether by pure luck or by a fortunate circumstance, the United States experienced a phenomenon in early June that Europe should have learned in early July: &lt;strong&gt;you can&amp;rsquo;t hide from the virus forever&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Of course, the lockdowns aren&amp;rsquo;t supposed to last forever; they just need to be maintained until a vaccine is found [&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;]. There&amp;rsquo;s no mention of when we can expect a COVID-19 anti-viral vaccine to be developed; &amp;ldquo;never&amp;rdquo; is a very realistic timeline for an effective vaccine (the flu vaccine has a 40-70% effectiveness). Regardless, it&amp;rsquo;s apparent that lockdown is not a sustainable strategy. For two reasons: 1) the obvious economic ramifications of keeping the economy locked down and 2) locking down just delays the inevitable.&lt;/p&gt;
+&lt;p&gt;Granted, we don&amp;rsquo;t have guidelines on what it means to reopen safely, or knowledge if this is even possible because the world has never been locked down before. Lockdown is a new concept that has never been tested for efficacy or implementation. Once the virus transmission restarts, the vulnerable and susceptible are still part of the population and will simply die later rather than sooner unless effective measures are taken to protect them. The only thing that can stop transmission of the virus long term is immunity.&lt;/p&gt;
+&lt;p&gt;As such, locking down doesn&amp;rsquo;t prevent an outbreak; it merely delays or pushes it out over a longer time frame depending on how severe the lockdowns were implemented. One may point out how South Korea infamously flattened the curve and controlled the spread of the virus. What really happened was that the region has been playing consistent whack-a-mole with outbreaks and on-off lockdowns. Despite implementing measures that would not be legal in the United States, the country is now experiencing a surge in cases.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/south_korea_cases.png&#34; alt=&#34;South Korea&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;What about New Zealand? Haven&amp;rsquo;t they eradicated the virus? They&amp;rsquo;ve managed to survive 100 days without a single COVID-19 transmission. Sure, New Zealand is a small island with a population of 5 million and a single major airport. It shouldn&amp;rsquo;t be difficult to suppress transmissions in the long-run; however, the virus eventually resurged without a single transmission from outside the country.&lt;/p&gt;
+&lt;p&gt;Now confirmed cases have gone from an average of one per day to an average of 10 per day; Auckland is now back in lockdown; and their Prime Minister has delayed their national election [&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;][&lt;a href=&#34;#8&#34;&gt;8&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/new_zealand_cases.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a novel virus, which means that unless there is a vaccine, everyone will be exposed to it eventually. Keeping people locked inside doesn&amp;rsquo;t stop the disease; it only delays it. Unfortunately, keeping people locked inside until the spread slows down, or until vaccine, is a very popular solution to a very unsustainable problem.&lt;/p&gt;
+&lt;h3 id=&#34;eventually-swedens-strategy-will-by-everyones-strategy&#34;&gt;Eventually Sweden&amp;rsquo;s Strategy Will By Everyone&amp;rsquo;s Strategy&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve barely mentioned Sweden in this post. As much of the Western world was shutting down large portions of the economy and limiting the mobility of its citizens throughout March, Sweden opted for a much lighter touch. They&amp;rsquo;ve refused to close down service industries, schools are largely left open, and its borders remained open to the outside world.&lt;/p&gt;
+&lt;p&gt;Confirmed cases spiked as high as 2,530 in a single day (1,247 per day on average); Sweden reached this milestone in early July. At the same time, fatalities have reached as high as 185, 107 per day on average, a milestone in early May. Both metrics have been on a downward trend since, on some recent days, the country has recorded as few as 3 COVID fatalities. The region is also currently averaging 253 new cases per day.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/sweden_cases_deaths.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Lockdowns and closed boarders lack a historical, scientific basis from the Swedish perspective. COVID-19 is in every European country, and so far, none of them have been able to slow down the spread considerably. Regardless, journalists and political analysts have considered Sweden a &amp;ldquo;cautionary tale&amp;rdquo; for the world [&lt;a href=&#34;#9&#34;&gt;9&lt;/a&gt;]. They justify this claim by correctly pointing out that Sweden&amp;rsquo;s population-adjusted death rate is significantly higher compared to its Scandinavian neighbors Finland, Denmark, and Norway [&lt;a href=&#34;#10&#34;&gt;10&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;However, Sweden ran into similar problems as many other places had in their attempts to control the virus through the least vulnerable population: failing to protect the elderly. According to most research, upwards of 70% of the COVID death toll in Sweden has been people in elderly care services.&lt;/p&gt;
+&lt;p&gt;By the same token, people 65 and older comprise 80% of all COVID deaths in the United States. U.S. Governors such as Andrew Cuomo have been heavily criticized by having the highest nursing home death toll in the U.S., despite instituted one of the strongest and most restrictive lockdowns in the country. Despite reaching Phrase Four of its reopening plan, much of the New York economy is still under lockdown; NYC&amp;rsquo;s mayor Bill DeBlasio is still enforcing strict social distancing requirements (except for protest, apparently).&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/sweden_outperforms.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The point of Sweden&amp;rsquo;s strategy, at least from Sweden&amp;rsquo;s perspective, is that places that have locked down significantly lower immunity levels than Sweden&amp;rsquo;s. As such, these places may need to lock down again if and when the disease returns (it has already returned). Many experts have claimed that COVID-19, like some other respiratory diseases, will only be subject to the effects of herd immunity when anywhere from 60-80% of the population recovers from it. No one knows what level of serology represents what is known as Heparin-induced thrombocytopenia (NIT), but we do know that antibody studies are undercounting the population&amp;rsquo;s immunity [&lt;a href=&#34;#11&#34;&gt;11&lt;/a&gt;][&lt;a href=&#34;#12&#34;&gt;12&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;Sweden&amp;rsquo;s steady decline in deaths and cases may present an advantage very few countries have obtained. Other hands that have managed to clamp down on infections are seeing a daily increase in cases. This suggests that other places around the world may have populations that may be more susceptible to the virus than Sweden. As such, Sweden&amp;rsquo;s economy may be better off in the long run without the on-and-off lockdowns.&lt;/p&gt;
+&lt;p&gt;Looking at Sweden, it may come across as insane that they&amp;rsquo;ve decided to take this approach. However, their approach was the basic science and standard pandemic response prior to 2020 [&lt;a href=&#34;#13&#34;&gt;13&lt;/a&gt;]. With that being said, are &lt;em&gt;we&lt;/em&gt; the insane ones?&lt;/p&gt;
+&lt;p&gt;Well, fall is just around the corner.&lt;/p&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;http://www.igmchicago.org/surveys/policy-for-the-covid-19-crisis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IGM Forum | Policy for the COVID-19 Crisis&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://www.washingtonpost.com/graphics/2020/national/states-reopening-coronavirus-map/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Washington Post | Where states reopened and cases spiked after U.S. shutdown&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;5&#34;&gt;5&lt;/a&gt;] &lt;a href=&#34;https://www.wsj.com/articles/how-europe-slowed-its-coronavirus-cases-from-a-torrent-to-a-trickle-11595240731&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wall Street Journal | How Europe Kept Coronavirus Cases Low Even After Reopening&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;6&#34;&gt;6&lt;/a&gt;] &lt;a href=&#34;https://www.theguardian.com/world/2020/apr/08/lockdowns-cant-end-until-covid-19-vaccine-found-study-says&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Guardian | Study: Lockdowns can&amp;rsquo;t end until COVID-19 vaccine is found&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;7&#34;&gt;7&lt;/a&gt;] &lt;a href=&#34;https://www.reuters.com/article/us-health-coronavirus-newzealand/new-cases-end-new-zealands-covid-free-status-auckland-back-in-lockdown-idUSKCN257197&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reuters | New Zealand Ends &amp;lsquo;COVID-Free&amp;rsquo; Status; Ackland Back in Lockdown&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;8&#34;&gt;8&lt;/a&gt;] &lt;a href=&#34;https://www.bbc.com/news/world-asia-53796434&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BBC | Jacinda Ardern Delay Election Over Coronavirus Fears&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;9&#34;&gt;9&lt;/a&gt;] &lt;a href=&#34;https://www.nytimes.com/2020/07/07/business/sweden-economy-coronavirus.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;New York Times | Sweden Has Become the World&amp;rsquo;s Cautionary Tale&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;10&#34;&gt;10&lt;/a&gt;] &lt;a href=&#34;https://www.nytimes.com/2020/07/07/business/sweden-economy-coronavirus.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Our World in Data | Scandinavian COVID-19 Population-Adjusted Death Rate&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;11&#34;&gt;11&lt;/a&gt;] &lt;a href=&#34;https://en.wikipedia.org/wiki/Heparin-induced_thrombocytopenia&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia | Heparin-induced thrombocytopenia (NIT)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;12&#34;&gt;12&lt;/a&gt;] &lt;a href=&#34;https://www.propublica.org/article/what-antibody-studies-can-tell-you-and-more-importantly-what-they-cant&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ProPublica | What Antibody Studies Can Tell You — and More Importantly, What They Can’t &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;13&#34;&gt;13&lt;/a&gt;] &lt;a href=&#34;https://theconversation.com/sweden-under-fire-for-relaxed-coronavirus-approach-heres-the-science-behind-it-134926&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Conversation | Sweden under fire for ‘relaxed’ coronavirus approach – here’s the science behind it&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analyzing the Impact of COVID-19 on Retail</title>
+      <link>https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/</link>
+      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/</guid>
+      <description>&lt;p&gt;It doesn&amp;rsquo;t take a genius to know that 2020 has been a year for the United States economy. Tens of millions were encouraged or forced to remain indoors in an attempt to slow the spread. Only a few industries/businesses were allowed to stay open, as they were classified as &amp;ldquo;essential businesses.&amp;rdquo; The longest expansion in U.S. history came to an end in Q1 2020, which resulted in a -5.0% contraction in economic activity (followed by a -32.9% drop in Q2).&lt;/p&gt;
+&lt;p&gt;Within the same period, retail sales declined -0.87% YoY for Q1 2020, equating to a ~5 billion drop. During the second quarter, sales dropped a whopping 8.16% YoY, resulting in an approximately 12 billion decline in retail sales. (although the quarterly decline in sales is the largest since the Great Recession, the monthly decline is the largest in history)&lt;/p&gt;
+&lt;p&gt;However, during the last two months, retail sales have recovered to pre-recession levels, and total sales are the highest.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/retailsales2020.png&#34; alt=&#34;Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As everyone across the country is adjusting to a life with COVID, it&amp;rsquo;s interesting to see which industries benefit the most, and which industries are the most impacted. The Census Bureau publishes data on Advanced Monthly Sales for Retail and Food Services; statistics are gathered utilizing a stratified random sampling method that tracks approximately 5,500 retail and food service firms. The data is then weighted and benchmarked to represent a complete universe of over three million retail and food service firms. The data goes as far back as 1992.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/monthly_retail_sales_2020.png&#34; alt=&#34;Monthly Retail Sales 2020&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We saw a slight decline in February, which can be seen as a result of seasonality (a decline as a result of holiday shopping MoM). However, during the two months afterward, we&amp;rsquo;ve experienced some extreme declines in retail sales, most of which occurred in April. Most states haven&amp;rsquo;t instituted their lockdowns until the end of March or the beginning of April.&lt;/p&gt;
+&lt;h2 id=&#34;retail-sales-pre-lockdown&#34;&gt;Retail Sales Pre-Lockdown&lt;/h2&gt;
+&lt;p&gt;In February 2020, retail sales declined -0.44% MoM. The only industries which experienced growth were general merchandise, sporting goods/hobby stores, pharmacies/drug stores, fuel dealers, beer/liquor stores, electronic retail, and nonstore retailers. Nonstore retailers are essentially any business the primarily sells merchandise online, the industry with the largest monthly growth of 1.2%.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/february_2020.png&#34; alt=&#34;February Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The most significant declines include gasoline stations (-2.95%), men&amp;rsquo;s clothing stores (-2.86%), automotive parts (-2.38%), general clothing stores (-1.8%), and building material/suppliers dealers (-1.63%). Out of 30 NAICS industries, just seven experienced sales growth for the entire month of February.&lt;/p&gt;
+&lt;h2 id=&#34;retail-sales-post-lockdown&#34;&gt;Retail Sales Post-Lockdown&lt;/h2&gt;
+&lt;p&gt;In April 2020, retail sales declined -14.7%; just two industries are experiencing growth during the lockdown: electronic shopping/mail-order houses and nonstore retailers. To be expected, as non-essential businesses are forced to close down, and people are encouraged to work from home if they are able. Social distancing policies instituted by state and local governments fueled demand for products designed to help people work from home and keep in contact with loved ones, such as computers, webcams, desks, monitors, etc.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/april_2020.png&#34; alt=&#34;April Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;One would also assume that industries such as grocery and fast food would see some growth during this period, considering these are classified as essential businesses. However, grocery and fast food industries experienced a -13.37% and -34.32% decline, respectively. This decline could be attributed to safety concerns (unable to implement the necessary infrastructure to continue operating safely). It could be due to the decrease in mobility (many of the food and drinking places include restaurants and bars, which people can no longer patronize).&lt;/p&gt;
+&lt;p&gt;Whatever the reason, it&amp;rsquo;s pretty clear that both of these industries took a subtaintial hit. There is a reason why the Paycheck Protection Program (PPP) allowed even large resturant chains to recieve loans, despite the program being designed specifically for small businesses.&lt;/p&gt;
+&lt;p&gt;For the most part, the United States is a service-oriented economy. Fewer people moving around generally implies fewer money-making opportunities for businesses, regardless of industry.&lt;/p&gt;
+&lt;h2 id=&#34;retail-sales-after-reopening&#34;&gt;Retail Sales After Reopening&lt;/h2&gt;
+&lt;p&gt;Although &amp;ldquo;reopening&amp;rdquo; is a somewhat subjective term at this point, we can say that relative to the initial lockdowns, most states have started to liberalize their economies. Like Florida, most states lifted its lockdown at the beginning of May, while others such as New York and New Jersey waited until the beginning of June. Some states, such as South Dakota, never instituted a lockdown at all. As such, we can spot the growth of the recovery at the exact movement states began to reopen.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/may_2020.png&#34; alt=&#34;May Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;During May, Retail sales grew 18.27%, which shouldn&amp;rsquo;t be surprising to anyone if you shut down the economy for nearly two months. Also, every industry experienced sales growth, which also shouldn&amp;rsquo;t be surprising. If you&amp;rsquo;re at rock bottom, the only place left to go is up.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/top_sales_may_2020.png&#34; alt=&#34;Top 10 Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The top 5 industries with the most growth in May include shoe stores, clothing accessories, clothing stores, women&amp;rsquo;s clothing, and sporting goods. An obvious explanation would consist of the resurgence of warmer weather. People are forced to remain inside, and it&amp;rsquo;s challenging to keep doing in a more temperate climate. Plenty of clothing stores also reopened just in time for the summer season; so the surge in sales also coincides a change in climate.&lt;/p&gt;
+&lt;p&gt;A not so obvious explanation would include a change in habits such as eating and exercising. Being forced to remain indoors, we&amp;rsquo;re probably eating more than usual and not exercising as often (considering the gyms are closed). Combined with all of the stress that everyone is going through, people are most likely gaining more weight. As such, they are probably shopping for clothes that fit or making adjustments to a current wardrobe.&lt;/p&gt;
+&lt;h2 id=&#34;the-most-covid-proof-industries&#34;&gt;The Most COVID-Proof Industries&lt;/h2&gt;
+&lt;p&gt;In the investing world, it&amp;rsquo;s crucial to find industries that are &amp;ldquo;recession-proof.&amp;rdquo; Finding industries that are immune to pandemics, COVID in particular, is especially tricky. We want to figure out which industries performed the best ( or worse) during the first half of 2020. For this, we&amp;rsquo;re going to calculate the percentage change from January to June.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/percentage_change_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;So if you were in the business of selling electronics and sporting goods, you most likely saw a lot of business. Interestingly, people have pointed out that liquor stores are not an essential business but noticed they were exempt from many shelters in place orders. There are most likely technical reasons for this (alcohol is still technically food), historical reasons (the prohibition era), and personal reasons (it helps reduces stress).&lt;/p&gt;
+&lt;p&gt;If you owned a department store, a place where clothing and general appliances were sold, or if you owned a bar/restaurant, you most likely lost a lot of money. This is understandable; if you want to prevent the spread of a deadly virus, then you&amp;rsquo;re not going to keep places where people have to be within close proximity open.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/online_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As such, we see a temporary bifurcation of the retail market. For as long as we are following CDC safety guidelines, only industries that are considered the most &amp;ldquo;safe&amp;rdquo; and essential will outperform. If your business requires people to travel, be near one another, and require physical inventory, these industries will most likely take a hit until we&amp;rsquo;ve controlled the spread of this virus.&lt;/p&gt;
+&lt;p&gt;On the other hand, we need consider the possibility that some of the businesses that were forced to close may never repoen.&lt;/p&gt;
+&lt;p&gt;Although the current situation has made the traditional way of engaging in commerce inconvenient, plenty of businesses have found ways to accommodate their customers (such as no-contact delivery). These days, it doesn&amp;rsquo;t hurt to have an online presence.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Politics of Pandemics</title>
+      <link>https://kidquant.com/post/2020-07-11-the-politics-of-pandemics/</link>
+      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-07-11-the-politics-of-pandemics/</guid>
+      <description>&lt;p&gt;I bet you&amp;rsquo;d never thought we&amp;rsquo;d find a way to politicize a deadly virus. I suppose that is what happens when your government operates under a system of federalism [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. It&amp;rsquo;s almost as if people are just now realizing, when it comes to specific issues, that the state and local governments are more important than the federal government. In some ways, this crisis may have renewed our appreciation for the federalist system of government. In others, it has also magnified the polarization.&lt;/p&gt;
+&lt;p&gt;Last month, New York State Governor Andrew Cuomo stated on Twitter that, &amp;ldquo;We [NY State] didn&amp;rsquo;t just flatten the curve &amp;ndash; we crushed it.&amp;rdquo; This statement isn&amp;rsquo;t remotely true, for reasons that I&amp;rsquo;ve outlined [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Of course, I never realized at the time how much this statement would be used as a launching pad for the &amp;ldquo;blue states vs. red state&amp;rdquo; mantra. (Even during the early months of the Pandemic, it was &amp;ldquo;blue state vs. red state&amp;rdquo; in terms of testing, reopening, and a few other issues)&lt;/p&gt;
+&lt;p&gt;And why not use a pandemic as an opportunity to advance that agenda, especially since Twitter makes it so easy for certain people to get away with being mildly dishonest. (To a certain degree, Twitter &amp;ldquo;fact-checks&amp;rdquo; post on their platform)&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/deleted_post.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;What is the evidence does Neera Tanden use to support this claim? Who could say? It is, after all, just a talking point, but is there any basis for this claim?&lt;/p&gt;
+&lt;p&gt;Stating such a claim would require us to ignore some basic facts, such as 45% of all COVID-19 deaths originates in just four states (New York, New Jersey, Massachusetts, and California). You&amp;rsquo;d also have to ignore the fact that California, Colorado, Michigan, Illinois, Minnesota, and Nevada are all experiencing a surge in cases, along with most states in the country. (These are all &amp;ldquo;blue states,&amp;rdquo; in case you were wondering.)&lt;/p&gt;
+&lt;p&gt;The purpose of this post is not to say that, “Democrats and their partisan-politics are beyond the pale.” It’s certainly not beneath Republicans to engage in the same sort of distasteful rhetoric [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;]. The point is, under our highly polarizing circumstances, we have become our source for false information. An Oxford study has found, when given accurate statistics on controversial issues, people tend to misremember those numbers to help align with commonly held beliefs [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;For example, here is a fact that most people don&amp;rsquo;t know: it was primarily travel &lt;em&gt;from&lt;/em&gt; New York City that seeded the wave of U.S. outbreaks for the rest of the country [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;From the New York Times:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;New York City’s coronavirus outbreak grew so large by early March that the city became the primary source of new infections in the United States, new research reveals, as thousands of infected people traveled from the city and seeded outbreaks around the country.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The research indicates that a wave of infections swept from New York City through much of the country before the city began setting social distancing limits to stop the growth. That helped to fuel outbreaks in Louisiana, Texas, Arizona and as far away as the West Coast.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Researchers studied the genetic samples of infected individuals from many different parts of the country. They&amp;rsquo;ve found that the majority of infectives were exposed by people traveling from New York City.&lt;/p&gt;
+&lt;p&gt;Researchers were able to discover where the primary vectors originate by looking at the genetic code of the virus. Viruses tied to New York have a distinct genetic signature that links them to outbreaks in Europe. In contrast, the spread from Washington State has a signature that connects directly to China.&lt;/p&gt;
+&lt;p&gt;The following graphic shows the breakdown between the genetic samples that originate from Washington State (yellow bars) or New York City (red bars). It is well known that the earliest confirmed cases were originally found in these two areas.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/infectives_origin.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As we can see, the vast majority of the spread is associated with an outbreak in New York City, with very little originating from Washington. This is not the say that the spread of the virus was primarily domestic (the virus was still brought into America, from abroad). However, the idea &amp;ldquo;the whole country could be seeing their surges&amp;rdquo; if the earliest of confirmed cases appeared in states like Texas is nonsensical.&lt;/p&gt;
+&lt;p&gt;After all, New York City alone has ~65 million visitors at any given year, both domestic and international. The largest domestic markets originate in visitors from the NYC Metro Area (New Jersey, Connecticut, Pennsylvania), Massachusetts, Washington, D.C., and California (specifically, Los Angeles) [&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;]. Considering a large amount of international and domestic travel occurs in New York City, it&amp;rsquo;s easy to see how NYC was the primary vector for the domestic spread. After all, the spread occurred between residents leaving the city and non-residents who passed through the city.&lt;/p&gt;
+&lt;p&gt;Would things be different if the earliest of confirmed cases were found in Texas? It&amp;rsquo;s hard to say. Texas has its fair share of visitors, as it shares a broader with Mexico. Many of the students who went to Mexico for spring break contracted the virus and spread it among the population in Texas [&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;]. Although it&amp;rsquo;s not very likely that the virus would have traveled very far, even if the outbreak did start in Texas instead of New York.&lt;/p&gt;
+&lt;p&gt;Unlike the &lt;em&gt;Mathematics of Pandemics&lt;/em&gt;, the politics are relatively simple. It doesn&amp;rsquo;t require any understanding of Ordinary Differential Equations; no fundamental understanding of probability; you don&amp;rsquo;t even need to use arithmetic [&lt;a href=&#34;#8&#34;&gt;8&lt;/a&gt;]. One merely needs to be married to an ideology, vilify their opposition, and present their ideas in the best possible light, regardless of how these poorly thought-out ideas end up infecting (pun intended) our political discourse.&lt;/p&gt;
+&lt;p&gt;As long as people reflect and understand how they&amp;rsquo;ve arrived at their flawed conclusions, being wrong isn&amp;rsquo;t the worst thing in the world. However, too often in our political system, we find that the price for being wrong is often paid for by other people.&lt;/p&gt;
+&lt;p&gt;One of the perks of being part of a &amp;ldquo;think-tank,&amp;rdquo; I suppose.&lt;/p&gt;
+&lt;h2 id=&#34;update&#34;&gt;Update&lt;/h2&gt;
+&lt;p&gt;The tweet in question no longer exists. Assuming Tanden decided to come to her senses and delete such a terrible take. No worries, as I’ve managed to preserve what is left of the post, and the tweet in question is documented in major news publications [&lt;a href=&#34;#9&#34;&gt;9&lt;/a&gt;].&lt;/p&gt;
+&lt;h3 id=&#34;sources&#34;&gt;Sources&lt;/h3&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://en.wikipedia.org/wiki/Federalism&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia | Federalism&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/post/2020-06-08-ny-crushed-by-curve/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kid Quant | No, New York Has Not Flattened The Curve&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://www.businessinsider.com/mcconnell-blue-state-bailout-coronavirus-cash-reserves-levels-recession-aid-2020-4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Business Insider | McConnell says giving pandemic aid to states would be a &amp;lsquo;blue state bailout.&amp;rsquo;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://academic.oup.com/hcr/article-abstract/46/1/25/5652186?redirectedFrom=fulltext&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Coronel, Poulsen, &amp;amp; Sweitzer (2019) | Investigating the Generation and Spread of Numerical Misinformation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;5&#34;&gt;5&lt;/a&gt;] &lt;a href=&#34;https://www.nytimes.com/2020/05/07/us/new-york-city-coronavirus-outbreak.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; New York Times | Travel From New York City Seeded Wave of U.S. Outbreaks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;6&#34;&gt;6&lt;/a&gt;] &lt;a href=&#34;https://indd.adobe.com/view/e91e777a-c68b-4db1-a609-58664a52cffd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; NYC &amp;amp; Company | Travel &amp;amp; Tourism Trend Report&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;7&#34;&gt;7&lt;/a&gt;] &lt;a href=&#34;https://www.cdc.gov/mmwr/volumes/69/wr/mm6926e1.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Centerfor Diease Control | COVID-19 Outbreak Among College Students After a Spring Break Trip to Mexico &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;8&#34;&gt;8&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kid Quant | The Mathematics of Pandemics &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;9&#34;&gt;9&lt;/a&gt;] &lt;a href=&#34;https://nypost.com/2020/07/13/its-just-nuts-to-praise-nys-success-against-the-coronavirus/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;New York Post |  It’s just nuts to praise New York’s ‘success’ against coronavirus&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>No, New York Has Not Flattened The Curve</title>
+      <link>https://kidquant.com/post/2020-06-08-ny-crushed-by-curve/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-06-08-ny-crushed-by-curve/</guid>
+      <description>&lt;p&gt;I keep reading &amp;ndash; and hearing &amp;ndash; that New York has successfully &amp;ldquo;flattened the curve,&amp;rdquo; and it makes me wonder if people have just decided to go into hibernation the past three months. It&amp;rsquo;s not outside the realm of possibility; we all have lots of free time on our hands now. However, it&amp;rsquo;s a sign that our political discourse has become so warped that our politicians can say things that are patently false with very little pushback.&lt;/p&gt;
+&lt;!-- tweet 1269344344374497280 --&gt;
+&lt;p&gt;What did I expect? As a politician, he&amp;rsquo;s not going to say, &amp;ldquo;New York has been decimated by the virus,&amp;rdquo; but that&amp;rsquo;s precisely what happened. I haven&amp;rsquo;t talked about &amp;ldquo;flatten the curve&amp;rdquo; at all on this blog because it assumed that it was well understood by most. I was obviously wrong. How else can a governor of one of the largest states get away from saying, &amp;ldquo;we crushed&amp;rdquo; the curve?&lt;/p&gt;
+&lt;h2 id=&#34;what-does-flatten-the-curve-even-mean&#34;&gt;What Does &amp;ldquo;Flatten The Curve&amp;rdquo; Even Mean?&lt;/h2&gt;
+&lt;p&gt;Flatten The Curve is an objective, which refers to the &amp;ldquo;what if&amp;rdquo; epidemiological curve. What it means is that instead of the rate of rising being very rapid, perhaps a doubling in cases every 4 - 7 days, we cut the doubling to every 2 - 3 weeks. The purpose of flattening the curve was to prevent an overwhelming of the health care system, so health care professionals can find more effective ways of treating infected patients.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/pandemic.png&#34; alt=&#34;Pandemic Curves&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The following image shows what a flattened curve should obviously look like. The red-shaded steap curve shows a scenario with preventative measures (social distancing, mask, etc.), while blue-shaded curve shows a scenario with protective measures. The blue-shaded curve is flatter than the red-shaded curve, and that is the scenario that we are trying to implement.&lt;/p&gt;
+&lt;p&gt;Notice how I didn&amp;rsquo;t say any of this &lt;em&gt;would&lt;/em&gt; happen, because there is no guarantee that that it should. There are other factors that we may fail to consider and you&amp;rsquo;ll know you&amp;rsquo;re at the peak until you&amp;rsquo;ve reached it.&lt;/p&gt;
+&lt;p&gt;So, what happened? Did we get the blue-shaded flat curve?&lt;/p&gt;
+&lt;p&gt;About a month or so ago, I did a project on tracking COVID-19 cases globally; part of that analysis involved looking at different U.S. States [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. Around that time, cases in New York were doubling every 7 days.&lt;/p&gt;
+&lt;p&gt;Today New York, the increase in cases is relatively stable, trending at ~1,200 additional cases a day. However, during the early days of the pandemic, the New York average around 10,000-12,000 additional cases day. The state was probably responsible for at least 30 percent of all new coronavirus infections.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/new_york_cases_0704.png&#34; alt=&#34;New York Cases&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;So, to answer a previously-posed question, no, we did not get the blue-shaded flat curve, synonymous with a gradual increase in new infections. Instead, what we witness was a rapid spike in daily cases. At least, when compared to cases in Washington State, which did experience a large surge in cases but managed to taper off early during the crisis.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/washington_cases_0704.png&#34; alt=&#34;New York Cases&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;But that is all in the past. New York is doing relatively better now, even as cases surge in places that were previously managing the virus well. So, what exactly is New York doing that is so special? It&amp;rsquo;s not as if New York is doing anything spectacular when it comes to testing or tracing.&lt;/p&gt;
+&lt;p&gt;The main thing that happened&amp;hellip; was the virus rushed through the most susceptible people in the population.&lt;/p&gt;
+&lt;p&gt;In my post, &lt;em&gt;The Mathematics of Pandemics&lt;/em&gt;, I laid out the framework as to why you can prove (mathematically) that the virus always dies out [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. (susceptible people get exposed; exposure becomes an infection; infectives either recover or die) It doesn&amp;rsquo;t happen when the disease infects everyone in the population, or when the pathogen mutates into something else.&lt;/p&gt;
+&lt;p&gt;The simple reality is that contact between the remaining infectives and susceptibles become so infrequent that the infectives never get a chance to pass on the disease before being removed from the equation (recovering with immunity or dying). The virus dies due to the lack of infectives, not the lack of susceptibles.&lt;/p&gt;
+&lt;p&gt;For the most part, this has happened (is happening) in New York. Several factors can increase the risk of the susceptibility of COVID-19; however, we know that the disease is more susceptible to individuals over the age of +65-years-old. We can see from the data, the death rate for people age 65 and over is more than ten times higher than for people under 65-years-old [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;So if your objective is to flatten the curve starting March, you would expect to see a steady increase in the number of infections, spread out over months. If you failed to flatten the curve, you saw a huge spike in cases, followed by a massive spike of fatalities, followed by a rapid decrease, as we saw here in New York.&lt;/p&gt;
+&lt;p&gt;Putting this in perspective, if the State of New York were a country, it would have the highest death rate in the world. That&amp;rsquo;s not a novelty.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/nyc_deaths.jpg&#34; alt=&#34;New York Deaths&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We are noticing a surge in cases in other parts of the country, places that have yet to experience their first wave (Flordia and Arizona). Deaths in these states are relatively small. The death rate from COVID-19 is ~170 per 100,000 people in New York State [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;], Arizona has reported ~1,000 COVID deaths. For Arizona to have a death rate comparable to New York, there would need to be +11,200 additional deaths from COVID in Arizona, which doesn&amp;rsquo;t seem likely. (Florida would need to have +35,000 new deaths)&lt;/p&gt;
+&lt;p&gt;As the state begins its Phase One plan for reopening the economy, it is unlikely to result in a huge surge in cases. However, cases will eventually start rising again. Once it does, will New Yorkers &lt;em&gt;tolerate&lt;/em&gt; another lockdown?&lt;/p&gt;
+&lt;h3 id=&#34;sources&#34;&gt;Sources&lt;/h3&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/project/tracking-covid19-cases/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kid Quant | Tracking COVID-19 Cases Globally&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kid Quant | The Mathematics of Pandemic&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://www.statista.com/statistics/1109867/coronavirus-death-rates-by-age-new-york-city/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Statista | Death rate for COVID-19 in New York City by age&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://www.statista.com/statistics/1109867/coronavirus-death-rates-by-age-new-york-city/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Statista | Death rates from coronavirus (COVID-19) in the U.S.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Measuring Pandemic Progress: Log Scale vs. Per Capita</title>
+      <link>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</guid>
+      <description>&lt;p&gt;There have been many visualization projects created for the purposes of modeling COVID-19 cases and deaths. The best known are the graphs produced by John Burn-Murdock of the Financial Times. You can view his very create and beautiful COVID visualizations on his Twitter Page.&lt;/p&gt;
+&lt;p&gt;Before COVID, I think people were more used to viewing data in relative terms. Now, log-scale visualizations have become more widespread, primarily due to the way diseases spread during a pandemic.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s become so popular, programmers developed ways to replicate these charts using Python and R packages. The most notable being &lt;code&gt;tidycovid19&lt;/code&gt; package designed by Joachim Gassen. You can few the package on his GitHub [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-R&#34; data-lang=&#34;R&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Importing all of the necessary packages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tidyverse&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tsibble&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tidycovid19&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# selecting how the data will be formatted&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;updates&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;download_merged_data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cached&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;TRUE&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# plotting the countries of interests, &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;countries&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;AUS&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;NZL&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;ITA&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;ESP&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;USA&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;GBR&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;updates&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;plot_covid19_spread&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;highlight&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;countries&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;type&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;confirmed&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;edate_cutoff&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;min_cases&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Measuring-Progress/first_40_days.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+However, people have often wondered why we don&amp;rsquo;t present these numbers on a per capita basis? Burn-Murdock has provided a data-oriented reason why log-scales are used instead of per capita scaling.&lt;/p&gt;
+&lt;!-- tweet 1244380095164420101 --&gt;
+&lt;p&gt;It isn&amp;rsquo;t always clear when per capita metrics should (or should not) be used. However, many don&amp;rsquo;t often realize how per capita figures can distort the story of what is going on in the region.&lt;/p&gt;
+&lt;p&gt;For example, Switzerland has 2,975 cases per capita, while the United States has 1,841 cases per capita [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. However, cases are currently growing and doubling faster in the U.S. compared to Switzerland [3]. Obviously, Switerzland&amp;rsquo;s high per capita figure is primarily attributed to its small population size, not its response to containing the virus.&lt;/p&gt;
+&lt;p&gt;Simply put: per capita figures makes small countries look big, and vice versa. Not only that, per capita figures only shifts the curves vertically; it would not change the trajectory or slope of the curves. Remember the following:&lt;/p&gt;
+&lt;p&gt;$$log(Y_{t}/P_{t})=log(Y_{t})-log(P_{t})$$&lt;/p&gt;
+&lt;p&gt;Where $Y_{t}$ is the number of cases on dat $t$ and $P_{t}$ is the population on day $t$. Population doesn&amp;rsquo;t change much over a period of time, so per capita figures involves subtracking a constant from the log case data.&lt;/p&gt;
+&lt;p&gt;The same point applies to the differences in testing policies between countries. If Country A is testing more as a percentage of the population relative to Country B, then these differences will show up as a vertical difference between the plots. They won&amp;rsquo;t; however, show up in the trajectory.&lt;/p&gt;
+&lt;p&gt;Although these choices are still a bit of a judgment call (not standard among statisticians), we should look at the slope of the lines if we want to explore how countries are responding to the pandemic relative to others.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Measuring-Progress/cases_logratio.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;While the graph doesn&amp;rsquo;t tell us everything about how the pandemic is overwhelming the different health care systems around the world, it does show how each country is attempting to slow the infection rate and reduce the slope of their curves. It&amp;rsquo;s easier to compare the trajectory in this way, considering that we have to look to see which country is trending higher.&lt;/p&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://github.com/joachim-gassen/tidycovid19&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub | Jaochim Gassen TidyCovid19 Repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://twitter.com/jburnmurdoch/status/1244368708249817091&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter | John Burn-Murdock &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://ourworldindata.org/grapher/total-daily-covid-cases-per-million?tab=map&amp;amp;year=2020-04-15&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Our World In Data | Global COVID Cases per capita as of April 15th, 2020&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/project/tracking-covid19-cases/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KidQuant | Data Science Project on COVID Tracking (Post from Apr 13, 2020)&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Mathematics of Pandemics</title>
+      <link>https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/</link>
+      <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/</guid>
+      <description>&lt;p&gt;So, this is our very first pandemic. At least, it&amp;rsquo;s the first serious pandemic. I&amp;rsquo;ve lived through the 2009 H1N1 Pandemic, but I don&amp;rsquo;t really remember it all that well. All I know is that H1N1 is not nearly as serious as this, because now I&amp;rsquo;m forced to work from home.&lt;/p&gt;
+&lt;p&gt;Right now, COVID-19, a.k.a, the coronavirus is on our doorstep. There are more than 423,000 confirmed cases in the United States; 14,700 confirmed deaths [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. New York has the highest record death toll; we surpassed Washington State a few weeks ago. It certainly does feel like an apocalyptic scenario is about to occur.&lt;/p&gt;
+&lt;p&gt;Regardless, one good thing that can occur out of this situation is that the Coronavirus has rekindled the public&amp;rsquo;s interest in Mathematics. At least, marginally. Articles are circulating explaining &amp;ldquo;dangerous mathematics behind the coronavirus,&amp;rdquo; and how cases could grow exponentially [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-19-exponential.png&#34; alt=&#34;Coronavirus cases US&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The idea behind exponential growth as it relates to pandemics is that one person who has contracted the virus comes into contact with anyone. So the total number of cases increases to 2. Assume each infected person will come in contact with 1 new person. Then those 2 infected people will infect 2 more people, increasing confirmed cases to 4. Those 4 will eventually become 8, then 8 becomes 16, and so on.&lt;/p&gt;
+&lt;p&gt;This is how COVID-19 could work, but at best, it&amp;rsquo;s an oversimplification. Everyone online (and by everyone, I mean Twitter) has an opinion on what they believe will happen. Some people are behaving like it&amp;rsquo;s the end of the world; others think this will be over by Easter.&lt;/p&gt;
+&lt;p&gt;I, on the other hand, found that it is more useful to learn about the methodologies epidemiologists are using the model the virus.&lt;/p&gt;
+&lt;h2 id=&#34;the-sir-model&#34;&gt;The SIR Model&lt;/h2&gt;
+&lt;p&gt;The SIR model is a simple model developed by Ronald Ross and William Hamar, but greatly expanded by Anderson McKendrick and William Kermack, which simplified the process. Using this model, we assume the population consist of three types of individuals, which are denoted by variables $S$, $I$, and $R$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$S$ is the number of &lt;strong&gt;susceptibles&lt;/strong&gt;; who are not infected, but could become infected at a later point.&lt;/li&gt;
+&lt;li&gt;$I$ is the number of &lt;strong&gt;infectives&lt;/strong&gt;; individuals who have the diease and can transmit to others.&lt;/li&gt;
+&lt;li&gt;$R$ is the number of &lt;strong&gt;recovered&lt;/strong&gt; or removed; they cannot become infected or transmit to others.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It should be noted that people that have recovered from a virus may have developed a natural immunity over time, or they may have currently been in isolation, or they may have died. The SIR model doesn&amp;rsquo;t distinguish between these possibilities.&lt;/p&gt;
+&lt;p&gt;New infections will occur as a result of contact between infectives and susceptibles. In the SIR model, the rate at which new infections happen (as a function fo time) is $\beta$, $S$, $I$, for some positive constant $\beta$. These interactions occur as a form of &amp;ldquo;mixing,&amp;rdquo; and mixing allows us to utilize ordinary differential equations (ODE).&lt;/p&gt;
+&lt;p&gt;You don&amp;rsquo;t need any knowledge about differential equations. However, derivatives are how mathematicians describe the rate of change of as time goes on.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\frac{dS}{dt} &amp;amp; = -\beta \cdot S \cdot I \
+\frac{dI}{dt} &amp;amp; = \beta \cdot I \cdot \frac{S}{N} - \nu \cdot I \
+\frac{dR}{dt} &amp;amp; = \nu \cdot I,
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;where the diease transmission rate $\beta &amp;gt; 0$, and the recovery rate $\nu &amp;gt; 0$ (or in other words, the duration of infection $D=1/\nu$).&lt;/p&gt;
+&lt;p&gt;As you may have noticed, that total population $S+I+R$ is constant because the differential equation $\frac{dS}{dt}+\frac{dI}{dt}+\frac{dR}{dt}=-\beta IS+(\beta IS -\nu I) + \nu I=0$&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s probably easier to visualize this instead of talking about this subject in the abstract. There are some developers on GitHub that have implemented the SIR model for creating an infectious disease model. One of whom goes by the name of Henri Froese, who is a computer science student [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;h3 id=&#34;model-parameters&#34;&gt;Model Parameters&lt;/h3&gt;
+&lt;p&gt;We want to derive our differential equation, $\frac{dS}{dt}$, $\frac{dI}{dt}$, and $\frac{dR}{dt}$ with the parameters $S$, $I$, $R$, $\beta$, and $\nu$. We will also adjust for the population&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# creating a function for the differential equation&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;deriv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dSdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dIdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dRdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dSdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dIdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dRdt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We&amp;rsquo;re simulating a pandemic in a town with a population of 1,000 (not a very large but it&amp;rsquo;s easier to wrap your head around). We will assume that an infected person infects one other person per day ($\beta = 1$).&lt;/p&gt;
+&lt;p&gt;For our made up virus, we will set the duration of infection for four days. The initial condition starts with one infection, which leaves 999 susceptible people (and no recoveries, so far).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;N&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;4.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;S0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;999&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;linspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;49&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;y0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ret&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;odeint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deriv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;args&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ret&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;T&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The solution to a differential equation is any condition that satisfies it, so we are going to use the &lt;code&gt;odeint&lt;/code&gt; method to integrate the differential equation. Afterward, we unpack the results for S, I, and R into variables which we can then plot.&lt;/p&gt;
+&lt;h3 id=&#34;the-diease-always-dies-out&#34;&gt;The Diease Always Dies Out&lt;/h3&gt;
+&lt;p&gt;There are lots of high profile individuals; particularly, President Trump has suggested that the virus will go away on its own without a vaccine [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;]. This may happen; it may not happen. We don&amp;rsquo;t know enough about the virus to determine if this is true. One thing is certain; we know enough about the epidemiology to say that the virus disappearing isn&amp;rsquo;t outside the realm of possibility [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;]. Mathematically, we can prove this by contradiction.&lt;/p&gt;
+&lt;p&gt;Consider the differential equation for the recovery rate, $\frac{dR}{dt}=\nu I$. Let&amp;rsquo;s say that the initial condition $I(\infty)=0$ for all initial conditions, without having a formula for $I(t)$. If not, $\frac{dR}{dt}=\nu I$ implies that for $t$ sufficiently large, $\frac{dR}{dt}&amp;gt;\nu I(\infty)/2&amp;gt;0$, and this implies that $R(\infty)=\infty$, which is a contradiction.&lt;/p&gt;
+&lt;p&gt;As such, at some point, the virus will eventually die out. It&amp;rsquo;s all a matter of how many people must become infected with the virus.&lt;/p&gt;
+&lt;h3 id=&#34;the-epidemic-threshold-theorem&#34;&gt;The Epidemic Threshold Theorem&lt;/h3&gt;
+&lt;p&gt;The effective reproductive number $R_{e}=(S(0)/N)b/\nu$ and the basic reproductive number $R_{0}=b/\nu$. If the entire population is initially susceptible, for example, $S(0)=N-1, I(0)=1, R(0)=0,$ and large (the model&amp;rsquo;s assumption), then $R_{e}=((N-1)/N)b/\nu$ is approximately equal to $R_{0}$. As such, we will assume the quantity $(N-1)/N$ is equal to 1.&lt;/p&gt;
+&lt;p&gt;As we can see in our simple model, confirmed cases peak around day 10 and addition cases begin to decrease until the virus finally dies out. We already observed that $(\frac{dI}{dt})(0)=\nu (R_{e}-1)I(0)$, which implies that the number of infected individual initially starts growing/decreasing exponential at the rate $\nu(R_{e}-1).$&lt;/p&gt;
+&lt;p&gt;As such, there are two conditions that determines whether an infectious diease will quickly die out or whether it will invade the population can cause an epidemic:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Case #1&lt;/strong&gt;: If $R_{e}\leq 1$, then $I(t)$ decreases monotonically to zero as $t \rightarrow \infty $.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Case #2&lt;/strong&gt;: If $R_{e}\geq 1$, then $I(t)$ starts increasing, reaches its maximum, and then decreases to zero as $t \rightarrow \infty$. The scenario of the increasing number cases is what starts an epidemic.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We will plot how this works using Python.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;plotsir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;subplots&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;figsize&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;b&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;linewidth&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;label&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Susceptible&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;y&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;linewidth&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;label&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Infected&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;g&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;linewidth&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;label&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Recovered&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_xlabel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Time (days)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;s1&#34;&gt;&amp;#39;Infected/Susceptible/Recovered People Over Time&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fontsize&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;.27&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;yaxis&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_tick_params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xaxis&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_tick_params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;grid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;which&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;major&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;w&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lw&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ls&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;-&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;legend&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;legend&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;legend&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get_frame&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;spine&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;top&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;right&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;bottom&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;left&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;spines&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;spine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_visible&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;plotsir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here is the output of the model.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/sir_model1.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;the-seirseid-model&#34;&gt;The SEIR/SEID Model&lt;/h2&gt;
+&lt;p&gt;The first SIR model is much too simple for our very complicated situation. We also may need to consider the fact that people who have the virus may not exhibit any symptoms. Some people who contract a virus may not immediately become infectious, at least, not to the point where they spread the virus around to other people. This period is known as the incubation period. The incubation period is the time between the exposure of a disease when symptoms of the disease begin to show.&lt;/p&gt;
+&lt;p&gt;Right now, we estimate that the incubation period for COVID-19 is a little over 5 days. The vast majority of people who begin to show symptoms usually do so within 11.5 days of infection [&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;]. However, the problem with the incubation period with COVID-19 is that people become infectious without showing any symptoms at all. These factors are what makes the coronavirus particularly deadly.&lt;/p&gt;
+&lt;p&gt;Because of the complexity of the incubation period, we need to account for another variable, the &lt;em&gt;Exposed&lt;/em&gt;. As such, we introduce the variant of the SEIR model:  Susceptible people contract the virus, then become exposed, then become infected, then eventually recover. We introduce a new variable to represent the rate at which those exposed become infected, $\delta$.&lt;/p&gt;
+&lt;p&gt;We also need to account for the fact that some people never recover from the virus. Some people pass away due to complications related to a disease, as it is the case with COVID-19. Of course, you can only die from a disease that you&amp;rsquo;ve been exposed to, so we introduce a new variable, $\rho$, which represents the rate at which people die from the virus.&lt;/p&gt;
+&lt;p&gt;Considering we have two possibilities, recovery and death, we need to account for the probability of going from infected to recovered or dead. We introduce one more variable, $\alpha$, which accounts for the death rate. Suppose 100 people are infected a day; 5% are estimated to die from the virus. Given these factors, 95% of people are estimated to recover.&lt;/p&gt;
+&lt;p&gt;The probability of going from infected to death is $alpha$ and the probability of going to from infected to recovered is $1-\alpha$.&lt;/p&gt;
+&lt;p&gt;As such, we have the following differential equations:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\frac{dS}{dt} &amp;amp; = -\beta \cdot I \cdot \frac{S}{N} \
+\frac{dE}{dt} &amp;amp; = \beta \cdot I \cdot \frac{S}{N} - \delta \cdot E  \
+\frac{dI}{dt} &amp;amp; = \delta \cdot E - (1-\alpha) \cdot \nu \cdot I - \alpha \cdot \rho \cdot I \
+\frac{dR}{dt} &amp;amp; = (1 - \alpha) \cdot \nu \cdot I \
+\frac{dD}{dt} &amp;amp; = \alpha \cdot \rho \cdot I
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;new-model-parameters&#34;&gt;New Model Parameters&lt;/h3&gt;
+&lt;p&gt;We want to derive our differential equation, $\frac{dS}{dt}$, $\frac{dE}{dt}$, $\frac{dI}{dt}$,  $\frac{dR}{dt}$ and $\frac{dD}{dt}$ with the parameters $S$, $E$, $I$, $R$, $\alpha$, $\beta$, $\delta$, $\rho$, and $\nu$. We will also adjust for the population.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;deriv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dSdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dEdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dIdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dRdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dDdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dSdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dEdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dIdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dRdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dDdt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This time, we&amp;rsquo;re going to use a town with the population of 100,000 people. We will set the rate of exposure, or the incubation period ($\delta$), to five days. We&amp;rsquo;ll keep the duration of infection at 4 days. We will assume that the death rate from our virus is ~10%; and people generally die from the virus 9 days after infection.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;deriv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dSdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dEdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dIdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dRdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dDdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dSdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dEdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dIdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dRdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dDdt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;N&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;4.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;5.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;R_0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;5.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R_0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;9&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;S0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;linspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;y0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ret&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;odeint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deriv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;args&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ret&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;T&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;plotseird&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The model provides the following output:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/sir_model2.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We added the total line to sanity check everything. All of the possible states should add up to 100,000. Based on the parameters, we could expect the virus to infect ~200,000 people while exposing ~350,000 people. The difference between the two comprises our asymptomatic cases. (people who have been exposed to the virus, but fail to show symptoms) Overall, the virus ends up killing ~100,000 people under our scenario.&lt;/p&gt;
+&lt;h2 id=&#34;vaccination-and-heard-immunity&#34;&gt;Vaccination and Heard Immunity&lt;/h2&gt;
+&lt;p&gt;There is a lot of talk about the potential for a vaccine, as well as this concept of herd immunity. Obviously, vaccinating susceptible individuals reduces the number of susceptible individuals. Even if the vaccine is 100% effective (for comparison, the flu vaccine is only ~60% effective), vaccinating an entire population is very expensive. Also, not everyone can take the vaccine.&lt;/p&gt;
+&lt;p&gt;We also need to consider the fact that some individuals have severe allergies or compromised immune systems; vaccines can be very critical [&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;]. Vaccinations alone aren&amp;rsquo;t enough to prevent (or end) an epidemic; it also requires a phenomenon called herd immunity.&lt;/p&gt;
+&lt;p&gt;Recall from before, to prevent an epidemic, $R_{e} \leq 1$. Let $\rho$ denote the fraction of the susceptible individuals who receieve a vaccination (assuming 100% effectiveness). These amount of vaccinated individuals ($\rho S(0)$) have moved from the susceptible class to the removed class. As such, the size of the susceptible class becomes $(1-\rho)S(0)$.&lt;/p&gt;
+&lt;p&gt;To prevent an epidemic, it is necessary that&lt;/p&gt;
+&lt;p&gt;$$(1-\rho) , S(0) ,\beta /\nu \leq 1$$&lt;/p&gt;
+&lt;p&gt;This will occur when $\rho \geq \rho_{c}$, where $\rho_{c}=1-1/R_{e}$ denotes the critical vaccination threshold.&lt;/p&gt;
+&lt;h2 id=&#34;when-will-this-epidemic-end&#34;&gt;When Will This Epidemic End?&lt;/h2&gt;
+&lt;p&gt;No one knows for sure and right now we&amp;rsquo;re talking about staying locked down until the virus suddenly disappears (or until no one dies from it). This is probably not going to happen.&lt;/p&gt;
+&lt;p&gt;Consider what it would take to limit the number of susceptible individuals:&lt;/p&gt;
+&lt;p&gt;$$S(\infty) \geq S(0) , exp(-R_{0})&amp;gt;0$$&lt;/p&gt;
+&lt;p&gt;Dividing the differential equations for $dS$ and $dR$ yields the following ODE&lt;/p&gt;
+&lt;p&gt;$$\frac{dS}{dR}=\frac{-\beta IS}{\nu I}=\frac{-\beta S}{\nu}$$&lt;/p&gt;
+&lt;p&gt;This ODE is separable, since for $S&amp;gt;0$ it can be rewritten as&lt;/p&gt;
+&lt;p&gt;$$\int \frac{1}{S}dS=\int \frac{-\beta}{\nu}dR$$&lt;/p&gt;
+&lt;p&gt;Integrating both side yields&lt;/p&gt;
+&lt;p&gt;$$S(t) = S(0) , exp(-\beta (R(t)-R(0))/\nu)$$&lt;/p&gt;
+&lt;p&gt;Since $0 \leq R(t)-R(0)\leq N$ it follows that $S(t)\geq S(0), exp(-\beta N/\nu)$ and thus&lt;/p&gt;
+&lt;p&gt;$$S(\infty)\geq S(0), exp(-\beta N/\nu), =, S(0), exp(-R_{0})&amp;gt;0$$&lt;/p&gt;
+&lt;p&gt;As the epidemic continues, the number of susceptible individuals decreases, and so the rate at which new infections arise also decreases. Eventually, S(t) drops below $\nu/\beta$, and the rate at which individual recover exceeds the rate at which new infections occur. Thus, $I(t)$ starts decreasing.&lt;/p&gt;
+&lt;p&gt;The epidemic ends due to a lack of newly infected individuals, not because of the lack of susceptible individuals.&lt;/p&gt;
+&lt;h3 id=&#34;source&#34;&gt;Source&lt;/h3&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://www.cbsnews.com/live-updates/coronavirus-pandemic-covid-19-latest-news-2020-04-08/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CBS News | Coronavirus updates from April 8, 2020&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://www.washingtonpost.com/weather/2020/03/27/what-does-exponential-growth-mean-context-covid-19/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Washington Post | Exponential growth of coronavirus offers perilous math in the context of coronavirus&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://github.com/hf2000510/infectious_disease_modelling&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Henri Froese | Infectious Diease Modeling GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://www.youtube.com/watch?v=7qbtqew-CI8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Guardian News | Donald Trump says coronavirus will &amp;lsquo;go away without a vaccine&amp;rsquo;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;5&#34;&gt;5&lt;/a&gt;] &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6001967/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Brauer (2017) | Mathematical epidemiology: Past, present, and future&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;6&#34;&gt;6&lt;/a&gt;] &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6001967/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University of Massachusetts Amherst (March, 2020) | Median incubation period for COVID-19&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;7&#34;&gt;7&lt;/a&gt;] &lt;a href=&#34;https://www.cdc.gov/vaccines/adults/rec-vac/health-conditions/weakened-immune.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Center for Diease Control | Weakened Immune System and Adult Vaccination&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

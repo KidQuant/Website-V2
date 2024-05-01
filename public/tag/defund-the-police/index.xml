@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Defund the Police | KidQuant</title>
+    <link>https://kidquant.com/tag/defund-the-police/</link>
+      <atom:link href="https://kidquant.com/tag/defund-the-police/index.xml" rel="self" type="application/rss+xml" />
+    <description>Defund the Police</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <title>Defund the Police</title>
+      <link>https://kidquant.com/tag/defund-the-police/</link>
+    </image>
+    
+    <item>
+      <title>We Already Fund Education More Than Law Enforcement</title>
+      <link>https://kidquant.com/post/2020-06-17-we-fund-teachers-not-police/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-06-17-we-fund-teachers-not-police/</guid>
+      <description>&lt;p&gt;You may not believe it, but it&amp;rsquo;s true. We currently already spend, on aggregate (at the state and local level), more on teachers and education more than we spend on police and law enforecement. But who says we aren&amp;rsquo;t, and why does this matter?&lt;/p&gt;
+&lt;p&gt;I give you Exhibit A:&lt;/p&gt;
+&lt;!-- tweet 1269662790744145925 --&gt;
+&lt;p&gt;Here, we have the anatomy of a viral tweet: an emotional platitude, factually inaccurate, and a rallying cry to address a problem that currently does not exist. To be fair, maybe Benjamin Dixon is trying to tell us what we should NOT be doing. As in, we should NOT get to a point where we are funding Police more than Teachers.&lt;/p&gt;
+&lt;p&gt;I think that&amp;rsquo;s fair, and most people would agree with that. As a thought experiment, I decided to look at economic statistics to analyze the ratio of the levels we&amp;rsquo;re spending on Police relative to Teachers. So, as usual, I took to Python [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/police_expenditures.png&#34; alt=&#34;Police Expenditures&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;So the output of our code is the historical Government Current Expenditures at the state and local level of law enforcement. This data goes back to 1959. As of 2018, we currently spend 137 billion dollars on police [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. (Note: much of these data comes from FRED, although it sourced by the BEA)&lt;/p&gt;
+&lt;p&gt;In 1960, we were spending ~2 billion dollars on police. That&amp;rsquo;s is a 6,750% increase in 60 years. Faster than the rate of inflation last time I checked. That&amp;rsquo;s a lot.&lt;/p&gt;
+&lt;p&gt;Has spending on Education managed to keep the same pace?&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/teachers_expenditures.png&#34; alt=&#34;Teachers Expenditures&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Well, this plot looks the same as the police expenditures plot, but the y-axis is ten times larger.&lt;/p&gt;
+&lt;p&gt;Maybe we should place both time series on the same plot so we can see what&amp;rsquo;s really going on.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/teachers_police.png&#34; alt=&#34;Teachers and Police&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It certainly doesn&amp;rsquo;t look like we&amp;rsquo;re spending more on Police than we are on Teachers. Not anywhere close. Based on what I&amp;rsquo;m looking at, what we spend on law enforcement is significantly dwarfed by the amount we spend on education (as it should be).&lt;/p&gt;
+&lt;p&gt;So why does this narrative persist? Why do people believe that we&amp;rsquo;re not spending enough on education? I give you Exhibit B:&lt;/p&gt;
+&lt;!-- tweet 1272944264608169987 --&gt;
+&lt;p&gt;There is this interesting perception among the #defundthepolice proponents is that Americans should be spending more on social services (including education), and the only reason we can&amp;rsquo;t do that is because so much of current government expenditures is already allocated towards law enforcement.&lt;/p&gt;
+&lt;p&gt;As you can see from the meme above, the police take up a large portion of the budget. The reduction in funding for police would naturally be offset by other government programs, such as Housing, Education, Health Care, reinvestments, etc.&lt;/p&gt;
+&lt;p&gt;Sure, a reduction in police spending &lt;em&gt;would&lt;/em&gt; increase spending for other things; however, we already spend significantly more on other things relative to the police.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/social_spending_police.png&#34; alt=&#34;Social Spending&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We should indeed be spending more on all of the things that would probably reduce crime. However, there is currently nothing preventing us from doing this, especially not the police. If you compare the United States to Europe, we find that most European countries are more generous with welfare and social spending. However, this doesn&amp;rsquo;t have anything to do with how much they spend on police.&lt;/p&gt;
+&lt;p&gt;As President Obama&amp;rsquo;s Council of Economic Adviser pointed out, while the United States has more correctional officers and far more prisoners than the average country, it has 35 percent fewer police officers [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/polce_v_prison.png&#34; alt=&#34;Police vs Prison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The current problem with our relationship with police in society is that they&amp;rsquo;re too unaccountable, have too much job security, and have far too little training. In fact, I would argue that that in order for police to recieve more training, they need &lt;em&gt;more&lt;/em&gt; funding, not less.&lt;/p&gt;
+&lt;p&gt;As state and local governments take steps towards reducing the level of funding from their law enforcement, we can expect the fewer people employed in these fields. Violent crime is currently at a 50 year low. One could make the argument, given this trend, that we no longer need the amount of police in our society.&lt;/p&gt;
+&lt;p&gt;However, if one is going to argue that police have no role in maintaining safe streets, they&amp;rsquo;re also arguing against lots of strong evidence. One of the most robust, most uncomfortable findings in criminology is that putting more officers on the street leads to less violent crime [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;][&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;][&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;][&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;][&lt;a href=&#34;#8&#34;&gt;8&lt;/a&gt;].&lt;/p&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/post/images/Notebooks/police_v_education.html&#34;&gt;Kid Quant | Replicating the data from this post&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://fred.stlouisfed.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Federal Reserve Economic Database (FRED)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://obamawhitehouse.archives.gov/sites/whitehouse.gov/files/documents/CEA%2BCriminal%2BJustice%2BReport.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obama White House (2016)  | Economic Perspectives on Incarceration and the Criminal Justice System&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://mason.gmu.edu/~atabarro/TerrorAlertProofs.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Klick &amp;amp; Tabarrok (2005) | Using terror alert levels to estimate the effect of police on crime&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;5&#34;&gt;5&lt;/a&gt;] &lt;a href=&#34;https://www.law.upenn.edu/live/files/8949-179jrss831pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Klick, MacDonald, &amp;amp; Grunwald (2015) | The effect of private police on crime: evidence from a geographic regression discontinuity design&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;6&#34;&gt;6&lt;/a&gt;] &lt;a href=&#34;https://mason.gmu.edu/~atabarro/TerrorAlertProofs.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mello (2018) | More COPS, Less Crime&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;7&#34;&gt;7&lt;/a&gt;] &lt;a href=&#34;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0157223&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MacDonald, Fagan, &amp;amp; Geller (2016) | The effects of local police surges on crime and arrest in New York City&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;8&#34;&gt;8&lt;/a&gt;] &lt;a href=&#34;https://scholars.org/sites/scholars/files/ssn_basic_facts_rosenfeld_on_hot_spot_policing.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rosenfeld (2013) | Focusing police efforts on &amp;ldquo;hot spots&amp;rdquo; reduces crime - and can prevent it, too&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

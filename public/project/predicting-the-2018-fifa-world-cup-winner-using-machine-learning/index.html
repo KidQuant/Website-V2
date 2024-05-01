@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 30, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b481486c871a52c314ef891cd86306cc.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Andre Sealy" />
+
+
+
+
+
+  
+
+<meta name="description" content="Using historical World Cup and Fifa data to forecast the winner." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/" />
+<link rel="canonical" href="https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/featured.jpg" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="KidQuant" />
+<meta property="og:url" content="https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/" />
+<meta property="og:title" content="Predicting the 2018 World Cup Winner Using Machine Learning | KidQuant" />
+<meta property="og:description" content="Using historical World Cup and Fifa data to forecast the winner." /><meta property="og:image" content="https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/featured.jpg" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2018-06-03T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2018-06-03T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/"
+  },
+  "headline": "Predicting the 2018 World Cup Winner Using Machine Learning",
+  
+  "image": [
+    "https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/featured.jpg"
+  ],
+  
+  "datePublished": "2018-06-03T00:00:00Z",
+  "dateModified": "2018-06-03T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Andre Sealy"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "KidQuant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Using historical World Cup and Fifa data to forecast the winner."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Predicting the 2018 World Cup Winner Using Machine Learning | KidQuant</title>
+
+  
+  
+  
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="4e08d42d3ce3da699c91e431016af586" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Predicting the 2018 World Cup Winner Using Machine Learning</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Andre Sealy</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jun 3, 2018
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header" href="/slides/example/" target="_blank">
+    Slides
+  </a>
+  
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 700px; max-height: 400px;">
+  <div style="position: relative">
+    <img src="/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/featured_hue39c690ec9e0eb14b562ed73f7fcf9b4_80155_cc3314f8b1b5601cdeb3f410f30da0af.webp" width="700" height="400" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>With the start of the 2018 FIFA World Cup approaching, soccer fans around the world is trying to figure out who will win the tournament? If you&rsquo;re a techie and a soccer fan, you&rsquo;ll probably want to figure out more quantitiative methods of figuring out the answer to that question.</p>
+<h2 id="goal"><strong>Goal</strong></h2>
+<p>The goal of this project is established as follows:</p>
+<ul>
+<li>Use Machine Learning to predict who will win the 2018 FIFA World Cup.</li>
+<li>Predict the outcome of individual matches for the entire competition.</li>
+<li>Run simulation of the next matches i.e. quarter final, semi finals and finals.</li>
+</ul>
+<p>These goals present a unique real-world Machine Learning prediction problem and involve solving various Machine Learning task: data integration, feature modeling, and outcome prediction.</p>
+<h2 id="data"><strong>Data</strong></h2>
+<p>I used two data sets from Kaggle. You can find them <a href="https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017/data" target="_blank" rel="noopener">here</a>. We will use results of historical matches since the beginning of the 1930s FIFA Championship for all participating teams.</p>
+<p>We have opted not to use FIFA national team rankings, due to the limitations of FIFA rankings being created in the 90&rsquo;s. Considering this limitation, we will stick to the historical match records.</p>
+<p>First, I&rsquo;m going to conduct some exploratory analysis on the two datasets. Next, I will use a feature engine to select the most relevant feature for my prediction. Afterwards, I will attempt to manipulate the data. Finally, I will choose a Machine Learning model and deploy it on the dataset.</p>
+<h4 id="first-things-first">First Thing&rsquo;s First</h4>
+<p>We need to import the necessary libaries and load the datasets into a Dataframe. We will be using the following python libraries.</p>
+<script src="https://gist.github.com/Hedgology/981b97e4aa135dad1c59d6e54670e2cb.js"></script>
+
+<ul>
+<li><strong>Pandas</strong>: Provides in-memory 2d table objectd referred to as &lsquo;Dataframes.&rsquo;</li>
+<li><strong>Numpy</strong>: Allows use to conduct fast mathematical computation on arrays and matrices.</li>
+<li><strong>Matplotlib</strong>: A Python SD plotting library.</li>
+<li><strong>Seaborn</strong>: A data visualization library based on matplotlib.</li>
+<li><strong>Scikit-Learn</strong>: A machine learning library.</li>
+</ul>
+<p>Ensure the information is imported by calling  <code>world_cup.head()</code> and <code>results.head()</code> for both datasets. The Dataframes should look something like the following:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/world_cup.png" alt="Word Cup Dataframe" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="exploratory-analysis"><strong>Exploratory Analysis</strong></h2>
+<p>Exploratory analysis and feature engineering is the most time consuming part of any Data Science project.</p>
+<p>After analyzing both datasets, the resulting dataset has information on previous matches. The new (resulting) dataset will be useful for analyzing and predicting future mathces.</p>
+<p>We begin our exporatory anaylsis by added goal differentials and match outcomes to the results Dataframe.</p>
+<script src="https://gist.github.com/Hedgology/a2d6b86482784fbf5aa728c9d6ffeddb.js"></script>
+
+<p>The outcome of the new Dataframe has the new results with the goal differential visible.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/new_results.png" alt="results" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Now I&rsquo;ll work on a subset of the data; one that includes games played by a participating team. I wanted to analyze the US Mens National Team, but unforunately, they were <a href="https://www.mlssoccer.com/post/2017/10/10/us-national-team-eliminated-2018-fifa-world-cup" target="_blank" rel="noopener">eliminated</a> by Trinidad &amp; Tobago in the qualifying rounds.</p>
+<p>The Danish Mens National Team (NKVD) was also <a href="https://www.standard.co.uk/sport/football/worldcup/netherlands-miss-world-cup-2018-holland-fail-to-qualify-a3865221.html" target="_blank" rel="noopener">eliminated</a> by The Swedish Mens National Team. Because of this, I have chosen to analyze the German Mens National Team.</p>
+<script src="https://gist.github.com/Hedgology/20fd329d0c63f397daee59a5134ac96b.js"></script>
+
+<p>Analyzing the subset of the data will help us determine which features are more relevant for our analysis.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/german_matches.png" alt="german matches" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>As you can see, the dataset has matches dating back as early as 1908! However, we&rsquo;re only interested in looking at matches from the World Cup era, which started in 1930. We then create a column for year and pick all the games played 1930.</p>
+<script src="https://gist.github.com/Hedgology/e6b5d83c3426a37568393d43cc2f586a.js"></script>
+
+<p>We can now visualize the most common match outcome for Germany throughout the years.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/wins_losses.jpg" alt="wins and losses" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>FIFA has recorded 863 matches from the German Mens National Team since 1930, of which Germany has won over 500 matches with ~175 losses. Slightly more matches has ended in a draw. Getting the win-rate for every country is a useful metric. We could use it to predict the most likely outcome of each match in the tournament.</p>
+<h4 id="analyzing-teams-participating-in-the-world-cup">Analyzing Teams Participating in the World Cup</h4>
+<p>We can start off by creating a list of teams participating in the 2018 World Cup. The following teams participating are as follows:</p>
+<ul>
+<li><strong>Group A</strong>: Uruguay, Russia, Saudi Arabia, Egypt</li>
+<li><strong>Group B</strong>: Spain, Portugal, Iran, Morocco</li>
+<li><strong>Group C</strong>: France, Denmark, Peru, Australia</li>
+<li><strong>Group D</strong>: Croatia, Argentina, Nigeria, Iceland</li>
+<li><strong>Group E</strong>: Brazil, Switzerland, Serbia, Costa Rica</li>
+<li><strong>Group F</strong>: Sweden, Mexico, South Korea, Germany</li>
+<li><strong>Group G</strong>: Belgium, England, Tunisia, Panama</li>
+<li><strong>Group H</strong>: Columbia, Japan, Senegal, Poland</li>
+</ul>
+<script src="https://gist.github.com/Hedgology/48789b295fb144c5d0d68db0c2b6d9aa.js"></script>
+
+<p>The following code will show only a dataframe with team wordl cup results starting from 1930, while dropping the duplicates (dropping games before 1930). We will also drop the date, home_score, away_score, tournament, city, country, goal_difference, and match_year columns from the <code>df_teams</code> dataframe and assign it to a variable named <code>df_teams_1930</code>. This will help us create a prediction label to simplify and process our model.</p>
+<p>For our prediction labels, we need to create a system to help our algorithm to determine a &ldquo;winning&rdquo; outcome versus a &ldquo;losing&rdquo; outcome. During group play, FIFA rewards 2 points to the winner of the match; 0 points to the loser of the match; and 1 point to both teams if the match results in a draw. We will adopt the same system to our labels dataset.</p>
+<script src="https://gist.github.com/Hedgology/05fd41e7891cab7bba73cd7b945ed825.js"></script>
+
+<p>From there, the home_team and away_team columns will be converted from categorical variables to continuous inputs, by setting dummy variables using Pandas <code>get_dummies()</code> function. It replaces categorical columns with quantitative representations, which enable them to be utilized in the Scikit-learn model.</p>
+<p>We we separate the labels and features, the <code>train_test_split</code> function will split the data into 70 percent training and 30 percetn testing.</p>
+<script src="https://gist.github.com/Hedgology/8e57023fabfac0f6cf8c119ad4829f01.js"></script>
+
+<h4 id="logistic-regression">Logistic Regression</h4>
+<p>The Scikit-learn package allows us to use machine learning packages such as Linear Regression. The only problem is that we can&rsquo;t use linear regression on a categorical dependent variable. Instead, in such situations, we should try using algorithms such as Logistic Regression.</p>
+<p>Logistic regression is a Machine Learning classification algorithm that is used to predict the probability of a categorical dependent variable. In logistic regression, the dependent variable is a binary variable that contains data coded as 1 for success or 0 for failure. In other words, the logistic regression model predicts P(Y=1) as a function of X.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/logistic_regression.jpg" alt="logistic regression" loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+Logistic regression is one of the most popular ways to fit models for categorical data, especially for binary response data in Data Modeling. It is the most important (and probably the most used) member of a class of models called generalized linear models. Unlike linear regression, logistic regression can directly predict probabilities (values that are restricted to the (0,1) interval).</p>
+<p>Logistic Regression is used when the dependent variable (target) is categorical. For example:</p>
+<ul>
+<li>To predict whether an email is spam (1) or not spam (0)</li>
+<li>Whether a company is a bankrupt (1) or not bankrupt (0)</li>
+</ul>
+<p>Logistic regression is generally used where the dependent variable is Binary or Dichotomous. That means the dependent variable can take only two possible values, such as &ldquo;Yes&rdquo; or &ldquo;No,&rdquo; &ldquo;Default&rdquo; or &ldquo;No Default,&rdquo; &ldquo;Living&rdquo; or &ldquo;Dead,&rdquo; etc. Independent factors or variables can be categorical or numerical variables.</p>
+<p>In our case, <em>logistic regression</em> attempts to predict an outcome (a win or loss) given a set of data points (stats) that likely influence that outcome. The way this works in practice is you feed the algorithm one game at a time, with both the aforementioned &ldquo;set of data&rdquo; and the actual outcome of the match. The model then learns how each piece of data you feed it influences the result of the game positively, negatively, and to what extent.</p>
+<h2 id="machine-learning-match-prediction"><strong>Machine Learning: Match Prediction</strong></h2>
+<script src="https://gist.github.com/Hedgology/cdbf44fd9204923d62050f3a95ec11f4.js"></script>
+
+<p>Passing our features and labels into our algorithm, we recieved a training set accuracy of 0.571 and a testing set accuracy of 0.564, which isn&rsquo;t the greatest, but we will continue to use these features. At this point, we will create a dataframe that we will deploy out model.</p>
+<p>We will start by loading the FIFA ranking as of April 2018 data set and a dataset containing the fixtures of the group stages of the tournament obtained from <a href="https://fixturedownload.com/results/fifa-world-cup-2018" target="_blank" rel="noopener">here</a>. The team which is positioned higher on the FIFA Ranking will be considered the &ldquo;favorite&rdquo; of the match, and therefore, will be positioned under the &ldquo;home_teams&rdquo; column, since obviously the only home team in this world cup is Russia. We will then add teams to the new prediction dataset based on the ranking position of each team. The next step will be to create dummy variables and then deploy the machine learning model.</p>
+<script src="https://gist.github.com/Hedgology/80394a88c5131856cf2405809b9d5cc7.js"></script>
+
+<p>We can start with deploying the model to the group matches. The follow shows the match results for the Group of Death, which contains Germany, Mexico, Sweden and South Korea.</p>
+<blockquote>
+<p>Germany and Mexico
+<br>Winner: Germany
+<br>Probability of Draw:  0.267
+<br>Probability of Mexico winning:  0.147</p>
+</blockquote>
+<blockquote>
+<p>Sweden and Korea Republic
+<br>Winner: Sweden
+<br>Probability of Draw:  0.308
+<br>Probability of Korea Republic winning:  0.170</p>
+</blockquote>
+<blockquote>
+<p>Mexico and Korea Republic
+<br>Winner: Mexico
+<br>Probability of Draw:  0.295
+<br>Probability of Korea Republic winning:  0.218</p>
+</blockquote>
+<blockquote>
+<p>Germany and Sweden
+<br>Winner: Germany
+<br>Probability of Draw:  0.243
+<br>Probability of Sweden winning:  0.189</p>
+</blockquote>
+<blockquote>
+<p>Mexico and Sweden
+<br>Winner: Mexico
+<br>Probability of Draw:  0.253
+<br>Probability of Sweden winning:  0.317</p>
+</blockquote>
+<blockquote>
+<p>Germany and Korea Republic
+<br>Winner: Germany
+<br>Probability of Draw:  0.277
+<br>Probability of Korea Republic winning:  0.119</p>
+</blockquote>
+<p>Based on this information, it looks like the former champions will be making it out of the Group of Death. Unless the <a href="https://en.wikipedia.org/wiki/Sports-related_curses" target="_blank" rel="noopener">World Cup Champion&rsquo;s</a> curse has anything to say about it, prehaps Mexico and Sweden will both make it out of group stages.</p>
+<h5 id="knockout-stage-group-of-16">Knockout Stage (Group of 16)</h5>
+<p>Based on the model, the following matchups are generated.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/knockout_stage.png" alt="knock out stage" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Our model has generated the following winners from the knockout stage of the 2018 World Cup:</p>
+<ul>
+<li>Portugal: 44.1% Probability of Winning</li>
+<li>France: 47.6% Probability of Winning</li>
+<li>Brazil: 70.2% Probability of Winning</li>
+<li>England: 51.3% Probability of Winning</li>
+<li>Spain: 52% Probability of Winning</li>
+<li>Germany: 66.8% Probability of Winning</li>
+<li>Belgium: 50.3% Probability of Winning</li>
+</ul>
+<h5 id="quarter-finals">Quarter-Finals</h5>
+<p>Our model predicted a quarter final matches of the following:</p>
+<ul>
+<li>Portugal vs. France</li>
+<li>Spain vs. Argentina</li>
+<li>Brazil vs. England</li>
+<li>Germany vs. Belgium</li>
+</ul>
+<p>Based on the matchups, our algorithm has predicted the winners of their quarter final matches:</p>
+<ul>
+<li>France: 42.9% Probabillity of Winning</li>
+<li>Argentina: 52% Probabillity of Winning</li>
+<li>Brazil: 52.5% Probabillity of Winning</li>
+<li>Germany: 58% Probabillity of Winning</li>
+</ul>
+<p>This time, the algorithm has less than a 60% certainity for most of our match-ups. This is what we can expect as we reach a higher level of play from our competitors.</p>
+<h5 id="semi-finals">Semi-Finals</h5>
+<p>The model predicted the following semi-final matches:</p>
+<ul>
+<li>Brazil vs. France</li>
+<li>Germany vs. Argentina</li>
+</ul>
+<p>Germany and Argentina are once again matched up with one another, except this time it is in the semi-finals instead of the grand finals of the 2014 world cup. Based on the matchups, our algorithm has predicted the winners of their semi-final matches:</p>
+<ul>
+<li>France: 69.3% Probabillity of Winning</li>
+<li>Germany: 52% Probabillity of Winning</li>
+</ul>
+<p>Our algorithm once again has Germany emerging has the victory of the Germany vs. Argentina match. Our model also estimates that Brazil will end up losing to France. Unforunately, the 5 time World Cup champs will have to miss out on another Final.</p>
+<h5 id="finals">Finals</h5>
+<p>Finally, we have the grand finals with France vs. Germany. What outcome does our model give us?</p>
+<ul>
+<li>Germany: 52.6% Probabillity of Winning</li>
+</ul>
+<p>According to the model, Germany is likely to win the World Cup, although, it isn&rsquo;t possible for repeat champions to emerge. The last time this occur was during the 1962 in Chile.</p>
+<h2 id="areas-of-further-researchimprovement"><strong>Areas of Further Research/Improvement</strong></h2>
+<p>Some areas for improvement:</p>
+<ul>
+<li>For improvements of the datasets, we could use FIFA (the game, not the organization), to assess the quality of each team player</li>
+<li>A confusion maxtrix would be great to analyze</li>
+<li>Using more models together to improve accuracy.</li>
+</ul>
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+<p>There is so much that can be improved upon here. For now, lets see if we get any lucky.</p>
+<p>The full code can be found <a href="https://github.com/Hedgology/FIFA-2018-WORLDCUP-PREDICTIONS" target="_blank" rel="noopener">here</a>.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/machine-learning/">Machine Learning</a>
+  
+  <a class="badge badge-light" href="/tag/sports/">Sports</a>
+  
+  <a class="badge badge-light" href="/tag/fifa/">Fifa</a>
+  
+  <a class="badge badge-light" href="/tag/soccer/">Soccer</a>
+  
+  <a class="badge badge-light" href="/tag/statistics/">Statistics</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkidquant.com%2Fproject%2Fpredicting-the-2018-fifa-world-cup-winner-using-machine-learning%2F&amp;text=Predicting&#43;the&#43;2018&#43;World&#43;Cup&#43;Winner&#43;Using&#43;Machine&#43;Learning" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkidquant.com%2Fproject%2Fpredicting-the-2018-fifa-world-cup-winner-using-machine-learning%2F&amp;t=Predicting&#43;the&#43;2018&#43;World&#43;Cup&#43;Winner&#43;Using&#43;Machine&#43;Learning" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Predicting%20the%202018%20World%20Cup%20Winner%20Using%20Machine%20Learning&amp;body=https%3A%2F%2Fkidquant.com%2Fproject%2Fpredicting-the-2018-fifa-world-cup-winner-using-machine-learning%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkidquant.com%2Fproject%2Fpredicting-the-2018-fifa-world-cup-winner-using-machine-learning%2F&amp;title=Predicting&#43;the&#43;2018&#43;World&#43;Cup&#43;Winner&#43;Using&#43;Machine&#43;Learning" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Predicting&#43;the&#43;2018&#43;World&#43;Cup&#43;Winner&#43;Using&#43;Machine&#43;Learning%20https%3A%2F%2Fkidquant.com%2Fproject%2Fpredicting-the-2018-fifa-world-cup-winner-using-machine-learning%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkidquant.com%2Fproject%2Fpredicting-the-2018-fifa-world-cup-winner-using-machine-learning%2F&amp;title=Predicting&#43;the&#43;2018&#43;World&#43;Cup&#43;Winner&#43;Using&#43;Machine&#43;Learning" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kidquant.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2453db0268c976f8eacba18e4a98e34c_209096_270x270_fill_q75_lanczos_center.jpg" alt="Andre Sealy"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kidquant.com/">Andre Sealy</a></h5>
+      <h6 class="card-subtitle">Quant Research / Data Scientist / Writer</h6>
+      <p class="card-text">My research interests involves Quantitative Finance, Mathematics, Data Science and Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/KidQuant" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Andre_Sealy" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThatQuantKid" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:andre@kidquant.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

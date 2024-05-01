@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 30, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b481486c871a52c314ef891cd86306cc.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Andre Sealy" />
+
+
+
+
+
+  
+
+<meta name="description" content="Lying with statistis - Case 1324" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kidquant.com/post/2020-04-15-measuring-covid-progress/" />
+<link rel="canonical" href="https://kidquant.com/post/2020-04-15-measuring-covid-progress/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kidquant.com/post/2020-04-15-measuring-covid-progress/featured.jpg" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="KidQuant" />
+<meta property="og:url" content="https://kidquant.com/post/2020-04-15-measuring-covid-progress/" />
+<meta property="og:title" content="Measuring Pandemic Progress: Log Scale vs. Per Capita | KidQuant" />
+<meta property="og:description" content="Lying with statistis - Case 1324" /><meta property="og:image" content="https://kidquant.com/post/2020-04-15-measuring-covid-progress/featured.jpg" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2020-04-15T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2020-04-15T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kidquant.com/post/2020-04-15-measuring-covid-progress/"
+  },
+  "headline": "Measuring Pandemic Progress: Log Scale vs. Per Capita",
+  
+  "image": [
+    "https://kidquant.com/post/2020-04-15-measuring-covid-progress/featured.jpg"
+  ],
+  
+  "datePublished": "2020-04-15T00:00:00Z",
+  "dateModified": "2020-04-15T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Andre Sealy"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "KidQuant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Lying with statistis - Case 1324"
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Measuring Pandemic Progress: Log Scale vs. Per Capita | KidQuant</title>
+
+  
+  
+  
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="46f1666d2c8f06c6a6e579ef809d7493" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Measuring Pandemic Progress: Log Scale vs. Per Capita</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Andre Sealy</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Apr 15, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/data-science/">Data Science</a>, <a href="/category/programming/">Programming</a>, <a href="/category/statistics/">Statistics</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 640px; max-height: 405px;">
+  <div style="position: relative">
+    <img src="/post/2020-04-15-measuring-covid-progress/featured_hue97d2ba5e192386205730955ef76ea05_41092_8fbc3c954c9956f5b44161597334ccff.webp" width="640" height="405" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>There have been many visualization projects created for the purposes of modeling COVID-19 cases and deaths. The best known are the graphs produced by John Burn-Murdock of the Financial Times. You can view his very create and beautiful COVID visualizations on his Twitter Page.</p>
+<p>Before COVID, I think people were more used to viewing data in relative terms. Now, log-scale visualizations have become more widespread, primarily due to the way diseases spread during a pandemic.</p>
+<p>It&rsquo;s become so popular, programmers developed ways to replicate these charts using Python and R packages. The most notable being <code>tidycovid19</code> package designed by Joachim Gassen. You can few the package on his GitHub [<a href="#1">1</a>].</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-R" data-lang="R"><span class="line"><span class="cl"><span class="c1"># Importing all of the necessary packages</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">tsibble</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">tidycovid19</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># selecting how the data will be formatted</span>
+</span></span><span class="line"><span class="cl"><span class="n">updates</span> <span class="o">&lt;-</span> <span class="nf">download_merged_data</span><span class="p">(</span><span class="n">cached</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># plotting the countries of interests, </span>
+</span></span><span class="line"><span class="cl"><span class="n">countries</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;AUS&#34;</span><span class="p">,</span> <span class="s">&#34;NZL&#34;</span><span class="p">,</span> <span class="s">&#34;ITA&#34;</span><span class="p">,</span> <span class="s">&#34;ESP&#34;</span><span class="p">,</span> <span class="s">&#34;USA&#34;</span><span class="p">,</span> <span class="s">&#34;GBR&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">updates</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">plot_covid19_spread</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">highlight</span> <span class="o">=</span> <span class="n">countries</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">type</span> <span class="o">=</span> <span class="s">&#34;confirmed&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">edate_cutoff</span> <span class="o">=</span> <span class="m">40</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">min_cases</span> <span class="o">=</span> <span class="m">100</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Measuring-Progress/first_40_days.PNG" alt="First 40 Days" loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+However, people have often wondered why we don&rsquo;t present these numbers on a per capita basis? Burn-Murdock has provided a data-oriented reason why log-scales are used instead of per capita scaling.</p>
+<!-- tweet 1244380095164420101 -->
+<p>It isn&rsquo;t always clear when per capita metrics should (or should not) be used. However, many don&rsquo;t often realize how per capita figures can distort the story of what is going on in the region.</p>
+<p>For example, Switzerland has 2,975 cases per capita, while the United States has 1,841 cases per capita [<a href="#2">2</a>]. However, cases are currently growing and doubling faster in the U.S. compared to Switzerland [3]. Obviously, Switerzland&rsquo;s high per capita figure is primarily attributed to its small population size, not its response to containing the virus.</p>
+<p>Simply put: per capita figures makes small countries look big, and vice versa. Not only that, per capita figures only shifts the curves vertically; it would not change the trajectory or slope of the curves. Remember the following:</p>
+<p>$$log(Y_{t}/P_{t})=log(Y_{t})-log(P_{t})$$</p>
+<p>Where $Y_{t}$ is the number of cases on dat $t$ and $P_{t}$ is the population on day $t$. Population doesn&rsquo;t change much over a period of time, so per capita figures involves subtracking a constant from the log case data.</p>
+<p>The same point applies to the differences in testing policies between countries. If Country A is testing more as a percentage of the population relative to Country B, then these differences will show up as a vertical difference between the plots. They won&rsquo;t; however, show up in the trajectory.</p>
+<p>Although these choices are still a bit of a judgment call (not standard among statisticians), we should look at the slope of the lines if we want to explore how countries are responding to the pandemic relative to others.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Measuring-Progress/cases_logratio.PNG" alt="First 40 Days" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>While the graph doesn&rsquo;t tell us everything about how the pandemic is overwhelming the different health care systems around the world, it does show how each country is attempting to slow the infection rate and reduce the slope of their curves. It&rsquo;s easier to compare the trajectory in this way, considering that we have to look to see which country is trending higher.</p>
+<h2 id="sources">Sources</h2>
+<p>[<a name="1">1</a>] <a href="https://github.com/joachim-gassen/tidycovid19" target="_blank" rel="noopener">GitHub | Jaochim Gassen TidyCovid19 Repository</a></p>
+<p>[<a name="2">2</a>] <a href="https://twitter.com/jburnmurdoch/status/1244368708249817091" target="_blank" rel="noopener">Twitter | John Burn-Murdock </a></p>
+<p>[<a name="3">3</a>] <a href="https://ourworldindata.org/grapher/total-daily-covid-cases-per-million?tab=map&amp;year=2020-04-15" target="_blank" rel="noopener">Our World In Data | Global COVID Cases per capita as of April 15th, 2020</a></p>
+<p>[<a name="4">4</a>] <a href="https://kidquant.com/project/tracking-covid19-cases/" target="_blank" rel="noopener">KidQuant | Data Science Project on COVID Tracking (Post from Apr 13, 2020)</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/covid-19/">COVID-19</a>
+  
+  <a class="badge badge-light" href="/tag/coronavirus/">Coronavirus</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-04-15-measuring-covid-progress%2F&amp;text=Measuring&#43;Pandemic&#43;Progress%3A&#43;Log&#43;Scale&#43;vs.&#43;Per&#43;Capita" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-04-15-measuring-covid-progress%2F&amp;t=Measuring&#43;Pandemic&#43;Progress%3A&#43;Log&#43;Scale&#43;vs.&#43;Per&#43;Capita" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Measuring%20Pandemic%20Progress%3A%20Log%20Scale%20vs.%20Per%20Capita&amp;body=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-04-15-measuring-covid-progress%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-04-15-measuring-covid-progress%2F&amp;title=Measuring&#43;Pandemic&#43;Progress%3A&#43;Log&#43;Scale&#43;vs.&#43;Per&#43;Capita" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Measuring&#43;Pandemic&#43;Progress%3A&#43;Log&#43;Scale&#43;vs.&#43;Per&#43;Capita%20https%3A%2F%2Fkidquant.com%2Fpost%2F2020-04-15-measuring-covid-progress%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-04-15-measuring-covid-progress%2F&amp;title=Measuring&#43;Pandemic&#43;Progress%3A&#43;Log&#43;Scale&#43;vs.&#43;Per&#43;Capita" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kidquant.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2453db0268c976f8eacba18e4a98e34c_209096_270x270_fill_q75_lanczos_center.jpg" alt="Andre Sealy"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kidquant.com/">Andre Sealy</a></h5>
+      <h6 class="card-subtitle">Quant Research / Data Scientist / Writer</h6>
+      <p class="card-text">My research interests involves Quantitative Finance, Mathematics, Data Science and Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/KidQuant" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Andre_Sealy" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThatQuantKid" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:andre@kidquant.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

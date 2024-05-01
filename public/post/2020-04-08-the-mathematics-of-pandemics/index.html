@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 30, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b481486c871a52c314ef891cd86306cc.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Andre Sealy" />
+
+
+
+
+
+  
+
+<meta name="description" content="How we respond to infectious dieases is probably more important than the diease itself." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/" />
+<link rel="canonical" href="https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/featured.PNG" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="KidQuant" />
+<meta property="og:url" content="https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/" />
+<meta property="og:title" content="The Mathematics of Pandemics | KidQuant" />
+<meta property="og:description" content="How we respond to infectious dieases is probably more important than the diease itself." /><meta property="og:image" content="https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/featured.PNG" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2020-04-08T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2020-04-08T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/"
+  },
+  "headline": "The Mathematics of Pandemics",
+  
+  "image": [
+    "https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/featured.PNG"
+  ],
+  
+  "datePublished": "2020-04-08T00:00:00Z",
+  "dateModified": "2020-04-08T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Andre Sealy"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "KidQuant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "How we respond to infectious dieases is probably more important than the diease itself."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>The Mathematics of Pandemics | KidQuant</title>
+
+  
+  
+  
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="1293efabecede8c2061e09b2f43b3f33" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>The Mathematics of Pandemics</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Andre Sealy</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Apr 8, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    13 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/mathematics/">Mathematics</a>, <a href="/category/programming/">Programming</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 705px; max-height: 395px;">
+  <div style="position: relative">
+    <img src="/post/2020-04-08-the-mathematics-of-pandemics/featured_hu51e415902a99cb07e51f5c924a8aa424_29169_28a6f1ab21b8b9ba74a79bbb1fef6a91.webp" width="705" height="395" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>So, this is our very first pandemic. At least, it&rsquo;s the first serious pandemic. I&rsquo;ve lived through the 2009 H1N1 Pandemic, but I don&rsquo;t really remember it all that well. All I know is that H1N1 is not nearly as serious as this, because now I&rsquo;m forced to work from home.</p>
+<p>Right now, COVID-19, a.k.a, the coronavirus is on our doorstep. There are more than 423,000 confirmed cases in the United States; 14,700 confirmed deaths [<a href="#1">1</a>]. New York has the highest record death toll; we surpassed Washington State a few weeks ago. It certainly does feel like an apocalyptic scenario is about to occur.</p>
+<p>Regardless, one good thing that can occur out of this situation is that the Coronavirus has rekindled the public&rsquo;s interest in Mathematics. At least, marginally. Articles are circulating explaining &ldquo;dangerous mathematics behind the coronavirus,&rdquo; and how cases could grow exponentially [<a href="#2">2</a>].</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/COVID-19-exponential.png" alt="Coronavirus cases US" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The idea behind exponential growth as it relates to pandemics is that one person who has contracted the virus comes into contact with anyone. So the total number of cases increases to 2. Assume each infected person will come in contact with 1 new person. Then those 2 infected people will infect 2 more people, increasing confirmed cases to 4. Those 4 will eventually become 8, then 8 becomes 16, and so on.</p>
+<p>This is how COVID-19 could work, but at best, it&rsquo;s an oversimplification. Everyone online (and by everyone, I mean Twitter) has an opinion on what they believe will happen. Some people are behaving like it&rsquo;s the end of the world; others think this will be over by Easter.</p>
+<p>I, on the other hand, found that it is more useful to learn about the methodologies epidemiologists are using the model the virus.</p>
+<h2 id="the-sir-model">The SIR Model</h2>
+<p>The SIR model is a simple model developed by Ronald Ross and William Hamar, but greatly expanded by Anderson McKendrick and William Kermack, which simplified the process. Using this model, we assume the population consist of three types of individuals, which are denoted by variables $S$, $I$, and $R$.</p>
+<ul>
+<li>$S$ is the number of <strong>susceptibles</strong>; who are not infected, but could become infected at a later point.</li>
+<li>$I$ is the number of <strong>infectives</strong>; individuals who have the diease and can transmit to others.</li>
+<li>$R$ is the number of <strong>recovered</strong> or removed; they cannot become infected or transmit to others.</li>
+</ul>
+<p>It should be noted that people that have recovered from a virus may have developed a natural immunity over time, or they may have currently been in isolation, or they may have died. The SIR model doesn&rsquo;t distinguish between these possibilities.</p>
+<p>New infections will occur as a result of contact between infectives and susceptibles. In the SIR model, the rate at which new infections happen (as a function fo time) is $\beta$, $S$, $I$, for some positive constant $\beta$. These interactions occur as a form of &ldquo;mixing,&rdquo; and mixing allows us to utilize ordinary differential equations (ODE).</p>
+<p>You don&rsquo;t need any knowledge about differential equations. However, derivatives are how mathematicians describe the rate of change of as time goes on.</p>
+<p>$$
+\begin{aligned}
+\frac{dS}{dt} &amp; = -\beta \cdot S \cdot I \
+\frac{dI}{dt} &amp; = \beta \cdot I \cdot \frac{S}{N} - \nu \cdot I \
+\frac{dR}{dt} &amp; = \nu \cdot I,
+\end{aligned}
+$$</p>
+<p>where the diease transmission rate $\beta &gt; 0$, and the recovery rate $\nu &gt; 0$ (or in other words, the duration of infection $D=1/\nu$).</p>
+<p>As you may have noticed, that total population $S+I+R$ is constant because the differential equation $\frac{dS}{dt}+\frac{dI}{dt}+\frac{dR}{dt}=-\beta IS+(\beta IS -\nu I) + \nu I=0$</p>
+<p>It&rsquo;s probably easier to visualize this instead of talking about this subject in the abstract. There are some developers on GitHub that have implemented the SIR model for creating an infectious disease model. One of whom goes by the name of Henri Froese, who is a computer science student [<a href="#3">3</a>].</p>
+<h3 id="model-parameters">Model Parameters</h3>
+<p>We want to derive our differential equation, $\frac{dS}{dt}$, $\frac{dI}{dt}$, and $\frac{dR}{dt}$ with the parameters $S$, $I$, $R$, $\beta$, and $\nu$. We will also adjust for the population</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># creating a function for the differential equation</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">deriv</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">nu</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">S</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="o">=</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dSdt</span> <span class="o">=</span> <span class="o">-</span><span class="n">beta</span> <span class="o">*</span> <span class="n">S</span> <span class="o">*</span> <span class="n">I</span> <span class="o">/</span> <span class="n">N</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dIdt</span> <span class="o">=</span> <span class="n">beta</span> <span class="o">*</span> <span class="n">S</span> <span class="o">*</span> <span class="n">I</span> <span class="o">/</span> <span class="n">N</span> <span class="o">-</span> <span class="n">nu</span> <span class="o">*</span> <span class="n">I</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dRdt</span> <span class="o">=</span> <span class="n">nu</span> <span class="o">*</span> <span class="n">I</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dSdt</span><span class="p">,</span> <span class="n">dIdt</span><span class="p">,</span> <span class="n">dRdt</span>
+</span></span></code></pre></div><p>We&rsquo;re simulating a pandemic in a town with a population of 1,000 (not a very large but it&rsquo;s easier to wrap your head around). We will assume that an infected person infects one other person per day ($\beta = 1$).</p>
+<p>For our made up virus, we will set the duration of infection for four days. The initial condition starts with one infection, which leaves 999 susceptible people (and no recoveries, so far).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">N</span> <span class="o">=</span> <span class="mi">1000</span>
+</span></span><span class="line"><span class="cl"><span class="n">beta</span> <span class="o">=</span> <span class="mf">1.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">D</span> <span class="o">=</span> <span class="mf">4.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">nu</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">D</span>
+</span></span><span class="line"><span class="cl"><span class="n">S0</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">R0</span> <span class="o">=</span> <span class="mi">999</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">y0</span> <span class="o">=</span> <span class="n">S0</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">R0</span>
+</span></span><span class="line"><span class="cl"><span class="n">ret</span> <span class="o">=</span> <span class="n">odeint</span><span class="p">(</span><span class="n">deriv</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">nu</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">S</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">R</span> <span class="o">=</span> <span class="n">ret</span><span class="o">.</span><span class="n">T</span>
+</span></span></code></pre></div><p>The solution to a differential equation is any condition that satisfies it, so we are going to use the <code>odeint</code> method to integrate the differential equation. Afterward, we unpack the results for S, I, and R into variables which we can then plot.</p>
+<h3 id="the-diease-always-dies-out">The Diease Always Dies Out</h3>
+<p>There are lots of high profile individuals; particularly, President Trump has suggested that the virus will go away on its own without a vaccine [<a href="#4">4</a>]. This may happen; it may not happen. We don&rsquo;t know enough about the virus to determine if this is true. One thing is certain; we know enough about the epidemiology to say that the virus disappearing isn&rsquo;t outside the realm of possibility [<a href="#5">5</a>]. Mathematically, we can prove this by contradiction.</p>
+<p>Consider the differential equation for the recovery rate, $\frac{dR}{dt}=\nu I$. Let&rsquo;s say that the initial condition $I(\infty)=0$ for all initial conditions, without having a formula for $I(t)$. If not, $\frac{dR}{dt}=\nu I$ implies that for $t$ sufficiently large, $\frac{dR}{dt}&gt;\nu I(\infty)/2&gt;0$, and this implies that $R(\infty)=\infty$, which is a contradiction.</p>
+<p>As such, at some point, the virus will eventually die out. It&rsquo;s all a matter of how many people must become infected with the virus.</p>
+<h3 id="the-epidemic-threshold-theorem">The Epidemic Threshold Theorem</h3>
+<p>The effective reproductive number $R_{e}=(S(0)/N)b/\nu$ and the basic reproductive number $R_{0}=b/\nu$. If the entire population is initially susceptible, for example, $S(0)=N-1, I(0)=1, R(0)=0,$ and large (the model&rsquo;s assumption), then $R_{e}=((N-1)/N)b/\nu$ is approximately equal to $R_{0}$. As such, we will assume the quantity $(N-1)/N$ is equal to 1.</p>
+<p>As we can see in our simple model, confirmed cases peak around day 10 and addition cases begin to decrease until the virus finally dies out. We already observed that $(\frac{dI}{dt})(0)=\nu (R_{e}-1)I(0)$, which implies that the number of infected individual initially starts growing/decreasing exponential at the rate $\nu(R_{e}-1).$</p>
+<p>As such, there are two conditions that determines whether an infectious diease will quickly die out or whether it will invade the population can cause an epidemic:</p>
+<ul>
+<li><strong>Case #1</strong>: If $R_{e}\leq 1$, then $I(t)$ decreases monotonically to zero as $t \rightarrow \infty $.</li>
+<li><strong>Case #2</strong>: If $R_{e}\geq 1$, then $I(t)$ starts increasing, reaches its maximum, and then decreases to zero as $t \rightarrow \infty$. The scenario of the increasing number cases is what starts an epidemic.</li>
+</ul>
+<p>We will plot how this works using Python.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">plotsir</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">R</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Susceptible&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Infected&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Recovered&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (days)&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;Infected/Susceptible/Recovered People Over Time&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">.27</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span> <span class="mf">1.01</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_tick_params</span><span class="p">(</span><span class="n">length</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_tick_params</span><span class="p">(</span><span class="n">length</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">b</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">legend</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">legend</span><span class="o">.</span><span class="n">get_frame</span><span class="p">()</span><span class="o">.</span><span class="n">set_alpha</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">spine</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;top&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">,</span> <span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="s1">&#39;left&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="n">spine</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">plotsir</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">R</span><span class="p">)</span>
+</span></span></code></pre></div><p>Here is the output of the model.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/sir_model1.png" alt="SIR Model" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="the-seirseid-model">The SEIR/SEID Model</h2>
+<p>The first SIR model is much too simple for our very complicated situation. We also may need to consider the fact that people who have the virus may not exhibit any symptoms. Some people who contract a virus may not immediately become infectious, at least, not to the point where they spread the virus around to other people. This period is known as the incubation period. The incubation period is the time between the exposure of a disease when symptoms of the disease begin to show.</p>
+<p>Right now, we estimate that the incubation period for COVID-19 is a little over 5 days. The vast majority of people who begin to show symptoms usually do so within 11.5 days of infection [<a href="#6">6</a>]. However, the problem with the incubation period with COVID-19 is that people become infectious without showing any symptoms at all. These factors are what makes the coronavirus particularly deadly.</p>
+<p>Because of the complexity of the incubation period, we need to account for another variable, the <em>Exposed</em>. As such, we introduce the variant of the SEIR model:  Susceptible people contract the virus, then become exposed, then become infected, then eventually recover. We introduce a new variable to represent the rate at which those exposed become infected, $\delta$.</p>
+<p>We also need to account for the fact that some people never recover from the virus. Some people pass away due to complications related to a disease, as it is the case with COVID-19. Of course, you can only die from a disease that you&rsquo;ve been exposed to, so we introduce a new variable, $\rho$, which represents the rate at which people die from the virus.</p>
+<p>Considering we have two possibilities, recovery and death, we need to account for the probability of going from infected to recovered or dead. We introduce one more variable, $\alpha$, which accounts for the death rate. Suppose 100 people are infected a day; 5% are estimated to die from the virus. Given these factors, 95% of people are estimated to recover.</p>
+<p>The probability of going from infected to death is $alpha$ and the probability of going to from infected to recovered is $1-\alpha$.</p>
+<p>As such, we have the following differential equations:</p>
+<p>$$
+\begin{aligned}
+\frac{dS}{dt} &amp; = -\beta \cdot I \cdot \frac{S}{N} \
+\frac{dE}{dt} &amp; = \beta \cdot I \cdot \frac{S}{N} - \delta \cdot E  \
+\frac{dI}{dt} &amp; = \delta \cdot E - (1-\alpha) \cdot \nu \cdot I - \alpha \cdot \rho \cdot I \
+\frac{dR}{dt} &amp; = (1 - \alpha) \cdot \nu \cdot I \
+\frac{dD}{dt} &amp; = \alpha \cdot \rho \cdot I
+\end{aligned}
+$$</p>
+<h3 id="new-model-parameters">New Model Parameters</h3>
+<p>We want to derive our differential equation, $\frac{dS}{dt}$, $\frac{dE}{dt}$, $\frac{dI}{dt}$,  $\frac{dR}{dt}$ and $\frac{dD}{dt}$ with the parameters $S$, $E$, $I$, $R$, $\alpha$, $\beta$, $\delta$, $\rho$, and $\nu$. We will also adjust for the population.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">deriv</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">nu</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">rho</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">S</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">D</span> <span class="o">=</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dSdt</span> <span class="o">=</span> <span class="o">-</span><span class="n">beta</span> <span class="o">*</span> <span class="n">S</span> <span class="o">*</span> <span class="n">I</span> <span class="o">/</span> <span class="n">N</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dEdt</span> <span class="o">=</span> <span class="n">beta</span> <span class="o">*</span> <span class="n">S</span> <span class="o">*</span> <span class="n">I</span> <span class="o">/</span> <span class="n">N</span> <span class="o">-</span> <span class="n">delta</span> <span class="o">*</span> <span class="n">E</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dIdt</span> <span class="o">=</span> <span class="n">delta</span> <span class="o">*</span> <span class="n">E</span> <span class="o">-</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">)</span> <span class="o">*</span> <span class="n">nu</span> <span class="o">*</span> <span class="n">I</span> <span class="o">-</span><span class="n">alpha</span> <span class="o">*</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">I</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dRdt</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">)</span> <span class="o">*</span> <span class="n">nu</span> <span class="o">*</span> <span class="n">I</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dDdt</span> <span class="o">=</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">I</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dSdt</span><span class="p">,</span> <span class="n">dEdt</span><span class="p">,</span> <span class="n">dIdt</span><span class="p">,</span> <span class="n">dRdt</span><span class="p">,</span> <span class="n">dDdt</span>
+</span></span></code></pre></div><p>This time, we&rsquo;re going to use a town with the population of 100,000 people. We will set the rate of exposure, or the incubation period ($\delta$), to five days. We&rsquo;ll keep the duration of infection at 4 days. We will assume that the death rate from our virus is ~10%; and people generally die from the virus 9 days after infection.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">deriv</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">nu</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">rho</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">S</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">D</span> <span class="o">=</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dSdt</span> <span class="o">=</span> <span class="o">-</span><span class="n">beta</span> <span class="o">*</span> <span class="n">S</span> <span class="o">*</span> <span class="n">I</span> <span class="o">/</span> <span class="n">N</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dEdt</span> <span class="o">=</span> <span class="n">beta</span> <span class="o">*</span> <span class="n">S</span> <span class="o">*</span> <span class="n">I</span> <span class="o">/</span> <span class="n">N</span> <span class="o">-</span> <span class="n">delta</span> <span class="o">*</span> <span class="n">E</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dIdt</span> <span class="o">=</span> <span class="n">delta</span> <span class="o">*</span> <span class="n">E</span> <span class="o">-</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">)</span> <span class="o">*</span> <span class="n">nu</span> <span class="o">*</span> <span class="n">I</span> <span class="o">-</span><span class="n">alpha</span> <span class="o">*</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">I</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dRdt</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">)</span> <span class="o">*</span> <span class="n">nu</span> <span class="o">*</span> <span class="n">I</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dDdt</span> <span class="o">=</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">I</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dSdt</span><span class="p">,</span> <span class="n">dEdt</span><span class="p">,</span> <span class="n">dIdt</span><span class="p">,</span> <span class="n">dRdt</span><span class="p">,</span> <span class="n">dDdt</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">N</span> <span class="o">=</span> <span class="mi">100000</span>
+</span></span><span class="line"><span class="cl"><span class="n">D</span> <span class="o">=</span> <span class="mf">4.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">nu</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">D</span>
+</span></span><span class="line"><span class="cl"><span class="n">delta</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="mf">5.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">R_0</span> <span class="o">=</span> <span class="mf">5.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">beta</span> <span class="o">=</span> <span class="n">R_0</span> <span class="o">*</span> <span class="n">nu</span>
+</span></span><span class="line"><span class="cl"><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.2</span>
+</span></span><span class="line"><span class="cl"><span class="n">rho</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">9</span>
+</span></span><span class="line"><span class="cl"><span class="n">S0</span><span class="p">,</span> <span class="n">E0</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">R0</span><span class="p">,</span> <span class="n">D0</span> <span class="o">=</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">y0</span> <span class="o">=</span> <span class="n">S0</span><span class="p">,</span> <span class="n">E0</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">R0</span><span class="p">,</span> <span class="n">D0</span>
+</span></span><span class="line"><span class="cl"><span class="n">ret</span> <span class="o">=</span> <span class="n">odeint</span><span class="p">(</span><span class="n">deriv</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">nu</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">rho</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">S</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">D</span> <span class="o">=</span> <span class="n">ret</span><span class="o">.</span><span class="n">T</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">plotseird</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
+</span></span></code></pre></div><p>The model provides the following output:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/sir_model2.png" alt="SIR Model" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>We added the total line to sanity check everything. All of the possible states should add up to 100,000. Based on the parameters, we could expect the virus to infect ~200,000 people while exposing ~350,000 people. The difference between the two comprises our asymptomatic cases. (people who have been exposed to the virus, but fail to show symptoms) Overall, the virus ends up killing ~100,000 people under our scenario.</p>
+<h2 id="vaccination-and-heard-immunity">Vaccination and Heard Immunity</h2>
+<p>There is a lot of talk about the potential for a vaccine, as well as this concept of herd immunity. Obviously, vaccinating susceptible individuals reduces the number of susceptible individuals. Even if the vaccine is 100% effective (for comparison, the flu vaccine is only ~60% effective), vaccinating an entire population is very expensive. Also, not everyone can take the vaccine.</p>
+<p>We also need to consider the fact that some individuals have severe allergies or compromised immune systems; vaccines can be very critical [<a href="#7">7</a>]. Vaccinations alone aren&rsquo;t enough to prevent (or end) an epidemic; it also requires a phenomenon called herd immunity.</p>
+<p>Recall from before, to prevent an epidemic, $R_{e} \leq 1$. Let $\rho$ denote the fraction of the susceptible individuals who receieve a vaccination (assuming 100% effectiveness). These amount of vaccinated individuals ($\rho S(0)$) have moved from the susceptible class to the removed class. As such, the size of the susceptible class becomes $(1-\rho)S(0)$.</p>
+<p>To prevent an epidemic, it is necessary that</p>
+<p>$$(1-\rho) , S(0) ,\beta /\nu \leq 1$$</p>
+<p>This will occur when $\rho \geq \rho_{c}$, where $\rho_{c}=1-1/R_{e}$ denotes the critical vaccination threshold.</p>
+<h2 id="when-will-this-epidemic-end">When Will This Epidemic End?</h2>
+<p>No one knows for sure and right now we&rsquo;re talking about staying locked down until the virus suddenly disappears (or until no one dies from it). This is probably not going to happen.</p>
+<p>Consider what it would take to limit the number of susceptible individuals:</p>
+<p>$$S(\infty) \geq S(0) , exp(-R_{0})&gt;0$$</p>
+<p>Dividing the differential equations for $dS$ and $dR$ yields the following ODE</p>
+<p>$$\frac{dS}{dR}=\frac{-\beta IS}{\nu I}=\frac{-\beta S}{\nu}$$</p>
+<p>This ODE is separable, since for $S&gt;0$ it can be rewritten as</p>
+<p>$$\int \frac{1}{S}dS=\int \frac{-\beta}{\nu}dR$$</p>
+<p>Integrating both side yields</p>
+<p>$$S(t) = S(0) , exp(-\beta (R(t)-R(0))/\nu)$$</p>
+<p>Since $0 \leq R(t)-R(0)\leq N$ it follows that $S(t)\geq S(0), exp(-\beta N/\nu)$ and thus</p>
+<p>$$S(\infty)\geq S(0), exp(-\beta N/\nu), =, S(0), exp(-R_{0})&gt;0$$</p>
+<p>As the epidemic continues, the number of susceptible individuals decreases, and so the rate at which new infections arise also decreases. Eventually, S(t) drops below $\nu/\beta$, and the rate at which individual recover exceeds the rate at which new infections occur. Thus, $I(t)$ starts decreasing.</p>
+<p>The epidemic ends due to a lack of newly infected individuals, not because of the lack of susceptible individuals.</p>
+<h3 id="source">Source</h3>
+<p>[<a name="1">1</a>] <a href="https://www.cbsnews.com/live-updates/coronavirus-pandemic-covid-19-latest-news-2020-04-08/" target="_blank" rel="noopener">CBS News | Coronavirus updates from April 8, 2020</a></p>
+<p>[<a name="2">2</a>] <a href="https://www.washingtonpost.com/weather/2020/03/27/what-does-exponential-growth-mean-context-covid-19/" target="_blank" rel="noopener">Washington Post | Exponential growth of coronavirus offers perilous math in the context of coronavirus</a></p>
+<p>[<a name="3">3</a>] <a href="https://github.com/hf2000510/infectious_disease_modelling" target="_blank" rel="noopener">Henri Froese | Infectious Diease Modeling GitHub Repository</a></p>
+<p>[<a name="4">4</a>] <a href="https://www.youtube.com/watch?v=7qbtqew-CI8" target="_blank" rel="noopener">Guardian News | Donald Trump says coronavirus will &lsquo;go away without a vaccine&rsquo;</a></p>
+<p>[<a name="5">5</a>] <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6001967/" target="_blank" rel="noopener">Brauer (2017) | Mathematical epidemiology: Past, present, and future</a></p>
+<p>[<a name="6">6</a>] <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6001967/" target="_blank" rel="noopener">University of Massachusetts Amherst (March, 2020) | Median incubation period for COVID-19</a></p>
+<p>[<a name="7">7</a>] <a href="https://www.cdc.gov/vaccines/adults/rec-vac/health-conditions/weakened-immune.html" target="_blank" rel="noopener">Center for Diease Control | Weakened Immune System and Adult Vaccination</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/covid-19/">COVID-19</a>
+  
+  <a class="badge badge-light" href="/tag/coronavirus/">Coronavirus</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-04-08-the-mathematics-of-pandemics%2F&amp;text=The&#43;Mathematics&#43;of&#43;Pandemics" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-04-08-the-mathematics-of-pandemics%2F&amp;t=The&#43;Mathematics&#43;of&#43;Pandemics" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=The%20Mathematics%20of%20Pandemics&amp;body=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-04-08-the-mathematics-of-pandemics%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-04-08-the-mathematics-of-pandemics%2F&amp;title=The&#43;Mathematics&#43;of&#43;Pandemics" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=The&#43;Mathematics&#43;of&#43;Pandemics%20https%3A%2F%2Fkidquant.com%2Fpost%2F2020-04-08-the-mathematics-of-pandemics%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-04-08-the-mathematics-of-pandemics%2F&amp;title=The&#43;Mathematics&#43;of&#43;Pandemics" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kidquant.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2453db0268c976f8eacba18e4a98e34c_209096_270x270_fill_q75_lanczos_center.jpg" alt="Andre Sealy"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kidquant.com/">Andre Sealy</a></h5>
+      <h6 class="card-subtitle">Quant Research / Data Scientist / Writer</h6>
+      <p class="card-text">My research interests involves Quantitative Finance, Mathematics, Data Science and Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/KidQuant" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Andre_Sealy" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThatQuantKid" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:andre@kidquant.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 30, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b481486c871a52c314ef891cd86306cc.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Andre Sealy" />
+
+
+
+
+
+  
+
+<meta name="description" content="No, but we can watch some interesting stock pitches and learn some valuable lessons" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kidquant.com/project/wallstreet-bets-stock-analysis/" />
+<link rel="canonical" href="https://kidquant.com/project/wallstreet-bets-stock-analysis/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kidquant.com/project/wallstreet-bets-stock-analysis/featured.jpg" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="KidQuant" />
+<meta property="og:url" content="https://kidquant.com/project/wallstreet-bets-stock-analysis/" />
+<meta property="og:title" content="Does a r/WallStreetBets Portfolio Significantly Outperform? | KidQuant" />
+<meta property="og:description" content="No, but we can watch some interesting stock pitches and learn some valuable lessons" /><meta property="og:image" content="https://kidquant.com/project/wallstreet-bets-stock-analysis/featured.jpg" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2022-10-05T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2022-10-05T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kidquant.com/project/wallstreet-bets-stock-analysis/"
+  },
+  "headline": "Does a r/WallStreetBets Portfolio Significantly Outperform?",
+  
+  "image": [
+    "https://kidquant.com/project/wallstreet-bets-stock-analysis/featured.jpg"
+  ],
+  
+  "datePublished": "2022-10-05T00:00:00Z",
+  "dateModified": "2022-10-05T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Andre Sealy"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "KidQuant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "No, but we can watch some interesting stock pitches and learn some valuable lessons"
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Does a r/WallStreetBets Portfolio Significantly Outperform? | KidQuant</title>
+
+  
+  
+  
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="69d122401c1b27e53efc69e0c129becf" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Does a r/WallStreetBets Portfolio Significantly Outperform?</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Andre Sealy</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 5, 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header" href="/slides/example/" target="_blank">
+    Slides
+  </a>
+  
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 405px;">
+  <div style="position: relative">
+    <img src="/project/wallstreet-bets-stock-analysis/featured_hue547262c83693c7da98ece76cf220aba_50087_26cb0bff722c3f0317f94f9302d72f37.webp" width="720" height="405" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Thanks to the prevalence of COVID-19 in our everyday lives, it&rsquo;s getting increasingly difficult to return to normal for most people. While I&rsquo;ve used this additional flexibility to pick up on old hobbies (gaming, music, etc.), others have used theirs to learn about financial markets. Knowing that I work in finance, some of my friends have reached out to me for financial pointers, while others have opted for the convenience of reading r/WallStreetBets.</p>
+<p>You may be asking, why am I &ndash; someone who would be considered a &ldquo;sophiscated investor&rdquo; &ndash; would even be interested in a platform such as r/WallStreetBets? For those of you who don&rsquo;t know, I&rsquo;ve written a piece about the subreddit last year. However, it was never clearly explained the buzz around r/WallStreetBets.</p>
+<p>Due to the pandemic (the financial insecurity and flexibility it brought to millions of people), as well as the stimulus checks provided by the government and the rise of free trading platforms such as Robinhood, a lot of people who would typically not dabble with stocks are having fun with the stock market. They&rsquo;re also investing in all sorts of zany things like Dogecoin and GameStop. Institutional Investors (the &ldquo;smart money&rdquo;) and the veterans in the financial media fail to understand this, and they&rsquo;re generally condescending and negative towards these new brand of retail investors.</p>
+<p>They call them idiots for taking risks in cryptocurrencies; they call them fools for believing companies in dying industries with falling revenues are great investments [<a href="#2">2</a>]. From this, the term &ldquo;Dumb Money&rdquo; was used to describe this new breed of investors; &ldquo;DOGE/GME to the moon,&rdquo; they frequently chant, much to the disdain and confusion of legacy investors and their friends in the legacy media [<a href="#3">3</a>].</p>
+<p>Recognizing the condescension, these retail investors decide to take their agency back using the self-described label known as <strong>Retards</strong>. <strong>Retards</strong>, if you don&rsquo;t know, is a rearrangement of the word <strong>tradeRS</strong>. Since they&rsquo;re not considered legitimate <strong>tradeRS</strong> in the eyes of the investment community, they&rsquo;ll just call themselves <strong>Retards</strong>, which is an anagram designed to reclaim the agency taken from retail investments. Sure, they may be considered &ldquo;Dumb Money,&rdquo; but they&rsquo;re going to make the investment decisions they want to without the influence and manipulation of institutional investors and their friends in the financial media.</p>
+<p>This is largely the energy behind drama involving r/WallStreetBets and the rest of the investment community.</p>
+<h2 id="are-rwallstreetbets-stock-picks-even-any-good">Are r/WallStreetBets Stock Picks Even Any Good?</h2>
+<p>It is generally assumed &ndash; rightly or wrongly &ndash; that if you have a background in finance, you know what you&rsquo;re talking about. The barriers required to work within the industry seem to justify the claim. The most well-known front-end finance jobs require a bachelor&rsquo;s degree at an accredited four-year university, along with passing, at minimum, the Securities Industry Essentials Exam (or SIE) and either a FINRA Series 3 or 7 Exam.</p>
+<p>Jobs that are more analytically driven, such as Actuaries, may require candidates to have a statistical or mathematical background and pass several SOA (Society of Actuaries) Exams. While Quants (which is my domain) typically don&rsquo;t require examinations; however, some positions do encourage and require candidates to have at minimum a Masters of Science in a STEM field.</p>
+<p>So yes, it may be easy to see why people on Wall Street are considered &ldquo;Smart Money.&rdquo;</p>
+<p>However, this doesn&rsquo;t mean you need education and fancy certificates to make good investments.  Warren Buffett, one of the greatest investors alive, began to invest on his own when he was only 11-years-old. While the man would never even look at any of the companies r/WallStreetBets are investing in, he established a system that allowed him to make sound investments using the resources available at the time; namely, a book published by Benjamin Graham called The Intelligent Investor. Speaking from personal experience, I started learning about finance and economics on my own time before I enrolled in university to pursue it as a career.</p>
+<p>Today, the resources available to help retail investors are potentially endless. Most of what you&rsquo;ll find on the internet is bunk; however, you can find invaluable information if you know where to look.</p>
+<p>This project aims to see if the <strong>TradeRS</strong> at r/WallStreetBets know where to look. Are they seeing things we aren&rsquo;t seeing or just larping as wall street speculators?</p>
+<h2 id="what-are-meme-stocks">What Are &ldquo;Meme Stocks&rdquo;?</h2>
+<p>A meme stock is a stock that has seen an increase in volume not because of how well the company performs, but rather because of hype on social media and online forums. For this reason, these stocks often become overvalued, seeing drastic price increases in just a short amount of time.</p>
+<p>Many of these stocks have not performed well in recent years. Some of these stocks may exist in struggling retail or brick-&amp;-mortor (GME) industries. Other stocks may have once been considered leaders in their respective industries but have rebranded and shifted their focus to maintain viability (BBY). However, one common thing among these meme stocks is that they all follow the same life cycle.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Meme-Stocks-Portfolio/meme-stock-life-cycle.jpg" alt="image" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>&ldquo;To the moon&rdquo; was a popular rallying cry for many holders of these stocks. It was used as a reminding, regardless of how much the price may drop, buy and never sell, because we (retail investors) control the value of the stock, and not institutional investors. There is no doube that it can be exciting to make money day trading and to be part of something bigger than yourself.</p>
+<p>Unfortunately, there is still a large body of research that suggest that even the most experienced of day traders lose money [<a href="#4">4</a>].</p>
+<h2 id="building-a-meme-stock-portfolio">Building a &ldquo;Meme Stock&rdquo; Portfolio</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/WSB-Favorite-Stocks/02.PNG" alt="Result" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>We will construct a portfolio using popular stocks from the WallStreetBets community. In July 2021, I decided to find the most talk-about stocks in the r/WallStreetBets subreddit and narrowed the list down to 20 of the most popular equities on the platform. Six of these assets have recently gone public, and they will be excluded from the experiment.</p>
+<p>We&rsquo;re also going to include popular cryptocurrencies, such as Bitcoin and Dogecoin.</p>
+<h3 id="seeking-alpha">Seeking Alpha</h3>
+<p>Alpha, or Jensen&rsquo;s Alpha, quantifies the excess returns obtained by a portfolio of investments above the returns implied by the Capital Asset Pricing Model (CAPM).</p>
+<p>The formula is denoted as follows:</p>
+<p>$$r_{\alpha} = r_{f} + \beta_{\alpha} * (r_{m}-r_{f})+\epsilon$$</p>
+<p>where:</p>
+<ul>
+<li>$r_{f}$ = Risk Free Rate</li>
+<li>$\beta$ = Beta of a security</li>
+<li>$r_{m}$ = Expected market return</li>
+<li>$\epsilon$ = Tracking error</li>
+</ul>
+<p>This formula can be better understood if we refactor the formula as seen below:</p>
+<p>$$(r_{\alpha}-r_{f})=\beta_{\alpha}*(r_{m}-r_{f})+\epsilon$$</p>
+<p>The left side of the equation gives us the difference between the asset return and risk-free rate, the &ldquo;excess return.&rdquo; If we regress the market excess return against the asset excess return, the slope represents the asset&rsquo;s beta. Therefore, beta can also be calculated by the equation:</p>
+<p>$$\beta=\frac{Cov(r_{a},r_{b})}{var(r_{b})}$$</p>
+<p>So beta can be described as:</p>
+<p>$$\beta=\rho_{a,b}*\frac{\sigma_{a}}{\sigma_{b}}$$</p>
+<p>The formula above shows that beta can be explained by the correlated relative volatility. To make this simplier, beta can be calculated by doing a simple linear regression which can be viewed as a factor to explain the return, and the tracking error can represent alpha.</p>
+<p>The value of alpha &ndash; the excess returns &ndash; can vary. A positive number signal&rsquo;s overperformance relative to the benchmark, while a negative number signals underperformance. Zero (or a number close to zero) shows a neutral performance; the fund tracks the benchmark.</p>
+<p>The CAPM formula utilizes the risk-free rate to account for risk. Therefore, if a given security is fairly priced, the expected returns should be the same as the returns estimated by CAPM. However, if the security were to earn morethan the risk-adjusted returns, the alpha should be positive.</p>
+<h2 id="descriptive-statistics-risk--return">Descriptive Statistics (Risk &amp; Return)</h2>
+<p>So how does our meme stock portfolio perform?</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Meme-Stocks-Portfolio/alpha.png" alt="alpha" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>As we can see, most of the stocks in our portfolio outperform the S&amp;P 500 by a modest margin. Out of the 20 assets, 8 of them outperform our benchmark at least 1%, and 3 have underperformed our benchmark. If we average the , it comes out to 0.9386, which means that our meme stock portfolio only outperforms the S&amp;P by 0.93% (I got this figure by simply averaging the  for each asset). So, should you invest in a portfolio like this? I suppose it &ldquo;depends&rdquo; on your income goals and overall suitability (after all, this isn&rsquo;t investment advice).</p>
+<p>If I&rsquo;m a college student, probably majoring in economics/finance with an interest in quant finance, and I&rsquo;m just experimenting with investment strategies, I might be grateful that my strategy is at least slightly better than the S&amp;P. However, if I&rsquo;m a grown adult looking generate wealth, I don&rsquo;t think I would be satisfied with 0.93%, which barely accounts for management fees.</p>
+<p>Granted, those who consider meme stocks a sound investment are usually self-taught and were first introduced to investing during the AMC/GME/DOGE craze. Needless to say, they are probably managing their own portfolios (no management fees for them). It may be difficult to quantitatively comprehend the idea of an  0.93, especially when so many assets can perform much better.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Meme-Stocks-Portfolio/beta.png" alt="beta" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>As mentioned before, most assets (especially stocks) are positively correlated with the broader market. Most of the assets in our portfolio have $\beta$ greater than 1, which means they are more volatile than the overall market. As we see, CLF has a $\beta$ of 1.7, which means we can expect this stock to increase by 1.7% for every 1% increase in the broader market.</p>
+<h2 id="portfolio-optimization">Portfolio Optimization</h2>
+<p>We have shown that our meme stock portfolio outperforms the S&amp;P 500 by 0.93%, but that doesn&rsquo;t mean it will typically outperform our benchmark by this amount. This amount can change, based on the size of our portfolio, as well as how we weigh each asset. We can figure out how to best do this, by utilizing the Modern Portfolio Theory (MPT). The MPT is a method for selecting investments in order to maximize their overall returns within an acceptable level of risk.</p>
+<p>Essentially, we are trying to find the most efficient portfolio possible.</p>
+<p>How do we measure the efficiency? We measure it with another formula known as the Sharp Ratio. The Sharpe ratio measures the performance of an investment compared to a risk-free asset, after adjusting for its risk. The sharpe ratio can be calculated by the following:</p>
+<p>$$Sharpe Ratio = \frac{R_{p}-R_{f}}{\sigma_{p}} $$</p>
+<p>The greater the Sharpe ratio, the better, as it indicates that an instrument&rsquo;s returns are large relative to its risk. Also, the greater the Sharpe ratio, the higher the earnings on average than the risk-free rate.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Meme-Stocks-Portfolio/portfolio.png" alt="beta" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Now we&rsquo;ve allocated all 20 of our assets based on our risk tolerance. As you can see, our program has plotted 100,000 unique portfolios, with annualized returns ($\alpha$) on our y-axis and annualized volatility ($\beta$) on our x-axis. It&rsquo;s possible to select a random portfolio inside the curve, but there will always be some portfolio out there, with the same number of assets, that will outperform in terms of returns and risk. The optimal or efficient portfolio will always exist somewhere on the edge of the curve, hence, the efficient frontier.</p>
+<p>If we want the least about of risk possible, using our selected 20 instruments, we should allocate most of our funds towards BBBY, RNG, TWNK, TX, USA, X, HCA, VRTX, and BTC. These 9 instruments will comprise 77.4% of the portfolio. By allocating the portfolio in this way and prioritizing risk, we will achieve an excess annualized return (our $\alpha$) and volatility of 0.3.</p>
+<p>What if we only care about maximizing return? If we want the greatest return possible, using the same 20 instruments, we should allocate most of our funds towards AMC, CLF, GME, BB, TWNK, SAVA, HCA, BTC, and DOGE. These assets will comprise ~75% of our portfolio. Using this optimal portfolio allocation which prioritizes returns, our portfolio achieves an annualized return of 0.84, with a volatility of 0.51.</p>
+<p>So compared to the descriptive statistical analysis we&rsquo;ve used earlier, we&rsquo;ve actually <strong>OVERSTATED</strong> our return for this portfolio. Using the most optimal allocation method possible, with thousands of different possibilities, we find that our meme stock portfolio still barely <em>outperformes</em> our benchmark.</p>
+<p>In practical terms, it would be difficult for a serious investor to justify building a portfolio with these 20 assets when there are so many different investments out there that could do significantly better for the least amount of risk. This is especially true if you&rsquo;re trying to avoid investing in assets that appear to be overvalued, such as Bitcoin and GameStop.</p>
+<h2 id="lessons-from-the-meme-stock-craze">Lessons From The Meme-Stock Craze</h2>
+<p>I doubt this analysis will convince anyone apart of r/WallStreetBets, TradeRS, or anyone sympathetic to the meme-stock trading &ldquo;revolution.&rdquo; Much has been written about the heroic campaign by individual investors to slay giant institutional investors. It&rsquo;s easy to understand why this narrative is compelling, so I doubt anyone would want to listen to someone with institutional experiences, such as myself. Regardless, there are still valuable lessons that can be learned from the meme-stock craze, and the effort to democratize financial markets misses the market on many of these lessons.</p>
+<p>First, it&rsquo;s dangerous for investors to follow crowds in stock markets or any need. r/WallStreetBets initiated campaigns to inflate asset prices past their intrinsic value or their long-term fundaments, making opportunities such as GameStop, AMC, and Bed, Bath &amp; Beyond appear to be attractive investment opportunities. But those who bought these stocks close to their peaks are already nursing losses as the shares have come down. Overpaying for stock prices that don&rsquo;t reflect business fundamentals isn&rsquo;t courageous. Many who bought into the hype are already learning this painful lesson on the risk of market fads.</p>
+<p>Second, the Federal Reserve has played an unwitting role creating an enviroment where the meme-stock challenge can happen. In the Fed&rsquo;s efforts to stabilize the economy, money has become virtually free. Ultralow interest rates encourages people to borrow and to take bigger risk to seek better returns. As a result, we&rsquo;ve seen record sums of money being pumped into SPACS (special purpose  acquisition corporations) and private equity funds. As more money chases more opportunity, there are more instances of companies coming to market without being fully-vetted.</p>
+<p>Third, the cheap money also fuels record retail trading activity. We&rsquo;ve seen this movie before, and it rarely ends well; for those of us who remember the dot-com frenzy in the late 1990s and the mortgage bubble that led to the 2008 financial crisis. With the Fed increasing interest rates to combat persistently high inflation, they will have to reluctantly deflate any bubbles that have emerged. We&rsquo;re venturing onto uncharted territory, where our rookie investors now have to learn to generate alpha in an environment without cheap money and a zero-lower bound.</p>
+<p>As such, quality is the best recipe for returns. Focusing on high-quality companies is a good defence against irrational market moves. And companies that enjoy strong organic growth drivers aren&rsquo;t beholden to the hypercompetitive M&amp;A market for growth. Building an equity portfolio based on businesses with sustainable earnings growth is a recipe for consistent outperformance and reduced volatility, even in a world where smaller investors can mount powerful campaigns to shock market leaders.</p>
+<p>[<a name="2">2</a>] <a href="https://www.nytimes.com/2021/01/27/business/gamestop-wall-street-bets.html" target="_blank" rel="noopener">The New York Times | &lsquo;Dumb Money&rsquo; is on GameStop, and It&rsquo;s Beating Wall Street at Its Own Game </a></p>
+<p>[<a name="3">3</a>] <a href="https://qz.com/1966818/with-gamestop-reddit-and-robinhood-gamified-the-stock-market/" target="_blank" rel="noopener">Quartz | Reddit and Robinhood gamified the stock market, and it’s going to end badly</a></p>
+<p>[<a name="4">4</a>] <a href="https://faculty.haas.berkeley.edu/odean/papers/Day%20Traders/Day%20Trading%20and%20Learning%20110217.pdf" target="_blank" rel="noopener">Hass School of Business, University of California Berkley | Do Day Traders Rationally Learn About Their Ability?</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/finance/">Finance</a>
+  
+  <a class="badge badge-light" href="/tag/statistics/">Statistics</a>
+  
+  <a class="badge badge-light" href="/tag/data-science/">Data Science</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkidquant.com%2Fproject%2Fwallstreet-bets-stock-analysis%2F&amp;text=Does&#43;a&#43;r%2FWallStreetBets&#43;Portfolio&#43;Significantly&#43;Outperform%3F" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkidquant.com%2Fproject%2Fwallstreet-bets-stock-analysis%2F&amp;t=Does&#43;a&#43;r%2FWallStreetBets&#43;Portfolio&#43;Significantly&#43;Outperform%3F" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Does%20a%20r%2FWallStreetBets%20Portfolio%20Significantly%20Outperform%3F&amp;body=https%3A%2F%2Fkidquant.com%2Fproject%2Fwallstreet-bets-stock-analysis%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkidquant.com%2Fproject%2Fwallstreet-bets-stock-analysis%2F&amp;title=Does&#43;a&#43;r%2FWallStreetBets&#43;Portfolio&#43;Significantly&#43;Outperform%3F" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Does&#43;a&#43;r%2FWallStreetBets&#43;Portfolio&#43;Significantly&#43;Outperform%3F%20https%3A%2F%2Fkidquant.com%2Fproject%2Fwallstreet-bets-stock-analysis%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkidquant.com%2Fproject%2Fwallstreet-bets-stock-analysis%2F&amp;title=Does&#43;a&#43;r%2FWallStreetBets&#43;Portfolio&#43;Significantly&#43;Outperform%3F" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kidquant.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2453db0268c976f8eacba18e4a98e34c_209096_270x270_fill_q75_lanczos_center.jpg" alt="Andre Sealy"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kidquant.com/">Andre Sealy</a></h5>
+      <h6 class="card-subtitle">Quant Research / Data Scientist / Writer</h6>
+      <p class="card-text">My research interests involves Quantitative Finance, Mathematics, Data Science and Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/KidQuant" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Andre_Sealy" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThatQuantKid" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:andre@kidquant.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

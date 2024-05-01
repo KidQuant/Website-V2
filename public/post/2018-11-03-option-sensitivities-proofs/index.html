@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 30, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b481486c871a52c314ef891cd86306cc.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Andre Sealy" />
+
+
+
+
+
+  
+
+<meta name="description" content="The following is an general overview of vanilla options partial sensitivities (option greeks). This series will be a continuation of the project Option Payoffs, Black-Scholes, and the Greeks. We&rsquo;ve already outlined the necessary terms for understanding Options and the Greeks here." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kidquant.com/post/2018-11-03-option-sensitivities-proofs/" />
+<link rel="canonical" href="https://kidquant.com/post/2018-11-03-option-sensitivities-proofs/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kidquant.com/post/2018-11-03-option-sensitivities-proofs/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="KidQuant" />
+<meta property="og:url" content="https://kidquant.com/post/2018-11-03-option-sensitivities-proofs/" />
+<meta property="og:title" content="Option Sensitivities, Formula Proofs, and Python Scripts: Part 1 (Delta) | KidQuant" />
+<meta property="og:description" content="The following is an general overview of vanilla options partial sensitivities (option greeks). This series will be a continuation of the project Option Payoffs, Black-Scholes, and the Greeks. We&rsquo;ve already outlined the necessary terms for understanding Options and the Greeks here." /><meta property="og:image" content="https://kidquant.com/post/2018-11-03-option-sensitivities-proofs/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2018-11-03T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2018-11-03T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kidquant.com/post/2018-11-03-option-sensitivities-proofs/"
+  },
+  "headline": "Option Sensitivities, Formula Proofs, and Python Scripts: Part 1 (Delta)",
+  
+  "image": [
+    "https://kidquant.com/post/2018-11-03-option-sensitivities-proofs/featured.png"
+  ],
+  
+  "datePublished": "2018-11-03T00:00:00Z",
+  "dateModified": "2018-11-03T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Andre Sealy"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "KidQuant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "The following is an general overview of vanilla options partial sensitivities (option greeks). This series will be a continuation of the project Option Payoffs, Black-Scholes, and the Greeks. We\u0026rsquo;ve already outlined the necessary terms for understanding Options and the Greeks here."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Option Sensitivities, Formula Proofs, and Python Scripts: Part 1 (Delta) | KidQuant</title>
+
+  
+  
+  
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="88d158122478293b87384c5bfa0af476" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Option Sensitivities, Formula Proofs, and Python Scripts: Part 1 (Delta)</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Andre Sealy</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 3, 2018
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/finance/">Finance</a>, <a href="/category/mathematics/">Mathematics</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 815px; max-height: 615px;">
+  <div style="position: relative">
+    <img src="/post/2018-11-03-option-sensitivities-proofs/featured_hue209d033ddaa09f3c12dd22da67919bd_97355_ea7ef83282f6456166864a232ed25f23.webp" width="815" height="615" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>The following is an general overview of vanilla options partial sensitivities (option greeks). This series will be a continuation of the project <em>Option Payoffs, Black-Scholes, and the Greeks.</em> We&rsquo;ve already outlined the necessary terms for understanding Options and the Greeks <a href="https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/" target="_blank" rel="noopener">here</a>. In this post, I will be covering the first greek: Detla ($\Delta$).</p>
+<p>The delta of an option, $\Delta$, is defined as the rate of change of the option price respected to the rate of change of the underlying asset price:</p>
+<p>$$\Delta = \frac{\partial V}{\partial S}$$</p>
+<p>As you know, $V$ is the value of the option while $S$ is the underlying asset price.</p>
+<p>We&rsquo;ve already covered the the Black-Scholes option pricing model for a call option on a non-dividend stock:</p>
+<p>$$
+C(S_{t},t) = N(d_{1})S_{t}-N(d_{2})Ke^{-r(T-t)}
+$$</p>
+<p>With:</p>
+<p>$d_{1}  = \frac{1}{\sigma \sqrt{T-t}} \Big[ln\bigg(\frac{S_{t}}{k}\bigg)+\bigg(r+\frac{\sigma^{2}}{2}\bigg)(T-t) \Big]$</p>
+<p>$d_{2}  = d_{1} - \sigma \sqrt{T-t}$</p>
+<p>However, we haven&rsquo;t covered the Black-Scholes model for a put option, which is as follows:</p>
+<p>$$P(S_{t},t)=-SN(-d_{1})+Ee^{-r(T-t)}N(-d_{2})$$</p>
+<p>The call option Delta will be:</p>
+<p>$$\Delta_{c}=\frac{dc}{dS}=e^{-qT}N(d_{1})$$</p>
+<h3 id="proof">Proof</h3>
+<p>$$
+\begin{aligned}
+\Delta_{c} = \frac{dc}{dS} &amp; = \frac{d(e^{-qT}SN(d_{1})-Xe^{-rT}N(d_{2}))}{dS}\
+&amp; = e^{-qT}N(d_{1})+Se^{-qT}\frac{\partial N(d_{1})}{\partial S}-Xe^{-rT}\frac{\partial N(d_{2})}{\partial S}  \
+&amp; = e^{-qT}N(d_{1})+Se^{-qT}\frac{\partial Nd_{1}}{\partial d_{1}}-Xe^{-rT}\frac{\partial d_{2}}{\partial S}\frac{\partial N(d_{2})}{\partial d_{2}} \
+&amp; = e^{-qT}N(d_{1})+Se^{-qT}\frac{\partial Nd_{1}}{\partial d_{1}}N^{\prime}(d_{1})-Xe^{-rT}\frac{\partial d_{2}}{\partial S}N^{\prime}(d_{2})\
+&amp; = e^{-qT}N(d_{1})+\underbrace{\frac{Se^{-qT}N^{\prime}(d_{1})}{S\sigma\sqrt{T}}-\frac{Xe^{-rT}N^{\prime}(d_{1})}{S\sigma\sqrt{T}}}_{I=0}
+\end{aligned}
+$$</p>
+<p>Above, $I=0$. Referencing the equation for risk-adjusted lognormal probabilities, $d_{1}$, we have:</p>
+<p>$$
+\begin{aligned}
+ln(S/X&amp;)+(r-q+\frac{\sigma^{2}}{2})T=d_{1}\sigma\sqrt{T} \
+\implies &amp; ln(S)-ln(X)+(r-q)T=d_{1}\sigma\sqrt{T}-\frac{\sigma^{2}}{2}T=\frac{1}{2}\big[d^{2}<em>{1}-(d</em>{1}-\sigma\sqrt{T})^{2}]\big] \
+\implies &amp; ln(S)+ln(\frac{1}{\sqrt{2\pi}})-\frac{d_{1}^{2}}{2}=ln(X)-(r-q)T+ln(\frac{1}{\sqrt{2\pi}})-\frac{d_{2}^{2}}{2} \
+\implies &amp; S\frac{1}{\sqrt{2\pi}}e^{-\frac{d_{1}^{2}}{2}}=Xe^{-(r-q)T}\frac{1}{\sqrt{2\pi}}e^{-\frac{d_{2}^{2}}{2}}\
+\implies&amp;SN^{\prime}(d_{1})=Xe^{-(r-q)T}N^{\prime}(d_{2})\
+\implies&amp;Se^{-qT}N^{\prime}(d_{1})=Xe^{-rT}N^{\prime}(d_{2})
+\end{aligned}
+$$</p>
+<p>From the derivation of $\Delta=\frac{dc}{dS}$, we obtain:</p>
+<p>$$\Delta_{c}=e^{-qT}N(d_{1})$$</p>
+<p>As we should have what is known as <em>Call/Put Parity</em>, we should have the following equation:</p>
+<p>$$
+\begin{aligned}
+p+S&amp;e^{-qT}=c+Xe^{-rT}\
+\implies&amp;\frac{dp}{dS}=\frac{dc}{dS}-e^{-qT}\
+\implies&amp;\Delta_{p}=N(d_{1})-1
+\end{aligned}
+$$</p>
+<p>Here is the python script.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">pi</span><span class="p">,</span> <span class="n">log</span><span class="p">,</span> <span class="n">e</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stat</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">BSMerton</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># 1 for a Call, -1 for a put</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">Type</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">S</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>                     <span class="c1"># Underlying asset price</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">K</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>                     <span class="c1"># Option strike K</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>                     <span class="c1"># Continuous risk free rate</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">q</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>                     <span class="c1"># Dividend countinous rate</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">T</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="o">/</span> <span class="mf">365.0</span>             <span class="c1"># Compute time to expiry</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">sigma</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span>                 <span class="c1"># Compute time to expiry</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">sigmaT</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sigma</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span> <span class="o">**</span> <span class="mf">0.5</span>    <span class="c1"># sigma*T for reusability</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">d1</span> <span class="o">=</span> <span class="p">(</span><span class="n">log</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">S</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">K</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">                   <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">q</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sigma</span> <span class="o">**</span> <span class="mi">2</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                   <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span><span class="p">)</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">sigmaT</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">d2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">d1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">sigmaT</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">Delta</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">delta</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">delta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dfq</span> <span class="o">=</span> <span class="n">e</span> <span class="o">**</span> <span class="p">(</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">q</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">Type</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">[</span><span class="n">dfq</span> <span class="o">*</span> <span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">d1</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">[</span><span class="n">dfq</span> <span class="o">*</span> <span class="p">(</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">d1</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span>
+</span></span></code></pre></div><p>Code that you can use to calculate and chart Delta sensitivities.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">math</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">cm</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">OptionsAnalytics</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">OptionsAnalytics</span> <span class="kn">import</span> <span class="n">BSMerton</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">sigma</span> <span class="o">=</span> <span class="mf">0.12</span>            <span class="c1"># Flat volatility</span>
+</span></span><span class="line"><span class="cl"><span class="n">strike</span> <span class="o">=</span> <span class="mf">105.0</span>          <span class="c1"># Fixed strike</span>
+</span></span><span class="line"><span class="cl"><span class="n">epsilon</span> <span class="o">=</span> <span class="mf">0.4</span>           <span class="c1"># The % on the left/right of Strike.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Asset prices are centered around Spot (&#34;ATM Spot&#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="n">shortexpiry</span> <span class="o">=</span> <span class="mi">30</span>        <span class="c1"># Shortest expiry in days</span>
+</span></span><span class="line"><span class="cl"><span class="n">longexpiry</span> <span class="o">=</span> <span class="mi">720</span>        <span class="c1"># Longest expiry in days</span>
+</span></span><span class="line"><span class="cl"><span class="n">riskfree</span> <span class="o">=</span> <span class="mf">0.00</span>         <span class="c1"># Continous risk free rate</span>
+</span></span><span class="line"><span class="cl"><span class="n">divrate</span> <span class="o">=</span> <span class="mf">0.00</span>          <span class="c1"># Continous div rate</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Grid deinition</span>
+</span></span><span class="line"><span class="cl"><span class="n">dx</span><span class="p">,</span> <span class="n">dy</span> <span class="o">=</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span>         <span class="c1"># Step throughout asset price and expiries axis</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># xx: Asset price axis, yy: expiry axis, zz: greek axis</span>
+</span></span><span class="line"><span class="cl"><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">strike</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">epsilon</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">epsilon</span><span class="p">)</span><span class="o">*</span><span class="n">strike</span><span class="p">,</span> <span class="n">dx</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                     <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">shortexpiry</span><span class="p">,</span> <span class="n">longexpiry</span><span class="p">,</span> <span class="n">dy</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Calculating greeks...&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">zz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">BSMerton</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">strike</span><span class="p">,</span> <span class="n">riskfree</span><span class="p">,</span> <span class="n">divrate</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">sigma</span><span class="p">])</span><span class="o">.</span><span class="n">Delta</span> <span class="k">for</span>
+</span></span><span class="line"><span class="cl">               <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ravel</span><span class="p">(</span><span class="n">xx</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">ravel</span><span class="p">(</span><span class="n">yy</span><span class="p">))])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">zz</span> <span class="o">=</span> <span class="n">zz</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">xx</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Plot</span> <span class="n">greek</span> <span class="n">surface</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Plotting surface...&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="o">.</span><span class="n">subtitle</span><span class="p">(</span><span class="s1">&#39;Call Delta&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">gca</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">surf</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">rstride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cstride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                       <span class="n">alpha</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cm</span><span class="o">.</span><span class="n">RdYlBu</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Asset price&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Expiry&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;Delta&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Plot 3D contour</span>
+</span></span><span class="line"><span class="cl"><span class="n">zzlevels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">zz</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">zz</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">num</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">xxlevels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">xx</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">xx</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">num</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">yylevels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">yy</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">zz</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">num</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cset</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">zz</span><span class="p">,</span> <span class="n">zzlevels</span><span class="p">,</span> <span class="n">zdir</span><span class="o">=</span><span class="err">’</span><span class="n">z</span><span class="err">’</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="n">zz</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">                   <span class="n">cmap</span><span class="o">=</span><span class="n">cm</span><span class="o">.</span><span class="n">RdYlBu</span><span class="p">,</span> <span class="n">linestyles</span><span class="o">=</span><span class="err">’</span><span class="n">dashed</span><span class="err">’</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">cset</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">zz</span><span class="p">,</span> <span class="n">xxlevels</span><span class="p">,</span> <span class="n">zdir</span><span class="o">=</span><span class="err">’</span><span class="n">x</span><span class="err">’</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="n">xx</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">                   <span class="n">cmap</span><span class="o">=</span><span class="n">cm</span><span class="o">.</span><span class="n">RdYlBu</span><span class="p">,</span> <span class="n">linestyles</span><span class="o">=</span><span class="err">’</span><span class="n">dashed</span><span class="err">’</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">cset</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">zz</span><span class="p">,</span> <span class="n">yylevels</span><span class="p">,</span> <span class="n">zdir</span><span class="o">=</span><span class="err">’</span><span class="n">y</span><span class="err">’</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="n">yy</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">                   <span class="n">cmap</span><span class="o">=</span><span class="n">cm</span><span class="o">.</span><span class="n">RdYlBu</span><span class="p">,</span> <span class="n">linestyles</span><span class="o">=</span><span class="err">’</span><span class="n">dashed</span><span class="err">’</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cset</span><span class="o">.</span><span class="n">collections</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">c</span><span class="o">.</span><span class="n">set_dashes</span><span class="p">([(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">))])</span>  <span class="c1"># Dash contours</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">clabel</span><span class="p">(</span><span class="n">cset</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">inline</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">xx</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">xx</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">yy</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">yy</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="o">.</span><span class="n">set_zlim</span><span class="p">(</span><span class="n">zz</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">zz</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ax.relim() #ax.autoscale_view(True,True,True)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Colorbar</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">colbar</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">surf</span><span class="p">,</span> <span class="n">shrink</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">extend</span><span class="o">=</span><span class="err">’</span><span class="n">both</span><span class="err">’</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">l</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_position</span><span class="p">()</span><span class="o">.</span><span class="n">bounds</span>
+</span></span><span class="line"><span class="cl"><span class="n">ll</span><span class="p">,</span> <span class="n">bb</span><span class="p">,</span> <span class="n">ww</span><span class="p">,</span> <span class="n">hh</span> <span class="o">=</span> <span class="n">colbar</span><span class="o">.</span><span class="n">ax</span><span class="o">.</span><span class="n">get_position</span><span class="p">()</span><span class="o">.</span><span class="n">bounds</span>
+</span></span><span class="line"><span class="cl"><span class="n">colbar</span><span class="o">.</span><span class="n">ax</span><span class="o">.</span><span class="n">set_position</span><span class="p">([</span><span class="n">ll</span><span class="p">,</span> <span class="n">b</span><span class="o">+</span><span class="mf">0.1</span><span class="o">*</span><span class="n">h</span><span class="p">,</span> <span class="n">ww</span><span class="p">,</span> <span class="n">h</span><span class="o">*</span><span class="mf">0.8</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Show chart</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span></code></pre></div>
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2018-11-03-option-sensitivities-proofs%2F&amp;text=Option&#43;Sensitivities%2C&#43;Formula&#43;Proofs%2C&#43;and&#43;Python&#43;Scripts%3A&#43;Part&#43;1&#43;%28Delta%29" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkidquant.com%2Fpost%2F2018-11-03-option-sensitivities-proofs%2F&amp;t=Option&#43;Sensitivities%2C&#43;Formula&#43;Proofs%2C&#43;and&#43;Python&#43;Scripts%3A&#43;Part&#43;1&#43;%28Delta%29" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Option%20Sensitivities%2C%20Formula%20Proofs%2C%20and%20Python%20Scripts%3A%20Part%201%20%28Delta%29&amp;body=https%3A%2F%2Fkidquant.com%2Fpost%2F2018-11-03-option-sensitivities-proofs%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2018-11-03-option-sensitivities-proofs%2F&amp;title=Option&#43;Sensitivities%2C&#43;Formula&#43;Proofs%2C&#43;and&#43;Python&#43;Scripts%3A&#43;Part&#43;1&#43;%28Delta%29" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Option&#43;Sensitivities%2C&#43;Formula&#43;Proofs%2C&#43;and&#43;Python&#43;Scripts%3A&#43;Part&#43;1&#43;%28Delta%29%20https%3A%2F%2Fkidquant.com%2Fpost%2F2018-11-03-option-sensitivities-proofs%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2018-11-03-option-sensitivities-proofs%2F&amp;title=Option&#43;Sensitivities%2C&#43;Formula&#43;Proofs%2C&#43;and&#43;Python&#43;Scripts%3A&#43;Part&#43;1&#43;%28Delta%29" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kidquant.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2453db0268c976f8eacba18e4a98e34c_209096_270x270_fill_q75_lanczos_center.jpg" alt="Andre Sealy"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kidquant.com/">Andre Sealy</a></h5>
+      <h6 class="card-subtitle">Quant Research / Data Scientist / Writer</h6>
+      <p class="card-text">My research interests involves Quantitative Finance, Mathematics, Data Science and Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/KidQuant" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Andre_Sealy" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThatQuantKid" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:andre@kidquant.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

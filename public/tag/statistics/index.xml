@@ -1,0 +1,1716 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics | KidQuant</title>
+    <link>https://kidquant.com/tag/statistics/</link>
+      <atom:link href="https://kidquant.com/tag/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Statistics</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 05 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <title>Statistics</title>
+      <link>https://kidquant.com/tag/statistics/</link>
+    </image>
+    
+    <item>
+      <title>Does a r/WallStreetBets Portfolio Significantly Outperform?</title>
+      <link>https://kidquant.com/project/wallstreet-bets-stock-analysis/</link>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/project/wallstreet-bets-stock-analysis/</guid>
+      <description>&lt;p&gt;Thanks to the prevalence of COVID-19 in our everyday lives, it&amp;rsquo;s getting increasingly difficult to return to normal for most people. While I&amp;rsquo;ve used this additional flexibility to pick up on old hobbies (gaming, music, etc.), others have used theirs to learn about financial markets. Knowing that I work in finance, some of my friends have reached out to me for financial pointers, while others have opted for the convenience of reading r/WallStreetBets.&lt;/p&gt;
+&lt;p&gt;You may be asking, why am I &amp;ndash; someone who would be considered a &amp;ldquo;sophiscated investor&amp;rdquo; &amp;ndash; would even be interested in a platform such as r/WallStreetBets? For those of you who don&amp;rsquo;t know, I&amp;rsquo;ve written a piece about the subreddit last year. However, it was never clearly explained the buzz around r/WallStreetBets.&lt;/p&gt;
+&lt;p&gt;Due to the pandemic (the financial insecurity and flexibility it brought to millions of people), as well as the stimulus checks provided by the government and the rise of free trading platforms such as Robinhood, a lot of people who would typically not dabble with stocks are having fun with the stock market. They&amp;rsquo;re also investing in all sorts of zany things like Dogecoin and GameStop. Institutional Investors (the &amp;ldquo;smart money&amp;rdquo;) and the veterans in the financial media fail to understand this, and they&amp;rsquo;re generally condescending and negative towards these new brand of retail investors.&lt;/p&gt;
+&lt;p&gt;They call them idiots for taking risks in cryptocurrencies; they call them fools for believing companies in dying industries with falling revenues are great investments [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. From this, the term &amp;ldquo;Dumb Money&amp;rdquo; was used to describe this new breed of investors; &amp;ldquo;DOGE/GME to the moon,&amp;rdquo; they frequently chant, much to the disdain and confusion of legacy investors and their friends in the legacy media [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;Recognizing the condescension, these retail investors decide to take their agency back using the self-described label known as &lt;strong&gt;Retards&lt;/strong&gt;. &lt;strong&gt;Retards&lt;/strong&gt;, if you don&amp;rsquo;t know, is a rearrangement of the word &lt;strong&gt;tradeRS&lt;/strong&gt;. Since they&amp;rsquo;re not considered legitimate &lt;strong&gt;tradeRS&lt;/strong&gt; in the eyes of the investment community, they&amp;rsquo;ll just call themselves &lt;strong&gt;Retards&lt;/strong&gt;, which is an anagram designed to reclaim the agency taken from retail investments. Sure, they may be considered &amp;ldquo;Dumb Money,&amp;rdquo; but they&amp;rsquo;re going to make the investment decisions they want to without the influence and manipulation of institutional investors and their friends in the financial media.&lt;/p&gt;
+&lt;p&gt;This is largely the energy behind drama involving r/WallStreetBets and the rest of the investment community.&lt;/p&gt;
+&lt;h2 id=&#34;are-rwallstreetbets-stock-picks-even-any-good&#34;&gt;Are r/WallStreetBets Stock Picks Even Any Good?&lt;/h2&gt;
+&lt;p&gt;It is generally assumed &amp;ndash; rightly or wrongly &amp;ndash; that if you have a background in finance, you know what you&amp;rsquo;re talking about. The barriers required to work within the industry seem to justify the claim. The most well-known front-end finance jobs require a bachelor&amp;rsquo;s degree at an accredited four-year university, along with passing, at minimum, the Securities Industry Essentials Exam (or SIE) and either a FINRA Series 3 or 7 Exam.&lt;/p&gt;
+&lt;p&gt;Jobs that are more analytically driven, such as Actuaries, may require candidates to have a statistical or mathematical background and pass several SOA (Society of Actuaries) Exams. While Quants (which is my domain) typically don&amp;rsquo;t require examinations; however, some positions do encourage and require candidates to have at minimum a Masters of Science in a STEM field.&lt;/p&gt;
+&lt;p&gt;So yes, it may be easy to see why people on Wall Street are considered &amp;ldquo;Smart Money.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;However, this doesn&amp;rsquo;t mean you need education and fancy certificates to make good investments.  Warren Buffett, one of the greatest investors alive, began to invest on his own when he was only 11-years-old. While the man would never even look at any of the companies r/WallStreetBets are investing in, he established a system that allowed him to make sound investments using the resources available at the time; namely, a book published by Benjamin Graham called The Intelligent Investor. Speaking from personal experience, I started learning about finance and economics on my own time before I enrolled in university to pursue it as a career.&lt;/p&gt;
+&lt;p&gt;Today, the resources available to help retail investors are potentially endless. Most of what you&amp;rsquo;ll find on the internet is bunk; however, you can find invaluable information if you know where to look.&lt;/p&gt;
+&lt;p&gt;This project aims to see if the &lt;strong&gt;TradeRS&lt;/strong&gt; at r/WallStreetBets know where to look. Are they seeing things we aren&amp;rsquo;t seeing or just larping as wall street speculators?&lt;/p&gt;
+&lt;h2 id=&#34;what-are-meme-stocks&#34;&gt;What Are &amp;ldquo;Meme Stocks&amp;rdquo;?&lt;/h2&gt;
+&lt;p&gt;A meme stock is a stock that has seen an increase in volume not because of how well the company performs, but rather because of hype on social media and online forums. For this reason, these stocks often become overvalued, seeing drastic price increases in just a short amount of time.&lt;/p&gt;
+&lt;p&gt;Many of these stocks have not performed well in recent years. Some of these stocks may exist in struggling retail or brick-&amp;amp;-mortor (GME) industries. Other stocks may have once been considered leaders in their respective industries but have rebranded and shifted their focus to maintain viability (BBY). However, one common thing among these meme stocks is that they all follow the same life cycle.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/meme-stock-life-cycle.jpg&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;To the moon&amp;rdquo; was a popular rallying cry for many holders of these stocks. It was used as a reminding, regardless of how much the price may drop, buy and never sell, because we (retail investors) control the value of the stock, and not institutional investors. There is no doube that it can be exciting to make money day trading and to be part of something bigger than yourself.&lt;/p&gt;
+&lt;p&gt;Unfortunately, there is still a large body of research that suggest that even the most experienced of day traders lose money [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;].&lt;/p&gt;
+&lt;h2 id=&#34;building-a-meme-stock-portfolio&#34;&gt;Building a &amp;ldquo;Meme Stock&amp;rdquo; Portfolio&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/WSB-Favorite-Stocks/02.PNG&#34; alt=&#34;Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We will construct a portfolio using popular stocks from the WallStreetBets community. In July 2021, I decided to find the most talk-about stocks in the r/WallStreetBets subreddit and narrowed the list down to 20 of the most popular equities on the platform. Six of these assets have recently gone public, and they will be excluded from the experiment.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re also going to include popular cryptocurrencies, such as Bitcoin and Dogecoin.&lt;/p&gt;
+&lt;h3 id=&#34;seeking-alpha&#34;&gt;Seeking Alpha&lt;/h3&gt;
+&lt;p&gt;Alpha, or Jensen&amp;rsquo;s Alpha, quantifies the excess returns obtained by a portfolio of investments above the returns implied by the Capital Asset Pricing Model (CAPM).&lt;/p&gt;
+&lt;p&gt;The formula is denoted as follows:&lt;/p&gt;
+&lt;p&gt;$$r_{\alpha} = r_{f} + \beta_{\alpha} * (r_{m}-r_{f})+\epsilon$$&lt;/p&gt;
+&lt;p&gt;where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$r_{f}$ = Risk Free Rate&lt;/li&gt;
+&lt;li&gt;$\beta$ = Beta of a security&lt;/li&gt;
+&lt;li&gt;$r_{m}$ = Expected market return&lt;/li&gt;
+&lt;li&gt;$\epsilon$ = Tracking error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This formula can be better understood if we refactor the formula as seen below:&lt;/p&gt;
+&lt;p&gt;$$(r_{\alpha}-r_{f})=\beta_{\alpha}*(r_{m}-r_{f})+\epsilon$$&lt;/p&gt;
+&lt;p&gt;The left side of the equation gives us the difference between the asset return and risk-free rate, the &amp;ldquo;excess return.&amp;rdquo; If we regress the market excess return against the asset excess return, the slope represents the asset&amp;rsquo;s beta. Therefore, beta can also be calculated by the equation:&lt;/p&gt;
+&lt;p&gt;$$\beta=\frac{Cov(r_{a},r_{b})}{var(r_{b})}$$&lt;/p&gt;
+&lt;p&gt;So beta can be described as:&lt;/p&gt;
+&lt;p&gt;$$\beta=\rho_{a,b}*\frac{\sigma_{a}}{\sigma_{b}}$$&lt;/p&gt;
+&lt;p&gt;The formula above shows that beta can be explained by the correlated relative volatility. To make this simplier, beta can be calculated by doing a simple linear regression which can be viewed as a factor to explain the return, and the tracking error can represent alpha.&lt;/p&gt;
+&lt;p&gt;The value of alpha &amp;ndash; the excess returns &amp;ndash; can vary. A positive number signal&amp;rsquo;s overperformance relative to the benchmark, while a negative number signals underperformance. Zero (or a number close to zero) shows a neutral performance; the fund tracks the benchmark.&lt;/p&gt;
+&lt;p&gt;The CAPM formula utilizes the risk-free rate to account for risk. Therefore, if a given security is fairly priced, the expected returns should be the same as the returns estimated by CAPM. However, if the security were to earn morethan the risk-adjusted returns, the alpha should be positive.&lt;/p&gt;
+&lt;h2 id=&#34;descriptive-statistics-risk--return&#34;&gt;Descriptive Statistics (Risk &amp;amp; Return)&lt;/h2&gt;
+&lt;p&gt;So how does our meme stock portfolio perform?&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/alpha.png&#34; alt=&#34;alpha&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As we can see, most of the stocks in our portfolio outperform the S&amp;amp;P 500 by a modest margin. Out of the 20 assets, 8 of them outperform our benchmark at least 1%, and 3 have underperformed our benchmark. If we average the , it comes out to 0.9386, which means that our meme stock portfolio only outperforms the S&amp;amp;P by 0.93% (I got this figure by simply averaging the  for each asset). So, should you invest in a portfolio like this? I suppose it &amp;ldquo;depends&amp;rdquo; on your income goals and overall suitability (after all, this isn&amp;rsquo;t investment advice).&lt;/p&gt;
+&lt;p&gt;If I&amp;rsquo;m a college student, probably majoring in economics/finance with an interest in quant finance, and I&amp;rsquo;m just experimenting with investment strategies, I might be grateful that my strategy is at least slightly better than the S&amp;amp;P. However, if I&amp;rsquo;m a grown adult looking generate wealth, I don&amp;rsquo;t think I would be satisfied with 0.93%, which barely accounts for management fees.&lt;/p&gt;
+&lt;p&gt;Granted, those who consider meme stocks a sound investment are usually self-taught and were first introduced to investing during the AMC/GME/DOGE craze. Needless to say, they are probably managing their own portfolios (no management fees for them). It may be difficult to quantitatively comprehend the idea of an  0.93, especially when so many assets can perform much better.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/beta.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As mentioned before, most assets (especially stocks) are positively correlated with the broader market. Most of the assets in our portfolio have $\beta$ greater than 1, which means they are more volatile than the overall market. As we see, CLF has a $\beta$ of 1.7, which means we can expect this stock to increase by 1.7% for every 1% increase in the broader market.&lt;/p&gt;
+&lt;h2 id=&#34;portfolio-optimization&#34;&gt;Portfolio Optimization&lt;/h2&gt;
+&lt;p&gt;We have shown that our meme stock portfolio outperforms the S&amp;amp;P 500 by 0.93%, but that doesn&amp;rsquo;t mean it will typically outperform our benchmark by this amount. This amount can change, based on the size of our portfolio, as well as how we weigh each asset. We can figure out how to best do this, by utilizing the Modern Portfolio Theory (MPT). The MPT is a method for selecting investments in order to maximize their overall returns within an acceptable level of risk.&lt;/p&gt;
+&lt;p&gt;Essentially, we are trying to find the most efficient portfolio possible.&lt;/p&gt;
+&lt;p&gt;How do we measure the efficiency? We measure it with another formula known as the Sharp Ratio. The Sharpe ratio measures the performance of an investment compared to a risk-free asset, after adjusting for its risk. The sharpe ratio can be calculated by the following:&lt;/p&gt;
+&lt;p&gt;$$Sharpe Ratio = \frac{R_{p}-R_{f}}{\sigma_{p}} $$&lt;/p&gt;
+&lt;p&gt;The greater the Sharpe ratio, the better, as it indicates that an instrument&amp;rsquo;s returns are large relative to its risk. Also, the greater the Sharpe ratio, the higher the earnings on average than the risk-free rate.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/portfolio.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Now we&amp;rsquo;ve allocated all 20 of our assets based on our risk tolerance. As you can see, our program has plotted 100,000 unique portfolios, with annualized returns ($\alpha$) on our y-axis and annualized volatility ($\beta$) on our x-axis. It&amp;rsquo;s possible to select a random portfolio inside the curve, but there will always be some portfolio out there, with the same number of assets, that will outperform in terms of returns and risk. The optimal or efficient portfolio will always exist somewhere on the edge of the curve, hence, the efficient frontier.&lt;/p&gt;
+&lt;p&gt;If we want the least about of risk possible, using our selected 20 instruments, we should allocate most of our funds towards BBBY, RNG, TWNK, TX, USA, X, HCA, VRTX, and BTC. These 9 instruments will comprise 77.4% of the portfolio. By allocating the portfolio in this way and prioritizing risk, we will achieve an excess annualized return (our $\alpha$) and volatility of 0.3.&lt;/p&gt;
+&lt;p&gt;What if we only care about maximizing return? If we want the greatest return possible, using the same 20 instruments, we should allocate most of our funds towards AMC, CLF, GME, BB, TWNK, SAVA, HCA, BTC, and DOGE. These assets will comprise ~75% of our portfolio. Using this optimal portfolio allocation which prioritizes returns, our portfolio achieves an annualized return of 0.84, with a volatility of 0.51.&lt;/p&gt;
+&lt;p&gt;So compared to the descriptive statistical analysis we&amp;rsquo;ve used earlier, we&amp;rsquo;ve actually &lt;strong&gt;OVERSTATED&lt;/strong&gt; our return for this portfolio. Using the most optimal allocation method possible, with thousands of different possibilities, we find that our meme stock portfolio still barely &lt;em&gt;outperformes&lt;/em&gt; our benchmark.&lt;/p&gt;
+&lt;p&gt;In practical terms, it would be difficult for a serious investor to justify building a portfolio with these 20 assets when there are so many different investments out there that could do significantly better for the least amount of risk. This is especially true if you&amp;rsquo;re trying to avoid investing in assets that appear to be overvalued, such as Bitcoin and GameStop.&lt;/p&gt;
+&lt;h2 id=&#34;lessons-from-the-meme-stock-craze&#34;&gt;Lessons From The Meme-Stock Craze&lt;/h2&gt;
+&lt;p&gt;I doubt this analysis will convince anyone apart of r/WallStreetBets, TradeRS, or anyone sympathetic to the meme-stock trading &amp;ldquo;revolution.&amp;rdquo; Much has been written about the heroic campaign by individual investors to slay giant institutional investors. It&amp;rsquo;s easy to understand why this narrative is compelling, so I doubt anyone would want to listen to someone with institutional experiences, such as myself. Regardless, there are still valuable lessons that can be learned from the meme-stock craze, and the effort to democratize financial markets misses the market on many of these lessons.&lt;/p&gt;
+&lt;p&gt;First, it&amp;rsquo;s dangerous for investors to follow crowds in stock markets or any need. r/WallStreetBets initiated campaigns to inflate asset prices past their intrinsic value or their long-term fundaments, making opportunities such as GameStop, AMC, and Bed, Bath &amp;amp; Beyond appear to be attractive investment opportunities. But those who bought these stocks close to their peaks are already nursing losses as the shares have come down. Overpaying for stock prices that don&amp;rsquo;t reflect business fundamentals isn&amp;rsquo;t courageous. Many who bought into the hype are already learning this painful lesson on the risk of market fads.&lt;/p&gt;
+&lt;p&gt;Second, the Federal Reserve has played an unwitting role creating an enviroment where the meme-stock challenge can happen. In the Fed&amp;rsquo;s efforts to stabilize the economy, money has become virtually free. Ultralow interest rates encourages people to borrow and to take bigger risk to seek better returns. As a result, we&amp;rsquo;ve seen record sums of money being pumped into SPACS (special purpose  acquisition corporations) and private equity funds. As more money chases more opportunity, there are more instances of companies coming to market without being fully-vetted.&lt;/p&gt;
+&lt;p&gt;Third, the cheap money also fuels record retail trading activity. We&amp;rsquo;ve seen this movie before, and it rarely ends well; for those of us who remember the dot-com frenzy in the late 1990s and the mortgage bubble that led to the 2008 financial crisis. With the Fed increasing interest rates to combat persistently high inflation, they will have to reluctantly deflate any bubbles that have emerged. We&amp;rsquo;re venturing onto uncharted territory, where our rookie investors now have to learn to generate alpha in an environment without cheap money and a zero-lower bound.&lt;/p&gt;
+&lt;p&gt;As such, quality is the best recipe for returns. Focusing on high-quality companies is a good defence against irrational market moves. And companies that enjoy strong organic growth drivers aren&amp;rsquo;t beholden to the hypercompetitive M&amp;amp;A market for growth. Building an equity portfolio based on businesses with sustainable earnings growth is a recipe for consistent outperformance and reduced volatility, even in a world where smaller investors can mount powerful campaigns to shock market leaders.&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://www.nytimes.com/2021/01/27/business/gamestop-wall-street-bets.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The New York Times | &amp;lsquo;Dumb Money&amp;rsquo; is on GameStop, and It&amp;rsquo;s Beating Wall Street at Its Own Game &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://qz.com/1966818/with-gamestop-reddit-and-robinhood-gamified-the-stock-market/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quartz | Reddit and Robinhood gamified the stock market, and it’s going to end badly&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://faculty.haas.berkeley.edu/odean/papers/Day%20Traders/Day%20Trading%20and%20Learning%20110217.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hass School of Business, University of California Berkley | Do Day Traders Rationally Learn About Their Ability?&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analyzing News Articles With Python</title>
+      <link>https://kidquant.com/project/analyzing-news-articles-python/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/project/analyzing-news-articles-python/</guid>
+      <description>&lt;p&gt;Never before has America become more polarized than we are today. As such, the news we consume is a function of our polarization. Right-leaning people tend to get their information from Fox News, The Wall Street Journal, National Review, etc. People who lean left tend to get their information from MSNBC, The New York Times, The Huffington Post, etc. There are a handful of neutral publications (Reuters, Politico, Associated Press, etc.). Still, even their alignment falls into question, based on how they report the news.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/partisan.gif&#34; alt=&#34;Partisan Divide&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s unclear to what extent news plays a role in fueling the partisan divide in our country. There is some evidence to suggest that people, when given accurate information on controversial issues, will choose to disregard this information to fit commonly held beliefs [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. This perhaps can explain the apparent bias for news outlets. Now, more than ever, people should be allowed to sift through news sources that are free from bias, misinformation, and personal polarization.&lt;/p&gt;
+&lt;h2 id=&#34;all-sides-news-aggregator&#34;&gt;All Sides News Aggregator&lt;/h2&gt;
+&lt;p&gt;According to an old Pew Research poll, most Americans would prefer if news media would present the facts without adding their interpretation of the events [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Some may argue that objectivity in the news has never occurred, and therefore, impossible, and in some cases, undesirable. Regardless of whether or not our news should be presented from an objective lens, at the very least, journalists should be honest about their affiliation. In comes &lt;strong&gt;All Sides&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;All Sides is a bipartisan organization that looks at a more balanced approach to news coverage by collecting the top headlines of the day and showcasing the reporting of the news outlet on the left, right, and center. The platform also allows readers the rate the lean of the publication for further analysis [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;The first mode of attack is figuring out how we can go about extracting these stories for our analysis. We can extract all stories from all publications, but what if we want a more targeted focus? One interesting feature of the All Sides website is that we can look for articles based on the topic.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides.PNG&#34; alt=&#34;All Sides&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We can get articles from pretty much any topic: Criminal Justice, Education, and the Economy. All Sides even collects the news perspectives on the most important topic in the world right now, the Coronavirus. (Yes, our society is so divided right now, we&amp;rsquo;ve even managed to politize a deadly virus)&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m going to use immigration as our topic; I feel it&amp;rsquo;s pretty easy to understand where both sides (the political left and right) stand on this issue. The first part of the project involves web scraping the information that we are most interested in, such as the headline, date of the story, description, source, the lean/bias of the source, and the link of the story.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles.PNG&#34; alt=&#34;example articles&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The results provide a data frame that we can use as a stepping stone to extract relevant information, such as the body of the article and the authors. Sure, we could have extracted all of that information along with the rest. However, web scraping is very tricky, as no two websites have the same HTML structure and layout. This is especially true for news media websites.&lt;/p&gt;
+&lt;p&gt;As such, we relied on a third-party source for the extracting news, with the API known as &lt;strong&gt;News-Please&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;news-please-api&#34;&gt;News Please API&lt;/h2&gt;
+&lt;p&gt;News-Please is an open source news crawler that extracts structured information from almost any website. You can use it to follow recursively internal hyperlinks and read RSS feeds to extract most recent and old archived articles [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;With this API, we only need to provide the root URL of the article to crawl it completely. The New-Please API combines the power of multiple state-of-the-art libraries and tools, such as &lt;code&gt;scrapy&lt;/code&gt;, &lt;code&gt;Newspaper&lt;/code&gt;, and &lt;code&gt;readability&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Using this API, along with other web crawler techniques, we have randomly extracted 291 articles from multiple sources. The Top 10 articles we extracted are presented in the following data frame.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles2.PNG&#34; alt=&#34;example article #2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As we can see, Fox News has the largest number of articles in our dataset, with 25 pieces. Reuters is right behind Fox News with 20 articles, followed by the Wall Street Journal (News Section), Washington Times, and The Hill with 20, 17, and 15 articles, respectively.&lt;/p&gt;
+&lt;p&gt;I can only speak for myself, but from what I see so far, I believe this alignment is correct for the most part. Fox News tends to lean right, while CNN and New York Times lean more left.&lt;/p&gt;
+&lt;p&gt;I think some people would disagree with the alignment of the Wall Street Journal, as the publisher is owned by News Corp, which is the parent company of Fox News. I believe most people would be inclined to agree, as far as community feedback on All Sides is concerned.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides5.PNG&#34; alt=&#34;All Sides&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Still, whether or not a news outlet is owned or operated by a particular person has little to do with its overall objectivity and bias. All Sides has conducted an in-depth analysis of major news publications such as The Wall Street Journal and has found that outlet is more aligned to the center than its peers. (Keep in mind, a Center alignment doesn&amp;rsquo;t mean better!) [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles3.PNG&#34; alt=&#34;example article 3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;When everything is extracted, we should get the data frame similar to what we presented above. The author and text columns are highlighted to demonstrate that we have obtained this new information. We&amp;rsquo;ve also included the length of characters for each article (for reasons that will be clear later).&lt;/p&gt;
+&lt;p&gt;Now that we have all of the information that we need, we can now conduct what is known as a &lt;strong&gt;Sentiment Analysis&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;sentiment-analysis&#34;&gt;Sentiment Analysis&lt;/h2&gt;
+&lt;p&gt;Sentiment Analysis is the process of computationally (at least, programming languages)  determining whether a piece of text is positive, negative, or neutral. It&amp;rsquo;s also known as opinion mining, deriving the opinion or attitude of a writer.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve all received text messages or e-mails, where we are not sure the emotion the sender is trying to convey. Certain words may carry a specific connotation that is not clear to many different types of people. Sentiment Analysis can be considered an unbias way of analyzing text.&lt;/p&gt;
+&lt;p&gt;Machine Learning practitioners utilize sentiment analysis in several different fields.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Politics&lt;/strong&gt;: I suppose this project involves politics to some degree, but we can use sentiment analysis to keep track of the consistency between specific statements and actions at the government level.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Finance&lt;/strong&gt;: As you are already aware, I am in the Finance industry. My personal experience using Sentiment Analysis in Finance consists of analyzing news articles related to specific publicly traded companies and predicting stock movements based on how the news impacted the underlying stock. This is just one example, but there are dozens of different examples of how sentiment analysis is used in Finance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Shopping (Online, Restaurants)&lt;/strong&gt;: Have you ever tried to purchase a product on Amazon? (You&amp;rsquo;re human; of course, you have.) How do you know if you can trust the reviews? What about the reviews on a Yelp listing? Sentiment Analysis can help you determine whether or not a review is fake or made by a real person.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In our case, we are using it to examine the bias of news articles.&lt;/p&gt;
+&lt;h3 id=&#34;natural-language-processing-using-google-api&#34;&gt;Natural Language Processing using Google API&lt;/h3&gt;
+&lt;p&gt;Natural Language Processing (NLP) is a field of Artificial Intelligence that gives the machines the ability to read, understand, and derive meaning from human languages. Python already provides a well-known NLP module for this task, namely the Natural Language Toolkit (NLTK). However, there is a lot that goes into preparing the data to feed through a Naive Bayes or Support Vector Classifier.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides7.PNG&#34; alt=&#34;Natural Language&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As we can see, the process for using the &lt;code&gt;nltk&lt;/code&gt; module is a painstaking process, as you can see. If we compare it with Google&amp;rsquo;s Natural Language API, the process looks a little more like this:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides8.PNG&#34; alt=&#34;Google API&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As we can see, it&amp;rsquo;s much more manageable. No need to look for specific stop words, tokenize the text, or test/train our dataset to fit the module.&lt;/p&gt;
+&lt;p&gt;To use Google Natural Language API, you need to set up a Cloud Library account, enable the Natural Language API, and download the project file you are using for the API. The tutorial for this process can be  [&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;The next process involves using Google&amp;rsquo;s NLP API to analyze the articles we&amp;rsquo;ve extracted from Part Two. We are going to create a loop that measures the Sentiment and Magnitude of each text and assign it to two new columns.&lt;/p&gt;
+&lt;h3 id=&#34;sentiment-and-magnitude&#34;&gt;Sentiment and Magnitude&lt;/h3&gt;
+&lt;p&gt;So what is the concept behind &lt;strong&gt;Sentiment&lt;/strong&gt; and &lt;strong&gt;Magnitude&lt;/strong&gt;, and how does it help us in our analysis?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sentiment&lt;/strong&gt; attempts to determine the overall attitude (positive or negative) expressed within the text. The of a text will range between -1.0 (negative) and 1.0 (positive). Of course, it goes without saying that a score of 0.0 is considered neutral.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Magnitude&lt;/strong&gt; indicates the overall strength of the emotion (either positive or negative) within the given text. We&amp;rsquo;re not sure how high this metric can go; however, the minimum us always 0. Unlike sentiment, magnitude is not normalized; each expression of emotion within the text (positive and negative) contributes to the text magnitude. So longer text may have greater magnitudes.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles4.PNG&#34; alt=&#34;example article 4&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s important to note that the Natural Language indicates differences between positive and negative emotion in a document, but does not identify specific positive and negative emotions. For example, &amp;ldquo;angry&amp;rdquo; and &amp;ldquo;sad&amp;rdquo; are both considered negative emotions. However, when the Natural Language analyzes text that is considered &amp;ldquo;angry,&amp;rdquo; or text that is considered &amp;ldquo;sad,&amp;rdquo; the response only indicates that the sentiment in the text is negative, not &amp;ldquo;sad&amp;rdquo; or &amp;ldquo;angry.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;For example, our DataFrame has returned the results of our Sentiment Analysis for the articles published from April 14th - 14th. As we can see, the majority of the articles are negative. It unclear whether or not this is any relation to the subject matter or just the nature of the industry, in general [&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;The articles with a sentiment score closer to zero are published by &lt;em&gt;The Associated Press&lt;/em&gt;, &lt;em&gt;Washington Examiner&lt;/em&gt;, and &lt;em&gt;Reuters&lt;/em&gt;. Looking at the magnitude scores, we can see the &lt;em&gt;Washington Examiner&lt;/em&gt; article has a magnitude of 36; however, we have to remember that the value is proportional to the length of the text. Seeing that the article published by the &lt;em&gt;Washington Examiner&lt;/em&gt; has 17,000+ characters, this makes sense.&lt;/p&gt;
+&lt;p&gt;On the other hand, the &lt;em&gt;Washington Examiner&lt;/em&gt; is not part of the mainstream media and primarily publishes opinion and commentary, which explains the degree in magnitude. If anything, the articles published by the &lt;em&gt;Washington Examiner&lt;/em&gt;, &lt;em&gt;Associated Press&lt;/em&gt; and &lt;em&gt;Reuters&lt;/em&gt; can be considered mixed (a neutral sentiment with a strong degree of emotion)&lt;/p&gt;
+&lt;p&gt;The articles published by &lt;em&gt;Axios&lt;/em&gt; and &lt;em&gt;New York Times&lt;/em&gt; shows a sentiment score of -0.5 and a magnitude of 3.3 and 3.4, respectively, which shows a clear negative sentiment. (Most people would not find this surprising coming from NYT) However, &lt;em&gt;Fox News (Online)&lt;/em&gt; has two similar stories that convey a slightly less negative sentiment. Because the sentiment is less than -0.5 and the magnitude is relatively strong, we would rate the sentiment for both &lt;em&gt;Fox News&lt;/em&gt; articles mixed, rather than clearly positive or negative.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Clearly Positive&amp;rdquo; or &amp;ldquo;clearly&amp;rdquo; negative sentiment varies for different cases and outlets; however, because the vast majority of news articles are negative (or at the very least, has a sentiment score of less than 0), we require a meaningful threshold to determine if an article was truly negative.&lt;/p&gt;
+&lt;p&gt;Of course, this is all dependent upon the dataset, as well as the types of articles we extract. However (for now), we choose to use this threshold for news involving political issues.&lt;/p&gt;
+&lt;h3 id=&#34;visualizations-and-statistical-analysis&#34;&gt;Visualizations and Statistical Analysis&lt;/h3&gt;
+&lt;h4 id=&#34;box-and-whiskers-plot&#34;&gt;Box and Whiskers Plot&lt;/h4&gt;
+&lt;p&gt;Although, this information is a little harder to convey on a histogram. It can be seen more clearly on a box and whiskers plot.&lt;/p&gt;
+&lt;p&gt;The distribution (as well as the skew) are more apparent when presented in the form of a box and whiskers plot. I&amp;rsquo;ve also presented the data to show where the outliers are. In order to determine which observations in distribution would be considered an outlier, we need to find something that is called the &lt;strong&gt;Interquartile Range&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;interquartile range&lt;/strong&gt; or (IQR) measures where the median of the dataset should be. While the range is the measure of the highest and lowest values (visible where the &amp;ldquo;whiskers&amp;rdquo; are found), the interquartile range is the range where the bulk of the values lie. It&amp;rsquo;s usually preferred as a measurement of spread when reporting values such as SAT scores.&lt;/p&gt;
+&lt;p&gt;The IQR can be found by finding the difference between Q3 and Q1:&lt;/p&gt;
+&lt;p&gt;$$IQR=Q3-Q1$$&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides9.PNG&#34; alt=&#34;example boxwhisker&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Once we have found the IQR for each dataset, we now need to calculate the lower and upper bounds. The lower bounds can be found by taking Q1 and subtracting by 1.5 times the IQR. The upper bound can be found using the same way, except we are using addition instead of subtraction. To bring this explanation in perspective, I&amp;rsquo;m going to use a few statistics for right-leaning sources.&lt;/p&gt;
+&lt;p&gt;Each diamond plotted above the whisker is considered an outlier,  and they&amp;rsquo;re lots of them in our right-leaning dataset. However, these articles primarily consist of opinion pieces from the &lt;em&gt;Washington Times&lt;/em&gt;, &lt;em&gt;Washington Examiner&lt;/em&gt;, &lt;em&gt;The Christian Perspective&lt;/em&gt;, &lt;em&gt;Reason&lt;/em&gt;, and the &lt;em&gt;National Post&lt;/em&gt;. (The largest magnitude in our dataset for right-leaning sources)&lt;/p&gt;
+&lt;p&gt;Despite all the outliers, the distribution of the right-leaning dataset is still similar to that of the &amp;ldquo;politically-neutral&amp;rdquo; sources. However, there is a major skew in the distribution for left-leaning sources. Although the variation is greater (IQR of 17.6!), the whisker on the far end is much longer than the whisker for right/center-leaning sources.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/box-and-whisker.PNG&#34; alt=&#34;example boxwhisker&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;This data suggests that writers for left-leaning outlets are more likely to implement their personal feelings and emotions into the articles they publish. I suppose we can expect this from outlets such as &lt;em&gt;Vox&lt;/em&gt; and perhaps &lt;em&gt;The Guardian&lt;/em&gt;, but the Washington Post and the Los Angeles Times are considered more &amp;ldquo;news-oriented&amp;rdquo; outlets.&lt;/p&gt;
+&lt;p&gt;Perhaps I made a mistake when scraping news and didn&amp;rsquo;t realize I was collecting pieces from the editorial section. OR maybe the mistake was made on their part when mislabeling an article &amp;ldquo;news&amp;rdquo; when it should have been labeled &amp;ldquo;opinion.&amp;rdquo; Who can say?&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;There is a lot more that can be done here; we&amp;rsquo;re just scratching the surface. Using data science and machine learning in the news/political field means that we can conduct a range of meaningful analysis. We can expand this work into other research, such as News Classification, Filtering Bubbles/Echo Analysis, Topic Modeling, Entity Analysis (probably the next project), news bias prediction, and so much more.&lt;/p&gt;
+&lt;p&gt;In the age of hyper-partisan tensions, this tribal news-cycle can only get worse. We need more people who are willing to analyze the direction our media is taking so viewers can make informed decisions about how to consume their news.&lt;/p&gt;
+&lt;p&gt;As long as I have more free time (currently working from home), I guess that person might as well be me.&lt;/p&gt;
+&lt;h2 id=&#34;github&#34;&gt;Github&lt;/h2&gt;
+&lt;p&gt;Click here for the full &lt;a href=&#34;https://github.com/KidQuant/Analyzing-News-Articles-With-Python&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; and full explainations.&lt;/p&gt;
+&lt;h3 id=&#34;sources&#34;&gt;Sources&lt;/h3&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://academic.oup.com/hcr/article-abstract/46/1/25/5652186?redirectedFrom=fulltext&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oxford Academic | Investigating the Generation and Spread of Numerical Misinformation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://www.pewresearch.org/fact-tank/2016/11/18/news-media-interpretation-vs-facts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pew Research | Majority of U.S. adults think news media should not add interpretation to the facts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://www.allsides.com/unbiased-balanced-news&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;All Sides | Unbiased news doesn&amp;rsquo;t exist, but it provides news in a balanced way&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://github.com/fhamborg/news-please&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub | Felix Hamborg news-please Repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;5&#34;&gt;5&lt;/a&gt;] &lt;a href=&#34;https://github.com/fhamborg/news-please&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;All Sides | Wall Street Journal - News media bias rating is Center&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;6&#34;&gt;6&lt;/a&gt;] &lt;a href=&#34;https://cloud.google.com/natural-language/docs/reference/libraries&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google | Natural Language Processing Client Libraries&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;7&#34;&gt;7&lt;/a&gt;] &lt;a href=&#34;https://www.psychologytoday.com/us/blog/two-takes-depression/201106/if-it-bleeds-it-leads-understanding-fear-based-media&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Psychology Today | If It Bleeds, It Leads: Understanding Fear-Based Media&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tracking COVID-19 Cases Globally</title>
+      <link>https://kidquant.com/project/tracking-covid19-cases/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/project/tracking-covid19-cases/</guid>
+      <description>&lt;p&gt;Unless you&amp;rsquo;ve been living under a rock, you&amp;rsquo;ve probably heard of an illness called Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2), the disease that causes the Coronavirus Disease 2019 (COVID-2019). The disease is considered the most infectious and deadly illness since the Spanish Flu in 1919. In response, schools have closed; Public areas have shut down because; economies have come to a grinding halt because of it, and we&amp;rsquo;re all paranoid about being around other people.&lt;/p&gt;
+&lt;p&gt;Most of us have never lived through a Pandemic (unless you count the 2009 H1N1 Pandemic), so we will have no idea how bad this could possible get. Scientist have attempted to determine how deadly this dieases is compared to others throughout history, as seen in the following chart.&lt;/p&gt;
+&lt;p&gt;Right now, it&amp;rsquo;s assumed that this virus is just as contagious as other diseases such Polio and the Common Cold while being more deadly than these other diseases. As such, the scientific community has devoted all of their resources in finding ways to track the growth of this dieases.&lt;/p&gt;
+&lt;p&gt;The purpose of this notebook is to determine the rate at which confirmed cases of COVID-19 are growing in many places around the world.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/comparison.png&#34; alt=&#34;Infectious Disease Comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Right now, it&amp;rsquo;s assumed that this virus is just as contagious as other diseases such Polio and the Common Cold while being more deadly than these other diseases. As such, the scientific community has devoted all of their resources in finding ways to track the growth of this dieases.&lt;/p&gt;
+&lt;p&gt;The purpose of this notebook is to determine the rate at which confirmed cases of COVID-19 are growing in many places around the world.&lt;/p&gt;
+&lt;p&gt;The data I will be using for this project comes from &lt;a href=&#34;https://coronavirus.jhu.edu/us-map&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;John Hopkins University&lt;/a&gt;, which has developed a COVID-19 map, which tracks the number of COVID-19 cases, hospitalization, and deaths around the world.&lt;/p&gt;
+&lt;p&gt;John Hopkins also provides a &lt;a href=&#34;https://github.com/CSSEGISandData/COVID-19&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Repository&lt;/a&gt; of global COVID-19 cases.&lt;/p&gt;
+&lt;h2 id=&#34;some-basic-ideas&#34;&gt;Some Basic Ideas&lt;/h2&gt;
+&lt;p&gt;There are a couple of mathematical techniques known as compartmental models that are used to model infectious diseases. In these models, epidemiologist divides the population into separate groups, with the assumption that individuals in the same compartments share the same characteristics.&lt;/p&gt;
+&lt;p&gt;We are still in the early stages of COVID-19, and we are still learning more about the virus every day. To accurately forecast the growth of COVID-19, the underlying dynamics of transmission need to be determined.&lt;/p&gt;
+&lt;p&gt;The driving factors COVID-19 (as well as any other dieases) includes the following factors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The number of people on average becomes infected. This is known as the &amp;ldquo;reproduction rate,&amp;rdquo; or $R_{0}$. Basically, if one person becomes infected, how many people will this person infect on average by coming into contact with other people? The World Health Organization is has estimated that this rate is around 1.4 - 2.5 people in the past.&lt;/li&gt;
+&lt;li&gt;The amount of time it takes for the virus to double is measured by the growth cumulative confirmed cases, which is different from the frowth of infections. The doubling as time passes is a trend known as Exponential Growth.&lt;/li&gt;
+&lt;li&gt;The doubling time calculated here measures the growth of cumulative confirmed cases, which is different from the growth of infections. For example, if a country suddenly ramps up testing, then the number of confirmed cases will rapidly rise. Still, infections may not be growing at the same rate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/SIRanimationlow.gif&#34; alt=&#34;Contagion Simulation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The following graph shows how an epidemic might spread across a network over time. Blue dots are susceptible individuals, while red dots are infected people. Two dots are connected by a line if they are in contact with each other, and the more connections a person has, the bigger their dot is on the network.&lt;/p&gt;
+&lt;p&gt;Exponential growth models start with a small number of infected individuals in a large population, such as when the virus first emerged in Wuhan, China. However, it&amp;rsquo;s not a good model once a large number of people have been infected. This is because the chance of an infected person contacting a susceptible person declines, simply because there are fewer susceptible people around, and a growing fraction of people have recovered and developed some level of immunity.&lt;/p&gt;
+&lt;p&gt;Eventually, the chances of an infected person contacting a susceptible person becomes low enough that the rate of infection decreases, leading to fewer cases and eventually, the end of the viral spread.&lt;/p&gt;
+&lt;h3 id=&#34;looking-at-the-data&#34;&gt;Looking at the Data&lt;/h3&gt;
+&lt;p&gt;First, we&amp;rsquo;re going to aggregate the daily Coronavirus cases by each country, rather than the Province or State. We&amp;rsquo;re going to sort these values in ascending order and filter our nations with more than 1,000 cases thus far. This gives us roughly 70 countries to work with.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/cases_df.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As we can see, the U.S. has the highest number of COVID causes in the world. The nation crossed that milestone &lt;a href=&#34;https://www.bbc.com/news/world-us-canada-52239261&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sometime last week&lt;/a&gt;. Right behind the U.S. is Spain, Italy, Germany, and France. As mentioned previously, as nations conduct more testing, we can confirm more cases.&lt;/p&gt;
+&lt;p&gt;Next we will be fitting the graph on a Logistic Curve, which is commonly used to represent growth processes.&lt;/p&gt;
+&lt;p&gt;$$f(x)=\frac{a_{0}-a_{1}}{1+(x/a_{2})^{a_{3}}}+a_{1}$$&lt;/p&gt;
+&lt;p&gt;The logistic curve has determined by the 4 parameters:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Initial Value: The value of the curve as $x$ goes to zero.&lt;/li&gt;
+&lt;li&gt;Final Value: The value of the curve as $x$ foes to infinity.&lt;/li&gt;
+&lt;li&gt;Center: The halfway point in the transition from Initial Value to Final Value.&lt;/li&gt;
+&lt;li&gt;Hill Slope: The Hill slope of the curve.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We will also create a python function for the exponential function. Both will be utilizes for determining the trend.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;logistic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;d&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;exponential&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Finally, we&amp;rsquo;re going to create a function that allows us to plot historical case for each country, which will vary throughout time. This will involve create a time series array for each individual country.&lt;/p&gt;
+&lt;p&gt;For each country, we record the most recent cases from this week, as well as the number of cases from the same time period one week ago. We will use this information to calculate a ratio, which will serve as the one-day growth rate, weekly growth rate, and the growth factor for the exponential function. The growth factor is what&amp;rsquo;s used to measure the amount of time it takes cases to double (which is currently every 3 days for most of the Western world).&lt;/p&gt;
+&lt;p&gt;The code will attempt to create an exponential curve fit and a logistic curve fit, based on the trend the nation is experiencing. We estimate the fit by simply calculating the the sum of total residuals relative to the total sum of squares.&lt;/p&gt;
+&lt;p&gt;$$R^{2}=1-\frac{SS_{RES}}{SS_{TOT}}=1-\frac{\sum_{1}(y_{i}-\hat{y}&lt;em&gt;{i})^{2}}{\sum&lt;/em&gt;{1}(y_{i}-\bar{y}_{i})^{2}}$$&lt;/p&gt;
+&lt;p&gt;Once the code has modeled both functions, it will determine if a logistic or exponential curve fits better (the program may also use both if it is unable to determine which curve fits better). Based on that calculation, the program will return the Weekly increase, Daily increase, and the doubling time, as well as the $R^{2}$ and the amount of time it takes for cases to double. After these calculations are done, the code will return a plot for each country.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/us_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Now we&amp;rsquo;ve plotted the trends for all nations with more than 1,000 cases as of April 12th. The U.S. still appears to be on an exponential trend, while Italy and Spain seem to be coming out of it. This should make sense, seeing as Italy&amp;rsquo;s and Spain&amp;rsquo;s lockdowns were more aggressive than the United States.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/spain_italy_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;These two European nations have also started their lockdowns early, with Italy and Spain beginning their lockdowns on March 9th and 14th, respectively. Lockdowns within the U.S. vary by state; however, the most highly impacted states (California and New York) didn&amp;rsquo;t institute any lockdowns until the last week of March.&lt;/p&gt;
+&lt;p&gt;Considering the recent spike in cases in France, our program couldn&amp;rsquo;t really tell if the trend was exponential or logistic. As a result, both trends were plotted. Today, more than 500 people died in France in a single day, which prompted the government to &lt;a href=&#34;https://www.trtworld.com/life/france-extends-virus-lockdown-as-death-toll-nears-15-000-latest-updates-35348&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;extend the lockdowns until May 11&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/china_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;China is also currently experiencing a logistic trend. With the exception for the Guangdong province, the nation has not recorded any new cases in any of its provinces since April 7th. China has not had a consistent and reliable metric of reporting GDP figures. For the same reason, people are more or less skeptical of the integrity of their COVID-19 cases.&lt;/p&gt;
+&lt;h3 id=&#34;doubling-times-for-covid-19-cases&#34;&gt;Doubling Times for COVID-19 Cases&lt;/h3&gt;
+&lt;p&gt;Now we&amp;rsquo;re going to plot the inferred doubling times and recent doubling times for all countries in one chart. We&amp;rsquo;ve already calculated this previously. The inferred doubling times are constructed using curve fits. In contrast, the recent doubling times are calculated using the most recent week of data. Obviously, the shorter amount of time it takes for cases to double, the faster overall cases grow, and vice versa.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/doubing_times_global.PNG&#34; alt=&#34;doubling times&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The inferred doubling time represents the growth encountered during the middle of the growth of the epidemic, which gives us a picture of the overall rate of growth of the virus. After all, epidemiologist won&amp;rsquo;t really know whether or not we&amp;rsquo;ve reached the apex of the pandemic until many weeks (or possibly months). In one country that reports 1,000 COVID-19 cases, there could be 5,000 infected people. On the other hand, another country with the same reported figures could have 100,000 infected people.&lt;/p&gt;
+&lt;p&gt;As mentioned previously, the growth rate in the U.S. is still exponential, and the inferred doubling time is around 7 days. For France, the doubling time is approximately 10 days. Obviously, the high the doubling rate, the more manageable the pandemic is for any particular country. There are very few countries within the error range that we have established.&lt;/p&gt;
+&lt;h3 id=&#34;covid-19-trends-in-the-united-states&#34;&gt;COVID-19 Trends in the United States&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve done many comparisons with the U.S. (mostly because I currently live in the U.S.). We can extend the same analysis to areas within the country. This time, we will be using a different dataset, which only incorporates the U.S.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/cases_us_df.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As we can see, New York has the largest number of confirmed cases in the entire nation; followed by New Jersey, Massachusetts, and then Michigan.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/ny_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;New York&amp;rsquo;s COVID-19 growth appears to be consistent with a logistic trend, but it might be too early to tell. Other states where the growth seems to be more exponential are Illinois, California, and Washington. Most other states appear to be within the starting phase of a logistic trend, but it might be too early to say, based on the average doubling time (which is 5 days).&lt;/p&gt;
+&lt;p&gt;Currently, cases double in New York roughly 8 days, while Massachusetts doubles every 5 days. Michigan&amp;rsquo;s stay-at-home order is set to expire tomorrow if the Governor of that state chooses not to extend the lockdown. However, COVID-19 growth appears to be on the logistic trend, and cases are doubling every 11 days.&lt;/p&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;There is still more to learn about this virus. We&amp;rsquo;re still trying to come up with ways to track its behavior, which can only happen with more testing. One thing that can be certain is that this crisis is nowhere near over. As data comes more available, we will be taking steps to analyze it, which will provide more insight into where we need to focus our resources.&lt;/p&gt;
+&lt;h2 id=&#34;github-code&#34;&gt;GitHub Code&lt;/h2&gt;
+&lt;p&gt;Click here for the full &lt;a href=&#34;https://github.com/KidQuant/Tracking-COVID19-Cases/blob/master/Tracking%20COVID-19%20Cases.ipynb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code&lt;/a&gt; and full explanations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Forecasting Asset Prices Using VAR and Granger Causality</title>
+      <link>https://kidquant.com/project/forecasting-var-granger-causlity/</link>
+      <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/project/forecasting-var-granger-causlity/</guid>
+      <description>&lt;p&gt;Forecasting Gold and Oil has garnered major attention from academics, investors and Government agencies alike. These two products are known for their substantial influence on the global economy. However, what is the relationship between these two assets? What generally happens to Gold prices when Oil takes a plunge? We can use a statistical technique known as &lt;em&gt;&lt;strong&gt;Granger Causality&lt;/strong&gt;&lt;/em&gt; to test the relationships of Gold, Oil, and some other variables. We can also use a &lt;strong&gt;VAR model&lt;/strong&gt; to forecast the future Gold &amp;amp; Oil prices.&lt;/p&gt;
+&lt;h2 id=&#34;exploratory-analysis&#34;&gt;Exploratory Analysis&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s load the data and conduct some analysis with visualizations to understand more of the data. Exploratory data analysis is quite extensive in multivariate time series. I will cover some areas here to get insights into the data. However, it is advisable to conduct all statistical tests to ensure our clear understanding of data distribution.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/data_analysis.png&#34; alt=&#34;Data Analysis&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;In our dataset, we have six variables: Gold, Silver, Oil, US Dollar, Interest, and a Stock Market Index. The stock market index we&amp;rsquo;ve used was the Dow Jones Industrial Average. We usually use linear regression to determine if there is a correlation between specific variables. Instead, we&amp;rsquo;re going to determine if any of these variables directly causes movement in the other variables.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/time_series.png&#34; alt=&#34;Time Series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Here, we can see different trends for six of our variables. It would be helpful if we established whether or not our time series followed a normal (or Gaussian) distribution. We will do this based on the test for normality based on the Jarque-Bera test.&lt;/p&gt;
+&lt;h3 id=&#34;jarque-bera-test&#34;&gt;Jarque-Bera Test&lt;/h3&gt;
+&lt;p&gt;There are actually three test that we could have implemented for testing normality; however, we will focus on just one: the Jarque-Bera Test.&lt;/p&gt;
+&lt;p&gt;The Jarque-Bera goodness-of-fit test determines whether a sample data have the skewness and kurtosis matching a normal distribution.&lt;/p&gt;
+&lt;p&gt;$$k_{3}=\frac{\sum^{n}&lt;em&gt;{i=1}(x&lt;/em&gt;{i}-\bar{x})^{3}}{ns^{3}} ,,,,,,, k_{4}=\frac{\sum^{n}&lt;em&gt;{i=1}(x&lt;/em&gt;{i}-\bar{x})^{4}}{ns^{4}}-3  $$&lt;/p&gt;
+&lt;p&gt;$$JB = n \Bigg(\frac{(k_{3})^{2}}{6}+\frac{(k_{4})^{2}}{24}\Bigg) $$&lt;/p&gt;
+&lt;p&gt;where $x$ is each observation, $n$ is the sample size, $s$ is the standard deviation, $k_{3}$ is skewness, and $k_{4}$ is kurtosis. The null hypothesis, $H_{0}$, follows that the data is normally distributed; the alternative hypothesis, $H_{A}$, follows that the data is not normally distributed.&lt;/p&gt;
+&lt;p&gt;There is a simple script we can use in python to determine the goodness of fit, the kurtosis, and the skewness.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;scipy&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;stats&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;stat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;stats&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;normaltest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Gold&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Statistics=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%.3f&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;, p=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%.3f&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;stat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.05&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Data looks Gaussian (fail to reject H0)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Data does not look Gaussian (reject H0)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Lets test out the goodness of fit on the Gold variable.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Statistics=818.075, p=0.000&lt;/p&gt;
+&lt;p&gt;Data does not look Gaussian (reject H0)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As we can see, we recieve a p-value and a test statistic in return. While we don&amp;rsquo;t have a Chi-Square chart to determine the critical region, we do have a p-value, which is basically zero.&lt;/p&gt;
+&lt;p&gt;A p-value less than 0.05 basically means our test statistic falls within the critical region (inside the tail); therefore, we can reject the null hypothesis. The dataset is not normally distributed, which we probably could have assumed by looking at the time series plots from before.&lt;/p&gt;
+&lt;p&gt;Lets compare kurtosis and skewness for both the Oil and Gold variables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/test_statistics.png&#34; alt=&#34;Test Statistics&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;These two distributions can provide us with some intuition about the distribution of our data. A value close to 0 for kurtosis indicates a normal distribution where asymmetrical nature is signified by a value between -0.5 and +0.5 for skewness. The tails are heavier for kurtosis greater than 0 and vice versa. Moderate skewness refers to the value between -1 and -0.5 or 0.5 and 1.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/probability_plot.png&#34; alt=&#34;probability plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Based on the normal probability plot, we can see that the dataset is far from normally distributed.&lt;/p&gt;
+&lt;h2 id=&#34;the-var-model&#34;&gt;The VAR Model&lt;/h2&gt;
+&lt;p&gt;Considering that our dataset isn&amp;rsquo;t normally distributed, we can use this information to build a VAR model. The construction of the model will be based on the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Testing for autocorrelation&lt;/li&gt;
+&lt;li&gt;Spliting the time series into Training and Testing data sets&lt;/li&gt;
+&lt;li&gt;Testing for Stationarity&lt;/li&gt;
+&lt;li&gt;Testing for Causation using Granger Causality&lt;/li&gt;
+&lt;li&gt;Conducting a forecast evaluation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;auto-corrlation&#34;&gt;Auto-Corrlation&lt;/h3&gt;
+&lt;p&gt;Autocorrelation refers to how correlated a time series is with its past values as a function of the time lag between them.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/autocorrelation.png&#34; alt=&#34;autocorrelation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The following plot shows the autocorrelation for the Gold time series. As we can see, each value is highly correlated with the previous value. We have an autocorrelation of +1, which represents a perfect positive correlation. An increase seen in one time series leads to a proportionate increase in the other time series.&lt;/p&gt;
+&lt;p&gt;We need to apply transformation and neutralize this time series stationary. It measures the linear relationships. Even if the autocorrelation is minuscule, there may still be a nonlinear relationship between the time series and a lagged version of itself.&lt;/p&gt;
+&lt;h3 id=&#34;spliting-the-time-series-into-training-and-testing-data-sets&#34;&gt;Spliting the time series into Training and Testing data sets&lt;/h3&gt;
+&lt;p&gt;The VAR model will be fitted on &lt;code&gt;X_train&lt;/code&gt; and then used to forecast the next 15 observations. These forecast will be compared against the actual present test data.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;nobs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;15&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;X_train&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;X_test&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nobs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nobs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#check size&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X_train&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;shape&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X_test&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;shape&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;testing-for-stationarity&#34;&gt;Testing for Stationarity&lt;/h3&gt;
+&lt;p&gt;Intuitively, stationarity implies that the statistical properties of the process are consistent. In other words, the mean, variance and autocorrelation structure do not change over time. Stationarity can be defined in precise mathematical terms, but for our purpose we mean a flat looking series, without trend, constant variance over time, a constant autocorrelation structure over time with no periodic fluctuations (seasonality).&lt;/p&gt;
+&lt;p&gt;In order to make the time series stationary, we need to apply a differencing function on the training set. However, this is an iterative process where we after first differencing, the series may still be non-stationary. We may have to apply a second difference or log transformation to standardize the series in such cases.&lt;/p&gt;
+&lt;p&gt;The following demonstrates what time series would generate with our differencing technique.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/stationary.png&#34; alt=&#34;stationary&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;testing-causation-using-grangers-causality-test&#34;&gt;Testing Causation using Granger&amp;rsquo;s Causality Test&lt;/h3&gt;
+&lt;p&gt;The question of what event caused another, or what brought about a certain change in a phenomenon, is a common one. While a naive interpretation of the problem may suggest simple approaches like equating causality with high correlation, or to infer the degree to which $x$ causes $y$ from the degree of $x$&amp;rsquo;s goodness as a predictor of $y$, the problem is much more complex. As a result, rigorous ways to approach this question were developed in several fields of science.&lt;/p&gt;
+&lt;p&gt;This can be done one of two different ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Casual inference over random variables, representing different events. The most common example are two variables, each representing one alternative of an A/B test, and each with a set of samples/observations associated with it.&lt;/li&gt;
+&lt;li&gt;Casual inference over time series data (and thus over stochastic processes). Examples include determining wehther (and to what degree) aggregate daily stock prices drive (and are driven by) daily trading volume, or causal relatioons between volumns of Pacific sardine catches, northern anchovy catches, and sea suface temperature.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;granger-casuality-test-results&#34;&gt;Granger Casuality Test Results&lt;/h4&gt;
+&lt;p&gt;Granger&amp;rsquo;s causlity tests the null hypothesis, $H_{0}$, that the coefficients of past values in the regression equation is zero. In simplier term, the past values of time series, $X$, do not cause other series, $Y$. If the p-value obtained from the test is lesser than the significance level of 0.05, then, you can safely reject the null hypothesis.&lt;/p&gt;
+&lt;p&gt;The following code was performed on the transformed dataset:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;statsmodels.tsa.stattools&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;grangercausalitytests&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;maxlag&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;ssr_chi2test&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;granger_causation_matrix&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;variables&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;ssr_chi2test&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;verbose&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;X_train&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataFrame&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;zeros&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;variables&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;variables&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;columns&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;variables&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;variables&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;X_train&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;columns&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;r&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;X_train&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;test_result&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;grangercausalitytests&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;maxlag&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxlag&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;verbose&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;p_values&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;round&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;test_result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;][&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;][&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;][&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxlag&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;verbose&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Y = &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;, X = &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;, P Values = &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p_values&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;min_p_value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;min&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p_values&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;X_train&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;loc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;min_p_value&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;X_train&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;columns&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;_x&amp;#39;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;variables&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;X_train&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;_y&amp;#39;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;variables&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;X_train&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;granger_causation_matrix&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X_train&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;variables&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;X_train&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;columns&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The code provided the following matrix:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/granger_causality.PNG&#34; alt=&#34;granger causality&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The row are the responses $Y$ and the columns are the predictors $X$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If we take the value 0.0000 in (row 1, column 2), it refers to the p-value of the Granger&amp;rsquo;s Causality test for &lt;code&gt;Silver_x&lt;/code&gt; causing &lt;code&gt;Gold_Y&lt;/code&gt;. The 0.0000 in row 2, column 1 refers to the p-value of &lt;code&gt;Gold_y&lt;/code&gt; causing &lt;code&gt;Silver_x&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As we can see, &lt;code&gt;Gold_x&lt;/code&gt; isn&amp;rsquo;t typically caused by any of the other variables. However, movements in the variable &lt;code&gt;Gold_x&lt;/code&gt; only appears to be caused by the variable &lt;code&gt;USD_y&lt;/code&gt; This intuitively makes sense, as the value of gold is often tied to the US Dollar and some in the investment community consider gold as a hedge against inflation (the same for the variables &lt;code&gt;Silver_x&lt;/code&gt; and &lt;code&gt;USD_y&lt;/code&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;Interest_x&lt;/code&gt; variable only seems to cause movements in &lt;code&gt;Silver_y&lt;/code&gt;; however, &lt;code&gt;Interest_y&lt;/code&gt; does appear to cause movements in the &lt;code&gt;USD_x&lt;/code&gt;, which also makes sense.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;Index_y&lt;/code&gt; variable appears to cause movements in the variables &lt;code&gt;Silver_x&lt;/code&gt;, &lt;code&gt;Oil_x&lt;/code&gt;, and &lt;code&gt;USD_x&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, looking at the p-values, we can assume that (except Oil) most of the variables (time series) in the system are interchangeably causing each other. This justifies the VAR modeling approach for this system of multi time-series to forecast.&lt;/p&gt;
+&lt;h4 id=&#34;testing-for-co-integration&#34;&gt;Testing for Co-integration&lt;/h4&gt;
+&lt;p&gt;Regression errors are a linear combination of two unit root series ($X$ and $Y$) of the following equation:&lt;/p&gt;
+&lt;p&gt;$$\varepsilon=Y_{t}-\alpha-\beta X_{t} $$&lt;/p&gt;
+&lt;p&gt;If $X_{t}$ and $X_{t}$ have a unit root, this usually means $\varepsilon_{t}$ also has a unit root. This is the cause of a spurious regression problem.&lt;/p&gt;
+&lt;p&gt;However, there are some cases when the unit root in $Y$ and $X$ cancel each other out and $\varepsilon_{t}$ does not have any unit root. In this special case, the spurious regression problem vanishes. This phenomenon is referred to as cointegration, which measures the equilibrium spread between two non-stationary time series measured by constant terms $\alpha$. If the error term is stationary then we can say that cointegration and an equalibrium spread exist.&lt;/p&gt;
+&lt;p&gt;For testing co-integration, we used the Johansen method to test for co-integration using the following python function:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;statsmodels.tsa.vector_ar.vecm&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;coint_johansen&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;cointegration_test&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;transfrom_data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.05&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;Perform Johanson&amp;#39;s Cointegration Test and Report Summary&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;out&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;coint_johansen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;transform_data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;d&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;0.90&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;0.95&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;0.99&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;traces&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lr1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;cvts&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cvt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[:,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)]]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;adjust&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ljust&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Summary&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Name   :: Test Stat &amp;gt; C(95%)       =&amp;gt; Signif   &lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;--&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;col&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;trace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cvt&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;zip&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;transform_data&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;columns&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;traces&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cvts&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;adjust&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;col&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;::&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;adjust&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;round&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;trace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;9&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;adjust&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cvt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;  =&amp;gt;  &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;trace&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cvt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;cointegration_test&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X_train&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;what-is-var&#34;&gt;What is VAR?&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Vector Autoregression&lt;/strong&gt; (or VAR) is a multivariate forecasting algorithm that is used when two or more time series influence one another. In order to use VAR, there needs to be at least two time series for our variables and the time series needs to influence one another.&lt;/p&gt;
+&lt;p&gt;VAR is considered a &amp;lsquo;autoregressive&amp;rsquo; model because each variable is modeled as a function of past values. That is, predictors are nothing but lags (time delayed values) of the series.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve created models for predicting all six of our variables, which has provided the coefficients, residuals, and the AIC for the particular model. We can now begin with the forecasting.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/var_model.PNG&#34; alt=&#34;Var Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h4 id=&#34;conducting-a-forecast-evaluation&#34;&gt;Conducting a forecast evaluation&lt;/h4&gt;
+&lt;p&gt;Now we can plot the historical observations along with the forecasted observations back to their original scale. Let us assess the differences between the two time series plots.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/VAR_forecast.png&#34; alt=&#34;Var Forecast&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As we can see, the forecasted observations are pretty much in line with the historical observations used for forecasting Gold prices. There is a very slight deviation between the historical and forecasted observations started from Janurary 9th, however, this divergence is very slight.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;There are many different variables that can account for the changes in different financial markets. These changes may or may not always occur in financial markets. Nonetheless, this tutorial can demonstrate how we can use the relationship in certain financial markets to create models for forecasting.&lt;/p&gt;
+&lt;h2 id=&#34;github-code&#34;&gt;GitHub Code&lt;/h2&gt;
+&lt;p&gt;Click here for the full &lt;a href=&#34;https://github.com/KidQuant/Forecasting-VAR-Granger-Causality&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code&lt;/a&gt; and full explainations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modeling GDP per Capita and Life Expectancy</title>
+      <link>https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</link>
+      <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</guid>
+      <description>&lt;p&gt;Historically, wealthy individuals tend to live longer than poorer individuals, holding other factors constant. They can afford to eat healthier foods from healthier food outlets (such as Whole Foods); they can afford better health care, et cetera.&lt;/p&gt;
+&lt;p&gt;For this reason, it should be obvious that as countries get wealthier that they should be able to afford better health care systems, also that life expectancy should rise. It should also stand to reason htat people living longer, will work longer and that being healthier means fewer people as a propotion drop out of the labor force due to illness.&lt;/p&gt;
+&lt;p&gt;However, these relationships probably are not linearly. They&amp;rsquo;re likely to be diminishing returns to one from the other. At least, that is my prior belief.&lt;/p&gt;
+&lt;p&gt;My first hypothesis is that returns to life expectancy at birth from increases in Gross Domesti Product (GDP) per capita are deminishing. This is because there is probably an upper limit on the length of human life and that approaching it is more difficult the closer humans reach.&lt;/p&gt;
+&lt;p&gt;Also, it is easy to concieve nations consuming more unhealthy luxury items as they become richer. Therefore, I expect the coefficient on GDP per capita to be positive and the coefficient of GDP per capital squared to be negative in the regression of life expectancy on the GDP per capita variables.&lt;/p&gt;
+&lt;p&gt;My second hypothesis is that returns to GDP per capita from increases in life expectacy are diminishing. Therefore, I expect the coefficient of life expectancy to be positive and coefficient of life expectancy squared to be negative in the regression of GDP per capita on life expectancy and life expectancy squared.&lt;/p&gt;
+&lt;p&gt;To test these hypothesses, I repeatedly estimate those models over crosssections in my sample period using Ordinary Least Squared (OLS) regression. Finally, I plotted the model coefficients over time to see if the relationships have changed.&lt;/p&gt;
+&lt;p&gt;There are already tons of literature on this question, but I chose not to research it because it did not want bias to approach this problem. Significance in this document is at the alpha = 0.05 level.&lt;/p&gt;
+&lt;h2 id=&#34;data-and-sample-period-selection&#34;&gt;Data and Sample Period Selection&lt;/h2&gt;
+&lt;p&gt;I used data sets from the World Bank to perform this analysis. I selected my sample period by examining the period of the missing values and choosing long time periods with as few missing observations as possible. This seemed to be the period from 1990 to 2017. Removing observations that weren&amp;rsquo;t real countries (mainly regional and world-wide averages) and performing an inner join between two variables on the sample period left about three quarters of our countries in our data set, of 163 observations.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/missing_percent.png&#34; alt=&#34;Missing post&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;plotting-our-variables-of-interest&#34;&gt;Plotting our Variables of Interest&lt;/h2&gt;
+&lt;p&gt;Below is how the life expectancy at birth for the world has changed over the years. It has increased steadily over the years, which is good for all of us.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy.png&#34; alt=&#34;World Life Expectancy&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;This histogram is representative of the distribution of life expectancy in 2017. The mass of the distribution is on the right with a long left tail. This is good because there are more countries living longer than countries with lower life expectancy levels.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/life_expectancy_distribution.png&#34; alt=&#34;Life Expectancy Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;World GDP per capita has grown exponentially over time, but there are some sharp drops from severe negative shocks. This is still a good thing for humanity because it means fewer people as a percentage of the total population are in poverty compared to years prior. Again, this doesn&amp;rsquo;t tell us about the distribution of GDP per capita in a cross section.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy_2019.png&#34; alt=&#34;World Life Expectancy in 2019 dollars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The distribution of GDP per capita is very concentrated in the 0 to 10,000ish range, but has a long right tail out to over 100,000 GDP per capita. This resembles a &lt;a href=&#34;https://en.wikipedia.org/wiki/Log-normal_distribution&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;log-normal&lt;/a&gt; shape. I performed a natural logarithmic transformation for modeling purposes.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/log_distribution_life_expectancy.png&#34; alt=&#34;Log-normal Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;modeling-the-relationships&#34;&gt;Modeling the Relationships&lt;/h2&gt;
+&lt;p&gt;The Jupyter Notebook I&amp;rsquo;ve created contains all the regression outputs for every year; however, I&amp;rsquo;ll just summarize them and provide the plots of the coefficients.&lt;/p&gt;
+&lt;h3 id=&#34;regressing-life-expectancy-on-gdp-per-capita&#34;&gt;Regressing Life Expectancy on GDP per capita&lt;/h3&gt;
+&lt;p&gt;The residuals of this model seem mildly skewed left from 1990 to 2003, and a strong left skew after that with kurtosis in excess of the normal distribution. We won&amp;rsquo;t really get into what &lt;a href=&#34;https://en.wikipedia.org/wiki/Kurtosis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;kurtosis&lt;/a&gt; is in this blog post, but you should know that in probability and statistics, kurtosis measures the &amp;ldquo;tailedness&amp;rdquo; of a probability distribution.&lt;/p&gt;
+&lt;p&gt;The kurtosis of a normal distribution is 3, so any value greater than that will exhibit skewness either to the left or right. The output of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Breusch%e2%80%93Pagan_test&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Breusch-Pagan heteroskedasticity test&lt;/a&gt; provides strong evidence of &lt;a href=&#34;https://en.wikipedia.org/wiki/Heteroscedasticity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;heteroskedasticity&lt;/a&gt; in the residuals, but I used &lt;a href=&#34;https://en.wikipedia.org/wiki/Heteroscedasticity-consistent_standard_errors&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;heteroskedasticity robust standard errors&lt;/a&gt; to be sure the model didn&amp;rsquo;t underestimate the standard errors of the coefficients.&lt;/p&gt;
+&lt;p&gt;So the residuals are not normally or identically distributed. The Durbin-Watson statistic remains close to 2, so it doesn&amp;rsquo;t appear to be auto-correlation in our residuals. The R-squared, $r^{2}$, of these regressions are absurdly high, ranging from 0.992 to 0.997; meaning, between 99.2% to 99.7% of the variation in life expectancy is explained by this model specification.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc.png&#34; alt=&#34;GDPPC&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc_sq.png&#34; alt=&#34;GDPPC_SQ&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;regressing-gdp-per-capita-on-life-expectancy&#34;&gt;Regressing GDP per capita on Life Expectancy&lt;/h3&gt;
+&lt;p&gt;The residuals of this model seem approximately symmetric throughout the entire period, as the skewness stays between -0.5 and 0.5. The kurtosis remains fairly close to that of the normal distribution but does exceed it in some periods. The Jarque-Bera test for normality fails to reject the null hypothesis of normality from 1993 to 2007, and from 2015 to 2017.&lt;/p&gt;
+&lt;p&gt;Perhaps the break in the string of models with normal residuals is related to the 2007 financial crisis and recovery. The output of the Breusch-Pagan heteroskedasticity test give strong evidence of heteroskedasticity in the residuals, but I used heteroskedasticity robust standard errors to be sure the model didn&amp;rsquo;t underestimate the standard errors of the efficients.&lt;/p&gt;
+&lt;p&gt;So our residuals are occasionally not normally or identically distributed in our sample period. The Durbin-Watson statistic remains close to 2, so at least there doesn&amp;rsquo;t appear to be auto-correlation in our residuals. The $r^{2}$ of these models range from 0.985 to 0.993, meaning between 98.5% to 99.3% of the variation in the natural log of GDP per capita is explained by this model specification.&lt;/p&gt;
+&lt;p&gt;The coefficient in the model are sigificant in each year, but are both positive, &lt;strong&gt;disproving my second hypothesis. There are positive, and increasing returns to the &lt;em&gt;ln&lt;/em&gt;(GDP per capita) from increases in life expectancy in our sample period.&lt;/strong&gt; Plotting the coefficient with their 95% confidence interval bars over the sample period show they appear somewhat volatile over time.&lt;/p&gt;
+&lt;p&gt;There doesn&amp;rsquo;t seem to be a straight line that intersects all of the confidence intervals. In a 27 sample period, we would expect a 95% confidence interval to not contain the true parameter 0.05 x 27 = 1.35 times, but it seems 10 periods might barely miss a horizontal line that tries to hit as many intervals as possible. Still, this isn&amp;rsquo;t conclusive evidence that the relationship between GDP per capita and life expectancy has changed over the 27 year period. Just a strong clue to dig deeper.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars.png&#34; alt=&#34;error bars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The plot of the life expectancy squared coefficients looks like it is mirroring the movement of the non-squared term coefficients at a different scale.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars_sq.png&#34; alt=&#34;error bars squared&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;interpreting-the-regressions&#34;&gt;Interpreting the Regressions&lt;/h2&gt;
+&lt;p&gt;Looking at the scatter plots below for the most recent data (2017), along with the regression lines, show that the variables have a relationship with one another. Also, there is more variability among the lower and middle-income countries than the high-income countries. Explaining the differences between low and middle-income countries with higher levels of life expectancy versus lower life expectancy levels seems like an interesting avenue of research that could provide important insights into interventions that could help improve people&amp;rsquo;s lives.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The way to interpret the coefficients in the 2017 model regressing life expectancy on ln(GDP per capita) and ln(GDP per capita) squared is a 1% increase in GDP per capita leads to a year increase in life expectancy.&lt;/p&gt;
+&lt;p&gt;$$\hat{y}=\frac{12.1586-2&lt;em&gt;0.4300&lt;/em&gt;ln(GDP\ per\ capita)}{100}$$&lt;/p&gt;
+&lt;p&gt;This combines the level-log coefficient in interpretation with the interpretation of coefficients as marginal effects, aka partial derivatives, of the dependent variable with respect to the independent variable in question.&lt;/p&gt;
+&lt;p&gt;Generically, an increase 1% in GDP per capita leads to the following increase in life expectancy:&lt;/p&gt;
+&lt;p&gt;$$\hat{y}=\frac{\beta_{1}+2*\beta_{2} * ln(GDP\ per\ capita)}{100}$$&lt;/p&gt;
+&lt;p&gt;where $\beta_{1}$ is the coefficient of the non-squared term and $\beta_{2}$ is the coefficient of the squared term. The numerator is the partial dervivative of life expectancy with respect to ln(GDP per capita). All regression coefficients are partial derivatives. I just want to emphasize that with higher order terms, you cannot correctly interrep the coefficient of $x$ seperately from $x^{2}$, where n is not 1 or 0.&lt;/p&gt;
+&lt;p&gt;The following are the modeling results.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/model_results.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;implications&#34;&gt;Implications&lt;/h2&gt;
+&lt;p&gt;My hypothesis that higher income countries live longer, but with decreasing returns to life expectancy from additional increases in per capita income is supported by the evidence. This isn&amp;rsquo;t very interesting.&lt;/p&gt;
+&lt;p&gt;However, I found that increasing returns to ln(GDP per capita) from increases in life expectancy. Although, causation or a causal channel has not been established, it seems plausible that healthy workers stay in the work force longer without dropping out due to illness.&lt;/p&gt;
+&lt;p&gt;This in turn results in more GDP per capita growth. Perhaps there are alternate or additional pathways for the relationship as well. The results of this exploration strongly suggest that investing in better health care systems will have positive effects on the economy.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Predicting the 2018 World Cup Winner Using Machine Learning</title>
+      <link>https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</link>
+      <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</guid>
+      <description>&lt;p&gt;With the start of the 2018 FIFA World Cup approaching, soccer fans around the world is trying to figure out who will win the tournament? If you&amp;rsquo;re a techie and a soccer fan, you&amp;rsquo;ll probably want to figure out more quantitiative methods of figuring out the answer to that question.&lt;/p&gt;
+&lt;h2 id=&#34;goal&#34;&gt;&lt;strong&gt;Goal&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;The goal of this project is established as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use Machine Learning to predict who will win the 2018 FIFA World Cup.&lt;/li&gt;
+&lt;li&gt;Predict the outcome of individual matches for the entire competition.&lt;/li&gt;
+&lt;li&gt;Run simulation of the next matches i.e. quarter final, semi finals and finals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These goals present a unique real-world Machine Learning prediction problem and involve solving various Machine Learning task: data integration, feature modeling, and outcome prediction.&lt;/p&gt;
+&lt;h2 id=&#34;data&#34;&gt;&lt;strong&gt;Data&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;I used two data sets from Kaggle. You can find them &lt;a href=&#34;https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017/data&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. We will use results of historical matches since the beginning of the 1930s FIFA Championship for all participating teams.&lt;/p&gt;
+&lt;p&gt;We have opted not to use FIFA national team rankings, due to the limitations of FIFA rankings being created in the 90&amp;rsquo;s. Considering this limitation, we will stick to the historical match records.&lt;/p&gt;
+&lt;p&gt;First, I&amp;rsquo;m going to conduct some exploratory analysis on the two datasets. Next, I will use a feature engine to select the most relevant feature for my prediction. Afterwards, I will attempt to manipulate the data. Finally, I will choose a Machine Learning model and deploy it on the dataset.&lt;/p&gt;
+&lt;h4 id=&#34;first-things-first&#34;&gt;First Thing&amp;rsquo;s First&lt;/h4&gt;
+&lt;p&gt;We need to import the necessary libaries and load the datasets into a Dataframe. We will be using the following python libraries.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/981b97e4aa135dad1c59d6e54670e2cb.js&#34;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pandas&lt;/strong&gt;: Provides in-memory 2d table objectd referred to as &amp;lsquo;Dataframes.&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Numpy&lt;/strong&gt;: Allows use to conduct fast mathematical computation on arrays and matrices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Matplotlib&lt;/strong&gt;: A Python SD plotting library.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Seaborn&lt;/strong&gt;: A data visualization library based on matplotlib.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scikit-Learn&lt;/strong&gt;: A machine learning library.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ensure the information is imported by calling  &lt;code&gt;world_cup.head()&lt;/code&gt; and &lt;code&gt;results.head()&lt;/code&gt; for both datasets. The Dataframes should look something like the following:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/world_cup.png&#34; alt=&#34;Word Cup Dataframe&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;exploratory-analysis&#34;&gt;&lt;strong&gt;Exploratory Analysis&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Exploratory analysis and feature engineering is the most time consuming part of any Data Science project.&lt;/p&gt;
+&lt;p&gt;After analyzing both datasets, the resulting dataset has information on previous matches. The new (resulting) dataset will be useful for analyzing and predicting future mathces.&lt;/p&gt;
+&lt;p&gt;We begin our exporatory anaylsis by added goal differentials and match outcomes to the results Dataframe.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/a2d6b86482784fbf5aa728c9d6ffeddb.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;The outcome of the new Dataframe has the new results with the goal differential visible.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/new_results.png&#34; alt=&#34;results&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Now I&amp;rsquo;ll work on a subset of the data; one that includes games played by a participating team. I wanted to analyze the US Mens National Team, but unforunately, they were &lt;a href=&#34;https://www.mlssoccer.com/post/2017/10/10/us-national-team-eliminated-2018-fifa-world-cup&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;eliminated&lt;/a&gt; by Trinidad &amp;amp; Tobago in the qualifying rounds.&lt;/p&gt;
+&lt;p&gt;The Danish Mens National Team (NKVD) was also &lt;a href=&#34;https://www.standard.co.uk/sport/football/worldcup/netherlands-miss-world-cup-2018-holland-fail-to-qualify-a3865221.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;eliminated&lt;/a&gt; by The Swedish Mens National Team. Because of this, I have chosen to analyze the German Mens National Team.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/20fd329d0c63f397daee59a5134ac96b.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Analyzing the subset of the data will help us determine which features are more relevant for our analysis.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/german_matches.png&#34; alt=&#34;german matches&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As you can see, the dataset has matches dating back as early as 1908! However, we&amp;rsquo;re only interested in looking at matches from the World Cup era, which started in 1930. We then create a column for year and pick all the games played 1930.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/e6b5d83c3426a37568393d43cc2f586a.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;We can now visualize the most common match outcome for Germany throughout the years.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/wins_losses.jpg&#34; alt=&#34;wins and losses&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;FIFA has recorded 863 matches from the German Mens National Team since 1930, of which Germany has won over 500 matches with ~175 losses. Slightly more matches has ended in a draw. Getting the win-rate for every country is a useful metric. We could use it to predict the most likely outcome of each match in the tournament.&lt;/p&gt;
+&lt;h4 id=&#34;analyzing-teams-participating-in-the-world-cup&#34;&gt;Analyzing Teams Participating in the World Cup&lt;/h4&gt;
+&lt;p&gt;We can start off by creating a list of teams participating in the 2018 World Cup. The following teams participating are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Group A&lt;/strong&gt;: Uruguay, Russia, Saudi Arabia, Egypt&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group B&lt;/strong&gt;: Spain, Portugal, Iran, Morocco&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group C&lt;/strong&gt;: France, Denmark, Peru, Australia&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group D&lt;/strong&gt;: Croatia, Argentina, Nigeria, Iceland&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group E&lt;/strong&gt;: Brazil, Switzerland, Serbia, Costa Rica&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group F&lt;/strong&gt;: Sweden, Mexico, South Korea, Germany&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group G&lt;/strong&gt;: Belgium, England, Tunisia, Panama&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group H&lt;/strong&gt;: Columbia, Japan, Senegal, Poland&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/48789b295fb144c5d0d68db0c2b6d9aa.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;The following code will show only a dataframe with team wordl cup results starting from 1930, while dropping the duplicates (dropping games before 1930). We will also drop the date, home_score, away_score, tournament, city, country, goal_difference, and match_year columns from the &lt;code&gt;df_teams&lt;/code&gt; dataframe and assign it to a variable named &lt;code&gt;df_teams_1930&lt;/code&gt;. This will help us create a prediction label to simplify and process our model.&lt;/p&gt;
+&lt;p&gt;For our prediction labels, we need to create a system to help our algorithm to determine a &amp;ldquo;winning&amp;rdquo; outcome versus a &amp;ldquo;losing&amp;rdquo; outcome. During group play, FIFA rewards 2 points to the winner of the match; 0 points to the loser of the match; and 1 point to both teams if the match results in a draw. We will adopt the same system to our labels dataset.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/05fd41e7891cab7bba73cd7b945ed825.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;From there, the home_team and away_team columns will be converted from categorical variables to continuous inputs, by setting dummy variables using Pandas &lt;code&gt;get_dummies()&lt;/code&gt; function. It replaces categorical columns with quantitative representations, which enable them to be utilized in the Scikit-learn model.&lt;/p&gt;
+&lt;p&gt;We we separate the labels and features, the &lt;code&gt;train_test_split&lt;/code&gt; function will split the data into 70 percent training and 30 percetn testing.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/8e57023fabfac0f6cf8c119ad4829f01.js&#34;&gt;&lt;/script&gt;
+
+&lt;h4 id=&#34;logistic-regression&#34;&gt;Logistic Regression&lt;/h4&gt;
+&lt;p&gt;The Scikit-learn package allows us to use machine learning packages such as Linear Regression. The only problem is that we can&amp;rsquo;t use linear regression on a categorical dependent variable. Instead, in such situations, we should try using algorithms such as Logistic Regression.&lt;/p&gt;
+&lt;p&gt;Logistic regression is a Machine Learning classification algorithm that is used to predict the probability of a categorical dependent variable. In logistic regression, the dependent variable is a binary variable that contains data coded as 1 for success or 0 for failure. In other words, the logistic regression model predicts P(Y=1) as a function of X.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/logistic_regression.jpg&#34; alt=&#34;logistic regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+Logistic regression is one of the most popular ways to fit models for categorical data, especially for binary response data in Data Modeling. It is the most important (and probably the most used) member of a class of models called generalized linear models. Unlike linear regression, logistic regression can directly predict probabilities (values that are restricted to the (0,1) interval).&lt;/p&gt;
+&lt;p&gt;Logistic Regression is used when the dependent variable (target) is categorical. For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To predict whether an email is spam (1) or not spam (0)&lt;/li&gt;
+&lt;li&gt;Whether a company is a bankrupt (1) or not bankrupt (0)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Logistic regression is generally used where the dependent variable is Binary or Dichotomous. That means the dependent variable can take only two possible values, such as &amp;ldquo;Yes&amp;rdquo; or &amp;ldquo;No,&amp;rdquo; &amp;ldquo;Default&amp;rdquo; or &amp;ldquo;No Default,&amp;rdquo; &amp;ldquo;Living&amp;rdquo; or &amp;ldquo;Dead,&amp;rdquo; etc. Independent factors or variables can be categorical or numerical variables.&lt;/p&gt;
+&lt;p&gt;In our case, &lt;em&gt;logistic regression&lt;/em&gt; attempts to predict an outcome (a win or loss) given a set of data points (stats) that likely influence that outcome. The way this works in practice is you feed the algorithm one game at a time, with both the aforementioned &amp;ldquo;set of data&amp;rdquo; and the actual outcome of the match. The model then learns how each piece of data you feed it influences the result of the game positively, negatively, and to what extent.&lt;/p&gt;
+&lt;h2 id=&#34;machine-learning-match-prediction&#34;&gt;&lt;strong&gt;Machine Learning: Match Prediction&lt;/strong&gt;&lt;/h2&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/cdbf44fd9204923d62050f3a95ec11f4.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Passing our features and labels into our algorithm, we recieved a training set accuracy of 0.571 and a testing set accuracy of 0.564, which isn&amp;rsquo;t the greatest, but we will continue to use these features. At this point, we will create a dataframe that we will deploy out model.&lt;/p&gt;
+&lt;p&gt;We will start by loading the FIFA ranking as of April 2018 data set and a dataset containing the fixtures of the group stages of the tournament obtained from &lt;a href=&#34;https://fixturedownload.com/results/fifa-world-cup-2018&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. The team which is positioned higher on the FIFA Ranking will be considered the &amp;ldquo;favorite&amp;rdquo; of the match, and therefore, will be positioned under the &amp;ldquo;home_teams&amp;rdquo; column, since obviously the only home team in this world cup is Russia. We will then add teams to the new prediction dataset based on the ranking position of each team. The next step will be to create dummy variables and then deploy the machine learning model.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/80394a88c5131856cf2405809b9d5cc7.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;We can start with deploying the model to the group matches. The follow shows the match results for the Group of Death, which contains Germany, Mexico, Sweden and South Korea.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Germany and Mexico
+&lt;br&gt;Winner: Germany
+&lt;br&gt;Probability of Draw:  0.267
+&lt;br&gt;Probability of Mexico winning:  0.147&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sweden and Korea Republic
+&lt;br&gt;Winner: Sweden
+&lt;br&gt;Probability of Draw:  0.308
+&lt;br&gt;Probability of Korea Republic winning:  0.170&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mexico and Korea Republic
+&lt;br&gt;Winner: Mexico
+&lt;br&gt;Probability of Draw:  0.295
+&lt;br&gt;Probability of Korea Republic winning:  0.218&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Germany and Sweden
+&lt;br&gt;Winner: Germany
+&lt;br&gt;Probability of Draw:  0.243
+&lt;br&gt;Probability of Sweden winning:  0.189&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mexico and Sweden
+&lt;br&gt;Winner: Mexico
+&lt;br&gt;Probability of Draw:  0.253
+&lt;br&gt;Probability of Sweden winning:  0.317&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Germany and Korea Republic
+&lt;br&gt;Winner: Germany
+&lt;br&gt;Probability of Draw:  0.277
+&lt;br&gt;Probability of Korea Republic winning:  0.119&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Based on this information, it looks like the former champions will be making it out of the Group of Death. Unless the &lt;a href=&#34;https://en.wikipedia.org/wiki/Sports-related_curses&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;World Cup Champion&amp;rsquo;s&lt;/a&gt; curse has anything to say about it, prehaps Mexico and Sweden will both make it out of group stages.&lt;/p&gt;
+&lt;h5 id=&#34;knockout-stage-group-of-16&#34;&gt;Knockout Stage (Group of 16)&lt;/h5&gt;
+&lt;p&gt;Based on the model, the following matchups are generated.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/knockout_stage.png&#34; alt=&#34;knock out stage&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Our model has generated the following winners from the knockout stage of the 2018 World Cup:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Portugal: 44.1% Probability of Winning&lt;/li&gt;
+&lt;li&gt;France: 47.6% Probability of Winning&lt;/li&gt;
+&lt;li&gt;Brazil: 70.2% Probability of Winning&lt;/li&gt;
+&lt;li&gt;England: 51.3% Probability of Winning&lt;/li&gt;
+&lt;li&gt;Spain: 52% Probability of Winning&lt;/li&gt;
+&lt;li&gt;Germany: 66.8% Probability of Winning&lt;/li&gt;
+&lt;li&gt;Belgium: 50.3% Probability of Winning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;quarter-finals&#34;&gt;Quarter-Finals&lt;/h5&gt;
+&lt;p&gt;Our model predicted a quarter final matches of the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Portugal vs. France&lt;/li&gt;
+&lt;li&gt;Spain vs. Argentina&lt;/li&gt;
+&lt;li&gt;Brazil vs. England&lt;/li&gt;
+&lt;li&gt;Germany vs. Belgium&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Based on the matchups, our algorithm has predicted the winners of their quarter final matches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;France: 42.9% Probabillity of Winning&lt;/li&gt;
+&lt;li&gt;Argentina: 52% Probabillity of Winning&lt;/li&gt;
+&lt;li&gt;Brazil: 52.5% Probabillity of Winning&lt;/li&gt;
+&lt;li&gt;Germany: 58% Probabillity of Winning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This time, the algorithm has less than a 60% certainity for most of our match-ups. This is what we can expect as we reach a higher level of play from our competitors.&lt;/p&gt;
+&lt;h5 id=&#34;semi-finals&#34;&gt;Semi-Finals&lt;/h5&gt;
+&lt;p&gt;The model predicted the following semi-final matches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brazil vs. France&lt;/li&gt;
+&lt;li&gt;Germany vs. Argentina&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Germany and Argentina are once again matched up with one another, except this time it is in the semi-finals instead of the grand finals of the 2014 world cup. Based on the matchups, our algorithm has predicted the winners of their semi-final matches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;France: 69.3% Probabillity of Winning&lt;/li&gt;
+&lt;li&gt;Germany: 52% Probabillity of Winning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our algorithm once again has Germany emerging has the victory of the Germany vs. Argentina match. Our model also estimates that Brazil will end up losing to France. Unforunately, the 5 time World Cup champs will have to miss out on another Final.&lt;/p&gt;
+&lt;h5 id=&#34;finals&#34;&gt;Finals&lt;/h5&gt;
+&lt;p&gt;Finally, we have the grand finals with France vs. Germany. What outcome does our model give us?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Germany: 52.6% Probabillity of Winning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;According to the model, Germany is likely to win the World Cup, although, it isn&amp;rsquo;t possible for repeat champions to emerge. The last time this occur was during the 1962 in Chile.&lt;/p&gt;
+&lt;h2 id=&#34;areas-of-further-researchimprovement&#34;&gt;&lt;strong&gt;Areas of Further Research/Improvement&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Some areas for improvement:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For improvements of the datasets, we could use FIFA (the game, not the organization), to assess the quality of each team player&lt;/li&gt;
+&lt;li&gt;A confusion maxtrix would be great to analyze&lt;/li&gt;
+&lt;li&gt;Using more models together to improve accuracy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;There is so much that can be improved upon here. For now, lets see if we get any lucky.&lt;/p&gt;
+&lt;p&gt;The full code can be found &lt;a href=&#34;https://github.com/Hedgology/FIFA-2018-WORLDCUP-PREDICTIONS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

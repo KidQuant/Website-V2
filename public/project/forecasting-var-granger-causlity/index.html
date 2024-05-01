@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 30, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b481486c871a52c314ef891cd86306cc.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Andre Sealy" />
+
+
+
+
+
+  
+
+<meta name="description" content="An exploration of the Black-Scholes framework and examining payoff functions and option Greeks." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kidquant.com/project/forecasting-var-granger-causlity/" />
+<link rel="canonical" href="https://kidquant.com/project/forecasting-var-granger-causlity/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kidquant.com/project/forecasting-var-granger-causlity/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="KidQuant" />
+<meta property="og:url" content="https://kidquant.com/project/forecasting-var-granger-causlity/" />
+<meta property="og:title" content="Forecasting Asset Prices Using VAR and Granger Causality | KidQuant" />
+<meta property="og:description" content="An exploration of the Black-Scholes framework and examining payoff functions and option Greeks." /><meta property="og:image" content="https://kidquant.com/project/forecasting-var-granger-causlity/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2019-11-03T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2019-11-03T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kidquant.com/project/forecasting-var-granger-causlity/"
+  },
+  "headline": "Forecasting Asset Prices Using VAR and Granger Causality",
+  
+  "image": [
+    "https://kidquant.com/project/forecasting-var-granger-causlity/featured.png"
+  ],
+  
+  "datePublished": "2019-11-03T00:00:00Z",
+  "dateModified": "2019-11-03T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Andre Sealy"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "KidQuant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "An exploration of the Black-Scholes framework and examining payoff functions and option Greeks."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Forecasting Asset Prices Using VAR and Granger Causality | KidQuant</title>
+
+  
+  
+  
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="877b3243092f6bca7408b61b863ebbef" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Forecasting Asset Prices Using VAR and Granger Causality</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Andre Sealy</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 3, 2019
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header" href="/slides/example/" target="_blank">
+    Slides
+  </a>
+  
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 688px; max-height: 385px;">
+  <div style="position: relative">
+    <img src="/project/forecasting-var-granger-causlity/featured_hub8691825517a2462e3766d446f66d040_22024_0348d395bc39b48569102c44289548fa.webp" width="688" height="385" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Forecasting Gold and Oil has garnered major attention from academics, investors and Government agencies alike. These two products are known for their substantial influence on the global economy. However, what is the relationship between these two assets? What generally happens to Gold prices when Oil takes a plunge? We can use a statistical technique known as <em><strong>Granger Causality</strong></em> to test the relationships of Gold, Oil, and some other variables. We can also use a <strong>VAR model</strong> to forecast the future Gold &amp; Oil prices.</p>
+<h2 id="exploratory-analysis">Exploratory Analysis</h2>
+<p>Let&rsquo;s load the data and conduct some analysis with visualizations to understand more of the data. Exploratory data analysis is quite extensive in multivariate time series. I will cover some areas here to get insights into the data. However, it is advisable to conduct all statistical tests to ensure our clear understanding of data distribution.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/granger-var-project/data_analysis.png" alt="Data Analysis" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>In our dataset, we have six variables: Gold, Silver, Oil, US Dollar, Interest, and a Stock Market Index. The stock market index we&rsquo;ve used was the Dow Jones Industrial Average. We usually use linear regression to determine if there is a correlation between specific variables. Instead, we&rsquo;re going to determine if any of these variables directly causes movement in the other variables.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/granger-var-project/time_series.png" alt="Time Series" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Here, we can see different trends for six of our variables. It would be helpful if we established whether or not our time series followed a normal (or Gaussian) distribution. We will do this based on the test for normality based on the Jarque-Bera test.</p>
+<h3 id="jarque-bera-test">Jarque-Bera Test</h3>
+<p>There are actually three test that we could have implemented for testing normality; however, we will focus on just one: the Jarque-Bera Test.</p>
+<p>The Jarque-Bera goodness-of-fit test determines whether a sample data have the skewness and kurtosis matching a normal distribution.</p>
+<p>$$k_{3}=\frac{\sum^{n}<em>{i=1}(x</em>{i}-\bar{x})^{3}}{ns^{3}} ,,,,,,, k_{4}=\frac{\sum^{n}<em>{i=1}(x</em>{i}-\bar{x})^{4}}{ns^{4}}-3  $$</p>
+<p>$$JB = n \Bigg(\frac{(k_{3})^{2}}{6}+\frac{(k_{4})^{2}}{24}\Bigg) $$</p>
+<p>where $x$ is each observation, $n$ is the sample size, $s$ is the standard deviation, $k_{3}$ is skewness, and $k_{4}$ is kurtosis. The null hypothesis, $H_{0}$, follows that the data is normally distributed; the alternative hypothesis, $H_{A}$, follows that the data is not normally distributed.</p>
+<p>There is a simple script we can use in python to determine the goodness of fit, the kurtosis, and the skewness.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+</span></span><span class="line"><span class="cl"><span class="n">stat</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">normaltest</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Gold</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Statistics=</span><span class="si">%.3f</span><span class="s1">, p=</span><span class="si">%.3f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">stat</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.05</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">p</span> <span class="o">&gt;</span> <span class="n">alpha</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Data looks Gaussian (fail to reject H0)&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Data does not look Gaussian (reject H0)&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Lets test out the goodness of fit on the Gold variable.</p>
+<blockquote>
+<p>Statistics=818.075, p=0.000</p>
+<p>Data does not look Gaussian (reject H0)</p>
+</blockquote>
+<p>As we can see, we recieve a p-value and a test statistic in return. While we don&rsquo;t have a Chi-Square chart to determine the critical region, we do have a p-value, which is basically zero.</p>
+<p>A p-value less than 0.05 basically means our test statistic falls within the critical region (inside the tail); therefore, we can reject the null hypothesis. The dataset is not normally distributed, which we probably could have assumed by looking at the time series plots from before.</p>
+<p>Lets compare kurtosis and skewness for both the Oil and Gold variables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/granger-var-project/test_statistics.png" alt="Test Statistics" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>These two distributions can provide us with some intuition about the distribution of our data. A value close to 0 for kurtosis indicates a normal distribution where asymmetrical nature is signified by a value between -0.5 and +0.5 for skewness. The tails are heavier for kurtosis greater than 0 and vice versa. Moderate skewness refers to the value between -1 and -0.5 or 0.5 and 1.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/granger-var-project/probability_plot.png" alt="probability plot" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Based on the normal probability plot, we can see that the dataset is far from normally distributed.</p>
+<h2 id="the-var-model">The VAR Model</h2>
+<p>Considering that our dataset isn&rsquo;t normally distributed, we can use this information to build a VAR model. The construction of the model will be based on the following steps:</p>
+<ol>
+<li>Testing for autocorrelation</li>
+<li>Spliting the time series into Training and Testing data sets</li>
+<li>Testing for Stationarity</li>
+<li>Testing for Causation using Granger Causality</li>
+<li>Conducting a forecast evaluation</li>
+</ol>
+<h3 id="auto-corrlation">Auto-Corrlation</h3>
+<p>Autocorrelation refers to how correlated a time series is with its past values as a function of the time lag between them.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/granger-var-project/autocorrelation.png" alt="autocorrelation" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The following plot shows the autocorrelation for the Gold time series. As we can see, each value is highly correlated with the previous value. We have an autocorrelation of +1, which represents a perfect positive correlation. An increase seen in one time series leads to a proportionate increase in the other time series.</p>
+<p>We need to apply transformation and neutralize this time series stationary. It measures the linear relationships. Even if the autocorrelation is minuscule, there may still be a nonlinear relationship between the time series and a lagged version of itself.</p>
+<h3 id="spliting-the-time-series-into-training-and-testing-data-sets">Spliting the time series into Training and Testing data sets</h3>
+<p>The VAR model will be fitted on <code>X_train</code> and then used to forecast the next 15 observations. These forecast will be compared against the actual present test data.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">nobs</span> <span class="o">=</span> <span class="mi">15</span>
+</span></span><span class="line"><span class="cl"><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="n">nobs</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="o">-</span><span class="n">nobs</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#check size</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="testing-for-stationarity">Testing for Stationarity</h3>
+<p>Intuitively, stationarity implies that the statistical properties of the process are consistent. In other words, the mean, variance and autocorrelation structure do not change over time. Stationarity can be defined in precise mathematical terms, but for our purpose we mean a flat looking series, without trend, constant variance over time, a constant autocorrelation structure over time with no periodic fluctuations (seasonality).</p>
+<p>In order to make the time series stationary, we need to apply a differencing function on the training set. However, this is an iterative process where we after first differencing, the series may still be non-stationary. We may have to apply a second difference or log transformation to standardize the series in such cases.</p>
+<p>The following demonstrates what time series would generate with our differencing technique.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/granger-var-project/stationary.png" alt="stationary" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="testing-causation-using-grangers-causality-test">Testing Causation using Granger&rsquo;s Causality Test</h3>
+<p>The question of what event caused another, or what brought about a certain change in a phenomenon, is a common one. While a naive interpretation of the problem may suggest simple approaches like equating causality with high correlation, or to infer the degree to which $x$ causes $y$ from the degree of $x$&rsquo;s goodness as a predictor of $y$, the problem is much more complex. As a result, rigorous ways to approach this question were developed in several fields of science.</p>
+<p>This can be done one of two different ways:</p>
+<ol>
+<li>Casual inference over random variables, representing different events. The most common example are two variables, each representing one alternative of an A/B test, and each with a set of samples/observations associated with it.</li>
+<li>Casual inference over time series data (and thus over stochastic processes). Examples include determining wehther (and to what degree) aggregate daily stock prices drive (and are driven by) daily trading volume, or causal relatioons between volumns of Pacific sardine catches, northern anchovy catches, and sea suface temperature.</li>
+</ol>
+<h4 id="granger-casuality-test-results">Granger Casuality Test Results</h4>
+<p>Granger&rsquo;s causlity tests the null hypothesis, $H_{0}$, that the coefficients of past values in the regression equation is zero. In simplier term, the past values of time series, $X$, do not cause other series, $Y$. If the p-value obtained from the test is lesser than the significance level of 0.05, then, you can safely reject the null hypothesis.</p>
+<p>The following code was performed on the transformed dataset:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">statsmodels.tsa.stattools</span> <span class="kn">import</span> <span class="n">grangercausalitytests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">maxlag</span> <span class="o">=</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl"><span class="n">test</span> <span class="o">=</span> <span class="s1">&#39;ssr_chi2test&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">granger_causation_matrix</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">variables</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="s1">&#39;ssr_chi2test&#39;</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">X_train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">variables</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">variables</span><span class="p">))),</span> <span class="n">columns</span><span class="o">=</span><span class="n">variables</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">variables</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">X_train</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">test_result</span> <span class="o">=</span> <span class="n">grangercausalitytests</span><span class="p">(</span><span class="n">data</span><span class="p">[[</span><span class="n">r</span><span class="p">,</span> <span class="n">c</span><span class="p">]],</span> <span class="n">maxlag</span><span class="o">=</span><span class="n">maxlag</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">p_values</span> <span class="o">=</span> <span class="p">[</span><span class="nb">round</span><span class="p">(</span><span class="n">test_result</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="n">test</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="mi">4</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">maxlag</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span> 
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Y = </span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s1">, X = </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1">, P Values = </span><span class="si">{</span><span class="n">p_values</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">min_p_value</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">p_values</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">X_train</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">r</span><span class="p">,</span> <span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">min_p_value</span>
+</span></span><span class="line"><span class="cl">    <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">var</span> <span class="o">+</span> <span class="s1">&#39;_x&#39;</span> <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">variables</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">X_train</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="n">var</span> <span class="o">+</span> <span class="s1">&#39;_y&#39;</span> <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">variables</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">X_train</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">granger_causation_matrix</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">variables</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</span></span></code></pre></div><p>The code provided the following matrix:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/granger-var-project/granger_causality.PNG" alt="granger causality" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The row are the responses $Y$ and the columns are the predictors $X$.</p>
+<ul>
+<li>
+<p>If we take the value 0.0000 in (row 1, column 2), it refers to the p-value of the Granger&rsquo;s Causality test for <code>Silver_x</code> causing <code>Gold_Y</code>. The 0.0000 in row 2, column 1 refers to the p-value of <code>Gold_y</code> causing <code>Silver_x</code>.</p>
+</li>
+<li>
+<p>As we can see, <code>Gold_x</code> isn&rsquo;t typically caused by any of the other variables. However, movements in the variable <code>Gold_x</code> only appears to be caused by the variable <code>USD_y</code> This intuitively makes sense, as the value of gold is often tied to the US Dollar and some in the investment community consider gold as a hedge against inflation (the same for the variables <code>Silver_x</code> and <code>USD_y</code>).</p>
+</li>
+<li>
+<p>The <code>Interest_x</code> variable only seems to cause movements in <code>Silver_y</code>; however, <code>Interest_y</code> does appear to cause movements in the <code>USD_x</code>, which also makes sense.</p>
+</li>
+<li>
+<p>The <code>Index_y</code> variable appears to cause movements in the variables <code>Silver_x</code>, <code>Oil_x</code>, and <code>USD_x</code>.</p>
+</li>
+</ul>
+<p>So, looking at the p-values, we can assume that (except Oil) most of the variables (time series) in the system are interchangeably causing each other. This justifies the VAR modeling approach for this system of multi time-series to forecast.</p>
+<h4 id="testing-for-co-integration">Testing for Co-integration</h4>
+<p>Regression errors are a linear combination of two unit root series ($X$ and $Y$) of the following equation:</p>
+<p>$$\varepsilon=Y_{t}-\alpha-\beta X_{t} $$</p>
+<p>If $X_{t}$ and $X_{t}$ have a unit root, this usually means $\varepsilon_{t}$ also has a unit root. This is the cause of a spurious regression problem.</p>
+<p>However, there are some cases when the unit root in $Y$ and $X$ cancel each other out and $\varepsilon_{t}$ does not have any unit root. In this special case, the spurious regression problem vanishes. This phenomenon is referred to as cointegration, which measures the equilibrium spread between two non-stationary time series measured by constant terms $\alpha$. If the error term is stationary then we can say that cointegration and an equalibrium spread exist.</p>
+<p>For testing co-integration, we used the Johansen method to test for co-integration using the following python function:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">statsmodels.tsa.vector_ar.vecm</span> <span class="kn">import</span> <span class="n">coint_johansen</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">cointegration_test</span><span class="p">(</span><span class="n">transfrom_data</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Perform Johanson&#39;s Cointegration Test and Report Summary&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">out</span> <span class="o">=</span> <span class="n">coint_johansen</span><span class="p">(</span><span class="n">transform_data</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;0.90&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;0.95&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;0.99&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">traces</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">lr1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cvts</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">cvt</span><span class="p">[:,</span> <span class="n">d</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">)]]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">adjust</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">6</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">val</span><span class="p">)</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1"># Summary</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Name   :: Test Stat &gt; C(95%)       =&gt; Signif   </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;--&#39;</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">col</span><span class="p">,</span> <span class="n">trace</span><span class="p">,</span> <span class="n">cvt</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">transform_data</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">traces</span><span class="p">,</span> <span class="n">cvts</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">adjust</span><span class="p">(</span><span class="n">col</span><span class="p">),</span> <span class="s1">&#39;::&#39;</span><span class="p">,</span> <span class="n">adjust</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">trace</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">9</span><span class="p">),</span> <span class="s2">&#34;&gt;&#34;</span><span class="p">,</span> <span class="n">adjust</span><span class="p">(</span><span class="n">cvt</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s1">&#39;  =&gt;  &#39;</span><span class="p">,</span> <span class="n">trace</span> <span class="o">&gt;</span><span class="n">cvt</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cointegration_test</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="what-is-var">What is VAR?</h4>
+<p><strong>Vector Autoregression</strong> (or VAR) is a multivariate forecasting algorithm that is used when two or more time series influence one another. In order to use VAR, there needs to be at least two time series for our variables and the time series needs to influence one another.</p>
+<p>VAR is considered a &lsquo;autoregressive&rsquo; model because each variable is modeled as a function of past values. That is, predictors are nothing but lags (time delayed values) of the series.</p>
+<p>We&rsquo;ve created models for predicting all six of our variables, which has provided the coefficients, residuals, and the AIC for the particular model. We can now begin with the forecasting.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/granger-var-project/var_model.PNG" alt="Var Model" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h4 id="conducting-a-forecast-evaluation">Conducting a forecast evaluation</h4>
+<p>Now we can plot the historical observations along with the forecasted observations back to their original scale. Let us assess the differences between the two time series plots.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/granger-var-project/VAR_forecast.png" alt="Var Forecast" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>As we can see, the forecasted observations are pretty much in line with the historical observations used for forecasting Gold prices. There is a very slight deviation between the historical and forecasted observations started from Janurary 9th, however, this divergence is very slight.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>There are many different variables that can account for the changes in different financial markets. These changes may or may not always occur in financial markets. Nonetheless, this tutorial can demonstrate how we can use the relationship in certain financial markets to create models for forecasting.</p>
+<h2 id="github-code">GitHub Code</h2>
+<p>Click here for the full <a href="https://github.com/KidQuant/Forecasting-VAR-Granger-Causality" target="_blank" rel="noopener">GitHub Code</a> and full explainations.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/programming/">Programming</a>
+  
+  <a class="badge badge-light" href="/tag/finance/">Finance</a>
+  
+  <a class="badge badge-light" href="/tag/statistics/">Statistics</a>
+  
+  <a class="badge badge-light" href="/tag/mathematics/">Mathematics</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkidquant.com%2Fproject%2Fforecasting-var-granger-causlity%2F&amp;text=Forecasting&#43;Asset&#43;Prices&#43;Using&#43;VAR&#43;and&#43;Granger&#43;Causality" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkidquant.com%2Fproject%2Fforecasting-var-granger-causlity%2F&amp;t=Forecasting&#43;Asset&#43;Prices&#43;Using&#43;VAR&#43;and&#43;Granger&#43;Causality" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Forecasting%20Asset%20Prices%20Using%20VAR%20and%20Granger%20Causality&amp;body=https%3A%2F%2Fkidquant.com%2Fproject%2Fforecasting-var-granger-causlity%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkidquant.com%2Fproject%2Fforecasting-var-granger-causlity%2F&amp;title=Forecasting&#43;Asset&#43;Prices&#43;Using&#43;VAR&#43;and&#43;Granger&#43;Causality" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Forecasting&#43;Asset&#43;Prices&#43;Using&#43;VAR&#43;and&#43;Granger&#43;Causality%20https%3A%2F%2Fkidquant.com%2Fproject%2Fforecasting-var-granger-causlity%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkidquant.com%2Fproject%2Fforecasting-var-granger-causlity%2F&amp;title=Forecasting&#43;Asset&#43;Prices&#43;Using&#43;VAR&#43;and&#43;Granger&#43;Causality" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kidquant.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2453db0268c976f8eacba18e4a98e34c_209096_270x270_fill_q75_lanczos_center.jpg" alt="Andre Sealy"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kidquant.com/">Andre Sealy</a></h5>
+      <h6 class="card-subtitle">Quant Research / Data Scientist / Writer</h6>
+      <p class="card-text">My research interests involves Quantitative Finance, Mathematics, Data Science and Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/KidQuant" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Andre_Sealy" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThatQuantKid" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:andre@kidquant.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

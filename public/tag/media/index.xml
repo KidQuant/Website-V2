@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Media | KidQuant</title>
+    <link>https://kidquant.com/tag/media/</link>
+      <atom:link href="https://kidquant.com/tag/media/index.xml" rel="self" type="application/rss+xml" />
+    <description>Media</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 22 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <title>Media</title>
+      <link>https://kidquant.com/tag/media/</link>
+    </image>
+    
+    <item>
+      <title>Analyzing News Articles With Python</title>
+      <link>https://kidquant.com/project/analyzing-news-articles-python/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/project/analyzing-news-articles-python/</guid>
+      <description>&lt;p&gt;Never before has America become more polarized than we are today. As such, the news we consume is a function of our polarization. Right-leaning people tend to get their information from Fox News, The Wall Street Journal, National Review, etc. People who lean left tend to get their information from MSNBC, The New York Times, The Huffington Post, etc. There are a handful of neutral publications (Reuters, Politico, Associated Press, etc.). Still, even their alignment falls into question, based on how they report the news.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/partisan.gif&#34; alt=&#34;Partisan Divide&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s unclear to what extent news plays a role in fueling the partisan divide in our country. There is some evidence to suggest that people, when given accurate information on controversial issues, will choose to disregard this information to fit commonly held beliefs [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. This perhaps can explain the apparent bias for news outlets. Now, more than ever, people should be allowed to sift through news sources that are free from bias, misinformation, and personal polarization.&lt;/p&gt;
+&lt;h2 id=&#34;all-sides-news-aggregator&#34;&gt;All Sides News Aggregator&lt;/h2&gt;
+&lt;p&gt;According to an old Pew Research poll, most Americans would prefer if news media would present the facts without adding their interpretation of the events [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Some may argue that objectivity in the news has never occurred, and therefore, impossible, and in some cases, undesirable. Regardless of whether or not our news should be presented from an objective lens, at the very least, journalists should be honest about their affiliation. In comes &lt;strong&gt;All Sides&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;All Sides is a bipartisan organization that looks at a more balanced approach to news coverage by collecting the top headlines of the day and showcasing the reporting of the news outlet on the left, right, and center. The platform also allows readers the rate the lean of the publication for further analysis [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;The first mode of attack is figuring out how we can go about extracting these stories for our analysis. We can extract all stories from all publications, but what if we want a more targeted focus? One interesting feature of the All Sides website is that we can look for articles based on the topic.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides.PNG&#34; alt=&#34;All Sides&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We can get articles from pretty much any topic: Criminal Justice, Education, and the Economy. All Sides even collects the news perspectives on the most important topic in the world right now, the Coronavirus. (Yes, our society is so divided right now, we&amp;rsquo;ve even managed to politize a deadly virus)&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m going to use immigration as our topic; I feel it&amp;rsquo;s pretty easy to understand where both sides (the political left and right) stand on this issue. The first part of the project involves web scraping the information that we are most interested in, such as the headline, date of the story, description, source, the lean/bias of the source, and the link of the story.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles.PNG&#34; alt=&#34;example articles&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The results provide a data frame that we can use as a stepping stone to extract relevant information, such as the body of the article and the authors. Sure, we could have extracted all of that information along with the rest. However, web scraping is very tricky, as no two websites have the same HTML structure and layout. This is especially true for news media websites.&lt;/p&gt;
+&lt;p&gt;As such, we relied on a third-party source for the extracting news, with the API known as &lt;strong&gt;News-Please&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;news-please-api&#34;&gt;News Please API&lt;/h2&gt;
+&lt;p&gt;News-Please is an open source news crawler that extracts structured information from almost any website. You can use it to follow recursively internal hyperlinks and read RSS feeds to extract most recent and old archived articles [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;With this API, we only need to provide the root URL of the article to crawl it completely. The New-Please API combines the power of multiple state-of-the-art libraries and tools, such as &lt;code&gt;scrapy&lt;/code&gt;, &lt;code&gt;Newspaper&lt;/code&gt;, and &lt;code&gt;readability&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Using this API, along with other web crawler techniques, we have randomly extracted 291 articles from multiple sources. The Top 10 articles we extracted are presented in the following data frame.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles2.PNG&#34; alt=&#34;example article #2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As we can see, Fox News has the largest number of articles in our dataset, with 25 pieces. Reuters is right behind Fox News with 20 articles, followed by the Wall Street Journal (News Section), Washington Times, and The Hill with 20, 17, and 15 articles, respectively.&lt;/p&gt;
+&lt;p&gt;I can only speak for myself, but from what I see so far, I believe this alignment is correct for the most part. Fox News tends to lean right, while CNN and New York Times lean more left.&lt;/p&gt;
+&lt;p&gt;I think some people would disagree with the alignment of the Wall Street Journal, as the publisher is owned by News Corp, which is the parent company of Fox News. I believe most people would be inclined to agree, as far as community feedback on All Sides is concerned.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides5.PNG&#34; alt=&#34;All Sides&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Still, whether or not a news outlet is owned or operated by a particular person has little to do with its overall objectivity and bias. All Sides has conducted an in-depth analysis of major news publications such as The Wall Street Journal and has found that outlet is more aligned to the center than its peers. (Keep in mind, a Center alignment doesn&amp;rsquo;t mean better!) [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles3.PNG&#34; alt=&#34;example article 3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;When everything is extracted, we should get the data frame similar to what we presented above. The author and text columns are highlighted to demonstrate that we have obtained this new information. We&amp;rsquo;ve also included the length of characters for each article (for reasons that will be clear later).&lt;/p&gt;
+&lt;p&gt;Now that we have all of the information that we need, we can now conduct what is known as a &lt;strong&gt;Sentiment Analysis&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;sentiment-analysis&#34;&gt;Sentiment Analysis&lt;/h2&gt;
+&lt;p&gt;Sentiment Analysis is the process of computationally (at least, programming languages)  determining whether a piece of text is positive, negative, or neutral. It&amp;rsquo;s also known as opinion mining, deriving the opinion or attitude of a writer.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve all received text messages or e-mails, where we are not sure the emotion the sender is trying to convey. Certain words may carry a specific connotation that is not clear to many different types of people. Sentiment Analysis can be considered an unbias way of analyzing text.&lt;/p&gt;
+&lt;p&gt;Machine Learning practitioners utilize sentiment analysis in several different fields.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Politics&lt;/strong&gt;: I suppose this project involves politics to some degree, but we can use sentiment analysis to keep track of the consistency between specific statements and actions at the government level.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Finance&lt;/strong&gt;: As you are already aware, I am in the Finance industry. My personal experience using Sentiment Analysis in Finance consists of analyzing news articles related to specific publicly traded companies and predicting stock movements based on how the news impacted the underlying stock. This is just one example, but there are dozens of different examples of how sentiment analysis is used in Finance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Shopping (Online, Restaurants)&lt;/strong&gt;: Have you ever tried to purchase a product on Amazon? (You&amp;rsquo;re human; of course, you have.) How do you know if you can trust the reviews? What about the reviews on a Yelp listing? Sentiment Analysis can help you determine whether or not a review is fake or made by a real person.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In our case, we are using it to examine the bias of news articles.&lt;/p&gt;
+&lt;h3 id=&#34;natural-language-processing-using-google-api&#34;&gt;Natural Language Processing using Google API&lt;/h3&gt;
+&lt;p&gt;Natural Language Processing (NLP) is a field of Artificial Intelligence that gives the machines the ability to read, understand, and derive meaning from human languages. Python already provides a well-known NLP module for this task, namely the Natural Language Toolkit (NLTK). However, there is a lot that goes into preparing the data to feed through a Naive Bayes or Support Vector Classifier.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides7.PNG&#34; alt=&#34;Natural Language&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As we can see, the process for using the &lt;code&gt;nltk&lt;/code&gt; module is a painstaking process, as you can see. If we compare it with Google&amp;rsquo;s Natural Language API, the process looks a little more like this:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides8.PNG&#34; alt=&#34;Google API&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As we can see, it&amp;rsquo;s much more manageable. No need to look for specific stop words, tokenize the text, or test/train our dataset to fit the module.&lt;/p&gt;
+&lt;p&gt;To use Google Natural Language API, you need to set up a Cloud Library account, enable the Natural Language API, and download the project file you are using for the API. The tutorial for this process can be  [&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;The next process involves using Google&amp;rsquo;s NLP API to analyze the articles we&amp;rsquo;ve extracted from Part Two. We are going to create a loop that measures the Sentiment and Magnitude of each text and assign it to two new columns.&lt;/p&gt;
+&lt;h3 id=&#34;sentiment-and-magnitude&#34;&gt;Sentiment and Magnitude&lt;/h3&gt;
+&lt;p&gt;So what is the concept behind &lt;strong&gt;Sentiment&lt;/strong&gt; and &lt;strong&gt;Magnitude&lt;/strong&gt;, and how does it help us in our analysis?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sentiment&lt;/strong&gt; attempts to determine the overall attitude (positive or negative) expressed within the text. The of a text will range between -1.0 (negative) and 1.0 (positive). Of course, it goes without saying that a score of 0.0 is considered neutral.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Magnitude&lt;/strong&gt; indicates the overall strength of the emotion (either positive or negative) within the given text. We&amp;rsquo;re not sure how high this metric can go; however, the minimum us always 0. Unlike sentiment, magnitude is not normalized; each expression of emotion within the text (positive and negative) contributes to the text magnitude. So longer text may have greater magnitudes.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles4.PNG&#34; alt=&#34;example article 4&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s important to note that the Natural Language indicates differences between positive and negative emotion in a document, but does not identify specific positive and negative emotions. For example, &amp;ldquo;angry&amp;rdquo; and &amp;ldquo;sad&amp;rdquo; are both considered negative emotions. However, when the Natural Language analyzes text that is considered &amp;ldquo;angry,&amp;rdquo; or text that is considered &amp;ldquo;sad,&amp;rdquo; the response only indicates that the sentiment in the text is negative, not &amp;ldquo;sad&amp;rdquo; or &amp;ldquo;angry.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;For example, our DataFrame has returned the results of our Sentiment Analysis for the articles published from April 14th - 14th. As we can see, the majority of the articles are negative. It unclear whether or not this is any relation to the subject matter or just the nature of the industry, in general [&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;The articles with a sentiment score closer to zero are published by &lt;em&gt;The Associated Press&lt;/em&gt;, &lt;em&gt;Washington Examiner&lt;/em&gt;, and &lt;em&gt;Reuters&lt;/em&gt;. Looking at the magnitude scores, we can see the &lt;em&gt;Washington Examiner&lt;/em&gt; article has a magnitude of 36; however, we have to remember that the value is proportional to the length of the text. Seeing that the article published by the &lt;em&gt;Washington Examiner&lt;/em&gt; has 17,000+ characters, this makes sense.&lt;/p&gt;
+&lt;p&gt;On the other hand, the &lt;em&gt;Washington Examiner&lt;/em&gt; is not part of the mainstream media and primarily publishes opinion and commentary, which explains the degree in magnitude. If anything, the articles published by the &lt;em&gt;Washington Examiner&lt;/em&gt;, &lt;em&gt;Associated Press&lt;/em&gt; and &lt;em&gt;Reuters&lt;/em&gt; can be considered mixed (a neutral sentiment with a strong degree of emotion)&lt;/p&gt;
+&lt;p&gt;The articles published by &lt;em&gt;Axios&lt;/em&gt; and &lt;em&gt;New York Times&lt;/em&gt; shows a sentiment score of -0.5 and a magnitude of 3.3 and 3.4, respectively, which shows a clear negative sentiment. (Most people would not find this surprising coming from NYT) However, &lt;em&gt;Fox News (Online)&lt;/em&gt; has two similar stories that convey a slightly less negative sentiment. Because the sentiment is less than -0.5 and the magnitude is relatively strong, we would rate the sentiment for both &lt;em&gt;Fox News&lt;/em&gt; articles mixed, rather than clearly positive or negative.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Clearly Positive&amp;rdquo; or &amp;ldquo;clearly&amp;rdquo; negative sentiment varies for different cases and outlets; however, because the vast majority of news articles are negative (or at the very least, has a sentiment score of less than 0), we require a meaningful threshold to determine if an article was truly negative.&lt;/p&gt;
+&lt;p&gt;Of course, this is all dependent upon the dataset, as well as the types of articles we extract. However (for now), we choose to use this threshold for news involving political issues.&lt;/p&gt;
+&lt;h3 id=&#34;visualizations-and-statistical-analysis&#34;&gt;Visualizations and Statistical Analysis&lt;/h3&gt;
+&lt;h4 id=&#34;box-and-whiskers-plot&#34;&gt;Box and Whiskers Plot&lt;/h4&gt;
+&lt;p&gt;Although, this information is a little harder to convey on a histogram. It can be seen more clearly on a box and whiskers plot.&lt;/p&gt;
+&lt;p&gt;The distribution (as well as the skew) are more apparent when presented in the form of a box and whiskers plot. I&amp;rsquo;ve also presented the data to show where the outliers are. In order to determine which observations in distribution would be considered an outlier, we need to find something that is called the &lt;strong&gt;Interquartile Range&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;interquartile range&lt;/strong&gt; or (IQR) measures where the median of the dataset should be. While the range is the measure of the highest and lowest values (visible where the &amp;ldquo;whiskers&amp;rdquo; are found), the interquartile range is the range where the bulk of the values lie. It&amp;rsquo;s usually preferred as a measurement of spread when reporting values such as SAT scores.&lt;/p&gt;
+&lt;p&gt;The IQR can be found by finding the difference between Q3 and Q1:&lt;/p&gt;
+&lt;p&gt;$$IQR=Q3-Q1$$&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides9.PNG&#34; alt=&#34;example boxwhisker&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Once we have found the IQR for each dataset, we now need to calculate the lower and upper bounds. The lower bounds can be found by taking Q1 and subtracting by 1.5 times the IQR. The upper bound can be found using the same way, except we are using addition instead of subtraction. To bring this explanation in perspective, I&amp;rsquo;m going to use a few statistics for right-leaning sources.&lt;/p&gt;
+&lt;p&gt;Each diamond plotted above the whisker is considered an outlier,  and they&amp;rsquo;re lots of them in our right-leaning dataset. However, these articles primarily consist of opinion pieces from the &lt;em&gt;Washington Times&lt;/em&gt;, &lt;em&gt;Washington Examiner&lt;/em&gt;, &lt;em&gt;The Christian Perspective&lt;/em&gt;, &lt;em&gt;Reason&lt;/em&gt;, and the &lt;em&gt;National Post&lt;/em&gt;. (The largest magnitude in our dataset for right-leaning sources)&lt;/p&gt;
+&lt;p&gt;Despite all the outliers, the distribution of the right-leaning dataset is still similar to that of the &amp;ldquo;politically-neutral&amp;rdquo; sources. However, there is a major skew in the distribution for left-leaning sources. Although the variation is greater (IQR of 17.6!), the whisker on the far end is much longer than the whisker for right/center-leaning sources.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/box-and-whisker.PNG&#34; alt=&#34;example boxwhisker&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;This data suggests that writers for left-leaning outlets are more likely to implement their personal feelings and emotions into the articles they publish. I suppose we can expect this from outlets such as &lt;em&gt;Vox&lt;/em&gt; and perhaps &lt;em&gt;The Guardian&lt;/em&gt;, but the Washington Post and the Los Angeles Times are considered more &amp;ldquo;news-oriented&amp;rdquo; outlets.&lt;/p&gt;
+&lt;p&gt;Perhaps I made a mistake when scraping news and didn&amp;rsquo;t realize I was collecting pieces from the editorial section. OR maybe the mistake was made on their part when mislabeling an article &amp;ldquo;news&amp;rdquo; when it should have been labeled &amp;ldquo;opinion.&amp;rdquo; Who can say?&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;There is a lot more that can be done here; we&amp;rsquo;re just scratching the surface. Using data science and machine learning in the news/political field means that we can conduct a range of meaningful analysis. We can expand this work into other research, such as News Classification, Filtering Bubbles/Echo Analysis, Topic Modeling, Entity Analysis (probably the next project), news bias prediction, and so much more.&lt;/p&gt;
+&lt;p&gt;In the age of hyper-partisan tensions, this tribal news-cycle can only get worse. We need more people who are willing to analyze the direction our media is taking so viewers can make informed decisions about how to consume their news.&lt;/p&gt;
+&lt;p&gt;As long as I have more free time (currently working from home), I guess that person might as well be me.&lt;/p&gt;
+&lt;h2 id=&#34;github&#34;&gt;Github&lt;/h2&gt;
+&lt;p&gt;Click here for the full &lt;a href=&#34;https://github.com/KidQuant/Analyzing-News-Articles-With-Python&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; and full explainations.&lt;/p&gt;
+&lt;h3 id=&#34;sources&#34;&gt;Sources&lt;/h3&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://academic.oup.com/hcr/article-abstract/46/1/25/5652186?redirectedFrom=fulltext&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oxford Academic | Investigating the Generation and Spread of Numerical Misinformation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://www.pewresearch.org/fact-tank/2016/11/18/news-media-interpretation-vs-facts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pew Research | Majority of U.S. adults think news media should not add interpretation to the facts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://www.allsides.com/unbiased-balanced-news&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;All Sides | Unbiased news doesn&amp;rsquo;t exist, but it provides news in a balanced way&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://github.com/fhamborg/news-please&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub | Felix Hamborg news-please Repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;5&#34;&gt;5&lt;/a&gt;] &lt;a href=&#34;https://github.com/fhamborg/news-please&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;All Sides | Wall Street Journal - News media bias rating is Center&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;6&#34;&gt;6&lt;/a&gt;] &lt;a href=&#34;https://cloud.google.com/natural-language/docs/reference/libraries&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google | Natural Language Processing Client Libraries&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;7&#34;&gt;7&lt;/a&gt;] &lt;a href=&#34;https://www.psychologytoday.com/us/blog/two-takes-depression/201106/if-it-bleeds-it-leads-understanding-fear-based-media&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Psychology Today | If It Bleeds, It Leads: Understanding Fear-Based Media&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

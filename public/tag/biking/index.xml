@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biking | KidQuant</title>
+    <link>https://kidquant.com/tag/biking/</link>
+      <atom:link href="https://kidquant.com/tag/biking/index.xml" rel="self" type="application/rss+xml" />
+    <description>Biking</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <title>Biking</title>
+      <link>https://kidquant.com/tag/biking/</link>
+    </image>
+    
+    <item>
+      <title>How Dangerous Is Biking in New York City</title>
+      <link>https://kidquant.com/post/2024-03-31-biking-accidents/</link>
+      <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2024-03-31-biking-accidents/</guid>
+      <description>&lt;p&gt;I tried analyzing cycling accidents around New York City, but it was difficult to draw meaningful conclusions from the data. For example, men die more frequently than women while biking, according to a report on Bicyclist Fatalities and Serious Injuries in New York City.&lt;/p&gt;
+&lt;p&gt;However, interpreting this data is tricky. For example, do more men die because more men bike or is it because they engage in riskier behavior? I had a different issue with analyzing accident locations (even though the data has geogrpahical location, longitude and latitude). Do more accidents happen at intersections because intersections are more dangerous or because they are easier locations to record? These kinds of questions are subtle and require careful data collection and analysis to answer.&lt;/p&gt;
+&lt;p&gt;Furthermore, I found it hard to see how any conclusions would be actionable. I&amp;rsquo;m not going to start leaving work at 3 PM, even if 5 PM is a truly riskier time to bike.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Biking-Accidents/accidents.png&#34; alt=&#34;Biking Accidents in the city&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;So what can I do? In my mind, the simplest framing is that biking is dangerous because I am sharing the road with cars. To justify this claim, consider these data from DOT&amp;rsquo;s Bicycle Crash Data Reports. They point a clear picture about the risk of accidents with and without cars. The simplest thing I can do is to plan my route to maximize time in bike lanes, ideally protected bike lanes. And I should be extra careful in moments where I interact with cars.&lt;/p&gt;
+&lt;h3 id=&#34;estimating-the-risk&#34;&gt;Estimating The Risk&lt;/h3&gt;
+&lt;p&gt;Now let&amp;rsquo;s calculate my risk. Let $X$ be a random variable denoting my lifetime. Let&amp;rsquo;s assume that my only risk of death is via my commute and that dying occurs with probability $p$, where $p$ is the estimated KSI over my lifetime by biking:&lt;/p&gt;
+&lt;p&gt;$$
+p=\frac{30}{10,000,000}
+$$&lt;/p&gt;
+&lt;p&gt;An assumption here is that my risk of a severe injury or death on each ride is independent of all other rides. Often, independence assumptions are obviously false simplifications, but here I think it is reasonable. Without a concerted effort on my part to learn to bike more safely, I suspect that each ride carries roughly the same risk.&lt;/p&gt;
+&lt;p&gt;The $X$ is a geometric random variable,&lt;/p&gt;
+&lt;p&gt;$$
+X\sim\text{geom}(p),
+$$&lt;/p&gt;
+&lt;p&gt;and the probability that I do not make $x$ rides without severe injury or death is given by the cumulative distribution function,&lt;/p&gt;
+&lt;p&gt;$$
+\mathbb{P}(X\le 8000) = 1-\bigg(1-\frac{30}{10,000,000}\bigg)^{8000}\approx 2.4%.
+$$&lt;/p&gt;
+&lt;p&gt;As I mentioned, this is conservative because $p$ and $x$ are both high in my mind. I doubt that I&amp;rsquo;ll bike to work this consistently over twenty years, and I also think (hope?) that NYC will become safer over time, that $p$ will actually decrease, driving biking infrastructure improvements.&lt;/p&gt;
+&lt;p&gt;Note that while I&amp;rsquo;ve framed the calculation in terms of number of years commuting, the units of 8000 is simply &amp;ldquo;rides&amp;rdquo;. Thus, this risk is independent of time. If I decided to do 8000 rides in a single year, then I&amp;rsquo;d have a $2.4%$ chance of dying of biking in that year, according to these assumptions.&lt;/p&gt;
+&lt;h4 id=&#34;a-sanity-check&#34;&gt;A Sanity Check&lt;/h4&gt;
+&lt;p&gt;As a sanity check, let&amp;rsquo;s find a value $p$ from the literature, and compare it to city&amp;rsquo;s data. I&amp;rsquo;d expect the probability of dying by cycling averaged over time and space to be less than the probability of dying by cycling in NYC.&lt;/p&gt;
+&lt;p&gt;According to research, cycling twenty-eight miles has one micromort of risk. My commute&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

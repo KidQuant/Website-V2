@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 30, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b481486c871a52c314ef891cd86306cc.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Andre Sealy" />
+
+
+
+
+
+  
+
+<meta name="description" content="On this blog, I&rsquo;ve talked about the Mathematics of Pandemics. I&rsquo;ve even talked about the Politics of Pandemics. I&rsquo;m long overdue to discuss the &ldquo;Economics of Pandemics;&rdquo; however, theorizing the potential effects of an inadequate response was pretty pointless, as anyone who has lived through the Great Recession would tell you." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kidquant.com/post/2020-08-22-covid-vs-economy/" />
+<link rel="canonical" href="https://kidquant.com/post/2020-08-22-covid-vs-economy/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kidquant.com/post/2020-08-22-covid-vs-economy/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="KidQuant" />
+<meta property="og:url" content="https://kidquant.com/post/2020-08-22-covid-vs-economy/" />
+<meta property="og:title" content="COVID Vs. Economy | KidQuant" />
+<meta property="og:description" content="On this blog, I&rsquo;ve talked about the Mathematics of Pandemics. I&rsquo;ve even talked about the Politics of Pandemics. I&rsquo;m long overdue to discuss the &ldquo;Economics of Pandemics;&rdquo; however, theorizing the potential effects of an inadequate response was pretty pointless, as anyone who has lived through the Great Recession would tell you." /><meta property="og:image" content="https://kidquant.com/post/2020-08-22-covid-vs-economy/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2020-08-22T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2020-08-22T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kidquant.com/post/2020-08-22-covid-vs-economy/"
+  },
+  "headline": "COVID Vs. Economy",
+  
+  "image": [
+    "https://kidquant.com/post/2020-08-22-covid-vs-economy/featured.png"
+  ],
+  
+  "datePublished": "2020-08-22T00:00:00Z",
+  "dateModified": "2020-08-22T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Andre Sealy"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "KidQuant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "On this blog, I\u0026rsquo;ve talked about the Mathematics of Pandemics. I\u0026rsquo;ve even talked about the Politics of Pandemics. I\u0026rsquo;m long overdue to discuss the \u0026ldquo;Economics of Pandemics;\u0026rdquo; however, theorizing the potential effects of an inadequate response was pretty pointless, as anyone who has lived through the Great Recession would tell you."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>COVID Vs. Economy | KidQuant</title>
+
+  
+  
+  
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="a9f88c68c7426ffa121a513cc595b145" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>COVID Vs. Economy</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Andre Sealy</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Aug 22, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    9 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/data-science/">Data Science</a>, <a href="/category/economics/">Economics</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 1000px; max-height: 550px;">
+  <div style="position: relative">
+    <img src="/post/2020-08-22-covid-vs-economy/featured_hue8c7201906c3ea644248b6614ff20805_94743_46e33d19b22e6da172dc672a8a5c30b2.webp" width="1000" height="550" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>On this blog, I&rsquo;ve talked about the Mathematics of Pandemics. I&rsquo;ve even talked about the Politics of Pandemics. I&rsquo;m long overdue to discuss the &ldquo;Economics of Pandemics;&rdquo; however, theorizing the potential effects of an inadequate response was pretty pointless, as anyone who has lived through the Great Recession would tell you. After all, &ldquo;ignorance on fire is sometimes better than knowledge on ice,&rdquo; as the saying goes.</p>
+<p>Regardless of whether or not our economic response to COVID was sufficient, the discussion was always framed in a false dichotomy: protecting the vulnerable versus protecting the economy. If one is a pragmatic, normal-thinking individual, these two are not necessarily mutually exclusive. As early as March 27th, the IGM Chicago Forum surveyed more than 40 professional economists regarding the economic lockdowns in response to the COVID-19 crisis. The vast majority of respondents agree (88%) believe that a comprehensive policy response would involve tolerating a massive contraction in economic activity until the spread has dropped significantly (Question A) [<a href="#3">3</a>].</p>
+<p>So the United States, along with other nations around the world, instituted their lockdowns policy. We initiated our 15 Days to Slow The Spread, which quickly became 30 Days to Slow The Spread. Although most states have very minor COVID restrictions (staying six feet apart, no gatherings greater than 20 people, etc.), other places that were more severely affected are imposing more strict regulations. [<a href="#4">4</a>] It just so happens that the places with the strictest COVID regulation are also home to the largest economies in the U.S.</p>
+<p>Although most states have partially reopened (except for California), the U.S. economy contracted by a whopping -32.9% in the second quarter.</p>
+<p>If that sounds like a big number, that&rsquo;s because it is a big number. The Bureau of Economic Analysis calculates GDP on an annualized basis; this facilitates comparison of growth rates over various periods. In other words, the -32.9% figure is what we would get if the economy sustained its growth (or, in this case, decline) for one year. When used to measure very short-term changes (such as locking down for one or two months), it can be misleading. As such, it&rsquo;s probably better to use Year-over-year change, which would record a -9.5% decline.</p>
+<h3 id="an-invisible-threat-ever-lurking">An Invisible Threat Ever Lurking</h3>
+<p>Regardless of how economic growth is measured, the catch-22 is unavoidable. COVID is so bad, it warrants locking down the economy to control its spread, but the economy is bad because we are locked down to prevent the spread of COVID. What a paradox&hellip;</p>
+<p>Of course, the risk of infection is very real; we can&rsquo;t expect things to go back to &ldquo;normal&rdquo; if the risk of transmission is still high. Some would point out that the economic contraction was only severe <em>because</em> we failed to control the spread of COVID. The only problem with this theory is that the United States had the slowest contraction out of all the nations which successfully controlled the spread.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/COVID-V-Economy/us_gdp_global.png" alt="US vs Global GDP" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The virus ravaged Italy and Spain, and they have instituted strict lockdowns in return. Other places in Europe, which did not want to become the next Italy, instituted strict lockdowns. (Canada is included, for no other reason than it is our neighbor to the north) Some may argue that these nations made a significant trade-off; they chose to protect lives over the economy, and now the economy will be better off in the long-run.</p>
+<p>Except now all of these places are relaxing their COVID restrictions and the virus is starting to spread again. Cases are starting to spike in France, while infections are slowly increasing in Germany.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/COVID-V-Economy/france_spain_covid.png" alt="France and Spain" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The following places are experiencing an uptick in COVID-19 cases:</p>
+<ul>
+<li>Spain, Italy, United Kingdom, Belgium, Neterlands, Switzerland, Greece, Portugal, Denmark, Norway, Japan, Australia</li>
+</ul>
+<p>What do all of these places have in common? These regions were assumed to be in control of the virus [<a href="#5">5</a>]. Now the virus is out of control and these regions are either experiencing a large surge (Japan), or a steady increase in cases (United Kingdom). Whether by pure luck or by a fortunate circumstance, the United States experienced a phenomenon in early June that Europe should have learned in early July: <strong>you can&rsquo;t hide from the virus forever</strong>.</p>
+<p>Of course, the lockdowns aren&rsquo;t supposed to last forever; they just need to be maintained until a vaccine is found [<a href="#6">6</a>]. There&rsquo;s no mention of when we can expect a COVID-19 anti-viral vaccine to be developed; &ldquo;never&rdquo; is a very realistic timeline for an effective vaccine (the flu vaccine has a 40-70% effectiveness). Regardless, it&rsquo;s apparent that lockdown is not a sustainable strategy. For two reasons: 1) the obvious economic ramifications of keeping the economy locked down and 2) locking down just delays the inevitable.</p>
+<p>Granted, we don&rsquo;t have guidelines on what it means to reopen safely, or knowledge if this is even possible because the world has never been locked down before. Lockdown is a new concept that has never been tested for efficacy or implementation. Once the virus transmission restarts, the vulnerable and susceptible are still part of the population and will simply die later rather than sooner unless effective measures are taken to protect them. The only thing that can stop transmission of the virus long term is immunity.</p>
+<p>As such, locking down doesn&rsquo;t prevent an outbreak; it merely delays or pushes it out over a longer time frame depending on how severe the lockdowns were implemented. One may point out how South Korea infamously flattened the curve and controlled the spread of the virus. What really happened was that the region has been playing consistent whack-a-mole with outbreaks and on-off lockdowns. Despite implementing measures that would not be legal in the United States, the country is now experiencing a surge in cases.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/COVID-V-Economy/south_korea_cases.png" alt="South Korea" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>What about New Zealand? Haven&rsquo;t they eradicated the virus? They&rsquo;ve managed to survive 100 days without a single COVID-19 transmission. Sure, New Zealand is a small island with a population of 5 million and a single major airport. It shouldn&rsquo;t be difficult to suppress transmissions in the long-run; however, the virus eventually resurged without a single transmission from outside the country.</p>
+<p>Now confirmed cases have gone from an average of one per day to an average of 10 per day; Auckland is now back in lockdown; and their Prime Minister has delayed their national election [<a href="#7">7</a>][<a href="#8">8</a>].</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/COVID-V-Economy/new_zealand_cases.png" alt="New Zealand" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>It&rsquo;s a novel virus, which means that unless there is a vaccine, everyone will be exposed to it eventually. Keeping people locked inside doesn&rsquo;t stop the disease; it only delays it. Unfortunately, keeping people locked inside until the spread slows down, or until vaccine, is a very popular solution to a very unsustainable problem.</p>
+<h3 id="eventually-swedens-strategy-will-by-everyones-strategy">Eventually Sweden&rsquo;s Strategy Will By Everyone&rsquo;s Strategy</h3>
+<p>I&rsquo;ve barely mentioned Sweden in this post. As much of the Western world was shutting down large portions of the economy and limiting the mobility of its citizens throughout March, Sweden opted for a much lighter touch. They&rsquo;ve refused to close down service industries, schools are largely left open, and its borders remained open to the outside world.</p>
+<p>Confirmed cases spiked as high as 2,530 in a single day (1,247 per day on average); Sweden reached this milestone in early July. At the same time, fatalities have reached as high as 185, 107 per day on average, a milestone in early May. Both metrics have been on a downward trend since, on some recent days, the country has recorded as few as 3 COVID fatalities. The region is also currently averaging 253 new cases per day.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/COVID-V-Economy/sweden_cases_deaths.png" alt="New Zealand" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Lockdowns and closed boarders lack a historical, scientific basis from the Swedish perspective. COVID-19 is in every European country, and so far, none of them have been able to slow down the spread considerably. Regardless, journalists and political analysts have considered Sweden a &ldquo;cautionary tale&rdquo; for the world [<a href="#9">9</a>]. They justify this claim by correctly pointing out that Sweden&rsquo;s population-adjusted death rate is significantly higher compared to its Scandinavian neighbors Finland, Denmark, and Norway [<a href="#10">10</a>].</p>
+<p>However, Sweden ran into similar problems as many other places had in their attempts to control the virus through the least vulnerable population: failing to protect the elderly. According to most research, upwards of 70% of the COVID death toll in Sweden has been people in elderly care services.</p>
+<p>By the same token, people 65 and older comprise 80% of all COVID deaths in the United States. U.S. Governors such as Andrew Cuomo have been heavily criticized by having the highest nursing home death toll in the U.S., despite instituted one of the strongest and most restrictive lockdowns in the country. Despite reaching Phrase Four of its reopening plan, much of the New York economy is still under lockdown; NYC&rsquo;s mayor Bill DeBlasio is still enforcing strict social distancing requirements (except for protest, apparently).</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/COVID-V-Economy/sweden_outperforms.png" alt="New Zealand" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The point of Sweden&rsquo;s strategy, at least from Sweden&rsquo;s perspective, is that places that have locked down significantly lower immunity levels than Sweden&rsquo;s. As such, these places may need to lock down again if and when the disease returns (it has already returned). Many experts have claimed that COVID-19, like some other respiratory diseases, will only be subject to the effects of herd immunity when anywhere from 60-80% of the population recovers from it. No one knows what level of serology represents what is known as Heparin-induced thrombocytopenia (NIT), but we do know that antibody studies are undercounting the population&rsquo;s immunity [<a href="#11">11</a>][<a href="#12">12</a>].</p>
+<p>Sweden&rsquo;s steady decline in deaths and cases may present an advantage very few countries have obtained. Other hands that have managed to clamp down on infections are seeing a daily increase in cases. This suggests that other places around the world may have populations that may be more susceptible to the virus than Sweden. As such, Sweden&rsquo;s economy may be better off in the long run without the on-and-off lockdowns.</p>
+<p>Looking at Sweden, it may come across as insane that they&rsquo;ve decided to take this approach. However, their approach was the basic science and standard pandemic response prior to 2020 [<a href="#13">13</a>]. With that being said, are <em>we</em> the insane ones?</p>
+<p>Well, fall is just around the corner.</p>
+<h2 id="sources">Sources</h2>
+<p>[<a name="3">3</a>] <a href="http://www.igmchicago.org/surveys/policy-for-the-covid-19-crisis/" target="_blank" rel="noopener">IGM Forum | Policy for the COVID-19 Crisis</a></p>
+<p>[<a name="4">4</a>] <a href="https://www.washingtonpost.com/graphics/2020/national/states-reopening-coronavirus-map/" target="_blank" rel="noopener">Washington Post | Where states reopened and cases spiked after U.S. shutdown</a></p>
+<p>[<a name="5">5</a>] <a href="https://www.wsj.com/articles/how-europe-slowed-its-coronavirus-cases-from-a-torrent-to-a-trickle-11595240731" target="_blank" rel="noopener">Wall Street Journal | How Europe Kept Coronavirus Cases Low Even After Reopening</a></p>
+<p>[<a name="6">6</a>] <a href="https://www.theguardian.com/world/2020/apr/08/lockdowns-cant-end-until-covid-19-vaccine-found-study-says" target="_blank" rel="noopener">The Guardian | Study: Lockdowns can&rsquo;t end until COVID-19 vaccine is found</a></p>
+<p>[<a name="7">7</a>] <a href="https://www.reuters.com/article/us-health-coronavirus-newzealand/new-cases-end-new-zealands-covid-free-status-auckland-back-in-lockdown-idUSKCN257197" target="_blank" rel="noopener">Reuters | New Zealand Ends &lsquo;COVID-Free&rsquo; Status; Ackland Back in Lockdown</a></p>
+<p>[<a name="8">8</a>] <a href="https://www.bbc.com/news/world-asia-53796434" target="_blank" rel="noopener">BBC | Jacinda Ardern Delay Election Over Coronavirus Fears</a></p>
+<p>[<a name="9">9</a>] <a href="https://www.nytimes.com/2020/07/07/business/sweden-economy-coronavirus.html" target="_blank" rel="noopener">New York Times | Sweden Has Become the World&rsquo;s Cautionary Tale</a></p>
+<p>[<a name="10">10</a>] <a href="https://www.nytimes.com/2020/07/07/business/sweden-economy-coronavirus.html" target="_blank" rel="noopener">Our World in Data | Scandinavian COVID-19 Population-Adjusted Death Rate</a></p>
+<p>[<a name="11">11</a>] <a href="https://en.wikipedia.org/wiki/Heparin-induced_thrombocytopenia" target="_blank" rel="noopener">Wikipedia | Heparin-induced thrombocytopenia (NIT)</a></p>
+<p>[<a name="12">12</a>] <a href="https://www.propublica.org/article/what-antibody-studies-can-tell-you-and-more-importantly-what-they-cant" target="_blank" rel="noopener">ProPublica | What Antibody Studies Can Tell You — and More Importantly, What They Can’t </a></p>
+<p>[<a name="13">13</a>] <a href="https://theconversation.com/sweden-under-fire-for-relaxed-coronavirus-approach-heres-the-science-behind-it-134926" target="_blank" rel="noopener">The Conversation | Sweden under fire for ‘relaxed’ coronavirus approach – here’s the science behind it</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/coronavirus/">Coronavirus</a>
+  
+  <a class="badge badge-light" href="/tag/gdp/">GDP</a>
+  
+  <a class="badge badge-light" href="/tag/lockdowns/">Lockdowns</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-08-22-covid-vs-economy%2F&amp;text=COVID&#43;Vs.&#43;Economy" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-08-22-covid-vs-economy%2F&amp;t=COVID&#43;Vs.&#43;Economy" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=COVID%20Vs.%20Economy&amp;body=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-08-22-covid-vs-economy%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-08-22-covid-vs-economy%2F&amp;title=COVID&#43;Vs.&#43;Economy" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=COVID&#43;Vs.&#43;Economy%20https%3A%2F%2Fkidquant.com%2Fpost%2F2020-08-22-covid-vs-economy%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-08-22-covid-vs-economy%2F&amp;title=COVID&#43;Vs.&#43;Economy" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kidquant.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2453db0268c976f8eacba18e4a98e34c_209096_270x270_fill_q75_lanczos_center.jpg" alt="Andre Sealy"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kidquant.com/">Andre Sealy</a></h5>
+      <h6 class="card-subtitle">Quant Research / Data Scientist / Writer</h6>
+      <p class="card-text">My research interests involves Quantitative Finance, Mathematics, Data Science and Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/KidQuant" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Andre_Sealy" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThatQuantKid" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:andre@kidquant.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

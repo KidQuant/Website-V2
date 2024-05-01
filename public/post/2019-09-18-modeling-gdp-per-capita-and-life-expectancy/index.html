@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 30, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b481486c871a52c314ef891cd86306cc.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Andre Sealy" />
+
+
+
+
+
+  
+
+<meta name="description" content="Using quadatric terms for non-linear relationships and repeated OLS regression to study model consistency" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/" />
+<link rel="canonical" href="https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="KidQuant" />
+<meta property="og:url" content="https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/" />
+<meta property="og:title" content="Modeling GDP per Capita and Life Expectancy | KidQuant" />
+<meta property="og:description" content="Using quadatric terms for non-linear relationships and repeated OLS regression to study model consistency" /><meta property="og:image" content="https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2019-09-18T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2019-09-18T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/"
+  },
+  "headline": "Modeling GDP per Capita and Life Expectancy",
+  
+  "image": [
+    "https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/featured.png"
+  ],
+  
+  "datePublished": "2019-09-18T00:00:00Z",
+  "dateModified": "2019-09-18T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Andre Sealy"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "KidQuant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Using quadatric terms for non-linear relationships and repeated OLS regression to study model consistency"
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Modeling GDP per Capita and Life Expectancy | KidQuant</title>
+
+  
+  
+  
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="e11651b0c046ffb90746f9c91cc5510d" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Modeling GDP per Capita and Life Expectancy</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Andre Sealy</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Sep 18, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    8 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/economics/">Economics</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 721px; max-height: 496px;">
+  <div style="position: relative">
+    <img src="/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/featured_hu89e31c43970b97ec711070d8d512037b_26242_8a5260ba2b737cfdcd5f4d5a2e082048.webp" width="721" height="496" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Historically, wealthy individuals tend to live longer than poorer individuals, holding other factors constant. They can afford to eat healthier foods from healthier food outlets (such as Whole Foods); they can afford better health care, et cetera.</p>
+<p>For this reason, it should be obvious that as countries get wealthier that they should be able to afford better health care systems, also that life expectancy should rise. It should also stand to reason htat people living longer, will work longer and that being healthier means fewer people as a propotion drop out of the labor force due to illness.</p>
+<p>However, these relationships probably are not linearly. They&rsquo;re likely to be diminishing returns to one from the other. At least, that is my prior belief.</p>
+<p>My first hypothesis is that returns to life expectancy at birth from increases in Gross Domesti Product (GDP) per capita are deminishing. This is because there is probably an upper limit on the length of human life and that approaching it is more difficult the closer humans reach.</p>
+<p>Also, it is easy to concieve nations consuming more unhealthy luxury items as they become richer. Therefore, I expect the coefficient on GDP per capita to be positive and the coefficient of GDP per capital squared to be negative in the regression of life expectancy on the GDP per capita variables.</p>
+<p>My second hypothesis is that returns to GDP per capita from increases in life expectacy are diminishing. Therefore, I expect the coefficient of life expectancy to be positive and coefficient of life expectancy squared to be negative in the regression of GDP per capita on life expectancy and life expectancy squared.</p>
+<p>To test these hypothesses, I repeatedly estimate those models over crosssections in my sample period using Ordinary Least Squared (OLS) regression. Finally, I plotted the model coefficients over time to see if the relationships have changed.</p>
+<p>There are already tons of literature on this question, but I chose not to research it because it did not want bias to approach this problem. Significance in this document is at the alpha = 0.05 level.</p>
+<h2 id="data-and-sample-period-selection">Data and Sample Period Selection</h2>
+<p>I used data sets from the World Bank to perform this analysis. I selected my sample period by examining the period of the missing values and choosing long time periods with as few missing observations as possible. This seemed to be the period from 1990 to 2017. Removing observations that weren&rsquo;t real countries (mainly regional and world-wide averages) and performing an inner join between two variables on the sample period left about three quarters of our countries in our data set, of 163 observations.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Model-GDP-per-capita-and-life-expectancy/missing_percent.png" alt="Missing post" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="plotting-our-variables-of-interest">Plotting our Variables of Interest</h2>
+<p>Below is how the life expectancy at birth for the world has changed over the years. It has increased steadily over the years, which is good for all of us.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy.png" alt="World Life Expectancy" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>This histogram is representative of the distribution of life expectancy in 2017. The mass of the distribution is on the right with a long left tail. This is good because there are more countries living longer than countries with lower life expectancy levels.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Model-GDP-per-capita-and-life-expectancy/life_expectancy_distribution.png" alt="Life Expectancy Distribution" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>World GDP per capita has grown exponentially over time, but there are some sharp drops from severe negative shocks. This is still a good thing for humanity because it means fewer people as a percentage of the total population are in poverty compared to years prior. Again, this doesn&rsquo;t tell us about the distribution of GDP per capita in a cross section.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy_2019.png" alt="World Life Expectancy in 2019 dollars" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The distribution of GDP per capita is very concentrated in the 0 to 10,000ish range, but has a long right tail out to over 100,000 GDP per capita. This resembles a <a href="https://en.wikipedia.org/wiki/Log-normal_distribution" target="_blank" rel="noopener">log-normal</a> shape. I performed a natural logarithmic transformation for modeling purposes.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Model-GDP-per-capita-and-life-expectancy/log_distribution_life_expectancy.png" alt="Log-normal Distribution" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="modeling-the-relationships">Modeling the Relationships</h2>
+<p>The Jupyter Notebook I&rsquo;ve created contains all the regression outputs for every year; however, I&rsquo;ll just summarize them and provide the plots of the coefficients.</p>
+<h3 id="regressing-life-expectancy-on-gdp-per-capita">Regressing Life Expectancy on GDP per capita</h3>
+<p>The residuals of this model seem mildly skewed left from 1990 to 2003, and a strong left skew after that with kurtosis in excess of the normal distribution. We won&rsquo;t really get into what <a href="https://en.wikipedia.org/wiki/Kurtosis" target="_blank" rel="noopener">kurtosis</a> is in this blog post, but you should know that in probability and statistics, kurtosis measures the &ldquo;tailedness&rdquo; of a probability distribution.</p>
+<p>The kurtosis of a normal distribution is 3, so any value greater than that will exhibit skewness either to the left or right. The output of the <a href="https://en.wikipedia.org/wiki/Breusch%e2%80%93Pagan_test" target="_blank" rel="noopener">Breusch-Pagan heteroskedasticity test</a> provides strong evidence of <a href="https://en.wikipedia.org/wiki/Heteroscedasticity" target="_blank" rel="noopener">heteroskedasticity</a> in the residuals, but I used <a href="https://en.wikipedia.org/wiki/Heteroscedasticity-consistent_standard_errors" target="_blank" rel="noopener">heteroskedasticity robust standard errors</a> to be sure the model didn&rsquo;t underestimate the standard errors of the coefficients.</p>
+<p>So the residuals are not normally or identically distributed. The Durbin-Watson statistic remains close to 2, so it doesn&rsquo;t appear to be auto-correlation in our residuals. The R-squared, $r^{2}$, of these regressions are absurdly high, ranging from 0.992 to 0.997; meaning, between 99.2% to 99.7% of the variation in life expectancy is explained by this model specification.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc.png" alt="GDPPC" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc_sq.png" alt="GDPPC_SQ" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="regressing-gdp-per-capita-on-life-expectancy">Regressing GDP per capita on Life Expectancy</h3>
+<p>The residuals of this model seem approximately symmetric throughout the entire period, as the skewness stays between -0.5 and 0.5. The kurtosis remains fairly close to that of the normal distribution but does exceed it in some periods. The Jarque-Bera test for normality fails to reject the null hypothesis of normality from 1993 to 2007, and from 2015 to 2017.</p>
+<p>Perhaps the break in the string of models with normal residuals is related to the 2007 financial crisis and recovery. The output of the Breusch-Pagan heteroskedasticity test give strong evidence of heteroskedasticity in the residuals, but I used heteroskedasticity robust standard errors to be sure the model didn&rsquo;t underestimate the standard errors of the efficients.</p>
+<p>So our residuals are occasionally not normally or identically distributed in our sample period. The Durbin-Watson statistic remains close to 2, so at least there doesn&rsquo;t appear to be auto-correlation in our residuals. The $r^{2}$ of these models range from 0.985 to 0.993, meaning between 98.5% to 99.3% of the variation in the natural log of GDP per capita is explained by this model specification.</p>
+<p>The coefficient in the model are sigificant in each year, but are both positive, <strong>disproving my second hypothesis. There are positive, and increasing returns to the <em>ln</em>(GDP per capita) from increases in life expectancy in our sample period.</strong> Plotting the coefficient with their 95% confidence interval bars over the sample period show they appear somewhat volatile over time.</p>
+<p>There doesn&rsquo;t seem to be a straight line that intersects all of the confidence intervals. In a 27 sample period, we would expect a 95% confidence interval to not contain the true parameter 0.05 x 27 = 1.35 times, but it seems 10 periods might barely miss a horizontal line that tries to hit as many intervals as possible. Still, this isn&rsquo;t conclusive evidence that the relationship between GDP per capita and life expectancy has changed over the 27 year period. Just a strong clue to dig deeper.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars.png" alt="error bars" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The plot of the life expectancy squared coefficients looks like it is mirroring the movement of the non-squared term coefficients at a different scale.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars_sq.png" alt="error bars squared" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="interpreting-the-regressions">Interpreting the Regressions</h2>
+<p>Looking at the scatter plots below for the most recent data (2017), along with the regression lines, show that the variables have a relationship with one another. Also, there is more variability among the lower and middle-income countries than the high-income countries. Explaining the differences between low and middle-income countries with higher levels of life expectancy versus lower life expectancy levels seems like an interesting avenue of research that could provide important insights into interventions that could help improve people&rsquo;s lives.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png" alt="non linear regression" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The way to interpret the coefficients in the 2017 model regressing life expectancy on ln(GDP per capita) and ln(GDP per capita) squared is a 1% increase in GDP per capita leads to a year increase in life expectancy.</p>
+<p>$$\hat{y}=\frac{12.1586-2<em>0.4300</em>ln(GDP\ per\ capita)}{100}$$</p>
+<p>This combines the level-log coefficient in interpretation with the interpretation of coefficients as marginal effects, aka partial derivatives, of the dependent variable with respect to the independent variable in question.</p>
+<p>Generically, an increase 1% in GDP per capita leads to the following increase in life expectancy:</p>
+<p>$$\hat{y}=\frac{\beta_{1}+2*\beta_{2} * ln(GDP\ per\ capita)}{100}$$</p>
+<p>where $\beta_{1}$ is the coefficient of the non-squared term and $\beta_{2}$ is the coefficient of the squared term. The numerator is the partial dervivative of life expectancy with respect to ln(GDP per capita). All regression coefficients are partial derivatives. I just want to emphasize that with higher order terms, you cannot correctly interrep the coefficient of $x$ seperately from $x^{2}$, where n is not 1 or 0.</p>
+<p>The following are the modeling results.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Model-GDP-per-capita-and-life-expectancy/model_results.png" alt="non linear regression" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png" alt="non linear regression" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="implications">Implications</h2>
+<p>My hypothesis that higher income countries live longer, but with decreasing returns to life expectancy from additional increases in per capita income is supported by the evidence. This isn&rsquo;t very interesting.</p>
+<p>However, I found that increasing returns to ln(GDP per capita) from increases in life expectancy. Although, causation or a causal channel has not been established, it seems plausible that healthy workers stay in the work force longer without dropping out due to illness.</p>
+<p>This in turn results in more GDP per capita growth. Perhaps there are alternate or additional pathways for the relationship as well. The results of this exploration strongly suggest that investing in better health care systems will have positive effects on the economy.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/health-care/">Health Care</a>
+  
+  <a class="badge badge-light" href="/tag/regression/">Regression</a>
+  
+  <a class="badge badge-light" href="/tag/statistics/">Statistics</a>
+  
+  <a class="badge badge-light" href="/tag/python/">Python</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2019-09-18-modeling-gdp-per-capita-and-life-expectancy%2F&amp;text=Modeling&#43;GDP&#43;per&#43;Capita&#43;and&#43;Life&#43;Expectancy" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkidquant.com%2Fpost%2F2019-09-18-modeling-gdp-per-capita-and-life-expectancy%2F&amp;t=Modeling&#43;GDP&#43;per&#43;Capita&#43;and&#43;Life&#43;Expectancy" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Modeling%20GDP%20per%20Capita%20and%20Life%20Expectancy&amp;body=https%3A%2F%2Fkidquant.com%2Fpost%2F2019-09-18-modeling-gdp-per-capita-and-life-expectancy%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2019-09-18-modeling-gdp-per-capita-and-life-expectancy%2F&amp;title=Modeling&#43;GDP&#43;per&#43;Capita&#43;and&#43;Life&#43;Expectancy" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Modeling&#43;GDP&#43;per&#43;Capita&#43;and&#43;Life&#43;Expectancy%20https%3A%2F%2Fkidquant.com%2Fpost%2F2019-09-18-modeling-gdp-per-capita-and-life-expectancy%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2019-09-18-modeling-gdp-per-capita-and-life-expectancy%2F&amp;title=Modeling&#43;GDP&#43;per&#43;Capita&#43;and&#43;Life&#43;Expectancy" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kidquant.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2453db0268c976f8eacba18e4a98e34c_209096_270x270_fill_q75_lanczos_center.jpg" alt="Andre Sealy"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kidquant.com/">Andre Sealy</a></h5>
+      <h6 class="card-subtitle">Quant Research / Data Scientist / Writer</h6>
+      <p class="card-text">My research interests involves Quantitative Finance, Mathematics, Data Science and Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/KidQuant" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Andre_Sealy" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThatQuantKid" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:andre@kidquant.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

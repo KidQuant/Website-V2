@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 30, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b481486c871a52c314ef891cd86306cc.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Andre Sealy" />
+
+
+
+
+
+  
+
+<meta name="description" content="I&rsquo;ve recently been tasked with working more with more fixed-income derivatives, so I&rsquo;m writing this more as a refresher for myself, but I&rsquo;ve always guaged how well I know something based on how well I&rsquo;m able to teach others." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kidquant.com/post/2023-03-28-revisiting-delta/" />
+<link rel="canonical" href="https://kidquant.com/post/2023-03-28-revisiting-delta/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kidquant.com/post/2023-03-28-revisiting-delta/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="KidQuant" />
+<meta property="og:url" content="https://kidquant.com/post/2023-03-28-revisiting-delta/" />
+<meta property="og:title" content="Revisitng Delta | KidQuant" />
+<meta property="og:description" content="I&rsquo;ve recently been tasked with working more with more fixed-income derivatives, so I&rsquo;m writing this more as a refresher for myself, but I&rsquo;ve always guaged how well I know something based on how well I&rsquo;m able to teach others." /><meta property="og:image" content="https://kidquant.com/post/2023-03-28-revisiting-delta/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2023-03-28T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2023-03-28T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kidquant.com/post/2023-03-28-revisiting-delta/"
+  },
+  "headline": "Revisitng Delta",
+  
+  "image": [
+    "https://kidquant.com/post/2023-03-28-revisiting-delta/featured.png"
+  ],
+  
+  "datePublished": "2023-03-28T00:00:00Z",
+  "dateModified": "2023-03-28T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Andre Sealy"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "KidQuant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "I\u0026rsquo;ve recently been tasked with working more with more fixed-income derivatives, so I\u0026rsquo;m writing this more as a refresher for myself, but I\u0026rsquo;ve always guaged how well I know something based on how well I\u0026rsquo;m able to teach others."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Revisitng Delta | KidQuant</title>
+
+  
+  
+  
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="a7b168ea42b9f938c9a0c315c24ec6fd" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Revisitng Delta</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Andre Sealy</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Mar 28, 2023
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    11 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/finance/">Finance</a>, <a href="/category/programming/">Programming</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 550px; max-height: 319px;">
+  <div style="position: relative">
+    <img src="/post/2023-03-28-revisiting-delta/featured_hu9d304b5b71a240815254d52794df7d4c_27750_e575c30cb571af5986b2dc76e53134cb.webp" width="550" height="319" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>I&rsquo;ve recently been tasked with working more with more fixed-income derivatives, so I&rsquo;m writing this more as a refresher for myself, but I&rsquo;ve always guaged how well I know something based on how well I&rsquo;m able to teach others.</p>
+<p>Recall that the Black-Scholes price of a European-style call option is</p>
+<p>$$
+\begin{equation}
+\begin{aligned}
+C &amp; = S\Phi(d_1)-Ke^{-rT}\Phi(d_2),\
+d_1 &amp; = \frac{1}{\sigma\sqrt{T}}[log(S/K)+[r+(1/2)\sigma^2]T],\
+d_2 &amp; = d_1-\sigma\sqrt{T},
+\end{aligned}
+\end{equation}
+$$</p>
+<p>where $\Phi(x)$ is the cumulative distribution function (CDF) of the standard normal distribution:</p>
+<p>$$
+\begin{equation}
+\begin{aligned}
+\Phi(x):=\frac{1}{\sqrt{\pi}}\int^{x}_{-\infty}e^{-z^2/2}dz
+\end{aligned}
+\end{equation}
+$$</p>
+<p>Since $\Phi(x)$ is the CDF of the standard normal distribution, its derivation $\Phi^\prime(x)$ is the probability density function(PDF) of the standard normal distribution. I&rsquo;ll denote this with $\phi(x)$ or</p>
+<p>$$
+\begin{equation}
+\phi(x):=\Phi^{\prime}(x).
+\end{equation}
+$$</p>
+<p><em>Delta ($\Delta$)</em> captures the sensitivity, or more precisely the instanteneous rate of change, of the option price to the spot price. The Black-Scholes delta for a call option is</p>
+<p>$$
+\begin{equation}
+\Delta(C)=\frac{\partial C}{\partial S}=\Phi(d_1)
+\end{equation}
+$$</p>
+<p>where $\Phi(x)$ and $d_1$ are defined in Equations 1 and 2.</p>
+<p>To understand delta, let&rsquo;s start with an example. Suppose we have a stock with a price of $S=100$, a call option with a price of $C=10$, and a delta between the two of 0.7. (The prices do not matter here but will be in later examples.) Now imagine that we sell calls for $3000$ shares of this stock and want to hedge our resulting short position. We can use delta to compute the appropriate size of our hedge. We should put $0.7\times 3000=2100$ shares of the underlying stock. Why? This is just a direct application of Equation 4.</p>
+<p>First, let&rsquo;s replace the differentials (e.g., $\partial C$) with small moves in the asset (e.g., $dC$). This is a fine thing to do because Equation 8 says that $\Delta$ is the linear appropriate of how the Black-Scholes prices of our calls will change. We can write this as</p>
+<p>$$
+\begin{equation}
+\begin{aligned}
+dC=\Delta\times dS.
+\end{aligned}
+\end{equation}
+$$</p>
+<p>Now let $w$ denote the number of shares of the stock assoicated with the calls we sold (here $w=3000$). Then by equation 5, we have</p>
+<p>$$
+\begin{equation}
+dC\times w = \Delta \times dS \times w
+\end{equation}
+$$</p>
+<p>Our proposed hedge above is $\Delta \times w = 2100$, and this works because if the stock price changes by $dS=1$, then the call moves by $dC=0.7$, and we will make $2,100$ on our hedge and lose $0.7\times 3000=21000$ on our calls. In practice, this calculation is slightly more tedious because options are typically sold with a contract multiplier indicating the number of shares per contract, but this is just a matter of bookkeeping.</p>
+<p>Thus, while the options we have sold have a delta of $0.7$, our actual portfolio position has a zero delta. We say that our portfolio is <em>delta neutral</em>, which means that if the spot changes a little, the value of our options position does not change significantly.</p>
+<h3 id="dollar-delta">Dollar Delta</h3>
+<p>In the previous example, the raw values of the stock and call did not matter, and we had no sense of our total notional exposure. Thus, in practice, <em>mathematical delta</em> (Equation 4) is often converted to <em>dollar delta</em>, sometimes called notional delta, because this quantity tells us how much notional exposure we have to the underlying. A dollar delta is just delta times the spot price or</p>
+<p>$$
+\begin{equation}
+$\Delta=\Delta S
+\end{equation}
+$$</p>
+<p>For example, our notional exposure in the previous example was the number of shares times dollar delta or</p>
+<p>$$
+\begin{equation}
+\begin{aligned}
+$\Delta\times w &amp; = \Delta\times S\times w  \
+&amp; = 0.7\times$ 100\times 3000 \
+&amp; = $ 210,000. \
+\end{aligned}
+\end{equation}
+$$</p>
+<p>To hedge, we should buy $210,000$ of stock, which is obviously the same as buying $2,100$ shares of stock at $S=100$.</p>
+<p>One benefit of considering a notional amount is that we can multiply the dollar delta by a percent change in the stock. In contrast, since delta represents a dollar change in stock move, per dollar change in option move, we cannot directly multiply mathematical delta by a relative move such as a return or percent return. To see this, consider the returns in our running example. Let $S_1$ denote the stock price after moving $dS$. Then, the return on $S$ is</p>
+<p>$$
+\begin{equation}
+R_S=\frac{s_1-S}{S}=\frac{101-100}{100}=0.01
+\end{equation}
+$$</p>
+<p>while the return on C to a new price $C_1$ is</p>
+<p>$$
+\begin{equation}
+R_C=\frac{C_1-C}{C}=\frac{\Delta dS}{C}=\frac{0.7}{10}-0.07
+\end{equation}
+$$</p>
+<p>And clearly</p>
+<p>$$
+\begin{equation}
+\Delta R_S=0.7\times 0.01=0.007\neq 0.07=R_C
+\end{equation}
+$$</p>
+<p>So, multiplying the mathematical delta by a relative move is nonsensical. Given Equation 8, we must operate on it in a way that makes sense.</p>
+<p>However, we can multiply dollar delta by a relative move since</p>
+<p>$$
+\begin{equation}
+\begin{aligned}
+$\Delta\times R_S &amp;= \Delta\times S\times\bigg(\frac{S_1-S}{S}\bigg)\
+&amp;= \Delta\times dS \
+&amp;= dC.
+\end{aligned}
+\end{equation}
+$$</p>
+<p>The dollar delta is nice because it tells us our notional exposure to the underlying and because we can multiply it by a relative move in the underlying to get a dollar change in the option.</p>
+<h3 id="portfolio-delta">Portfolio Delta</h3>
+<p>Imagine we had a portfolio of $n$ options. We can represent the value of our portfolio, $V_p$, as a weighted sum of these $n$ assets,</p>
+<p>$$
+\begin{equation}
+V_p=\sum_{i=1}^nw_i V_i,
+\end{equation}
+$$</p>
+<p>where the portfolio weights represent the quantity of each option, and where $V_i$ is the value of the $i$-th call or put. By the linearity of differentiation, we can efficiently compute the delta of this portfolio.</p>
+<p>$$
+\begin{equation}
+\begin{aligned}
+\Delta(V_p) &amp;= \frac{\partial V_p}{\partial S} \
+&amp;= \sum_{i=1}^{n}w_i\frac{\partial V_i}{\partial S} \
+&amp;= \sum_{i=1}^{n}w_i\Delta(V_i)
+\end{aligned}
+\end{equation}
+$$</p>
+<p>Thus, the delta of a portfolio can be computed by adding up the deltas of the individual options.</p>
+<p>For example, recall our short position in call options from the example above. Now imagine that we additionally have a long position in call options worth 2000 shares of the same underlying, where the delta of each option is $0.6$. The delta of our portfolio in shares of stock is</p>
+<p>$$
+\begin{equation}
+\begin{aligned}
+-3000(0.7)+2000(0.6) &amp;= -2100+1200\
+&amp;=-900.
+\end{aligned}
+\end{equation}
+$$</p>
+<p>Thus, our portfolio has a dollar delta of—$90,000$, which we can make delta-neutral by buying $90,000$ of stock. This makes sense. Before, we had a notional hedge of $210,000$. Now, given our long position in calls that behave roughly like half a stock, we have a notional hedge that is roughly half that.</p>
+<h3 id="delta-hedging">Delta Hedging</h3>
+<p>In our leading example, we hedged our delta from our option position, a short position in calls. Now that we understand the dollar delta, let&rsquo;s think about a more general way to formulate the problem. Imagine a portfolio with a $\delta_{\Pi}$ delta. And imagine that another asset has a delta of $\Delta_i$. Then, to be delta neutral, we want to buy $w_i$ of this asset such that</p>
+<p>$$
+\begin{equation}
+w_i+\Delta_{\Pi}=0
+\end{equation}
+$$</p>
+<p>Solving for $w_i$, we get</p>
+<p>$$
+\begin{equation}
+w_i=-\frac{\Delta_{\Pi}}{\Delta_i}
+\end{equation}
+$$</p>
+<p>But what asset should we use here? We could find an option with a delta of $\Delta_i$, but a more straightforward thing would be to buy the underlying asset, which has a delta of one $(\Delta_i=1)$. So, our hedge in shares or dollars should be proportional to $w_i=\Delta_{\Pi}$, which is what we see in Equation 10. We can easily consider this regarding shares or dollars by multiplying both sides of Equation 21 as desired.</p>
+<h3 id="functional-form">Functional Form</h3>
+<p>Now that we understand how delta is used let&rsquo;s dig into the precise definition of the Black-Scholes delta (Equation 8). This is an interesting result, but what it means may take time to be noticeable. First, note that since $\Phi(x)$ is the CDF of symmetric distribution, we can immediately guess that the delta&rsquo;s shape is roughly a sigmoid function, which it is. This also makes sense if we visualize the slope of the tangent line changing as we move along the Black-Scholes price curve.</p>
+<p>The delta for a call must initially be nearly zero when $S \ll K$, increase as $S$ approaches and passes $K$, and finally flatten off to almost one when $S\gg K$.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Revisitng-Delta/Delta_Put.png" alt="BS as a function of spot" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Notice that an at-the-money (ATM) option has a delta of slightly greater than 0.5. This is because while $\Phi(x)$ is symmetric with respect to its input $d_1$, the variable $d_1$ is a logarithmic function of $S$. Confusingly, some people will claim that the delta of an ATM option is 0.5. For example, Investopedia says</p>
+<blockquote>
+<p>An ATM option as a delta of $\pm 0.50$, positive if it is a call, negative for a put.</p>
+</blockquote>
+<p>But this is false. Just consider the full definition of delta for a call when $S=K$.</p>
+<p>$$
+\begin{equation}
+\Delta(C)=\Phi\bigg(\frac{[r+(1/2)\sigma^2]\sqrt{T}}{\sigma}\bigg).
+\end{equation}
+$$</p>
+<p>since $\phi(x)$ is the cdf of the standard normal distribution, we can see that $\delta(c)=0.5$ only when $t=0$, assuming interest rates and volatility are nonzero. However, it only makes sense to talk about the delta of an atm option at expiry. We&rsquo;ll discuss this when we discuss delta sensitivities to other parameters.</p>
+<p>In most realistic scenarios (positive interest rates, nonzero volatility, and nonzero time expiry), the term $d_1$ is greater than zero when $S=K$, and thus the Black-Scholes delta of an ATM option is slightly greater than $0.5$.</p>
+<p>A deep-in-the-money (ITM) option has a delta close to one, meaning it behaves like the spot. A deep out-of-the-money (OTM) option has a delta close to zero, meaning it is insensitive to the underlying price changes. Many of these points should hold for any option pricing model. However, it does not make sense to have an option pricing model with zero delta for an ITM option. So, the coherence of Black-Scholes Greeks with reality justifies this model.</p>
+<p>It makes sense that the delta for a call option is in the $[0,1]$ since $\Delta$ is the slope of the relationship between the spot and option. Using put-call parity, we can immediately derive the delta for a put:</p>
+<p>$$
+\begin{equation}
+\begin{aligned}
+\Delta(P) &amp;= \frac{\partial}{\partial S}P \
+&amp;= \frac{\partial}{\partial S}(C+Ke^{-rT}-S) \
+&amp;= \Delta(C)-1.
+\end{aligned}
+\end{equation}
+$$</p>
+<p>Since $\Delta(C)$ ranges in $[0,1]$, clearly $\Delta(P)$ is in the range [-1,0]. And this makes sense, given the Black-Scholes price curve for a put (figure 2). So the delta for a call and put have the same shape for all input parameters but are shifted by one.</p>
+<h3 id="moneyness">Moneyness</h3>
+<p>At this point, we have enough understanding of delta to investigate a common interpretation of it: that it captures an option&rsquo;s <em>moneyness</em> and how likely it is that the option ends ITM.</p>
+<p>To understand this, we need to understand $\Phi(d_1)$ and $\Phi(d_2)$ from the Black-Scholes equation. $\Phi(d_2)$ has a clean interpretation. It is the probability that the option ends ITM in a risk-neutral world. If this is unclear, interpret $\Phi(d_2)$ by mapping it onto the appropriate term in the binomial options-pricing formula, a discrete-time analog of Black-Scholes.</p>
+<p>But since the moneyness interpretation of $\Phi(d_2)$ is accurate, it is only true of $\Phi(d_1)$ to the extent that $d_1\approx d_2$. How are these terms different? They differ by the volatility of the spot:</p>
+<p>$$
+\begin{equation}
+d_2=d_1-\sigma\sqrt{T}
+\end{equation}
+$$</p>
+<p>This reasoning suggests that the moneyness interpretation of delta is approximately accurate when volatility or time to expiry is low but is less accurate when volatility or time to expiry is high. This is precisely the relationship we see when we compare $\Phi(d_1)$ and $\Phi(d_2)$ for varying volatilities.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Revisitng-Delta/Delta_Impact_IV.png" alt="Delta Volatility Sensitivity" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="delta-sensitivity">Delta Sensitivity</h3>
+<p>As we have seen already, the precise shape of the delta changes based on the other Black-Scholes inputs. Just as we can understand Black-Scholes by fixing all parameters but one, we can understand a single Greek, such as delta, by fixing all other parameters.</p>
+<p>First, let&rsquo;s look at how delta changes while holding all other parameters fixed as the time to expiry $T$ decreases. I like plotting this with $T$ decreasing since the graph can be read left to right as physical time progresses. We can see that all options, regardless of money, have more similar deltas when the expiration date is far enough out. Then, as expiration approaches, ITM, ATM, and OTM options cover the delta of $1$, $0.5$, and $0$, respectively, for calls and $0$, $-0.5$, and $-1$, respectively, for puts.</p>
+<p>Another way to see this is to visualize how the Black-Scholes price curve (for calls) changes as a function of time. In the left subplot of Figure 2, I plotted the Black-Scholes price curve for a call as the time to expiry $T$ decreases to zero. As we can see, when $T$ is large, the option&rsquo;s delta is roughly 0.5 over an extensive range of stock values.</p>
+<h3 id="changing-delta">Changing Delta</h3>
+<p>Finally, it is essential to remember that delta is a derivative and is, therefore, the slope of the tangent line to the Black-Scholes price curve at a particular spot price! When the spot changes in value from $S$ to $S_1$, our original estimate of the delta is no longer correct. It should be a new value $\Delta_1$, representing the slope of the line tangent to the Black-Scholes price curve at $S_1$.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Revisitng-Delta/call_delta.jpeg" alt="cal wrt " loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Hedging an options position by trading the underlying requires continuously rebalancing the hedged position due to this continuously accumulating <em>hedging error</em>. One way to visualize this ever-changing error is by visualizing the gap between the linear equation $\Delta S_1+b$ and $\Delta_1 S_1+b_1$, where $b$ and $b_1$ and the $y$-intercepts their respective delta. What would increase this gap between the two points? More curvature to the Black-Scholes price curve.</p>
+<p>This, in order to account for this hedging error, we could add a term that accounts for the curvature of the Black-Schole&rsquo;s model a particular point. To do this, we use a second-order Greek called gamma, which we will get into in another post.</p>
+<h3 id="references">References</h3>
+<p>[1] Daniel Sevcovic, Beata Stehlikova, Karol Mikula (2011). &ldquo;Analytical and numerical methods for pricing financial derivatives&rdquo;. Nova Science Pub Inc; UK.</p>
+<p>[2] Wilmott Paul (1994), &ldquo;Option pricing - Mathematical models and computation&rdquo;. Oxford Financial Press.</p>
+<p>[3] Steven Shreve (2005), &ldquo;Stochastic calculus for finance&rdquo;. Spring Finance</p>
+<p>[4] Paul Wilmott (2006), <em>Paul Wilmott on quantitiative finance</em></p>
+<p>[5] Broadie, Glasserman, Kou. <em>Connecting Discrete and Continuous Path-Dependent Options</em></p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/trading/">Trading</a>
+  
+  <a class="badge badge-light" href="/tag/quant-finance/">Quant Finance</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2023-03-28-revisiting-delta%2F&amp;text=Revisitng&#43;Delta" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkidquant.com%2Fpost%2F2023-03-28-revisiting-delta%2F&amp;t=Revisitng&#43;Delta" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Revisitng%20Delta&amp;body=https%3A%2F%2Fkidquant.com%2Fpost%2F2023-03-28-revisiting-delta%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2023-03-28-revisiting-delta%2F&amp;title=Revisitng&#43;Delta" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Revisitng&#43;Delta%20https%3A%2F%2Fkidquant.com%2Fpost%2F2023-03-28-revisiting-delta%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2023-03-28-revisiting-delta%2F&amp;title=Revisitng&#43;Delta" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kidquant.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2453db0268c976f8eacba18e4a98e34c_209096_270x270_fill_q75_lanczos_center.jpg" alt="Andre Sealy"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kidquant.com/">Andre Sealy</a></h5>
+      <h6 class="card-subtitle">Quant Research / Data Scientist / Writer</h6>
+      <p class="card-text">My research interests involves Quantitative Finance, Mathematics, Data Science and Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/KidQuant" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Andre_Sealy" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThatQuantKid" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:andre@kidquant.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

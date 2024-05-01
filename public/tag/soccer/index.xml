@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Soccer | KidQuant</title>
+    <link>https://kidquant.com/tag/soccer/</link>
+      <atom:link href="https://kidquant.com/tag/soccer/index.xml" rel="self" type="application/rss+xml" />
+    <description>Soccer</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 03 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <title>Soccer</title>
+      <link>https://kidquant.com/tag/soccer/</link>
+    </image>
+    
+    <item>
+      <title>Predicting the 2018 World Cup Winner Using Machine Learning</title>
+      <link>https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</link>
+      <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</guid>
+      <description>&lt;p&gt;With the start of the 2018 FIFA World Cup approaching, soccer fans around the world is trying to figure out who will win the tournament? If you&amp;rsquo;re a techie and a soccer fan, you&amp;rsquo;ll probably want to figure out more quantitiative methods of figuring out the answer to that question.&lt;/p&gt;
+&lt;h2 id=&#34;goal&#34;&gt;&lt;strong&gt;Goal&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;The goal of this project is established as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use Machine Learning to predict who will win the 2018 FIFA World Cup.&lt;/li&gt;
+&lt;li&gt;Predict the outcome of individual matches for the entire competition.&lt;/li&gt;
+&lt;li&gt;Run simulation of the next matches i.e. quarter final, semi finals and finals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These goals present a unique real-world Machine Learning prediction problem and involve solving various Machine Learning task: data integration, feature modeling, and outcome prediction.&lt;/p&gt;
+&lt;h2 id=&#34;data&#34;&gt;&lt;strong&gt;Data&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;I used two data sets from Kaggle. You can find them &lt;a href=&#34;https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017/data&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. We will use results of historical matches since the beginning of the 1930s FIFA Championship for all participating teams.&lt;/p&gt;
+&lt;p&gt;We have opted not to use FIFA national team rankings, due to the limitations of FIFA rankings being created in the 90&amp;rsquo;s. Considering this limitation, we will stick to the historical match records.&lt;/p&gt;
+&lt;p&gt;First, I&amp;rsquo;m going to conduct some exploratory analysis on the two datasets. Next, I will use a feature engine to select the most relevant feature for my prediction. Afterwards, I will attempt to manipulate the data. Finally, I will choose a Machine Learning model and deploy it on the dataset.&lt;/p&gt;
+&lt;h4 id=&#34;first-things-first&#34;&gt;First Thing&amp;rsquo;s First&lt;/h4&gt;
+&lt;p&gt;We need to import the necessary libaries and load the datasets into a Dataframe. We will be using the following python libraries.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/981b97e4aa135dad1c59d6e54670e2cb.js&#34;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pandas&lt;/strong&gt;: Provides in-memory 2d table objectd referred to as &amp;lsquo;Dataframes.&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Numpy&lt;/strong&gt;: Allows use to conduct fast mathematical computation on arrays and matrices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Matplotlib&lt;/strong&gt;: A Python SD plotting library.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Seaborn&lt;/strong&gt;: A data visualization library based on matplotlib.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scikit-Learn&lt;/strong&gt;: A machine learning library.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ensure the information is imported by calling  &lt;code&gt;world_cup.head()&lt;/code&gt; and &lt;code&gt;results.head()&lt;/code&gt; for both datasets. The Dataframes should look something like the following:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/world_cup.png&#34; alt=&#34;Word Cup Dataframe&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;exploratory-analysis&#34;&gt;&lt;strong&gt;Exploratory Analysis&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Exploratory analysis and feature engineering is the most time consuming part of any Data Science project.&lt;/p&gt;
+&lt;p&gt;After analyzing both datasets, the resulting dataset has information on previous matches. The new (resulting) dataset will be useful for analyzing and predicting future mathces.&lt;/p&gt;
+&lt;p&gt;We begin our exporatory anaylsis by added goal differentials and match outcomes to the results Dataframe.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/a2d6b86482784fbf5aa728c9d6ffeddb.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;The outcome of the new Dataframe has the new results with the goal differential visible.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/new_results.png&#34; alt=&#34;results&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Now I&amp;rsquo;ll work on a subset of the data; one that includes games played by a participating team. I wanted to analyze the US Mens National Team, but unforunately, they were &lt;a href=&#34;https://www.mlssoccer.com/post/2017/10/10/us-national-team-eliminated-2018-fifa-world-cup&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;eliminated&lt;/a&gt; by Trinidad &amp;amp; Tobago in the qualifying rounds.&lt;/p&gt;
+&lt;p&gt;The Danish Mens National Team (NKVD) was also &lt;a href=&#34;https://www.standard.co.uk/sport/football/worldcup/netherlands-miss-world-cup-2018-holland-fail-to-qualify-a3865221.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;eliminated&lt;/a&gt; by The Swedish Mens National Team. Because of this, I have chosen to analyze the German Mens National Team.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/20fd329d0c63f397daee59a5134ac96b.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Analyzing the subset of the data will help us determine which features are more relevant for our analysis.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/german_matches.png&#34; alt=&#34;german matches&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As you can see, the dataset has matches dating back as early as 1908! However, we&amp;rsquo;re only interested in looking at matches from the World Cup era, which started in 1930. We then create a column for year and pick all the games played 1930.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/e6b5d83c3426a37568393d43cc2f586a.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;We can now visualize the most common match outcome for Germany throughout the years.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/wins_losses.jpg&#34; alt=&#34;wins and losses&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;FIFA has recorded 863 matches from the German Mens National Team since 1930, of which Germany has won over 500 matches with ~175 losses. Slightly more matches has ended in a draw. Getting the win-rate for every country is a useful metric. We could use it to predict the most likely outcome of each match in the tournament.&lt;/p&gt;
+&lt;h4 id=&#34;analyzing-teams-participating-in-the-world-cup&#34;&gt;Analyzing Teams Participating in the World Cup&lt;/h4&gt;
+&lt;p&gt;We can start off by creating a list of teams participating in the 2018 World Cup. The following teams participating are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Group A&lt;/strong&gt;: Uruguay, Russia, Saudi Arabia, Egypt&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group B&lt;/strong&gt;: Spain, Portugal, Iran, Morocco&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group C&lt;/strong&gt;: France, Denmark, Peru, Australia&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group D&lt;/strong&gt;: Croatia, Argentina, Nigeria, Iceland&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group E&lt;/strong&gt;: Brazil, Switzerland, Serbia, Costa Rica&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group F&lt;/strong&gt;: Sweden, Mexico, South Korea, Germany&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group G&lt;/strong&gt;: Belgium, England, Tunisia, Panama&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group H&lt;/strong&gt;: Columbia, Japan, Senegal, Poland&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/48789b295fb144c5d0d68db0c2b6d9aa.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;The following code will show only a dataframe with team wordl cup results starting from 1930, while dropping the duplicates (dropping games before 1930). We will also drop the date, home_score, away_score, tournament, city, country, goal_difference, and match_year columns from the &lt;code&gt;df_teams&lt;/code&gt; dataframe and assign it to a variable named &lt;code&gt;df_teams_1930&lt;/code&gt;. This will help us create a prediction label to simplify and process our model.&lt;/p&gt;
+&lt;p&gt;For our prediction labels, we need to create a system to help our algorithm to determine a &amp;ldquo;winning&amp;rdquo; outcome versus a &amp;ldquo;losing&amp;rdquo; outcome. During group play, FIFA rewards 2 points to the winner of the match; 0 points to the loser of the match; and 1 point to both teams if the match results in a draw. We will adopt the same system to our labels dataset.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/05fd41e7891cab7bba73cd7b945ed825.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;From there, the home_team and away_team columns will be converted from categorical variables to continuous inputs, by setting dummy variables using Pandas &lt;code&gt;get_dummies()&lt;/code&gt; function. It replaces categorical columns with quantitative representations, which enable them to be utilized in the Scikit-learn model.&lt;/p&gt;
+&lt;p&gt;We we separate the labels and features, the &lt;code&gt;train_test_split&lt;/code&gt; function will split the data into 70 percent training and 30 percetn testing.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/8e57023fabfac0f6cf8c119ad4829f01.js&#34;&gt;&lt;/script&gt;
+
+&lt;h4 id=&#34;logistic-regression&#34;&gt;Logistic Regression&lt;/h4&gt;
+&lt;p&gt;The Scikit-learn package allows us to use machine learning packages such as Linear Regression. The only problem is that we can&amp;rsquo;t use linear regression on a categorical dependent variable. Instead, in such situations, we should try using algorithms such as Logistic Regression.&lt;/p&gt;
+&lt;p&gt;Logistic regression is a Machine Learning classification algorithm that is used to predict the probability of a categorical dependent variable. In logistic regression, the dependent variable is a binary variable that contains data coded as 1 for success or 0 for failure. In other words, the logistic regression model predicts P(Y=1) as a function of X.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/logistic_regression.jpg&#34; alt=&#34;logistic regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+Logistic regression is one of the most popular ways to fit models for categorical data, especially for binary response data in Data Modeling. It is the most important (and probably the most used) member of a class of models called generalized linear models. Unlike linear regression, logistic regression can directly predict probabilities (values that are restricted to the (0,1) interval).&lt;/p&gt;
+&lt;p&gt;Logistic Regression is used when the dependent variable (target) is categorical. For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To predict whether an email is spam (1) or not spam (0)&lt;/li&gt;
+&lt;li&gt;Whether a company is a bankrupt (1) or not bankrupt (0)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Logistic regression is generally used where the dependent variable is Binary or Dichotomous. That means the dependent variable can take only two possible values, such as &amp;ldquo;Yes&amp;rdquo; or &amp;ldquo;No,&amp;rdquo; &amp;ldquo;Default&amp;rdquo; or &amp;ldquo;No Default,&amp;rdquo; &amp;ldquo;Living&amp;rdquo; or &amp;ldquo;Dead,&amp;rdquo; etc. Independent factors or variables can be categorical or numerical variables.&lt;/p&gt;
+&lt;p&gt;In our case, &lt;em&gt;logistic regression&lt;/em&gt; attempts to predict an outcome (a win or loss) given a set of data points (stats) that likely influence that outcome. The way this works in practice is you feed the algorithm one game at a time, with both the aforementioned &amp;ldquo;set of data&amp;rdquo; and the actual outcome of the match. The model then learns how each piece of data you feed it influences the result of the game positively, negatively, and to what extent.&lt;/p&gt;
+&lt;h2 id=&#34;machine-learning-match-prediction&#34;&gt;&lt;strong&gt;Machine Learning: Match Prediction&lt;/strong&gt;&lt;/h2&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/cdbf44fd9204923d62050f3a95ec11f4.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Passing our features and labels into our algorithm, we recieved a training set accuracy of 0.571 and a testing set accuracy of 0.564, which isn&amp;rsquo;t the greatest, but we will continue to use these features. At this point, we will create a dataframe that we will deploy out model.&lt;/p&gt;
+&lt;p&gt;We will start by loading the FIFA ranking as of April 2018 data set and a dataset containing the fixtures of the group stages of the tournament obtained from &lt;a href=&#34;https://fixturedownload.com/results/fifa-world-cup-2018&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. The team which is positioned higher on the FIFA Ranking will be considered the &amp;ldquo;favorite&amp;rdquo; of the match, and therefore, will be positioned under the &amp;ldquo;home_teams&amp;rdquo; column, since obviously the only home team in this world cup is Russia. We will then add teams to the new prediction dataset based on the ranking position of each team. The next step will be to create dummy variables and then deploy the machine learning model.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/Hedgology/80394a88c5131856cf2405809b9d5cc7.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;We can start with deploying the model to the group matches. The follow shows the match results for the Group of Death, which contains Germany, Mexico, Sweden and South Korea.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Germany and Mexico
+&lt;br&gt;Winner: Germany
+&lt;br&gt;Probability of Draw:  0.267
+&lt;br&gt;Probability of Mexico winning:  0.147&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sweden and Korea Republic
+&lt;br&gt;Winner: Sweden
+&lt;br&gt;Probability of Draw:  0.308
+&lt;br&gt;Probability of Korea Republic winning:  0.170&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mexico and Korea Republic
+&lt;br&gt;Winner: Mexico
+&lt;br&gt;Probability of Draw:  0.295
+&lt;br&gt;Probability of Korea Republic winning:  0.218&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Germany and Sweden
+&lt;br&gt;Winner: Germany
+&lt;br&gt;Probability of Draw:  0.243
+&lt;br&gt;Probability of Sweden winning:  0.189&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mexico and Sweden
+&lt;br&gt;Winner: Mexico
+&lt;br&gt;Probability of Draw:  0.253
+&lt;br&gt;Probability of Sweden winning:  0.317&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Germany and Korea Republic
+&lt;br&gt;Winner: Germany
+&lt;br&gt;Probability of Draw:  0.277
+&lt;br&gt;Probability of Korea Republic winning:  0.119&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Based on this information, it looks like the former champions will be making it out of the Group of Death. Unless the &lt;a href=&#34;https://en.wikipedia.org/wiki/Sports-related_curses&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;World Cup Champion&amp;rsquo;s&lt;/a&gt; curse has anything to say about it, prehaps Mexico and Sweden will both make it out of group stages.&lt;/p&gt;
+&lt;h5 id=&#34;knockout-stage-group-of-16&#34;&gt;Knockout Stage (Group of 16)&lt;/h5&gt;
+&lt;p&gt;Based on the model, the following matchups are generated.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/knockout_stage.png&#34; alt=&#34;knock out stage&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Our model has generated the following winners from the knockout stage of the 2018 World Cup:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Portugal: 44.1% Probability of Winning&lt;/li&gt;
+&lt;li&gt;France: 47.6% Probability of Winning&lt;/li&gt;
+&lt;li&gt;Brazil: 70.2% Probability of Winning&lt;/li&gt;
+&lt;li&gt;England: 51.3% Probability of Winning&lt;/li&gt;
+&lt;li&gt;Spain: 52% Probability of Winning&lt;/li&gt;
+&lt;li&gt;Germany: 66.8% Probability of Winning&lt;/li&gt;
+&lt;li&gt;Belgium: 50.3% Probability of Winning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;quarter-finals&#34;&gt;Quarter-Finals&lt;/h5&gt;
+&lt;p&gt;Our model predicted a quarter final matches of the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Portugal vs. France&lt;/li&gt;
+&lt;li&gt;Spain vs. Argentina&lt;/li&gt;
+&lt;li&gt;Brazil vs. England&lt;/li&gt;
+&lt;li&gt;Germany vs. Belgium&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Based on the matchups, our algorithm has predicted the winners of their quarter final matches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;France: 42.9% Probabillity of Winning&lt;/li&gt;
+&lt;li&gt;Argentina: 52% Probabillity of Winning&lt;/li&gt;
+&lt;li&gt;Brazil: 52.5% Probabillity of Winning&lt;/li&gt;
+&lt;li&gt;Germany: 58% Probabillity of Winning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This time, the algorithm has less than a 60% certainity for most of our match-ups. This is what we can expect as we reach a higher level of play from our competitors.&lt;/p&gt;
+&lt;h5 id=&#34;semi-finals&#34;&gt;Semi-Finals&lt;/h5&gt;
+&lt;p&gt;The model predicted the following semi-final matches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brazil vs. France&lt;/li&gt;
+&lt;li&gt;Germany vs. Argentina&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Germany and Argentina are once again matched up with one another, except this time it is in the semi-finals instead of the grand finals of the 2014 world cup. Based on the matchups, our algorithm has predicted the winners of their semi-final matches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;France: 69.3% Probabillity of Winning&lt;/li&gt;
+&lt;li&gt;Germany: 52% Probabillity of Winning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our algorithm once again has Germany emerging has the victory of the Germany vs. Argentina match. Our model also estimates that Brazil will end up losing to France. Unforunately, the 5 time World Cup champs will have to miss out on another Final.&lt;/p&gt;
+&lt;h5 id=&#34;finals&#34;&gt;Finals&lt;/h5&gt;
+&lt;p&gt;Finally, we have the grand finals with France vs. Germany. What outcome does our model give us?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Germany: 52.6% Probabillity of Winning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;According to the model, Germany is likely to win the World Cup, although, it isn&amp;rsquo;t possible for repeat champions to emerge. The last time this occur was during the 1962 in Chile.&lt;/p&gt;
+&lt;h2 id=&#34;areas-of-further-researchimprovement&#34;&gt;&lt;strong&gt;Areas of Further Research/Improvement&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Some areas for improvement:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For improvements of the datasets, we could use FIFA (the game, not the organization), to assess the quality of each team player&lt;/li&gt;
+&lt;li&gt;A confusion maxtrix would be great to analyze&lt;/li&gt;
+&lt;li&gt;Using more models together to improve accuracy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;There is so much that can be improved upon here. For now, lets see if we get any lucky.&lt;/p&gt;
+&lt;p&gt;The full code can be found &lt;a href=&#34;https://github.com/Hedgology/FIFA-2018-WORLDCUP-PREDICTIONS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics | KidQuant</title>
+    <link>https://kidquant.com/category/statistics/</link>
+      <atom:link href="https://kidquant.com/category/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Statistics</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <title>Statistics</title>
+      <link>https://kidquant.com/category/statistics/</link>
+    </image>
+    
+    <item>
+      <title>We Already Fund Education More Than Law Enforcement</title>
+      <link>https://kidquant.com/post/2020-06-17-we-fund-teachers-not-police/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-06-17-we-fund-teachers-not-police/</guid>
+      <description>&lt;p&gt;You may not believe it, but it&amp;rsquo;s true. We currently already spend, on aggregate (at the state and local level), more on teachers and education more than we spend on police and law enforecement. But who says we aren&amp;rsquo;t, and why does this matter?&lt;/p&gt;
+&lt;p&gt;I give you Exhibit A:&lt;/p&gt;
+&lt;!-- tweet 1269662790744145925 --&gt;
+&lt;p&gt;Here, we have the anatomy of a viral tweet: an emotional platitude, factually inaccurate, and a rallying cry to address a problem that currently does not exist. To be fair, maybe Benjamin Dixon is trying to tell us what we should NOT be doing. As in, we should NOT get to a point where we are funding Police more than Teachers.&lt;/p&gt;
+&lt;p&gt;I think that&amp;rsquo;s fair, and most people would agree with that. As a thought experiment, I decided to look at economic statistics to analyze the ratio of the levels we&amp;rsquo;re spending on Police relative to Teachers. So, as usual, I took to Python [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/police_expenditures.png&#34; alt=&#34;Police Expenditures&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;So the output of our code is the historical Government Current Expenditures at the state and local level of law enforcement. This data goes back to 1959. As of 2018, we currently spend 137 billion dollars on police [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. (Note: much of these data comes from FRED, although it sourced by the BEA)&lt;/p&gt;
+&lt;p&gt;In 1960, we were spending ~2 billion dollars on police. That&amp;rsquo;s is a 6,750% increase in 60 years. Faster than the rate of inflation last time I checked. That&amp;rsquo;s a lot.&lt;/p&gt;
+&lt;p&gt;Has spending on Education managed to keep the same pace?&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/teachers_expenditures.png&#34; alt=&#34;Teachers Expenditures&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Well, this plot looks the same as the police expenditures plot, but the y-axis is ten times larger.&lt;/p&gt;
+&lt;p&gt;Maybe we should place both time series on the same plot so we can see what&amp;rsquo;s really going on.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/teachers_police.png&#34; alt=&#34;Teachers and Police&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It certainly doesn&amp;rsquo;t look like we&amp;rsquo;re spending more on Police than we are on Teachers. Not anywhere close. Based on what I&amp;rsquo;m looking at, what we spend on law enforcement is significantly dwarfed by the amount we spend on education (as it should be).&lt;/p&gt;
+&lt;p&gt;So why does this narrative persist? Why do people believe that we&amp;rsquo;re not spending enough on education? I give you Exhibit B:&lt;/p&gt;
+&lt;!-- tweet 1272944264608169987 --&gt;
+&lt;p&gt;There is this interesting perception among the #defundthepolice proponents is that Americans should be spending more on social services (including education), and the only reason we can&amp;rsquo;t do that is because so much of current government expenditures is already allocated towards law enforcement.&lt;/p&gt;
+&lt;p&gt;As you can see from the meme above, the police take up a large portion of the budget. The reduction in funding for police would naturally be offset by other government programs, such as Housing, Education, Health Care, reinvestments, etc.&lt;/p&gt;
+&lt;p&gt;Sure, a reduction in police spending &lt;em&gt;would&lt;/em&gt; increase spending for other things; however, we already spend significantly more on other things relative to the police.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/social_spending_police.png&#34; alt=&#34;Social Spending&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We should indeed be spending more on all of the things that would probably reduce crime. However, there is currently nothing preventing us from doing this, especially not the police. If you compare the United States to Europe, we find that most European countries are more generous with welfare and social spending. However, this doesn&amp;rsquo;t have anything to do with how much they spend on police.&lt;/p&gt;
+&lt;p&gt;As President Obama&amp;rsquo;s Council of Economic Adviser pointed out, while the United States has more correctional officers and far more prisoners than the average country, it has 35 percent fewer police officers [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/polce_v_prison.png&#34; alt=&#34;Police vs Prison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The current problem with our relationship with police in society is that they&amp;rsquo;re too unaccountable, have too much job security, and have far too little training. In fact, I would argue that that in order for police to recieve more training, they need &lt;em&gt;more&lt;/em&gt; funding, not less.&lt;/p&gt;
+&lt;p&gt;As state and local governments take steps towards reducing the level of funding from their law enforcement, we can expect the fewer people employed in these fields. Violent crime is currently at a 50 year low. One could make the argument, given this trend, that we no longer need the amount of police in our society.&lt;/p&gt;
+&lt;p&gt;However, if one is going to argue that police have no role in maintaining safe streets, they&amp;rsquo;re also arguing against lots of strong evidence. One of the most robust, most uncomfortable findings in criminology is that putting more officers on the street leads to less violent crime [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;][&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;][&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;][&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;][&lt;a href=&#34;#8&#34;&gt;8&lt;/a&gt;].&lt;/p&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/post/images/Notebooks/police_v_education.html&#34;&gt;Kid Quant | Replicating the data from this post&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://fred.stlouisfed.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Federal Reserve Economic Database (FRED)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://obamawhitehouse.archives.gov/sites/whitehouse.gov/files/documents/CEA%2BCriminal%2BJustice%2BReport.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obama White House (2016)  | Economic Perspectives on Incarceration and the Criminal Justice System&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://mason.gmu.edu/~atabarro/TerrorAlertProofs.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Klick &amp;amp; Tabarrok (2005) | Using terror alert levels to estimate the effect of police on crime&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;5&#34;&gt;5&lt;/a&gt;] &lt;a href=&#34;https://www.law.upenn.edu/live/files/8949-179jrss831pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Klick, MacDonald, &amp;amp; Grunwald (2015) | The effect of private police on crime: evidence from a geographic regression discontinuity design&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;6&#34;&gt;6&lt;/a&gt;] &lt;a href=&#34;https://mason.gmu.edu/~atabarro/TerrorAlertProofs.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mello (2018) | More COPS, Less Crime&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;7&#34;&gt;7&lt;/a&gt;] &lt;a href=&#34;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0157223&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MacDonald, Fagan, &amp;amp; Geller (2016) | The effects of local police surges on crime and arrest in New York City&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;8&#34;&gt;8&lt;/a&gt;] &lt;a href=&#34;https://scholars.org/sites/scholars/files/ssn_basic_facts_rosenfeld_on_hot_spot_policing.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rosenfeld (2013) | Focusing police efforts on &amp;ldquo;hot spots&amp;rdquo; reduces crime - and can prevent it, too&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>No, New York Has Not Flattened The Curve</title>
+      <link>https://kidquant.com/post/2020-06-08-ny-crushed-by-curve/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-06-08-ny-crushed-by-curve/</guid>
+      <description>&lt;p&gt;I keep reading &amp;ndash; and hearing &amp;ndash; that New York has successfully &amp;ldquo;flattened the curve,&amp;rdquo; and it makes me wonder if people have just decided to go into hibernation the past three months. It&amp;rsquo;s not outside the realm of possibility; we all have lots of free time on our hands now. However, it&amp;rsquo;s a sign that our political discourse has become so warped that our politicians can say things that are patently false with very little pushback.&lt;/p&gt;
+&lt;!-- tweet 1269344344374497280 --&gt;
+&lt;p&gt;What did I expect? As a politician, he&amp;rsquo;s not going to say, &amp;ldquo;New York has been decimated by the virus,&amp;rdquo; but that&amp;rsquo;s precisely what happened. I haven&amp;rsquo;t talked about &amp;ldquo;flatten the curve&amp;rdquo; at all on this blog because it assumed that it was well understood by most. I was obviously wrong. How else can a governor of one of the largest states get away from saying, &amp;ldquo;we crushed&amp;rdquo; the curve?&lt;/p&gt;
+&lt;h2 id=&#34;what-does-flatten-the-curve-even-mean&#34;&gt;What Does &amp;ldquo;Flatten The Curve&amp;rdquo; Even Mean?&lt;/h2&gt;
+&lt;p&gt;Flatten The Curve is an objective, which refers to the &amp;ldquo;what if&amp;rdquo; epidemiological curve. What it means is that instead of the rate of rising being very rapid, perhaps a doubling in cases every 4 - 7 days, we cut the doubling to every 2 - 3 weeks. The purpose of flattening the curve was to prevent an overwhelming of the health care system, so health care professionals can find more effective ways of treating infected patients.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/pandemic.png&#34; alt=&#34;Pandemic Curves&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The following image shows what a flattened curve should obviously look like. The red-shaded steap curve shows a scenario with preventative measures (social distancing, mask, etc.), while blue-shaded curve shows a scenario with protective measures. The blue-shaded curve is flatter than the red-shaded curve, and that is the scenario that we are trying to implement.&lt;/p&gt;
+&lt;p&gt;Notice how I didn&amp;rsquo;t say any of this &lt;em&gt;would&lt;/em&gt; happen, because there is no guarantee that that it should. There are other factors that we may fail to consider and you&amp;rsquo;ll know you&amp;rsquo;re at the peak until you&amp;rsquo;ve reached it.&lt;/p&gt;
+&lt;p&gt;So, what happened? Did we get the blue-shaded flat curve?&lt;/p&gt;
+&lt;p&gt;About a month or so ago, I did a project on tracking COVID-19 cases globally; part of that analysis involved looking at different U.S. States [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. Around that time, cases in New York were doubling every 7 days.&lt;/p&gt;
+&lt;p&gt;Today New York, the increase in cases is relatively stable, trending at ~1,200 additional cases a day. However, during the early days of the pandemic, the New York average around 10,000-12,000 additional cases day. The state was probably responsible for at least 30 percent of all new coronavirus infections.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/new_york_cases_0704.png&#34; alt=&#34;New York Cases&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;So, to answer a previously-posed question, no, we did not get the blue-shaded flat curve, synonymous with a gradual increase in new infections. Instead, what we witness was a rapid spike in daily cases. At least, when compared to cases in Washington State, which did experience a large surge in cases but managed to taper off early during the crisis.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/washington_cases_0704.png&#34; alt=&#34;New York Cases&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;But that is all in the past. New York is doing relatively better now, even as cases surge in places that were previously managing the virus well. So, what exactly is New York doing that is so special? It&amp;rsquo;s not as if New York is doing anything spectacular when it comes to testing or tracing.&lt;/p&gt;
+&lt;p&gt;The main thing that happened&amp;hellip; was the virus rushed through the most susceptible people in the population.&lt;/p&gt;
+&lt;p&gt;In my post, &lt;em&gt;The Mathematics of Pandemics&lt;/em&gt;, I laid out the framework as to why you can prove (mathematically) that the virus always dies out [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. (susceptible people get exposed; exposure becomes an infection; infectives either recover or die) It doesn&amp;rsquo;t happen when the disease infects everyone in the population, or when the pathogen mutates into something else.&lt;/p&gt;
+&lt;p&gt;The simple reality is that contact between the remaining infectives and susceptibles become so infrequent that the infectives never get a chance to pass on the disease before being removed from the equation (recovering with immunity or dying). The virus dies due to the lack of infectives, not the lack of susceptibles.&lt;/p&gt;
+&lt;p&gt;For the most part, this has happened (is happening) in New York. Several factors can increase the risk of the susceptibility of COVID-19; however, we know that the disease is more susceptible to individuals over the age of +65-years-old. We can see from the data, the death rate for people age 65 and over is more than ten times higher than for people under 65-years-old [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;So if your objective is to flatten the curve starting March, you would expect to see a steady increase in the number of infections, spread out over months. If you failed to flatten the curve, you saw a huge spike in cases, followed by a massive spike of fatalities, followed by a rapid decrease, as we saw here in New York.&lt;/p&gt;
+&lt;p&gt;Putting this in perspective, if the State of New York were a country, it would have the highest death rate in the world. That&amp;rsquo;s not a novelty.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/nyc_deaths.jpg&#34; alt=&#34;New York Deaths&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We are noticing a surge in cases in other parts of the country, places that have yet to experience their first wave (Flordia and Arizona). Deaths in these states are relatively small. The death rate from COVID-19 is ~170 per 100,000 people in New York State [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;], Arizona has reported ~1,000 COVID deaths. For Arizona to have a death rate comparable to New York, there would need to be +11,200 additional deaths from COVID in Arizona, which doesn&amp;rsquo;t seem likely. (Florida would need to have +35,000 new deaths)&lt;/p&gt;
+&lt;p&gt;As the state begins its Phase One plan for reopening the economy, it is unlikely to result in a huge surge in cases. However, cases will eventually start rising again. Once it does, will New Yorkers &lt;em&gt;tolerate&lt;/em&gt; another lockdown?&lt;/p&gt;
+&lt;h3 id=&#34;sources&#34;&gt;Sources&lt;/h3&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/project/tracking-covid19-cases/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kid Quant | Tracking COVID-19 Cases Globally&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kid Quant | The Mathematics of Pandemic&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://www.statista.com/statistics/1109867/coronavirus-death-rates-by-age-new-york-city/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Statista | Death rate for COVID-19 in New York City by age&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://www.statista.com/statistics/1109867/coronavirus-death-rates-by-age-new-york-city/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Statista | Death rates from coronavirus (COVID-19) in the U.S.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Measuring Pandemic Progress: Log Scale vs. Per Capita</title>
+      <link>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</guid>
+      <description>&lt;p&gt;There have been many visualization projects created for the purposes of modeling COVID-19 cases and deaths. The best known are the graphs produced by John Burn-Murdock of the Financial Times. You can view his very create and beautiful COVID visualizations on his Twitter Page.&lt;/p&gt;
+&lt;p&gt;Before COVID, I think people were more used to viewing data in relative terms. Now, log-scale visualizations have become more widespread, primarily due to the way diseases spread during a pandemic.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s become so popular, programmers developed ways to replicate these charts using Python and R packages. The most notable being &lt;code&gt;tidycovid19&lt;/code&gt; package designed by Joachim Gassen. You can few the package on his GitHub [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-R&#34; data-lang=&#34;R&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Importing all of the necessary packages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tidyverse&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tsibble&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tidycovid19&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# selecting how the data will be formatted&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;updates&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;download_merged_data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cached&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;TRUE&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# plotting the countries of interests, &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;countries&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;AUS&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;NZL&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;ITA&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;ESP&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;USA&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;GBR&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;updates&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;plot_covid19_spread&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;highlight&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;countries&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;type&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;confirmed&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;edate_cutoff&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;min_cases&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Measuring-Progress/first_40_days.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+However, people have often wondered why we don&amp;rsquo;t present these numbers on a per capita basis? Burn-Murdock has provided a data-oriented reason why log-scales are used instead of per capita scaling.&lt;/p&gt;
+&lt;!-- tweet 1244380095164420101 --&gt;
+&lt;p&gt;It isn&amp;rsquo;t always clear when per capita metrics should (or should not) be used. However, many don&amp;rsquo;t often realize how per capita figures can distort the story of what is going on in the region.&lt;/p&gt;
+&lt;p&gt;For example, Switzerland has 2,975 cases per capita, while the United States has 1,841 cases per capita [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. However, cases are currently growing and doubling faster in the U.S. compared to Switzerland [3]. Obviously, Switerzland&amp;rsquo;s high per capita figure is primarily attributed to its small population size, not its response to containing the virus.&lt;/p&gt;
+&lt;p&gt;Simply put: per capita figures makes small countries look big, and vice versa. Not only that, per capita figures only shifts the curves vertically; it would not change the trajectory or slope of the curves. Remember the following:&lt;/p&gt;
+&lt;p&gt;$$log(Y_{t}/P_{t})=log(Y_{t})-log(P_{t})$$&lt;/p&gt;
+&lt;p&gt;Where $Y_{t}$ is the number of cases on dat $t$ and $P_{t}$ is the population on day $t$. Population doesn&amp;rsquo;t change much over a period of time, so per capita figures involves subtracking a constant from the log case data.&lt;/p&gt;
+&lt;p&gt;The same point applies to the differences in testing policies between countries. If Country A is testing more as a percentage of the population relative to Country B, then these differences will show up as a vertical difference between the plots. They won&amp;rsquo;t; however, show up in the trajectory.&lt;/p&gt;
+&lt;p&gt;Although these choices are still a bit of a judgment call (not standard among statisticians), we should look at the slope of the lines if we want to explore how countries are responding to the pandemic relative to others.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Measuring-Progress/cases_logratio.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;While the graph doesn&amp;rsquo;t tell us everything about how the pandemic is overwhelming the different health care systems around the world, it does show how each country is attempting to slow the infection rate and reduce the slope of their curves. It&amp;rsquo;s easier to compare the trajectory in this way, considering that we have to look to see which country is trending higher.&lt;/p&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://github.com/joachim-gassen/tidycovid19&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub | Jaochim Gassen TidyCovid19 Repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://twitter.com/jburnmurdoch/status/1244368708249817091&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter | John Burn-Murdock &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://ourworldindata.org/grapher/total-daily-covid-cases-per-million?tab=map&amp;amp;year=2020-04-15&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Our World In Data | Global COVID Cases per capita as of April 15th, 2020&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/project/tracking-covid19-cases/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KidQuant | Data Science Project on COVID Tracking (Post from Apr 13, 2020)&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

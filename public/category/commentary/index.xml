@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commentary | Academic</title>
+    <link>https://kidquant.com/category/commentary/</link>
+      <atom:link href="https://kidquant.com/category/commentary/index.xml" rel="self" type="application/rss+xml" />
+    <description>Commentary</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kidquant.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Commentary</title>
+      <link>https://kidquant.com/category/commentary/</link>
+    </image>
+    
+    <item>
+      <title>What&#39;s With Those Evil Beachgoers?</title>
+      <link>https://kidquant.com/post/2020-07-01-evil-beach-goers/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-07-01-evil-beach-goers/</guid>
+      <description>&lt;p&gt;Just when we thought were getting a handle on things during this pandemic, COVID-19 cases are surging again. With riots, protest, and businesses opening all across the country, it&amp;rsquo;s difficult to pinpoint the extact cause. (after all, what is causing the increase in cases all depends on who you ask) [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Ever since we started reopening beaches during the peak of the corona-crisis, it seems like reporters in the media are trying to connect the dots between a surge in coronavirus cases, and the beach.&lt;/p&gt;
+&lt;!--  --&gt;
+&lt;p&gt;Zeynep Tufekci has a point. It appears as though every single article that reports on a surge in cases is accompanied by a stock photo of a crowded beach. This is strange, because according to the Center for Diease Control, visiting the beach is probably one of the least risky activities you can engage with others.&lt;/p&gt;
+&lt;h3 id=&#34;sources&#34;&gt;Sources&lt;/h3&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://www.nytimes.com/2020/07/06/us/Epidemiologists-coronavirus-protests-quarantine.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NY Times | Are Protest Unsafe? What Experts Say May Depend on Who You Ask?&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

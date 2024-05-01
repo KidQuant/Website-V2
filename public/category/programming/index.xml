@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming | KidQuant</title>
+    <link>https://kidquant.com/category/programming/</link>
+      <atom:link href="https://kidquant.com/category/programming/index.xml" rel="self" type="application/rss+xml" />
+    <description>Programming</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <title>Programming</title>
+      <link>https://kidquant.com/category/programming/</link>
+    </image>
+    
+    <item>
+      <title>Does Diversification Always Matter?</title>
+      <link>https://kidquant.com/post/2024-28-2014-does-diversification-always-matter/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2024-28-2014-does-diversification-always-matter/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve previously talked about Modern Portfolio Theory (MPT) and diversification in the past, the assumptions underlying MPT, and the construction of an Portfolio Frontier (PF). When most people think of diversifying their portfolio, they think of limiting their downside risk. However, it is possible construct a portfolio that still maximizes return with the least amount of volatility (choosing a portfolio that lies somewhere along the PF).&lt;/p&gt;
+&lt;p&gt;Now I&amp;rsquo;m going to further expand upon why diversification helps to maximize risk-adjusted returns, and express the limits of diversification.&lt;/p&gt;
+&lt;h3 id=&#34;what-makes-a-portfolio&#34;&gt;What Makes a Portfolio?&lt;/h3&gt;
+&lt;p&gt;We can define a &lt;em&gt;portfolio&lt;/em&gt; as a combination of $N$ assets with $N$ portfolio weights that sum to unity:&lt;/p&gt;
+&lt;p&gt;$$\bold{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.$$&lt;/p&gt;
+&lt;p&gt;The weight, $w_N$, represents the proportion of the $n$th asset in the portfolio. If $M_n$ and $P_n$ are the number and price of the $n$th asset, then $w_n$ is simply the total value of the $n$th asset normalized by the value of the portfolio:&lt;/p&gt;
+&lt;p&gt;$$w_n=\frac{M_nP_n}{M_1P_1+\ldots+M_nP_N}$$&lt;/p&gt;
+&lt;p&gt;Weights can be negative, such we could &lt;em&gt;short sell&lt;/em&gt; an asset (profiting from asset price going down). Also, weights could be greater than unity, meaning that we are using leverage. We won&amp;rsquo;t get into these complicated scenarios and use only the basic assumptions in the summary of our portfolio.&lt;/p&gt;
+&lt;p&gt;Imagine, for example, that we had an investment account of $\mathrm{$}10,000$ with $40$ shares of stock $A$ at $\mathrm{$}150$ per share, $50$ shares of stock $B$ at $\mathrm{$}20$ per share, and $25$ shares of stock $C$ at $\mathrm{$}120$ per share. Then our portfolio with weights would be&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Asset&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Shares&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Price per share&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Investments&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Weight&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$A$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;40&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;150&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6000&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$B$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;50&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;20&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1000&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$C$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;25&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;120&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3000&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;However, the weights need not be just the proportion of a given stock or asset. For example, suppose we were trading on margin, with $\mathrm{$}8,000$ in our account to support our $\mathrm{$}10,000$ investment. If we withdrew $\mathrm{$}2,000$ from our investment account, then our portfolio in dollars would be unchanged, but our portfolio weights would have changed:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Asset&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Shares&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Price per share&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Investments&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Weight&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$A$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;40&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;150&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6000&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$B$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;50&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;20&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1000&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$C$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;25&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;120&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3000&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Margin&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-2000&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The weights change because the normalizer changes from $\mathrm{$}10,000$ to $\mathrm{$}8,0000$.&lt;/p&gt;
+&lt;h3 id=&#34;defining-risk-and-reward&#34;&gt;Defining risk and reward&lt;/h3&gt;
+&lt;p&gt;Now that we have defined what a portfolio is, we can outline what we want to do. We can construct a portfolio that maximizes reward and minimizes risk, where &amp;ldquo;reward&amp;rdquo; is defined as overal portfolio return and &amp;ldquo;risk&amp;rdquo; is defined as the volatility ($\sigma$ or $\sigma^2$) of that return.&lt;/p&gt;
+&lt;h3 id=&#34;diversification-with-uncorrelated-assets&#34;&gt;Diversification with uncorrelated assets&lt;/h3&gt;
+&lt;p&gt;We can derive the mean-variance analysis by calculating the mean (expected return) and the variance on that portfolio. Let $R_n$ denote the return on the $n$th asset in a portfolio. By definition, its mean and variance are&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\mathbb{E}[\mathbb{R_n}]\overset{\Delta}{=}&amp;amp;\mu_n,\
+\mathbb{V}[R_n]=&amp;amp;\mathbb{E}[(R_n-\mu_n)^2]\overset{\Delta}{=}\sigma^2_{n}.\
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;Now let $R_p$ denote the return on the entire portfolio, this is the quantity we&amp;rsquo;re interested in. By the linearity of expectation, we have&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+R_p\overset{\Delta}{=}&amp;amp;w_1R_1+\dots+w_NR_N,\
+\Downarrow &amp;amp; \
+\mathbb{E}[R_p]=&amp;amp;\mathbb{E}[w_1R_1+\dots+w_NR_N]\
+=&amp;amp;w_1\mathbb{E}[R_1]+\dots+w_N\mathbb{E}[R_N]\
+=&amp;amp;w_1\mu_1+\dots+w_N\mu_N\
+\overset{\Delta}{=}&amp;amp;\mu_p
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;The first line of this equation is just an accounting identity. It&amp;rsquo;s how we would calculate the return on our portfolio given weights $\bold{w}$ and returns $R_1,\ldots,R_N$. The variance of our portfolio&amp;rsquo;s return is&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\mathbb{V}[R_p]&amp;amp;=\mathbb{E}[(R_p-\mu_p)^2]\
+&amp;amp;=\mathbb{E}\Big[\big((w_1R_1+\dots+w_NR_N)-(w_1\mu_1+\dots+w_N\mu_N)\big)^2\Big]\
+&amp;amp;=\mathbb{E}\Big[\big((w_1(R_1-\mu_1)+\dots+w_n(R_N-\mu_N)\big)^2\Big]\
+&amp;amp;\overset{\Delta}{=}\sigma^2_p.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;If we have $N$ assets in our portfolio, and we square the term in the last line in this equation, we get $N^2$ terms inside this expectation. We can write the variance for a single combination $R_n$ and $R_m$ as:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\mathbb{E}[w_nw_m(R_n-\mu_n)(R_m-\mu_m)]&amp;amp;=w_nw_m\mathbb{E}[(R_n-\mu)(R_m-\mu)]\
+&amp;amp;=w_nw_m\text{Cov}[R_n,R_m]\
+&amp;amp;=w_nw_m\sigma_{nm}\
+&amp;amp;=w_nw_m\sigma_n\sigma_m\rho_{nm},
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;where $\sigma_{nm}$ and $\rho_{nm}$ are the covariance and correlation between the $n$th and $m$th assets respectively. This provides some basic definitions from probability. Recard that&lt;/p&gt;
+&lt;p&gt;$$
+\rho_{mn}=\frac{\text{Cov}[R_n, R_m]}{\sigma_n\sigma_m}.
+$$&lt;/p&gt;
+&lt;p&gt;Now here&amp;rsquo;s the main point: The variance of our portfolio is a function of the covariances between the assets in the portfolio. We can represent this compactly using a covariance matrix:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{bmatrix}
+w_1^2\sigma_1^2 &amp;amp; \dots &amp;amp;w_1w_N\sigma_{1N}\
+\vdots &amp;amp; \ddots &amp;amp; \vdots \
+w_Nw_1\sigma_{N1} &amp;amp; \dots &amp;amp; w^2_N\sigma^2_N\
+\end{bmatrix}=
+$$&lt;/p&gt;
+&lt;p&gt;Notice that there are $N$ variance terms (the diagonal of the covariance matrix), while there are $N^2-N$ covariance terms (everything else in the matrix). What this means is that the correlations between assets controls our portfolio&amp;rsquo;s volatility. Positive or negative correlation between asset controls our portfolio&amp;rsquo;s volatility. Positive or negative correlation between assets can increase portfolio volatility, while uncorrelated assets decrease volatility.&lt;/p&gt;
+&lt;h3 id=&#34;mean-variance-analysis&#34;&gt;Mean-variance analysis&lt;/h3&gt;
+&lt;h3 id=&#34;limits-of-diversification&#34;&gt;Limits of diversification&lt;/h3&gt;
+&lt;p&gt;As we have seen, uncorrelated assets allows us to reduce the overall volatility in a portfolio. The ups and downs are less volatile. However, there is only so much benefit you can achieve by adding more assets to a portfolio. Think of it as the &amp;ldquo;Laws of Diminishing Returns.&amp;rdquo; We can see, as the number of assets in the portfolio increase, the portfolio variance decreases.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Diversification/figure1.jpg&#34; alt=&#34;Portfolio Risk&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;However, notice the benefits of diversification are constrained not only by the portfolio variance, but what we call &amp;ldquo;systematic risk&amp;rdquo;. In essence, investors aren&amp;rsquo;t compensated for taking what we call &amp;ldquo;unsystematic risk,&amp;rdquo; that is, risk that can be diversified away. Recall that the Equity Risk Premium is denoted by $E[r]=r_\alpha-r_f=\beta_\alpha(r_m-r_f)+\epsilon$.&lt;/p&gt;
+&lt;p&gt;Looking at the derivation of the Capital Asset Pricing Model (CAPM), we should receive a premium for investing in equities over debt, particularly the risk-free rate ($r_\alpha-r_f$). This makes sense, as without this premium, there would be nothing to entice owners of capital to invest in equities over treasuries. Also, investors should expect a premium for the systemic risk of the overall market $\big(\beta*(r_m-r_f)\big)$. Since equities are significantly more risky compared to treasuries, and given the universe of stocks have $\beta&amp;gt;1$ (meaning, most stocks are positively correlated), it is nearly impossible to diversify away systemic risk.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Is DJT a Meme Stock?</title>
+      <link>https://kidquant.com/post/2024-04-02-djt-meme-stock/</link>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2024-04-02-djt-meme-stock/</guid>
+      <description>&lt;p&gt;Donald Trump&amp;rsquo;s knock-off Twitter has officially become public for under a week, and the entire country didn&amp;rsquo;t take long to create an investment thesis about it. Just in case you fell asleep, Trump got himself banned from Twitter for&amp;hellip; reasons [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;To combat the bias and censorship that was prevalent at the time, Trump decided to launch his social media network called Truth Social, which was created by T Media Tech LLC in 2021, owned by Trump Media &amp;amp; Technology Group Corp. Since then, the company was acquired via SPAC (Special Purpose Acquisition Vehicle) by Digital World Acquisition Corp.&lt;/p&gt;
+&lt;p&gt;You can find the stock on the NASDAQ exchange under the ticker DTJ, which I&amp;rsquo;m sure is just a coincidence. It&amp;rsquo;s currently trading at $~49$ per share, down from it&amp;rsquo;s peak of $~66$ per share. Trump is currently the majority shareholder, owning $~57%$ of the available shares.&lt;/p&gt;
+&lt;p&gt;So it begs the question: &lt;strong&gt;Is DJT, a company owned by the former President of the United States, a meme stock?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Probably.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-DJT/stonks.png&#34; alt=&#34;Stonks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;At least according to the analysis I conducted three years ago is concerned. Recall that I&amp;rsquo;ve created an algorithm that tracks the most frequently mentioned assets on the infamous subreddit: Wall Street Bets [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Three years ago, owning shares of AMC, GME, BB, and some crypto was cool. Today, owning shares of NVDA, AAPL, SPY, RDDT (obviously), and DJT is cool, so it&amp;rsquo;s a mixed bag for the overall &amp;ldquo;memeness.&amp;rdquo; Some of the assets that generate a lot of buzz on the subreddit are definitely at risk. On the other hand, some of the assets are more established, less volatile, positive cash flow generating assets.&lt;/p&gt;
+&lt;p&gt;So what does this all mean? What is going on? Did the &amp;ldquo;Retards&amp;rdquo; over at WSB learn from their diamond hands fiasco and decide to adopt a more mature investment philosophy? Or they chose to do what all retail traders do: talk about exciting companies.&lt;/p&gt;
+&lt;p&gt;One thing is for sure: We don&amp;rsquo;t need WSB to figure out whether DJT is a sound investment because DJT—like everything related to Donald John Trump—stems, and will forever stem, from whether or not you hate Donald Trump. It&amp;rsquo;s impossible to have a neutral opinion about him, even things about him that are objectively true. (such as, he lost the election; handled it poorly AND people were consistently trying to sabotage his administration)&lt;/p&gt;
+&lt;p&gt;If you love Trump, DJT is the greatest thing ever, it&amp;rsquo;s going to the moon, and everyone loves the stock.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-DJT/diamond.png&#34; alt=&#34;Diamond Handsl&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;If you hate Trump, DJT is a clear scam; a pump and dump (it&amp;rsquo;s not a pump and dump) and it&amp;rsquo;s going to zero, just like his other businesses.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-DJT/zero.png&#34; alt=&#34;zero&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Like everything, the truth is probably close to the middle but definitely much closer to zero than the moon. Right now, DJT is receiving a wave of bad press, mostly related to lackluster earnings performance and the uncertainty of the firm&amp;rsquo;s future viability. As expected, the stock took a hit based on that news.&lt;/p&gt;
+&lt;p&gt;Most outsiders typically don&amp;rsquo;t understand that every asset class has a behavioral aspect (the stock skyrocketed upon news of the successful merger; it tanked upon news of poor performance). If what we are experiencing with DJT is indeed behavioral, then this period of volatility will go away. However, as it stands right now, the market expects the stock to go lower simply because it generates huge losses from its operating activities, and there is no evidence of a viable user base on the platform.&lt;/p&gt;
+&lt;p&gt;Again, I&amp;rsquo;m not saying that the stock is worthless, BUT it&amp;rsquo;s also not worth $7 billion dollars.&lt;/p&gt;
+&lt;h3 id=&#34;will-i-analyze-djt-similiar-to-other-meme-stocks&#34;&gt;Will I Analyze DJT Similiar To Other Meme Stocks?&lt;/h3&gt;
+&lt;p&gt;Other meme stocks, such as GME and AMC, were different from DJT because these companies are more established. GME and AMC have been around for over two decades, while DJT has just arrived on the scene. Also, DJT is a SPAC, so the asset inherently has a negative connotation attached to it. We would need more data about the company to determine whether it can deliver excess returns to investors. So, I won&amp;rsquo;t be conducting any research relating to DJT, and even if I wanted to, it would primarily be conducted utilizing quantitative methods.&lt;/p&gt;
+&lt;p&gt;Since I&amp;rsquo;ve already stated that it&amp;rsquo;s fair value is closer to zero than to the moon, does this imply that I know it&amp;rsquo;s fair value? Not exactly. Anyone who has visited my page can probably guess that I subscribe to &lt;strong&gt;Efficient Market Hypothesis&lt;/strong&gt;, which is an investment theory that states all relevant information (maybe past and present) is reflected in the current share price. Also, since stock prices fluctuate randomly, their predictability is no better than flipping a coin. As such, it&amp;rsquo;s almost impossible to consistently outperform the markets in the long run.&lt;/p&gt;
+&lt;p&gt;So, just because DJT was up for three consecutive days last week doesn&amp;rsquo;t mean it&amp;rsquo;ll be up on the fourth day; it also doesn&amp;rsquo;t mean it will be down on the fourth day, either. Even though there is a solid upward bias, it&amp;rsquo;s essential to understand that asset prices are random, and it&amp;rsquo;s necessary to build a framework that can capture said randomness (quant finance, for starters). Don&amp;rsquo;t bet on it going to the moon, but don&amp;rsquo;t bet on it going to zero for the foreseeable future.&lt;/p&gt;
+&lt;p&gt;Regardless, the only reason to pick a dog in this fight is to vindicate your confirmation biases. If DJT succeeds, it will be another example of Trump&amp;rsquo;s business prowess and a triumphant story of beating the odds against him, thus proving he deserves another shot at the presidency. If DJT fails, it will, once again, be another one of his failed business ventures, proving that he doesn&amp;rsquo;t know what he&amp;rsquo;s doing and he doesn&amp;rsquo;t care about delivering value to anyone; he just cares about milking his supporters.&lt;/p&gt;
+&lt;p&gt;As always, pick your own adventure.&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://www.npr.org/2021/01/08/954760928/twitter-bans-president-trump-citing-risk-of-further-incitement-of-violence#:~:text=Twitter%20Permanently%20Suspends%20Trump%2C%20Citing,Further%20Incitement%20Of%20Violence%27%20%3A%20NPR&amp;amp;text=Close%20Navigation%20Menu-,Twitter%20Permanently%20Suspends%20Trump%2C%20Citing%20%27Risk%20Of%20Further%20Incitement%20Of,that%20violated%20the%20company%27s%20rules.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NPR| Twitter Permanently Suspends Trump, Citing &amp;lsquo;Risk Of Further Incitement of Violence&amp;rsquo;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/post/2021-05-24-wsb-favorite-stock/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KidQuant | r/WallStreetBets Most Talked About Stonks&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How Dangerous Is Biking in New York City</title>
+      <link>https://kidquant.com/post/2024-03-31-biking-accidents/</link>
+      <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2024-03-31-biking-accidents/</guid>
+      <description>&lt;p&gt;I tried analyzing cycling accidents around New York City, but it was difficult to draw meaningful conclusions from the data. For example, men die more frequently than women while biking, according to a report on Bicyclist Fatalities and Serious Injuries in New York City.&lt;/p&gt;
+&lt;p&gt;However, interpreting this data is tricky. For example, do more men die because more men bike or is it because they engage in riskier behavior? I had a different issue with analyzing accident locations (even though the data has geogrpahical location, longitude and latitude). Do more accidents happen at intersections because intersections are more dangerous or because they are easier locations to record? These kinds of questions are subtle and require careful data collection and analysis to answer.&lt;/p&gt;
+&lt;p&gt;Furthermore, I found it hard to see how any conclusions would be actionable. I&amp;rsquo;m not going to start leaving work at 3 PM, even if 5 PM is a truly riskier time to bike.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Biking-Accidents/accidents.png&#34; alt=&#34;Biking Accidents in the city&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;So what can I do? In my mind, the simplest framing is that biking is dangerous because I am sharing the road with cars. To justify this claim, consider these data from DOT&amp;rsquo;s Bicycle Crash Data Reports. They point a clear picture about the risk of accidents with and without cars. The simplest thing I can do is to plan my route to maximize time in bike lanes, ideally protected bike lanes. And I should be extra careful in moments where I interact with cars.&lt;/p&gt;
+&lt;h3 id=&#34;estimating-the-risk&#34;&gt;Estimating The Risk&lt;/h3&gt;
+&lt;p&gt;Now let&amp;rsquo;s calculate my risk. Let $X$ be a random variable denoting my lifetime. Let&amp;rsquo;s assume that my only risk of death is via my commute and that dying occurs with probability $p$, where $p$ is the estimated KSI over my lifetime by biking:&lt;/p&gt;
+&lt;p&gt;$$
+p=\frac{30}{10,000,000}
+$$&lt;/p&gt;
+&lt;p&gt;An assumption here is that my risk of a severe injury or death on each ride is independent of all other rides. Often, independence assumptions are obviously false simplifications, but here I think it is reasonable. Without a concerted effort on my part to learn to bike more safely, I suspect that each ride carries roughly the same risk.&lt;/p&gt;
+&lt;p&gt;The $X$ is a geometric random variable,&lt;/p&gt;
+&lt;p&gt;$$
+X\sim\text{geom}(p),
+$$&lt;/p&gt;
+&lt;p&gt;and the probability that I do not make $x$ rides without severe injury or death is given by the cumulative distribution function,&lt;/p&gt;
+&lt;p&gt;$$
+\mathbb{P}(X\le 8000) = 1-\bigg(1-\frac{30}{10,000,000}\bigg)^{8000}\approx 2.4%.
+$$&lt;/p&gt;
+&lt;p&gt;As I mentioned, this is conservative because $p$ and $x$ are both high in my mind. I doubt that I&amp;rsquo;ll bike to work this consistently over twenty years, and I also think (hope?) that NYC will become safer over time, that $p$ will actually decrease, driving biking infrastructure improvements.&lt;/p&gt;
+&lt;p&gt;Note that while I&amp;rsquo;ve framed the calculation in terms of number of years commuting, the units of 8000 is simply &amp;ldquo;rides&amp;rdquo;. Thus, this risk is independent of time. If I decided to do 8000 rides in a single year, then I&amp;rsquo;d have a $2.4%$ chance of dying of biking in that year, according to these assumptions.&lt;/p&gt;
+&lt;h4 id=&#34;a-sanity-check&#34;&gt;A Sanity Check&lt;/h4&gt;
+&lt;p&gt;As a sanity check, let&amp;rsquo;s find a value $p$ from the literature, and compare it to city&amp;rsquo;s data. I&amp;rsquo;d expect the probability of dying by cycling averaged over time and space to be less than the probability of dying by cycling in NYC.&lt;/p&gt;
+&lt;p&gt;According to research, cycling twenty-eight miles has one micromort of risk. My commute&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Revisitng Delta</title>
+      <link>https://kidquant.com/post/2023-03-28-revisiting-delta/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2023-03-28-revisiting-delta/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve recently been tasked with working more with more fixed-income derivatives, so I&amp;rsquo;m writing this more as a refresher for myself, but I&amp;rsquo;ve always guaged how well I know something based on how well I&amp;rsquo;m able to teach others.&lt;/p&gt;
+&lt;p&gt;Recall that the Black-Scholes price of a European-style call option is&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\begin{aligned}
+C &amp;amp; = S\Phi(d_1)-Ke^{-rT}\Phi(d_2),\
+d_1 &amp;amp; = \frac{1}{\sigma\sqrt{T}}[log(S/K)+[r+(1/2)\sigma^2]T],\
+d_2 &amp;amp; = d_1-\sigma\sqrt{T},
+\end{aligned}
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;where $\Phi(x)$ is the cumulative distribution function (CDF) of the standard normal distribution:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\begin{aligned}
+\Phi(x):=\frac{1}{\sqrt{\pi}}\int^{x}_{-\infty}e^{-z^2/2}dz
+\end{aligned}
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;Since $\Phi(x)$ is the CDF of the standard normal distribution, its derivation $\Phi^\prime(x)$ is the probability density function(PDF) of the standard normal distribution. I&amp;rsquo;ll denote this with $\phi(x)$ or&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\phi(x):=\Phi^{\prime}(x).
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Delta ($\Delta$)&lt;/em&gt; captures the sensitivity, or more precisely the instanteneous rate of change, of the option price to the spot price. The Black-Scholes delta for a call option is&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\Delta(C)=\frac{\partial C}{\partial S}=\Phi(d_1)
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;where $\Phi(x)$ and $d_1$ are defined in Equations 1 and 2.&lt;/p&gt;
+&lt;p&gt;To understand delta, let&amp;rsquo;s start with an example. Suppose we have a stock with a price of $S=100$, a call option with a price of $C=10$, and a delta between the two of 0.7. (The prices do not matter here but will be in later examples.) Now imagine that we sell calls for $3000$ shares of this stock and want to hedge our resulting short position. We can use delta to compute the appropriate size of our hedge. We should put $0.7\times 3000=2100$ shares of the underlying stock. Why? This is just a direct application of Equation 4.&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s replace the differentials (e.g., $\partial C$) with small moves in the asset (e.g., $dC$). This is a fine thing to do because Equation 8 says that $\Delta$ is the linear appropriate of how the Black-Scholes prices of our calls will change. We can write this as&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\begin{aligned}
+dC=\Delta\times dS.
+\end{aligned}
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;Now let $w$ denote the number of shares of the stock assoicated with the calls we sold (here $w=3000$). Then by equation 5, we have&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+dC\times w = \Delta \times dS \times w
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;Our proposed hedge above is $\Delta \times w = 2100$, and this works because if the stock price changes by $dS=1$, then the call moves by $dC=0.7$, and we will make $2,100$ on our hedge and lose $0.7\times 3000=21000$ on our calls. In practice, this calculation is slightly more tedious because options are typically sold with a contract multiplier indicating the number of shares per contract, but this is just a matter of bookkeeping.&lt;/p&gt;
+&lt;p&gt;Thus, while the options we have sold have a delta of $0.7$, our actual portfolio position has a zero delta. We say that our portfolio is &lt;em&gt;delta neutral&lt;/em&gt;, which means that if the spot changes a little, the value of our options position does not change significantly.&lt;/p&gt;
+&lt;h3 id=&#34;dollar-delta&#34;&gt;Dollar Delta&lt;/h3&gt;
+&lt;p&gt;In the previous example, the raw values of the stock and call did not matter, and we had no sense of our total notional exposure. Thus, in practice, &lt;em&gt;mathematical delta&lt;/em&gt; (Equation 4) is often converted to &lt;em&gt;dollar delta&lt;/em&gt;, sometimes called notional delta, because this quantity tells us how much notional exposure we have to the underlying. A dollar delta is just delta times the spot price or&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+$\Delta=\Delta S
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;For example, our notional exposure in the previous example was the number of shares times dollar delta or&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\begin{aligned}
+$\Delta\times w &amp;amp; = \Delta\times S\times w  \
+&amp;amp; = 0.7\times$ 100\times 3000 \
+&amp;amp; = $ 210,000. \
+\end{aligned}
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;To hedge, we should buy $210,000$ of stock, which is obviously the same as buying $2,100$ shares of stock at $S=100$.&lt;/p&gt;
+&lt;p&gt;One benefit of considering a notional amount is that we can multiply the dollar delta by a percent change in the stock. In contrast, since delta represents a dollar change in stock move, per dollar change in option move, we cannot directly multiply mathematical delta by a relative move such as a return or percent return. To see this, consider the returns in our running example. Let $S_1$ denote the stock price after moving $dS$. Then, the return on $S$ is&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+R_S=\frac{s_1-S}{S}=\frac{101-100}{100}=0.01
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;while the return on C to a new price $C_1$ is&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+R_C=\frac{C_1-C}{C}=\frac{\Delta dS}{C}=\frac{0.7}{10}-0.07
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;And clearly&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\Delta R_S=0.7\times 0.01=0.007\neq 0.07=R_C
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;So, multiplying the mathematical delta by a relative move is nonsensical. Given Equation 8, we must operate on it in a way that makes sense.&lt;/p&gt;
+&lt;p&gt;However, we can multiply dollar delta by a relative move since&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\begin{aligned}
+$\Delta\times R_S &amp;amp;= \Delta\times S\times\bigg(\frac{S_1-S}{S}\bigg)\
+&amp;amp;= \Delta\times dS \
+&amp;amp;= dC.
+\end{aligned}
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;The dollar delta is nice because it tells us our notional exposure to the underlying and because we can multiply it by a relative move in the underlying to get a dollar change in the option.&lt;/p&gt;
+&lt;h3 id=&#34;portfolio-delta&#34;&gt;Portfolio Delta&lt;/h3&gt;
+&lt;p&gt;Imagine we had a portfolio of $n$ options. We can represent the value of our portfolio, $V_p$, as a weighted sum of these $n$ assets,&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+V_p=\sum_{i=1}^nw_i V_i,
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;where the portfolio weights represent the quantity of each option, and where $V_i$ is the value of the $i$-th call or put. By the linearity of differentiation, we can efficiently compute the delta of this portfolio.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\begin{aligned}
+\Delta(V_p) &amp;amp;= \frac{\partial V_p}{\partial S} \
+&amp;amp;= \sum_{i=1}^{n}w_i\frac{\partial V_i}{\partial S} \
+&amp;amp;= \sum_{i=1}^{n}w_i\Delta(V_i)
+\end{aligned}
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;Thus, the delta of a portfolio can be computed by adding up the deltas of the individual options.&lt;/p&gt;
+&lt;p&gt;For example, recall our short position in call options from the example above. Now imagine that we additionally have a long position in call options worth 2000 shares of the same underlying, where the delta of each option is $0.6$. The delta of our portfolio in shares of stock is&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\begin{aligned}
+-3000(0.7)+2000(0.6) &amp;amp;= -2100+1200\
+&amp;amp;=-900.
+\end{aligned}
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;Thus, our portfolio has a dollar delta of—$90,000$, which we can make delta-neutral by buying $90,000$ of stock. This makes sense. Before, we had a notional hedge of $210,000$. Now, given our long position in calls that behave roughly like half a stock, we have a notional hedge that is roughly half that.&lt;/p&gt;
+&lt;h3 id=&#34;delta-hedging&#34;&gt;Delta Hedging&lt;/h3&gt;
+&lt;p&gt;In our leading example, we hedged our delta from our option position, a short position in calls. Now that we understand the dollar delta, let&amp;rsquo;s think about a more general way to formulate the problem. Imagine a portfolio with a $\delta_{\Pi}$ delta. And imagine that another asset has a delta of $\Delta_i$. Then, to be delta neutral, we want to buy $w_i$ of this asset such that&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+w_i+\Delta_{\Pi}=0
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;Solving for $w_i$, we get&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+w_i=-\frac{\Delta_{\Pi}}{\Delta_i}
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;But what asset should we use here? We could find an option with a delta of $\Delta_i$, but a more straightforward thing would be to buy the underlying asset, which has a delta of one $(\Delta_i=1)$. So, our hedge in shares or dollars should be proportional to $w_i=\Delta_{\Pi}$, which is what we see in Equation 10. We can easily consider this regarding shares or dollars by multiplying both sides of Equation 21 as desired.&lt;/p&gt;
+&lt;h3 id=&#34;functional-form&#34;&gt;Functional Form&lt;/h3&gt;
+&lt;p&gt;Now that we understand how delta is used let&amp;rsquo;s dig into the precise definition of the Black-Scholes delta (Equation 8). This is an interesting result, but what it means may take time to be noticeable. First, note that since $\Phi(x)$ is the CDF of symmetric distribution, we can immediately guess that the delta&amp;rsquo;s shape is roughly a sigmoid function, which it is. This also makes sense if we visualize the slope of the tangent line changing as we move along the Black-Scholes price curve.&lt;/p&gt;
+&lt;p&gt;The delta for a call must initially be nearly zero when $S \ll K$, increase as $S$ approaches and passes $K$, and finally flatten off to almost one when $S\gg K$.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Revisitng-Delta/Delta_Put.png&#34; alt=&#34;BS as a function of spot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Notice that an at-the-money (ATM) option has a delta of slightly greater than 0.5. This is because while $\Phi(x)$ is symmetric with respect to its input $d_1$, the variable $d_1$ is a logarithmic function of $S$. Confusingly, some people will claim that the delta of an ATM option is 0.5. For example, Investopedia says&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An ATM option as a delta of $\pm 0.50$, positive if it is a call, negative for a put.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;But this is false. Just consider the full definition of delta for a call when $S=K$.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\Delta(C)=\Phi\bigg(\frac{[r+(1/2)\sigma^2]\sqrt{T}}{\sigma}\bigg).
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;since $\phi(x)$ is the cdf of the standard normal distribution, we can see that $\delta(c)=0.5$ only when $t=0$, assuming interest rates and volatility are nonzero. However, it only makes sense to talk about the delta of an atm option at expiry. We&amp;rsquo;ll discuss this when we discuss delta sensitivities to other parameters.&lt;/p&gt;
+&lt;p&gt;In most realistic scenarios (positive interest rates, nonzero volatility, and nonzero time expiry), the term $d_1$ is greater than zero when $S=K$, and thus the Black-Scholes delta of an ATM option is slightly greater than $0.5$.&lt;/p&gt;
+&lt;p&gt;A deep-in-the-money (ITM) option has a delta close to one, meaning it behaves like the spot. A deep out-of-the-money (OTM) option has a delta close to zero, meaning it is insensitive to the underlying price changes. Many of these points should hold for any option pricing model. However, it does not make sense to have an option pricing model with zero delta for an ITM option. So, the coherence of Black-Scholes Greeks with reality justifies this model.&lt;/p&gt;
+&lt;p&gt;It makes sense that the delta for a call option is in the $[0,1]$ since $\Delta$ is the slope of the relationship between the spot and option. Using put-call parity, we can immediately derive the delta for a put:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\begin{aligned}
+\Delta(P) &amp;amp;= \frac{\partial}{\partial S}P \
+&amp;amp;= \frac{\partial}{\partial S}(C+Ke^{-rT}-S) \
+&amp;amp;= \Delta(C)-1.
+\end{aligned}
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;Since $\Delta(C)$ ranges in $[0,1]$, clearly $\Delta(P)$ is in the range [-1,0]. And this makes sense, given the Black-Scholes price curve for a put (figure 2). So the delta for a call and put have the same shape for all input parameters but are shifted by one.&lt;/p&gt;
+&lt;h3 id=&#34;moneyness&#34;&gt;Moneyness&lt;/h3&gt;
+&lt;p&gt;At this point, we have enough understanding of delta to investigate a common interpretation of it: that it captures an option&amp;rsquo;s &lt;em&gt;moneyness&lt;/em&gt; and how likely it is that the option ends ITM.&lt;/p&gt;
+&lt;p&gt;To understand this, we need to understand $\Phi(d_1)$ and $\Phi(d_2)$ from the Black-Scholes equation. $\Phi(d_2)$ has a clean interpretation. It is the probability that the option ends ITM in a risk-neutral world. If this is unclear, interpret $\Phi(d_2)$ by mapping it onto the appropriate term in the binomial options-pricing formula, a discrete-time analog of Black-Scholes.&lt;/p&gt;
+&lt;p&gt;But since the moneyness interpretation of $\Phi(d_2)$ is accurate, it is only true of $\Phi(d_1)$ to the extent that $d_1\approx d_2$. How are these terms different? They differ by the volatility of the spot:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+d_2=d_1-\sigma\sqrt{T}
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;This reasoning suggests that the moneyness interpretation of delta is approximately accurate when volatility or time to expiry is low but is less accurate when volatility or time to expiry is high. This is precisely the relationship we see when we compare $\Phi(d_1)$ and $\Phi(d_2)$ for varying volatilities.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Revisitng-Delta/Delta_Impact_IV.png&#34; alt=&#34;Delta Volatility Sensitivity&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;delta-sensitivity&#34;&gt;Delta Sensitivity&lt;/h3&gt;
+&lt;p&gt;As we have seen already, the precise shape of the delta changes based on the other Black-Scholes inputs. Just as we can understand Black-Scholes by fixing all parameters but one, we can understand a single Greek, such as delta, by fixing all other parameters.&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s look at how delta changes while holding all other parameters fixed as the time to expiry $T$ decreases. I like plotting this with $T$ decreasing since the graph can be read left to right as physical time progresses. We can see that all options, regardless of money, have more similar deltas when the expiration date is far enough out. Then, as expiration approaches, ITM, ATM, and OTM options cover the delta of $1$, $0.5$, and $0$, respectively, for calls and $0$, $-0.5$, and $-1$, respectively, for puts.&lt;/p&gt;
+&lt;p&gt;Another way to see this is to visualize how the Black-Scholes price curve (for calls) changes as a function of time. In the left subplot of Figure 2, I plotted the Black-Scholes price curve for a call as the time to expiry $T$ decreases to zero. As we can see, when $T$ is large, the option&amp;rsquo;s delta is roughly 0.5 over an extensive range of stock values.&lt;/p&gt;
+&lt;h3 id=&#34;changing-delta&#34;&gt;Changing Delta&lt;/h3&gt;
+&lt;p&gt;Finally, it is essential to remember that delta is a derivative and is, therefore, the slope of the tangent line to the Black-Scholes price curve at a particular spot price! When the spot changes in value from $S$ to $S_1$, our original estimate of the delta is no longer correct. It should be a new value $\Delta_1$, representing the slope of the line tangent to the Black-Scholes price curve at $S_1$.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Revisitng-Delta/call_delta.jpeg&#34; alt=&#34;cal wrt &#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Hedging an options position by trading the underlying requires continuously rebalancing the hedged position due to this continuously accumulating &lt;em&gt;hedging error&lt;/em&gt;. One way to visualize this ever-changing error is by visualizing the gap between the linear equation $\Delta S_1+b$ and $\Delta_1 S_1+b_1$, where $b$ and $b_1$ and the $y$-intercepts their respective delta. What would increase this gap between the two points? More curvature to the Black-Scholes price curve.&lt;/p&gt;
+&lt;p&gt;This, in order to account for this hedging error, we could add a term that accounts for the curvature of the Black-Schole&amp;rsquo;s model a particular point. To do this, we use a second-order Greek called gamma, which we will get into in another post.&lt;/p&gt;
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+&lt;p&gt;[1] Daniel Sevcovic, Beata Stehlikova, Karol Mikula (2011). &amp;ldquo;Analytical and numerical methods for pricing financial derivatives&amp;rdquo;. Nova Science Pub Inc; UK.&lt;/p&gt;
+&lt;p&gt;[2] Wilmott Paul (1994), &amp;ldquo;Option pricing - Mathematical models and computation&amp;rdquo;. Oxford Financial Press.&lt;/p&gt;
+&lt;p&gt;[3] Steven Shreve (2005), &amp;ldquo;Stochastic calculus for finance&amp;rdquo;. Spring Finance&lt;/p&gt;
+&lt;p&gt;[4] Paul Wilmott (2006), &lt;em&gt;Paul Wilmott on quantitiative finance&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;[5] Broadie, Glasserman, Kou. &lt;em&gt;Connecting Discrete and Continuous Path-Dependent Options&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>r/WallStreetBets Most Talked About Stonks</title>
+      <link>https://kidquant.com/post/2021-05-24-wsb-favorite-stock/</link>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2021-05-24-wsb-favorite-stock/</guid>
+      <description>&lt;p&gt;One of the most bizarre David vs. Goliath scenarios in modern finance, by far, belongs to the retail investors from Reddit&amp;rsquo;s r/WallStreetBets versus Hedge Fund space. The story became such a fad that it garnered the attention of Treasury Secretary Janet Yellen and the SEC. With the democratization of finance, everyone can invest in markets once thought unobtainable to the common man.&lt;/p&gt;
+&lt;h2 id=&#34;rwallstreetbets-vs-wall-street-hedge-funds&#34;&gt;r/WallStreetBets vs. Wall Street Hedge Funds&lt;/h2&gt;
+&lt;p&gt;The mania revolves around the most shorted stocks, shorted by hedge funds that hoped to make a killing when those stocks collapse. For anyone unfamiliar with how short selling works, the art of short selling involves a hypothesis that an asset price will fall within a given time frame. The process consists of an investor borrowing a stock, selling the stock, and then buying the stock back to return to the lender (hopefully at a lower price than what the investor initially purchased).&lt;/p&gt;
+&lt;p&gt;Where do hedge funds fit into all of this? Well, a bunch of hedge funds decided to get into the business of shorting equities with the highest short-interest. (The number of shares that have been sold short but have not yet been covered or closed out) At one point, the short interest of GameStop shares was over 140% of the float. If institutional investors wanted to close out their positions, they would need to buy those shares. But who is going to sell them those shares?&lt;/p&gt;
+&lt;p&gt;The folks over at r/WallStreetBets have discovered that stocks with small float are the easiest to manipulate if enough people got together. They also figured out that stocks that were massively shorted and didn&amp;rsquo;t have many sellers left could be driven up to the point where investors would panic-buy to cover their short position. That panic buying would trigger a massive surge in GME&amp;rsquo;s price, which could wipe out those hated Hedge Funds.&lt;/p&gt;
+&lt;p&gt;Since then, stocks such as GME, along with plenty of others, have been dubbed what we in the business call &amp;ldquo;Meme Stocks.&amp;rdquo; A meme stock is basically the equity belonging to any publicly traded company where the stock has increased in value, not because of the company&amp;rsquo;s performance fundamentals, but purely based on the attention the stock is receiving on social media (namely r/WallStreetBets). I&amp;rsquo;m not entirely sure which stocks are considered &amp;ldquo;memes&amp;rdquo; (there is actually an index which tracks these types of equities), but I know that this list would comprise of companies such as AMC Entertainment Holdings (AMC), Bed Bath and Beyond (BBBY), and Blackberry (BB) [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;Now that the mania has passed, GME sits at around $180 per share. I once remember a single day of trading, GME opened at 191; surged to a high of 255; crashed to a low of 173, and still managed to close at 188 per share. Totally normal behavior for a stock. Since then, the price has stabilized at around the 150-180 price range.&lt;/p&gt;
+&lt;p&gt;What does this mean for GME? Does this imply that r/WallStreetBets have moved on to the next oversold stock?&lt;/p&gt;
+&lt;h2 id=&#34;getting-the-information-from-reddit&#34;&gt;Getting the Information from Reddit&lt;/h2&gt;
+&lt;p&gt;I began by navigating to r/WallStreetBets. My original plan was to build this similiar to the news media webscraper algorithm for a data science project that I&amp;rsquo;ve done [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. One of the issues with using that algorithm is being able to infinitely scrolling reddit and scraping the new information.&lt;/p&gt;
+&lt;p&gt;Rather than using pagination to reveal additional results, Reddits makes an async call to fetch additional posts as you scroll down the page. This means that when we make our requests, we&amp;rsquo;ll be able to scrape data from the ~20 or so posts but won&amp;rsquo;t access additional data by requesting the next page.&lt;/p&gt;
+&lt;p&gt;However, there is a workaround that I&amp;rsquo;ve found to access the data I need: &lt;strong&gt;PRAW&lt;/strong&gt;. PRAW stands for Python Reddit API Wrapper. PRAW is an api that allows you to easily read and write data to the website. To use it, you need to create the app credientials via Reddit and retrieve the &lt;code&gt;client_id&lt;/code&gt; and &lt;code&gt;client_secret&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Also, we&amp;rsquo;re going to need a list of all publicly traded US stocks and their ticker symbols, so the script will know which strings (or text) to match. The NASDAQ website allows you to download a list from the major US exchanges, such as the New York Stock Exchange, American Stock Exchange (I didn&amp;rsquo;t realize this was still a thing), and of course, NASDAQ [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;The NASDAQ screener covers micro and nano-cap equities (the stock of companies with less than 300 million dollars in market capitalization); it covers the equities of companies of different regions; it even covers American Depository Receipts (or ADRs for short).&lt;/p&gt;
+&lt;h2 id=&#34;scraping-reddit-via-praw&#34;&gt;Scraping Reddit via PRAW&lt;/h2&gt;
+&lt;p&gt;Getting the information from via involves 3 easy steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Getting content from r/WallStreetBets&lt;/li&gt;
+&lt;li&gt;Analyzing word frequencies&lt;/li&gt;
+&lt;li&gt;Inner joining word frequencies with stock tickers&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pandas&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;praw&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;re&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;requests&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;reddit&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;praw&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Reddit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;client_id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;YOUR CLIENT ID&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;client_secret&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;YOUR CLIENT SECRET&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;user_agent&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;PRAW is actually easy to work with. PRAW stands for Python Reddit API Wrapper, which allows you to easily read and write data to the website. You start out by configuring an instance of Reddit, which requires the &lt;code&gt;client_id&lt;/code&gt; and &lt;code&gt;client_secret&lt;/code&gt; we&amp;rsquo;ll you&amp;rsquo;ll set up your authorized applications [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;The API also requires something called a &amp;ldquo;User Agent.&amp;rdquo; A user agent is a line of text that helps servers&amp;rsquo; identify who is requesting information from the website hosted on their server. Any popular user agent will do; however, you can find out your user agent by simply asking Google. The script shows precisely what yours should look like.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;post&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;reddit&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;subreddit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;wallstreetbets&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;limit&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;content&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;s2&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;post&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;s2&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;post&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;selftext&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataFrame&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The dataframe will end up looking like the following code block. In the first column, we have the title of the post; in the second, we have the text that encompasses the post.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/WSB-Favorite-Stocks/01.PNG&#34; alt=&#34;Dataframe&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The query only returned 388 rows of information, although we requested at most 1,000 post. This is because reddit has removed queries based on time and only allows reddit users to browse based on the most recent post. 388 post, while limiting, is also more than enough to extract the information that we need.&lt;/p&gt;
+&lt;p&gt;Now we need to analyze the data, which is the most complex part of the script. We&amp;rsquo;ll need to use some regular expressions, which will allow python to check a specific sequence of characters to match or find a set of strings, in our case, tickers or the company names. Python has a native package for this, know as &lt;code&gt;re&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We will loop through our data frame and utilize a key/value pair while iterating in this process. The key will be the words we are looking for in the post, while the value will be the frequency of the number of times certain words (in this case, tickers or companies) appear in each post. While we are doing this, we will also disregard the use of commonly-used terms, or filler words, in each of the posts. For those familiar with the Natural Language Processing techniques we used for analyzing media bias, the method is somewhat similar. [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;]&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;regex&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;re&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;compile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;[^a-zA-Z ]&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;word_dict&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;row&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;iterrows&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# titles&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;title&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;row&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;title&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;title&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;regex&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sub&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;title_words&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;split&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# content&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;content&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;row&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;text&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;content&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;regex&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sub&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;content_words&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;split&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# combine&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;words&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;title_words&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;content_words&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;words&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;A&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;B&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;GO&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;ARE&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;ON&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;IT&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;ALL&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;NEXT&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;PUMP&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;AT&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;NOW&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;FOR&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;TD&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;CEO&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;AM&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;K&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;BIG&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;BY&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;LOVE&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;CAN&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;BE&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;SO&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;OUT&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;STAY&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;OR&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;NEW&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;RH&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;EDIT&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;ONE&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;ANY&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;pass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;elif&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;word_dict&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;word_dict&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;word_dict&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;word_df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataFrame&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;from_dict&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;word_dict&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;items&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()))&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rename&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;columns&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Term&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Frequency&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In the final step we will simply create a frequency table that counts the number of times a certain stock has appeared in a recently created reddit post. For this you should be using the csv you have saved from the NASDAQ stock screener website. The results are listed in the following data frame.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;stonks_df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;merge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ticker_df&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;word_df&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Term&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;stonks_df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;stonks_df&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sort_values&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;by&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Frequency&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ascending&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ignore_index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;stonks_df&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/WSB-Favorite-Stocks/02.PNG&#34; alt=&#34;Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s interesting to see Macy&amp;rsquo;s on this list, considering that the retailer is practically on its deathbed (although, I did write about how clothing accessories and apparel have experienced the largest sales growth post-lockdown, so maybe not) [&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;Macy&amp;rsquo;s doesn&amp;rsquo;t appear to involve the same factors that sparked the AMC/GME buying frenzy &amp;ndash; vigorously pumping up stocks for companies that are relatively undervalued by the market &amp;ndash; doesn&amp;rsquo;t necessarily apply to all stocks that have piqued the interests of r/WallStreetBets. Of course, you can&amp;rsquo;t be considered &amp;ldquo;day-traders&amp;rdquo; if there is a rhyme or reason as to why you make certain trades by not others.&lt;/p&gt;
+&lt;p&gt;As a &amp;ldquo;sophisticated investor,&amp;rdquo; you may be wondering why I would be interested in the chatter of a retail trader platform such as r\WallStreetBets? It&amp;rsquo;s true; our markets and investment philosophies do not converge. However, this information is vital for a much large project that I plan on conducting within a year or so.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t really have a dog in this fight (although, in full disclosure, I am bearish on GME). Still, this information serves as documentation, either for those who seek vindication for being right (on an investment strategy or stock pick) or those who seek to scrub away their awful track records.&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://apnews.com/article/meme-stocks-buzz-fund-wall-street-c1b1086d9b4de2e69a9c790c97dd10e6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Associated Press | &amp;lsquo;Meme stocks&amp;rsquo; go mainstream: There&amp;rsquo;s now a fund for that&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/project/analyzing-news-articles-python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kidquant | Analyzing News Articles With Python&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://www.reddit.com/prefs/apps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reddit | Develop your Reddit Application&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://www.nasdaq.com/market-activity/stocks/screener&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NASDAQ | Stock Screener&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;5&#34;&gt;5&lt;/a&gt;] &lt;a href=&#34;https://www.nasdaq.com/market-activity/stocks/screener&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KidQuant | Analyzing New Articles With Python&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;6&#34;&gt;6&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KidQuant | Analyzing the Impact of COVID-19 on Retail&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Measuring Pandemic Progress: Log Scale vs. Per Capita</title>
+      <link>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</guid>
+      <description>&lt;p&gt;There have been many visualization projects created for the purposes of modeling COVID-19 cases and deaths. The best known are the graphs produced by John Burn-Murdock of the Financial Times. You can view his very create and beautiful COVID visualizations on his Twitter Page.&lt;/p&gt;
+&lt;p&gt;Before COVID, I think people were more used to viewing data in relative terms. Now, log-scale visualizations have become more widespread, primarily due to the way diseases spread during a pandemic.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s become so popular, programmers developed ways to replicate these charts using Python and R packages. The most notable being &lt;code&gt;tidycovid19&lt;/code&gt; package designed by Joachim Gassen. You can few the package on his GitHub [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-R&#34; data-lang=&#34;R&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Importing all of the necessary packages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tidyverse&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tsibble&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tidycovid19&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# selecting how the data will be formatted&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;updates&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;download_merged_data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cached&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;TRUE&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# plotting the countries of interests, &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;countries&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;AUS&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;NZL&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;ITA&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;ESP&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;USA&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;GBR&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;updates&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;plot_covid19_spread&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;highlight&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;countries&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;type&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;confirmed&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;edate_cutoff&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;min_cases&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Measuring-Progress/first_40_days.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+However, people have often wondered why we don&amp;rsquo;t present these numbers on a per capita basis? Burn-Murdock has provided a data-oriented reason why log-scales are used instead of per capita scaling.&lt;/p&gt;
+&lt;!-- tweet 1244380095164420101 --&gt;
+&lt;p&gt;It isn&amp;rsquo;t always clear when per capita metrics should (or should not) be used. However, many don&amp;rsquo;t often realize how per capita figures can distort the story of what is going on in the region.&lt;/p&gt;
+&lt;p&gt;For example, Switzerland has 2,975 cases per capita, while the United States has 1,841 cases per capita [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. However, cases are currently growing and doubling faster in the U.S. compared to Switzerland [3]. Obviously, Switerzland&amp;rsquo;s high per capita figure is primarily attributed to its small population size, not its response to containing the virus.&lt;/p&gt;
+&lt;p&gt;Simply put: per capita figures makes small countries look big, and vice versa. Not only that, per capita figures only shifts the curves vertically; it would not change the trajectory or slope of the curves. Remember the following:&lt;/p&gt;
+&lt;p&gt;$$log(Y_{t}/P_{t})=log(Y_{t})-log(P_{t})$$&lt;/p&gt;
+&lt;p&gt;Where $Y_{t}$ is the number of cases on dat $t$ and $P_{t}$ is the population on day $t$. Population doesn&amp;rsquo;t change much over a period of time, so per capita figures involves subtracking a constant from the log case data.&lt;/p&gt;
+&lt;p&gt;The same point applies to the differences in testing policies between countries. If Country A is testing more as a percentage of the population relative to Country B, then these differences will show up as a vertical difference between the plots. They won&amp;rsquo;t; however, show up in the trajectory.&lt;/p&gt;
+&lt;p&gt;Although these choices are still a bit of a judgment call (not standard among statisticians), we should look at the slope of the lines if we want to explore how countries are responding to the pandemic relative to others.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Measuring-Progress/cases_logratio.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;While the graph doesn&amp;rsquo;t tell us everything about how the pandemic is overwhelming the different health care systems around the world, it does show how each country is attempting to slow the infection rate and reduce the slope of their curves. It&amp;rsquo;s easier to compare the trajectory in this way, considering that we have to look to see which country is trending higher.&lt;/p&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://github.com/joachim-gassen/tidycovid19&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub | Jaochim Gassen TidyCovid19 Repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://twitter.com/jburnmurdoch/status/1244368708249817091&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter | John Burn-Murdock &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://ourworldindata.org/grapher/total-daily-covid-cases-per-million?tab=map&amp;amp;year=2020-04-15&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Our World In Data | Global COVID Cases per capita as of April 15th, 2020&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/project/tracking-covid19-cases/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KidQuant | Data Science Project on COVID Tracking (Post from Apr 13, 2020)&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Mathematics of Pandemics</title>
+      <link>https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/</link>
+      <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/</guid>
+      <description>&lt;p&gt;So, this is our very first pandemic. At least, it&amp;rsquo;s the first serious pandemic. I&amp;rsquo;ve lived through the 2009 H1N1 Pandemic, but I don&amp;rsquo;t really remember it all that well. All I know is that H1N1 is not nearly as serious as this, because now I&amp;rsquo;m forced to work from home.&lt;/p&gt;
+&lt;p&gt;Right now, COVID-19, a.k.a, the coronavirus is on our doorstep. There are more than 423,000 confirmed cases in the United States; 14,700 confirmed deaths [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. New York has the highest record death toll; we surpassed Washington State a few weeks ago. It certainly does feel like an apocalyptic scenario is about to occur.&lt;/p&gt;
+&lt;p&gt;Regardless, one good thing that can occur out of this situation is that the Coronavirus has rekindled the public&amp;rsquo;s interest in Mathematics. At least, marginally. Articles are circulating explaining &amp;ldquo;dangerous mathematics behind the coronavirus,&amp;rdquo; and how cases could grow exponentially [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-19-exponential.png&#34; alt=&#34;Coronavirus cases US&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The idea behind exponential growth as it relates to pandemics is that one person who has contracted the virus comes into contact with anyone. So the total number of cases increases to 2. Assume each infected person will come in contact with 1 new person. Then those 2 infected people will infect 2 more people, increasing confirmed cases to 4. Those 4 will eventually become 8, then 8 becomes 16, and so on.&lt;/p&gt;
+&lt;p&gt;This is how COVID-19 could work, but at best, it&amp;rsquo;s an oversimplification. Everyone online (and by everyone, I mean Twitter) has an opinion on what they believe will happen. Some people are behaving like it&amp;rsquo;s the end of the world; others think this will be over by Easter.&lt;/p&gt;
+&lt;p&gt;I, on the other hand, found that it is more useful to learn about the methodologies epidemiologists are using the model the virus.&lt;/p&gt;
+&lt;h2 id=&#34;the-sir-model&#34;&gt;The SIR Model&lt;/h2&gt;
+&lt;p&gt;The SIR model is a simple model developed by Ronald Ross and William Hamar, but greatly expanded by Anderson McKendrick and William Kermack, which simplified the process. Using this model, we assume the population consist of three types of individuals, which are denoted by variables $S$, $I$, and $R$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$S$ is the number of &lt;strong&gt;susceptibles&lt;/strong&gt;; who are not infected, but could become infected at a later point.&lt;/li&gt;
+&lt;li&gt;$I$ is the number of &lt;strong&gt;infectives&lt;/strong&gt;; individuals who have the diease and can transmit to others.&lt;/li&gt;
+&lt;li&gt;$R$ is the number of &lt;strong&gt;recovered&lt;/strong&gt; or removed; they cannot become infected or transmit to others.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It should be noted that people that have recovered from a virus may have developed a natural immunity over time, or they may have currently been in isolation, or they may have died. The SIR model doesn&amp;rsquo;t distinguish between these possibilities.&lt;/p&gt;
+&lt;p&gt;New infections will occur as a result of contact between infectives and susceptibles. In the SIR model, the rate at which new infections happen (as a function fo time) is $\beta$, $S$, $I$, for some positive constant $\beta$. These interactions occur as a form of &amp;ldquo;mixing,&amp;rdquo; and mixing allows us to utilize ordinary differential equations (ODE).&lt;/p&gt;
+&lt;p&gt;You don&amp;rsquo;t need any knowledge about differential equations. However, derivatives are how mathematicians describe the rate of change of as time goes on.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\frac{dS}{dt} &amp;amp; = -\beta \cdot S \cdot I \
+\frac{dI}{dt} &amp;amp; = \beta \cdot I \cdot \frac{S}{N} - \nu \cdot I \
+\frac{dR}{dt} &amp;amp; = \nu \cdot I,
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;where the diease transmission rate $\beta &amp;gt; 0$, and the recovery rate $\nu &amp;gt; 0$ (or in other words, the duration of infection $D=1/\nu$).&lt;/p&gt;
+&lt;p&gt;As you may have noticed, that total population $S+I+R$ is constant because the differential equation $\frac{dS}{dt}+\frac{dI}{dt}+\frac{dR}{dt}=-\beta IS+(\beta IS -\nu I) + \nu I=0$&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s probably easier to visualize this instead of talking about this subject in the abstract. There are some developers on GitHub that have implemented the SIR model for creating an infectious disease model. One of whom goes by the name of Henri Froese, who is a computer science student [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
+&lt;h3 id=&#34;model-parameters&#34;&gt;Model Parameters&lt;/h3&gt;
+&lt;p&gt;We want to derive our differential equation, $\frac{dS}{dt}$, $\frac{dI}{dt}$, and $\frac{dR}{dt}$ with the parameters $S$, $I$, $R$, $\beta$, and $\nu$. We will also adjust for the population&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# creating a function for the differential equation&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;deriv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dSdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dIdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dRdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dSdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dIdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dRdt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We&amp;rsquo;re simulating a pandemic in a town with a population of 1,000 (not a very large but it&amp;rsquo;s easier to wrap your head around). We will assume that an infected person infects one other person per day ($\beta = 1$).&lt;/p&gt;
+&lt;p&gt;For our made up virus, we will set the duration of infection for four days. The initial condition starts with one infection, which leaves 999 susceptible people (and no recoveries, so far).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;N&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;4.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;S0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;999&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;linspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;49&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;y0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ret&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;odeint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deriv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;args&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ret&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;T&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The solution to a differential equation is any condition that satisfies it, so we are going to use the &lt;code&gt;odeint&lt;/code&gt; method to integrate the differential equation. Afterward, we unpack the results for S, I, and R into variables which we can then plot.&lt;/p&gt;
+&lt;h3 id=&#34;the-diease-always-dies-out&#34;&gt;The Diease Always Dies Out&lt;/h3&gt;
+&lt;p&gt;There are lots of high profile individuals; particularly, President Trump has suggested that the virus will go away on its own without a vaccine [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;]. This may happen; it may not happen. We don&amp;rsquo;t know enough about the virus to determine if this is true. One thing is certain; we know enough about the epidemiology to say that the virus disappearing isn&amp;rsquo;t outside the realm of possibility [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;]. Mathematically, we can prove this by contradiction.&lt;/p&gt;
+&lt;p&gt;Consider the differential equation for the recovery rate, $\frac{dR}{dt}=\nu I$. Let&amp;rsquo;s say that the initial condition $I(\infty)=0$ for all initial conditions, without having a formula for $I(t)$. If not, $\frac{dR}{dt}=\nu I$ implies that for $t$ sufficiently large, $\frac{dR}{dt}&amp;gt;\nu I(\infty)/2&amp;gt;0$, and this implies that $R(\infty)=\infty$, which is a contradiction.&lt;/p&gt;
+&lt;p&gt;As such, at some point, the virus will eventually die out. It&amp;rsquo;s all a matter of how many people must become infected with the virus.&lt;/p&gt;
+&lt;h3 id=&#34;the-epidemic-threshold-theorem&#34;&gt;The Epidemic Threshold Theorem&lt;/h3&gt;
+&lt;p&gt;The effective reproductive number $R_{e}=(S(0)/N)b/\nu$ and the basic reproductive number $R_{0}=b/\nu$. If the entire population is initially susceptible, for example, $S(0)=N-1, I(0)=1, R(0)=0,$ and large (the model&amp;rsquo;s assumption), then $R_{e}=((N-1)/N)b/\nu$ is approximately equal to $R_{0}$. As such, we will assume the quantity $(N-1)/N$ is equal to 1.&lt;/p&gt;
+&lt;p&gt;As we can see in our simple model, confirmed cases peak around day 10 and addition cases begin to decrease until the virus finally dies out. We already observed that $(\frac{dI}{dt})(0)=\nu (R_{e}-1)I(0)$, which implies that the number of infected individual initially starts growing/decreasing exponential at the rate $\nu(R_{e}-1).$&lt;/p&gt;
+&lt;p&gt;As such, there are two conditions that determines whether an infectious diease will quickly die out or whether it will invade the population can cause an epidemic:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Case #1&lt;/strong&gt;: If $R_{e}\leq 1$, then $I(t)$ decreases monotonically to zero as $t \rightarrow \infty $.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Case #2&lt;/strong&gt;: If $R_{e}\geq 1$, then $I(t)$ starts increasing, reaches its maximum, and then decreases to zero as $t \rightarrow \infty$. The scenario of the increasing number cases is what starts an epidemic.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We will plot how this works using Python.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;plotsir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;subplots&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;figsize&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;b&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;linewidth&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;label&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Susceptible&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;y&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;linewidth&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;label&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Infected&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;g&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;linewidth&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;label&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Recovered&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_xlabel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Time (days)&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;s1&#34;&gt;&amp;#39;Infected/Susceptible/Recovered People Over Time&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fontsize&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;.27&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;yaxis&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_tick_params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xaxis&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_tick_params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;grid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;which&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;major&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;w&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lw&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ls&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;-&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;legend&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;legend&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;legend&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get_frame&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;spine&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;top&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;right&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;bottom&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;left&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;spines&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;spine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_visible&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;plotsir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here is the output of the model.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/sir_model1.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;the-seirseid-model&#34;&gt;The SEIR/SEID Model&lt;/h2&gt;
+&lt;p&gt;The first SIR model is much too simple for our very complicated situation. We also may need to consider the fact that people who have the virus may not exhibit any symptoms. Some people who contract a virus may not immediately become infectious, at least, not to the point where they spread the virus around to other people. This period is known as the incubation period. The incubation period is the time between the exposure of a disease when symptoms of the disease begin to show.&lt;/p&gt;
+&lt;p&gt;Right now, we estimate that the incubation period for COVID-19 is a little over 5 days. The vast majority of people who begin to show symptoms usually do so within 11.5 days of infection [&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;]. However, the problem with the incubation period with COVID-19 is that people become infectious without showing any symptoms at all. These factors are what makes the coronavirus particularly deadly.&lt;/p&gt;
+&lt;p&gt;Because of the complexity of the incubation period, we need to account for another variable, the &lt;em&gt;Exposed&lt;/em&gt;. As such, we introduce the variant of the SEIR model:  Susceptible people contract the virus, then become exposed, then become infected, then eventually recover. We introduce a new variable to represent the rate at which those exposed become infected, $\delta$.&lt;/p&gt;
+&lt;p&gt;We also need to account for the fact that some people never recover from the virus. Some people pass away due to complications related to a disease, as it is the case with COVID-19. Of course, you can only die from a disease that you&amp;rsquo;ve been exposed to, so we introduce a new variable, $\rho$, which represents the rate at which people die from the virus.&lt;/p&gt;
+&lt;p&gt;Considering we have two possibilities, recovery and death, we need to account for the probability of going from infected to recovered or dead. We introduce one more variable, $\alpha$, which accounts for the death rate. Suppose 100 people are infected a day; 5% are estimated to die from the virus. Given these factors, 95% of people are estimated to recover.&lt;/p&gt;
+&lt;p&gt;The probability of going from infected to death is $alpha$ and the probability of going to from infected to recovered is $1-\alpha$.&lt;/p&gt;
+&lt;p&gt;As such, we have the following differential equations:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\frac{dS}{dt} &amp;amp; = -\beta \cdot I \cdot \frac{S}{N} \
+\frac{dE}{dt} &amp;amp; = \beta \cdot I \cdot \frac{S}{N} - \delta \cdot E  \
+\frac{dI}{dt} &amp;amp; = \delta \cdot E - (1-\alpha) \cdot \nu \cdot I - \alpha \cdot \rho \cdot I \
+\frac{dR}{dt} &amp;amp; = (1 - \alpha) \cdot \nu \cdot I \
+\frac{dD}{dt} &amp;amp; = \alpha \cdot \rho \cdot I
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;new-model-parameters&#34;&gt;New Model Parameters&lt;/h3&gt;
+&lt;p&gt;We want to derive our differential equation, $\frac{dS}{dt}$, $\frac{dE}{dt}$, $\frac{dI}{dt}$,  $\frac{dR}{dt}$ and $\frac{dD}{dt}$ with the parameters $S$, $E$, $I$, $R$, $\alpha$, $\beta$, $\delta$, $\rho$, and $\nu$. We will also adjust for the population.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;deriv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dSdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dEdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dIdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dRdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dDdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dSdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dEdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dIdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dRdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dDdt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This time, we&amp;rsquo;re going to use a town with the population of 100,000 people. We will set the rate of exposure, or the incubation period ($\delta$), to five days. We&amp;rsquo;ll keep the duration of infection at 4 days. We will assume that the death rate from our virus is ~10%; and people generally die from the virus 9 days after infection.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;deriv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dSdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dEdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dIdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dRdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;dDdt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dSdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dEdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dIdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dRdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dDdt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;N&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;4.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;5.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;R_0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;5.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R_0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;9&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;S0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;linspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;y0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ret&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;odeint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deriv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;args&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;delta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alpha&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rho&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ret&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;T&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;plotseird&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;I&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The model provides the following output:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/sir_model2.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We added the total line to sanity check everything. All of the possible states should add up to 100,000. Based on the parameters, we could expect the virus to infect ~200,000 people while exposing ~350,000 people. The difference between the two comprises our asymptomatic cases. (people who have been exposed to the virus, but fail to show symptoms) Overall, the virus ends up killing ~100,000 people under our scenario.&lt;/p&gt;
+&lt;h2 id=&#34;vaccination-and-heard-immunity&#34;&gt;Vaccination and Heard Immunity&lt;/h2&gt;
+&lt;p&gt;There is a lot of talk about the potential for a vaccine, as well as this concept of herd immunity. Obviously, vaccinating susceptible individuals reduces the number of susceptible individuals. Even if the vaccine is 100% effective (for comparison, the flu vaccine is only ~60% effective), vaccinating an entire population is very expensive. Also, not everyone can take the vaccine.&lt;/p&gt;
+&lt;p&gt;We also need to consider the fact that some individuals have severe allergies or compromised immune systems; vaccines can be very critical [&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;]. Vaccinations alone aren&amp;rsquo;t enough to prevent (or end) an epidemic; it also requires a phenomenon called herd immunity.&lt;/p&gt;
+&lt;p&gt;Recall from before, to prevent an epidemic, $R_{e} \leq 1$. Let $\rho$ denote the fraction of the susceptible individuals who receieve a vaccination (assuming 100% effectiveness). These amount of vaccinated individuals ($\rho S(0)$) have moved from the susceptible class to the removed class. As such, the size of the susceptible class becomes $(1-\rho)S(0)$.&lt;/p&gt;
+&lt;p&gt;To prevent an epidemic, it is necessary that&lt;/p&gt;
+&lt;p&gt;$$(1-\rho) , S(0) ,\beta /\nu \leq 1$$&lt;/p&gt;
+&lt;p&gt;This will occur when $\rho \geq \rho_{c}$, where $\rho_{c}=1-1/R_{e}$ denotes the critical vaccination threshold.&lt;/p&gt;
+&lt;h2 id=&#34;when-will-this-epidemic-end&#34;&gt;When Will This Epidemic End?&lt;/h2&gt;
+&lt;p&gt;No one knows for sure and right now we&amp;rsquo;re talking about staying locked down until the virus suddenly disappears (or until no one dies from it). This is probably not going to happen.&lt;/p&gt;
+&lt;p&gt;Consider what it would take to limit the number of susceptible individuals:&lt;/p&gt;
+&lt;p&gt;$$S(\infty) \geq S(0) , exp(-R_{0})&amp;gt;0$$&lt;/p&gt;
+&lt;p&gt;Dividing the differential equations for $dS$ and $dR$ yields the following ODE&lt;/p&gt;
+&lt;p&gt;$$\frac{dS}{dR}=\frac{-\beta IS}{\nu I}=\frac{-\beta S}{\nu}$$&lt;/p&gt;
+&lt;p&gt;This ODE is separable, since for $S&amp;gt;0$ it can be rewritten as&lt;/p&gt;
+&lt;p&gt;$$\int \frac{1}{S}dS=\int \frac{-\beta}{\nu}dR$$&lt;/p&gt;
+&lt;p&gt;Integrating both side yields&lt;/p&gt;
+&lt;p&gt;$$S(t) = S(0) , exp(-\beta (R(t)-R(0))/\nu)$$&lt;/p&gt;
+&lt;p&gt;Since $0 \leq R(t)-R(0)\leq N$ it follows that $S(t)\geq S(0), exp(-\beta N/\nu)$ and thus&lt;/p&gt;
+&lt;p&gt;$$S(\infty)\geq S(0), exp(-\beta N/\nu), =, S(0), exp(-R_{0})&amp;gt;0$$&lt;/p&gt;
+&lt;p&gt;As the epidemic continues, the number of susceptible individuals decreases, and so the rate at which new infections arise also decreases. Eventually, S(t) drops below $\nu/\beta$, and the rate at which individual recover exceeds the rate at which new infections occur. Thus, $I(t)$ starts decreasing.&lt;/p&gt;
+&lt;p&gt;The epidemic ends due to a lack of newly infected individuals, not because of the lack of susceptible individuals.&lt;/p&gt;
+&lt;h3 id=&#34;source&#34;&gt;Source&lt;/h3&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://www.cbsnews.com/live-updates/coronavirus-pandemic-covid-19-latest-news-2020-04-08/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CBS News | Coronavirus updates from April 8, 2020&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://www.washingtonpost.com/weather/2020/03/27/what-does-exponential-growth-mean-context-covid-19/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Washington Post | Exponential growth of coronavirus offers perilous math in the context of coronavirus&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://github.com/hf2000510/infectious_disease_modelling&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Henri Froese | Infectious Diease Modeling GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://www.youtube.com/watch?v=7qbtqew-CI8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Guardian News | Donald Trump says coronavirus will &amp;lsquo;go away without a vaccine&amp;rsquo;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;5&#34;&gt;5&lt;/a&gt;] &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6001967/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Brauer (2017) | Mathematical epidemiology: Past, present, and future&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;6&#34;&gt;6&lt;/a&gt;] &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6001967/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University of Massachusetts Amherst (March, 2020) | Median incubation period for COVID-19&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;7&#34;&gt;7&lt;/a&gt;] &lt;a href=&#34;https://www.cdc.gov/vaccines/adults/rec-vac/health-conditions/weakened-immune.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Center for Diease Control | Weakened Immune System and Adult Vaccination&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Solving Rubik&#39;s Cubes with Python</title>
+      <link>https://kidquant.com/post/2019-09-14-solving-a-rubiks-cube-in-python/</link>
+      <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://kidquant.com/post/2019-09-14-solving-a-rubiks-cube-in-python/</guid>
+      <description>&lt;p&gt;I enjoy solving Rubik&amp;rsquo;s cubes; my interest involves solving rubik&amp;rsquo;s cubes of different dimensions (3x3, 4x4, and triangles, etc) and discovering different algorithms. The internet is full of different solutions; however, it is it is rarely every described how these solutions were discovered. In this post, I&amp;rsquo;ll try to detail how one can solve the rubik&amp;rsquo;s cube from scratch.&lt;/p&gt;
+&lt;p&gt;Keep in mind, the solution presented in this post is by no mean the fastest. It takes a very long time to solve a Rubik&amp;rsquo;s Cube using this algorithm.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

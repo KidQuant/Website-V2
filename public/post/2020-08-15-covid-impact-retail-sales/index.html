@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 30, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b481486c871a52c314ef891cd86306cc.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Andre Sealy" />
+
+
+
+
+
+  
+
+<meta name="description" content="It doesn&rsquo;t take a genius to know that 2020 has been a year for the United States economy. Tens of millions were encouraged or forced to remain indoors in an attempt to slow the spread." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/" />
+<link rel="canonical" href="https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/featured.jpg" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="KidQuant" />
+<meta property="og:url" content="https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/" />
+<meta property="og:title" content="Analyzing the Impact of COVID-19 on Retail | KidQuant" />
+<meta property="og:description" content="It doesn&rsquo;t take a genius to know that 2020 has been a year for the United States economy. Tens of millions were encouraged or forced to remain indoors in an attempt to slow the spread." /><meta property="og:image" content="https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/featured.jpg" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2020-08-17T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2020-08-17T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/"
+  },
+  "headline": "Analyzing the Impact of COVID-19 on Retail",
+  
+  "image": [
+    "https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/featured.jpg"
+  ],
+  
+  "datePublished": "2020-08-17T00:00:00Z",
+  "dateModified": "2020-08-17T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Andre Sealy"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "KidQuant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "It doesn\u0026rsquo;t take a genius to know that 2020 has been a year for the United States economy. Tens of millions were encouraged or forced to remain indoors in an attempt to slow the spread."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Analyzing the Impact of COVID-19 on Retail | KidQuant</title>
+
+  
+  
+  
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="635055bf141eb8da562661b01595fa81" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Analyzing the Impact of COVID-19 on Retail</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Andre Sealy</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Aug 17, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/data-science/">Data Science</a>, <a href="/category/economics/">Economics</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 760px; max-height: 400px;">
+  <div style="position: relative">
+    <img src="/post/2020-08-15-covid-impact-retail-sales/featured_hue89749a955c56e85ff60e28476b8f336_59021_5406e9647305327b0c192c045d328708.webp" width="760" height="400" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>It doesn&rsquo;t take a genius to know that 2020 has been a year for the United States economy. Tens of millions were encouraged or forced to remain indoors in an attempt to slow the spread. Only a few industries/businesses were allowed to stay open, as they were classified as &ldquo;essential businesses.&rdquo; The longest expansion in U.S. history came to an end in Q1 2020, which resulted in a -5.0% contraction in economic activity (followed by a -32.9% drop in Q2).</p>
+<p>Within the same period, retail sales declined -0.87% YoY for Q1 2020, equating to a ~5 billion drop. During the second quarter, sales dropped a whopping 8.16% YoY, resulting in an approximately 12 billion decline in retail sales. (although the quarterly decline in sales is the largest since the Great Recession, the monthly decline is the largest in history)</p>
+<p>However, during the last two months, retail sales have recovered to pre-recession levels, and total sales are the highest.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/retailsales2020.png" alt="Retail Sales" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>As everyone across the country is adjusting to a life with COVID, it&rsquo;s interesting to see which industries benefit the most, and which industries are the most impacted. The Census Bureau publishes data on Advanced Monthly Sales for Retail and Food Services; statistics are gathered utilizing a stratified random sampling method that tracks approximately 5,500 retail and food service firms. The data is then weighted and benchmarked to represent a complete universe of over three million retail and food service firms. The data goes as far back as 1992.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/monthly_retail_sales_2020.png" alt="Monthly Retail Sales 2020" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>We saw a slight decline in February, which can be seen as a result of seasonality (a decline as a result of holiday shopping MoM). However, during the two months afterward, we&rsquo;ve experienced some extreme declines in retail sales, most of which occurred in April. Most states haven&rsquo;t instituted their lockdowns until the end of March or the beginning of April.</p>
+<h2 id="retail-sales-pre-lockdown">Retail Sales Pre-Lockdown</h2>
+<p>In February 2020, retail sales declined -0.44% MoM. The only industries which experienced growth were general merchandise, sporting goods/hobby stores, pharmacies/drug stores, fuel dealers, beer/liquor stores, electronic retail, and nonstore retailers. Nonstore retailers are essentially any business the primarily sells merchandise online, the industry with the largest monthly growth of 1.2%.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/february_2020.png" alt="February Sales" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The most significant declines include gasoline stations (-2.95%), men&rsquo;s clothing stores (-2.86%), automotive parts (-2.38%), general clothing stores (-1.8%), and building material/suppliers dealers (-1.63%). Out of 30 NAICS industries, just seven experienced sales growth for the entire month of February.</p>
+<h2 id="retail-sales-post-lockdown">Retail Sales Post-Lockdown</h2>
+<p>In April 2020, retail sales declined -14.7%; just two industries are experiencing growth during the lockdown: electronic shopping/mail-order houses and nonstore retailers. To be expected, as non-essential businesses are forced to close down, and people are encouraged to work from home if they are able. Social distancing policies instituted by state and local governments fueled demand for products designed to help people work from home and keep in contact with loved ones, such as computers, webcams, desks, monitors, etc.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/april_2020.png" alt="April Sales" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>One would also assume that industries such as grocery and fast food would see some growth during this period, considering these are classified as essential businesses. However, grocery and fast food industries experienced a -13.37% and -34.32% decline, respectively. This decline could be attributed to safety concerns (unable to implement the necessary infrastructure to continue operating safely). It could be due to the decrease in mobility (many of the food and drinking places include restaurants and bars, which people can no longer patronize).</p>
+<p>Whatever the reason, it&rsquo;s pretty clear that both of these industries took a subtaintial hit. There is a reason why the Paycheck Protection Program (PPP) allowed even large resturant chains to recieve loans, despite the program being designed specifically for small businesses.</p>
+<p>For the most part, the United States is a service-oriented economy. Fewer people moving around generally implies fewer money-making opportunities for businesses, regardless of industry.</p>
+<h2 id="retail-sales-after-reopening">Retail Sales After Reopening</h2>
+<p>Although &ldquo;reopening&rdquo; is a somewhat subjective term at this point, we can say that relative to the initial lockdowns, most states have started to liberalize their economies. Like Florida, most states lifted its lockdown at the beginning of May, while others such as New York and New Jersey waited until the beginning of June. Some states, such as South Dakota, never instituted a lockdown at all. As such, we can spot the growth of the recovery at the exact movement states began to reopen.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/may_2020.png" alt="May Sales" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>During May, Retail sales grew 18.27%, which shouldn&rsquo;t be surprising to anyone if you shut down the economy for nearly two months. Also, every industry experienced sales growth, which also shouldn&rsquo;t be surprising. If you&rsquo;re at rock bottom, the only place left to go is up.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/top_sales_may_2020.png" alt="Top 10 Sales" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The top 5 industries with the most growth in May include shoe stores, clothing accessories, clothing stores, women&rsquo;s clothing, and sporting goods. An obvious explanation would consist of the resurgence of warmer weather. People are forced to remain inside, and it&rsquo;s challenging to keep doing in a more temperate climate. Plenty of clothing stores also reopened just in time for the summer season; so the surge in sales also coincides a change in climate.</p>
+<p>A not so obvious explanation would include a change in habits such as eating and exercising. Being forced to remain indoors, we&rsquo;re probably eating more than usual and not exercising as often (considering the gyms are closed). Combined with all of the stress that everyone is going through, people are most likely gaining more weight. As such, they are probably shopping for clothes that fit or making adjustments to a current wardrobe.</p>
+<h2 id="the-most-covid-proof-industries">The Most COVID-Proof Industries</h2>
+<p>In the investing world, it&rsquo;s crucial to find industries that are &ldquo;recession-proof.&rdquo; Finding industries that are immune to pandemics, COVID in particular, is especially tricky. We want to figure out which industries performed the best ( or worse) during the first half of 2020. For this, we&rsquo;re going to calculate the percentage change from January to June.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/percentage_change_retail.png" alt="Change Retail Sales" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>So if you were in the business of selling electronics and sporting goods, you most likely saw a lot of business. Interestingly, people have pointed out that liquor stores are not an essential business but noticed they were exempt from many shelters in place orders. There are most likely technical reasons for this (alcohol is still technically food), historical reasons (the prohibition era), and personal reasons (it helps reduces stress).</p>
+<p>If you owned a department store, a place where clothing and general appliances were sold, or if you owned a bar/restaurant, you most likely lost a lot of money. This is understandable; if you want to prevent the spread of a deadly virus, then you&rsquo;re not going to keep places where people have to be within close proximity open.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/online_retail.png" alt="Change Retail Sales" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>As such, we see a temporary bifurcation of the retail market. For as long as we are following CDC safety guidelines, only industries that are considered the most &ldquo;safe&rdquo; and essential will outperform. If your business requires people to travel, be near one another, and require physical inventory, these industries will most likely take a hit until we&rsquo;ve controlled the spread of this virus.</p>
+<p>On the other hand, we need consider the possibility that some of the businesses that were forced to close may never repoen.</p>
+<p>Although the current situation has made the traditional way of engaging in commerce inconvenient, plenty of businesses have found ways to accommodate their customers (such as no-contact delivery). These days, it doesn&rsquo;t hurt to have an online presence.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/retail-sales/">Retail Sales</a>
+  
+  <a class="badge badge-light" href="/tag/covid19/">COVID19</a>
+  
+  <a class="badge badge-light" href="/tag/coronavirus/">Coronavirus</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-08-15-covid-impact-retail-sales%2F&amp;text=Analyzing&#43;the&#43;Impact&#43;of&#43;COVID-19&#43;on&#43;Retail" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-08-15-covid-impact-retail-sales%2F&amp;t=Analyzing&#43;the&#43;Impact&#43;of&#43;COVID-19&#43;on&#43;Retail" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Analyzing%20the%20Impact%20of%20COVID-19%20on%20Retail&amp;body=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-08-15-covid-impact-retail-sales%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-08-15-covid-impact-retail-sales%2F&amp;title=Analyzing&#43;the&#43;Impact&#43;of&#43;COVID-19&#43;on&#43;Retail" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Analyzing&#43;the&#43;Impact&#43;of&#43;COVID-19&#43;on&#43;Retail%20https%3A%2F%2Fkidquant.com%2Fpost%2F2020-08-15-covid-impact-retail-sales%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkidquant.com%2Fpost%2F2020-08-15-covid-impact-retail-sales%2F&amp;title=Analyzing&#43;the&#43;Impact&#43;of&#43;COVID-19&#43;on&#43;Retail" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kidquant.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2453db0268c976f8eacba18e4a98e34c_209096_270x270_fill_q75_lanczos_center.jpg" alt="Andre Sealy"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kidquant.com/">Andre Sealy</a></h5>
+      <h6 class="card-subtitle">Quant Research / Data Scientist / Writer</h6>
+      <p class="card-text">My research interests involves Quantitative Finance, Mathematics, Data Science and Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/KidQuant" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Andre_Sealy" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThatQuantKid" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:andre@kidquant.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

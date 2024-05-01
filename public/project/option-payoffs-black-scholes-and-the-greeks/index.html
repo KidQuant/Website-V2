@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 30, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b481486c871a52c314ef891cd86306cc.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Andre Sealy" />
+
+
+
+
+
+  
+
+<meta name="description" content="An exploration of the Black-Scholes framework and examining payoff functions and option Greeks." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/" />
+<link rel="canonical" href="https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/featured.jpg" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="KidQuant" />
+<meta property="og:url" content="https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/" />
+<meta property="og:title" content="Option Payoffs, Black-Scholes, and the Greeks | KidQuant" />
+<meta property="og:description" content="An exploration of the Black-Scholes framework and examining payoff functions and option Greeks." /><meta property="og:image" content="https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/featured.jpg" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2018-10-03T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2018-10-03T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/"
+  },
+  "headline": "Option Payoffs, Black-Scholes, and the Greeks",
+  
+  "image": [
+    "https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/featured.jpg"
+  ],
+  
+  "datePublished": "2018-10-03T00:00:00Z",
+  "dateModified": "2018-10-03T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Andre Sealy"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "KidQuant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "An exploration of the Black-Scholes framework and examining payoff functions and option Greeks."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Option Payoffs, Black-Scholes, and the Greeks | KidQuant</title>
+
+  
+  
+  
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c7dca033a64bc4b892c444946f33ab43" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">KidQuant</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Option Payoffs, Black-Scholes, and the Greeks</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Andre Sealy</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 3, 2018
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header" href="/slides/example/" target="_blank">
+    Slides
+  </a>
+  
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 351px;">
+  <div style="position: relative">
+    <img src="/project/option-payoffs-black-scholes-and-the-greeks/featured_hu3c4ae3567553272e851ae020f720d789_89664_e805f017e3f38065a3b68dc0fc7d25be.webp" width="720" height="351" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>I wanted to get a better understanding of using the Python programming language to play around with options. We&rsquo;ll have a look at creating some option payoff functions, implementation of Black-Scholes pricing, and then finish up with some sensitivity analysis (Greeks).</p>
+<p>I&rsquo;ll provide a reasonably high-level overview of what we&rsquo;re doing, but I&rsquo;m by no means an expert in options! However, I found that by implementing them in the Python programming language is good practice in some fundamental skills like list manipulations, maps, plotting, and taking it one step further into object-oriented programming.</p>
+<h2 id="black-scholes-equation">Black-Scholes Equation</h2>
+<p>Perhaps the most famous and possibly infamous equation in quantitative finance is the Black-Scholes equation. A partial differential equation, which provides the time-evolving price of a vanilla option, specifically European put and call option here (there are all sorts of extensions which extend the usability of this formula).</p>
+<p>$$
+\frac{\partial V}{\partial t}+\frac{1}{2}\sigma^{2}S^{2}\frac{\partial V^{2}}{\partial S^{2}}+rS\frac{\partial V}{\partial S}-rV = 0$$</p>
+<p>The equation can be solved to yield a fairly simple closed-form solution for an option price for a non-dividend underlying (and a whole bunch of other assumptions such as efficient markets, no transaction cost, etc.).</p>
+<p>$$ C(S_{t},t) = N(d_{1})S_{t}-N(d_{2})Ke^{-r(T-t)}$$</p>
+<p>The equation can be solved to yield a fairly simple closed-form solution for an option price for a non-dividened underlying (and a whole bunch of other assumptions such as efficient markets, no transaction cost, etc.).</p>
+<p>With:</p>
+<p>$d_{1}  = \frac{1}{\sigma \sqrt{T-t}} \Big[ln\bigg(\frac{S_{t}}{k}\bigg)+\bigg(r+\frac{\sigma^{2}}{2}\bigg)(T-t) \Big]$</p>
+<p>$d_{2}  = d_{1} - \sigma \sqrt{T-t}$</p>
+<p>The above equation can be interpreted as the call option premium, which is the difference between the expected benefit of purchasing the underlying outright at time $t$ against the present value of purchasing the underlying at the strike price expiration time $T$.</p>
+<p>Another way of interpreting the call option premium/option value is through intrinsic value and time value, where the option value is comprised of:</p>
+<ol>
+<li>
+<p>The intrinsic value of exercising the option immediately, i.e., what would the payoff be if we exercised</p>
+</li>
+<li>
+<p>The time value of the option derived from the random behavior of the underlying. As the underlying stock is typically modeled as a stochastic process, there is a probabilistic component, which basically means there is some chance that the stock price could move significantly in our favor over time. Thus we would typically expect to pay higher premiums for options with longer maturities</p>
+</li>
+</ol>
+<h2 id="the-partial-differential-equation">The Partial Differential Equation</h2>
+<p>The original derivation of the Black-Scholes partial differential equation was via stochastic calculus, Ito&rsquo;s lemma, and a simple hedging argument. Assume that the underlying follows a lognormal random walk:</p>
+<p>$$dS=\mu S dt + \sigma S dX $$</p>
+<p>Use $\Pi$ to denote the value of a portfolio of one long option position and a short position in some quantity $\Delta$ of the underlying:</p>
+<p>$$\Pi = V(S,t) - \Delta S. $$</p>
+<p>The first term on the right is the option and the second term is the short asset position.</p>
+<p>We then ask how the value of the portfolio changes from time $t$ to $t + dt$. The change in the portfolio value is due partly to the change in the option value and partlyto the change in the underlying:</p>
+<p>$$d\Pi = dV - \Delta dS. $$</p>
+<p>From Ito&rsquo;s lemma, we have</p>
+<p>$$ d \Pi = \frac{\partial V}{\partial t}dt + \frac{\partial V}{\partial S}dS + \frac{1}{2}\sigma^{2}S^{2}\frac{\partial^{2} V}{\partial S^{2}}dt - \Delta dS. $$</p>
+<p>The right-hand side of this contains two types of terms, the deterministic and the random. The deterministic terms are those with the $dt$, and the random terms are those with the $dS$.</p>
+<p>Pretending for moment that we know $V$ and its derivatives, then we know everything about the right-hand side <em>except for the value of $dS$</em>, because this is random.</p>
+<p>These random terms can be eliminated by choosing</p>
+<p>$$\Delta = \frac{\partial V}{\partial S}.  $$</p>
+<p>After choosing the quantity $\Delta$, we hold a portfolio whose value changes by the amount</p>
+<p>$$d \Pi = \bigg(\frac{\partial V}{\partial t} + \frac{1}{2}\sigma^{2}S^{2}\frac{\partial^{2} V}{\partial S^{2}}\bigg)dt.$$</p>
+<p>This change is completely <em>riskless</em>. If we have a completely risk-free change $d\Pi$ in the portfolio value $\Pi$, then it must be the same as the growth we would get if we put the equivalent amount of cash in a risk-free interest-bearing account:</p>
+<p>$$d\Pi = r\Pi dt. $$</p>
+<p>This is an example of the no arbitrage prinicple. Putting all of the above together to eliminate $\Pi$ and $\Delta$ in favor of partial derivatives of $V$ gives us the Black-Scholes Equation:</p>
+<p>$$
+\frac{\partial V}{\partial t}+\frac{1}{2}\sigma^{2}S^{2}\frac{\partial V^{2}}{\partial S^{2}}+rS\frac{\partial V}{\partial S}-rV = 0$$</p>
+<p>Solving this simple linear diffusion equation with the final condition and you&rsquo;ll get the following Black-Scholes call option formula.</p>
+<p>This derivation of the Black-Scholes equation is perhaps the most useful it is readily generalizable (if not necessarily still analytically tractable) to different underlyings more complicated models, and exotic contracts.</p>
+<h2 id="implementation-of-formula">Implementation of Formula</h2>
+<h3 id="payoff-functions">Payoff Functions</h3>
+<p>Payoff functions are key to understanding the profit (and loss) that we&rsquo;ll receieve upon purchasing an option or options. They are typically designed so that you can view the strike price on the purhcased (or sold) option, as a function of the underlying&rsquo;s price.</p>
+<p>For now, we&rsquo;ll only plot some basic options and option strategies, without doing any calculations of the option prices. The option price will simply be a parameter, which we feed into the payoff functions.</p>
+<p>Later, we&rsquo;ll return and price a European option using the above Black-Scholes method, and this will allow us to build out some more complex option strategies payoff functions with varying maturities.</p>
+<p>Basic Concepts/Defintions:</p>
+<ul>
+<li><strong>In-the-money (ITM):</strong> An option is ITM if it is currently &ldquo;worth&rdquo; exercising today. For example, for a call option, the current underlying&rsquo;s price is greater than the strike price (and vice versa for a put).</li>
+<li><strong>Out-of-the-money (OTM):</strong> An option that is OTM if it is currently &ldquo;not worth&rdquo; exercising today.</li>
+<li><strong>At-the-money (ATM):</strong> An option is ATM if it is neither ITM or OTM, i.e. exercising today would have no tangible effect (ignoring any transaction cost/option premiums).</li>
+<li><strong>Strike Price:</strong> This is the price at which our option is exercised.</li>
+<li><strong>Underlying:</strong> This refers to the asset (which could really be anything which has a price) which underlies the derviative contract.</li>
+</ul>
+<p>We will first begin by importing the necessary modules. This project won&rsquo;t require anything too advanced or complicated; Pandas, Numpy, and Matplotlib will do.</p>
+<p>The following code will also set the parameters for the tick size for the x and y axes, the title size/weight, as well as the line width. This is for the purposes of uniformity.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;ggplot&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;xtick.labelsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">14</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;ytick.labelsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">14</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.titlesize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">18</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.titleweight&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;medium&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;lines.linewidth&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.5</span>
+</span></span></code></pre></div><p>We&rsquo;ll begin by making a function that allows us to calculate the payoff for a call option.</p>
+<p>$$ V(S,T) = max(S - K, 0)$$</p>
+<p>The following equation states that the payoff for a call option is:</p>
+<ul>
+<li>
+<ol>
+<li>the difference between the underlying stock price and the strike price or</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>nothing</li>
+</ol>
+</li>
+</ul>
+<p>For a call option, our downside is limited, while our upside is unlimited. However, just because the downside is limited doesn&rsquo;t mean that there is zero cost. We still need to consider the cost of the option, which is known as the premium.</p>
+<p>Considering these factors, we can define the profit of an option strategy as follows:</p>
+<p>$$ Profit = Max(S - K, 0) - Price.$$</p>
+<p>So the maximum downside in this case will always be the premium paid for the option.</p>
+<h3 id="long-calls-and-puts">Long Calls and Puts</h3>
+<p>We will begin by writing functions for <strong>long calls and puts</strong>. Many people get confused by the term &ldquo;long;&rdquo; suggesting that (similiar to equities) in order to profit from these instruments the underlying would need to increase in value.</p>
+<p>This is only true in the case of the long call, were we would only elect to call if the current stock price is greater than the strike price on our option. In the case of a long put, we would only call if the current stock price is <em>less</em> than the strike price on our option.</p>
+<p>As such, the payoff from a long put would be the following:</p>
+<p>$$V(S,T) = Max(K - S, 0) $$</p>
+<p>Our first two functions are as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># S = underlying stock</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># K = strike price</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Price = premium paid for option</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">long_call</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">Price</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># defining the function; listing the arguments as follows</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="n">P</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">max</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">K</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-</span> <span class="n">Price</span><span class="p">,</span> <span class="n">S</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># Creates a throw-away function that calculates the payoff of the call,</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># then iterates through an array and converting the array to a list</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># the final result is assigned to the value &#39;P&#39;.</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">P</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">long_put</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">Price</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="n">P</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">max</span><span class="p">(</span><span class="n">K</span> <span class="o">-</span> <span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-</span> <span class="n">Price</span><span class="p">,</span> <span class="n">S</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">P</span>
+</span></span></code></pre></div><h3 id="short-calls-and-puts">Short Calls and Puts</h3>
+<p>Next, we&rsquo;ll start writing functions for <strong>short calls and puts</strong>. Rather than getting down into the details of payoffs formulas and profit mechanisms, you can think of short calls/puts as the inverse as long calls/puts.</p>
+<p>Considering these factors, we won&rsquo;t really need to do very much for when creating these types of functions (for the most part).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">#Creating the funcitons for Short Calls/Puts</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">short_call</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">Price</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">P</span> <span class="o">=</span> <span class="n">long_call</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">Price</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Since the Payoff a shortcall is just the inverse of the payoff of a long call,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># we can use the long_call function</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.0</span><span class="o">*</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">P</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Simply multiple each iteration by -1 </span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">short_put</span><span class="p">(</span><span class="n">S</span><span class="p">,</span><span class="n">K</span><span class="p">,</span> <span class="n">Price</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">P</span> <span class="o">=</span> <span class="n">long_put</span><span class="p">(</span><span class="n">S</span><span class="p">,</span><span class="n">K</span><span class="p">,</span> <span class="n">Price</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.0</span><span class="o">*</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">P</span><span class="p">]</span>
+</span></span></code></pre></div><h3 id="binary-options">Binary Options</h3>
+<p>Binary options are a form of exotic options, in which the payoff is either a fixed monetary amount or nothing (all-or-nothing). The formula for a long binary option is as follows:</p>
+<p>$$V(S,T) = \begin{cases} 1 &amp; | &amp; \text{if} &amp; S &gt; K, \
+0 &amp; | &amp; \text{if} &amp; K &lt; S. \end{cases}$$</p>
+<p>The formula is revesed when considering short binary options, as well.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">binary_call</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">Price</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">P</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span>  <span class="n">K</span> <span class="o">-</span> <span class="n">Price</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">K</span> <span class="k">else</span> <span class="mi">0</span> <span class="o">-</span> <span class="n">Price</span><span class="p">,</span> <span class="n">S</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># created a function that substracts K from the Price if an array</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># of prices is greater than K. Otherwise, the payoff will be the</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># cost of the option</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">P</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">binary_put</span><span class="p">(</span><span class="n">S</span><span class="p">,</span><span class="n">K</span><span class="p">,</span> <span class="n">Price</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">P</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span>  <span class="n">K</span> <span class="o">-</span> <span class="n">Price</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">K</span> <span class="k">else</span> <span class="mi">0</span> <span class="o">-</span> <span class="n">Price</span><span class="p">,</span> <span class="n">S</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">P</span>
+</span></span></code></pre></div><p>We first initially created a list of stock prices using the list comprehension in python. Our range considers underlying prices from 0 to 200. Then we can then plot the payoffs for each options strategy on one image. We listed our strike price, $K$, of 100 and a premium, $P$, of 10.</p>
+<p>Each plot will have its long and short counterparts, respectively. The x-axis list potential range of underlying price, while the y-axis lists the potential range of option payoffs.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/options_payoffs.png" alt="Options Payoffs" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>As one can see, with a long call, the minimum loss will never be greater than 10 dollars. With a strike of 100 dollars, the underlying would need to go north of 110 dollars for you to make a profit. This is known as the &ldquo;break-even&rdquo; point. The inverse is true for long puts, as profit increases when the underlying decreases in value.</p>
+<p>You may notice that the payoffs for short options are negative. As stated previously, they&rsquo;re the inverse of long calls/puts. There is limited upside, the unlimited downside (although, the underlying can&rsquo;t go any lower than $0).</p>
+<p>With these factors, why would anyone invest in short options? That&rsquo;s because profit-making opportunities are all based on the investors perspective on underlying direction and volatility.</p>
+<p>We won&rsquo;t get into particular options trading strategies here. The purpose here is to explore the Black-Scholes framework and the sensitivities related to option characteristics.</p>
+<h2 id="options-payoff-using-black-scholes">Options Payoff Using Black-Scholes</h2>
+<p>We can implement the equations we defined previously, to help us
+calculate the premium of an option, as well as the sensitivities of these equations to the various parameters using Black-Scholes.</p>
+<p>Recall the Black-Scholes formula for a call option as before. We need to create a function for Black-Scholes formula, $d_{1}$ and $d_{2}$.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># S: underlying stock price</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># K: Option strike price</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># r: risk free rate</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># D: dividend value</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># vol: Volatility</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># T: time to expiry (assumed that we&#39;re measuring from t=0 to T)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">d1_calc</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Calculates d1 in the BSM equation</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">S</span><span class="o">/</span><span class="n">K</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">vol</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">vol</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">BS_call</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d1</span> <span class="o">=</span> <span class="n">d1_calc</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d2</span> <span class="o">=</span> <span class="n">d1</span> <span class="o">-</span> <span class="n">vol</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">S</span> <span class="o">*</span> <span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span> <span class="o">-</span> <span class="n">K</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">r</span><span class="o">*</span><span class="n">T</span><span class="p">)</span><span class="o">*</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">d2</span><span class="p">)</span>
+</span></span></code></pre></div><p>We also need to estbalish a formula that can be used on puts and binary options. The formula for puts are as follows:</p>
+<p>$$P(S, t) = Se^{-D(T-t)N(d_{1})}-Ke^{-r(T-t)}N(d_{s}).$$</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">BS_put</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">BS_call</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span> <span class="o">-</span> <span class="n">S</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">r</span><span class="o">*</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">))</span><span class="o">*</span><span class="n">K</span>
+</span></span></code></pre></div><p>We can now examine the potential payoff based on the Black-Scholes formula. We&rsquo;ll create a stock range from 0 to 30. We can assume that our strike is 50; our risk-free rate will be 10%, expected volatility will be 20%; the time to expiry will be 10 (t = 0; T = 10).</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/bs_payoff_put_call.png" alt="Black Scholes" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>As you saw from the plots we&rsquo;ve previously made, there was a linear relationship, as the only variables we considered was the payoff and the premium. Using BSM, there are more variables to consider; therefore, there is a curvature with the following models.</p>
+<p>With a strike price of 50, our put will have the highest value to us when the stock is worth 0 dollars. We would purchase the stock at 0 dollars, then exercise our put option to sell for 50 dollars.</p>
+<p>A call is the opposite, our option to buy is worth the least if the stock price is 0 and will increase in value as the stock price increases.</p>
+<h3 id="the-greeks">The Greeks</h3>
+<p>The &lsquo;greeks&rsquo; are the sensitivities of derivative prices of underlying, variables, and parameters. They can be calculated by differentiating option values with respect to variables and/or parameters, either analytically, if you have a closed-form formula, or numerically.</p>
+<p>We can implement the equations we defined previously, to help us
+calculate the premium of an option, as well as the sensitivities of these equations to the various parameters.</p>
+<h4 id="delta">Delta</h4>
+<p>The delta, $\Delta$, of an option or a portfolio of options is the sensitivity of the option or portfolio to the underlying. It is the rate of change of value with respect to the asset:</p>
+<p>$$ \Delta = \frac{\partial V}{\partial S}.$$</p>
+<p>Typically, the delta changes as the stock price and time change. So, to maintain a delta-neutral position, the number of assets held requires continual readjustment by purchase or sale of the stock. This is called <strong>rebalancing</strong> the portfolio, and is an example of <strong>dynamic hedging</strong>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">delta</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">otype</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d1</span> <span class="o">=</span> <span class="n">d1_calc</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d2</span> <span class="o">=</span> <span class="n">d1</span> <span class="o">-</span> <span class="n">vol</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">otype</span> <span class="o">==</span> <span class="s2">&#34;call&#34;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">delta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">))</span><span class="o">*</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span><span class="p">(</span><span class="n">otype</span> <span class="o">==</span> <span class="s2">&#34;put&#34;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">delta</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">))</span><span class="o">*</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="o">-</span><span class="n">d1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">delta</span>
+</span></span></code></pre></div><h4 id="gamma">Gamma</h4>
+<p>The gamma, $\Gamma $, of an option or a portfolio of options is the second derivative of the position with respect to the underlying:</p>
+<p>$$\Gamma = \frac{\partial^{2} V}{\partial S^{2}}.$$</p>
+<p>Since gamma is the sensitivity of the delta to the underlying, it measures how much (or often) a position must be re-hedged in order to maintain a delta-neutral position. If there are costs associated with buying or selling a stock, the bid-offer spread, for example, then the larger the gamma, the larger the cost or friction caused by dynamic hedging.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">gamma</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">otype</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d1</span> <span class="o">=</span> <span class="n">d1_calc</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">gamma</span> <span class="o">=</span> <span class="p">(</span><span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">d1</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">S</span> <span class="o">*</span> <span class="n">vol</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">gamma</span>
+</span></span></code></pre></div><h4 id="theta">Theta</h4>
+<p>The theta, $\Theta$, is the rate of change of the option price with time.</p>
+<p>$$\Theta = \frac{\partial V}{\partial t}.$$</p>
+<p>The theta is related to the option value, the delta and gamma by the Black-Scholes equation.</p>
+<h4 id="vega">Vega</h4>
+<p>The vega, $\nu$, is a very important, but confusing quantity. It is the sensitivity of the option price to volatility.</p>
+<p>$$\nu = \frac{\partial V}{\partial \sigma}.$$</p>
+<p>The is completely different from the other greeks since it is a derivative with respect to a <em>parameter</em> and not a <em>variable</em>. This can be important. It is perfectly acceptable to consider sensitivity to a variable, which does vary, after all. However, it can be dangerous to measure sensitivity to something, such as volatility, which is a parameter and may, for example, have been assumed to be constant. That would be internally inconsistent.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">vega</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">otype</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d1</span> <span class="o">=</span> <span class="n">d1_calc</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">S</span> <span class="o">*</span> <span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="rho">Rho</h4>
+<p>Rho, $\rho$, is the sensitivity of the option value to the interest rate used in the Black-Scholes formula:</p>
+<p>$$\rho = \frac{\partial V}{\partial r}.$$</p>
+<p>In practice, one often uses a whole term structure of interest rates, meaning a time-dependent rate of $r(t)$. Rho would then be the sensitivity to the level of the rates, assuming a parallel shift in rates at all times.</p>
+<p>Rho can also be sensitivity to dividend yield or foreign interest rate in a foreign exchange option.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">rho</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">otype</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d1</span> <span class="o">=</span> <span class="n">d1_calc</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d2</span> <span class="o">=</span> <span class="n">d1</span> <span class="o">-</span> <span class="n">vol</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">otype</span> <span class="o">==</span> <span class="s2">&#34;call&#34;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">rho</span> <span class="o">=</span> <span class="n">K</span><span class="o">*</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">r</span><span class="o">*</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">))</span><span class="o">*</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">d2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span><span class="p">(</span><span class="n">otype</span> <span class="o">==</span> <span class="s2">&#34;put&#34;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">rho</span> <span class="o">=</span> <span class="o">-</span><span class="n">K</span><span class="o">*</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">r</span><span class="o">*</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">))</span><span class="o">*</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="o">-</span><span class="n">d2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">rho</span>
+</span></span></code></pre></div><h4 id="charm">Charm</h4>
+<p>The charm is the sensitivity of delta to time.</p>
+<p>$$Charm = \frac{\partial^{2} V}{\partial S \partial t}.$$</p>
+<p>This is useful foreseeing how your hedge position will change with time,for example, up until the next time you expect to hedge. This can be important near expiration.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">charm</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">otype</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d1</span> <span class="o">=</span> <span class="n">d1_calc</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d2</span> <span class="o">=</span> <span class="n">d1</span> <span class="o">-</span> <span class="n">vol</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">charm</span> <span class="o">=</span> <span class="o">-</span><span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">r</span><span class="o">*</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">)</span> <span class="o">-</span> <span class="n">d2</span><span class="o">*</span><span class="n">vol</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">)</span><span class="o">*</span><span class="n">vol</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="n">t</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">charm</span>
+</span></span></code></pre></div><p>We will first plot the sensitivity of the first order european option greeks relative to their strike price for both calls and puts. We&rsquo;ll use a risk-free interest rate of 1%; expected volatility of 10%, and time to expiration of 10 (t=0; T=10).</p>
+<p>To illustrate a certain point when it comes to sensitivity, we will choose three different strike prices: 15, 25, 35. With these parameters, we&rsquo;re able to plot the following plot chart.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/first_order_greeks.png" alt="first order greeks" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Plenty of interseting movements and factors illustrated within these plots; however, I want to focus on delta, gamma, and vega.</p>
+<p>As mentioned before, the delta is the sensitivity to the option&rsquo;s value relative to its stock price. We can see, in regards to the delta, exhibit different behavior when the underlying changes. However, that change depends on the type of option. As the first subplot shows, there is only so much a call/put&rsquo;s delta can change.</p>
+<p>At a price of 0 dollars, a call&rsquo;s delta is 0, while any price above 20 dollars makes a put&rsquo;s delta 0. This should make intuitive sense, as option calls/puts become worthless the further away they are from their strike prices.</p>
+<p>In terms of gamma (delta&rsquo;s sensitivity concerning the underlying), the highest levels of the greek changes around the 15, 25, and 35 dollar strike prices. This implies the closer an option is to the strike price, the more an investor would need to re-hedge in order to maintain what is known as a delta-neutral position.</p>
+<h3 id="greek-surfaces">Greek Surfaces</h3>
+<p>So far, we&rsquo;ve only been looking at the relationship of one variable:  the underlying. How can we look at the dependence of option prices/greeks on two variables at once? This can easily be done using matplotlib.</p>
+<p>In order to create the plot, we needed to generate a range of all of our variables within the BSM. The range of our variables are as follows:</p>
+<ul>
+<li>Underlying Stock: 70 - 140</li>
+<li>Strike Price: 105</li>
+<li>Time to Expiration: 2 (which is really 8)</li>
+<li>Interest Rates: 0 percent</li>
+<li>Volatility: 12 percent</li>
+</ul>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/multivariable_greeks.png" alt="first order greeks" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>We have four subplots: delta, gamma, vega, and charm. Within each subplot, we have three axes. The x-axis represents the price of the underlying; the y-axis represents the time to expiration; and the z-axis represents greek. This plot will examine the relationship using calls.</p>
+<p>Given the BSM variables we have chosen, a call option will have the highest delta with an underlying of 70 and when the option is close to expiry. Gamma, on the other hand, has the highest sensitivity when the option is halfway close to expiry, with a low underlying.</p>
+<p>Vega operates in a very interesting fashion; whereas the sensitivity to Vega increases when the underlying is higher (at 140) and the time to expiration is halfway. Charm also has an interesting relationship with the other variables. Charm is the only greek variable that we have plotted where the z-axis can become negative.</p>
+<h3 id="github-code">Github Code</h3>
+<p>Click here for the full <a href="https://github.com/Hedgology/Options-Payoffs-Black-Scholes-Greeks" target="_blank" rel="noopener">github code</a> and explaionations.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/programming/">Programming</a>
+  
+  <a class="badge badge-light" href="/tag/finance/">Finance</a>
+  
+  <a class="badge badge-light" href="/tag/options/">Options</a>
+  
+  <a class="badge badge-light" href="/tag/mathematics/">Mathematics</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkidquant.com%2Fproject%2Foption-payoffs-black-scholes-and-the-greeks%2F&amp;text=Option&#43;Payoffs%2C&#43;Black-Scholes%2C&#43;and&#43;the&#43;Greeks" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkidquant.com%2Fproject%2Foption-payoffs-black-scholes-and-the-greeks%2F&amp;t=Option&#43;Payoffs%2C&#43;Black-Scholes%2C&#43;and&#43;the&#43;Greeks" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Option%20Payoffs%2C%20Black-Scholes%2C%20and%20the%20Greeks&amp;body=https%3A%2F%2Fkidquant.com%2Fproject%2Foption-payoffs-black-scholes-and-the-greeks%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkidquant.com%2Fproject%2Foption-payoffs-black-scholes-and-the-greeks%2F&amp;title=Option&#43;Payoffs%2C&#43;Black-Scholes%2C&#43;and&#43;the&#43;Greeks" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Option&#43;Payoffs%2C&#43;Black-Scholes%2C&#43;and&#43;the&#43;Greeks%20https%3A%2F%2Fkidquant.com%2Fproject%2Foption-payoffs-black-scholes-and-the-greeks%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkidquant.com%2Fproject%2Foption-payoffs-black-scholes-and-the-greeks%2F&amp;title=Option&#43;Payoffs%2C&#43;Black-Scholes%2C&#43;and&#43;the&#43;Greeks" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kidquant.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2453db0268c976f8eacba18e4a98e34c_209096_270x270_fill_q75_lanczos_center.jpg" alt="Andre Sealy"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kidquant.com/">Andre Sealy</a></h5>
+      <h6 class="card-subtitle">Quant Research / Data Scientist / Writer</h6>
+      <p class="card-text">My research interests involves Quantitative Finance, Mathematics, Data Science and Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/KidQuant" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Andre_Sealy" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThatQuantKid" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:andre@kidquant.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
