@@ -810,7 +810,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    5 min read
+    7 min read
   </span>
   
 
@@ -1005,7 +1005,45 @@ w_Nw_1\sigma_{N1} & \dots & w^2_N\sigma^2_N\\
 $$
 
 <p>Notice that there are $N$ variance terms (the diagonal of the covariance matrix), while there are $N^2-N$ covariance terms (everything else in the matrix). What this means is that the correlations between assets controls our portfolio&rsquo;s volatility. Positive or negative correlation between asset controls our portfolio&rsquo;s volatility. Positive or negative correlation between assets can increase portfolio volatility, while uncorrelated assets decrease volatility.</p>
+<p>So what exactly is &ldquo;Diversification?&rdquo; By the Modern Portfolio Theory, diversification is the process of selecting assets that are uncorrelated, and thereby reducing the variance of our portfolio&rsquo;s returns. Failing to be diversified doesn&rsquo;t necessarily mean owning just a small number of assets. We would, in theory, own a large number of assets that are all highly correlated, which would increase the variance in our expected returns (which is not what we want).</p>
 <h3 id="mean-variance-analysis">Mean-variance analysis</h3>
+<p>Now that we have a better understanding of diversification, we can start talking about a mean-variance framework. Let&rsquo;s assume that, all things equal, investors prefer higher expected returns and lower volatility. We assume investors only care about return on their entire portfolio, not on a single asset. In other words, we care about $R_p$, not any individual $R_n$. Given the observed or assumed expected returns and covariance between assets, what portfolios should we prefer?</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/post/images/Diversification/figure1.jpg" alt="risk reward" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Considering the following image. On the $x$-axis is the standard deviation of a portfolio&rsquo;s return $\sigma_p$, and the $y$-axis is the expected return $\mu_p$. This is call the risk-return spectrum.</p>
+<p>Considering our assumptions, an investor should prefer portfolio $B$ over $D$, since both have the same volatility but $B$ has higher expected returns. Broadly speaking, investors want to be in the top-left corner: a portfolio with the maximum return possible with the smallest amount of risk.</p>
+<p>How do we find the weights that will allow this to happen? Imagine we have a fixed set of assets (considering there are only so many assets we can own). We can estimate returns, variances, and covariances however we&rsquo;d like, for example, by looking at historical data. Now let $\Sigma$ denote the covariance matrix, and let $\textbf{r}$ be an $N-vector$ of expected returns, i.e. $\textbf{r}\overset{\Delta}{=}[\mu_1,\ldots,\mu_N]$. Then the mean-variance portfolio optimization problem is:</p>
+
+
+
+$$
+\begin{aligned}
+\underset{\textbf{w}}{\min}&\quad\textbf{w}^T\Sigma\textbf{w},\\
+\text{subject to}&\quad \textbf{w}^T\textbf{r}=K,\\
+\text{and}&\quad\sum_nw_n=1,
+\end{aligned}
+$$
+
+<p>where $K$ is a user specified hyperparameter that controls the desired expected return. In other words, w want to minimize the variance/covariance terms while ensuring our weights normalize to unity and gives us our expected portfolio return $K$ given our estimated expected asset returns $\textbf{r}$.</p>
 <h3 id="limits-of-diversification">Limits of diversification</h3>
 <p>As we have seen, uncorrelated assets allows us to reduce the overall volatility in a portfolio. The ups and downs are less volatile. However, there is only so much benefit you can achieve by adding more assets to a portfolio. Think of it as the &ldquo;Laws of Diminishing Returns.&rdquo; We can see, as the number of assets in the portfolio increase, the portfolio variance decreases.</p>
 <p>
@@ -1026,7 +1064,7 @@ $$
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="/post/images/Diversification/figure1.jpg" alt="Portfolio Risk" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img src="/post/images/Diversification/figure4.jpg" alt="Portfolio Risk" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <p>However, notice the benefits of diversification are constrained not only by the portfolio variance, but what we call &ldquo;systematic risk&rdquo;. In essence, investors aren&rsquo;t compensated for taking what we call &ldquo;unsystematic risk,&rdquo; that is, risk that can be diversified away. Recall that the Equity Risk Premium is denoted by $E[r]=r_\alpha-r_f=\beta_\alpha(r_m-r_f)+\epsilon$.</p>
