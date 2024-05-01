@@ -2,443 +2,443 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kidquant.com/talk/example-talk/</loc>
+    <loc>http://localhost:4321/talk/example-talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/</loc>
+    <loc>http://localhost:4321/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/event/</loc>
+    <loc>http://localhost:4321/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/categories/</loc>
+    <loc>http://localhost:4321/categories/</loc>
     <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2024-28-2014-does-diversification-always-matter/</loc>
+    <loc>http://localhost:4321/post/2024-28-2014-does-diversification-always-matter/</loc>
     <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/category/finance/</loc>
+    <loc>http://localhost:4321/category/finance/</loc>
     <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/</loc>
+    <loc>http://localhost:4321/post/</loc>
     <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/category/programming/</loc>
+    <loc>http://localhost:4321/category/programming/</loc>
     <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/quant-finance/</loc>
+    <loc>http://localhost:4321/tag/quant-finance/</loc>
     <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tags/</loc>
+    <loc>http://localhost:4321/tags/</loc>
     <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2024-04-02-djt-meme-stock/</loc>
+    <loc>http://localhost:4321/post/2024-04-02-djt-meme-stock/</loc>
     <lastmod>2024-04-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/trading/</loc>
+    <loc>http://localhost:4321/tag/trading/</loc>
     <lastmod>2024-04-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/trump/</loc>
+    <loc>http://localhost:4321/tag/trump/</loc>
     <lastmod>2024-04-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/biking/</loc>
+    <loc>http://localhost:4321/tag/biking/</loc>
     <lastmod>2024-03-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/category/data-science/</loc>
+    <loc>http://localhost:4321/category/data-science/</loc>
     <lastmod>2024-03-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2024-03-31-biking-accidents/</loc>
+    <loc>http://localhost:4321/post/2024-03-31-biking-accidents/</loc>
     <lastmod>2024-03-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/new-york-city/</loc>
+    <loc>http://localhost:4321/tag/new-york-city/</loc>
     <lastmod>2024-03-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2023-03-28-revisiting-delta/</loc>
+    <loc>http://localhost:4321/post/2023-03-28-revisiting-delta/</loc>
     <lastmod>2023-03-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/ignore/</loc>
+    <loc>http://localhost:4321/ignore/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/data-science/</loc>
+    <loc>http://localhost:4321/tag/data-science/</loc>
     <lastmod>2022-10-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/project/wallstreet-bets-stock-analysis/</loc>
+    <loc>http://localhost:4321/project/wallstreet-bets-stock-analysis/</loc>
     <lastmod>2022-10-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/finance/</loc>
+    <loc>http://localhost:4321/tag/finance/</loc>
     <lastmod>2022-10-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/project/</loc>
+    <loc>http://localhost:4321/project/</loc>
     <lastmod>2022-10-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/statistics/</loc>
+    <loc>http://localhost:4321/tag/statistics/</loc>
     <lastmod>2022-10-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/gamestop/</loc>
+    <loc>http://localhost:4321/tag/gamestop/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2021-05-24-wsb-favorite-stock/</loc>
+    <loc>http://localhost:4321/post/2021-05-24-wsb-favorite-stock/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/category/mathematics/</loc>
+    <loc>http://localhost:4321/category/mathematics/</loc>
     <lastmod>2020-12-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2020-12-30-modeling-vanilla-interest-rate-swaps/</loc>
+    <loc>http://localhost:4321/post/2020-12-30-modeling-vanilla-interest-rate-swaps/</loc>
     <lastmod>2020-12-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2020-12-01-r-rmarkdown/</loc>
+    <loc>http://localhost:4321/post/2020-12-01-r-rmarkdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/plot/</loc>
+    <loc>http://localhost:4321/tag/plot/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/category/r/</loc>
+    <loc>http://localhost:4321/category/r/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/r-markdown/</loc>
+    <loc>http://localhost:4321/tag/r-markdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/regression/</loc>
+    <loc>http://localhost:4321/tag/regression/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/coronavirus/</loc>
+    <loc>http://localhost:4321/tag/coronavirus/</loc>
     <lastmod>2020-09-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/category/economics/</loc>
+    <loc>http://localhost:4321/category/economics/</loc>
     <lastmod>2020-09-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/lockdowns/</loc>
+    <loc>http://localhost:4321/tag/lockdowns/</loc>
     <lastmod>2020-09-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/new-york/</loc>
+    <loc>http://localhost:4321/tag/new-york/</loc>
     <lastmod>2020-09-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2020-09-12-ny-state-of-decline/</loc>
+    <loc>http://localhost:4321/post/2020-09-12-ny-state-of-decline/</loc>
     <lastmod>2020-09-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2020-08-22-covid-vs-economy/</loc>
+    <loc>http://localhost:4321/post/2020-08-22-covid-vs-economy/</loc>
     <lastmod>2020-08-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/gdp/</loc>
+    <loc>http://localhost:4321/tag/gdp/</loc>
     <lastmod>2020-08-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/</loc>
+    <loc>http://localhost:4321/post/2020-08-15-covid-impact-retail-sales/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/covid19/</loc>
+    <loc>http://localhost:4321/tag/covid19/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/retail-sales/</loc>
+    <loc>http://localhost:4321/tag/retail-sales/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/cancel-culture/</loc>
+    <loc>http://localhost:4321/tag/cancel-culture/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2020-08-15-hashtag-activism-redux/</loc>
+    <loc>http://localhost:4321/post/2020-08-15-hashtag-activism-redux/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/covid-19/</loc>
+    <loc>http://localhost:4321/tag/covid-19/</loc>
     <lastmod>2020-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/neera-tanden/</loc>
+    <loc>http://localhost:4321/tag/neera-tanden/</loc>
     <lastmod>2020-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2020-07-11-the-politics-of-pandemics/</loc>
+    <loc>http://localhost:4321/post/2020-07-11-the-politics-of-pandemics/</loc>
     <lastmod>2020-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/black-lives-matter/</loc>
+    <loc>http://localhost:4321/tag/black-lives-matter/</loc>
     <lastmod>2020-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/defund-the-police/</loc>
+    <loc>http://localhost:4321/tag/defund-the-police/</loc>
     <lastmod>2020-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/social-programs/</loc>
+    <loc>http://localhost:4321/tag/social-programs/</loc>
     <lastmod>2020-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/category/statistics/</loc>
+    <loc>http://localhost:4321/category/statistics/</loc>
     <lastmod>2020-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2020-06-17-we-fund-teachers-not-police/</loc>
+    <loc>http://localhost:4321/post/2020-06-17-we-fund-teachers-not-police/</loc>
     <lastmod>2020-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2020-06-08-ny-crushed-by-curve/</loc>
+    <loc>http://localhost:4321/post/2020-06-08-ny-crushed-by-curve/</loc>
     <lastmod>2020-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/project/analyzing-news-articles-python/</loc>
+    <loc>http://localhost:4321/project/analyzing-news-articles-python/</loc>
     <lastmod>2020-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/machline-learning/</loc>
+    <loc>http://localhost:4321/tag/machline-learning/</loc>
     <lastmod>2020-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/media/</loc>
+    <loc>http://localhost:4321/tag/media/</loc>
     <lastmod>2020-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/news/</loc>
+    <loc>http://localhost:4321/tag/news/</loc>
     <lastmod>2020-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</loc>
+    <loc>http://localhost:4321/post/2020-04-15-measuring-covid-progress/</loc>
     <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/project/tracking-covid19-cases/</loc>
+    <loc>http://localhost:4321/project/tracking-covid19-cases/</loc>
     <lastmod>2020-04-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/</loc>
+    <loc>http://localhost:4321/post/2020-04-08-the-mathematics-of-pandemics/</loc>
     <lastmod>2020-04-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/project/forecasting-var-granger-causlity/</loc>
+    <loc>http://localhost:4321/project/forecasting-var-granger-causlity/</loc>
     <lastmod>2019-11-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/mathematics/</loc>
+    <loc>http://localhost:4321/tag/mathematics/</loc>
     <lastmod>2019-11-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/programming/</loc>
+    <loc>http://localhost:4321/tag/programming/</loc>
     <lastmod>2019-11-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/binance/</loc>
+    <loc>http://localhost:4321/tag/binance/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/blockchain/</loc>
+    <loc>http://localhost:4321/tag/blockchain/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/crypto-currency/</loc>
+    <loc>http://localhost:4321/tag/crypto-currency/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2019-10-25-libra-is-the-future-of-money/</loc>
+    <loc>http://localhost:4321/post/2019-10-25-libra-is-the-future-of-money/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/education/</loc>
+    <loc>http://localhost:4321/tag/education/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2019-10-10-latest-jolts-survey-shows-labor-market-bifurcation/</loc>
+    <loc>http://localhost:4321/post/2019-10-10-latest-jolts-survey-shows-labor-market-bifurcation/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/jolts/</loc>
+    <loc>http://localhost:4321/tag/jolts/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/labor-market/</loc>
+    <loc>http://localhost:4321/tag/labor-market/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/unemployment/</loc>
+    <loc>http://localhost:4321/tag/unemployment/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/health-care/</loc>
+    <loc>http://localhost:4321/tag/health-care/</loc>
     <lastmod>2019-09-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</loc>
+    <loc>http://localhost:4321/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</loc>
     <lastmod>2019-09-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/python/</loc>
+    <loc>http://localhost:4321/tag/python/</loc>
     <lastmod>2019-09-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2019-09-14-solving-a-rubiks-cube-in-python/</loc>
+    <loc>http://localhost:4321/post/2019-09-14-solving-a-rubiks-cube-in-python/</loc>
     <lastmod>2019-09-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/equinox/</loc>
+    <loc>http://localhost:4321/tag/equinox/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/investing/</loc>
+    <loc>http://localhost:4321/tag/investing/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/portfolio-management/</loc>
+    <loc>http://localhost:4321/tag/portfolio-management/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/research/</loc>
+    <loc>http://localhost:4321/tag/research/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/soul-cycle/</loc>
+    <loc>http://localhost:4321/tag/soul-cycle/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2019-08-15-the-sad-reality-of-esg-and-cancel-culture/</loc>
+    <loc>http://localhost:4321/post/2019-08-15-the-sad-reality-of-esg-and-cancel-culture/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/publication-type/3/</loc>
+    <loc>http://localhost:4321/publication-type/3/</loc>
     <lastmod>2019-04-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/publication/mind-the-gap/</loc>
+    <loc>http://localhost:4321/publication/mind-the-gap/</loc>
     <lastmod>2019-04-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/publication_types/</loc>
+    <loc>http://localhost:4321/publication_types/</loc>
     <lastmod>2019-04-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/publication/</loc>
+    <loc>http://localhost:4321/publication/</loc>
     <lastmod>2019-04-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/machine-learning/</loc>
+    <loc>http://localhost:4321/tag/machine-learning/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/project/pairs-trading-strategies-in-python/</loc>
+    <loc>http://localhost:4321/project/pairs-trading-strategies-in-python/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/quantitiative-finance/</loc>
+    <loc>http://localhost:4321/tag/quantitiative-finance/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/stocks/</loc>
+    <loc>http://localhost:4321/tag/stocks/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/slides/</loc>
+    <loc>http://localhost:4321/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/slides/example/</loc>
+    <loc>http://localhost:4321/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2018-11-03-option-sensitivities-proofs/</loc>
+    <loc>http://localhost:4321/post/2018-11-03-option-sensitivities-proofs/</loc>
     <lastmod>2018-11-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/project/401k-optimization-using-modern-portfolio-theory/</loc>
+    <loc>http://localhost:4321/project/401k-optimization-using-modern-portfolio-theory/</loc>
     <lastmod>2018-10-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/</loc>
+    <loc>http://localhost:4321/project/option-payoffs-black-scholes-and-the-greeks/</loc>
     <lastmod>2018-10-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/options/</loc>
+    <loc>http://localhost:4321/tag/options/</loc>
     <lastmod>2018-10-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/cpi/</loc>
+    <loc>http://localhost:4321/tag/cpi/</loc>
     <lastmod>2018-07-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/gdp-deflator/</loc>
+    <loc>http://localhost:4321/tag/gdp-deflator/</loc>
     <lastmod>2018-07-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/how-to-lie-with-inflation/</loc>
+    <loc>http://localhost:4321/post/how-to-lie-with-inflation/</loc>
     <lastmod>2018-07-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/inflation/</loc>
+    <loc>http://localhost:4321/tag/inflation/</loc>
     <lastmod>2018-07-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/pce/</loc>
+    <loc>http://localhost:4321/tag/pce/</loc>
     <lastmod>2018-07-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/fifa/</loc>
+    <loc>http://localhost:4321/tag/fifa/</loc>
     <lastmod>2018-06-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</loc>
+    <loc>http://localhost:4321/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</loc>
     <lastmod>2018-06-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/soccer/</loc>
+    <loc>http://localhost:4321/tag/soccer/</loc>
     <lastmod>2018-06-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/tag/sports/</loc>
+    <loc>http://localhost:4321/tag/sports/</loc>
     <lastmod>2018-06-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2018-05-23-elon-musk-has-had-enough/</loc>
+    <loc>http://localhost:4321/post/2018-05-23-elon-musk-has-had-enough/</loc>
     <lastmod>2018-05-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2018-07-05-chart-of-the-day/</loc>
+    <loc>http://localhost:4321/post/2018-07-05-chart-of-the-day/</loc>
     <lastmod>2017-07-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/2018-07-28-chart-of-the-day/</loc>
+    <loc>http://localhost:4321/post/2018-07-28-chart-of-the-day/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kidquant.com/post/images/notebooks/police_v_education/</loc>
+    <loc>http://localhost:4321/post/images/notebooks/police_v_education/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

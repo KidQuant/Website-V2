@@ -1,0 +1,24 @@
+{
+    "id": "F448BA22",
+    "path": "~/Testing/Website/config/_default/languages.yaml",
+    "project_path": "config/_default/languages.yaml",
+    "type": "yaml",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1714534438319.0,
+    "source_on_save": false,
+    "relative_order": 9,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1714419749,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1714419749,
+    "read_only": false,
+    "read_only_alternatives": []
+}

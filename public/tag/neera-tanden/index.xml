@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Neera Tanden | KidQuant</title>
-    <link>https://kidquant.com/tag/neera-tanden/</link>
-      <atom:link href="https://kidquant.com/tag/neera-tanden/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/tag/neera-tanden/</link>
+      <atom:link href="http://localhost:4321/tag/neera-tanden/index.xml" rel="self" type="application/rss+xml" />
     <description>Neera Tanden</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 10 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Neera Tanden</title>
-      <link>https://kidquant.com/tag/neera-tanden/</link>
+      <link>http://localhost:4321/tag/neera-tanden/</link>
     </image>
     
     <item>
       <title>The Politics of Pandemics</title>
-      <link>https://kidquant.com/post/2020-07-11-the-politics-of-pandemics/</link>
+      <link>http://localhost:4321/post/2020-07-11-the-politics-of-pandemics/</link>
       <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/post/2020-07-11-the-politics-of-pandemics/</guid>
+      <guid>http://localhost:4321/post/2020-07-11-the-politics-of-pandemics/</guid>
       <description>&lt;p&gt;I bet you&amp;rsquo;d never thought we&amp;rsquo;d find a way to politicize a deadly virus. I suppose that is what happens when your government operates under a system of federalism [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. It&amp;rsquo;s almost as if people are just now realizing, when it comes to specific issues, that the state and local governments are more important than the federal government. In some ways, this crisis may have renewed our appreciation for the federalist system of government. In others, it has also magnified the polarization.&lt;/p&gt;
 &lt;p&gt;Last month, New York State Governor Andrew Cuomo stated on Twitter that, &amp;ldquo;We [NY State] didn&amp;rsquo;t just flatten the curve &amp;ndash; we crushed it.&amp;rdquo; This statement isn&amp;rsquo;t remotely true, for reasons that I&amp;rsquo;ve outlined [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Of course, I never realized at the time how much this statement would be used as a launching pad for the &amp;ldquo;blue states vs. red state&amp;rdquo; mantra. (Even during the early months of the Pandemic, it was &amp;ldquo;blue state vs. red state&amp;rdquo; in terms of testing, reopening, and a few other issues)&lt;/p&gt;
 &lt;p&gt;And why not use a pandemic as an opportunity to advance that agenda, especially since Twitter makes it so easy for certain people to get away with being mildly dishonest. (To a certain degree, Twitter &amp;ldquo;fact-checks&amp;rdquo; post on their platform)&lt;/p&gt;
@@ -38,7 +38,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/deleted_post.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/deleted_post.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;What is the evidence does Neera Tanden use to support this claim? Who could say? It is, after all, just a talking point, but is there any basis for this claim?&lt;/p&gt;
@@ -71,7 +71,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/infectives_origin.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/infectives_origin.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the vast majority of the spread is associated with an outbreak in New York City, with very little originating from Washington. This is not the say that the spread of the virus was primarily domestic (the virus was still brought into America, from abroad). However, the idea &amp;ldquo;the whole country could be seeing their surges&amp;rdquo; if the earliest of confirmed cases appeared in states like Texas is nonsensical.&lt;/p&gt;

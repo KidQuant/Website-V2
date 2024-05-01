@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming | KidQuant</title>
-    <link>https://kidquant.com/tag/programming/</link>
-      <atom:link href="https://kidquant.com/tag/programming/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/tag/programming/</link>
+      <atom:link href="http://localhost:4321/tag/programming/index.xml" rel="self" type="application/rss+xml" />
     <description>Programming</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 03 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Programming</title>
-      <link>https://kidquant.com/tag/programming/</link>
+      <link>http://localhost:4321/tag/programming/</link>
     </image>
     
     <item>
       <title>Forecasting Asset Prices Using VAR and Granger Causality</title>
-      <link>https://kidquant.com/project/forecasting-var-granger-causlity/</link>
+      <link>http://localhost:4321/project/forecasting-var-granger-causlity/</link>
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/forecasting-var-granger-causlity/</guid>
+      <guid>http://localhost:4321/project/forecasting-var-granger-causlity/</guid>
       <description>&lt;p&gt;Forecasting Gold and Oil has garnered major attention from academics, investors and Government agencies alike. These two products are known for their substantial influence on the global economy. However, what is the relationship between these two assets? What generally happens to Gold prices when Oil takes a plunge? We can use a statistical technique known as &lt;em&gt;&lt;strong&gt;Granger Causality&lt;/strong&gt;&lt;/em&gt; to test the relationships of Gold, Oil, and some other variables. We can also use a &lt;strong&gt;VAR model&lt;/strong&gt; to forecast the future Gold &amp;amp; Oil prices.&lt;/p&gt;
 &lt;h2 id=&#34;exploratory-analysis&#34;&gt;Exploratory Analysis&lt;/h2&gt;
 &lt;p&gt;Let&amp;rsquo;s load the data and conduct some analysis with visualizations to understand more of the data. Exploratory data analysis is quite extensive in multivariate time series. I will cover some areas here to get insights into the data. However, it is advisable to conduct all statistical tests to ensure our clear understanding of data distribution.&lt;/p&gt;
@@ -38,7 +38,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/data_analysis.png&#34; alt=&#34;Data Analysis&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/data_analysis.png&#34; alt=&#34;Data Analysis&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;In our dataset, we have six variables: Gold, Silver, Oil, US Dollar, Interest, and a Stock Market Index. The stock market index we&amp;rsquo;ve used was the Dow Jones Industrial Average. We usually use linear regression to determine if there is a correlation between specific variables. Instead, we&amp;rsquo;re going to determine if any of these variables directly causes movement in the other variables.&lt;/p&gt;
@@ -60,7 +60,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/time_series.png&#34; alt=&#34;Time Series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/time_series.png&#34; alt=&#34;Time Series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Here, we can see different trends for six of our variables. It would be helpful if we established whether or not our time series followed a normal (or Gaussian) distribution. We will do this based on the test for normality based on the Jarque-Bera test.&lt;/p&gt;
@@ -105,7 +105,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/test_statistics.png&#34; alt=&#34;Test Statistics&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/test_statistics.png&#34; alt=&#34;Test Statistics&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;These two distributions can provide us with some intuition about the distribution of our data. A value close to 0 for kurtosis indicates a normal distribution where asymmetrical nature is signified by a value between -0.5 and +0.5 for skewness. The tails are heavier for kurtosis greater than 0 and vice versa. Moderate skewness refers to the value between -1 and -0.5 or 0.5 and 1.&lt;/p&gt;
@@ -127,7 +127,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/probability_plot.png&#34; alt=&#34;probability plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/probability_plot.png&#34; alt=&#34;probability plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Based on the normal probability plot, we can see that the dataset is far from normally distributed.&lt;/p&gt;
@@ -160,7 +160,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/autocorrelation.png&#34; alt=&#34;autocorrelation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/autocorrelation.png&#34; alt=&#34;autocorrelation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following plot shows the autocorrelation for the Gold time series. As we can see, each value is highly correlated with the previous value. We have an autocorrelation of +1, which represents a perfect positive correlation. An increase seen in one time series leads to a proportionate increase in the other time series.&lt;/p&gt;
@@ -195,7 +195,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/stationary.png&#34; alt=&#34;stationary&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/stationary.png&#34; alt=&#34;stationary&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;testing-causation-using-grangers-causality-test&#34;&gt;Testing Causation using Granger&amp;rsquo;s Causality Test&lt;/h3&gt;
@@ -247,7 +247,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/granger_causality.PNG&#34; alt=&#34;granger causality&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/granger_causality.PNG&#34; alt=&#34;granger causality&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The row are the responses $Y$ and the columns are the predictors $X$.&lt;/p&gt;
@@ -312,7 +312,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/var_model.PNG&#34; alt=&#34;Var Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/var_model.PNG&#34; alt=&#34;Var Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h4 id=&#34;conducting-a-forecast-evaluation&#34;&gt;Conducting a forecast evaluation&lt;/h4&gt;
@@ -335,7 +335,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/VAR_forecast.png&#34; alt=&#34;Var Forecast&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/VAR_forecast.png&#34; alt=&#34;Var Forecast&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the forecasted observations are pretty much in line with the historical observations used for forecasting Gold prices. There is a very slight deviation between the historical and forecasted observations started from Janurary 9th, however, this divergence is very slight.&lt;/p&gt;
@@ -348,9 +348,9 @@
     
     <item>
       <title>Solving Rubik&#39;s Cubes with Python</title>
-      <link>https://kidquant.com/post/2019-09-14-solving-a-rubiks-cube-in-python/</link>
+      <link>http://localhost:4321/post/2019-09-14-solving-a-rubiks-cube-in-python/</link>
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/post/2019-09-14-solving-a-rubiks-cube-in-python/</guid>
+      <guid>http://localhost:4321/post/2019-09-14-solving-a-rubiks-cube-in-python/</guid>
       <description>&lt;p&gt;I enjoy solving Rubik&amp;rsquo;s cubes; my interest involves solving rubik&amp;rsquo;s cubes of different dimensions (3x3, 4x4, and triangles, etc) and discovering different algorithms. The internet is full of different solutions; however, it is it is rarely every described how these solutions were discovered. In this post, I&amp;rsquo;ll try to detail how one can solve the rubik&amp;rsquo;s cube from scratch.&lt;/p&gt;
 &lt;p&gt;Keep in mind, the solution presented in this post is by no mean the fastest. It takes a very long time to solve a Rubik&amp;rsquo;s Cube using this algorithm.&lt;/p&gt;
 </description>
@@ -358,9 +358,9 @@
     
     <item>
       <title>Option Payoffs, Black-Scholes, and the Greeks</title>
-      <link>https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/</link>
+      <link>http://localhost:4321/project/option-payoffs-black-scholes-and-the-greeks/</link>
       <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/</guid>
+      <guid>http://localhost:4321/project/option-payoffs-black-scholes-and-the-greeks/</guid>
       <description>&lt;p&gt;I wanted to get a better understanding of using the Python programming language to play around with options. We&amp;rsquo;ll have a look at creating some option payoff functions, implementation of Black-Scholes pricing, and then finish up with some sensitivity analysis (Greeks).&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll provide a reasonably high-level overview of what we&amp;rsquo;re doing, but I&amp;rsquo;m by no means an expert in options! However, I found that by implementing them in the Python programming language is good practice in some fundamental skills like list manipulations, maps, plotting, and taking it one step further into object-oriented programming.&lt;/p&gt;
 &lt;h2 id=&#34;black-scholes-equation&#34;&gt;Black-Scholes Equation&lt;/h2&gt;
@@ -529,7 +529,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/options_payoffs.png&#34; alt=&#34;Options Payoffs&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/options_payoffs.png&#34; alt=&#34;Options Payoffs&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As one can see, with a long call, the minimum loss will never be greater than 10 dollars. With a strike of 100 dollars, the underlying would need to go north of 110 dollars for you to make a profit. This is known as the &amp;ldquo;break-even&amp;rdquo; point. The inverse is true for long puts, as profit increases when the underlying decreases in value.&lt;/p&gt;
@@ -580,7 +580,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/bs_payoff_put_call.png&#34; alt=&#34;Black Scholes&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/bs_payoff_put_call.png&#34; alt=&#34;Black Scholes&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As you saw from the plots we&amp;rsquo;ve previously made, there was a linear relationship, as the only variables we considered was the payoff and the premium. Using BSM, there are more variables to consider; therefore, there is a curvature with the following models.&lt;/p&gt;
@@ -668,7 +668,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/first_order_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/first_order_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Plenty of interseting movements and factors illustrated within these plots; however, I want to focus on delta, gamma, and vega.&lt;/p&gt;
@@ -703,7 +703,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/multivariable_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/multivariable_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We have four subplots: delta, gamma, vega, and charm. Within each subplot, we have three axes. The x-axis represents the price of the underlying; the y-axis represents the time to expiration; and the z-axis represents greek. This plot will examine the relationship using calls.&lt;/p&gt;

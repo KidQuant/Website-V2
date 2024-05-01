@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Crypto Currency | KidQuant</title>
-    <link>https://kidquant.com/tag/crypto-currency/</link>
-      <atom:link href="https://kidquant.com/tag/crypto-currency/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/tag/crypto-currency/</link>
+      <atom:link href="http://localhost:4321/tag/crypto-currency/index.xml" rel="self" type="application/rss+xml" />
     <description>Crypto Currency</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Crypto Currency</title>
-      <link>https://kidquant.com/tag/crypto-currency/</link>
+      <link>http://localhost:4321/tag/crypto-currency/</link>
     </image>
     
     <item>
       <title>Libra is the Future of Money</title>
-      <link>https://kidquant.com/post/2019-10-25-libra-is-the-future-of-money/</link>
+      <link>http://localhost:4321/post/2019-10-25-libra-is-the-future-of-money/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/post/2019-10-25-libra-is-the-future-of-money/</guid>
+      <guid>http://localhost:4321/post/2019-10-25-libra-is-the-future-of-money/</guid>
       <description>&lt;p&gt;If you were able to catch the Congressional testimony on Facebook&amp;rsquo;s new project Libra and the Calibra wallet, probably didn&amp;rsquo;t learn a ton about the latest technology; it&amp;rsquo;s benefits; it&amp;rsquo;s detriments, and how it will be integrated into our 21st-century economy [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. Listing to the Congressional hearing, one might get the impression that Facebook is the cause for every single one of the problems we face in this country.&lt;/p&gt;
 &lt;p&gt;Although regulators may not care about how the new Libra project will benefit (or affect) our economy, you, the consumer, needs to know what this means for you. Anyone living in China (or visitors to China) has already seen the future. In most major metropolitan Chinese cities, you no longer need to walk around with a wallet. Your cell phone or mobile device allows you to purchase food from street vendors, pay to wash your clothes at a laundry mat, and purchase items in a grocery store. Even the street beggers will not accept your money unless it&amp;rsquo;s done via QR code.&lt;/p&gt;
 &lt;p&gt;Needless to say, if America does not innovate, its future in financial leadership is not guaranteed. Digital payments are happening worldwide, whether the US government likes it or not, whether you like Facebook or not. Despite the blatant grandstanding from our elected officials on the tech-giant, other concerns with the project are related to privacy, centralization, and the lack of self-sovereignty and are therefore skeptical of libra.&lt;/p&gt;
@@ -38,7 +38,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/alipay_china.jpg&#34; alt=&#34;China Alipay&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/alipay_china.jpg&#34; alt=&#34;China Alipay&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;These are legitimate concerns; however, they do not really matter in the grand scheme of things. I can tell you first hand that the family running the Chinese restaurant on my street corner doesn&amp;rsquo;t care about any of those things. However, they &lt;em&gt;do&lt;/em&gt; have Facebook, and so do all of their customers. Right now, the restaurant only accepts cash for their services. If they suddenly decide to take payment with nearly zero fees without having to handle cash, there&amp;rsquo;s no doubt in my mind that they will.&lt;/p&gt;
@@ -69,7 +69,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/unbanked_population.png&#34; alt=&#34;The unbanked population&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/unbanked_population.png&#34; alt=&#34;The unbanked population&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;To understand the real power of cryptocurrencies and why Facebook&amp;rsquo;s initiative could be a game-changer, we need to understand one of the most significant issues in the financial world. Business Insider reported back in August 2017 that more than 2 billion people around the globe lack access to a bank account [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;]. Other interesting information regarding the unbanked population also includes the following:&lt;/p&gt;
@@ -127,7 +127,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/libra_association.png&#34; alt=&#34;Libra Association&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/libra_association.png&#34; alt=&#34;Libra Association&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It is also worth noting that to join the Libra association and become a validator node, each member needs to pay a minimum of 10 million as Libra reserve. The Libre reserve will be used to back the intrinsic value of the libra token. Libre also adopts the LibreBFT consensus protocol and is expected to run with 100 validator nodes.&lt;/p&gt;
@@ -152,7 +152,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/blockchain.png&#34; alt=&#34;Blockchain example&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/blockchain.png&#34; alt=&#34;Blockchain example&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The data structure that you see above is a Merkle tree. In the diagram shown, Hash 0-0 and 0-1 are children of Hash 0, which is known as the parent. The top hash is also known as the root, and you can derive the whole tree through the root.&lt;/p&gt;
@@ -221,7 +221,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/mobile_thailand.jpeg&#34; alt=&#34;Mobile payment systesm in Thailand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/mobile_thailand.jpeg&#34; alt=&#34;Mobile payment systesm in Thailand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ve all heard about the Libra hearings in Congress, and some people are saying that this project will never see the light of day. Sure, that is always a possibility, but it really doesn&amp;rsquo;t matter at the end of the day. For blockchain technology to compete with the Chinese tech giants Alipay and WeChat, we are going to need a system like this.&lt;/p&gt;
