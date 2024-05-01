@@ -247,7 +247,7 @@ Investors also need to take note of the portfolio's alpha, which is a measure of
 $$
 \overset{\text{Jensen's alpha}}{\alpha_J}=\overset{\text{portfolio return}}{R_i}-[\overset{\text{risk free rate}}{R_f}+\overset{\text{portfolio beta}}{\beta_{iM}}\cdot(\overset{\text{market return}}{R_M}-\overset{\text{risk free rate}}{R_j})]
 $$
-{{< math>}}
+{{< /math>}}
 ### Limits of diversification
 
 As we have seen, uncorrelated assets allow us to reduce a portfolio's overall volatility. The ups and downs are less volatile. However, you can only achieve so much benefit by adding more assets to a portfolio. Think of it as the "Laws of Diminishing Returns." We can see that as the number of assets in the portfolio increases, the portfolio variance decreases.
