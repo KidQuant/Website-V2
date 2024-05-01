@@ -151,7 +151,6 @@ So what exactly is "Diversification?" By the Modern Portfolio Theory, diversific
 
 Now that we have a better understanding of diversification, we can start talking about a mean-variance framework. Let's assume that, all things equal, investors prefer higher expected returns and lower volatility. We assume investors only care about return on their entire portfolio, not on a single asset. In other words, we care about $R_p$, not any individual $R_n$. Given the observed or assumed expected returns and covariance between assets, what portfolios should we prefer?
 
-
 ![risk reward](/post/images/Diversification/figure1.jpg)
 
 Considering the following image. On the $x$-axis is the standard deviation of a portfolio's return $\sigma_p$, and the $y$-axis is the expected return $\mu_p$. This is call the risk-return spectrum.
@@ -195,6 +194,18 @@ Suppose that stock $A$ had an average monthly return of 2 and a standard deviati
 | $0.75$    | $0.25$   | $1.75$    | $8.15$     |
 | $1$       | $0$      | $2.00$    | $10.00$    |
 | $1.25$    | $-0.25$  | $2.25$    | $12.06$    |
+
+This table shows the potential combination of weights we could have for our two assets. Instead of taking $100\%$ of stock $A$ and $100\%$ of stock $B$, we would take a combination of the two. Portfolio Theory doesn't tell us which combination we should take; that would depend on where you want to be on the risk-reward spectrum. 
+
+We could adopt a portfolio $100\%$ of stock A for the maximum return, which is very risky. We could adopt a portfolio $25\%$ of stock $A$ and $75\%$ of stock $B$ for the least amount of volatility. We could also short stock $B$ to go beyond the maximum return, which will greater increase or risk.
+
+Plotting all the possible portfolios for these two stocks gives us the following image. Obviously, the relationship between risk and reward is nonlinear, as the portfolio is a functional relationship betweeen $\mu_p$ $\sigma_p$. As mentioned before, this is known as an *efficient frontier* or *portfolio frontier*. 
+
+![portfolio frontier](/post/images/Diversification/figure2.jpg)
+
+Now we can see the risk-returns of holding just stock $A$ or just stock $B$. Clearly just holding stock $A$ is less risky than holding just stock $B$. However, notice that if we draw a vertical line straight up from stock $A$, we intersect the curve. This tells us that with a creative selecttion of portfolio weights, we can get the same risk but with a higher expected return.
+
+So it's rational to prefer this point over just stock $A$.
 
 ### Limits of diversification
 

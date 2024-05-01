@@ -294,6 +294,32 @@ $$
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;This table shows the potential combination of weights we could have for our two assets. Instead of taking $100%$ of stock $A$ and $100%$ of stock $B$, we would take a combination of the two. Portfolio Theory doesn&amp;rsquo;t tell us which combination we should take; that would depend on where you want to be on the risk-reward spectrum.&lt;/p&gt;
+&lt;p&gt;We could adopt a portfolio $100%$ of stock A for the maximum return, which is very risky. We could adopt a portfolio $25%$ of stock $A$ and $75%$ of stock $B$ for the least amount of volatility. We could also short stock $B$ to go beyond the maximum return, which will greater increase or risk.&lt;/p&gt;
+&lt;p&gt;Plotting all the possible portfolios for these two stocks gives us the following image. Obviously, the relationship between risk and reward is nonlinear, as the portfolio is a functional relationship betweeen $\mu_p$ $\sigma_p$. As mentioned before, this is known as an &lt;em&gt;efficient frontier&lt;/em&gt; or &lt;em&gt;portfolio frontier&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure2.jpg&#34; alt=&#34;portfolio frontier&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Now we can see the risk-returns of holding just stock $A$ or just stock $B$. Clearly just holding stock $A$ is less risky than holding just stock $B$. However, notice that if we draw a vertical line straight up from stock $A$, we intersect the curve. This tells us that with a creative selecttion of portfolio weights, we can get the same risk but with a higher expected return.&lt;/p&gt;
+&lt;p&gt;So it&amp;rsquo;s rational to prefer this point over just stock $A$.&lt;/p&gt;
 &lt;h3 id=&#34;limits-of-diversification&#34;&gt;Limits of diversification&lt;/h3&gt;
 &lt;p&gt;As we have seen, uncorrelated assets allows us to reduce the overall volatility in a portfolio. The ups and downs are less volatile. However, there is only so much benefit you can achieve by adding more assets to a portfolio. Think of it as the &amp;ldquo;Laws of Diminishing Returns.&amp;rdquo; We can see, as the number of assets in the portfolio increase, the portfolio variance decreases.&lt;/p&gt;
 &lt;p&gt;
