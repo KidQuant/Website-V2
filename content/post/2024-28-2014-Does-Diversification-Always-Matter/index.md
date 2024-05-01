@@ -26,9 +26,9 @@ image:
 math: true
 ---
 
-I've previously talked about Modern Portfolio Theory (MPT) and diversification in the past, the assumptions underlying MPT, and the construction of an Portfolio Frontier (PF). When most people think of diversifying their portfolio, they think of limiting their downside risk. However, it is possible construct a portfolio that still maximizes return with the least amount of volatility (choosing a portfolio that lies somewhere along the PF).
+I've previously talked about Modern Portfolio Theory (MPT) and diversification, the assumptions underlying MPT, and the construction of a Portfolio Frontier (PF). When most people consider diversifying their portfolio, they consider limiting their downside risk. However, it is possible to construct a portfolio that maximizes return with the least volatility (choosing a portfolio that lies somewhere along the PF).
 
-Now I'm going to further expand upon why diversification helps to maximize risk-adjusted returns, and express the limits of diversification.
+Now, I will further expand upon why diversification helps maximize risk-adjusted returns and express the limits of diversification.
 
 ### What Makes a Portfolio?
 
@@ -130,7 +130,7 @@ $$
 \rho_{mn}=\frac{\text{Cov}[R_n, R_m]}{\sigma_n\sigma_m}.
 $$
 
-Now here's the main point: The variance of our portfolio is a function of the covariances between the assets in the portfolio. We can represent this compactly using a covariance matrix: 
+Here's the main point: The variance of our portfolio is a function of the covariances between the assets in the portfolio. We can represent this compactly using a covariance matrix: 
 
 {{< math >}}
 $$
@@ -147,13 +147,13 @@ w_Nw_1\sigma_{N1} & \dots & w^2_N\sigma^2_N\\
 $$
 {{</ math >}}
 
-Notice that there are $N$ variance terms (the diagonal of the covariance matrix), while there are $N^2-N$ covariance terms (everything else in the matrix). What this means is that the correlations between assets controls our portfolio's volatility. Positive or negative correlation between asset controls our portfolio's volatility. Positive or negative correlation between assets can increase portfolio volatility, while uncorrelated assets decrease volatility.
+Notice that there are $N$ variance terms (the diagonal of the covariance matrix), while there are $N^2-N$ covariance terms (everything else in the matrix). This means that the correlations between assets control our portfolio's volatility. Positive or negative correlation between asset controls our portfolio's volatility. Positive or negative correlation between assets can increase portfolio volatility, while uncorrelated assets decrease volatility.
 
-So what exactly is "Diversification?" By the Modern Portfolio Theory, diversification is the process of selecting assets that are uncorrelated, and thereby reducing the variance of our portfolio's returns. Failing to be diversified doesn't necessarily mean owning just a small number of assets. We would, in theory, own a large number of assets that are all highly correlated, which would increase the variance in our expected returns (which is not what we want).
+So what exactly is "Diversification?" According to the Modern Portfolio Theory, diversification is selecting uncorrelated assets, thereby reducing the variance of our portfolio's returns. Failing to be diversified doesn't necessarily mean owning just a small number of assets. In theory, we would own many highly correlated assets, which would increase the variance in our expected returns (which is different from what we want).
 
 ### Mean-variance analysis
 
-Now that we have a better understanding of diversification, we can start talking about a mean-variance framework. Let's assume that, all things equal, investors prefer higher expected returns and lower volatility. We assume investors only care about return on their entire portfolio, not on a single asset. In other words, we care about $R_p$, not any individual $R_n$. Given the observed or assumed expected returns and covariance between assets, what portfolios should we prefer?
+Now that we better understand diversification, we can start talking about a mean-variance framework. Let's assume that, all things equal, investors prefer higher expected returns and lower volatility. We believe investors only care about the return on their entire portfolio rather than on a single asset. In other words, we care about $R_p$, not any individual $R_n$. Given the observed or assumed expected returns and covariance between assets, what portfolios should we prefer?
 
 ![risk reward](/post/images/Diversification/figure1.jpg)
 
@@ -207,13 +207,13 @@ Plotting all the possible portfolios for these two stocks gives us the following
 
 ![portfolio frontier](/post/images/Diversification/figure2.jpg)
 
-Now we can see the risk-returns of holding just stock $A$ or just stock $B$. Clearly just holding stock $A$ is less risky than holding just stock $B$. However, notice that if we draw a vertical line straight up from stock $A$, we intersect the curve. This tells us that with a creative selecttion of portfolio weights, we can get the same risk but with a higher expected return.
+Now we can see the risk-returns of holding just stock $A$ or just stock $B$. Clearly just holding stock $A$ is less risky than holding just stock $B$. However, notice that if we draw a vertical line straight up from stock $A$, we intersect the curve. This tells us that with a creative selection of portfolio weights, we can get the same risk but with a higher expected return.
 
 So it's rational to prefer this point over just stock $A$.
 
 ### Efficient frontier
 
-Now that we have a better inituition on how portfolios can be created, let's discuss the more general case. Individual stocks do not just lie on the parabola. When $N>2$, most portfolios lie within the parabola. Any portfolio is *efficient* if it lies along the top half of this boundary because no other combination of assets can have smaller variance for the same expected return.
+Now that we have a better idea of how portfolios can be created, let's discuss the more general case. Individual stocks do not just lie on the parabola. When $N>2$, most portfolios lie within the parabola. Any portfolio is efficient if it lies along the top half of this boundary because no other combination of assets can have a smaller variance for the same expected return.
 
 We can visualize the efficient in two ways. First, we can visualize many random portfolio by drawing random weights,
 
@@ -225,14 +225,39 @@ $$
 $$
 {{< /math >}}
 
-and then computing each portfolio's $(x,y)$-coordinates of the portfolio using the equations for $\mu_p$ and $\sigma_p$. We can see the efficient frontier as the implicit parabolic edge. Alternatively, we can optimize 
+and then computing each portfolio's $(x,y)$-coordinates of the portfolio using the equations for $\mu_p$ and $\sigma_p$. We can see the efficient frontier as the implicit parabolic edge.  
 
+We can optimize MPT to numerically approimate the weights $\text{w}$ for a variety of returns (sweeping the $y$-axis) for a fixed $K$. This produces the red line in the next figure. Here we generate $5,000$ random portfolios, generated by drawing weights $\textbf{w}$ from a Dirichlet distribution hyperparamters $\alpha=[1,1,1,1,1]$. The red line is the efficient frontier, approximated using constrained optimization.
+
+![Portfolio Risk](/post/images/Diversification/figure3.jpg)
+
+The return of each portfolio is defined by the *Sharpe Ratio*, which is
+
+{{< math >}}
+$$
+\text{Sharpe ratio}\overset{\Delta}{=}\frac{\mu_p-r_f}{\sigma_p}
+$$
+{{< /math >}}
+
+where $r_f$ is the *risk-free rate*, a return that is assumed to be achievable without any risk. The Sharpe ratio is also related to other important ideas in portfolio theory, such as the *tangent portfolio*.
+
+Investors also need to take note of the portfolio's alpha, which is a measure of a portfolio's risk-adjusted performance. There isn't really a formal mathematical definition of alpha, but most people generally refer to Jensen's alpha, which is
+
+{{< math>}}
+$$
+\overset{\text{Jensen's alpha}}{\alpha_J}=\overset{\text{portfolio return}}{R_i}-[\overset{\text{risk free rate}}{R_f}+\overset{\text{portfolio beta}}{\beta_{iM}}\cdot(\overset{\text{market return}}{R_M}-\overset{\text{risk free rate}}{R_j})]
+$$
+{{< math>}}
 ### Limits of diversification
 
-As we have seen, uncorrelated assets allows us to reduce the overall volatility in a portfolio. The ups and downs are less volatile. However, there is only so much benefit you can achieve by adding more assets to a portfolio. Think of it as the "Laws of Diminishing Returns." We can see, as the number of assets in the portfolio increase, the portfolio variance decreases.
+As we have seen, uncorrelated assets allow us to reduce a portfolio's overall volatility. The ups and downs are less volatile. However, you can only achieve so much benefit by adding more assets to a portfolio. Think of it as the "Laws of Diminishing Returns." We can see that as the number of assets in the portfolio increases, the portfolio variance decreases.
 
 ![Portfolio Risk](/post/images/Diversification/figure4.jpg)
 
 However, notice the benefits of diversification are constrained not only by the portfolio variance, but what we call "systematic risk". In essence, investors aren't compensated for taking what we call "unsystematic risk," that is, risk that can be diversified away. Recall that the Equity Risk Premium is denoted by $E[r]=r_\alpha-r_f=\beta_\alpha(r_m-r_f)+\epsilon$.
 
-Looking at the derivation of the Capital Asset Pricing Model (CAPM), we should receive a premium for investing in equities over debt, particularly the risk-free rate ($r_\alpha-r_f$). This makes sense, as without this premium, there would be nothing to entice owners of capital to invest in equities over treasuries. Also, investors should expect a premium for the systemic risk of the overall market $\big(\beta*(r_m-r_f)\big)$. Since equities are significantly more risky compared to treasuries, and given the universe of stocks have $\beta>1$ (meaning, most stocks are positively correlated), it is nearly impossible to diversify away systemic risk.
+Looking at the derivation of the Capital Asset Pricing Model (CAPM), we should receive a premium for investing in equities over debt, particularly the risk-free rate ($r_\alpha-r_f$). This makes sense, as without this premium, there would be nothing to entice owners of capital to invest in equities over treasuries. Also, investors should expect a premium for the systemic risk of the overall market $\big(\beta*(r_m-r_f)\big)$. Since equities are significantly more risky than treasuries, and given the universe of stocks has $\beta>1$ (meaning, most stocks are positively correlated), it is nearly impossible to diversify away systemic risk.
+
+### Conclusion
+
+According to Modern Portfolio Theory, diversification reduces risk because uncorrelated assets reduce the portfolio's overall volatility. The covariance between different assets is more critical than the variance of individual assets. However, portfolios are limited by diminishing returns and systematic risk. Overall, investors should seek to construct portfolios somewhere on the efficiency frontier since these portfolios have better risk-adjusted returns or more significant Sharpe ratios than portfolios inside the frontier.
