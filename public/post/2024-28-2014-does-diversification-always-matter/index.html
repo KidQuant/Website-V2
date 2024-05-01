@@ -1044,6 +1044,67 @@ $$
 $$
 
 <p>where $K$ is a user specified hyperparameter that controls the desired expected return. In other words, w want to minimize the variance/covariance terms while ensuring our weights normalize to unity and gives us our expected portfolio return $K$ given our estimated expected asset returns $\textbf{r}$.</p>
+<h3 id="the-two-asset-example">The two asset example</h3>
+<p>Let&rsquo;s consider the special case of two assets, stock $A$ with weight $w_1$ and stock $B$ with weight $w_2$. This will allow us to carefully reason about what is happening. Since $w_1+w_2=1$, we can easily visualize all possible portfolio by sweeping $w_1\in[0,1]$, calculating $w_2\overset{\Delta}{=}1-w_1$, and then computing the $(x,y)$-coordinates in the risk-reward spectrum:</p>
+
+
+
+$$
+\begin{aligned}
+&\mathbb{E}[R_p]=w_1\mu_2+w_1\mu_2, \\
+&\mathbb{V}[R_p]=w^2_1\sigma^2_1+w^2_2\sigma^2_2+2w_1w_2\sigma_1\sigma_2\rho_{12}
+\end{aligned}
+$$
+
+<p>Suppose that stock $A$ had an average monthly return of 2 and a standard deviation of 10, while stock $B$ had an average return of $1$ and a standard deviation of $6$. Suppose their correlation if $0.35$. How would a portfolio of two stocks perform? We can construct a table comparing expected portfolio return and volatility for a variety of different weights $\textbf{w}$.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">$w_1$</th>
+<th style="text-align:center">$w_2$</th>
+<th style="text-align:center">$\mu_p$</th>
+<th style="text-align:center">$\sigma$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$0$</td>
+<td style="text-align:center">$1$</td>
+<td style="text-align:center">$1.00$</td>
+<td style="text-align:center">$6.00$</td>
+</tr>
+<tr>
+<td style="text-align:center">$0.25$</td>
+<td style="text-align:center">$0.75$</td>
+<td style="text-align:center">$1.25$</td>
+<td style="text-align:center">$5.86$</td>
+</tr>
+<tr>
+<td style="text-align:center">$0.5$</td>
+<td style="text-align:center">$0.5$</td>
+<td style="text-align:center">$1.50$</td>
+<td style="text-align:center">$6.67$</td>
+</tr>
+<tr>
+<td style="text-align:center">$0.75$</td>
+<td style="text-align:center">$0.25$</td>
+<td style="text-align:center">$1.75$</td>
+<td style="text-align:center">$8.15$</td>
+</tr>
+<tr>
+<td style="text-align:center">$1$</td>
+<td style="text-align:center">$0$</td>
+<td style="text-align:center">$2.00$</td>
+<td style="text-align:center">$10.00$</td>
+</tr>
+<tr>
+<td style="text-align:center">$1.25$</td>
+<td style="text-align:center">$-0.25$</td>
+<td style="text-align:center">$2.25$</td>
+<td style="text-align:center">$12.06$</td>
+</tr>
+</tbody>
+</table>
 <h3 id="limits-of-diversification">Limits of diversification</h3>
 <p>As we have seen, uncorrelated assets allows us to reduce the overall volatility in a portfolio. The ups and downs are less volatile. However, there is only so much benefit you can achieve by adding more assets to a portfolio. Think of it as the &ldquo;Laws of Diminishing Returns.&rdquo; We can see, as the number of assets in the portfolio increase, the portfolio variance decreases.</p>
 <p>
