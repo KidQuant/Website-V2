@@ -34,7 +34,11 @@ Now I'm going to further expand upon why diversification helps to maximize risk-
 
 We can define a _portfolio_ as a combination of $N$ assets with $N$ portfolio weights that sum to unity:
 
-$$\textbf{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.$$
+$$
+\begin{equation}
+\textbf{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.
+\end{equation}
+$$
 
 The weight, $w_N$, represents the proportion of the $n$th asset in the portfolio. If $M_n$ and $P_n$ are the number and price of the $n$th asset, then $w_n$ is simply the total value of the $n$th asset normalized by the value of the portfolio:
 
@@ -206,6 +210,22 @@ Plotting all the possible portfolios for these two stocks gives us the following
 Now we can see the risk-returns of holding just stock $A$ or just stock $B$. Clearly just holding stock $A$ is less risky than holding just stock $B$. However, notice that if we draw a vertical line straight up from stock $A$, we intersect the curve. This tells us that with a creative selecttion of portfolio weights, we can get the same risk but with a higher expected return.
 
 So it's rational to prefer this point over just stock $A$.
+
+### Efficient frontier
+
+Now that we have a better inituition on how portfolios can be created, let's discuss the more general case. Individual stocks do not just lie on the parabola. When $N>2$, most portfolios lie within the parabola. Any portfolio is *efficient* if it lies along the top half of this boundary because no other combination of assets can have smaller variance for the same expected return.
+
+We can visualize the efficient in two ways. First, we can visualize many random portfolio by drawing random weights,
+
+{{< math >}}
+$$
+\begin{equation}
+\textbf{w}\overset{\text{iid}}{\sim}\text{Dirichlet}(\alpha),
+\end{equation}
+$$
+{{< /math >}}
+
+and then computing each portfolio's $(x,y)$-coordinates of the portfolio using the equations for $\mu_p$ and $\sigma_p$. We can see the efficient frontier as the implicit parabolic edge. Alternatively, we can optimize 
 
 ### Limits of diversification
 

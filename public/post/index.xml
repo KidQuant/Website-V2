@@ -21,7 +21,11 @@
 &lt;p&gt;Now I&amp;rsquo;m going to further expand upon why diversification helps to maximize risk-adjusted returns, and express the limits of diversification.&lt;/p&gt;
 &lt;h3 id=&#34;what-makes-a-portfolio&#34;&gt;What Makes a Portfolio?&lt;/h3&gt;
 &lt;p&gt;We can define a &lt;em&gt;portfolio&lt;/em&gt; as a combination of $N$ assets with $N$ portfolio weights that sum to unity:&lt;/p&gt;
-&lt;p&gt;$$\textbf{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.$$&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\textbf{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.
+\end{equation}
+$$&lt;/p&gt;
 &lt;p&gt;The weight, $w_N$, represents the proportion of the $n$th asset in the portfolio. If $M_n$ and $P_n$ are the number and price of the $n$th asset, then $w_n$ is simply the total value of the $n$th asset normalized by the value of the portfolio:&lt;/p&gt;
 &lt;p&gt;$$w_n=\frac{M_nP_n}{M_1P_1+\ldots+M_nP_N}$$&lt;/p&gt;
 &lt;p&gt;Weights can be negative, such we could &lt;em&gt;short sell&lt;/em&gt; an asset (profiting from asset price going down). Also, weights could be greater than unity, meaning that we are using leverage. We won&amp;rsquo;t get into these complicated scenarios and use only the basic assumptions in the summary of our portfolio.&lt;/p&gt;
@@ -306,6 +310,19 @@ $$
 &lt;/p&gt;
 &lt;p&gt;Now we can see the risk-returns of holding just stock $A$ or just stock $B$. Clearly just holding stock $A$ is less risky than holding just stock $B$. However, notice that if we draw a vertical line straight up from stock $A$, we intersect the curve. This tells us that with a creative selecttion of portfolio weights, we can get the same risk but with a higher expected return.&lt;/p&gt;
 &lt;p&gt;So it&amp;rsquo;s rational to prefer this point over just stock $A$.&lt;/p&gt;
+&lt;h3 id=&#34;efficient-frontier&#34;&gt;Efficient frontier&lt;/h3&gt;
+&lt;p&gt;Now that we have a better inituition on how portfolios can be created, let&amp;rsquo;s discuss the more general case. Individual stocks do not just lie on the parabola. When $N&amp;gt;2$, most portfolios lie within the parabola. Any portfolio is &lt;em&gt;efficient&lt;/em&gt; if it lies along the top half of this boundary because no other combination of assets can have smaller variance for the same expected return.&lt;/p&gt;
+&lt;p&gt;We can visualize the efficient in two ways. First, we can visualize many random portfolio by drawing random weights,&lt;/p&gt;
+
+
+
+$$
+\begin{equation}
+\textbf{w}\overset{\text{iid}}{\sim}\text{Dirichlet}(\alpha),
+\end{equation}
+$$
+
+&lt;p&gt;and then computing each portfolio&amp;rsquo;s $(x,y)$-coordinates of the portfolio using the equations for $\mu_p$ and $\sigma_p$. We can see the efficient frontier as the implicit parabolic edge. Alternatively, we can optimize&lt;/p&gt;
 &lt;h3 id=&#34;limits-of-diversification&#34;&gt;Limits of diversification&lt;/h3&gt;
 &lt;p&gt;As we have seen, uncorrelated assets allows us to reduce the overall volatility in a portfolio. The ups and downs are less volatile. However, there is only so much benefit you can achieve by adding more assets to a portfolio. Think of it as the &amp;ldquo;Laws of Diminishing Returns.&amp;rdquo; We can see, as the number of assets in the portfolio increase, the portfolio variance decreases.&lt;/p&gt;
 &lt;p&gt;
