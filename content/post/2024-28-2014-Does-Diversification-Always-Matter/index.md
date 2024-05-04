@@ -263,3 +263,11 @@ Looking at the derivation of the Capital Asset Pricing Model (CAPM), we should r
 ### Conclusion
 
 According to Modern Portfolio Theory, diversification reduces risk because uncorrelated assets reduce the portfolio's overall volatility. The covariance between different assets is more critical than the variance of individual assets. However, portfolios are limited by diminishing returns and systematic risk. Overall, investors should seek to construct portfolios somewhere on the efficiency frontier since these portfolios have better risk-adjusted returns or more significant Sharpe ratios than portfolios inside the frontier.
+
+[1] Markowitz, H. (1952) *Portfolio selection*. Journal of Finance.
+
+[2] Markowitz, H. (1955) *The optimization of a quadratic function subject to linear constraints*.
+
+[3] Sharpe W. F. (1966) Mutual Fund Performance. The Journal of Business, 39(1), 119-138
+
+[4] Fidelity Investments (2024) Why diversification matters.
