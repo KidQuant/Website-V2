@@ -149,7 +149,9 @@ $$
 
 Notice that there are $N$ variance terms (the diagonal of the covariance matrix), while there are $N^2-N$ covariance terms (everything else in the matrix). This means that the correlations between assets control our portfolio's volatility. Positive or negative correlation between asset controls our portfolio's volatility. Positive or negative correlation between assets can increase portfolio volatility, while uncorrelated assets decrease volatility.
 
-So what exactly is "Diversification?" According to the Modern Portfolio Theory, diversification is selecting uncorrelated assets, thereby reducing the variance of our portfolio's returns. Failing to be diversified doesn't necessarily mean owning just a small number of assets. In theory, we would own many highly correlated assets, which would increase the variance in our expected returns (which is different from what we want).
+So what exactly is "Diversification?" According to Fidelity, it's simply "spreading your investments around so that your exposure to any one type of asset is limited." However, we've learned that it's much more nuanced than that.
+
+As far as Modern Portfolio Theory, diversification is selecting uncorrelated assets, thereby reducing the variance of our portfolio's returns. Failing to be diversified doesn't necessarily mean owning just a small number of assets. In theory, we would own many highly correlated assets, which would increase the variance in our expected returns (which is different from what we want).
 
 ### Mean-variance analysis
 
