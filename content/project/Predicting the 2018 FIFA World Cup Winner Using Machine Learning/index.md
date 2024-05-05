@@ -19,7 +19,6 @@ date: "2018-06-03T00:00:00Z"
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
 ---
 
 With the start of the 2018 FIFA World Cup approaching, soccer fans around the world is trying to figure out who will win the tournament? If you're a techie and a soccer fan, you'll probably want to figure out more quantitiative methods of figuring out the answer to that question.

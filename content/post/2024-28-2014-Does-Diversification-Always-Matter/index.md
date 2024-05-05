@@ -258,7 +258,7 @@ As we have seen, uncorrelated assets allow us to reduce a portfolio's overall vo
 
 However, notice the benefits of diversification are constrained not only by the portfolio variance, but what we call "systematic risk". In essence, investors aren't compensated for taking what we call "unsystematic risk," that is, risk that can be diversified away. Recall that the Equity Risk Premium is denoted by $E[r]=r_\alpha-r_f=\beta_\alpha(r_m-r_f)+\epsilon$.
 
-Looking at the derivation of the Capital Asset Pricing Model (CAPM), we should receive a premium for investing in equities over debt, particularly the risk-free rate ($r_\alpha-r_f$). This makes sense, as without this premium, there would be nothing to entice owners of capital to invest in equities over treasuries. Also, investors should expect a premium for the systemic risk of the overall market $\big(\beta*(r_m-r_f)\big)$. Since equities are significantly more risky than treasuries, and given the universe of stocks has $\beta>1$ (meaning, most stocks are positively correlated), it is nearly impossible to diversify away systemic risk.
+Looking at the derivation of the Capital Asset Pricing Model (CAPM), we should receive a premium for investing in equities over **debt**, particularly the risk-free rate ($r_\alpha-r_f$). This makes sense, as without this premium, there would be nothing to entice owners of capital to invest in equities over treasuries. Also, investors should expect a premium for the systemic risk of the overall market $\big(\beta*(r_m-r_f)\big)$. Since equities are significantly more risky than treasuries, and given the universe of stocks has $\beta>1$ (meaning, most stocks are positively correlated), it is nearly impossible to diversify away systemic risk.
 
 ### Conclusion
 
@@ -268,6 +268,6 @@ According to Modern Portfolio Theory, diversification reduces risk because uncor
 
 [2] Markowitz, H. (1955) *The optimization of a quadratic function subject to linear constraints*.
 
-[3] Sharpe W. F. (1966) Mutual Fund Performance. The Journal of Business, 39(1), 119-138
+[3] Sharpe W. F. (1966) Mutual Fund Performance. *The Journal of Business*, 39(1), 119-138
 
 [4] Fidelity Investments (2024) Why diversification matters.

@@ -21,7 +21,6 @@ markup: mmark
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
 ---
 
 Forecasting Gold and Oil has garnered major attention from academics, investors and Government agencies alike. These two products are known for their substantial influence on the global economy. However, what is the relationship between these two assets? What generally happens to Gold prices when Oil takes a plunge? We can use a statistical technique known as ***Granger Causality*** to test the relationships of Gold, Oil, and some other variables. We can also use a **VAR model** to forecast the future Gold & Oil prices.
