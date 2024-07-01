@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GDP | KidQuant</title>
-    <link>http://localhost:4321/tag/gdp/</link>
-      <atom:link href="http://localhost:4321/tag/gdp/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kidquant.com/tag/gdp/</link>
+      <atom:link href="https://kidquant.com/tag/gdp/index.xml" rel="self" type="application/rss+xml" />
     <description>GDP</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 22 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>GDP</title>
-      <link>http://localhost:4321/tag/gdp/</link>
+      <link>https://kidquant.com/tag/gdp/</link>
     </image>
     
     <item>
       <title>COVID Vs. Economy</title>
-      <link>http://localhost:4321/post/2020-08-22-covid-vs-economy/</link>
+      <link>https://kidquant.com/post/2020-08-22-covid-vs-economy/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-08-22-covid-vs-economy/</guid>
+      <guid>https://kidquant.com/post/2020-08-22-covid-vs-economy/</guid>
       <description>&lt;p&gt;On this blog, I&amp;rsquo;ve talked about the Mathematics of Pandemics. I&amp;rsquo;ve even talked about the Politics of Pandemics. I&amp;rsquo;m long overdue to discuss the &amp;ldquo;Economics of Pandemics;&amp;rdquo; however, theorizing the potential effects of an inadequate response was pretty pointless, as anyone who has lived through the Great Recession would tell you. After all, &amp;ldquo;ignorance on fire is sometimes better than knowledge on ice,&amp;rdquo; as the saying goes.&lt;/p&gt;
 &lt;p&gt;Regardless of whether or not our economic response to COVID was sufficient, the discussion was always framed in a false dichotomy: protecting the vulnerable versus protecting the economy. If one is a pragmatic, normal-thinking individual, these two are not necessarily mutually exclusive. As early as March 27th, the IGM Chicago Forum surveyed more than 40 professional economists regarding the economic lockdowns in response to the COVID-19 crisis. The vast majority of respondents agree (88%) believe that a comprehensive policy response would involve tolerating a massive contraction in economic activity until the spread has dropped significantly (Question A) [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
 &lt;p&gt;So the United States, along with other nations around the world, instituted their lockdowns policy. We initiated our 15 Days to Slow The Spread, which quickly became 30 Days to Slow The Spread. Although most states have very minor COVID restrictions (staying six feet apart, no gatherings greater than 20 people, etc.), other places that were more severely affected are imposing more strict regulations. [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;] It just so happens that the places with the strictest COVID regulation are also home to the largest economies in the U.S.&lt;/p&gt;
@@ -43,7 +43,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/us_gdp_global.png&#34; alt=&#34;US vs Global GDP&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/us_gdp_global.png&#34; alt=&#34;US vs Global GDP&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The virus ravaged Italy and Spain, and they have instituted strict lockdowns in return. Other places in Europe, which did not want to become the next Italy, instituted strict lockdowns. (Canada is included, for no other reason than it is our neighbor to the north) Some may argue that these nations made a significant trade-off; they chose to protect lives over the economy, and now the economy will be better off in the long-run.&lt;/p&gt;
@@ -66,7 +66,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/france_spain_covid.png&#34; alt=&#34;France and Spain&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/france_spain_covid.png&#34; alt=&#34;France and Spain&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following places are experiencing an uptick in COVID-19 cases:&lt;/p&gt;
@@ -95,7 +95,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/south_korea_cases.png&#34; alt=&#34;South Korea&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/south_korea_cases.png&#34; alt=&#34;South Korea&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;What about New Zealand? Haven&amp;rsquo;t they eradicated the virus? They&amp;rsquo;ve managed to survive 100 days without a single COVID-19 transmission. Sure, New Zealand is a small island with a population of 5 million and a single major airport. It shouldn&amp;rsquo;t be difficult to suppress transmissions in the long-run; however, the virus eventually resurged without a single transmission from outside the country.&lt;/p&gt;
@@ -118,7 +118,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/new_zealand_cases.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/new_zealand_cases.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s a novel virus, which means that unless there is a vaccine, everyone will be exposed to it eventually. Keeping people locked inside doesn&amp;rsquo;t stop the disease; it only delays it. Unfortunately, keeping people locked inside until the spread slows down, or until vaccine, is a very popular solution to a very unsustainable problem.&lt;/p&gt;
@@ -143,7 +143,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/sweden_cases_deaths.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/sweden_cases_deaths.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Lockdowns and closed boarders lack a historical, scientific basis from the Swedish perspective. COVID-19 is in every European country, and so far, none of them have been able to slow down the spread considerably. Regardless, journalists and political analysts have considered Sweden a &amp;ldquo;cautionary tale&amp;rdquo; for the world [&lt;a href=&#34;#9&#34;&gt;9&lt;/a&gt;]. They justify this claim by correctly pointing out that Sweden&amp;rsquo;s population-adjusted death rate is significantly higher compared to its Scandinavian neighbors Finland, Denmark, and Norway [&lt;a href=&#34;#10&#34;&gt;10&lt;/a&gt;].&lt;/p&gt;
@@ -167,7 +167,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/sweden_outperforms.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/sweden_outperforms.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The point of Sweden&amp;rsquo;s strategy, at least from Sweden&amp;rsquo;s perspective, is that places that have locked down significantly lower immunity levels than Sweden&amp;rsquo;s. As such, these places may need to lock down again if and when the disease returns (it has already returned). Many experts have claimed that COVID-19, like some other respiratory diseases, will only be subject to the effects of herd immunity when anywhere from 60-80% of the population recovers from it. No one knows what level of serology represents what is known as Heparin-induced thrombocytopenia (NIT), but we do know that antibody studies are undercounting the population&amp;rsquo;s immunity [&lt;a href=&#34;#11&#34;&gt;11&lt;/a&gt;][&lt;a href=&#34;#12&#34;&gt;12&lt;/a&gt;].&lt;/p&gt;

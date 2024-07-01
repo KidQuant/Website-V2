@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Health Care | KidQuant</title>
-    <link>http://localhost:4321/tag/health-care/</link>
-      <atom:link href="http://localhost:4321/tag/health-care/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kidquant.com/tag/health-care/</link>
+      <atom:link href="https://kidquant.com/tag/health-care/index.xml" rel="self" type="application/rss+xml" />
     <description>Health Care</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 Sep 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Health Care</title>
-      <link>http://localhost:4321/tag/health-care/</link>
+      <link>https://kidquant.com/tag/health-care/</link>
     </image>
     
     <item>
       <title>Modeling GDP per Capita and Life Expectancy</title>
-      <link>http://localhost:4321/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</link>
+      <link>https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</link>
       <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</guid>
+      <guid>https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</guid>
       <description>&lt;p&gt;Historically, wealthy individuals tend to live longer than poorer individuals, holding other factors constant. They can afford to eat healthier foods from healthier food outlets (such as Whole Foods); they can afford better health care, et cetera.&lt;/p&gt;
 &lt;p&gt;For this reason, it should be obvious that as countries get wealthier that they should be able to afford better health care systems, also that life expectancy should rise. It should also stand to reason htat people living longer, will work longer and that being healthier means fewer people as a propotion drop out of the labor force due to illness.&lt;/p&gt;
 &lt;p&gt;However, these relationships probably are not linearly. They&amp;rsquo;re likely to be diminishing returns to one from the other. At least, that is my prior belief.&lt;/p&gt;
@@ -45,7 +45,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/missing_percent.png&#34; alt=&#34;Missing post&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/missing_percent.png&#34; alt=&#34;Missing post&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;plotting-our-variables-of-interest&#34;&gt;Plotting our Variables of Interest&lt;/h2&gt;
@@ -68,7 +68,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy.png&#34; alt=&#34;World Life Expectancy&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy.png&#34; alt=&#34;World Life Expectancy&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;This histogram is representative of the distribution of life expectancy in 2017. The mass of the distribution is on the right with a long left tail. This is good because there are more countries living longer than countries with lower life expectancy levels.&lt;/p&gt;
@@ -90,7 +90,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/life_expectancy_distribution.png&#34; alt=&#34;Life Expectancy Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/life_expectancy_distribution.png&#34; alt=&#34;Life Expectancy Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;World GDP per capita has grown exponentially over time, but there are some sharp drops from severe negative shocks. This is still a good thing for humanity because it means fewer people as a percentage of the total population are in poverty compared to years prior. Again, this doesn&amp;rsquo;t tell us about the distribution of GDP per capita in a cross section.&lt;/p&gt;
@@ -112,7 +112,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy_2019.png&#34; alt=&#34;World Life Expectancy in 2019 dollars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy_2019.png&#34; alt=&#34;World Life Expectancy in 2019 dollars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The distribution of GDP per capita is very concentrated in the 0 to 10,000ish range, but has a long right tail out to over 100,000 GDP per capita. This resembles a &lt;a href=&#34;https://en.wikipedia.org/wiki/Log-normal_distribution&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;log-normal&lt;/a&gt; shape. I performed a natural logarithmic transformation for modeling purposes.&lt;/p&gt;
@@ -134,7 +134,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/log_distribution_life_expectancy.png&#34; alt=&#34;Log-normal Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/log_distribution_life_expectancy.png&#34; alt=&#34;Log-normal Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;modeling-the-relationships&#34;&gt;Modeling the Relationships&lt;/h2&gt;
@@ -161,7 +161,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc.png&#34; alt=&#34;GDPPC&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc.png&#34; alt=&#34;GDPPC&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -182,7 +182,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc_sq.png&#34; alt=&#34;GDPPC_SQ&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc_sq.png&#34; alt=&#34;GDPPC_SQ&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;regressing-gdp-per-capita-on-life-expectancy&#34;&gt;Regressing GDP per capita on Life Expectancy&lt;/h3&gt;
@@ -209,7 +209,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars.png&#34; alt=&#34;error bars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars.png&#34; alt=&#34;error bars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The plot of the life expectancy squared coefficients looks like it is mirroring the movement of the non-squared term coefficients at a different scale.&lt;/p&gt;
@@ -231,7 +231,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars_sq.png&#34; alt=&#34;error bars squared&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars_sq.png&#34; alt=&#34;error bars squared&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;interpreting-the-regressions&#34;&gt;Interpreting the Regressions&lt;/h2&gt;
@@ -254,7 +254,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The way to interpret the coefficients in the 2017 model regressing life expectancy on ln(GDP per capita) and ln(GDP per capita) squared is a 1% increase in GDP per capita leads to a year increase in life expectancy.&lt;/p&gt;
@@ -282,7 +282,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/model_results.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/model_results.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -303,7 +303,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;implications&#34;&gt;Implications&lt;/h2&gt;

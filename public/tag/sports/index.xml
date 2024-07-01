@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sports | KidQuant</title>
-    <link>http://localhost:4321/tag/sports/</link>
-      <atom:link href="http://localhost:4321/tag/sports/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kidquant.com/tag/sports/</link>
+      <atom:link href="https://kidquant.com/tag/sports/index.xml" rel="self" type="application/rss+xml" />
     <description>Sports</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 03 Jun 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Sports</title>
-      <link>http://localhost:4321/tag/sports/</link>
+      <link>https://kidquant.com/tag/sports/</link>
     </image>
     
     <item>
       <title>Predicting the 2018 World Cup Winner Using Machine Learning</title>
-      <link>http://localhost:4321/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</link>
+      <link>https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</link>
       <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</guid>
+      <guid>https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</guid>
       <description>&lt;p&gt;With the start of the 2018 FIFA World Cup approaching, soccer fans around the world is trying to figure out who will win the tournament? If you&amp;rsquo;re a techie and a soccer fan, you&amp;rsquo;ll probably want to figure out more quantitiative methods of figuring out the answer to that question.&lt;/p&gt;
 &lt;h2 id=&#34;goal&#34;&gt;&lt;strong&gt;Goal&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;The goal of this project is established as follows:&lt;/p&gt;
@@ -60,7 +60,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/world_cup.png&#34; alt=&#34;Word Cup Dataframe&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/world_cup.png&#34; alt=&#34;Word Cup Dataframe&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;exploratory-analysis&#34;&gt;&lt;strong&gt;Exploratory Analysis&lt;/strong&gt;&lt;/h2&gt;
@@ -88,7 +88,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/new_results.png&#34; alt=&#34;results&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/new_results.png&#34; alt=&#34;results&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Now I&amp;rsquo;ll work on a subset of the data; one that includes games played by a participating team. I wanted to analyze the US Mens National Team, but unforunately, they were &lt;a href=&#34;https://www.mlssoccer.com/post/2017/10/10/us-national-team-eliminated-2018-fifa-world-cup&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;eliminated&lt;/a&gt; by Trinidad &amp;amp; Tobago in the qualifying rounds.&lt;/p&gt;
@@ -114,7 +114,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/german_matches.png&#34; alt=&#34;german matches&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/german_matches.png&#34; alt=&#34;german matches&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As you can see, the dataset has matches dating back as early as 1908! However, we&amp;rsquo;re only interested in looking at matches from the World Cup era, which started in 1930. We then create a column for year and pick all the games played 1930.&lt;/p&gt;
@@ -139,7 +139,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/wins_losses.jpg&#34; alt=&#34;wins and losses&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/wins_losses.jpg&#34; alt=&#34;wins and losses&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;FIFA has recorded 863 matches from the German Mens National Team since 1930, of which Germany has won over 500 matches with ~175 losses. Slightly more matches has ended in a draw. Getting the win-rate for every country is a useful metric. We could use it to predict the most likely outcome of each match in the tournament.&lt;/p&gt;
@@ -186,7 +186,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/logistic_regression.jpg&#34; alt=&#34;logistic regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/logistic_regression.jpg&#34; alt=&#34;logistic regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 
 Logistic regression is one of the most popular ways to fit models for categorical data, especially for binary response data in Data Modeling. It is the most important (and probably the most used) member of a class of models called generalized linear models. Unlike linear regression, logistic regression can directly predict probabilities (values that are restricted to the (0,1) interval).&lt;/p&gt;
@@ -262,7 +262,7 @@ Logistic regression is one of the most popular ways to fit models for categorica
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/knockout_stage.png&#34; alt=&#34;knock out stage&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/knockout_stage.png&#34; alt=&#34;knock out stage&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Our model has generated the following winners from the knockout stage of the 2018 World Cup:&lt;/p&gt;

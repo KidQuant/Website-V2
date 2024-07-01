@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Biking | KidQuant</title>
-    <link>http://localhost:4321/tag/biking/</link>
-      <atom:link href="http://localhost:4321/tag/biking/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kidquant.com/tag/biking/</link>
+      <atom:link href="https://kidquant.com/tag/biking/index.xml" rel="self" type="application/rss+xml" />
     <description>Biking</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 Mar 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Biking</title>
-      <link>http://localhost:4321/tag/biking/</link>
+      <link>https://kidquant.com/tag/biking/</link>
     </image>
     
     <item>
       <title>How Dangerous Is Biking in New York City</title>
-      <link>http://localhost:4321/post/2024-03-31-biking-accidents/</link>
+      <link>https://kidquant.com/post/2024-03-31-biking-accidents/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2024-03-31-biking-accidents/</guid>
+      <guid>https://kidquant.com/post/2024-03-31-biking-accidents/</guid>
       <description>&lt;p&gt;I tried analyzing cycling accidents around New York City, but it was difficult to draw meaningful conclusions from the data. For example, men die more frequently than women while biking, according to a report on Bicyclist Fatalities and Serious Injuries in New York City.&lt;/p&gt;
 &lt;p&gt;However, interpreting this data is tricky. For example, do more men die because more men bike or is it because they engage in riskier behavior? I had a different issue with analyzing accident locations (even though the data has geogrpahical location, longitude and latitude). Do more accidents happen at intersections because intersections are more dangerous or because they are easier locations to record? These kinds of questions are subtle and require careful data collection and analysis to answer.&lt;/p&gt;
 &lt;p&gt;Furthermore, I found it hard to see how any conclusions would be actionable. I&amp;rsquo;m not going to start leaving work at 3 PM, even if 5 PM is a truly riskier time to bike.&lt;/p&gt;
@@ -38,7 +38,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Biking-Accidents/accidents.png&#34; alt=&#34;Biking Accidents in the city&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Biking-Accidents/accidents.png&#34; alt=&#34;Biking Accidents in the city&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So what can I do? In my mind, the simplest framing is that biking is dangerous because I am sharing the road with cars. To justify this claim, consider these data from DOT&amp;rsquo;s Bicycle Crash Data Reports. They point a clear picture about the risk of accidents with and without cars. The simplest thing I can do is to plan my route to maximize time in bike lanes, ideally protected bike lanes. And I should be extra careful in moments where I interact with cars.&lt;/p&gt;

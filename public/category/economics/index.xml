@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Economics | KidQuant</title>
-    <link>http://localhost:4321/category/economics/</link>
-      <atom:link href="http://localhost:4321/category/economics/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kidquant.com/category/economics/</link>
+      <atom:link href="https://kidquant.com/category/economics/index.xml" rel="self" type="application/rss+xml" />
     <description>Economics</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 12 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Economics</title>
-      <link>http://localhost:4321/category/economics/</link>
+      <link>https://kidquant.com/category/economics/</link>
     </image>
     
     <item>
       <title>New York State of Decline</title>
-      <link>http://localhost:4321/post/2020-09-12-ny-state-of-decline/</link>
+      <link>https://kidquant.com/post/2020-09-12-ny-state-of-decline/</link>
       <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-09-12-ny-state-of-decline/</guid>
+      <guid>https://kidquant.com/post/2020-09-12-ny-state-of-decline/</guid>
       <description>&lt;p&gt;Have you ever wondered how New York became America&amp;rsquo;s financial center? It&amp;rsquo;s not like the New York Stock Exchange is the only securities market in the country. Sure, there&amp;rsquo;s the NASDAQ (another in New York), but there is one in Miami, Chicago, and Philidelphia. In fact, Philadelphia initially obtained financial supremacy in the country with the establishment of the Bank of Pennsylvania in 1780.&lt;/p&gt;
 &lt;p&gt;From what I learned during my Finance undergraduate studies, it all amounts to pure luck why Philadephia isn&amp;rsquo;t America&amp;rsquo;s financial center. The main reason why economic supremacy shifted from Philly was NYC&amp;rsquo;s geographical advantage with the Erie Canal construction. The Erie Canal connected to the Hudson River to the Great Lakes and the fastest-growing places in the Appalachian Mountains. The canal helped solidify New York&amp;rsquo;s position as America&amp;rsquo;s center for commercial trade.&lt;/p&gt;
 &lt;p&gt;Point of this history lesson: nothing lasts forever. If a country, region, state, or area loses its comparative advantage, it may also lose its overall economic advantage. Enter James Altucher, author of the &lt;em&gt;NYC is Dead Forever. Here&amp;rsquo;s Why&lt;/em&gt; article [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. He wrote a scathing rebuke of the current situation involving New York City, arguing, although the city has been through a lot, this time is different. James obviously addressed all of the crucial points, which are undeniably true. Why else would high profile individuals such as Jerry Seinfield, Mark Cuban, and Bill De&amp;rsquo;Blasio respond to an article on LinkedIn?&lt;/p&gt;
@@ -41,7 +41,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/NY-State-Of-Decline/ny_pop_change.PNG&#34; alt=&#34;Population Change&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/NY-State-Of-Decline/ny_pop_change.PNG&#34; alt=&#34;Population Change&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following map shows the population change of New York counties within the last 9 years. The plot measures cumulative growth since April 2010; each county is shaded in a different color. The closer the shade is to blue, the larger the population growth within the last 9 years (and vice versa). As we can see, change in the NY population has been on a steady decline.&lt;/p&gt;
@@ -65,7 +65,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/NY-State-Of-Decline/ny_ue_rate.PNG&#34; alt=&#34;Unemployment Rate&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/NY-State-Of-Decline/ny_ue_rate.PNG&#34; alt=&#34;Unemployment Rate&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Above is a plot of the same region, except this measures the August Unemployment by county. The vast majority of areas in New York have an unemployment rate similar to the national average of 8.4 percent. In stark contrast, the five boroughs (and the surrounding areas) have unemployment rates significantly above the national average, ranging from 12 percent to as high as 20 percent. This unemployment level is consistent with the severe COVID restrictions still imposed on many industries in the city.&lt;/p&gt;
@@ -90,9 +90,9 @@
     
     <item>
       <title>COVID Vs. Economy</title>
-      <link>http://localhost:4321/post/2020-08-22-covid-vs-economy/</link>
+      <link>https://kidquant.com/post/2020-08-22-covid-vs-economy/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-08-22-covid-vs-economy/</guid>
+      <guid>https://kidquant.com/post/2020-08-22-covid-vs-economy/</guid>
       <description>&lt;p&gt;On this blog, I&amp;rsquo;ve talked about the Mathematics of Pandemics. I&amp;rsquo;ve even talked about the Politics of Pandemics. I&amp;rsquo;m long overdue to discuss the &amp;ldquo;Economics of Pandemics;&amp;rdquo; however, theorizing the potential effects of an inadequate response was pretty pointless, as anyone who has lived through the Great Recession would tell you. After all, &amp;ldquo;ignorance on fire is sometimes better than knowledge on ice,&amp;rdquo; as the saying goes.&lt;/p&gt;
 &lt;p&gt;Regardless of whether or not our economic response to COVID was sufficient, the discussion was always framed in a false dichotomy: protecting the vulnerable versus protecting the economy. If one is a pragmatic, normal-thinking individual, these two are not necessarily mutually exclusive. As early as March 27th, the IGM Chicago Forum surveyed more than 40 professional economists regarding the economic lockdowns in response to the COVID-19 crisis. The vast majority of respondents agree (88%) believe that a comprehensive policy response would involve tolerating a massive contraction in economic activity until the spread has dropped significantly (Question A) [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
 &lt;p&gt;So the United States, along with other nations around the world, instituted their lockdowns policy. We initiated our 15 Days to Slow The Spread, which quickly became 30 Days to Slow The Spread. Although most states have very minor COVID restrictions (staying six feet apart, no gatherings greater than 20 people, etc.), other places that were more severely affected are imposing more strict regulations. [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;] It just so happens that the places with the strictest COVID regulation are also home to the largest economies in the U.S.&lt;/p&gt;
@@ -119,7 +119,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/us_gdp_global.png&#34; alt=&#34;US vs Global GDP&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/us_gdp_global.png&#34; alt=&#34;US vs Global GDP&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The virus ravaged Italy and Spain, and they have instituted strict lockdowns in return. Other places in Europe, which did not want to become the next Italy, instituted strict lockdowns. (Canada is included, for no other reason than it is our neighbor to the north) Some may argue that these nations made a significant trade-off; they chose to protect lives over the economy, and now the economy will be better off in the long-run.&lt;/p&gt;
@@ -142,7 +142,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/france_spain_covid.png&#34; alt=&#34;France and Spain&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/france_spain_covid.png&#34; alt=&#34;France and Spain&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following places are experiencing an uptick in COVID-19 cases:&lt;/p&gt;
@@ -171,7 +171,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/south_korea_cases.png&#34; alt=&#34;South Korea&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/south_korea_cases.png&#34; alt=&#34;South Korea&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;What about New Zealand? Haven&amp;rsquo;t they eradicated the virus? They&amp;rsquo;ve managed to survive 100 days without a single COVID-19 transmission. Sure, New Zealand is a small island with a population of 5 million and a single major airport. It shouldn&amp;rsquo;t be difficult to suppress transmissions in the long-run; however, the virus eventually resurged without a single transmission from outside the country.&lt;/p&gt;
@@ -194,7 +194,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/new_zealand_cases.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/new_zealand_cases.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s a novel virus, which means that unless there is a vaccine, everyone will be exposed to it eventually. Keeping people locked inside doesn&amp;rsquo;t stop the disease; it only delays it. Unfortunately, keeping people locked inside until the spread slows down, or until vaccine, is a very popular solution to a very unsustainable problem.&lt;/p&gt;
@@ -219,7 +219,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/sweden_cases_deaths.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/sweden_cases_deaths.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Lockdowns and closed boarders lack a historical, scientific basis from the Swedish perspective. COVID-19 is in every European country, and so far, none of them have been able to slow down the spread considerably. Regardless, journalists and political analysts have considered Sweden a &amp;ldquo;cautionary tale&amp;rdquo; for the world [&lt;a href=&#34;#9&#34;&gt;9&lt;/a&gt;]. They justify this claim by correctly pointing out that Sweden&amp;rsquo;s population-adjusted death rate is significantly higher compared to its Scandinavian neighbors Finland, Denmark, and Norway [&lt;a href=&#34;#10&#34;&gt;10&lt;/a&gt;].&lt;/p&gt;
@@ -243,7 +243,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/sweden_outperforms.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/sweden_outperforms.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The point of Sweden&amp;rsquo;s strategy, at least from Sweden&amp;rsquo;s perspective, is that places that have locked down significantly lower immunity levels than Sweden&amp;rsquo;s. As such, these places may need to lock down again if and when the disease returns (it has already returned). Many experts have claimed that COVID-19, like some other respiratory diseases, will only be subject to the effects of herd immunity when anywhere from 60-80% of the population recovers from it. No one knows what level of serology represents what is known as Heparin-induced thrombocytopenia (NIT), but we do know that antibody studies are undercounting the population&amp;rsquo;s immunity [&lt;a href=&#34;#11&#34;&gt;11&lt;/a&gt;][&lt;a href=&#34;#12&#34;&gt;12&lt;/a&gt;].&lt;/p&gt;
@@ -267,9 +267,9 @@
     
     <item>
       <title>Analyzing the Impact of COVID-19 on Retail</title>
-      <link>http://localhost:4321/post/2020-08-15-covid-impact-retail-sales/</link>
+      <link>https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/</link>
       <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-08-15-covid-impact-retail-sales/</guid>
+      <guid>https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/</guid>
       <description>&lt;p&gt;It doesn&amp;rsquo;t take a genius to know that 2020 has been a year for the United States economy. Tens of millions were encouraged or forced to remain indoors in an attempt to slow the spread. Only a few industries/businesses were allowed to stay open, as they were classified as &amp;ldquo;essential businesses.&amp;rdquo; The longest expansion in U.S. history came to an end in Q1 2020, which resulted in a -5.0% contraction in economic activity (followed by a -32.9% drop in Q2).&lt;/p&gt;
 &lt;p&gt;Within the same period, retail sales declined -0.87% YoY for Q1 2020, equating to a ~5 billion drop. During the second quarter, sales dropped a whopping 8.16% YoY, resulting in an approximately 12 billion decline in retail sales. (although the quarterly decline in sales is the largest since the Great Recession, the monthly decline is the largest in history)&lt;/p&gt;
 &lt;p&gt;However, during the last two months, retail sales have recovered to pre-recession levels, and total sales are the highest.&lt;/p&gt;
@@ -291,7 +291,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/retailsales2020.png&#34; alt=&#34;Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/retailsales2020.png&#34; alt=&#34;Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As everyone across the country is adjusting to a life with COVID, it&amp;rsquo;s interesting to see which industries benefit the most, and which industries are the most impacted. The Census Bureau publishes data on Advanced Monthly Sales for Retail and Food Services; statistics are gathered utilizing a stratified random sampling method that tracks approximately 5,500 retail and food service firms. The data is then weighted and benchmarked to represent a complete universe of over three million retail and food service firms. The data goes as far back as 1992.&lt;/p&gt;
@@ -313,7 +313,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/monthly_retail_sales_2020.png&#34; alt=&#34;Monthly Retail Sales 2020&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/monthly_retail_sales_2020.png&#34; alt=&#34;Monthly Retail Sales 2020&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We saw a slight decline in February, which can be seen as a result of seasonality (a decline as a result of holiday shopping MoM). However, during the two months afterward, we&amp;rsquo;ve experienced some extreme declines in retail sales, most of which occurred in April. Most states haven&amp;rsquo;t instituted their lockdowns until the end of March or the beginning of April.&lt;/p&gt;
@@ -337,7 +337,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/february_2020.png&#34; alt=&#34;February Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/february_2020.png&#34; alt=&#34;February Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The most significant declines include gasoline stations (-2.95%), men&amp;rsquo;s clothing stores (-2.86%), automotive parts (-2.38%), general clothing stores (-1.8%), and building material/suppliers dealers (-1.63%). Out of 30 NAICS industries, just seven experienced sales growth for the entire month of February.&lt;/p&gt;
@@ -361,7 +361,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/april_2020.png&#34; alt=&#34;April Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/april_2020.png&#34; alt=&#34;April Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;One would also assume that industries such as grocery and fast food would see some growth during this period, considering these are classified as essential businesses. However, grocery and fast food industries experienced a -13.37% and -34.32% decline, respectively. This decline could be attributed to safety concerns (unable to implement the necessary infrastructure to continue operating safely). It could be due to the decrease in mobility (many of the food and drinking places include restaurants and bars, which people can no longer patronize).&lt;/p&gt;
@@ -387,7 +387,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/may_2020.png&#34; alt=&#34;May Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/may_2020.png&#34; alt=&#34;May Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;During May, Retail sales grew 18.27%, which shouldn&amp;rsquo;t be surprising to anyone if you shut down the economy for nearly two months. Also, every industry experienced sales growth, which also shouldn&amp;rsquo;t be surprising. If you&amp;rsquo;re at rock bottom, the only place left to go is up.&lt;/p&gt;
@@ -409,7 +409,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/top_sales_may_2020.png&#34; alt=&#34;Top 10 Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/top_sales_may_2020.png&#34; alt=&#34;Top 10 Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The top 5 industries with the most growth in May include shoe stores, clothing accessories, clothing stores, women&amp;rsquo;s clothing, and sporting goods. An obvious explanation would consist of the resurgence of warmer weather. People are forced to remain inside, and it&amp;rsquo;s challenging to keep doing in a more temperate climate. Plenty of clothing stores also reopened just in time for the summer season; so the surge in sales also coincides a change in climate.&lt;/p&gt;
@@ -434,7 +434,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/percentage_change_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/percentage_change_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So if you were in the business of selling electronics and sporting goods, you most likely saw a lot of business. Interestingly, people have pointed out that liquor stores are not an essential business but noticed they were exempt from many shelters in place orders. There are most likely technical reasons for this (alcohol is still technically food), historical reasons (the prohibition era), and personal reasons (it helps reduces stress).&lt;/p&gt;
@@ -457,7 +457,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/online_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/online_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As such, we see a temporary bifurcation of the retail market. For as long as we are following CDC safety guidelines, only industries that are considered the most &amp;ldquo;safe&amp;rdquo; and essential will outperform. If your business requires people to travel, be near one another, and require physical inventory, these industries will most likely take a hit until we&amp;rsquo;ve controlled the spread of this virus.&lt;/p&gt;
@@ -468,9 +468,9 @@
     
     <item>
       <title>We Already Fund Education More Than Law Enforcement</title>
-      <link>http://localhost:4321/post/2020-06-17-we-fund-teachers-not-police/</link>
+      <link>https://kidquant.com/post/2020-06-17-we-fund-teachers-not-police/</link>
       <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-06-17-we-fund-teachers-not-police/</guid>
+      <guid>https://kidquant.com/post/2020-06-17-we-fund-teachers-not-police/</guid>
       <description>&lt;p&gt;You may not believe it, but it&amp;rsquo;s true. We currently already spend, on aggregate (at the state and local level), more on teachers and education more than we spend on police and law enforecement. But who says we aren&amp;rsquo;t, and why does this matter?&lt;/p&gt;
 &lt;p&gt;I give you Exhibit A:&lt;/p&gt;
 &lt;!-- tweet 1269662790744145925 --&gt;
@@ -494,7 +494,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/police_expenditures.png&#34; alt=&#34;Police Expenditures&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/police_expenditures.png&#34; alt=&#34;Police Expenditures&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So the output of our code is the historical Government Current Expenditures at the state and local level of law enforcement. This data goes back to 1959. As of 2018, we currently spend 137 billion dollars on police [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. (Note: much of these data comes from FRED, although it sourced by the BEA)&lt;/p&gt;
@@ -518,7 +518,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/teachers_expenditures.png&#34; alt=&#34;Teachers Expenditures&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/teachers_expenditures.png&#34; alt=&#34;Teachers Expenditures&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Well, this plot looks the same as the police expenditures plot, but the y-axis is ten times larger.&lt;/p&gt;
@@ -541,7 +541,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/teachers_police.png&#34; alt=&#34;Teachers and Police&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/teachers_police.png&#34; alt=&#34;Teachers and Police&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It certainly doesn&amp;rsquo;t look like we&amp;rsquo;re spending more on Police than we are on Teachers. Not anywhere close. Based on what I&amp;rsquo;m looking at, what we spend on law enforcement is significantly dwarfed by the amount we spend on education (as it should be).&lt;/p&gt;
@@ -568,7 +568,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/social_spending_police.png&#34; alt=&#34;Social Spending&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/social_spending_police.png&#34; alt=&#34;Social Spending&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We should indeed be spending more on all of the things that would probably reduce crime. However, there is currently nothing preventing us from doing this, especially not the police. If you compare the United States to Europe, we find that most European countries are more generous with welfare and social spending. However, this doesn&amp;rsquo;t have anything to do with how much they spend on police.&lt;/p&gt;
@@ -591,14 +591,14 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/polce_v_prison.png&#34; alt=&#34;Police vs Prison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/polce_v_prison.png&#34; alt=&#34;Police vs Prison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The current problem with our relationship with police in society is that they&amp;rsquo;re too unaccountable, have too much job security, and have far too little training. In fact, I would argue that that in order for police to recieve more training, they need &lt;em&gt;more&lt;/em&gt; funding, not less.&lt;/p&gt;
 &lt;p&gt;As state and local governments take steps towards reducing the level of funding from their law enforcement, we can expect the fewer people employed in these fields. Violent crime is currently at a 50 year low. One could make the argument, given this trend, that we no longer need the amount of police in our society.&lt;/p&gt;
 &lt;p&gt;However, if one is going to argue that police have no role in maintaining safe streets, they&amp;rsquo;re also arguing against lots of strong evidence. One of the most robust, most uncomfortable findings in criminology is that putting more officers on the street leads to less violent crime [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;][&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;][&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;][&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;][&lt;a href=&#34;#8&#34;&gt;8&lt;/a&gt;].&lt;/p&gt;
 &lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
-&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;http://localhost:4321/post/images/Notebooks/police_v_education.html&#34;&gt;Kid Quant | Replicating the data from this post&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/post/images/Notebooks/police_v_education.html&#34;&gt;Kid Quant | Replicating the data from this post&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://fred.stlouisfed.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Federal Reserve Economic Database (FRED)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://obamawhitehouse.archives.gov/sites/whitehouse.gov/files/documents/CEA%2BCriminal%2BJustice%2BReport.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obama White House (2016)  | Economic Perspectives on Incarceration and the Criminal Justice System&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://mason.gmu.edu/~atabarro/TerrorAlertProofs.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Klick &amp;amp; Tabarrok (2005) | Using terror alert levels to estimate the effect of police on crime&lt;/a&gt;&lt;/p&gt;
@@ -611,9 +611,9 @@
     
     <item>
       <title>Libra is the Future of Money</title>
-      <link>http://localhost:4321/post/2019-10-25-libra-is-the-future-of-money/</link>
+      <link>https://kidquant.com/post/2019-10-25-libra-is-the-future-of-money/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2019-10-25-libra-is-the-future-of-money/</guid>
+      <guid>https://kidquant.com/post/2019-10-25-libra-is-the-future-of-money/</guid>
       <description>&lt;p&gt;If you were able to catch the Congressional testimony on Facebook&amp;rsquo;s new project Libra and the Calibra wallet, probably didn&amp;rsquo;t learn a ton about the latest technology; it&amp;rsquo;s benefits; it&amp;rsquo;s detriments, and how it will be integrated into our 21st-century economy [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. Listing to the Congressional hearing, one might get the impression that Facebook is the cause for every single one of the problems we face in this country.&lt;/p&gt;
 &lt;p&gt;Although regulators may not care about how the new Libra project will benefit (or affect) our economy, you, the consumer, needs to know what this means for you. Anyone living in China (or visitors to China) has already seen the future. In most major metropolitan Chinese cities, you no longer need to walk around with a wallet. Your cell phone or mobile device allows you to purchase food from street vendors, pay to wash your clothes at a laundry mat, and purchase items in a grocery store. Even the street beggers will not accept your money unless it&amp;rsquo;s done via QR code.&lt;/p&gt;
 &lt;p&gt;Needless to say, if America does not innovate, its future in financial leadership is not guaranteed. Digital payments are happening worldwide, whether the US government likes it or not, whether you like Facebook or not. Despite the blatant grandstanding from our elected officials on the tech-giant, other concerns with the project are related to privacy, centralization, and the lack of self-sovereignty and are therefore skeptical of libra.&lt;/p&gt;
@@ -635,7 +635,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/alipay_china.jpg&#34; alt=&#34;China Alipay&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/alipay_china.jpg&#34; alt=&#34;China Alipay&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;These are legitimate concerns; however, they do not really matter in the grand scheme of things. I can tell you first hand that the family running the Chinese restaurant on my street corner doesn&amp;rsquo;t care about any of those things. However, they &lt;em&gt;do&lt;/em&gt; have Facebook, and so do all of their customers. Right now, the restaurant only accepts cash for their services. If they suddenly decide to take payment with nearly zero fees without having to handle cash, there&amp;rsquo;s no doubt in my mind that they will.&lt;/p&gt;
@@ -666,7 +666,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/unbanked_population.png&#34; alt=&#34;The unbanked population&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/unbanked_population.png&#34; alt=&#34;The unbanked population&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;To understand the real power of cryptocurrencies and why Facebook&amp;rsquo;s initiative could be a game-changer, we need to understand one of the most significant issues in the financial world. Business Insider reported back in August 2017 that more than 2 billion people around the globe lack access to a bank account [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;]. Other interesting information regarding the unbanked population also includes the following:&lt;/p&gt;
@@ -724,7 +724,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/libra_association.png&#34; alt=&#34;Libra Association&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/libra_association.png&#34; alt=&#34;Libra Association&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It is also worth noting that to join the Libra association and become a validator node, each member needs to pay a minimum of 10 million as Libra reserve. The Libre reserve will be used to back the intrinsic value of the libra token. Libre also adopts the LibreBFT consensus protocol and is expected to run with 100 validator nodes.&lt;/p&gt;
@@ -749,7 +749,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/blockchain.png&#34; alt=&#34;Blockchain example&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/blockchain.png&#34; alt=&#34;Blockchain example&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The data structure that you see above is a Merkle tree. In the diagram shown, Hash 0-0 and 0-1 are children of Hash 0, which is known as the parent. The top hash is also known as the root, and you can derive the whole tree through the root.&lt;/p&gt;
@@ -818,7 +818,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/mobile_thailand.jpeg&#34; alt=&#34;Mobile payment systesm in Thailand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/mobile_thailand.jpeg&#34; alt=&#34;Mobile payment systesm in Thailand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ve all heard about the Libra hearings in Congress, and some people are saying that this project will never see the light of day. Sure, that is always a possibility, but it really doesn&amp;rsquo;t matter at the end of the day. For blockchain technology to compete with the Chinese tech giants Alipay and WeChat, we are going to need a system like this.&lt;/p&gt;
@@ -837,9 +837,9 @@
     
     <item>
       <title>How The Beveridge Curve Reveals Current Labor Market Bifurcation</title>
-      <link>http://localhost:4321/post/2019-10-10-latest-jolts-survey-shows-labor-market-bifurcation/</link>
+      <link>https://kidquant.com/post/2019-10-10-latest-jolts-survey-shows-labor-market-bifurcation/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2019-10-10-latest-jolts-survey-shows-labor-market-bifurcation/</guid>
+      <guid>https://kidquant.com/post/2019-10-10-latest-jolts-survey-shows-labor-market-bifurcation/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s a lot of talks these days about an economic slow down that could potentially occur in the United States. If this is true, the evidence of this has yet to appear in the labor market. The BLS posted an unemployment rate of 3.5% for September 2019, down 0.2% from the previous month. The economy also created 136,000 jobs, which is slightly less than what was expected, previous months were revised upwards [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
 &lt;p&gt;It was initially assumed that the unemployment couldn&amp;rsquo;t go much lower, due to something called NAIRU: the &lt;strong&gt;Non-Accelerating Inflation Rate of Unemployment&lt;/strong&gt;. Without getting into deep economic theory, NAIRU (not to be confused with the natural unemployment rate) describes the level at which it would be difficult for the unemployment rate to decline, due to the inability of firms to attract new talent at the prevailing market wage.&lt;/p&gt;
 &lt;p&gt;As such, the only way to attract new workers would be to raise wages, which would force firms to rates prices to offset their cost, which would raise consumer prices overall. Are the historical lows of the unemployment rate evidence of further slack in the labor market?&lt;/p&gt;
@@ -873,7 +873,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Latest-JOLTS-Survey/Beveridge_Curve.png&#34; alt=&#34;Beveridge Curve Plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Latest-JOLTS-Survey/Beveridge_Curve.png&#34; alt=&#34;Beveridge Curve Plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The Beveridge Curve plots the job openings rate with respect to the unemployment rate [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;]. During an expansion, the job openings rate is high, and the unemployment rate is low, which causes the curve to move towards plots upward and to the left. During a contraction, the job openings rate is low, and the unemployment rate is high, which causes a movement along the curve in the opposite direction.  Basic Econ 101, pretty much.&lt;/p&gt;
@@ -896,7 +896,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Latest-JOLTS-Survey/plotted_beveridge_curve.png&#34; alt=&#34;Beveridge Curve Plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Latest-JOLTS-Survey/plotted_beveridge_curve.png&#34; alt=&#34;Beveridge Curve Plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following Beveridge Curve is one that I have created in python, using data from the Federal Reserve Economic Database (FRED), which was extracted through Quandl [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;] [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;].&lt;/p&gt;
@@ -924,7 +924,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Latest-JOLTS-Survey/un_rate_college_20_24.png&#34; alt=&#34;Unemployment Rate College Grads&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Latest-JOLTS-Survey/un_rate_college_20_24.png&#34; alt=&#34;Unemployment Rate College Grads&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Also, the BLS shows that the unemployment rate for college graduates between the age of 20 - 24 is around 6.1%, which is nearly double the national average. As you can see from the following chart, the data is very noisy; dropping during the beginning of the year and rising towards the middle (usually the summer). This is because, as you can imagine, during the beginning of the year, students are actively enrolled in school, so they aren&amp;rsquo;t counted as part of the labor market. Once they graduate (usually during the summer), they begin actively looking for work. From that point onward, recent graduates are officially counted among the unemployment statistics.&lt;/p&gt;
@@ -1023,9 +1023,9 @@
     
     <item>
       <title>Modeling GDP per Capita and Life Expectancy</title>
-      <link>http://localhost:4321/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</link>
+      <link>https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</link>
       <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</guid>
+      <guid>https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</guid>
       <description>&lt;p&gt;Historically, wealthy individuals tend to live longer than poorer individuals, holding other factors constant. They can afford to eat healthier foods from healthier food outlets (such as Whole Foods); they can afford better health care, et cetera.&lt;/p&gt;
 &lt;p&gt;For this reason, it should be obvious that as countries get wealthier that they should be able to afford better health care systems, also that life expectancy should rise. It should also stand to reason htat people living longer, will work longer and that being healthier means fewer people as a propotion drop out of the labor force due to illness.&lt;/p&gt;
 &lt;p&gt;However, these relationships probably are not linearly. They&amp;rsquo;re likely to be diminishing returns to one from the other. At least, that is my prior belief.&lt;/p&gt;
@@ -1054,7 +1054,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/missing_percent.png&#34; alt=&#34;Missing post&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/missing_percent.png&#34; alt=&#34;Missing post&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;plotting-our-variables-of-interest&#34;&gt;Plotting our Variables of Interest&lt;/h2&gt;
@@ -1077,7 +1077,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy.png&#34; alt=&#34;World Life Expectancy&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy.png&#34; alt=&#34;World Life Expectancy&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;This histogram is representative of the distribution of life expectancy in 2017. The mass of the distribution is on the right with a long left tail. This is good because there are more countries living longer than countries with lower life expectancy levels.&lt;/p&gt;
@@ -1099,7 +1099,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/life_expectancy_distribution.png&#34; alt=&#34;Life Expectancy Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/life_expectancy_distribution.png&#34; alt=&#34;Life Expectancy Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;World GDP per capita has grown exponentially over time, but there are some sharp drops from severe negative shocks. This is still a good thing for humanity because it means fewer people as a percentage of the total population are in poverty compared to years prior. Again, this doesn&amp;rsquo;t tell us about the distribution of GDP per capita in a cross section.&lt;/p&gt;
@@ -1121,7 +1121,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy_2019.png&#34; alt=&#34;World Life Expectancy in 2019 dollars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy_2019.png&#34; alt=&#34;World Life Expectancy in 2019 dollars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The distribution of GDP per capita is very concentrated in the 0 to 10,000ish range, but has a long right tail out to over 100,000 GDP per capita. This resembles a &lt;a href=&#34;https://en.wikipedia.org/wiki/Log-normal_distribution&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;log-normal&lt;/a&gt; shape. I performed a natural logarithmic transformation for modeling purposes.&lt;/p&gt;
@@ -1143,7 +1143,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/log_distribution_life_expectancy.png&#34; alt=&#34;Log-normal Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/log_distribution_life_expectancy.png&#34; alt=&#34;Log-normal Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;modeling-the-relationships&#34;&gt;Modeling the Relationships&lt;/h2&gt;
@@ -1170,7 +1170,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc.png&#34; alt=&#34;GDPPC&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc.png&#34; alt=&#34;GDPPC&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -1191,7 +1191,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc_sq.png&#34; alt=&#34;GDPPC_SQ&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc_sq.png&#34; alt=&#34;GDPPC_SQ&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;regressing-gdp-per-capita-on-life-expectancy&#34;&gt;Regressing GDP per capita on Life Expectancy&lt;/h3&gt;
@@ -1218,7 +1218,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars.png&#34; alt=&#34;error bars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars.png&#34; alt=&#34;error bars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The plot of the life expectancy squared coefficients looks like it is mirroring the movement of the non-squared term coefficients at a different scale.&lt;/p&gt;
@@ -1240,7 +1240,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars_sq.png&#34; alt=&#34;error bars squared&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars_sq.png&#34; alt=&#34;error bars squared&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;interpreting-the-regressions&#34;&gt;Interpreting the Regressions&lt;/h2&gt;
@@ -1263,7 +1263,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The way to interpret the coefficients in the 2017 model regressing life expectancy on ln(GDP per capita) and ln(GDP per capita) squared is a 1% increase in GDP per capita leads to a year increase in life expectancy.&lt;/p&gt;
@@ -1291,7 +1291,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/model_results.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/model_results.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -1312,7 +1312,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;implications&#34;&gt;Implications&lt;/h2&gt;
@@ -1324,9 +1324,9 @@
     
     <item>
       <title>How To Lie With Inflation Statistics</title>
-      <link>http://localhost:4321/post/how-to-lie-with-inflation/</link>
+      <link>https://kidquant.com/post/how-to-lie-with-inflation/</link>
       <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/how-to-lie-with-inflation/</guid>
+      <guid>https://kidquant.com/post/how-to-lie-with-inflation/</guid>
       <description>&lt;p&gt;Inflation is probably one of the most difficult phenomena to understand. It’s such a difficult topic to understand, most people have difficulty defining it. At the very least, it can be defined as a broad increase in the average level of prices throughout the entire economy. Some people also define inflation as simply an increase in the money supply. Even more difficult than simply defining the term, most probably aren’t aware of how inflation actually occurs, which can originate through a number of different factors. I’m not going to go through them all, but economists can probably agree that inflation is not an observable phenomenon.&lt;/p&gt;
 &lt;p&gt;I’m not going to go through them all, but economists can probably agree that inflation is not an observable phenomenon. Well, the only exception might be if the economy was experiencing what we would refer to as ‘hyperinflation‘. In that case, inflation would be similar to pornography, you’ll know it when you see it.&lt;/p&gt;
 &lt;p&gt;However, since individuals can’t really observe inflation, the best that we can do is try to measure it. There are many different ways to measure inflation, which means there are many different ways to measure things in real terms. This makes measuring information such as ‘real wages’ more of an art rather than a science.&lt;/p&gt;
@@ -1354,7 +1354,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/cpiinflation.png&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/cpiinflation.png&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;There is just one thing wrong with only looking at headline inflation; the authors of the article already pointed out one of the flaws. Inflation appears to be increasing due to rising energy prices. Considering this, we should look at an inflation metric that removes the effects of rapidly increasing energy prices, such as core-CPI.&lt;/p&gt;
@@ -1376,7 +1376,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/ahecore.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/ahecore.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Using this inflation metric, we can see that real wages aren’t falling. So why does it matter whether or not someone is going core-CPI or headline CPI? Core CPI is merely the same as headline CPI, which excludes the price changes in food and energy. This is because food and energy tend to be very volatile, which may unfairly distort how inflation is measured.&lt;/p&gt;
@@ -1399,7 +1399,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/inflationindicies.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/inflationindicies.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following image shows Annualized Average Hourly Earnings compared with 8 different inflation indicies: Headline and Core CPI, Headline and Core PCE, and the GDP Deflator. I’ve also included 3 alternative measures of the CPI: the Chained, Trimmed-mean and the Median CPI.&lt;/p&gt;
@@ -1425,7 +1425,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/trimmedmeanmedian.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/trimmedmeanmedian.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;gdp-deflator&#34;&gt;GDP Deflator&lt;/h3&gt;
@@ -1449,7 +1449,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/gdpdeflator.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/gdpdeflator.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;pce-chain-type-index&#34;&gt;PCE Chain-Type Index&lt;/h3&gt;
@@ -1475,7 +1475,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/PCE.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/PCE.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So, is there anything wrong with using CPI over PCE? Which inflation metric should people be using? Like everything, it always depends and it usually helps to understand how both indices weight certain goods and services.&lt;/p&gt;
@@ -1497,7 +1497,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/comparison.jpg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/comparison.jpg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;I’m not actually sure about how the Bureau of Labor Statistics determines how it weighs certain items in the Consumer Price Index. However, I know that Personal Consumption Expenditure Chain-Type Index is weighed in terms of the portion someone spends on a good or services relative to overall expenditures.&lt;/p&gt;
@@ -1513,9 +1513,9 @@
     
     <item>
       <title>Chart of the Day: 3-Month Bill Bid-To-Cover Ratio Plunges</title>
-      <link>http://localhost:4321/post/2018-07-28-chart-of-the-day/</link>
+      <link>https://kidquant.com/post/2018-07-28-chart-of-the-day/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2018-07-28-chart-of-the-day/</guid>
+      <guid>https://kidquant.com/post/2018-07-28-chart-of-the-day/</guid>
       <description>&lt;p&gt;While demand for US Treasuries remains brisk at primary auctions, the same can hardly be said for the short-end of the market, where moments ago we saw what happens to auction demand in a time of rapidly rising rates.&lt;/p&gt;
 &lt;p&gt;As shown in the chart above, while the yield on the 3 month Bills auctioned off today came in largely as expected at 1.94%, the demand did not, and after an already depressed Bid-to-Cover ratio of 2.89 last week, today’s 3-month auction suffered from one of the lowest demands on record, tumbling to just 2.62. At $125.88 billion in bids tendered for $48 billion in paper, down sharply from $138.87 billion on June 25. In context, the last time the markets have witnessed a Bid-To-Cover ratio this low was post-Lehman crisis.&lt;/p&gt;
 &lt;p&gt;With both T-Bill issuance continuing to surge, and ratings rising, two things are certain: not only will the Libor-OIS spread resume blowing out amid the continued surge in short-term supply and increasingly tighter financial conditions, but demand will continue to slide. However, the good news is that we are still well off from the record lows, in which auctions were only 2.0x covered at the start of the century. That said, who knows: perhaps the break in the bond market will begin with a failed Bill action as the US Treasury finds it increasingly difficult to roll over short-term debt.&lt;/p&gt;

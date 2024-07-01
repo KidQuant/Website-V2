@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Inflation | KidQuant</title>
-    <link>http://localhost:4321/tag/inflation/</link>
-      <atom:link href="http://localhost:4321/tag/inflation/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kidquant.com/tag/inflation/</link>
+      <atom:link href="https://kidquant.com/tag/inflation/index.xml" rel="self" type="application/rss+xml" />
     <description>Inflation</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 23 Jul 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Inflation</title>
-      <link>http://localhost:4321/tag/inflation/</link>
+      <link>https://kidquant.com/tag/inflation/</link>
     </image>
     
     <item>
       <title>How To Lie With Inflation Statistics</title>
-      <link>http://localhost:4321/post/how-to-lie-with-inflation/</link>
+      <link>https://kidquant.com/post/how-to-lie-with-inflation/</link>
       <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/how-to-lie-with-inflation/</guid>
+      <guid>https://kidquant.com/post/how-to-lie-with-inflation/</guid>
       <description>&lt;p&gt;Inflation is probably one of the most difficult phenomena to understand. It’s such a difficult topic to understand, most people have difficulty defining it. At the very least, it can be defined as a broad increase in the average level of prices throughout the entire economy. Some people also define inflation as simply an increase in the money supply. Even more difficult than simply defining the term, most probably aren’t aware of how inflation actually occurs, which can originate through a number of different factors. I’m not going to go through them all, but economists can probably agree that inflation is not an observable phenomenon.&lt;/p&gt;
 &lt;p&gt;I’m not going to go through them all, but economists can probably agree that inflation is not an observable phenomenon. Well, the only exception might be if the economy was experiencing what we would refer to as ‘hyperinflation‘. In that case, inflation would be similar to pornography, you’ll know it when you see it.&lt;/p&gt;
 &lt;p&gt;However, since individuals can’t really observe inflation, the best that we can do is try to measure it. There are many different ways to measure inflation, which means there are many different ways to measure things in real terms. This makes measuring information such as ‘real wages’ more of an art rather than a science.&lt;/p&gt;
@@ -44,7 +44,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/cpiinflation.png&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/cpiinflation.png&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;There is just one thing wrong with only looking at headline inflation; the authors of the article already pointed out one of the flaws. Inflation appears to be increasing due to rising energy prices. Considering this, we should look at an inflation metric that removes the effects of rapidly increasing energy prices, such as core-CPI.&lt;/p&gt;
@@ -66,7 +66,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/ahecore.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/ahecore.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Using this inflation metric, we can see that real wages aren’t falling. So why does it matter whether or not someone is going core-CPI or headline CPI? Core CPI is merely the same as headline CPI, which excludes the price changes in food and energy. This is because food and energy tend to be very volatile, which may unfairly distort how inflation is measured.&lt;/p&gt;
@@ -89,7 +89,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/inflationindicies.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/inflationindicies.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following image shows Annualized Average Hourly Earnings compared with 8 different inflation indicies: Headline and Core CPI, Headline and Core PCE, and the GDP Deflator. I’ve also included 3 alternative measures of the CPI: the Chained, Trimmed-mean and the Median CPI.&lt;/p&gt;
@@ -115,7 +115,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/trimmedmeanmedian.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/trimmedmeanmedian.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;gdp-deflator&#34;&gt;GDP Deflator&lt;/h3&gt;
@@ -139,7 +139,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/gdpdeflator.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/gdpdeflator.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;pce-chain-type-index&#34;&gt;PCE Chain-Type Index&lt;/h3&gt;
@@ -165,7 +165,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/PCE.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/PCE.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So, is there anything wrong with using CPI over PCE? Which inflation metric should people be using? Like everything, it always depends and it usually helps to understand how both indices weight certain goods and services.&lt;/p&gt;
@@ -187,7 +187,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/comparison.jpg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/comparison.jpg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;I’m not actually sure about how the Bureau of Labor Statistics determines how it weighs certain items in the Consumer Price Index. However, I know that Personal Consumption Expenditure Chain-Type Index is weighed in terms of the portion someone spends on a good or services relative to overall expenditures.&lt;/p&gt;

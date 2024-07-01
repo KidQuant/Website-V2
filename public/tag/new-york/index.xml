@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>New York | KidQuant</title>
-    <link>http://localhost:4321/tag/new-york/</link>
-      <atom:link href="http://localhost:4321/tag/new-york/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kidquant.com/tag/new-york/</link>
+      <atom:link href="https://kidquant.com/tag/new-york/index.xml" rel="self" type="application/rss+xml" />
     <description>New York</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 12 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>New York</title>
-      <link>http://localhost:4321/tag/new-york/</link>
+      <link>https://kidquant.com/tag/new-york/</link>
     </image>
     
     <item>
       <title>New York State of Decline</title>
-      <link>http://localhost:4321/post/2020-09-12-ny-state-of-decline/</link>
+      <link>https://kidquant.com/post/2020-09-12-ny-state-of-decline/</link>
       <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-09-12-ny-state-of-decline/</guid>
+      <guid>https://kidquant.com/post/2020-09-12-ny-state-of-decline/</guid>
       <description>&lt;p&gt;Have you ever wondered how New York became America&amp;rsquo;s financial center? It&amp;rsquo;s not like the New York Stock Exchange is the only securities market in the country. Sure, there&amp;rsquo;s the NASDAQ (another in New York), but there is one in Miami, Chicago, and Philidelphia. In fact, Philadelphia initially obtained financial supremacy in the country with the establishment of the Bank of Pennsylvania in 1780.&lt;/p&gt;
 &lt;p&gt;From what I learned during my Finance undergraduate studies, it all amounts to pure luck why Philadephia isn&amp;rsquo;t America&amp;rsquo;s financial center. The main reason why economic supremacy shifted from Philly was NYC&amp;rsquo;s geographical advantage with the Erie Canal construction. The Erie Canal connected to the Hudson River to the Great Lakes and the fastest-growing places in the Appalachian Mountains. The canal helped solidify New York&amp;rsquo;s position as America&amp;rsquo;s center for commercial trade.&lt;/p&gt;
 &lt;p&gt;Point of this history lesson: nothing lasts forever. If a country, region, state, or area loses its comparative advantage, it may also lose its overall economic advantage. Enter James Altucher, author of the &lt;em&gt;NYC is Dead Forever. Here&amp;rsquo;s Why&lt;/em&gt; article [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. He wrote a scathing rebuke of the current situation involving New York City, arguing, although the city has been through a lot, this time is different. James obviously addressed all of the crucial points, which are undeniably true. Why else would high profile individuals such as Jerry Seinfield, Mark Cuban, and Bill De&amp;rsquo;Blasio respond to an article on LinkedIn?&lt;/p&gt;
@@ -41,7 +41,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/NY-State-Of-Decline/ny_pop_change.PNG&#34; alt=&#34;Population Change&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/NY-State-Of-Decline/ny_pop_change.PNG&#34; alt=&#34;Population Change&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following map shows the population change of New York counties within the last 9 years. The plot measures cumulative growth since April 2010; each county is shaded in a different color. The closer the shade is to blue, the larger the population growth within the last 9 years (and vice versa). As we can see, change in the NY population has been on a steady decline.&lt;/p&gt;
@@ -65,7 +65,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/NY-State-Of-Decline/ny_ue_rate.PNG&#34; alt=&#34;Unemployment Rate&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/NY-State-Of-Decline/ny_ue_rate.PNG&#34; alt=&#34;Unemployment Rate&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Above is a plot of the same region, except this measures the August Unemployment by county. The vast majority of areas in New York have an unemployment rate similar to the national average of 8.4 percent. In stark contrast, the five boroughs (and the surrounding areas) have unemployment rates significantly above the national average, ranging from 12 percent to as high as 20 percent. This unemployment level is consistent with the severe COVID restrictions still imposed on many industries in the city.&lt;/p&gt;

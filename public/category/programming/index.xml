@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming | KidQuant</title>
-    <link>http://localhost:4321/category/programming/</link>
-      <atom:link href="http://localhost:4321/category/programming/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kidquant.com/category/programming/</link>
+      <atom:link href="https://kidquant.com/category/programming/index.xml" rel="self" type="application/rss+xml" />
     <description>Programming</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 21 May 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Programming</title>
-      <link>http://localhost:4321/category/programming/</link>
+      <link>https://kidquant.com/category/programming/</link>
     </image>
     
     <item>
       <title>Simulating Geometric Brownian Motion</title>
-      <link>http://localhost:4321/post/2024-05-21-simulating-brownian-motion/</link>
+      <link>https://kidquant.com/post/2024-05-21-simulating-brownian-motion/</link>
       <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2024-05-21-simulating-brownian-motion/</guid>
+      <guid>https://kidquant.com/post/2024-05-21-simulating-brownian-motion/</guid>
       <description>&lt;h3 id=&#34;confidence-intervals&#34;&gt;Confidence intervals&lt;/h3&gt;
 &lt;p&gt;So far, the stuff we&amp;rsquo;ve seen is pretty easy. However, we&amp;rsquo;re trying to be precise. We want to associate a confidence interval to each estimated parameter. In other words, we want to indicate how close the sample statistic (the estimate parameter) is to the population parameter (the real value of the parameter).&lt;/p&gt;
 &lt;p&gt;We can find an interval of values that contains the real parameter, with a confidence level of $(1-\alpha)100%$, for $0&amp;lt;\alpha&amp;lt;1$. This is called the &lt;em&gt;confidence interval&lt;/em&gt;.&lt;/p&gt;
@@ -27,9 +27,9 @@
     
     <item>
       <title>Does Diversification Always Matter?</title>
-      <link>http://localhost:4321/post/2024-28-2014-does-diversification-always-matter/</link>
+      <link>https://kidquant.com/post/2024-28-2014-does-diversification-always-matter/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2024-28-2014-does-diversification-always-matter/</guid>
+      <guid>https://kidquant.com/post/2024-28-2014-does-diversification-always-matter/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve previously talked about Modern Portfolio Theory (MPT) and diversification, the assumptions underlying MPT, and the construction of a Portfolio Frontier (PF). When most people consider diversifying their portfolio, they consider limiting their downside risk. However, it is possible to construct a portfolio that maximizes return with the least volatility (choosing a portfolio that lies somewhere along the PF).&lt;/p&gt;
 &lt;p&gt;Now, I will further expand upon why diversification helps maximize risk-adjusted returns and express the limits of diversification.&lt;/p&gt;
 &lt;h3 id=&#34;what-makes-a-portfolio&#34;&gt;What Makes a Portfolio?&lt;/h3&gt;
@@ -219,7 +219,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure1.jpg&#34; alt=&#34;risk reward&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Diversification/figure1.jpg&#34; alt=&#34;risk reward&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Considering the following image. On the $x$-axis is the standard deviation of a portfolio&amp;rsquo;s return $\sigma_p$, and the $y$-axis is the expected return $\mu_p$. This is call the risk-return spectrum.&lt;/p&gt;
@@ -319,7 +319,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure2.jpg&#34; alt=&#34;portfolio frontier&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Diversification/figure2.jpg&#34; alt=&#34;portfolio frontier&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Now we can see the risk-returns of holding just stock $A$ or just stock $B$. Clearly just holding stock $A$ is less risky than holding just stock $B$. However, notice that if we draw a vertical line straight up from stock $A$, we intersect the curve. This tells us that with a creative selection of portfolio weights, we can get the same risk but with a higher expected return.&lt;/p&gt;
@@ -356,7 +356,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure3.jpg&#34; alt=&#34;Portfolio Risk&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Diversification/figure3.jpg&#34; alt=&#34;Portfolio Risk&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The return of each portfolio is defined by the &lt;em&gt;Sharpe Ratio&lt;/em&gt;, which is&lt;/p&gt;
@@ -396,7 +396,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure4.jpg&#34; alt=&#34;Portfolio Risk&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Diversification/figure4.jpg&#34; alt=&#34;Portfolio Risk&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;However, notice the benefits of diversification are constrained not only by the portfolio variance, but what we call &amp;ldquo;systematic risk&amp;rdquo;. In essence, investors aren&amp;rsquo;t compensated for taking what we call &amp;ldquo;unsystematic risk,&amp;rdquo; that is, risk that can be diversified away. Recall that the Equity Risk Premium is denoted by $E[r]=r_\alpha-r_f=\beta_\alpha(r_m-r_f)+\epsilon$.&lt;/p&gt;
@@ -412,9 +412,9 @@ $$
     
     <item>
       <title>Is DJT a Meme Stock?</title>
-      <link>http://localhost:4321/post/2024-04-02-djt-meme-stock/</link>
+      <link>https://kidquant.com/post/2024-04-02-djt-meme-stock/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2024-04-02-djt-meme-stock/</guid>
+      <guid>https://kidquant.com/post/2024-04-02-djt-meme-stock/</guid>
       <description>&lt;p&gt;Donald Trump&amp;rsquo;s knock-off Twitter has officially become public for under a week, and the entire country didn&amp;rsquo;t take long to create an investment thesis about it. Just in case you fell asleep, Trump got himself banned from Twitter for&amp;hellip; reasons [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
 &lt;p&gt;To combat the bias and censorship that was prevalent at the time, Trump decided to launch his social media network called Truth Social, which was created by T Media Tech LLC in 2021, owned by Trump Media &amp;amp; Technology Group Corp. Since then, the company was acquired via SPAC (Special Purpose Acquisition Vehicle) by Digital World Acquisition Corp.&lt;/p&gt;
 &lt;p&gt;You can find the stock on the NASDAQ exchange under the ticker DTJ, which I&amp;rsquo;m sure is just a coincidence. It&amp;rsquo;s currently trading at $~49$ per share, down from it&amp;rsquo;s peak of $~66$ per share. Trump is currently the majority shareholder, owning $~57%$ of the available shares.&lt;/p&gt;
@@ -438,7 +438,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-DJT/stonks.png&#34; alt=&#34;Stonks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-DJT/stonks.png&#34; alt=&#34;Stonks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;At least according to the analysis I conducted three years ago is concerned. Recall that I&amp;rsquo;ve created an algorithm that tracks the most frequently mentioned assets on the infamous subreddit: Wall Street Bets [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Three years ago, owning shares of AMC, GME, BB, and some crypto was cool. Today, owning shares of NVDA, AAPL, SPY, RDDT (obviously), and DJT is cool, so it&amp;rsquo;s a mixed bag for the overall &amp;ldquo;memeness.&amp;rdquo; Some of the assets that generate a lot of buzz on the subreddit are definitely at risk. On the other hand, some of the assets are more established, less volatile, positive cash flow generating assets.&lt;/p&gt;
@@ -463,7 +463,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-DJT/diamond.png&#34; alt=&#34;Diamond Handsl&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-DJT/diamond.png&#34; alt=&#34;Diamond Handsl&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;If you hate Trump, DJT is a clear scam; a pump and dump (it&amp;rsquo;s not a pump and dump) and it&amp;rsquo;s going to zero, just like his other businesses.&lt;/p&gt;
@@ -485,7 +485,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-DJT/zero.png&#34; alt=&#34;zero&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-DJT/zero.png&#34; alt=&#34;zero&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Like everything, the truth is probably close to the middle but definitely much closer to zero than the moon. Right now, DJT is receiving a wave of bad press, mostly related to lackluster earnings performance and the uncertainty of the firm&amp;rsquo;s future viability. As expected, the stock took a hit based on that news.&lt;/p&gt;
@@ -504,9 +504,9 @@ $$
     
     <item>
       <title>How Dangerous Is Biking in New York City</title>
-      <link>http://localhost:4321/post/2024-03-31-biking-accidents/</link>
+      <link>https://kidquant.com/post/2024-03-31-biking-accidents/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2024-03-31-biking-accidents/</guid>
+      <guid>https://kidquant.com/post/2024-03-31-biking-accidents/</guid>
       <description>&lt;p&gt;I tried analyzing cycling accidents around New York City, but it was difficult to draw meaningful conclusions from the data. For example, men die more frequently than women while biking, according to a report on Bicyclist Fatalities and Serious Injuries in New York City.&lt;/p&gt;
 &lt;p&gt;However, interpreting this data is tricky. For example, do more men die because more men bike or is it because they engage in riskier behavior? I had a different issue with analyzing accident locations (even though the data has geogrpahical location, longitude and latitude). Do more accidents happen at intersections because intersections are more dangerous or because they are easier locations to record? These kinds of questions are subtle and require careful data collection and analysis to answer.&lt;/p&gt;
 &lt;p&gt;Furthermore, I found it hard to see how any conclusions would be actionable. I&amp;rsquo;m not going to start leaving work at 3 PM, even if 5 PM is a truly riskier time to bike.&lt;/p&gt;
@@ -528,7 +528,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Biking-Accidents/accidents.png&#34; alt=&#34;Biking Accidents in the city&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Biking-Accidents/accidents.png&#34; alt=&#34;Biking Accidents in the city&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So what can I do? In my mind, the simplest framing is that biking is dangerous because I am sharing the road with cars. To justify this claim, consider these data from DOT&amp;rsquo;s Bicycle Crash Data Reports. They point a clear picture about the risk of accidents with and without cars. The simplest thing I can do is to plan my route to maximize time in bike lanes, ideally protected bike lanes. And I should be extra careful in moments where I interact with cars.&lt;/p&gt;
@@ -556,9 +556,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Revisitng Delta</title>
-      <link>http://localhost:4321/post/2023-03-28-revisiting-delta/</link>
+      <link>https://kidquant.com/post/2023-03-28-revisiting-delta/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2023-03-28-revisiting-delta/</guid>
+      <guid>https://kidquant.com/post/2023-03-28-revisiting-delta/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve recently been tasked with working more with more fixed-income derivatives, so I&amp;rsquo;m writing this more as a refresher for myself, but I&amp;rsquo;ve always guaged how well I know something based on how well I&amp;rsquo;m able to teach others.&lt;/p&gt;
 &lt;p&gt;Recall that the Black-Scholes price of a European-style call option is&lt;/p&gt;
 &lt;p&gt;$$
@@ -719,7 +719,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Revisitng-Delta/Delta_Put.png&#34; alt=&#34;BS as a function of spot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Revisitng-Delta/Delta_Put.png&#34; alt=&#34;BS as a function of spot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Notice that an at-the-money (ATM) option has a delta of slightly greater than 0.5. This is because while $\Phi(x)$ is symmetric with respect to its input $d_1$, the variable $d_1$ is a logarithmic function of $S$. Confusingly, some people will claim that the delta of an ATM option is 0.5. For example, Investopedia says&lt;/p&gt;
@@ -774,7 +774,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Revisitng-Delta/Delta_Impact_IV.png&#34; alt=&#34;Delta Volatility Sensitivity&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Revisitng-Delta/Delta_Impact_IV.png&#34; alt=&#34;Delta Volatility Sensitivity&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;delta-sensitivity&#34;&gt;Delta Sensitivity&lt;/h3&gt;
@@ -801,7 +801,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Revisitng-Delta/call_delta.jpeg&#34; alt=&#34;cal wrt &#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Revisitng-Delta/call_delta.jpeg&#34; alt=&#34;cal wrt &#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Hedging an options position by trading the underlying requires continuously rebalancing the hedged position due to this continuously accumulating &lt;em&gt;hedging error&lt;/em&gt;. One way to visualize this ever-changing error is by visualizing the gap between the linear equation $\Delta S_1+b$ and $\Delta_1 S_1+b_1$, where $b$ and $b_1$ and the $y$-intercepts their respective delta. What would increase this gap between the two points? More curvature to the Black-Scholes price curve.&lt;/p&gt;
@@ -817,9 +817,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>r/WallStreetBets Most Talked About Stonks</title>
-      <link>http://localhost:4321/post/2021-05-24-wsb-favorite-stock/</link>
+      <link>https://kidquant.com/post/2021-05-24-wsb-favorite-stock/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2021-05-24-wsb-favorite-stock/</guid>
+      <guid>https://kidquant.com/post/2021-05-24-wsb-favorite-stock/</guid>
       <description>&lt;p&gt;One of the most bizarre David vs. Goliath scenarios in modern finance, by far, belongs to the retail investors from Reddit&amp;rsquo;s r/WallStreetBets versus Hedge Fund space. The story became such a fad that it garnered the attention of Treasury Secretary Janet Yellen and the SEC. With the democratization of finance, everyone can invest in markets once thought unobtainable to the common man.&lt;/p&gt;
 &lt;h2 id=&#34;rwallstreetbets-vs-wall-street-hedge-funds&#34;&gt;r/WallStreetBets vs. Wall Street Hedge Funds&lt;/h2&gt;
 &lt;p&gt;The mania revolves around the most shorted stocks, shorted by hedge funds that hoped to make a killing when those stocks collapse. For anyone unfamiliar with how short selling works, the art of short selling involves a hypothesis that an asset price will fall within a given time frame. The process consists of an investor borrowing a stock, selling the stock, and then buying the stock back to return to the lender (hopefully at a lower price than what the investor initially purchased).&lt;/p&gt;
@@ -884,7 +884,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/WSB-Favorite-Stocks/01.PNG&#34; alt=&#34;Dataframe&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/WSB-Favorite-Stocks/01.PNG&#34; alt=&#34;Dataframe&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The query only returned 388 rows of information, although we requested at most 1,000 post. This is because reddit has removed queries based on time and only allows reddit users to browse based on the most recent post. 388 post, while limiting, is also more than enough to extract the information that we need.&lt;/p&gt;
@@ -943,7 +943,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/WSB-Favorite-Stocks/02.PNG&#34; alt=&#34;Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/WSB-Favorite-Stocks/02.PNG&#34; alt=&#34;Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s interesting to see Macy&amp;rsquo;s on this list, considering that the retailer is practically on its deathbed (although, I did write about how clothing accessories and apparel have experienced the largest sales growth post-lockdown, so maybe not) [&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;].&lt;/p&gt;
@@ -961,9 +961,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Measuring Pandemic Progress: Log Scale vs. Per Capita</title>
-      <link>http://localhost:4321/post/2020-04-15-measuring-covid-progress/</link>
+      <link>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-04-15-measuring-covid-progress/</guid>
+      <guid>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</guid>
       <description>&lt;p&gt;There have been many visualization projects created for the purposes of modeling COVID-19 cases and deaths. The best known are the graphs produced by John Burn-Murdock of the Financial Times. You can view his very create and beautiful COVID visualizations on his Twitter Page.&lt;/p&gt;
 &lt;p&gt;Before COVID, I think people were more used to viewing data in relative terms. Now, log-scale visualizations have become more widespread, primarily due to the way diseases spread during a pandemic.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s become so popular, programmers developed ways to replicate these charts using Python and R packages. The most notable being &lt;code&gt;tidycovid19&lt;/code&gt; package designed by Joachim Gassen. You can few the package on his GitHub [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
@@ -1003,7 +1003,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Measuring-Progress/first_40_days.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Measuring-Progress/first_40_days.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 
 However, people have often wondered why we don&amp;rsquo;t present these numbers on a per capita basis? Burn-Murdock has provided a data-oriented reason why log-scales are used instead of per capita scaling.&lt;/p&gt;
@@ -1033,7 +1033,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Measuring-Progress/cases_logratio.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Measuring-Progress/cases_logratio.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;While the graph doesn&amp;rsquo;t tell us everything about how the pandemic is overwhelming the different health care systems around the world, it does show how each country is attempting to slow the infection rate and reduce the slope of their curves. It&amp;rsquo;s easier to compare the trajectory in this way, considering that we have to look to see which country is trending higher.&lt;/p&gt;
@@ -1047,9 +1047,9 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
     
     <item>
       <title>The Mathematics of Pandemics</title>
-      <link>http://localhost:4321/post/2020-04-08-the-mathematics-of-pandemics/</link>
+      <link>https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/</link>
       <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-04-08-the-mathematics-of-pandemics/</guid>
+      <guid>https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/</guid>
       <description>&lt;p&gt;So, this is our very first pandemic. At least, it&amp;rsquo;s the first serious pandemic. I&amp;rsquo;ve lived through the 2009 H1N1 Pandemic, but I don&amp;rsquo;t really remember it all that well. All I know is that H1N1 is not nearly as serious as this, because now I&amp;rsquo;m forced to work from home.&lt;/p&gt;
 &lt;p&gt;Right now, COVID-19, a.k.a, the coronavirus is on our doorstep. There are more than 423,000 confirmed cases in the United States; 14,700 confirmed deaths [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. New York has the highest record death toll; we surpassed Washington State a few weeks ago. It certainly does feel like an apocalyptic scenario is about to occur.&lt;/p&gt;
 &lt;p&gt;Regardless, one good thing that can occur out of this situation is that the Coronavirus has rekindled the public&amp;rsquo;s interest in Mathematics. At least, marginally. Articles are circulating explaining &amp;ldquo;dangerous mathematics behind the coronavirus,&amp;rdquo; and how cases could grow exponentially [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;].&lt;/p&gt;
@@ -1071,7 +1071,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-19-exponential.png&#34; alt=&#34;Coronavirus cases US&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-19-exponential.png&#34; alt=&#34;Coronavirus cases US&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The idea behind exponential growth as it relates to pandemics is that one person who has contracted the virus comes into contact with anyone. So the total number of cases increases to 2. Assume each infected person will come in contact with 1 new person. Then those 2 infected people will infect 2 more people, increasing confirmed cases to 4. Those 4 will eventually become 8, then 8 becomes 16, and so on.&lt;/p&gt;
@@ -1171,7 +1171,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/sir_model1.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/sir_model1.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;the-seirseid-model&#34;&gt;The SEIR/SEID Model&lt;/h2&gt;
@@ -1246,7 +1246,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/sir_model2.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/sir_model2.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We added the total line to sanity check everything. All of the possible states should add up to 100,000. Based on the parameters, we could expect the virus to infect ~200,000 people while exposing ~350,000 people. The difference between the two comprises our asymptomatic cases. (people who have been exposed to the virus, but fail to show symptoms) Overall, the virus ends up killing ~100,000 people under our scenario.&lt;/p&gt;
@@ -1284,9 +1284,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Solving Rubik&#39;s Cubes with Python</title>
-      <link>http://localhost:4321/post/2019-09-14-solving-a-rubiks-cube-in-python/</link>
+      <link>https://kidquant.com/post/2019-09-14-solving-a-rubiks-cube-in-python/</link>
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2019-09-14-solving-a-rubiks-cube-in-python/</guid>
+      <guid>https://kidquant.com/post/2019-09-14-solving-a-rubiks-cube-in-python/</guid>
       <description>&lt;p&gt;I enjoy solving Rubik&amp;rsquo;s cubes; my interest involves solving rubik&amp;rsquo;s cubes of different dimensions (3x3, 4x4, and triangles, etc) and discovering different algorithms. The internet is full of different solutions; however, it is it is rarely every described how these solutions were discovered. In this post, I&amp;rsquo;ll try to detail how one can solve the rubik&amp;rsquo;s cube from scratch.&lt;/p&gt;
 &lt;p&gt;Keep in mind, the solution presented in this post is by no mean the fastest. It takes a very long time to solve a Rubik&amp;rsquo;s Cube using this algorithm.&lt;/p&gt;
 </description>

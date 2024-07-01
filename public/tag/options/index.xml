@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Options | KidQuant</title>
-    <link>http://localhost:4321/tag/options/</link>
-      <atom:link href="http://localhost:4321/tag/options/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kidquant.com/tag/options/</link>
+      <atom:link href="https://kidquant.com/tag/options/index.xml" rel="self" type="application/rss+xml" />
     <description>Options</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 03 Oct 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Options</title>
-      <link>http://localhost:4321/tag/options/</link>
+      <link>https://kidquant.com/tag/options/</link>
     </image>
     
     <item>
       <title>Option Payoffs, Black-Scholes, and the Greeks</title>
-      <link>http://localhost:4321/project/option-payoffs-black-scholes-and-the-greeks/</link>
+      <link>https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/</link>
       <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/option-payoffs-black-scholes-and-the-greeks/</guid>
+      <guid>https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/</guid>
       <description>&lt;p&gt;I wanted to get a better understanding of using the Python programming language to play around with options. We&amp;rsquo;ll have a look at creating some option payoff functions, implementation of Black-Scholes pricing, and then finish up with some sensitivity analysis (Greeks).&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll provide a reasonably high-level overview of what we&amp;rsquo;re doing, but I&amp;rsquo;m by no means an expert in options! However, I found that by implementing them in the Python programming language is good practice in some fundamental skills like list manipulations, maps, plotting, and taking it one step further into object-oriented programming.&lt;/p&gt;
 &lt;h2 id=&#34;black-scholes-equation&#34;&gt;Black-Scholes Equation&lt;/h2&gt;
@@ -185,7 +185,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/options_payoffs.png&#34; alt=&#34;Options Payoffs&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/options_payoffs.png&#34; alt=&#34;Options Payoffs&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As one can see, with a long call, the minimum loss will never be greater than 10 dollars. With a strike of 100 dollars, the underlying would need to go north of 110 dollars for you to make a profit. This is known as the &amp;ldquo;break-even&amp;rdquo; point. The inverse is true for long puts, as profit increases when the underlying decreases in value.&lt;/p&gt;
@@ -236,7 +236,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/bs_payoff_put_call.png&#34; alt=&#34;Black Scholes&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/bs_payoff_put_call.png&#34; alt=&#34;Black Scholes&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As you saw from the plots we&amp;rsquo;ve previously made, there was a linear relationship, as the only variables we considered was the payoff and the premium. Using BSM, there are more variables to consider; therefore, there is a curvature with the following models.&lt;/p&gt;
@@ -324,7 +324,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/first_order_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/first_order_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Plenty of interseting movements and factors illustrated within these plots; however, I want to focus on delta, gamma, and vega.&lt;/p&gt;
@@ -359,7 +359,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/multivariable_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/multivariable_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We have four subplots: delta, gamma, vega, and charm. Within each subplot, we have three axes. The x-axis represents the price of the underlying; the y-axis represents the time to expiration; and the z-axis represents greek. This plot will examine the relationship using calls.&lt;/p&gt;

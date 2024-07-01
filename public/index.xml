@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>KidQuant</title>
-    <link>http://localhost:4321/</link>
-      <atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kidquant.com/</link>
+      <atom:link href="https://kidquant.com/index.xml" rel="self" type="application/rss+xml" />
     <description>KidQuant</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>KidQuant</title>
-      <link>http://localhost:4321/</link>
+      <link>https://kidquant.com/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>http://localhost:4321/talk/example-talk/</link>
+      <link>https://kidquant.com/talk/example-talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/talk/example-talk/</guid>
+      <guid>https://kidquant.com/talk/example-talk/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -34,9 +34,9 @@
     
     <item>
       <title>Simulating Geometric Brownian Motion</title>
-      <link>http://localhost:4321/post/2024-05-21-simulating-brownian-motion/</link>
+      <link>https://kidquant.com/post/2024-05-21-simulating-brownian-motion/</link>
       <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2024-05-21-simulating-brownian-motion/</guid>
+      <guid>https://kidquant.com/post/2024-05-21-simulating-brownian-motion/</guid>
       <description>&lt;h3 id=&#34;confidence-intervals&#34;&gt;Confidence intervals&lt;/h3&gt;
 &lt;p&gt;So far, the stuff we&amp;rsquo;ve seen is pretty easy. However, we&amp;rsquo;re trying to be precise. We want to associate a confidence interval to each estimated parameter. In other words, we want to indicate how close the sample statistic (the estimate parameter) is to the population parameter (the real value of the parameter).&lt;/p&gt;
 &lt;p&gt;We can find an interval of values that contains the real parameter, with a confidence level of $(1-\alpha)100%$, for $0&amp;lt;\alpha&amp;lt;1$. This is called the &lt;em&gt;confidence interval&lt;/em&gt;.&lt;/p&gt;
@@ -47,9 +47,9 @@
     
     <item>
       <title>Does Diversification Always Matter?</title>
-      <link>http://localhost:4321/post/2024-28-2014-does-diversification-always-matter/</link>
+      <link>https://kidquant.com/post/2024-28-2014-does-diversification-always-matter/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2024-28-2014-does-diversification-always-matter/</guid>
+      <guid>https://kidquant.com/post/2024-28-2014-does-diversification-always-matter/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve previously talked about Modern Portfolio Theory (MPT) and diversification, the assumptions underlying MPT, and the construction of a Portfolio Frontier (PF). When most people consider diversifying their portfolio, they consider limiting their downside risk. However, it is possible to construct a portfolio that maximizes return with the least volatility (choosing a portfolio that lies somewhere along the PF).&lt;/p&gt;
 &lt;p&gt;Now, I will further expand upon why diversification helps maximize risk-adjusted returns and express the limits of diversification.&lt;/p&gt;
 &lt;h3 id=&#34;what-makes-a-portfolio&#34;&gt;What Makes a Portfolio?&lt;/h3&gt;
@@ -239,7 +239,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure1.jpg&#34; alt=&#34;risk reward&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Diversification/figure1.jpg&#34; alt=&#34;risk reward&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Considering the following image. On the $x$-axis is the standard deviation of a portfolio&amp;rsquo;s return $\sigma_p$, and the $y$-axis is the expected return $\mu_p$. This is call the risk-return spectrum.&lt;/p&gt;
@@ -339,7 +339,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure2.jpg&#34; alt=&#34;portfolio frontier&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Diversification/figure2.jpg&#34; alt=&#34;portfolio frontier&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Now we can see the risk-returns of holding just stock $A$ or just stock $B$. Clearly just holding stock $A$ is less risky than holding just stock $B$. However, notice that if we draw a vertical line straight up from stock $A$, we intersect the curve. This tells us that with a creative selection of portfolio weights, we can get the same risk but with a higher expected return.&lt;/p&gt;
@@ -376,7 +376,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure3.jpg&#34; alt=&#34;Portfolio Risk&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Diversification/figure3.jpg&#34; alt=&#34;Portfolio Risk&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The return of each portfolio is defined by the &lt;em&gt;Sharpe Ratio&lt;/em&gt;, which is&lt;/p&gt;
@@ -416,7 +416,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure4.jpg&#34; alt=&#34;Portfolio Risk&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Diversification/figure4.jpg&#34; alt=&#34;Portfolio Risk&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;However, notice the benefits of diversification are constrained not only by the portfolio variance, but what we call &amp;ldquo;systematic risk&amp;rdquo;. In essence, investors aren&amp;rsquo;t compensated for taking what we call &amp;ldquo;unsystematic risk,&amp;rdquo; that is, risk that can be diversified away. Recall that the Equity Risk Premium is denoted by $E[r]=r_\alpha-r_f=\beta_\alpha(r_m-r_f)+\epsilon$.&lt;/p&gt;
@@ -432,9 +432,9 @@ $$
     
     <item>
       <title>Is DJT a Meme Stock?</title>
-      <link>http://localhost:4321/post/2024-04-02-djt-meme-stock/</link>
+      <link>https://kidquant.com/post/2024-04-02-djt-meme-stock/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2024-04-02-djt-meme-stock/</guid>
+      <guid>https://kidquant.com/post/2024-04-02-djt-meme-stock/</guid>
       <description>&lt;p&gt;Donald Trump&amp;rsquo;s knock-off Twitter has officially become public for under a week, and the entire country didn&amp;rsquo;t take long to create an investment thesis about it. Just in case you fell asleep, Trump got himself banned from Twitter for&amp;hellip; reasons [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
 &lt;p&gt;To combat the bias and censorship that was prevalent at the time, Trump decided to launch his social media network called Truth Social, which was created by T Media Tech LLC in 2021, owned by Trump Media &amp;amp; Technology Group Corp. Since then, the company was acquired via SPAC (Special Purpose Acquisition Vehicle) by Digital World Acquisition Corp.&lt;/p&gt;
 &lt;p&gt;You can find the stock on the NASDAQ exchange under the ticker DTJ, which I&amp;rsquo;m sure is just a coincidence. It&amp;rsquo;s currently trading at $~49$ per share, down from it&amp;rsquo;s peak of $~66$ per share. Trump is currently the majority shareholder, owning $~57%$ of the available shares.&lt;/p&gt;
@@ -458,7 +458,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-DJT/stonks.png&#34; alt=&#34;Stonks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-DJT/stonks.png&#34; alt=&#34;Stonks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;At least according to the analysis I conducted three years ago is concerned. Recall that I&amp;rsquo;ve created an algorithm that tracks the most frequently mentioned assets on the infamous subreddit: Wall Street Bets [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Three years ago, owning shares of AMC, GME, BB, and some crypto was cool. Today, owning shares of NVDA, AAPL, SPY, RDDT (obviously), and DJT is cool, so it&amp;rsquo;s a mixed bag for the overall &amp;ldquo;memeness.&amp;rdquo; Some of the assets that generate a lot of buzz on the subreddit are definitely at risk. On the other hand, some of the assets are more established, less volatile, positive cash flow generating assets.&lt;/p&gt;
@@ -483,7 +483,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-DJT/diamond.png&#34; alt=&#34;Diamond Handsl&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-DJT/diamond.png&#34; alt=&#34;Diamond Handsl&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;If you hate Trump, DJT is a clear scam; a pump and dump (it&amp;rsquo;s not a pump and dump) and it&amp;rsquo;s going to zero, just like his other businesses.&lt;/p&gt;
@@ -505,7 +505,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-DJT/zero.png&#34; alt=&#34;zero&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-DJT/zero.png&#34; alt=&#34;zero&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Like everything, the truth is probably close to the middle but definitely much closer to zero than the moon. Right now, DJT is receiving a wave of bad press, mostly related to lackluster earnings performance and the uncertainty of the firm&amp;rsquo;s future viability. As expected, the stock took a hit based on that news.&lt;/p&gt;
@@ -524,9 +524,9 @@ $$
     
     <item>
       <title>How Dangerous Is Biking in New York City</title>
-      <link>http://localhost:4321/post/2024-03-31-biking-accidents/</link>
+      <link>https://kidquant.com/post/2024-03-31-biking-accidents/</link>
       <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2024-03-31-biking-accidents/</guid>
+      <guid>https://kidquant.com/post/2024-03-31-biking-accidents/</guid>
       <description>&lt;p&gt;I tried analyzing cycling accidents around New York City, but it was difficult to draw meaningful conclusions from the data. For example, men die more frequently than women while biking, according to a report on Bicyclist Fatalities and Serious Injuries in New York City.&lt;/p&gt;
 &lt;p&gt;However, interpreting this data is tricky. For example, do more men die because more men bike or is it because they engage in riskier behavior? I had a different issue with analyzing accident locations (even though the data has geogrpahical location, longitude and latitude). Do more accidents happen at intersections because intersections are more dangerous or because they are easier locations to record? These kinds of questions are subtle and require careful data collection and analysis to answer.&lt;/p&gt;
 &lt;p&gt;Furthermore, I found it hard to see how any conclusions would be actionable. I&amp;rsquo;m not going to start leaving work at 3 PM, even if 5 PM is a truly riskier time to bike.&lt;/p&gt;
@@ -548,7 +548,7 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Biking-Accidents/accidents.png&#34; alt=&#34;Biking Accidents in the city&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Biking-Accidents/accidents.png&#34; alt=&#34;Biking Accidents in the city&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So what can I do? In my mind, the simplest framing is that biking is dangerous because I am sharing the road with cars. To justify this claim, consider these data from DOT&amp;rsquo;s Bicycle Crash Data Reports. They point a clear picture about the risk of accidents with and without cars. The simplest thing I can do is to plan my route to maximize time in bike lanes, ideally protected bike lanes. And I should be extra careful in moments where I interact with cars.&lt;/p&gt;
@@ -576,9 +576,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Revisitng Delta</title>
-      <link>http://localhost:4321/post/2023-03-28-revisiting-delta/</link>
+      <link>https://kidquant.com/post/2023-03-28-revisiting-delta/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2023-03-28-revisiting-delta/</guid>
+      <guid>https://kidquant.com/post/2023-03-28-revisiting-delta/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve recently been tasked with working more with more fixed-income derivatives, so I&amp;rsquo;m writing this more as a refresher for myself, but I&amp;rsquo;ve always guaged how well I know something based on how well I&amp;rsquo;m able to teach others.&lt;/p&gt;
 &lt;p&gt;Recall that the Black-Scholes price of a European-style call option is&lt;/p&gt;
 &lt;p&gt;$$
@@ -739,7 +739,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Revisitng-Delta/Delta_Put.png&#34; alt=&#34;BS as a function of spot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Revisitng-Delta/Delta_Put.png&#34; alt=&#34;BS as a function of spot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Notice that an at-the-money (ATM) option has a delta of slightly greater than 0.5. This is because while $\Phi(x)$ is symmetric with respect to its input $d_1$, the variable $d_1$ is a logarithmic function of $S$. Confusingly, some people will claim that the delta of an ATM option is 0.5. For example, Investopedia says&lt;/p&gt;
@@ -794,7 +794,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Revisitng-Delta/Delta_Impact_IV.png&#34; alt=&#34;Delta Volatility Sensitivity&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Revisitng-Delta/Delta_Impact_IV.png&#34; alt=&#34;Delta Volatility Sensitivity&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;delta-sensitivity&#34;&gt;Delta Sensitivity&lt;/h3&gt;
@@ -821,7 +821,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Revisitng-Delta/call_delta.jpeg&#34; alt=&#34;cal wrt &#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Revisitng-Delta/call_delta.jpeg&#34; alt=&#34;cal wrt &#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Hedging an options position by trading the underlying requires continuously rebalancing the hedged position due to this continuously accumulating &lt;em&gt;hedging error&lt;/em&gt;. One way to visualize this ever-changing error is by visualizing the gap between the linear equation $\Delta S_1+b$ and $\Delta_1 S_1+b_1$, where $b$ and $b_1$ and the $y$-intercepts their respective delta. What would increase this gap between the two points? More curvature to the Black-Scholes price curve.&lt;/p&gt;
@@ -837,9 +837,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Does a r/WallStreetBets Portfolio Significantly Outperform?</title>
-      <link>http://localhost:4321/project/wallstreet-bets-stock-analysis/</link>
+      <link>https://kidquant.com/project/wallstreet-bets-stock-analysis/</link>
       <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/wallstreet-bets-stock-analysis/</guid>
+      <guid>https://kidquant.com/project/wallstreet-bets-stock-analysis/</guid>
       <description>&lt;p&gt;Thanks to the prevalence of COVID-19 in our everyday lives, it&amp;rsquo;s getting increasingly difficult to return to normal for most people. While I&amp;rsquo;ve used this additional flexibility to pick up on old hobbies (gaming, music, etc.), others have used theirs to learn about financial markets. Knowing that I work in finance, some of my friends have reached out to me for financial pointers, while others have opted for the convenience of reading r/WallStreetBets.&lt;/p&gt;
 &lt;p&gt;You may be asking, why am I &amp;ndash; someone who would be considered a &amp;ldquo;sophiscated investor&amp;rdquo; &amp;ndash; would even be interested in a platform such as r/WallStreetBets? For those of you who don&amp;rsquo;t know, I&amp;rsquo;ve written a piece about the subreddit last year. However, it was never clearly explained the buzz around r/WallStreetBets.&lt;/p&gt;
 &lt;p&gt;Due to the pandemic (the financial insecurity and flexibility it brought to millions of people), as well as the stimulus checks provided by the government and the rise of free trading platforms such as Robinhood, a lot of people who would typically not dabble with stocks are having fun with the stock market. They&amp;rsquo;re also investing in all sorts of zany things like Dogecoin and GameStop. Institutional Investors (the &amp;ldquo;smart money&amp;rdquo;) and the veterans in the financial media fail to understand this, and they&amp;rsquo;re generally condescending and negative towards these new brand of retail investors.&lt;/p&gt;
@@ -874,7 +874,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-Stocks-Portfolio/meme-stock-life-cycle.jpg&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/meme-stock-life-cycle.jpg&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;&amp;ldquo;To the moon&amp;rdquo; was a popular rallying cry for many holders of these stocks. It was used as a reminding, regardless of how much the price may drop, buy and never sell, because we (retail investors) control the value of the stock, and not institutional investors. There is no doube that it can be exciting to make money day trading and to be part of something bigger than yourself.&lt;/p&gt;
@@ -898,7 +898,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/WSB-Favorite-Stocks/02.PNG&#34; alt=&#34;Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/WSB-Favorite-Stocks/02.PNG&#34; alt=&#34;Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We will construct a portfolio using popular stocks from the WallStreetBets community. In July 2021, I decided to find the most talk-about stocks in the r/WallStreetBets subreddit and narrowed the list down to 20 of the most popular equities on the platform. Six of these assets have recently gone public, and they will be excluded from the experiment.&lt;/p&gt;
@@ -943,7 +943,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-Stocks-Portfolio/alpha.png&#34; alt=&#34;alpha&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/alpha.png&#34; alt=&#34;alpha&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, most of the stocks in our portfolio outperform the S&amp;amp;P 500 by a modest margin. Out of the 20 assets, 8 of them outperform our benchmark at least 1%, and 3 have underperformed our benchmark. If we average the , it comes out to 0.9386, which means that our meme stock portfolio only outperforms the S&amp;amp;P by 0.93% (I got this figure by simply averaging the  for each asset). So, should you invest in a portfolio like this? I suppose it &amp;ldquo;depends&amp;rdquo; on your income goals and overall suitability (after all, this isn&amp;rsquo;t investment advice).&lt;/p&gt;
@@ -967,7 +967,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-Stocks-Portfolio/beta.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/beta.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As mentioned before, most assets (especially stocks) are positively correlated with the broader market. Most of the assets in our portfolio have $\beta$ greater than 1, which means they are more volatile than the overall market. As we see, CLF has a $\beta$ of 1.7, which means we can expect this stock to increase by 1.7% for every 1% increase in the broader market.&lt;/p&gt;
@@ -995,7 +995,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-Stocks-Portfolio/portfolio.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/portfolio.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Now we&amp;rsquo;ve allocated all 20 of our assets based on our risk tolerance. As you can see, our program has plotted 100,000 unique portfolios, with annualized returns ($\alpha$) on our y-axis and annualized volatility ($\beta$) on our x-axis. It&amp;rsquo;s possible to select a random portfolio inside the curve, but there will always be some portfolio out there, with the same number of assets, that will outperform in terms of returns and risk. The optimal or efficient portfolio will always exist somewhere on the edge of the curve, hence, the efficient frontier.&lt;/p&gt;
@@ -1017,9 +1017,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>r/WallStreetBets Most Talked About Stonks</title>
-      <link>http://localhost:4321/post/2021-05-24-wsb-favorite-stock/</link>
+      <link>https://kidquant.com/post/2021-05-24-wsb-favorite-stock/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2021-05-24-wsb-favorite-stock/</guid>
+      <guid>https://kidquant.com/post/2021-05-24-wsb-favorite-stock/</guid>
       <description>&lt;p&gt;One of the most bizarre David vs. Goliath scenarios in modern finance, by far, belongs to the retail investors from Reddit&amp;rsquo;s r/WallStreetBets versus Hedge Fund space. The story became such a fad that it garnered the attention of Treasury Secretary Janet Yellen and the SEC. With the democratization of finance, everyone can invest in markets once thought unobtainable to the common man.&lt;/p&gt;
 &lt;h2 id=&#34;rwallstreetbets-vs-wall-street-hedge-funds&#34;&gt;r/WallStreetBets vs. Wall Street Hedge Funds&lt;/h2&gt;
 &lt;p&gt;The mania revolves around the most shorted stocks, shorted by hedge funds that hoped to make a killing when those stocks collapse. For anyone unfamiliar with how short selling works, the art of short selling involves a hypothesis that an asset price will fall within a given time frame. The process consists of an investor borrowing a stock, selling the stock, and then buying the stock back to return to the lender (hopefully at a lower price than what the investor initially purchased).&lt;/p&gt;
@@ -1084,7 +1084,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/WSB-Favorite-Stocks/01.PNG&#34; alt=&#34;Dataframe&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/WSB-Favorite-Stocks/01.PNG&#34; alt=&#34;Dataframe&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The query only returned 388 rows of information, although we requested at most 1,000 post. This is because reddit has removed queries based on time and only allows reddit users to browse based on the most recent post. 388 post, while limiting, is also more than enough to extract the information that we need.&lt;/p&gt;
@@ -1143,7 +1143,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/WSB-Favorite-Stocks/02.PNG&#34; alt=&#34;Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/WSB-Favorite-Stocks/02.PNG&#34; alt=&#34;Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s interesting to see Macy&amp;rsquo;s on this list, considering that the retailer is practically on its deathbed (although, I did write about how clothing accessories and apparel have experienced the largest sales growth post-lockdown, so maybe not) [&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;].&lt;/p&gt;
@@ -1161,17 +1161,17 @@ $$&lt;/p&gt;
     
     <item>
       <title>Modeling Vanilla Interest Rate Swaps</title>
-      <link>http://localhost:4321/post/2020-12-30-modeling-vanilla-interest-rate-swaps/</link>
+      <link>https://kidquant.com/post/2020-12-30-modeling-vanilla-interest-rate-swaps/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-12-30-modeling-vanilla-interest-rate-swaps/</guid>
+      <guid>https://kidquant.com/post/2020-12-30-modeling-vanilla-interest-rate-swaps/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hello R Markdown</title>
-      <link>http://localhost:4321/post/2020-12-01-r-rmarkdown/</link>
+      <link>https://kidquant.com/post/2020-12-01-r-rmarkdown/</link>
       <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>http://localhost:4321/post/2020-12-01-r-rmarkdown/</guid>
+      <guid>https://kidquant.com/post/2020-12-01-r-rmarkdown/</guid>
       <description>&lt;h1 id=&#34;r-markdown&#34;&gt;R Markdown&lt;/h1&gt;
 &lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
@@ -1202,7 +1202,7 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;init.angle&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;-50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;border&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;NA&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://localhost:4321/post/2020-12-01-r-rmarkdown/index.en_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://kidquant.com/post/2020-12-01-r-rmarkdown/index.en_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;Figure 1: A fancy pie chart.&lt;/p&gt;
 &lt;/div&gt;
 </description>
@@ -1210,9 +1210,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>New York State of Decline</title>
-      <link>http://localhost:4321/post/2020-09-12-ny-state-of-decline/</link>
+      <link>https://kidquant.com/post/2020-09-12-ny-state-of-decline/</link>
       <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-09-12-ny-state-of-decline/</guid>
+      <guid>https://kidquant.com/post/2020-09-12-ny-state-of-decline/</guid>
       <description>&lt;p&gt;Have you ever wondered how New York became America&amp;rsquo;s financial center? It&amp;rsquo;s not like the New York Stock Exchange is the only securities market in the country. Sure, there&amp;rsquo;s the NASDAQ (another in New York), but there is one in Miami, Chicago, and Philidelphia. In fact, Philadelphia initially obtained financial supremacy in the country with the establishment of the Bank of Pennsylvania in 1780.&lt;/p&gt;
 &lt;p&gt;From what I learned during my Finance undergraduate studies, it all amounts to pure luck why Philadephia isn&amp;rsquo;t America&amp;rsquo;s financial center. The main reason why economic supremacy shifted from Philly was NYC&amp;rsquo;s geographical advantage with the Erie Canal construction. The Erie Canal connected to the Hudson River to the Great Lakes and the fastest-growing places in the Appalachian Mountains. The canal helped solidify New York&amp;rsquo;s position as America&amp;rsquo;s center for commercial trade.&lt;/p&gt;
 &lt;p&gt;Point of this history lesson: nothing lasts forever. If a country, region, state, or area loses its comparative advantage, it may also lose its overall economic advantage. Enter James Altucher, author of the &lt;em&gt;NYC is Dead Forever. Here&amp;rsquo;s Why&lt;/em&gt; article [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. He wrote a scathing rebuke of the current situation involving New York City, arguing, although the city has been through a lot, this time is different. James obviously addressed all of the crucial points, which are undeniably true. Why else would high profile individuals such as Jerry Seinfield, Mark Cuban, and Bill De&amp;rsquo;Blasio respond to an article on LinkedIn?&lt;/p&gt;
@@ -1237,7 +1237,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/NY-State-Of-Decline/ny_pop_change.PNG&#34; alt=&#34;Population Change&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/NY-State-Of-Decline/ny_pop_change.PNG&#34; alt=&#34;Population Change&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following map shows the population change of New York counties within the last 9 years. The plot measures cumulative growth since April 2010; each county is shaded in a different color. The closer the shade is to blue, the larger the population growth within the last 9 years (and vice versa). As we can see, change in the NY population has been on a steady decline.&lt;/p&gt;
@@ -1261,7 +1261,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/NY-State-Of-Decline/ny_ue_rate.PNG&#34; alt=&#34;Unemployment Rate&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/NY-State-Of-Decline/ny_ue_rate.PNG&#34; alt=&#34;Unemployment Rate&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Above is a plot of the same region, except this measures the August Unemployment by county. The vast majority of areas in New York have an unemployment rate similar to the national average of 8.4 percent. In stark contrast, the five boroughs (and the surrounding areas) have unemployment rates significantly above the national average, ranging from 12 percent to as high as 20 percent. This unemployment level is consistent with the severe COVID restrictions still imposed on many industries in the city.&lt;/p&gt;
@@ -1286,9 +1286,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>COVID Vs. Economy</title>
-      <link>http://localhost:4321/post/2020-08-22-covid-vs-economy/</link>
+      <link>https://kidquant.com/post/2020-08-22-covid-vs-economy/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-08-22-covid-vs-economy/</guid>
+      <guid>https://kidquant.com/post/2020-08-22-covid-vs-economy/</guid>
       <description>&lt;p&gt;On this blog, I&amp;rsquo;ve talked about the Mathematics of Pandemics. I&amp;rsquo;ve even talked about the Politics of Pandemics. I&amp;rsquo;m long overdue to discuss the &amp;ldquo;Economics of Pandemics;&amp;rdquo; however, theorizing the potential effects of an inadequate response was pretty pointless, as anyone who has lived through the Great Recession would tell you. After all, &amp;ldquo;ignorance on fire is sometimes better than knowledge on ice,&amp;rdquo; as the saying goes.&lt;/p&gt;
 &lt;p&gt;Regardless of whether or not our economic response to COVID was sufficient, the discussion was always framed in a false dichotomy: protecting the vulnerable versus protecting the economy. If one is a pragmatic, normal-thinking individual, these two are not necessarily mutually exclusive. As early as March 27th, the IGM Chicago Forum surveyed more than 40 professional economists regarding the economic lockdowns in response to the COVID-19 crisis. The vast majority of respondents agree (88%) believe that a comprehensive policy response would involve tolerating a massive contraction in economic activity until the spread has dropped significantly (Question A) [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
 &lt;p&gt;So the United States, along with other nations around the world, instituted their lockdowns policy. We initiated our 15 Days to Slow The Spread, which quickly became 30 Days to Slow The Spread. Although most states have very minor COVID restrictions (staying six feet apart, no gatherings greater than 20 people, etc.), other places that were more severely affected are imposing more strict regulations. [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;] It just so happens that the places with the strictest COVID regulation are also home to the largest economies in the U.S.&lt;/p&gt;
@@ -1315,7 +1315,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/us_gdp_global.png&#34; alt=&#34;US vs Global GDP&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/us_gdp_global.png&#34; alt=&#34;US vs Global GDP&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The virus ravaged Italy and Spain, and they have instituted strict lockdowns in return. Other places in Europe, which did not want to become the next Italy, instituted strict lockdowns. (Canada is included, for no other reason than it is our neighbor to the north) Some may argue that these nations made a significant trade-off; they chose to protect lives over the economy, and now the economy will be better off in the long-run.&lt;/p&gt;
@@ -1338,7 +1338,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/france_spain_covid.png&#34; alt=&#34;France and Spain&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/france_spain_covid.png&#34; alt=&#34;France and Spain&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following places are experiencing an uptick in COVID-19 cases:&lt;/p&gt;
@@ -1367,7 +1367,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/south_korea_cases.png&#34; alt=&#34;South Korea&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/south_korea_cases.png&#34; alt=&#34;South Korea&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;What about New Zealand? Haven&amp;rsquo;t they eradicated the virus? They&amp;rsquo;ve managed to survive 100 days without a single COVID-19 transmission. Sure, New Zealand is a small island with a population of 5 million and a single major airport. It shouldn&amp;rsquo;t be difficult to suppress transmissions in the long-run; however, the virus eventually resurged without a single transmission from outside the country.&lt;/p&gt;
@@ -1390,7 +1390,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/new_zealand_cases.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/new_zealand_cases.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s a novel virus, which means that unless there is a vaccine, everyone will be exposed to it eventually. Keeping people locked inside doesn&amp;rsquo;t stop the disease; it only delays it. Unfortunately, keeping people locked inside until the spread slows down, or until vaccine, is a very popular solution to a very unsustainable problem.&lt;/p&gt;
@@ -1415,7 +1415,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/sweden_cases_deaths.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/sweden_cases_deaths.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Lockdowns and closed boarders lack a historical, scientific basis from the Swedish perspective. COVID-19 is in every European country, and so far, none of them have been able to slow down the spread considerably. Regardless, journalists and political analysts have considered Sweden a &amp;ldquo;cautionary tale&amp;rdquo; for the world [&lt;a href=&#34;#9&#34;&gt;9&lt;/a&gt;]. They justify this claim by correctly pointing out that Sweden&amp;rsquo;s population-adjusted death rate is significantly higher compared to its Scandinavian neighbors Finland, Denmark, and Norway [&lt;a href=&#34;#10&#34;&gt;10&lt;/a&gt;].&lt;/p&gt;
@@ -1439,7 +1439,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-V-Economy/sweden_outperforms.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-V-Economy/sweden_outperforms.png&#34; alt=&#34;New Zealand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The point of Sweden&amp;rsquo;s strategy, at least from Sweden&amp;rsquo;s perspective, is that places that have locked down significantly lower immunity levels than Sweden&amp;rsquo;s. As such, these places may need to lock down again if and when the disease returns (it has already returned). Many experts have claimed that COVID-19, like some other respiratory diseases, will only be subject to the effects of herd immunity when anywhere from 60-80% of the population recovers from it. No one knows what level of serology represents what is known as Heparin-induced thrombocytopenia (NIT), but we do know that antibody studies are undercounting the population&amp;rsquo;s immunity [&lt;a href=&#34;#11&#34;&gt;11&lt;/a&gt;][&lt;a href=&#34;#12&#34;&gt;12&lt;/a&gt;].&lt;/p&gt;
@@ -1463,9 +1463,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Analyzing the Impact of COVID-19 on Retail</title>
-      <link>http://localhost:4321/post/2020-08-15-covid-impact-retail-sales/</link>
+      <link>https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/</link>
       <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-08-15-covid-impact-retail-sales/</guid>
+      <guid>https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/</guid>
       <description>&lt;p&gt;It doesn&amp;rsquo;t take a genius to know that 2020 has been a year for the United States economy. Tens of millions were encouraged or forced to remain indoors in an attempt to slow the spread. Only a few industries/businesses were allowed to stay open, as they were classified as &amp;ldquo;essential businesses.&amp;rdquo; The longest expansion in U.S. history came to an end in Q1 2020, which resulted in a -5.0% contraction in economic activity (followed by a -32.9% drop in Q2).&lt;/p&gt;
 &lt;p&gt;Within the same period, retail sales declined -0.87% YoY for Q1 2020, equating to a ~5 billion drop. During the second quarter, sales dropped a whopping 8.16% YoY, resulting in an approximately 12 billion decline in retail sales. (although the quarterly decline in sales is the largest since the Great Recession, the monthly decline is the largest in history)&lt;/p&gt;
 &lt;p&gt;However, during the last two months, retail sales have recovered to pre-recession levels, and total sales are the highest.&lt;/p&gt;
@@ -1487,7 +1487,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/retailsales2020.png&#34; alt=&#34;Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/retailsales2020.png&#34; alt=&#34;Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As everyone across the country is adjusting to a life with COVID, it&amp;rsquo;s interesting to see which industries benefit the most, and which industries are the most impacted. The Census Bureau publishes data on Advanced Monthly Sales for Retail and Food Services; statistics are gathered utilizing a stratified random sampling method that tracks approximately 5,500 retail and food service firms. The data is then weighted and benchmarked to represent a complete universe of over three million retail and food service firms. The data goes as far back as 1992.&lt;/p&gt;
@@ -1509,7 +1509,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/monthly_retail_sales_2020.png&#34; alt=&#34;Monthly Retail Sales 2020&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/monthly_retail_sales_2020.png&#34; alt=&#34;Monthly Retail Sales 2020&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We saw a slight decline in February, which can be seen as a result of seasonality (a decline as a result of holiday shopping MoM). However, during the two months afterward, we&amp;rsquo;ve experienced some extreme declines in retail sales, most of which occurred in April. Most states haven&amp;rsquo;t instituted their lockdowns until the end of March or the beginning of April.&lt;/p&gt;
@@ -1533,7 +1533,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/february_2020.png&#34; alt=&#34;February Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/february_2020.png&#34; alt=&#34;February Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The most significant declines include gasoline stations (-2.95%), men&amp;rsquo;s clothing stores (-2.86%), automotive parts (-2.38%), general clothing stores (-1.8%), and building material/suppliers dealers (-1.63%). Out of 30 NAICS industries, just seven experienced sales growth for the entire month of February.&lt;/p&gt;
@@ -1557,7 +1557,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/april_2020.png&#34; alt=&#34;April Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/april_2020.png&#34; alt=&#34;April Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;One would also assume that industries such as grocery and fast food would see some growth during this period, considering these are classified as essential businesses. However, grocery and fast food industries experienced a -13.37% and -34.32% decline, respectively. This decline could be attributed to safety concerns (unable to implement the necessary infrastructure to continue operating safely). It could be due to the decrease in mobility (many of the food and drinking places include restaurants and bars, which people can no longer patronize).&lt;/p&gt;
@@ -1583,7 +1583,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/may_2020.png&#34; alt=&#34;May Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/may_2020.png&#34; alt=&#34;May Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;During May, Retail sales grew 18.27%, which shouldn&amp;rsquo;t be surprising to anyone if you shut down the economy for nearly two months. Also, every industry experienced sales growth, which also shouldn&amp;rsquo;t be surprising. If you&amp;rsquo;re at rock bottom, the only place left to go is up.&lt;/p&gt;
@@ -1605,7 +1605,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/top_sales_may_2020.png&#34; alt=&#34;Top 10 Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/top_sales_may_2020.png&#34; alt=&#34;Top 10 Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The top 5 industries with the most growth in May include shoe stores, clothing accessories, clothing stores, women&amp;rsquo;s clothing, and sporting goods. An obvious explanation would consist of the resurgence of warmer weather. People are forced to remain inside, and it&amp;rsquo;s challenging to keep doing in a more temperate climate. Plenty of clothing stores also reopened just in time for the summer season; so the surge in sales also coincides a change in climate.&lt;/p&gt;
@@ -1630,7 +1630,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/percentage_change_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/percentage_change_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So if you were in the business of selling electronics and sporting goods, you most likely saw a lot of business. Interestingly, people have pointed out that liquor stores are not an essential business but noticed they were exempt from many shelters in place orders. There are most likely technical reasons for this (alcohol is still technically food), historical reasons (the prohibition era), and personal reasons (it helps reduces stress).&lt;/p&gt;
@@ -1653,7 +1653,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/online_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/online_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As such, we see a temporary bifurcation of the retail market. For as long as we are following CDC safety guidelines, only industries that are considered the most &amp;ldquo;safe&amp;rdquo; and essential will outperform. If your business requires people to travel, be near one another, and require physical inventory, these industries will most likely take a hit until we&amp;rsquo;ve controlled the spread of this virus.&lt;/p&gt;
@@ -1664,9 +1664,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Cancel Culture, Woke Capitalism, and the Market Place of Ideas</title>
-      <link>http://localhost:4321/post/2020-08-15-hashtag-activism-redux/</link>
+      <link>https://kidquant.com/post/2020-08-15-hashtag-activism-redux/</link>
       <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-08-15-hashtag-activism-redux/</guid>
+      <guid>https://kidquant.com/post/2020-08-15-hashtag-activism-redux/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s a familiar proverb often cited in politics, which states something to the effect of, &amp;ldquo;if you&amp;rsquo;re not outraged, you&amp;rsquo;re not paying attention.&amp;rdquo; I often say, as a response, if politics is functioning normally, the average person is not supposed to be paying attention. Everyone in politics has a habit of engaging in hyperbole; attributing nefarious intent towards their rivals; comparing our daily lives to political dramas like &lt;em&gt;House of Cards&lt;/em&gt; or &lt;em&gt;The West Wing&lt;/em&gt;. In reality, with the apparent exception of the year 2020, life is very dull. Politics is more similar to shows like &lt;em&gt;VEEP&lt;/em&gt;; it&amp;rsquo;s mostly a joke, which would explain why most Americans don&amp;rsquo;t take it as seriously as others would like.&lt;/p&gt;
 &lt;p&gt;As such, most Americans don&amp;rsquo;t have well-formed political identities and don&amp;rsquo;t want one. They say if &amp;ldquo;Didn&amp;rsquo;t Vote&amp;rdquo; was a candidate for President during the 2016 general election, it would have won in a landslide [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. When you consider that most people are not very political, an attempt to politicize everything becomes very poisonous. Once upon a time, people engaged in the activities they enjoyed. Now, the daily actions of individuals require them to engage a sort of political calculus. Similar to the &amp;ldquo;Rational Expectations&amp;rdquo; implication economist implement in theoretical models. When making decisions, the theory states that individual agents will base their decisions on the best possible information available.&lt;/p&gt;
 &lt;p&gt;The political universe, at least political Twitter, operates under a similar notion, albeit with a faulty premise. The assumption is that everyone is politically active, has access to all news information, and aware of all political/cultural tropes. While it&amp;rsquo;s flattering to assume that your fellow countryman is as politically aware as the next, the opportunity cost of remaining an informed citizen is very high. You can&amp;rsquo;t attribute every action to some nefarious political motivation. Sometimes, people are just trying to live their lives.&lt;/p&gt;
@@ -1692,7 +1692,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/meme-companies-woke-capitalism.jpg&#34; alt=&#34;Work capitalism&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/meme-companies-woke-capitalism.jpg&#34; alt=&#34;Work capitalism&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Woke Capitalism&amp;rdquo; has a different connotation, depending on who uses it. Woke Capitalism can be referred to as an approach to how Corporations capitalize on popular social movements to increase their bottom line. The very polarizing Gillette commercial against toxic masculinity is one example [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Companies/brands changing their logo to incorporate rainbow colors every Pride month is another. It&amp;rsquo;s often seen as shilling and insincere, but some have argued that companies failing to address these issues imply they value profits over people. Damned if you do; damned if you don&amp;rsquo;t. There are many other examples, but I&amp;rsquo;m referring to a different kind of woke capitalism.&lt;/p&gt;
@@ -1721,7 +1721,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/cato_survey.jpeg&#34; alt=&#34;Cato National Survye&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/cato_survey.jpeg&#34; alt=&#34;Cato National Survye&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;A recent National Survey poll by the Cato Institute has found that 62% of American adults feel that the current political climate prevents people from saying things they believe. The majority of people, sorted by political affiliation, agree with this sentiment [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;]. The only cohort which disagrees with this sentiment are Strong Liberal, which would most likely include the far left.&lt;/p&gt;
@@ -1747,7 +1747,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/BLM_support.PNG&#34; alt=&#34;BLM Support&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/BLM_support.PNG&#34; alt=&#34;BLM Support&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We also have David Shor, a data analyst for Civis Analyst, a Democrat polling firm. He was fired from his position for providing the data detailing the election after the King assassination riots of 1968 [&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;]. He pointed out that the civil unrest helped tip the scales in favor of President Richard Nixon, who was ultimately not sympathetic to civil rights issues. Shor suggested that the George Floyd riots could do the same for Trump in November.&lt;/p&gt;
@@ -1814,9 +1814,9 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
     
     <item>
       <title>The Politics of Pandemics</title>
-      <link>http://localhost:4321/post/2020-07-11-the-politics-of-pandemics/</link>
+      <link>https://kidquant.com/post/2020-07-11-the-politics-of-pandemics/</link>
       <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-07-11-the-politics-of-pandemics/</guid>
+      <guid>https://kidquant.com/post/2020-07-11-the-politics-of-pandemics/</guid>
       <description>&lt;p&gt;I bet you&amp;rsquo;d never thought we&amp;rsquo;d find a way to politicize a deadly virus. I suppose that is what happens when your government operates under a system of federalism [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. It&amp;rsquo;s almost as if people are just now realizing, when it comes to specific issues, that the state and local governments are more important than the federal government. In some ways, this crisis may have renewed our appreciation for the federalist system of government. In others, it has also magnified the polarization.&lt;/p&gt;
 &lt;p&gt;Last month, New York State Governor Andrew Cuomo stated on Twitter that, &amp;ldquo;We [NY State] didn&amp;rsquo;t just flatten the curve &amp;ndash; we crushed it.&amp;rdquo; This statement isn&amp;rsquo;t remotely true, for reasons that I&amp;rsquo;ve outlined [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Of course, I never realized at the time how much this statement would be used as a launching pad for the &amp;ldquo;blue states vs. red state&amp;rdquo; mantra. (Even during the early months of the Pandemic, it was &amp;ldquo;blue state vs. red state&amp;rdquo; in terms of testing, reopening, and a few other issues)&lt;/p&gt;
 &lt;p&gt;And why not use a pandemic as an opportunity to advance that agenda, especially since Twitter makes it so easy for certain people to get away with being mildly dishonest. (To a certain degree, Twitter &amp;ldquo;fact-checks&amp;rdquo; post on their platform)&lt;/p&gt;
@@ -1838,7 +1838,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/deleted_post.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/deleted_post.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;What is the evidence does Neera Tanden use to support this claim? Who could say? It is, after all, just a talking point, but is there any basis for this claim?&lt;/p&gt;
@@ -1871,7 +1871,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/infectives_origin.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/infectives_origin.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the vast majority of the spread is associated with an outbreak in New York City, with very little originating from Washington. This is not the say that the spread of the virus was primarily domestic (the virus was still brought into America, from abroad). However, the idea &amp;ldquo;the whole country could be seeing their surges&amp;rdquo; if the earliest of confirmed cases appeared in states like Texas is nonsensical.&lt;/p&gt;
@@ -1897,9 +1897,9 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
     
     <item>
       <title>We Already Fund Education More Than Law Enforcement</title>
-      <link>http://localhost:4321/post/2020-06-17-we-fund-teachers-not-police/</link>
+      <link>https://kidquant.com/post/2020-06-17-we-fund-teachers-not-police/</link>
       <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-06-17-we-fund-teachers-not-police/</guid>
+      <guid>https://kidquant.com/post/2020-06-17-we-fund-teachers-not-police/</guid>
       <description>&lt;p&gt;You may not believe it, but it&amp;rsquo;s true. We currently already spend, on aggregate (at the state and local level), more on teachers and education more than we spend on police and law enforecement. But who says we aren&amp;rsquo;t, and why does this matter?&lt;/p&gt;
 &lt;p&gt;I give you Exhibit A:&lt;/p&gt;
 &lt;!-- tweet 1269662790744145925 --&gt;
@@ -1923,7 +1923,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/police_expenditures.png&#34; alt=&#34;Police Expenditures&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/police_expenditures.png&#34; alt=&#34;Police Expenditures&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So the output of our code is the historical Government Current Expenditures at the state and local level of law enforcement. This data goes back to 1959. As of 2018, we currently spend 137 billion dollars on police [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. (Note: much of these data comes from FRED, although it sourced by the BEA)&lt;/p&gt;
@@ -1947,7 +1947,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/teachers_expenditures.png&#34; alt=&#34;Teachers Expenditures&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/teachers_expenditures.png&#34; alt=&#34;Teachers Expenditures&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Well, this plot looks the same as the police expenditures plot, but the y-axis is ten times larger.&lt;/p&gt;
@@ -1970,7 +1970,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/teachers_police.png&#34; alt=&#34;Teachers and Police&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/teachers_police.png&#34; alt=&#34;Teachers and Police&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It certainly doesn&amp;rsquo;t look like we&amp;rsquo;re spending more on Police than we are on Teachers. Not anywhere close. Based on what I&amp;rsquo;m looking at, what we spend on law enforcement is significantly dwarfed by the amount we spend on education (as it should be).&lt;/p&gt;
@@ -1997,7 +1997,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/social_spending_police.png&#34; alt=&#34;Social Spending&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/social_spending_police.png&#34; alt=&#34;Social Spending&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We should indeed be spending more on all of the things that would probably reduce crime. However, there is currently nothing preventing us from doing this, especially not the police. If you compare the United States to Europe, we find that most European countries are more generous with welfare and social spending. However, this doesn&amp;rsquo;t have anything to do with how much they spend on police.&lt;/p&gt;
@@ -2020,14 +2020,14 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/polce_v_prison.png&#34; alt=&#34;Police vs Prison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/polce_v_prison.png&#34; alt=&#34;Police vs Prison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The current problem with our relationship with police in society is that they&amp;rsquo;re too unaccountable, have too much job security, and have far too little training. In fact, I would argue that that in order for police to recieve more training, they need &lt;em&gt;more&lt;/em&gt; funding, not less.&lt;/p&gt;
 &lt;p&gt;As state and local governments take steps towards reducing the level of funding from their law enforcement, we can expect the fewer people employed in these fields. Violent crime is currently at a 50 year low. One could make the argument, given this trend, that we no longer need the amount of police in our society.&lt;/p&gt;
 &lt;p&gt;However, if one is going to argue that police have no role in maintaining safe streets, they&amp;rsquo;re also arguing against lots of strong evidence. One of the most robust, most uncomfortable findings in criminology is that putting more officers on the street leads to less violent crime [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;][&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;][&lt;a href=&#34;#6&#34;&gt;6&lt;/a&gt;][&lt;a href=&#34;#7&#34;&gt;7&lt;/a&gt;][&lt;a href=&#34;#8&#34;&gt;8&lt;/a&gt;].&lt;/p&gt;
 &lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
-&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;http://localhost:4321/post/images/Notebooks/police_v_education.html&#34;&gt;Kid Quant | Replicating the data from this post&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;a name=&#34;1&#34;&gt;1&lt;/a&gt;] &lt;a href=&#34;https://kidquant.com/post/images/Notebooks/police_v_education.html&#34;&gt;Kid Quant | Replicating the data from this post&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[&lt;a name=&#34;2&#34;&gt;2&lt;/a&gt;] &lt;a href=&#34;https://fred.stlouisfed.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Federal Reserve Economic Database (FRED)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[&lt;a name=&#34;3&#34;&gt;3&lt;/a&gt;] &lt;a href=&#34;https://obamawhitehouse.archives.gov/sites/whitehouse.gov/files/documents/CEA%2BCriminal%2BJustice%2BReport.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obama White House (2016)  | Economic Perspectives on Incarceration and the Criminal Justice System&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[&lt;a name=&#34;4&#34;&gt;4&lt;/a&gt;] &lt;a href=&#34;https://mason.gmu.edu/~atabarro/TerrorAlertProofs.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Klick &amp;amp; Tabarrok (2005) | Using terror alert levels to estimate the effect of police on crime&lt;/a&gt;&lt;/p&gt;
@@ -2040,9 +2040,9 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
     
     <item>
       <title>No, New York Has Not Flattened The Curve</title>
-      <link>http://localhost:4321/post/2020-06-08-ny-crushed-by-curve/</link>
+      <link>https://kidquant.com/post/2020-06-08-ny-crushed-by-curve/</link>
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-06-08-ny-crushed-by-curve/</guid>
+      <guid>https://kidquant.com/post/2020-06-08-ny-crushed-by-curve/</guid>
       <description>&lt;p&gt;I keep reading &amp;ndash; and hearing &amp;ndash; that New York has successfully &amp;ldquo;flattened the curve,&amp;rdquo; and it makes me wonder if people have just decided to go into hibernation the past three months. It&amp;rsquo;s not outside the realm of possibility; we all have lots of free time on our hands now. However, it&amp;rsquo;s a sign that our political discourse has become so warped that our politicians can say things that are patently false with very little pushback.&lt;/p&gt;
 &lt;!-- tweet 1269344344374497280 --&gt;
 &lt;p&gt;What did I expect? As a politician, he&amp;rsquo;s not going to say, &amp;ldquo;New York has been decimated by the virus,&amp;rdquo; but that&amp;rsquo;s precisely what happened. I haven&amp;rsquo;t talked about &amp;ldquo;flatten the curve&amp;rdquo; at all on this blog because it assumed that it was well understood by most. I was obviously wrong. How else can a governor of one of the largest states get away from saying, &amp;ldquo;we crushed&amp;rdquo; the curve?&lt;/p&gt;
@@ -2066,7 +2066,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/pandemic.png&#34; alt=&#34;Pandemic Curves&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/pandemic.png&#34; alt=&#34;Pandemic Curves&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following image shows what a flattened curve should obviously look like. The red-shaded steap curve shows a scenario with preventative measures (social distancing, mask, etc.), while blue-shaded curve shows a scenario with protective measures. The blue-shaded curve is flatter than the red-shaded curve, and that is the scenario that we are trying to implement.&lt;/p&gt;
@@ -2092,7 +2092,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/new_york_cases_0704.png&#34; alt=&#34;New York Cases&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/new_york_cases_0704.png&#34; alt=&#34;New York Cases&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So, to answer a previously-posed question, no, we did not get the blue-shaded flat curve, synonymous with a gradual increase in new infections. Instead, what we witness was a rapid spike in daily cases. At least, when compared to cases in Washington State, which did experience a large surge in cases but managed to taper off early during the crisis.&lt;/p&gt;
@@ -2114,7 +2114,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/washington_cases_0704.png&#34; alt=&#34;New York Cases&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/washington_cases_0704.png&#34; alt=&#34;New York Cases&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;But that is all in the past. New York is doing relatively better now, even as cases surge in places that were previously managing the virus well. So, what exactly is New York doing that is so special? It&amp;rsquo;s not as if New York is doing anything spectacular when it comes to testing or tracing.&lt;/p&gt;
@@ -2142,7 +2142,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/nyc_deaths.jpg&#34; alt=&#34;New York Deaths&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/nyc_deaths.jpg&#34; alt=&#34;New York Deaths&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We are noticing a surge in cases in other parts of the country, places that have yet to experience their first wave (Flordia and Arizona). Deaths in these states are relatively small. The death rate from COVID-19 is ~170 per 100,000 people in New York State [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;], Arizona has reported ~1,000 COVID deaths. For Arizona to have a death rate comparable to New York, there would need to be +11,200 additional deaths from COVID in Arizona, which doesn&amp;rsquo;t seem likely. (Florida would need to have +35,000 new deaths)&lt;/p&gt;
@@ -2157,9 +2157,9 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
     
     <item>
       <title>Analyzing News Articles With Python</title>
-      <link>http://localhost:4321/project/analyzing-news-articles-python/</link>
+      <link>https://kidquant.com/project/analyzing-news-articles-python/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/analyzing-news-articles-python/</guid>
+      <guid>https://kidquant.com/project/analyzing-news-articles-python/</guid>
       <description>&lt;p&gt;Never before has America become more polarized than we are today. As such, the news we consume is a function of our polarization. Right-leaning people tend to get their information from Fox News, The Wall Street Journal, National Review, etc. People who lean left tend to get their information from MSNBC, The New York Times, The Huffington Post, etc. There are a handful of neutral publications (Reuters, Politico, Associated Press, etc.). Still, even their alignment falls into question, based on how they report the news.&lt;/p&gt;
 &lt;p&gt;
 
@@ -2179,7 +2179,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/partisan.gif&#34; alt=&#34;Partisan Divide&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/partisan.gif&#34; alt=&#34;Partisan Divide&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s unclear to what extent news plays a role in fueling the partisan divide in our country. There is some evidence to suggest that people, when given accurate information on controversial issues, will choose to disregard this information to fit commonly held beliefs [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. This perhaps can explain the apparent bias for news outlets. Now, more than ever, people should be allowed to sift through news sources that are free from bias, misinformation, and personal polarization.&lt;/p&gt;
@@ -2205,7 +2205,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/topics-allsides.PNG&#34; alt=&#34;All Sides&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides.PNG&#34; alt=&#34;All Sides&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We can get articles from pretty much any topic: Criminal Justice, Education, and the Economy. All Sides even collects the news perspectives on the most important topic in the world right now, the Coronavirus. (Yes, our society is so divided right now, we&amp;rsquo;ve even managed to politize a deadly virus)&lt;/p&gt;
@@ -2228,7 +2228,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/example_articles.PNG&#34; alt=&#34;example articles&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles.PNG&#34; alt=&#34;example articles&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The results provide a data frame that we can use as a stepping stone to extract relevant information, such as the body of the article and the authors. Sure, we could have extracted all of that information along with the rest. However, web scraping is very tricky, as no two websites have the same HTML structure and layout. This is especially true for news media websites.&lt;/p&gt;
@@ -2255,7 +2255,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/example_articles2.PNG&#34; alt=&#34;example article #2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles2.PNG&#34; alt=&#34;example article #2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, Fox News has the largest number of articles in our dataset, with 25 pieces. Reuters is right behind Fox News with 20 articles, followed by the Wall Street Journal (News Section), Washington Times, and The Hill with 20, 17, and 15 articles, respectively.&lt;/p&gt;
@@ -2279,7 +2279,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/topics-allsides5.PNG&#34; alt=&#34;All Sides&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides5.PNG&#34; alt=&#34;All Sides&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Still, whether or not a news outlet is owned or operated by a particular person has little to do with its overall objectivity and bias. All Sides has conducted an in-depth analysis of major news publications such as The Wall Street Journal and has found that outlet is more aligned to the center than its peers. (Keep in mind, a Center alignment doesn&amp;rsquo;t mean better!) [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;]&lt;/p&gt;
@@ -2301,7 +2301,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/example_articles3.PNG&#34; alt=&#34;example article 3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles3.PNG&#34; alt=&#34;example article 3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;When everything is extracted, we should get the data frame similar to what we presented above. The author and text columns are highlighted to demonstrate that we have obtained this new information. We&amp;rsquo;ve also included the length of characters for each article (for reasons that will be clear later).&lt;/p&gt;
@@ -2342,7 +2342,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/topics-allsides7.PNG&#34; alt=&#34;Natural Language&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides7.PNG&#34; alt=&#34;Natural Language&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the process for using the &lt;code&gt;nltk&lt;/code&gt; module is a painstaking process, as you can see. If we compare it with Google&amp;rsquo;s Natural Language API, the process looks a little more like this:&lt;/p&gt;
@@ -2364,7 +2364,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/topics-allsides8.PNG&#34; alt=&#34;Google API&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides8.PNG&#34; alt=&#34;Google API&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, it&amp;rsquo;s much more manageable. No need to look for specific stop words, tokenize the text, or test/train our dataset to fit the module.&lt;/p&gt;
@@ -2392,7 +2392,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/example_articles4.PNG&#34; alt=&#34;example article 4&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles4.PNG&#34; alt=&#34;example article 4&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s important to note that the Natural Language indicates differences between positive and negative emotion in a document, but does not identify specific positive and negative emotions. For example, &amp;ldquo;angry&amp;rdquo; and &amp;ldquo;sad&amp;rdquo; are both considered negative emotions. However, when the Natural Language analyzes text that is considered &amp;ldquo;angry,&amp;rdquo; or text that is considered &amp;ldquo;sad,&amp;rdquo; the response only indicates that the sentiment in the text is negative, not &amp;ldquo;sad&amp;rdquo; or &amp;ldquo;angry.&amp;rdquo;&lt;/p&gt;
@@ -2427,7 +2427,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/topics-allsides9.PNG&#34; alt=&#34;example boxwhisker&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides9.PNG&#34; alt=&#34;example boxwhisker&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Once we have found the IQR for each dataset, we now need to calculate the lower and upper bounds. The lower bounds can be found by taking Q1 and subtracting by 1.5 times the IQR. The upper bound can be found using the same way, except we are using addition instead of subtraction. To bring this explanation in perspective, I&amp;rsquo;m going to use a few statistics for right-leaning sources.&lt;/p&gt;
@@ -2451,7 +2451,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/box-and-whisker.PNG&#34; alt=&#34;example boxwhisker&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/box-and-whisker.PNG&#34; alt=&#34;example boxwhisker&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;This data suggests that writers for left-leaning outlets are more likely to implement their personal feelings and emotions into the articles they publish. I suppose we can expect this from outlets such as &lt;em&gt;Vox&lt;/em&gt; and perhaps &lt;em&gt;The Guardian&lt;/em&gt;, but the Washington Post and the Los Angeles Times are considered more &amp;ldquo;news-oriented&amp;rdquo; outlets.&lt;/p&gt;
@@ -2475,9 +2475,9 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
     
     <item>
       <title>Measuring Pandemic Progress: Log Scale vs. Per Capita</title>
-      <link>http://localhost:4321/post/2020-04-15-measuring-covid-progress/</link>
+      <link>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-04-15-measuring-covid-progress/</guid>
+      <guid>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</guid>
       <description>&lt;p&gt;There have been many visualization projects created for the purposes of modeling COVID-19 cases and deaths. The best known are the graphs produced by John Burn-Murdock of the Financial Times. You can view his very create and beautiful COVID visualizations on his Twitter Page.&lt;/p&gt;
 &lt;p&gt;Before COVID, I think people were more used to viewing data in relative terms. Now, log-scale visualizations have become more widespread, primarily due to the way diseases spread during a pandemic.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s become so popular, programmers developed ways to replicate these charts using Python and R packages. The most notable being &lt;code&gt;tidycovid19&lt;/code&gt; package designed by Joachim Gassen. You can few the package on his GitHub [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
@@ -2517,7 +2517,7 @@ dividends can be reduced, based on the percentage of ownership BRK has of each c
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Measuring-Progress/first_40_days.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Measuring-Progress/first_40_days.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 
 However, people have often wondered why we don&amp;rsquo;t present these numbers on a per capita basis? Burn-Murdock has provided a data-oriented reason why log-scales are used instead of per capita scaling.&lt;/p&gt;
@@ -2547,7 +2547,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Measuring-Progress/cases_logratio.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Measuring-Progress/cases_logratio.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;While the graph doesn&amp;rsquo;t tell us everything about how the pandemic is overwhelming the different health care systems around the world, it does show how each country is attempting to slow the infection rate and reduce the slope of their curves. It&amp;rsquo;s easier to compare the trajectory in this way, considering that we have to look to see which country is trending higher.&lt;/p&gt;
@@ -2561,9 +2561,9 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
     
     <item>
       <title>Tracking COVID-19 Cases Globally</title>
-      <link>http://localhost:4321/project/tracking-covid19-cases/</link>
+      <link>https://kidquant.com/project/tracking-covid19-cases/</link>
       <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/tracking-covid19-cases/</guid>
+      <guid>https://kidquant.com/project/tracking-covid19-cases/</guid>
       <description>&lt;p&gt;Unless you&amp;rsquo;ve been living under a rock, you&amp;rsquo;ve probably heard of an illness called Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2), the disease that causes the Coronavirus Disease 2019 (COVID-2019). The disease is considered the most infectious and deadly illness since the Spanish Flu in 1919. In response, schools have closed; Public areas have shut down because; economies have come to a grinding halt because of it, and we&amp;rsquo;re all paranoid about being around other people.&lt;/p&gt;
 &lt;p&gt;Most of us have never lived through a Pandemic (unless you count the 2009 H1N1 Pandemic), so we will have no idea how bad this could possible get. Scientist have attempted to determine how deadly this dieases is compared to others throughout history, as seen in the following chart.&lt;/p&gt;
 &lt;p&gt;Right now, it&amp;rsquo;s assumed that this virus is just as contagious as other diseases such Polio and the Common Cold while being more deadly than these other diseases. As such, the scientific community has devoted all of their resources in finding ways to track the growth of this dieases.&lt;/p&gt;
@@ -2586,7 +2586,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/comparison.png&#34; alt=&#34;Infectious Disease Comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/comparison.png&#34; alt=&#34;Infectious Disease Comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Right now, it&amp;rsquo;s assumed that this virus is just as contagious as other diseases such Polio and the Common Cold while being more deadly than these other diseases. As such, the scientific community has devoted all of their resources in finding ways to track the growth of this dieases.&lt;/p&gt;
@@ -2620,7 +2620,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/SIRanimationlow.gif&#34; alt=&#34;Contagion Simulation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/SIRanimationlow.gif&#34; alt=&#34;Contagion Simulation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following graph shows how an epidemic might spread across a network over time. Blue dots are susceptible individuals, while red dots are infected people. Two dots are connected by a line if they are in contact with each other, and the more connections a person has, the bigger their dot is on the network.&lt;/p&gt;
@@ -2646,7 +2646,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/cases_df.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/cases_df.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the U.S. has the highest number of COVID causes in the world. The nation crossed that milestone &lt;a href=&#34;https://www.bbc.com/news/world-us-canada-52239261&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sometime last week&lt;/a&gt;. Right behind the U.S. is Spain, Italy, Germany, and France. As mentioned previously, as nations conduct more testing, we can confirm more cases.&lt;/p&gt;
@@ -2688,7 +2688,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/us_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/us_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Now we&amp;rsquo;ve plotted the trends for all nations with more than 1,000 cases as of April 12th. The U.S. still appears to be on an exponential trend, while Italy and Spain seem to be coming out of it. This should make sense, seeing as Italy&amp;rsquo;s and Spain&amp;rsquo;s lockdowns were more aggressive than the United States.&lt;/p&gt;
@@ -2710,7 +2710,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/spain_italy_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/spain_italy_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;These two European nations have also started their lockdowns early, with Italy and Spain beginning their lockdowns on March 9th and 14th, respectively. Lockdowns within the U.S. vary by state; however, the most highly impacted states (California and New York) didn&amp;rsquo;t institute any lockdowns until the last week of March.&lt;/p&gt;
@@ -2733,7 +2733,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/china_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/china_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;China is also currently experiencing a logistic trend. With the exception for the Guangdong province, the nation has not recorded any new cases in any of its provinces since April 7th. China has not had a consistent and reliable metric of reporting GDP figures. For the same reason, people are more or less skeptical of the integrity of their COVID-19 cases.&lt;/p&gt;
@@ -2757,7 +2757,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/doubing_times_global.PNG&#34; alt=&#34;doubling times&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/doubing_times_global.PNG&#34; alt=&#34;doubling times&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The inferred doubling time represents the growth encountered during the middle of the growth of the epidemic, which gives us a picture of the overall rate of growth of the virus. After all, epidemiologist won&amp;rsquo;t really know whether or not we&amp;rsquo;ve reached the apex of the pandemic until many weeks (or possibly months). In one country that reports 1,000 COVID-19 cases, there could be 5,000 infected people. On the other hand, another country with the same reported figures could have 100,000 infected people.&lt;/p&gt;
@@ -2782,7 +2782,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/cases_us_df.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/cases_us_df.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, New York has the largest number of confirmed cases in the entire nation; followed by New Jersey, Massachusetts, and then Michigan.&lt;/p&gt;
@@ -2804,7 +2804,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/ny_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/ny_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;New York&amp;rsquo;s COVID-19 growth appears to be consistent with a logistic trend, but it might be too early to tell. Other states where the growth seems to be more exponential are Illinois, California, and Washington. Most other states appear to be within the starting phase of a logistic trend, but it might be too early to say, based on the average doubling time (which is 5 days).&lt;/p&gt;
@@ -2818,9 +2818,9 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
     
     <item>
       <title>The Mathematics of Pandemics</title>
-      <link>http://localhost:4321/post/2020-04-08-the-mathematics-of-pandemics/</link>
+      <link>https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/</link>
       <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-04-08-the-mathematics-of-pandemics/</guid>
+      <guid>https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/</guid>
       <description>&lt;p&gt;So, this is our very first pandemic. At least, it&amp;rsquo;s the first serious pandemic. I&amp;rsquo;ve lived through the 2009 H1N1 Pandemic, but I don&amp;rsquo;t really remember it all that well. All I know is that H1N1 is not nearly as serious as this, because now I&amp;rsquo;m forced to work from home.&lt;/p&gt;
 &lt;p&gt;Right now, COVID-19, a.k.a, the coronavirus is on our doorstep. There are more than 423,000 confirmed cases in the United States; 14,700 confirmed deaths [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. New York has the highest record death toll; we surpassed Washington State a few weeks ago. It certainly does feel like an apocalyptic scenario is about to occur.&lt;/p&gt;
 &lt;p&gt;Regardless, one good thing that can occur out of this situation is that the Coronavirus has rekindled the public&amp;rsquo;s interest in Mathematics. At least, marginally. Articles are circulating explaining &amp;ldquo;dangerous mathematics behind the coronavirus,&amp;rdquo; and how cases could grow exponentially [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;].&lt;/p&gt;
@@ -2842,7 +2842,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-19-exponential.png&#34; alt=&#34;Coronavirus cases US&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-19-exponential.png&#34; alt=&#34;Coronavirus cases US&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The idea behind exponential growth as it relates to pandemics is that one person who has contracted the virus comes into contact with anyone. So the total number of cases increases to 2. Assume each infected person will come in contact with 1 new person. Then those 2 infected people will infect 2 more people, increasing confirmed cases to 4. Those 4 will eventually become 8, then 8 becomes 16, and so on.&lt;/p&gt;
@@ -2942,7 +2942,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/sir_model1.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/sir_model1.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;the-seirseid-model&#34;&gt;The SEIR/SEID Model&lt;/h2&gt;
@@ -3017,7 +3017,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/sir_model2.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/sir_model2.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We added the total line to sanity check everything. All of the possible states should add up to 100,000. Based on the parameters, we could expect the virus to infect ~200,000 people while exposing ~350,000 people. The difference between the two comprises our asymptomatic cases. (people who have been exposed to the virus, but fail to show symptoms) Overall, the virus ends up killing ~100,000 people under our scenario.&lt;/p&gt;
@@ -3055,9 +3055,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Forecasting Asset Prices Using VAR and Granger Causality</title>
-      <link>http://localhost:4321/project/forecasting-var-granger-causlity/</link>
+      <link>https://kidquant.com/project/forecasting-var-granger-causlity/</link>
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/forecasting-var-granger-causlity/</guid>
+      <guid>https://kidquant.com/project/forecasting-var-granger-causlity/</guid>
       <description>&lt;p&gt;Forecasting Gold and Oil has garnered major attention from academics, investors and Government agencies alike. These two products are known for their substantial influence on the global economy. However, what is the relationship between these two assets? What generally happens to Gold prices when Oil takes a plunge? We can use a statistical technique known as &lt;em&gt;&lt;strong&gt;Granger Causality&lt;/strong&gt;&lt;/em&gt; to test the relationships of Gold, Oil, and some other variables. We can also use a &lt;strong&gt;VAR model&lt;/strong&gt; to forecast the future Gold &amp;amp; Oil prices.&lt;/p&gt;
 &lt;h2 id=&#34;exploratory-analysis&#34;&gt;Exploratory Analysis&lt;/h2&gt;
 &lt;p&gt;Let&amp;rsquo;s load the data and conduct some analysis with visualizations to understand more of the data. Exploratory data analysis is quite extensive in multivariate time series. I will cover some areas here to get insights into the data. However, it is advisable to conduct all statistical tests to ensure our clear understanding of data distribution.&lt;/p&gt;
@@ -3079,7 +3079,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/data_analysis.png&#34; alt=&#34;Data Analysis&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/data_analysis.png&#34; alt=&#34;Data Analysis&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;In our dataset, we have six variables: Gold, Silver, Oil, US Dollar, Interest, and a Stock Market Index. The stock market index we&amp;rsquo;ve used was the Dow Jones Industrial Average. We usually use linear regression to determine if there is a correlation between specific variables. Instead, we&amp;rsquo;re going to determine if any of these variables directly causes movement in the other variables.&lt;/p&gt;
@@ -3101,7 +3101,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/time_series.png&#34; alt=&#34;Time Series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/time_series.png&#34; alt=&#34;Time Series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Here, we can see different trends for six of our variables. It would be helpful if we established whether or not our time series followed a normal (or Gaussian) distribution. We will do this based on the test for normality based on the Jarque-Bera test.&lt;/p&gt;
@@ -3146,7 +3146,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/test_statistics.png&#34; alt=&#34;Test Statistics&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/test_statistics.png&#34; alt=&#34;Test Statistics&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;These two distributions can provide us with some intuition about the distribution of our data. A value close to 0 for kurtosis indicates a normal distribution where asymmetrical nature is signified by a value between -0.5 and +0.5 for skewness. The tails are heavier for kurtosis greater than 0 and vice versa. Moderate skewness refers to the value between -1 and -0.5 or 0.5 and 1.&lt;/p&gt;
@@ -3168,7 +3168,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/probability_plot.png&#34; alt=&#34;probability plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/probability_plot.png&#34; alt=&#34;probability plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Based on the normal probability plot, we can see that the dataset is far from normally distributed.&lt;/p&gt;
@@ -3201,7 +3201,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/autocorrelation.png&#34; alt=&#34;autocorrelation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/autocorrelation.png&#34; alt=&#34;autocorrelation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following plot shows the autocorrelation for the Gold time series. As we can see, each value is highly correlated with the previous value. We have an autocorrelation of +1, which represents a perfect positive correlation. An increase seen in one time series leads to a proportionate increase in the other time series.&lt;/p&gt;
@@ -3236,7 +3236,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/stationary.png&#34; alt=&#34;stationary&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/stationary.png&#34; alt=&#34;stationary&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;testing-causation-using-grangers-causality-test&#34;&gt;Testing Causation using Granger&amp;rsquo;s Causality Test&lt;/h3&gt;
@@ -3288,7 +3288,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/granger_causality.PNG&#34; alt=&#34;granger causality&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/granger_causality.PNG&#34; alt=&#34;granger causality&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The row are the responses $Y$ and the columns are the predictors $X$.&lt;/p&gt;
@@ -3353,7 +3353,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/var_model.PNG&#34; alt=&#34;Var Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/var_model.PNG&#34; alt=&#34;Var Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h4 id=&#34;conducting-a-forecast-evaluation&#34;&gt;Conducting a forecast evaluation&lt;/h4&gt;
@@ -3376,7 +3376,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/VAR_forecast.png&#34; alt=&#34;Var Forecast&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/VAR_forecast.png&#34; alt=&#34;Var Forecast&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the forecasted observations are pretty much in line with the historical observations used for forecasting Gold prices. There is a very slight deviation between the historical and forecasted observations started from Janurary 9th, however, this divergence is very slight.&lt;/p&gt;
@@ -3389,9 +3389,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Libra is the Future of Money</title>
-      <link>http://localhost:4321/post/2019-10-25-libra-is-the-future-of-money/</link>
+      <link>https://kidquant.com/post/2019-10-25-libra-is-the-future-of-money/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2019-10-25-libra-is-the-future-of-money/</guid>
+      <guid>https://kidquant.com/post/2019-10-25-libra-is-the-future-of-money/</guid>
       <description>&lt;p&gt;If you were able to catch the Congressional testimony on Facebook&amp;rsquo;s new project Libra and the Calibra wallet, probably didn&amp;rsquo;t learn a ton about the latest technology; it&amp;rsquo;s benefits; it&amp;rsquo;s detriments, and how it will be integrated into our 21st-century economy [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. Listing to the Congressional hearing, one might get the impression that Facebook is the cause for every single one of the problems we face in this country.&lt;/p&gt;
 &lt;p&gt;Although regulators may not care about how the new Libra project will benefit (or affect) our economy, you, the consumer, needs to know what this means for you. Anyone living in China (or visitors to China) has already seen the future. In most major metropolitan Chinese cities, you no longer need to walk around with a wallet. Your cell phone or mobile device allows you to purchase food from street vendors, pay to wash your clothes at a laundry mat, and purchase items in a grocery store. Even the street beggers will not accept your money unless it&amp;rsquo;s done via QR code.&lt;/p&gt;
 &lt;p&gt;Needless to say, if America does not innovate, its future in financial leadership is not guaranteed. Digital payments are happening worldwide, whether the US government likes it or not, whether you like Facebook or not. Despite the blatant grandstanding from our elected officials on the tech-giant, other concerns with the project are related to privacy, centralization, and the lack of self-sovereignty and are therefore skeptical of libra.&lt;/p&gt;
@@ -3413,7 +3413,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/alipay_china.jpg&#34; alt=&#34;China Alipay&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/alipay_china.jpg&#34; alt=&#34;China Alipay&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;These are legitimate concerns; however, they do not really matter in the grand scheme of things. I can tell you first hand that the family running the Chinese restaurant on my street corner doesn&amp;rsquo;t care about any of those things. However, they &lt;em&gt;do&lt;/em&gt; have Facebook, and so do all of their customers. Right now, the restaurant only accepts cash for their services. If they suddenly decide to take payment with nearly zero fees without having to handle cash, there&amp;rsquo;s no doubt in my mind that they will.&lt;/p&gt;
@@ -3444,7 +3444,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/unbanked_population.png&#34; alt=&#34;The unbanked population&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/unbanked_population.png&#34; alt=&#34;The unbanked population&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;To understand the real power of cryptocurrencies and why Facebook&amp;rsquo;s initiative could be a game-changer, we need to understand one of the most significant issues in the financial world. Business Insider reported back in August 2017 that more than 2 billion people around the globe lack access to a bank account [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;]. Other interesting information regarding the unbanked population also includes the following:&lt;/p&gt;
@@ -3502,7 +3502,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/libra_association.png&#34; alt=&#34;Libra Association&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/libra_association.png&#34; alt=&#34;Libra Association&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It is also worth noting that to join the Libra association and become a validator node, each member needs to pay a minimum of 10 million as Libra reserve. The Libre reserve will be used to back the intrinsic value of the libra token. Libre also adopts the LibreBFT consensus protocol and is expected to run with 100 validator nodes.&lt;/p&gt;
@@ -3527,7 +3527,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/blockchain.png&#34; alt=&#34;Blockchain example&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/blockchain.png&#34; alt=&#34;Blockchain example&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The data structure that you see above is a Merkle tree. In the diagram shown, Hash 0-0 and 0-1 are children of Hash 0, which is known as the parent. The top hash is also known as the root, and you can derive the whole tree through the root.&lt;/p&gt;
@@ -3596,7 +3596,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Libra-is-the-Future-of-Money/mobile_thailand.jpeg&#34; alt=&#34;Mobile payment systesm in Thailand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Libra-is-the-Future-of-Money/mobile_thailand.jpeg&#34; alt=&#34;Mobile payment systesm in Thailand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ve all heard about the Libra hearings in Congress, and some people are saying that this project will never see the light of day. Sure, that is always a possibility, but it really doesn&amp;rsquo;t matter at the end of the day. For blockchain technology to compete with the Chinese tech giants Alipay and WeChat, we are going to need a system like this.&lt;/p&gt;
@@ -3615,9 +3615,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>How The Beveridge Curve Reveals Current Labor Market Bifurcation</title>
-      <link>http://localhost:4321/post/2019-10-10-latest-jolts-survey-shows-labor-market-bifurcation/</link>
+      <link>https://kidquant.com/post/2019-10-10-latest-jolts-survey-shows-labor-market-bifurcation/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2019-10-10-latest-jolts-survey-shows-labor-market-bifurcation/</guid>
+      <guid>https://kidquant.com/post/2019-10-10-latest-jolts-survey-shows-labor-market-bifurcation/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s a lot of talks these days about an economic slow down that could potentially occur in the United States. If this is true, the evidence of this has yet to appear in the labor market. The BLS posted an unemployment rate of 3.5% for September 2019, down 0.2% from the previous month. The economy also created 136,000 jobs, which is slightly less than what was expected, previous months were revised upwards [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
 &lt;p&gt;It was initially assumed that the unemployment couldn&amp;rsquo;t go much lower, due to something called NAIRU: the &lt;strong&gt;Non-Accelerating Inflation Rate of Unemployment&lt;/strong&gt;. Without getting into deep economic theory, NAIRU (not to be confused with the natural unemployment rate) describes the level at which it would be difficult for the unemployment rate to decline, due to the inability of firms to attract new talent at the prevailing market wage.&lt;/p&gt;
 &lt;p&gt;As such, the only way to attract new workers would be to raise wages, which would force firms to rates prices to offset their cost, which would raise consumer prices overall. Are the historical lows of the unemployment rate evidence of further slack in the labor market?&lt;/p&gt;
@@ -3651,7 +3651,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Latest-JOLTS-Survey/Beveridge_Curve.png&#34; alt=&#34;Beveridge Curve Plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Latest-JOLTS-Survey/Beveridge_Curve.png&#34; alt=&#34;Beveridge Curve Plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The Beveridge Curve plots the job openings rate with respect to the unemployment rate [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;]. During an expansion, the job openings rate is high, and the unemployment rate is low, which causes the curve to move towards plots upward and to the left. During a contraction, the job openings rate is low, and the unemployment rate is high, which causes a movement along the curve in the opposite direction.  Basic Econ 101, pretty much.&lt;/p&gt;
@@ -3674,7 +3674,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Latest-JOLTS-Survey/plotted_beveridge_curve.png&#34; alt=&#34;Beveridge Curve Plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Latest-JOLTS-Survey/plotted_beveridge_curve.png&#34; alt=&#34;Beveridge Curve Plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following Beveridge Curve is one that I have created in python, using data from the Federal Reserve Economic Database (FRED), which was extracted through Quandl [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;] [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;].&lt;/p&gt;
@@ -3702,7 +3702,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Latest-JOLTS-Survey/un_rate_college_20_24.png&#34; alt=&#34;Unemployment Rate College Grads&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Latest-JOLTS-Survey/un_rate_college_20_24.png&#34; alt=&#34;Unemployment Rate College Grads&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Also, the BLS shows that the unemployment rate for college graduates between the age of 20 - 24 is around 6.1%, which is nearly double the national average. As you can see from the following chart, the data is very noisy; dropping during the beginning of the year and rising towards the middle (usually the summer). This is because, as you can imagine, during the beginning of the year, students are actively enrolled in school, so they aren&amp;rsquo;t counted as part of the labor market. Once they graduate (usually during the summer), they begin actively looking for work. From that point onward, recent graduates are officially counted among the unemployment statistics.&lt;/p&gt;
@@ -3801,9 +3801,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Modeling GDP per Capita and Life Expectancy</title>
-      <link>http://localhost:4321/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</link>
+      <link>https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</link>
       <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</guid>
+      <guid>https://kidquant.com/post/2019-09-18-modeling-gdp-per-capita-and-life-expectancy/</guid>
       <description>&lt;p&gt;Historically, wealthy individuals tend to live longer than poorer individuals, holding other factors constant. They can afford to eat healthier foods from healthier food outlets (such as Whole Foods); they can afford better health care, et cetera.&lt;/p&gt;
 &lt;p&gt;For this reason, it should be obvious that as countries get wealthier that they should be able to afford better health care systems, also that life expectancy should rise. It should also stand to reason htat people living longer, will work longer and that being healthier means fewer people as a propotion drop out of the labor force due to illness.&lt;/p&gt;
 &lt;p&gt;However, these relationships probably are not linearly. They&amp;rsquo;re likely to be diminishing returns to one from the other. At least, that is my prior belief.&lt;/p&gt;
@@ -3832,7 +3832,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/missing_percent.png&#34; alt=&#34;Missing post&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/missing_percent.png&#34; alt=&#34;Missing post&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;plotting-our-variables-of-interest&#34;&gt;Plotting our Variables of Interest&lt;/h2&gt;
@@ -3855,7 +3855,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy.png&#34; alt=&#34;World Life Expectancy&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy.png&#34; alt=&#34;World Life Expectancy&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;This histogram is representative of the distribution of life expectancy in 2017. The mass of the distribution is on the right with a long left tail. This is good because there are more countries living longer than countries with lower life expectancy levels.&lt;/p&gt;
@@ -3877,7 +3877,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/life_expectancy_distribution.png&#34; alt=&#34;Life Expectancy Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/life_expectancy_distribution.png&#34; alt=&#34;Life Expectancy Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;World GDP per capita has grown exponentially over time, but there are some sharp drops from severe negative shocks. This is still a good thing for humanity because it means fewer people as a percentage of the total population are in poverty compared to years prior. Again, this doesn&amp;rsquo;t tell us about the distribution of GDP per capita in a cross section.&lt;/p&gt;
@@ -3899,7 +3899,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy_2019.png&#34; alt=&#34;World Life Expectancy in 2019 dollars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/world_life_expectancy_2019.png&#34; alt=&#34;World Life Expectancy in 2019 dollars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The distribution of GDP per capita is very concentrated in the 0 to 10,000ish range, but has a long right tail out to over 100,000 GDP per capita. This resembles a &lt;a href=&#34;https://en.wikipedia.org/wiki/Log-normal_distribution&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;log-normal&lt;/a&gt; shape. I performed a natural logarithmic transformation for modeling purposes.&lt;/p&gt;
@@ -3921,7 +3921,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/log_distribution_life_expectancy.png&#34; alt=&#34;Log-normal Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/log_distribution_life_expectancy.png&#34; alt=&#34;Log-normal Distribution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;modeling-the-relationships&#34;&gt;Modeling the Relationships&lt;/h2&gt;
@@ -3948,7 +3948,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc.png&#34; alt=&#34;GDPPC&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc.png&#34; alt=&#34;GDPPC&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -3969,7 +3969,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc_sq.png&#34; alt=&#34;GDPPC_SQ&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/coefficient_gdppc_sq.png&#34; alt=&#34;GDPPC_SQ&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;regressing-gdp-per-capita-on-life-expectancy&#34;&gt;Regressing GDP per capita on Life Expectancy&lt;/h3&gt;
@@ -3996,7 +3996,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars.png&#34; alt=&#34;error bars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars.png&#34; alt=&#34;error bars&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The plot of the life expectancy squared coefficients looks like it is mirroring the movement of the non-squared term coefficients at a different scale.&lt;/p&gt;
@@ -4018,7 +4018,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars_sq.png&#34; alt=&#34;error bars squared&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/error_bars_sq.png&#34; alt=&#34;error bars squared&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;interpreting-the-regressions&#34;&gt;Interpreting the Regressions&lt;/h2&gt;
@@ -4041,7 +4041,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The way to interpret the coefficients in the 2017 model regressing life expectancy on ln(GDP per capita) and ln(GDP per capita) squared is a 1% increase in GDP per capita leads to a year increase in life expectancy.&lt;/p&gt;
@@ -4069,7 +4069,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/model_results.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/model_results.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -4090,7 +4090,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Model-GDP-per-capita-and-life-expectancy/non_linear_regression.png&#34; alt=&#34;non linear regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;implications&#34;&gt;Implications&lt;/h2&gt;
@@ -4102,9 +4102,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Solving Rubik&#39;s Cubes with Python</title>
-      <link>http://localhost:4321/post/2019-09-14-solving-a-rubiks-cube-in-python/</link>
+      <link>https://kidquant.com/post/2019-09-14-solving-a-rubiks-cube-in-python/</link>
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2019-09-14-solving-a-rubiks-cube-in-python/</guid>
+      <guid>https://kidquant.com/post/2019-09-14-solving-a-rubiks-cube-in-python/</guid>
       <description>&lt;p&gt;I enjoy solving Rubik&amp;rsquo;s cubes; my interest involves solving rubik&amp;rsquo;s cubes of different dimensions (3x3, 4x4, and triangles, etc) and discovering different algorithms. The internet is full of different solutions; however, it is it is rarely every described how these solutions were discovered. In this post, I&amp;rsquo;ll try to detail how one can solve the rubik&amp;rsquo;s cube from scratch.&lt;/p&gt;
 &lt;p&gt;Keep in mind, the solution presented in this post is by no mean the fastest. It takes a very long time to solve a Rubik&amp;rsquo;s Cube using this algorithm.&lt;/p&gt;
 </description>
@@ -4112,9 +4112,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>The sad reality of ESG and Hashtag Activism</title>
-      <link>http://localhost:4321/post/2019-08-15-the-sad-reality-of-esg-and-cancel-culture/</link>
+      <link>https://kidquant.com/post/2019-08-15-the-sad-reality-of-esg-and-cancel-culture/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2019-08-15-the-sad-reality-of-esg-and-cancel-culture/</guid>
+      <guid>https://kidquant.com/post/2019-08-15-the-sad-reality-of-esg-and-cancel-culture/</guid>
       <description>&lt;p&gt;Most people are very conscious shoppers. Some people are attracted to the brands; others may be attracted to the bargains. Then others are motivated by the social aspects of a firm and how certain businesses strive to make a positive impact on our society. To a certain extent, we all like Corporate Brands to make positive contributions towards environmental, social, and corporate governance (ESG). For the brands that fall short of their &amp;ldquo;Corporate Responsibility,&amp;rdquo; there&amp;rsquo;s always #CancelCulture.&lt;/p&gt;
 &lt;p&gt;#CancelCulture is an environment that propagates a social media campaign to either harass or shame a person/institution into changing their behavior, to correct something they did (or change an opinion they hold). The campaign usually goes viral, which ends up ruining a business or someone&amp;rsquo;s career.&lt;/p&gt;
 &lt;p&gt;At first glance, forcing institutions to change their behavior sounds like mob rule, but #CancelCulture has legitimate uses. Examples involve television/online personalities Charlie Rose and Roseanne Barr has had their careers ended from due to public pressure due to either insensitive comments or inappropriate conduct [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;][&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Billion-dollar corporations like Facebook have had their reputations tarnished due to evidence of seeing the information/betraying the trust of billions of users [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
@@ -4150,7 +4150,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/ESG_performance.png&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/ESG_performance.png&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Winegarden methodology involved an analysis of 30 individual ESG funds, 18 of which have a 10-year track record and the remaining 12 of which outperformed the S&amp;amp;P 500 over the recent past. I won&amp;rsquo;t get into the deals of the individual funds; however, I&amp;rsquo;ll list the following funds based on their ESG characteristics:&lt;/p&gt;
@@ -4182,17 +4182,17 @@ $$&lt;/p&gt;
     
     <item>
       <title>Mind The Gap</title>
-      <link>http://localhost:4321/publication/mind-the-gap/</link>
+      <link>https://kidquant.com/publication/mind-the-gap/</link>
       <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/publication/mind-the-gap/</guid>
+      <guid>https://kidquant.com/publication/mind-the-gap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pairs Trading Strategies in Python</title>
-      <link>http://localhost:4321/project/pairs-trading-strategies-in-python/</link>
+      <link>https://kidquant.com/project/pairs-trading-strategies-in-python/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/pairs-trading-strategies-in-python/</guid>
+      <guid>https://kidquant.com/project/pairs-trading-strategies-in-python/</guid>
       <description>&lt;h2 id=&#34;pairs-trading-strategies-using-python&#34;&gt;Pairs Trading Strategies Using Python&lt;/h2&gt;
 &lt;p&gt;When it comes to making money in the stock market, there are a myriad of different ways to make money. And it seems that in the finance community, everywhere you go, people are telling you that you should learn Python. After all, Python is a popular programming language which can be used in all types of fields, including data science. There are a large number of packages that can help you meet your goals, and many companies use Python for development of data-centric applications and scientific computation, which is associated with the financial world.&lt;/p&gt;
 &lt;p&gt;Most of all Python can help us utilize many different trading strategies that (without it) would by very difficult to analyze by hand or with spreadsheets. One of the trading strategies we will talk about is referred to as &lt;strong&gt;Pairs Trading.&lt;/strong&gt;&lt;/p&gt;
@@ -4237,7 +4237,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/statonarity_comparison.png&#34; alt=&#34;stationarity comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/statonarity_comparison.png&#34; alt=&#34;stationarity comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;why-stationarity-is-important&#34;&gt;Why Stationarity is Important&lt;/h3&gt;
@@ -4260,7 +4260,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/average_timeseries_seriesB.png&#34; alt=&#34;Averge time series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/average_timeseries_seriesB.png&#34; alt=&#34;Averge time series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The computed mean will show that the mean of all data points, but won&amp;rsquo;t be useful for any forecasting of the future state. It&amp;rsquo;s meaningless when compared with any specific time, as it&amp;rsquo;s a collection of different states at different times mashed together. This is just a simple and clear example of why non-stationarity can distort the analysis, much more subtle problems can arise in practice.&lt;/p&gt;
@@ -4328,7 +4328,7 @@ p-value = 0.7317208279589542 The series B is likely non-stationary.&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/cointegration_spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/cointegration_spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h4 id=&#34;testing-for-cointegration&#34;&gt;Testing for Cointegration&lt;/h4&gt;
@@ -4383,7 +4383,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/diverge.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/diverge.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Next, we can print the correlation coefficient, $r$, and the cointegration test.&lt;/p&gt;
@@ -4414,7 +4414,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/squared_wave.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/squared_wave.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Although the correlation is incredibly low, the p-value shows that these time series are cointegrated.&lt;/p&gt;
@@ -4461,7 +4461,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/heatmap.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/heatmap.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Our algorithm listed two pairs that are cointegrated: AAPL/EBAY, and ABDE/MSFT. We will analyze the ABDE/MSFT equity pair.&lt;/p&gt;
@@ -4485,7 +4485,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Alternatively, we can examine the ration between the time series.&lt;/p&gt;
@@ -4507,7 +4507,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/ratio.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/ratio.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Regardless of whether or not we use the spread approach or the ratio approach, we can see that our first plot pair ADBE/SYMC tends to move around the mean. We now need to standardize this ratio because the absolute ratio might not be the most ideal way of analyzing this trend. For this, we need to use z-scores.&lt;/p&gt;
@@ -4531,7 +4531,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/standard_deviation.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/standard_deviation.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;By setting two other lines placed at the z-score of 1 and -1, we can clearly see that for the most part, any big divergences from the mean eventually converge back. This is precisely what we want for a pairs trading strategy.&lt;/p&gt;
@@ -4570,7 +4570,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/rolling_mean.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/rolling_mean.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h4 id=&#34;creating-a-model&#34;&gt;Creating a Model&lt;/h4&gt;
@@ -4599,7 +4599,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Trading_Signals.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Trading_Signals.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;areas-of-improvement-and-further-steps&#34;&gt;Areas of Improvement and Further Steps&lt;/h3&gt;
@@ -4619,9 +4619,9 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
     
     <item>
       <title>Option Sensitivities, Formula Proofs, and Python Scripts: Part 1 (Delta)</title>
-      <link>http://localhost:4321/post/2018-11-03-option-sensitivities-proofs/</link>
+      <link>https://kidquant.com/post/2018-11-03-option-sensitivities-proofs/</link>
       <pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2018-11-03-option-sensitivities-proofs/</guid>
+      <guid>https://kidquant.com/post/2018-11-03-option-sensitivities-proofs/</guid>
       <description>&lt;p&gt;The following is an general overview of vanilla options partial sensitivities (option greeks). This series will be a continuation of the project &lt;em&gt;Option Payoffs, Black-Scholes, and the Greeks.&lt;/em&gt; We&amp;rsquo;ve already outlined the necessary terms for understanding Options and the Greeks &lt;a href=&#34;https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. In this post, I will be covering the first greek: Detla ($\Delta$).&lt;/p&gt;
 &lt;p&gt;The delta of an option, $\Delta$, is defined as the rate of change of the option price respected to the rate of change of the underlying asset price:&lt;/p&gt;
 &lt;p&gt;$$\Delta = \frac{\partial V}{\partial S}$$&lt;/p&gt;
@@ -4777,9 +4777,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>401K Optimization Using Modern Portfolio Theory</title>
-      <link>http://localhost:4321/project/401k-optimization-using-modern-portfolio-theory/</link>
+      <link>https://kidquant.com/project/401k-optimization-using-modern-portfolio-theory/</link>
       <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/401k-optimization-using-modern-portfolio-theory/</guid>
+      <guid>https://kidquant.com/project/401k-optimization-using-modern-portfolio-theory/</guid>
       <description>&lt;h2 id=&#34;401k-optimization-using-modern-portfolio-theory&#34;&gt;401K Optimization Using Modern Portfolio Theory&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve often talked about the benefits of computer programming and using technology in Finance to develop more sophisticated trading strategies. Such strategies usually require a unique understanding of mathematics, data science, and statistics; paired along with a rudimentary knowledge of machine learning and programming.&lt;/p&gt;
 &lt;p&gt;Because of these significant learning curves, maybe algorithmic trading isn&amp;rsquo;t the way to go. As such, we&amp;rsquo;re simply going to purchase 100,000 dollars worth of an asset class and not worry about what investment strategy we&amp;rsquo;re going to adopt. We&amp;rsquo;ve got the easy part figured out. The hard part is figuring out how much to purchase of one asset over another. How do you figure this out? Do we need to conduct lots of research? Maybe. Or maybe not. With a little help with technology, the answers may be more simple than we think.&lt;/p&gt;
@@ -4820,7 +4820,7 @@ $$&lt;/p&gt;
                /project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_71f5f4b5be9d056cd47710285bd88a24.webp 400w,
                /project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_86f8354f0442e002a518e4d0b665329f.webp 760w,
                /project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;http://localhost:4321/project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_71f5f4b5be9d056cd47710285bd88a24.webp&#34;
+               src=&#34;https://kidquant.com/project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_71f5f4b5be9d056cd47710285bd88a24.webp&#34;
                width=&#34;708&#34;
                height=&#34;496&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -4889,7 +4889,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/historical_mutual_funds.png&#34; alt=&#34;Historical Mutual Funds&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/historical_mutual_funds.png&#34; alt=&#34;Historical Mutual Funds&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the asset prices for various different mutual funds range from 50 dollars to only a few dollars. The volatility is also different among our select mutual fund group; however, this may be difficult to see while its presented in the form of a time series. We can create a code that allows us to visualize the volatility of our time series.&lt;/p&gt;
@@ -4911,7 +4911,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/mutual_fund_volatility.png&#34; alt=&#34;Mutual Fund Volatility&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/mutual_fund_volatility.png&#34; alt=&#34;Mutual Fund Volatility&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see from the plot, the ProFunds Semiconductor UltraSector Fund Investor Class (SMPIX) mutual fund is highly volatile. Other mutual funds, while not as volatile, exhibit periods of strong variability. But why is this important? Later on, we will use our understanding of our volatility to calculate the risk-reward trade-off for our select mutual fund portfolio.&lt;/p&gt;
@@ -5018,7 +5018,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/efficient_frontier_1.png&#34; alt=&#34;Efficient Frontier 1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/efficient_frontier_1.png&#34; alt=&#34;Efficient Frontier 1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As you can see, for a maximum return portfolio, we would need to allocate two-thirds of our budget on &lt;strong&gt;Oberweis Micro-Cap Fund (OBMCX)&lt;/strong&gt;. If you take a second look at the daily returns image that we&amp;rsquo;ve plotted earlier, you can see that OBMCX is very volatile. For the best return, our algorithm tells us that we should allocate a signficant portion of our budget to &lt;strong&gt;PRIMECAP Odyssey Aggressive Growth Fund (POAGX)&lt;/strong&gt; as well. For a minimum risk portfolio, we can see that about 60% of our budget is allocated to &lt;strong&gt;Fairholme Focused Income Fund (FOCIX)&lt;/strong&gt;.&lt;/p&gt;
@@ -5133,7 +5133,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/efficient_frontier_2.png&#34; alt=&#34;Efficient Frontier 2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/efficient_frontier_2.png&#34; alt=&#34;Efficient Frontier 2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We have almost the same result as what we have simulated by picking from randomly generated portfolios. The slight difference is that the Scipy&amp;rsquo;s &amp;ldquo;optimize&amp;rdquo; function has not allocated any budget for FOCIX, OBIOX, or SMPIX for the maximum sharpe ratio. For the minimum volatility, our algorithm tells us that we should allocate 59.11% in FOCIX, 33.76% in OBIOX, and 7.14% in OBMCX, while allocating nothing in the other two mutual funds.&lt;/p&gt;
@@ -5146,9 +5146,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Option Payoffs, Black-Scholes, and the Greeks</title>
-      <link>http://localhost:4321/project/option-payoffs-black-scholes-and-the-greeks/</link>
+      <link>https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/</link>
       <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/option-payoffs-black-scholes-and-the-greeks/</guid>
+      <guid>https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/</guid>
       <description>&lt;p&gt;I wanted to get a better understanding of using the Python programming language to play around with options. We&amp;rsquo;ll have a look at creating some option payoff functions, implementation of Black-Scholes pricing, and then finish up with some sensitivity analysis (Greeks).&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll provide a reasonably high-level overview of what we&amp;rsquo;re doing, but I&amp;rsquo;m by no means an expert in options! However, I found that by implementing them in the Python programming language is good practice in some fundamental skills like list manipulations, maps, plotting, and taking it one step further into object-oriented programming.&lt;/p&gt;
 &lt;h2 id=&#34;black-scholes-equation&#34;&gt;Black-Scholes Equation&lt;/h2&gt;
@@ -5317,7 +5317,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/options_payoffs.png&#34; alt=&#34;Options Payoffs&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/options_payoffs.png&#34; alt=&#34;Options Payoffs&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As one can see, with a long call, the minimum loss will never be greater than 10 dollars. With a strike of 100 dollars, the underlying would need to go north of 110 dollars for you to make a profit. This is known as the &amp;ldquo;break-even&amp;rdquo; point. The inverse is true for long puts, as profit increases when the underlying decreases in value.&lt;/p&gt;
@@ -5368,7 +5368,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/bs_payoff_put_call.png&#34; alt=&#34;Black Scholes&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/bs_payoff_put_call.png&#34; alt=&#34;Black Scholes&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As you saw from the plots we&amp;rsquo;ve previously made, there was a linear relationship, as the only variables we considered was the payoff and the premium. Using BSM, there are more variables to consider; therefore, there is a curvature with the following models.&lt;/p&gt;
@@ -5456,7 +5456,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/first_order_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/first_order_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Plenty of interseting movements and factors illustrated within these plots; however, I want to focus on delta, gamma, and vega.&lt;/p&gt;
@@ -5491,7 +5491,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/multivariable_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/multivariable_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We have four subplots: delta, gamma, vega, and charm. Within each subplot, we have three axes. The x-axis represents the price of the underlying; the y-axis represents the time to expiration; and the z-axis represents greek. This plot will examine the relationship using calls.&lt;/p&gt;
@@ -5504,9 +5504,9 @@ calculate the premium of an option, as well as the sensitivities of these equati
     
     <item>
       <title>How To Lie With Inflation Statistics</title>
-      <link>http://localhost:4321/post/how-to-lie-with-inflation/</link>
+      <link>https://kidquant.com/post/how-to-lie-with-inflation/</link>
       <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/how-to-lie-with-inflation/</guid>
+      <guid>https://kidquant.com/post/how-to-lie-with-inflation/</guid>
       <description>&lt;p&gt;Inflation is probably one of the most difficult phenomena to understand. It’s such a difficult topic to understand, most people have difficulty defining it. At the very least, it can be defined as a broad increase in the average level of prices throughout the entire economy. Some people also define inflation as simply an increase in the money supply. Even more difficult than simply defining the term, most probably aren’t aware of how inflation actually occurs, which can originate through a number of different factors. I’m not going to go through them all, but economists can probably agree that inflation is not an observable phenomenon.&lt;/p&gt;
 &lt;p&gt;I’m not going to go through them all, but economists can probably agree that inflation is not an observable phenomenon. Well, the only exception might be if the economy was experiencing what we would refer to as ‘hyperinflation‘. In that case, inflation would be similar to pornography, you’ll know it when you see it.&lt;/p&gt;
 &lt;p&gt;However, since individuals can’t really observe inflation, the best that we can do is try to measure it. There are many different ways to measure inflation, which means there are many different ways to measure things in real terms. This makes measuring information such as ‘real wages’ more of an art rather than a science.&lt;/p&gt;
@@ -5534,7 +5534,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/cpiinflation.png&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/cpiinflation.png&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;There is just one thing wrong with only looking at headline inflation; the authors of the article already pointed out one of the flaws. Inflation appears to be increasing due to rising energy prices. Considering this, we should look at an inflation metric that removes the effects of rapidly increasing energy prices, such as core-CPI.&lt;/p&gt;
@@ -5556,7 +5556,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/ahecore.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/ahecore.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Using this inflation metric, we can see that real wages aren’t falling. So why does it matter whether or not someone is going core-CPI or headline CPI? Core CPI is merely the same as headline CPI, which excludes the price changes in food and energy. This is because food and energy tend to be very volatile, which may unfairly distort how inflation is measured.&lt;/p&gt;
@@ -5579,7 +5579,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/inflationindicies.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/inflationindicies.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following image shows Annualized Average Hourly Earnings compared with 8 different inflation indicies: Headline and Core CPI, Headline and Core PCE, and the GDP Deflator. I’ve also included 3 alternative measures of the CPI: the Chained, Trimmed-mean and the Median CPI.&lt;/p&gt;
@@ -5605,7 +5605,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/trimmedmeanmedian.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/trimmedmeanmedian.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;gdp-deflator&#34;&gt;GDP Deflator&lt;/h3&gt;
@@ -5629,7 +5629,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/gdpdeflator.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/gdpdeflator.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;pce-chain-type-index&#34;&gt;PCE Chain-Type Index&lt;/h3&gt;
@@ -5655,7 +5655,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/PCE.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/PCE.jpeg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So, is there anything wrong with using CPI over PCE? Which inflation metric should people be using? Like everything, it always depends and it usually helps to understand how both indices weight certain goods and services.&lt;/p&gt;
@@ -5677,7 +5677,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/comparison.jpg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/comparison.jpg&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;I’m not actually sure about how the Bureau of Labor Statistics determines how it weighs certain items in the Consumer Price Index. However, I know that Personal Consumption Expenditure Chain-Type Index is weighed in terms of the portion someone spends on a good or services relative to overall expenditures.&lt;/p&gt;
@@ -5693,9 +5693,9 @@ calculate the premium of an option, as well as the sensitivities of these equati
     
     <item>
       <title>Predicting the 2018 World Cup Winner Using Machine Learning</title>
-      <link>http://localhost:4321/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</link>
+      <link>https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</link>
       <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</guid>
+      <guid>https://kidquant.com/project/predicting-the-2018-fifa-world-cup-winner-using-machine-learning/</guid>
       <description>&lt;p&gt;With the start of the 2018 FIFA World Cup approaching, soccer fans around the world is trying to figure out who will win the tournament? If you&amp;rsquo;re a techie and a soccer fan, you&amp;rsquo;ll probably want to figure out more quantitiative methods of figuring out the answer to that question.&lt;/p&gt;
 &lt;h2 id=&#34;goal&#34;&gt;&lt;strong&gt;Goal&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;The goal of this project is established as follows:&lt;/p&gt;
@@ -5739,7 +5739,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/world_cup.png&#34; alt=&#34;Word Cup Dataframe&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/world_cup.png&#34; alt=&#34;Word Cup Dataframe&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;exploratory-analysis&#34;&gt;&lt;strong&gt;Exploratory Analysis&lt;/strong&gt;&lt;/h2&gt;
@@ -5767,7 +5767,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/new_results.png&#34; alt=&#34;results&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/new_results.png&#34; alt=&#34;results&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Now I&amp;rsquo;ll work on a subset of the data; one that includes games played by a participating team. I wanted to analyze the US Mens National Team, but unforunately, they were &lt;a href=&#34;https://www.mlssoccer.com/post/2017/10/10/us-national-team-eliminated-2018-fifa-world-cup&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;eliminated&lt;/a&gt; by Trinidad &amp;amp; Tobago in the qualifying rounds.&lt;/p&gt;
@@ -5793,7 +5793,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/german_matches.png&#34; alt=&#34;german matches&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/german_matches.png&#34; alt=&#34;german matches&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As you can see, the dataset has matches dating back as early as 1908! However, we&amp;rsquo;re only interested in looking at matches from the World Cup era, which started in 1930. We then create a column for year and pick all the games played 1930.&lt;/p&gt;
@@ -5818,7 +5818,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/wins_losses.jpg&#34; alt=&#34;wins and losses&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/wins_losses.jpg&#34; alt=&#34;wins and losses&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;FIFA has recorded 863 matches from the German Mens National Team since 1930, of which Germany has won over 500 matches with ~175 losses. Slightly more matches has ended in a draw. Getting the win-rate for every country is a useful metric. We could use it to predict the most likely outcome of each match in the tournament.&lt;/p&gt;
@@ -5865,7 +5865,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/logistic_regression.jpg&#34; alt=&#34;logistic regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/logistic_regression.jpg&#34; alt=&#34;logistic regression&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 
 Logistic regression is one of the most popular ways to fit models for categorical data, especially for binary response data in Data Modeling. It is the most important (and probably the most used) member of a class of models called generalized linear models. Unlike linear regression, logistic regression can directly predict probabilities (values that are restricted to the (0,1) interval).&lt;/p&gt;
@@ -5941,7 +5941,7 @@ Logistic regression is one of the most popular ways to fit models for categorica
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/knockout_stage.png&#34; alt=&#34;knock out stage&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/knockout_stage.png&#34; alt=&#34;knock out stage&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Our model has generated the following winners from the knockout stage of the 2018 World Cup:&lt;/p&gt;
@@ -6003,9 +6003,9 @@ Logistic regression is one of the most popular ways to fit models for categorica
     
     <item>
       <title>Elon Musk Has Had Enough Of Your Shit...</title>
-      <link>http://localhost:4321/post/2018-05-23-elon-musk-has-had-enough/</link>
+      <link>https://kidquant.com/post/2018-05-23-elon-musk-has-had-enough/</link>
       <pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2018-05-23-elon-musk-has-had-enough/</guid>
+      <guid>https://kidquant.com/post/2018-05-23-elon-musk-has-had-enough/</guid>
       <description>&lt;p&gt;Flame on…&lt;/p&gt;
 &lt;!-- tweet 999355619390865408 --&gt;
 &lt;p&gt;This, for the most part, is true. The Knight Foundation, along with Gallup, has found that Americans believe that the media plays an important role in our society. However, people don’t believe that role is being fulfilled, hence, &lt;a href=&#34;https://knightfoundation.org/reports/american-views-trust-media-and-democracy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;trust in the media is at an all-time low.&lt;/a&gt; The reasons for the increasing distrust is up for interpretation, but that facts are clear: very few people place their complete trust in the media.&lt;/p&gt;
@@ -6030,7 +6030,7 @@ Logistic regression is one of the most popular ways to fit models for categorica
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/gallup.png&#34; alt=&#34;Gallup Poll&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/gallup.png&#34; alt=&#34;Gallup Poll&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The mainstream media has eroded their &lt;a href=&#34;https://news.gallup.com/poll/195542/americans-trust-mass-media-sinks-new-low.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;trust among the public&lt;/a&gt;; this distrust pre-dates the Trump Presidency. There is a very popular narrative that &lt;a href=&#34;https://www.usatoday.com/story/opinion/2018/05/03/press-freedom-donald-trump-journalists-column/572668002/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Press Freedom is under attack&lt;/a&gt;. There is not much in the way of evidence to suggest that this is true.&lt;/p&gt;
@@ -6062,7 +6062,7 @@ Logistic regression is one of the most popular ways to fit models for categorica
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/politfact.png&#34; alt=&#34;Politfact&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/politfact.png&#34; alt=&#34;Politfact&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;A system that allows users to rate the accuracy of a journalist can work, at least in theory. Viewers who are more partisan will more than likely downvote articles they disagree with, so the aggregate rating of journalist will be about average. However, if journalist considers themselves beholden to “the truth” as opposed to an ideology, then they should work hard to improve their overall rating.&lt;/p&gt;
@@ -6097,7 +6097,7 @@ Logistic regression is one of the most popular ways to fit models for categorica
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/erin-biba-elon-musk.jpg&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/erin-biba-elon-musk.jpg&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Elon Musk — the person who resigned from Trump’s Science Advisory Board for being too anti-science — is attacking science. Is there anyone out there who seriously believes this? Of course not; it’s a ridiculous assertion and Musk was correct to call her out on it. I’m guessing that Erin Biba didn’t count on Elon Musk replying directly to her tweet. Did this episode convince her to re-evaluate her preconceived notions? Was she persuaded enough to look at things from a different point of view?&lt;/p&gt;
@@ -6121,7 +6121,7 @@ Logistic regression is one of the most popular ways to fit models for categorica
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/erin-biba-elon-musk-2.jpg&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/erin-biba-elon-musk-2.jpg&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It’s media seems content with making enemies with every story it publishes. That’s fine; it’s not the role of the media to be anyone’s buddy. However, the more advanced technology becomes, the easier it is for people to share information in real time and the easier it is for the average person to learn new information at a lower cost. This means that people are able to discern for themselves what is true and what is false. As long is unable to distinguish between objective journalism and commentary journalism, fewer people will continue to trust the media.&lt;/p&gt;
@@ -6130,9 +6130,9 @@ Logistic regression is one of the most popular ways to fit models for categorica
     
     <item>
       <title>Chart of the Day: Valuing Telsa Through Credit</title>
-      <link>http://localhost:4321/post/2018-07-05-chart-of-the-day/</link>
+      <link>https://kidquant.com/post/2018-07-05-chart-of-the-day/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2018-07-05-chart-of-the-day/</guid>
+      <guid>https://kidquant.com/post/2018-07-05-chart-of-the-day/</guid>
       <description>&lt;p&gt;Tesla’s 5.3% bonds due in 2025 would be five or six percentage points wider if they traded along regression of B3 and Caa1 rated automotive and industrial bonds, which is worse than the base-case scenario of two or three points wider using a 33% chance the bonds get downgraded by S&amp;amp;P. Technicals have been supported by active buying from T Rowe Price in 1Q, which combined with Franklin Resources owns about 28% of the total issue.&lt;/p&gt;
 &lt;p&gt;BlueLine rental’s 9.25% bonds due in 2024 trade about 70 bps wider than the Tesla notes, and its risk profile likely will benefit further from strong demand, and the potential exit from Platinum Equity. An IPO, based off its recent S-1 filing, or sale to a strategic buyer, could drive favorable event risk.&lt;/p&gt;
 </description>
@@ -6140,9 +6140,9 @@ Logistic regression is one of the most popular ways to fit models for categorica
     
     <item>
       <title>Chart of the Day: 3-Month Bill Bid-To-Cover Ratio Plunges</title>
-      <link>http://localhost:4321/post/2018-07-28-chart-of-the-day/</link>
+      <link>https://kidquant.com/post/2018-07-28-chart-of-the-day/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2018-07-28-chart-of-the-day/</guid>
+      <guid>https://kidquant.com/post/2018-07-28-chart-of-the-day/</guid>
       <description>&lt;p&gt;While demand for US Treasuries remains brisk at primary auctions, the same can hardly be said for the short-end of the market, where moments ago we saw what happens to auction demand in a time of rapidly rising rates.&lt;/p&gt;
 &lt;p&gt;As shown in the chart above, while the yield on the 3 month Bills auctioned off today came in largely as expected at 1.94%, the demand did not, and after an already depressed Bid-to-Cover ratio of 2.89 last week, today’s 3-month auction suffered from one of the lowest demands on record, tumbling to just 2.62. At $125.88 billion in bids tendered for $48 billion in paper, down sharply from $138.87 billion on June 25. In context, the last time the markets have witnessed a Bid-To-Cover ratio this low was post-Lehman crisis.&lt;/p&gt;
 &lt;p&gt;With both T-Bill issuance continuing to surge, and ratings rising, two things are certain: not only will the Libor-OIS spread resume blowing out amid the continued surge in short-term supply and increasingly tighter financial conditions, but demand will continue to slide. However, the good news is that we are still well off from the record lows, in which auctions were only 2.0x covered at the start of the century. That said, who knows: perhaps the break in the bond market will begin with a failed Bill action as the US Treasury finds it increasingly difficult to roll over short-term debt.&lt;/p&gt;
@@ -6151,9 +6151,9 @@ Logistic regression is one of the most popular ways to fit models for categorica
     
     <item>
       <title></title>
-      <link>http://localhost:4321/post/images/notebooks/police_v_education/</link>
+      <link>https://kidquant.com/post/images/notebooks/police_v_education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/images/notebooks/police_v_education/</guid>
+      <guid>https://kidquant.com/post/images/notebooks/police_v_education/</guid>
       <description>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;&lt;meta charset=&#34;utf-8&#34; /&gt;

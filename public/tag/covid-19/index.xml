@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>COVID-19 | KidQuant</title>
-    <link>http://localhost:4321/tag/covid-19/</link>
-      <atom:link href="http://localhost:4321/tag/covid-19/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kidquant.com/tag/covid-19/</link>
+      <atom:link href="https://kidquant.com/tag/covid-19/index.xml" rel="self" type="application/rss+xml" />
     <description>COVID-19</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 10 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>COVID-19</title>
-      <link>http://localhost:4321/tag/covid-19/</link>
+      <link>https://kidquant.com/tag/covid-19/</link>
     </image>
     
     <item>
       <title>The Politics of Pandemics</title>
-      <link>http://localhost:4321/post/2020-07-11-the-politics-of-pandemics/</link>
+      <link>https://kidquant.com/post/2020-07-11-the-politics-of-pandemics/</link>
       <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-07-11-the-politics-of-pandemics/</guid>
+      <guid>https://kidquant.com/post/2020-07-11-the-politics-of-pandemics/</guid>
       <description>&lt;p&gt;I bet you&amp;rsquo;d never thought we&amp;rsquo;d find a way to politicize a deadly virus. I suppose that is what happens when your government operates under a system of federalism [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. It&amp;rsquo;s almost as if people are just now realizing, when it comes to specific issues, that the state and local governments are more important than the federal government. In some ways, this crisis may have renewed our appreciation for the federalist system of government. In others, it has also magnified the polarization.&lt;/p&gt;
 &lt;p&gt;Last month, New York State Governor Andrew Cuomo stated on Twitter that, &amp;ldquo;We [NY State] didn&amp;rsquo;t just flatten the curve &amp;ndash; we crushed it.&amp;rdquo; This statement isn&amp;rsquo;t remotely true, for reasons that I&amp;rsquo;ve outlined [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Of course, I never realized at the time how much this statement would be used as a launching pad for the &amp;ldquo;blue states vs. red state&amp;rdquo; mantra. (Even during the early months of the Pandemic, it was &amp;ldquo;blue state vs. red state&amp;rdquo; in terms of testing, reopening, and a few other issues)&lt;/p&gt;
 &lt;p&gt;And why not use a pandemic as an opportunity to advance that agenda, especially since Twitter makes it so easy for certain people to get away with being mildly dishonest. (To a certain degree, Twitter &amp;ldquo;fact-checks&amp;rdquo; post on their platform)&lt;/p&gt;
@@ -38,7 +38,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/deleted_post.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/deleted_post.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;What is the evidence does Neera Tanden use to support this claim? Who could say? It is, after all, just a talking point, but is there any basis for this claim?&lt;/p&gt;
@@ -71,7 +71,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/infectives_origin.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/infectives_origin.PNG&#34; alt=&#34;infectives origin&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the vast majority of the spread is associated with an outbreak in New York City, with very little originating from Washington. This is not the say that the spread of the virus was primarily domestic (the virus was still brought into America, from abroad). However, the idea &amp;ldquo;the whole country could be seeing their surges&amp;rdquo; if the earliest of confirmed cases appeared in states like Texas is nonsensical.&lt;/p&gt;
@@ -97,9 +97,9 @@
     
     <item>
       <title>No, New York Has Not Flattened The Curve</title>
-      <link>http://localhost:4321/post/2020-06-08-ny-crushed-by-curve/</link>
+      <link>https://kidquant.com/post/2020-06-08-ny-crushed-by-curve/</link>
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-06-08-ny-crushed-by-curve/</guid>
+      <guid>https://kidquant.com/post/2020-06-08-ny-crushed-by-curve/</guid>
       <description>&lt;p&gt;I keep reading &amp;ndash; and hearing &amp;ndash; that New York has successfully &amp;ldquo;flattened the curve,&amp;rdquo; and it makes me wonder if people have just decided to go into hibernation the past three months. It&amp;rsquo;s not outside the realm of possibility; we all have lots of free time on our hands now. However, it&amp;rsquo;s a sign that our political discourse has become so warped that our politicians can say things that are patently false with very little pushback.&lt;/p&gt;
 &lt;!-- tweet 1269344344374497280 --&gt;
 &lt;p&gt;What did I expect? As a politician, he&amp;rsquo;s not going to say, &amp;ldquo;New York has been decimated by the virus,&amp;rdquo; but that&amp;rsquo;s precisely what happened. I haven&amp;rsquo;t talked about &amp;ldquo;flatten the curve&amp;rdquo; at all on this blog because it assumed that it was well understood by most. I was obviously wrong. How else can a governor of one of the largest states get away from saying, &amp;ldquo;we crushed&amp;rdquo; the curve?&lt;/p&gt;
@@ -123,7 +123,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/pandemic.png&#34; alt=&#34;Pandemic Curves&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/pandemic.png&#34; alt=&#34;Pandemic Curves&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following image shows what a flattened curve should obviously look like. The red-shaded steap curve shows a scenario with preventative measures (social distancing, mask, etc.), while blue-shaded curve shows a scenario with protective measures. The blue-shaded curve is flatter than the red-shaded curve, and that is the scenario that we are trying to implement.&lt;/p&gt;
@@ -149,7 +149,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/new_york_cases_0704.png&#34; alt=&#34;New York Cases&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/new_york_cases_0704.png&#34; alt=&#34;New York Cases&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So, to answer a previously-posed question, no, we did not get the blue-shaded flat curve, synonymous with a gradual increase in new infections. Instead, what we witness was a rapid spike in daily cases. At least, when compared to cases in Washington State, which did experience a large surge in cases but managed to taper off early during the crisis.&lt;/p&gt;
@@ -171,7 +171,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/washington_cases_0704.png&#34; alt=&#34;New York Cases&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/washington_cases_0704.png&#34; alt=&#34;New York Cases&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;But that is all in the past. New York is doing relatively better now, even as cases surge in places that were previously managing the virus well. So, what exactly is New York doing that is so special? It&amp;rsquo;s not as if New York is doing anything spectacular when it comes to testing or tracing.&lt;/p&gt;
@@ -199,7 +199,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/nyc_deaths.jpg&#34; alt=&#34;New York Deaths&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/nyc_deaths.jpg&#34; alt=&#34;New York Deaths&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We are noticing a surge in cases in other parts of the country, places that have yet to experience their first wave (Flordia and Arizona). Deaths in these states are relatively small. The death rate from COVID-19 is ~170 per 100,000 people in New York State [&lt;a href=&#34;#4&#34;&gt;4&lt;/a&gt;], Arizona has reported ~1,000 COVID deaths. For Arizona to have a death rate comparable to New York, there would need to be +11,200 additional deaths from COVID in Arizona, which doesn&amp;rsquo;t seem likely. (Florida would need to have +35,000 new deaths)&lt;/p&gt;
@@ -214,9 +214,9 @@
     
     <item>
       <title>Measuring Pandemic Progress: Log Scale vs. Per Capita</title>
-      <link>http://localhost:4321/post/2020-04-15-measuring-covid-progress/</link>
+      <link>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-04-15-measuring-covid-progress/</guid>
+      <guid>https://kidquant.com/post/2020-04-15-measuring-covid-progress/</guid>
       <description>&lt;p&gt;There have been many visualization projects created for the purposes of modeling COVID-19 cases and deaths. The best known are the graphs produced by John Burn-Murdock of the Financial Times. You can view his very create and beautiful COVID visualizations on his Twitter Page.&lt;/p&gt;
 &lt;p&gt;Before COVID, I think people were more used to viewing data in relative terms. Now, log-scale visualizations have become more widespread, primarily due to the way diseases spread during a pandemic.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s become so popular, programmers developed ways to replicate these charts using Python and R packages. The most notable being &lt;code&gt;tidycovid19&lt;/code&gt; package designed by Joachim Gassen. You can few the package on his GitHub [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
@@ -256,7 +256,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Measuring-Progress/first_40_days.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Measuring-Progress/first_40_days.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 
 However, people have often wondered why we don&amp;rsquo;t present these numbers on a per capita basis? Burn-Murdock has provided a data-oriented reason why log-scales are used instead of per capita scaling.&lt;/p&gt;
@@ -286,7 +286,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Measuring-Progress/cases_logratio.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Measuring-Progress/cases_logratio.PNG&#34; alt=&#34;First 40 Days&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;While the graph doesn&amp;rsquo;t tell us everything about how the pandemic is overwhelming the different health care systems around the world, it does show how each country is attempting to slow the infection rate and reduce the slope of their curves. It&amp;rsquo;s easier to compare the trajectory in this way, considering that we have to look to see which country is trending higher.&lt;/p&gt;
@@ -300,9 +300,9 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
     
     <item>
       <title>The Mathematics of Pandemics</title>
-      <link>http://localhost:4321/post/2020-04-08-the-mathematics-of-pandemics/</link>
+      <link>https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/</link>
       <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2020-04-08-the-mathematics-of-pandemics/</guid>
+      <guid>https://kidquant.com/post/2020-04-08-the-mathematics-of-pandemics/</guid>
       <description>&lt;p&gt;So, this is our very first pandemic. At least, it&amp;rsquo;s the first serious pandemic. I&amp;rsquo;ve lived through the 2009 H1N1 Pandemic, but I don&amp;rsquo;t really remember it all that well. All I know is that H1N1 is not nearly as serious as this, because now I&amp;rsquo;m forced to work from home.&lt;/p&gt;
 &lt;p&gt;Right now, COVID-19, a.k.a, the coronavirus is on our doorstep. There are more than 423,000 confirmed cases in the United States; 14,700 confirmed deaths [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. New York has the highest record death toll; we surpassed Washington State a few weeks ago. It certainly does feel like an apocalyptic scenario is about to occur.&lt;/p&gt;
 &lt;p&gt;Regardless, one good thing that can occur out of this situation is that the Coronavirus has rekindled the public&amp;rsquo;s interest in Mathematics. At least, marginally. Articles are circulating explaining &amp;ldquo;dangerous mathematics behind the coronavirus,&amp;rdquo; and how cases could grow exponentially [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;].&lt;/p&gt;
@@ -324,7 +324,7 @@ However, people have often wondered why we don&amp;rsquo;t present these numbers
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/COVID-19-exponential.png&#34; alt=&#34;Coronavirus cases US&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/COVID-19-exponential.png&#34; alt=&#34;Coronavirus cases US&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The idea behind exponential growth as it relates to pandemics is that one person who has contracted the virus comes into contact with anyone. So the total number of cases increases to 2. Assume each infected person will come in contact with 1 new person. Then those 2 infected people will infect 2 more people, increasing confirmed cases to 4. Those 4 will eventually become 8, then 8 becomes 16, and so on.&lt;/p&gt;
@@ -424,7 +424,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/sir_model1.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/sir_model1.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;the-seirseid-model&#34;&gt;The SEIR/SEID Model&lt;/h2&gt;
@@ -499,7 +499,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/sir_model2.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/sir_model2.png&#34; alt=&#34;SIR Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We added the total line to sanity check everything. All of the possible states should add up to 100,000. Based on the parameters, we could expect the virus to infect ~200,000 people while exposing ~350,000 people. The difference between the two comprises our asymptomatic cases. (people who have been exposed to the virus, but fail to show symptoms) Overall, the virus ends up killing ~100,000 people under our scenario.&lt;/p&gt;
