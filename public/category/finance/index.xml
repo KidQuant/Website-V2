@@ -5,7 +5,7 @@
     <link>http://localhost:4321/category/finance/</link>
       <atom:link href="http://localhost:4321/category/finance/index.xml" rel="self" type="application/rss+xml" />
     <description>Finance</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 21 May 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Finance</title>
@@ -13,15 +13,32 @@
     </image>
     
     <item>
+      <title>Simulating Geometric Brownian Motion</title>
+      <link>http://localhost:4321/post/2024-05-21-simulating-brownian-motion/</link>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/post/2024-05-21-simulating-brownian-motion/</guid>
+      <description>&lt;h3 id=&#34;confidence-intervals&#34;&gt;Confidence intervals&lt;/h3&gt;
+&lt;p&gt;So far, the stuff we&amp;rsquo;ve seen is pretty easy. However, we&amp;rsquo;re trying to be precise. We want to associate a confidence interval to each estimated parameter. In other words, we want to indicate how close the sample statistic (the estimate parameter) is to the population parameter (the real value of the parameter).&lt;/p&gt;
+&lt;p&gt;We can find an interval of values that contains the real parameter, with a confidence level of $(1-\alpha)100%$, for $0&amp;lt;\alpha&amp;lt;1$. This is called the &lt;em&gt;confidence interval&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Let us introduce some absic concepts:&lt;/p&gt;
+&lt;p&gt;Let $X_i$ be independent and identically distributed (i.i.d), for $1\leq i\leq n$, with $\mathbb{E}[X_i]=\mu$ and $\textit{Var}[X_i]=\sigma^2$. We call $\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Does Diversification Always Matter?</title>
       <link>http://localhost:4321/post/2024-28-2014-does-diversification-always-matter/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/post/2024-28-2014-does-diversification-always-matter/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve previously talked about Modern Portfolio Theory (MPT) and diversification in the past, the assumptions underlying MPT, and the construction of an Portfolio Frontier (PF). When most people think of diversifying their portfolio, they think of limiting their downside risk. However, it is possible construct a portfolio that still maximizes return with the least amount of volatility (choosing a portfolio that lies somewhere along the PF).&lt;/p&gt;
-&lt;p&gt;Now I&amp;rsquo;m going to further expand upon why diversification helps to maximize risk-adjusted returns, and express the limits of diversification.&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;ve previously talked about Modern Portfolio Theory (MPT) and diversification, the assumptions underlying MPT, and the construction of a Portfolio Frontier (PF). When most people consider diversifying their portfolio, they consider limiting their downside risk. However, it is possible to construct a portfolio that maximizes return with the least volatility (choosing a portfolio that lies somewhere along the PF).&lt;/p&gt;
+&lt;p&gt;Now, I will further expand upon why diversification helps maximize risk-adjusted returns and express the limits of diversification.&lt;/p&gt;
 &lt;h3 id=&#34;what-makes-a-portfolio&#34;&gt;What Makes a Portfolio?&lt;/h3&gt;
 &lt;p&gt;We can define a &lt;em&gt;portfolio&lt;/em&gt; as a combination of $N$ assets with $N$ portfolio weights that sum to unity:&lt;/p&gt;
-&lt;p&gt;$$\textbf{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.$$&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\textbf{w}=[w_1,\ldots,w_N],\quad\sum^{N}_{n=1}w_n=1.
+\end{equation}
+$$&lt;/p&gt;
 &lt;p&gt;The weight, $w_N$, represents the proportion of the $n$th asset in the portfolio. If $M_n$ and $P_n$ are the number and price of the $n$th asset, then $w_n$ is simply the total value of the $n$th asset normalized by the value of the portfolio:&lt;/p&gt;
 &lt;p&gt;$$w_n=\frac{M_nP_n}{M_1P_1+\ldots+M_nP_N}$$&lt;/p&gt;
 &lt;p&gt;Weights can be negative, such we could &lt;em&gt;short sell&lt;/em&gt; an asset (profiting from asset price going down). Also, weights could be greater than unity, meaning that we are using leverage. We won&amp;rsquo;t get into these complicated scenarios and use only the basic assumptions in the summary of our portfolio.&lt;/p&gt;
@@ -162,7 +179,7 @@ $$
 &lt;p&gt;$$
 \rho_{mn}=\frac{\text{Cov}[R_n, R_m]}{\sigma_n\sigma_m}.
 $$&lt;/p&gt;
-&lt;p&gt;Now here&amp;rsquo;s the main point: The variance of our portfolio is a function of the covariances between the assets in the portfolio. We can represent this compactly using a covariance matrix:&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the main point: The variance of our portfolio is a function of the covariances between the assets in the portfolio. We can represent this compactly using a covariance matrix:&lt;/p&gt;
 
 
 
@@ -179,10 +196,11 @@ w_Nw_1\sigma_{N1} &amp; \dots &amp; w^2_N\sigma^2_N\\
 \end{bmatrix}\textbf{w}
 $$
 
-&lt;p&gt;Notice that there are $N$ variance terms (the diagonal of the covariance matrix), while there are $N^2-N$ covariance terms (everything else in the matrix). What this means is that the correlations between assets controls our portfolio&amp;rsquo;s volatility. Positive or negative correlation between asset controls our portfolio&amp;rsquo;s volatility. Positive or negative correlation between assets can increase portfolio volatility, while uncorrelated assets decrease volatility.&lt;/p&gt;
+&lt;p&gt;Notice that there are $N$ variance terms (the diagonal of the covariance matrix), while there are $N^2-N$ covariance terms (everything else in the matrix). This means that the correlations between assets control our portfolio&amp;rsquo;s volatility. Positive or negative correlation between asset controls our portfolio&amp;rsquo;s volatility. Positive or negative correlation between assets can increase portfolio volatility, while uncorrelated assets decrease volatility.&lt;/p&gt;
+&lt;p&gt;So what exactly is &amp;ldquo;Diversification?&amp;rdquo; According to Fidelity, it&amp;rsquo;s simply &amp;ldquo;spreading your investments around so that your exposure to any one type of asset is limited.&amp;rdquo; However, we&amp;rsquo;ve learned that it&amp;rsquo;s much more nuanced than that.&lt;/p&gt;
+&lt;p&gt;As far as Modern Portfolio Theory, diversification is selecting uncorrelated assets, thereby reducing the variance of our portfolio&amp;rsquo;s returns. Failing to be diversified doesn&amp;rsquo;t necessarily mean owning just a small number of assets. In theory, we would own many highly correlated assets, which would increase the variance in our expected returns (which is different from what we want).&lt;/p&gt;
 &lt;h3 id=&#34;mean-variance-analysis&#34;&gt;Mean-variance analysis&lt;/h3&gt;
-&lt;h3 id=&#34;limits-of-diversification&#34;&gt;Limits of diversification&lt;/h3&gt;
-&lt;p&gt;As we have seen, uncorrelated assets allows us to reduce the overall volatility in a portfolio. The ups and downs are less volatile. However, there is only so much benefit you can achieve by adding more assets to a portfolio. Think of it as the &amp;ldquo;Laws of Diminishing Returns.&amp;rdquo; We can see, as the number of assets in the portfolio increase, the portfolio variance decreases.&lt;/p&gt;
+&lt;p&gt;Now that we better understand diversification, we can start talking about a mean-variance framework. Let&amp;rsquo;s assume that, all things equal, investors prefer higher expected returns and lower volatility. We believe investors only care about the return on their entire portfolio rather than on a single asset. In other words, we care about $R_p$, not any individual $R_n$. Given the observed or assumed expected returns and covariance between assets, what portfolios should we prefer?&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -201,11 +219,194 @@ $$
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure1.jpg&#34; alt=&#34;Portfolio Risk&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure1.jpg&#34; alt=&#34;risk reward&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Considering the following image. On the $x$-axis is the standard deviation of a portfolio&amp;rsquo;s return $\sigma_p$, and the $y$-axis is the expected return $\mu_p$. This is call the risk-return spectrum.&lt;/p&gt;
+&lt;p&gt;Considering our assumptions, an investor should prefer portfolio $B$ over $D$, since both have the same volatility but $B$ has higher expected returns. Broadly speaking, investors want to be in the top-left corner: a portfolio with the maximum return possible with the smallest amount of risk.&lt;/p&gt;
+&lt;p&gt;How do we find the weights that will allow this to happen? Imagine we have a fixed set of assets (considering there are only so many assets we can own). We can estimate returns, variances, and covariances however we&amp;rsquo;d like, for example, by looking at historical data. Now let $\Sigma$ denote the covariance matrix, and let $\textbf{r}$ be an $N-vector$ of expected returns, i.e. $\textbf{r}\overset{\Delta}{=}[\mu_1,\ldots,\mu_N]$. Then the mean-variance portfolio optimization problem is:&lt;/p&gt;
+
+
+
+$$
+\begin{aligned}
+\underset{\textbf{w}}{\min}&amp;\quad\textbf{w}^T\Sigma\textbf{w},\\
+\text{subject to}&amp;\quad \textbf{w}^T\textbf{r}=K,\\
+\text{and}&amp;\quad\sum_nw_n=1,
+\end{aligned}
+$$
+
+&lt;p&gt;where $K$ is a user specified hyperparameter that controls the desired expected return. In other words, w want to minimize the variance/covariance terms while ensuring our weights normalize to unity and gives us our expected portfolio return $K$ given our estimated expected asset returns $\textbf{r}$.&lt;/p&gt;
+&lt;h3 id=&#34;the-two-asset-example&#34;&gt;The two asset example&lt;/h3&gt;
+&lt;p&gt;Let&amp;rsquo;s consider the special case of two assets, stock $A$ with weight $w_1$ and stock $B$ with weight $w_2$. This will allow us to carefully reason about what is happening. Since $w_1+w_2=1$, we can easily visualize all possible portfolio by sweeping $w_1\in[0,1]$, calculating $w_2\overset{\Delta}{=}1-w_1$, and then computing the $(x,y)$-coordinates in the risk-reward spectrum:&lt;/p&gt;
+
+
+
+$$
+\begin{aligned}
+&amp;\mathbb{E}[R_p]=w_1\mu_2+w_1\mu_2, \\
+&amp;\mathbb{V}[R_p]=w^2_1\sigma^2_1+w^2_2\sigma^2_2+2w_1w_2\sigma_1\sigma_2\rho_{12}
+\end{aligned}
+$$
+
+&lt;p&gt;Suppose that stock $A$ had an average monthly return of 2 and a standard deviation of 10, while stock $B$ had an average return of $1$ and a standard deviation of $6$. Suppose their correlation if $0.35$. How would a portfolio of two stocks perform? We can construct a table comparing expected portfolio return and volatility for a variety of different weights $\textbf{w}$.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;$w_1$&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;$w_2$&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;$\mu_p$&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;$\sigma$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$0$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$1$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$1.00$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$6.00$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$0.25$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$0.75$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$1.25$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$5.86$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$0.5$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$0.5$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$1.50$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$6.67$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$0.75$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$0.25$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$1.75$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$8.15$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$1$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$0$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$2.00$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$10.00$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$1.25$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$-0.25$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$2.25$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$12.06$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This table shows the potential combination of weights we could have for our two assets. Instead of taking $100%$ of stock $A$ and $100%$ of stock $B$, we would take a combination of the two. Portfolio Theory doesn&amp;rsquo;t tell us which combination we should take; that would depend on where you want to be on the risk-reward spectrum.&lt;/p&gt;
+&lt;p&gt;We could adopt a portfolio $100%$ of stock A for the maximum return, which is very risky. We could adopt a portfolio $25%$ of stock $A$ and $75%$ of stock $B$ for the least amount of volatility. We could also short stock $B$ to go beyond the maximum return, which will greater increase or risk.&lt;/p&gt;
+&lt;p&gt;Plotting all the possible portfolios for these two stocks gives us the following image. Obviously, the relationship between risk and reward is nonlinear, as the portfolio is a functional relationship betweeen $\mu_p$ $\sigma_p$. As mentioned before, this is known as an &lt;em&gt;efficient frontier&lt;/em&gt; or &lt;em&gt;portfolio frontier&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure2.jpg&#34; alt=&#34;portfolio frontier&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Now we can see the risk-returns of holding just stock $A$ or just stock $B$. Clearly just holding stock $A$ is less risky than holding just stock $B$. However, notice that if we draw a vertical line straight up from stock $A$, we intersect the curve. This tells us that with a creative selection of portfolio weights, we can get the same risk but with a higher expected return.&lt;/p&gt;
+&lt;p&gt;So it&amp;rsquo;s rational to prefer this point over just stock $A$.&lt;/p&gt;
+&lt;h3 id=&#34;efficient-frontier&#34;&gt;Efficient frontier&lt;/h3&gt;
+&lt;p&gt;Now that we have a better idea of how portfolios can be created, let&amp;rsquo;s discuss the more general case. Individual stocks do not just lie on the parabola. When $N&amp;gt;2$, most portfolios lie within the parabola. Any portfolio is efficient if it lies along the top half of this boundary because no other combination of assets can have a smaller variance for the same expected return.&lt;/p&gt;
+&lt;p&gt;We can visualize the efficient in two ways. First, we can visualize many random portfolio by drawing random weights,&lt;/p&gt;
+
+
+
+$$
+\begin{equation}
+\textbf{w}\overset{\text{iid}}{\sim}\text{Dirichlet}(\alpha),
+\end{equation}
+$$
+
+&lt;p&gt;and then computing each portfolio&amp;rsquo;s $(x,y)$-coordinates of the portfolio using the equations for $\mu_p$ and $\sigma_p$. We can see the efficient frontier as the implicit parabolic edge.&lt;/p&gt;
+&lt;p&gt;We can optimize MPT to numerically approimate the weights $\text{w}$ for a variety of returns (sweeping the $y$-axis) for a fixed $K$. This produces the red line in the next figure. Here we generate $5,000$ random portfolios, generated by drawing weights $\textbf{w}$ from a Dirichlet distribution hyperparamters $\alpha=[1,1,1,1,1]$. The red line is the efficient frontier, approximated using constrained optimization.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure3.jpg&#34; alt=&#34;Portfolio Risk&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The return of each portfolio is defined by the &lt;em&gt;Sharpe Ratio&lt;/em&gt;, which is&lt;/p&gt;
+
+
+
+$$
+\text{Sharpe ratio}\overset{\Delta}{=}\frac{\mu_p-r_f}{\sigma_p}
+$$
+
+&lt;p&gt;where $r_f$ is the &lt;em&gt;risk-free rate&lt;/em&gt;, a return that is assumed to be achievable without any risk. The Sharpe ratio is also related to other important ideas in portfolio theory, such as the &lt;em&gt;tangent portfolio&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Investors also need to take note of the portfolio&amp;rsquo;s alpha, which is a measure of a portfolio&amp;rsquo;s risk-adjusted performance. There isn&amp;rsquo;t really a formal mathematical definition of alpha, but most people generally refer to Jensen&amp;rsquo;s alpha, which is&lt;/p&gt;
+
+
+
+$$
+\overset{\text{Jensen&#39;s alpha}}{\alpha_J}=\overset{\text{portfolio return}}{R_i}-[\overset{\text{risk free rate}}{R_f}+\overset{\text{portfolio beta}}{\beta_{iM}}\cdot(\overset{\text{market return}}{R_M}-\overset{\text{risk free rate}}{R_j})]
+$$
+
+&lt;h3 id=&#34;limits-of-diversification&#34;&gt;Limits of diversification&lt;/h3&gt;
+&lt;p&gt;As we have seen, uncorrelated assets allow us to reduce a portfolio&amp;rsquo;s overall volatility. The ups and downs are less volatile. However, you can only achieve so much benefit by adding more assets to a portfolio. Think of it as the &amp;ldquo;Laws of Diminishing Returns.&amp;rdquo; We can see that as the number of assets in the portfolio increases, the portfolio variance decreases.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure4.jpg&#34; alt=&#34;Portfolio Risk&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;However, notice the benefits of diversification are constrained not only by the portfolio variance, but what we call &amp;ldquo;systematic risk&amp;rdquo;. In essence, investors aren&amp;rsquo;t compensated for taking what we call &amp;ldquo;unsystematic risk,&amp;rdquo; that is, risk that can be diversified away. Recall that the Equity Risk Premium is denoted by $E[r]=r_\alpha-r_f=\beta_\alpha(r_m-r_f)+\epsilon$.&lt;/p&gt;
-&lt;p&gt;Looking at the derivation of the Capital Asset Pricing Model (CAPM), we should receive a premium for investing in equities over debt, particularly the risk-free rate ($r_\alpha-r_f$). This makes sense, as without this premium, there would be nothing to entice owners of capital to invest in equities over treasuries. Also, investors should expect a premium for the systemic risk of the overall market $\big(\beta*(r_m-r_f)\big)$. Since equities are significantly more risky compared to treasuries, and given the universe of stocks have $\beta&amp;gt;1$ (meaning, most stocks are positively correlated), it is nearly impossible to diversify away systemic risk.&lt;/p&gt;
+&lt;p&gt;Looking at the derivation of the Capital Asset Pricing Model (CAPM), we should receive a premium for investing in equities over &lt;strong&gt;debt&lt;/strong&gt;, particularly the risk-free rate ($r_\alpha-r_f$). This makes sense, as without this premium, there would be nothing to entice owners of capital to invest in equities over treasuries. Also, investors should expect a premium for the systemic risk of the overall market $\big(\beta*(r_m-r_f)\big)$. Since equities are significantly more risky than treasuries, and given the universe of stocks has $\beta&amp;gt;1$ (meaning, most stocks are positively correlated), it is nearly impossible to diversify away systemic risk.&lt;/p&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;According to Modern Portfolio Theory, diversification reduces risk because uncorrelated assets reduce the portfolio&amp;rsquo;s overall volatility. The covariance between different assets is more critical than the variance of individual assets. However, portfolios are limited by diminishing returns and systematic risk. Overall, investors should seek to construct portfolios somewhere on the efficiency frontier since these portfolios have better risk-adjusted returns or more significant Sharpe ratios than portfolios inside the frontier.&lt;/p&gt;
+&lt;p&gt;[1] Markowitz, H. (1952) &lt;em&gt;Portfolio selection&lt;/em&gt;. Journal of Finance.&lt;/p&gt;
+&lt;p&gt;[2] Markowitz, H. (1955) &lt;em&gt;The optimization of a quadratic function subject to linear constraints&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;[3] Sharpe W. F. (1966) Mutual Fund Performance. &lt;em&gt;The Journal of Business&lt;/em&gt;, 39(1), 119-138&lt;/p&gt;
+&lt;p&gt;[4] Fidelity Investments (2024) Why diversification matters.&lt;/p&gt;
 </description>
     </item>
     

@@ -6,6 +6,12 @@
       <atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
     <description>KidQuant</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <title>KidQuant</title>
+      <link>http://localhost:4321/</link>
+    </image>
+    
     <item>
       <title>Example Talk</title>
       <link>http://localhost:4321/talk/example-talk/</link>
@@ -27,12 +33,25 @@
     </item>
     
     <item>
+      <title>Simulating Geometric Brownian Motion</title>
+      <link>http://localhost:4321/post/2024-05-21-simulating-brownian-motion/</link>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/post/2024-05-21-simulating-brownian-motion/</guid>
+      <description>&lt;h3 id=&#34;confidence-intervals&#34;&gt;Confidence intervals&lt;/h3&gt;
+&lt;p&gt;So far, the stuff we&amp;rsquo;ve seen is pretty easy. However, we&amp;rsquo;re trying to be precise. We want to associate a confidence interval to each estimated parameter. In other words, we want to indicate how close the sample statistic (the estimate parameter) is to the population parameter (the real value of the parameter).&lt;/p&gt;
+&lt;p&gt;We can find an interval of values that contains the real parameter, with a confidence level of $(1-\alpha)100%$, for $0&amp;lt;\alpha&amp;lt;1$. This is called the &lt;em&gt;confidence interval&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Let us introduce some absic concepts:&lt;/p&gt;
+&lt;p&gt;Let $X_i$ be independent and identically distributed (i.i.d), for $1\leq i\leq n$, with $\mathbb{E}[X_i]=\mu$ and $\textit{Var}[X_i]=\sigma^2$. We call $\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Does Diversification Always Matter?</title>
       <link>http://localhost:4321/post/2024-28-2014-does-diversification-always-matter/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/post/2024-28-2014-does-diversification-always-matter/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve previously talked about Modern Portfolio Theory (MPT) and diversification in the past, the assumptions underlying MPT, and the construction of an Portfolio Frontier (PF). When most people think of diversifying their portfolio, they think of limiting their downside risk. However, it is possible construct a portfolio that still maximizes return with the least amount of volatility (choosing a portfolio that lies somewhere along the PF).&lt;/p&gt;
-&lt;p&gt;Now I&amp;rsquo;m going to further expand upon why diversification helps to maximize risk-adjusted returns, and express the limits of diversification.&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;ve previously talked about Modern Portfolio Theory (MPT) and diversification, the assumptions underlying MPT, and the construction of a Portfolio Frontier (PF). When most people consider diversifying their portfolio, they consider limiting their downside risk. However, it is possible to construct a portfolio that maximizes return with the least volatility (choosing a portfolio that lies somewhere along the PF).&lt;/p&gt;
+&lt;p&gt;Now, I will further expand upon why diversification helps maximize risk-adjusted returns and express the limits of diversification.&lt;/p&gt;
 &lt;h3 id=&#34;what-makes-a-portfolio&#34;&gt;What Makes a Portfolio?&lt;/h3&gt;
 &lt;p&gt;We can define a &lt;em&gt;portfolio&lt;/em&gt; as a combination of $N$ assets with $N$ portfolio weights that sum to unity:&lt;/p&gt;
 &lt;p&gt;$$
@@ -180,7 +199,7 @@ $$
 &lt;p&gt;$$
 \rho_{mn}=\frac{\text{Cov}[R_n, R_m]}{\sigma_n\sigma_m}.
 $$&lt;/p&gt;
-&lt;p&gt;Now here&amp;rsquo;s the main point: The variance of our portfolio is a function of the covariances between the assets in the portfolio. We can represent this compactly using a covariance matrix:&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the main point: The variance of our portfolio is a function of the covariances between the assets in the portfolio. We can represent this compactly using a covariance matrix:&lt;/p&gt;
 
 
 
@@ -197,10 +216,11 @@ w_Nw_1\sigma_{N1} &amp; \dots &amp; w^2_N\sigma^2_N\\
 \end{bmatrix}\textbf{w}
 $$
 
-&lt;p&gt;Notice that there are $N$ variance terms (the diagonal of the covariance matrix), while there are $N^2-N$ covariance terms (everything else in the matrix). What this means is that the correlations between assets controls our portfolio&amp;rsquo;s volatility. Positive or negative correlation between asset controls our portfolio&amp;rsquo;s volatility. Positive or negative correlation between assets can increase portfolio volatility, while uncorrelated assets decrease volatility.&lt;/p&gt;
-&lt;p&gt;So what exactly is &amp;ldquo;Diversification?&amp;rdquo; By the Modern Portfolio Theory, diversification is the process of selecting assets that are uncorrelated, and thereby reducing the variance of our portfolio&amp;rsquo;s returns. Failing to be diversified doesn&amp;rsquo;t necessarily mean owning just a small number of assets. We would, in theory, own a large number of assets that are all highly correlated, which would increase the variance in our expected returns (which is not what we want).&lt;/p&gt;
+&lt;p&gt;Notice that there are $N$ variance terms (the diagonal of the covariance matrix), while there are $N^2-N$ covariance terms (everything else in the matrix). This means that the correlations between assets control our portfolio&amp;rsquo;s volatility. Positive or negative correlation between asset controls our portfolio&amp;rsquo;s volatility. Positive or negative correlation between assets can increase portfolio volatility, while uncorrelated assets decrease volatility.&lt;/p&gt;
+&lt;p&gt;So what exactly is &amp;ldquo;Diversification?&amp;rdquo; According to Fidelity, it&amp;rsquo;s simply &amp;ldquo;spreading your investments around so that your exposure to any one type of asset is limited.&amp;rdquo; However, we&amp;rsquo;ve learned that it&amp;rsquo;s much more nuanced than that.&lt;/p&gt;
+&lt;p&gt;As far as Modern Portfolio Theory, diversification is selecting uncorrelated assets, thereby reducing the variance of our portfolio&amp;rsquo;s returns. Failing to be diversified doesn&amp;rsquo;t necessarily mean owning just a small number of assets. In theory, we would own many highly correlated assets, which would increase the variance in our expected returns (which is different from what we want).&lt;/p&gt;
 &lt;h3 id=&#34;mean-variance-analysis&#34;&gt;Mean-variance analysis&lt;/h3&gt;
-&lt;p&gt;Now that we have a better understanding of diversification, we can start talking about a mean-variance framework. Let&amp;rsquo;s assume that, all things equal, investors prefer higher expected returns and lower volatility. We assume investors only care about return on their entire portfolio, not on a single asset. In other words, we care about $R_p$, not any individual $R_n$. Given the observed or assumed expected returns and covariance between assets, what portfolios should we prefer?&lt;/p&gt;
+&lt;p&gt;Now that we better understand diversification, we can start talking about a mean-variance framework. Let&amp;rsquo;s assume that, all things equal, investors prefer higher expected returns and lower volatility. We believe investors only care about the return on their entire portfolio rather than on a single asset. In other words, we care about $R_p$, not any individual $R_n$. Given the observed or assumed expected returns and covariance between assets, what portfolios should we prefer?&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -322,10 +342,10 @@ $$
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Diversification/figure2.jpg&#34; alt=&#34;portfolio frontier&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Now we can see the risk-returns of holding just stock $A$ or just stock $B$. Clearly just holding stock $A$ is less risky than holding just stock $B$. However, notice that if we draw a vertical line straight up from stock $A$, we intersect the curve. This tells us that with a creative selecttion of portfolio weights, we can get the same risk but with a higher expected return.&lt;/p&gt;
+&lt;p&gt;Now we can see the risk-returns of holding just stock $A$ or just stock $B$. Clearly just holding stock $A$ is less risky than holding just stock $B$. However, notice that if we draw a vertical line straight up from stock $A$, we intersect the curve. This tells us that with a creative selection of portfolio weights, we can get the same risk but with a higher expected return.&lt;/p&gt;
 &lt;p&gt;So it&amp;rsquo;s rational to prefer this point over just stock $A$.&lt;/p&gt;
 &lt;h3 id=&#34;efficient-frontier&#34;&gt;Efficient frontier&lt;/h3&gt;
-&lt;p&gt;Now that we have a better inituition on how portfolios can be created, let&amp;rsquo;s discuss the more general case. Individual stocks do not just lie on the parabola. When $N&amp;gt;2$, most portfolios lie within the parabola. Any portfolio is &lt;em&gt;efficient&lt;/em&gt; if it lies along the top half of this boundary because no other combination of assets can have smaller variance for the same expected return.&lt;/p&gt;
+&lt;p&gt;Now that we have a better idea of how portfolios can be created, let&amp;rsquo;s discuss the more general case. Individual stocks do not just lie on the parabola. When $N&amp;gt;2$, most portfolios lie within the parabola. Any portfolio is efficient if it lies along the top half of this boundary because no other combination of assets can have a smaller variance for the same expected return.&lt;/p&gt;
 &lt;p&gt;We can visualize the efficient in two ways. First, we can visualize many random portfolio by drawing random weights,&lt;/p&gt;
 
 
@@ -367,8 +387,17 @@ $$
 \text{Sharpe ratio}\overset{\Delta}{=}\frac{\mu_p-r_f}{\sigma_p}
 $$
 
+&lt;p&gt;where $r_f$ is the &lt;em&gt;risk-free rate&lt;/em&gt;, a return that is assumed to be achievable without any risk. The Sharpe ratio is also related to other important ideas in portfolio theory, such as the &lt;em&gt;tangent portfolio&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Investors also need to take note of the portfolio&amp;rsquo;s alpha, which is a measure of a portfolio&amp;rsquo;s risk-adjusted performance. There isn&amp;rsquo;t really a formal mathematical definition of alpha, but most people generally refer to Jensen&amp;rsquo;s alpha, which is&lt;/p&gt;
+
+
+
+$$
+\overset{\text{Jensen&#39;s alpha}}{\alpha_J}=\overset{\text{portfolio return}}{R_i}-[\overset{\text{risk free rate}}{R_f}+\overset{\text{portfolio beta}}{\beta_{iM}}\cdot(\overset{\text{market return}}{R_M}-\overset{\text{risk free rate}}{R_j})]
+$$
+
 &lt;h3 id=&#34;limits-of-diversification&#34;&gt;Limits of diversification&lt;/h3&gt;
-&lt;p&gt;As we have seen, uncorrelated assets allows us to reduce the overall volatility in a portfolio. The ups and downs are less volatile. However, there is only so much benefit you can achieve by adding more assets to a portfolio. Think of it as the &amp;ldquo;Laws of Diminishing Returns.&amp;rdquo; We can see, as the number of assets in the portfolio increase, the portfolio variance decreases.&lt;/p&gt;
+&lt;p&gt;As we have seen, uncorrelated assets allow us to reduce a portfolio&amp;rsquo;s overall volatility. The ups and downs are less volatile. However, you can only achieve so much benefit by adding more assets to a portfolio. Think of it as the &amp;ldquo;Laws of Diminishing Returns.&amp;rdquo; We can see that as the number of assets in the portfolio increases, the portfolio variance decreases.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -391,7 +420,13 @@ $$
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;However, notice the benefits of diversification are constrained not only by the portfolio variance, but what we call &amp;ldquo;systematic risk&amp;rdquo;. In essence, investors aren&amp;rsquo;t compensated for taking what we call &amp;ldquo;unsystematic risk,&amp;rdquo; that is, risk that can be diversified away. Recall that the Equity Risk Premium is denoted by $E[r]=r_\alpha-r_f=\beta_\alpha(r_m-r_f)+\epsilon$.&lt;/p&gt;
-&lt;p&gt;Looking at the derivation of the Capital Asset Pricing Model (CAPM), we should receive a premium for investing in equities over debt, particularly the risk-free rate ($r_\alpha-r_f$). This makes sense, as without this premium, there would be nothing to entice owners of capital to invest in equities over treasuries. Also, investors should expect a premium for the systemic risk of the overall market $\big(\beta*(r_m-r_f)\big)$. Since equities are significantly more risky compared to treasuries, and given the universe of stocks have $\beta&amp;gt;1$ (meaning, most stocks are positively correlated), it is nearly impossible to diversify away systemic risk.&lt;/p&gt;
+&lt;p&gt;Looking at the derivation of the Capital Asset Pricing Model (CAPM), we should receive a premium for investing in equities over &lt;strong&gt;debt&lt;/strong&gt;, particularly the risk-free rate ($r_\alpha-r_f$). This makes sense, as without this premium, there would be nothing to entice owners of capital to invest in equities over treasuries. Also, investors should expect a premium for the systemic risk of the overall market $\big(\beta*(r_m-r_f)\big)$. Since equities are significantly more risky than treasuries, and given the universe of stocks has $\beta&amp;gt;1$ (meaning, most stocks are positively correlated), it is nearly impossible to diversify away systemic risk.&lt;/p&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;According to Modern Portfolio Theory, diversification reduces risk because uncorrelated assets reduce the portfolio&amp;rsquo;s overall volatility. The covariance between different assets is more critical than the variance of individual assets. However, portfolios are limited by diminishing returns and systematic risk. Overall, investors should seek to construct portfolios somewhere on the efficiency frontier since these portfolios have better risk-adjusted returns or more significant Sharpe ratios than portfolios inside the frontier.&lt;/p&gt;
+&lt;p&gt;[1] Markowitz, H. (1952) &lt;em&gt;Portfolio selection&lt;/em&gt;. Journal of Finance.&lt;/p&gt;
+&lt;p&gt;[2] Markowitz, H. (1955) &lt;em&gt;The optimization of a quadratic function subject to linear constraints&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;[3] Sharpe W. F. (1966) Mutual Fund Performance. &lt;em&gt;The Journal of Business&lt;/em&gt;, 39(1), 119-138&lt;/p&gt;
+&lt;p&gt;[4] Fidelity Investments (2024) Why diversification matters.&lt;/p&gt;
 </description>
     </item>
     
@@ -4579,131 +4614,6 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 &lt;p&gt;This is just the tip of the iceberg of what you can do with algorithmic pairs trading. It&amp;rsquo;s simple because it only deals with moving averages and ratios. If you want to use more complicated statistics, feel free to do so. Other complex examples include subjects such as the Hurst exponent, half-life mean reversion, and Kalman Filters.&lt;/p&gt;
 &lt;h3 id=&#34;github-code&#34;&gt;GitHub Code&lt;/h3&gt;
 &lt;p&gt;Click here for the full &lt;a href=&#34;https://github.com/Hedgology/Pairs-Trading-With-Python&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github Code&lt;/a&gt; and explainations.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Slides</title>
-      <link>http://localhost:4321/slides/example/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/slides/example/</guid>
-      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-hugo-blox-builder&#34;&gt;Create slides in Markdown with Hugo Blox Builder&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://hugoblox.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Builder&lt;/a&gt; | &lt;a href=&#34;https://docs.hugoblox.com/content/slides/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
-&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
-&lt;li&gt;Supports speaker notes&lt;/li&gt;
-&lt;li&gt;Mobile friendly slides&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://revealjs.com/pdf-export/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
-&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Code block:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Eating...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
-&lt;p&gt;Block math:&lt;/p&gt;
-&lt;p&gt;$$
-f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
-&lt;p&gt;Make content appear incrementally&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% fragment %}} One {{% /fragment %}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% fragment %}} **Two** {{% /fragment %}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% fragment %}} Three {{% /fragment %}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  One
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  &lt;strong&gt;Two&lt;/strong&gt;
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  Three
-&lt;/span&gt;
-&lt;hr&gt;
-&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
-&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% speaker_note %}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Only the speaker can read these notes
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Press &lt;span class=&#34;sb&#34;&gt;`S`&lt;/span&gt; key to view
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  {{% /speaker_note %}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/aside&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
-&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
-&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
-&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
-&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
-&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/media/boards.jpg&#34;
-  &gt;
-
-&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
-&lt;p&gt;Customize the slide style and background&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/media/boards.jpg&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#0000FF&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;my-style&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
-&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;navy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.hugoblox.com/content/slides/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

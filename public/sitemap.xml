@@ -15,30 +15,34 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/categories/</loc>
-    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/post/2024-28-2014-does-diversification-always-matter/</loc>
-    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/category/finance/</loc>
-    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/post/</loc>
-    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/category/programming/</loc>
-    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/tag/quant-finance/</loc>
-    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/post/2024-05-21-simulating-brownian-motion/</loc>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/tags/</loc>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/post/2024-28-2014-does-diversification-always-matter/</loc>
     <lastmod>2024-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -364,14 +368,6 @@
   </url><url>
     <loc>http://localhost:4321/tag/stocks/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/slides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/slides/example/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/post/2018-11-03-option-sensitivities-proofs/</loc>
