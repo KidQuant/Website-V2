@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>COVID19 | KidQuant</title>
-    <link>https://kidquant.com/tag/covid19/</link>
-      <atom:link href="https://kidquant.com/tag/covid19/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/tag/covid19/</link>
+      <atom:link href="http://localhost:4321/tag/covid19/index.xml" rel="self" type="application/rss+xml" />
     <description>COVID19</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>COVID19</title>
-      <link>https://kidquant.com/tag/covid19/</link>
+      <link>http://localhost:4321/tag/covid19/</link>
     </image>
     
     <item>
       <title>Analyzing the Impact of COVID-19 on Retail</title>
-      <link>https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/</link>
+      <link>http://localhost:4321/post/2020-08-15-covid-impact-retail-sales/</link>
       <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/post/2020-08-15-covid-impact-retail-sales/</guid>
+      <guid>http://localhost:4321/post/2020-08-15-covid-impact-retail-sales/</guid>
       <description>&lt;p&gt;It doesn&amp;rsquo;t take a genius to know that 2020 has been a year for the United States economy. Tens of millions were encouraged or forced to remain indoors in an attempt to slow the spread. Only a few industries/businesses were allowed to stay open, as they were classified as &amp;ldquo;essential businesses.&amp;rdquo; The longest expansion in U.S. history came to an end in Q1 2020, which resulted in a -5.0% contraction in economic activity (followed by a -32.9% drop in Q2).&lt;/p&gt;
 &lt;p&gt;Within the same period, retail sales declined -0.87% YoY for Q1 2020, equating to a ~5 billion drop. During the second quarter, sales dropped a whopping 8.16% YoY, resulting in an approximately 12 billion decline in retail sales. (although the quarterly decline in sales is the largest since the Great Recession, the monthly decline is the largest in history)&lt;/p&gt;
 &lt;p&gt;However, during the last two months, retail sales have recovered to pre-recession levels, and total sales are the highest.&lt;/p&gt;
@@ -38,7 +38,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/retailsales2020.png&#34; alt=&#34;Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/retailsales2020.png&#34; alt=&#34;Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As everyone across the country is adjusting to a life with COVID, it&amp;rsquo;s interesting to see which industries benefit the most, and which industries are the most impacted. The Census Bureau publishes data on Advanced Monthly Sales for Retail and Food Services; statistics are gathered utilizing a stratified random sampling method that tracks approximately 5,500 retail and food service firms. The data is then weighted and benchmarked to represent a complete universe of over three million retail and food service firms. The data goes as far back as 1992.&lt;/p&gt;
@@ -60,7 +60,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/monthly_retail_sales_2020.png&#34; alt=&#34;Monthly Retail Sales 2020&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/monthly_retail_sales_2020.png&#34; alt=&#34;Monthly Retail Sales 2020&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We saw a slight decline in February, which can be seen as a result of seasonality (a decline as a result of holiday shopping MoM). However, during the two months afterward, we&amp;rsquo;ve experienced some extreme declines in retail sales, most of which occurred in April. Most states haven&amp;rsquo;t instituted their lockdowns until the end of March or the beginning of April.&lt;/p&gt;
@@ -84,7 +84,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/february_2020.png&#34; alt=&#34;February Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/february_2020.png&#34; alt=&#34;February Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The most significant declines include gasoline stations (-2.95%), men&amp;rsquo;s clothing stores (-2.86%), automotive parts (-2.38%), general clothing stores (-1.8%), and building material/suppliers dealers (-1.63%). Out of 30 NAICS industries, just seven experienced sales growth for the entire month of February.&lt;/p&gt;
@@ -108,7 +108,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/april_2020.png&#34; alt=&#34;April Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/april_2020.png&#34; alt=&#34;April Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;One would also assume that industries such as grocery and fast food would see some growth during this period, considering these are classified as essential businesses. However, grocery and fast food industries experienced a -13.37% and -34.32% decline, respectively. This decline could be attributed to safety concerns (unable to implement the necessary infrastructure to continue operating safely). It could be due to the decrease in mobility (many of the food and drinking places include restaurants and bars, which people can no longer patronize).&lt;/p&gt;
@@ -134,7 +134,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/may_2020.png&#34; alt=&#34;May Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/may_2020.png&#34; alt=&#34;May Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;During May, Retail sales grew 18.27%, which shouldn&amp;rsquo;t be surprising to anyone if you shut down the economy for nearly two months. Also, every industry experienced sales growth, which also shouldn&amp;rsquo;t be surprising. If you&amp;rsquo;re at rock bottom, the only place left to go is up.&lt;/p&gt;
@@ -156,7 +156,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/top_sales_may_2020.png&#34; alt=&#34;Top 10 Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/top_sales_may_2020.png&#34; alt=&#34;Top 10 Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The top 5 industries with the most growth in May include shoe stores, clothing accessories, clothing stores, women&amp;rsquo;s clothing, and sporting goods. An obvious explanation would consist of the resurgence of warmer weather. People are forced to remain inside, and it&amp;rsquo;s challenging to keep doing in a more temperate climate. Plenty of clothing stores also reopened just in time for the summer season; so the surge in sales also coincides a change in climate.&lt;/p&gt;
@@ -181,7 +181,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/percentage_change_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/percentage_change_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;So if you were in the business of selling electronics and sporting goods, you most likely saw a lot of business. Interestingly, people have pointed out that liquor stores are not an essential business but noticed they were exempt from many shelters in place orders. There are most likely technical reasons for this (alcohol is still technically food), historical reasons (the prohibition era), and personal reasons (it helps reduces stress).&lt;/p&gt;
@@ -204,7 +204,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/online_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/online_retail.png&#34; alt=&#34;Change Retail Sales&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As such, we see a temporary bifurcation of the retail market. For as long as we are following CDC safety guidelines, only industries that are considered the most &amp;ldquo;safe&amp;rdquo; and essential will outperform. If your business requires people to travel, be near one another, and require physical inventory, these industries will most likely take a hit until we&amp;rsquo;ve controlled the spread of this virus.&lt;/p&gt;

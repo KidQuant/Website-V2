@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stocks | KidQuant</title>
-    <link>https://kidquant.com/tag/stocks/</link>
-      <atom:link href="https://kidquant.com/tag/stocks/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/tag/stocks/</link>
+      <atom:link href="http://localhost:4321/tag/stocks/index.xml" rel="self" type="application/rss+xml" />
     <description>Stocks</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 04 Mar 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Stocks</title>
-      <link>https://kidquant.com/tag/stocks/</link>
+      <link>http://localhost:4321/tag/stocks/</link>
     </image>
     
     <item>
       <title>Pairs Trading Strategies in Python</title>
-      <link>https://kidquant.com/project/pairs-trading-strategies-in-python/</link>
+      <link>http://localhost:4321/project/pairs-trading-strategies-in-python/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/pairs-trading-strategies-in-python/</guid>
+      <guid>http://localhost:4321/project/pairs-trading-strategies-in-python/</guid>
       <description>&lt;h2 id=&#34;pairs-trading-strategies-using-python&#34;&gt;Pairs Trading Strategies Using Python&lt;/h2&gt;
 &lt;p&gt;When it comes to making money in the stock market, there are a myriad of different ways to make money. And it seems that in the finance community, everywhere you go, people are telling you that you should learn Python. After all, Python is a popular programming language which can be used in all types of fields, including data science. There are a large number of packages that can help you meet your goals, and many companies use Python for development of data-centric applications and scientific computation, which is associated with the financial world.&lt;/p&gt;
 &lt;p&gt;Most of all Python can help us utilize many different trading strategies that (without it) would by very difficult to analyze by hand or with spreadsheets. One of the trading strategies we will talk about is referred to as &lt;strong&gt;Pairs Trading.&lt;/strong&gt;&lt;/p&gt;
@@ -61,7 +61,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/statonarity_comparison.png&#34; alt=&#34;stationarity comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/statonarity_comparison.png&#34; alt=&#34;stationarity comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;why-stationarity-is-important&#34;&gt;Why Stationarity is Important&lt;/h3&gt;
@@ -84,7 +84,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/average_timeseries_seriesB.png&#34; alt=&#34;Averge time series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/average_timeseries_seriesB.png&#34; alt=&#34;Averge time series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The computed mean will show that the mean of all data points, but won&amp;rsquo;t be useful for any forecasting of the future state. It&amp;rsquo;s meaningless when compared with any specific time, as it&amp;rsquo;s a collection of different states at different times mashed together. This is just a simple and clear example of why non-stationarity can distort the analysis, much more subtle problems can arise in practice.&lt;/p&gt;
@@ -152,7 +152,7 @@ p-value = 0.7317208279589542 The series B is likely non-stationary.&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/cointegration_spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/cointegration_spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h4 id=&#34;testing-for-cointegration&#34;&gt;Testing for Cointegration&lt;/h4&gt;
@@ -207,7 +207,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/diverge.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/diverge.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Next, we can print the correlation coefficient, $r$, and the cointegration test.&lt;/p&gt;
@@ -238,7 +238,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/squared_wave.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/squared_wave.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Although the correlation is incredibly low, the p-value shows that these time series are cointegrated.&lt;/p&gt;
@@ -285,7 +285,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/heatmap.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/heatmap.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Our algorithm listed two pairs that are cointegrated: AAPL/EBAY, and ABDE/MSFT. We will analyze the ABDE/MSFT equity pair.&lt;/p&gt;
@@ -309,7 +309,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Alternatively, we can examine the ration between the time series.&lt;/p&gt;
@@ -331,7 +331,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/ratio.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/ratio.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Regardless of whether or not we use the spread approach or the ratio approach, we can see that our first plot pair ADBE/SYMC tends to move around the mean. We now need to standardize this ratio because the absolute ratio might not be the most ideal way of analyzing this trend. For this, we need to use z-scores.&lt;/p&gt;
@@ -355,7 +355,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/standard_deviation.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/standard_deviation.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;By setting two other lines placed at the z-score of 1 and -1, we can clearly see that for the most part, any big divergences from the mean eventually converge back. This is precisely what we want for a pairs trading strategy.&lt;/p&gt;
@@ -394,7 +394,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/rolling_mean.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/rolling_mean.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h4 id=&#34;creating-a-model&#34;&gt;Creating a Model&lt;/h4&gt;
@@ -423,7 +423,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Trading_Signals.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Trading_Signals.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;areas-of-improvement-and-further-steps&#34;&gt;Areas of Improvement and Further Steps&lt;/h3&gt;

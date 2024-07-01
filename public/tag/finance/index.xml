@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Finance | KidQuant</title>
-    <link>https://kidquant.com/tag/finance/</link>
-      <atom:link href="https://kidquant.com/tag/finance/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/tag/finance/</link>
+      <atom:link href="http://localhost:4321/tag/finance/index.xml" rel="self" type="application/rss+xml" />
     <description>Finance</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 05 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Finance</title>
-      <link>https://kidquant.com/tag/finance/</link>
+      <link>http://localhost:4321/tag/finance/</link>
     </image>
     
     <item>
       <title>Does a r/WallStreetBets Portfolio Significantly Outperform?</title>
-      <link>https://kidquant.com/project/wallstreet-bets-stock-analysis/</link>
+      <link>http://localhost:4321/project/wallstreet-bets-stock-analysis/</link>
       <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/wallstreet-bets-stock-analysis/</guid>
+      <guid>http://localhost:4321/project/wallstreet-bets-stock-analysis/</guid>
       <description>&lt;p&gt;Thanks to the prevalence of COVID-19 in our everyday lives, it&amp;rsquo;s getting increasingly difficult to return to normal for most people. While I&amp;rsquo;ve used this additional flexibility to pick up on old hobbies (gaming, music, etc.), others have used theirs to learn about financial markets. Knowing that I work in finance, some of my friends have reached out to me for financial pointers, while others have opted for the convenience of reading r/WallStreetBets.&lt;/p&gt;
 &lt;p&gt;You may be asking, why am I &amp;ndash; someone who would be considered a &amp;ldquo;sophiscated investor&amp;rdquo; &amp;ndash; would even be interested in a platform such as r/WallStreetBets? For those of you who don&amp;rsquo;t know, I&amp;rsquo;ve written a piece about the subreddit last year. However, it was never clearly explained the buzz around r/WallStreetBets.&lt;/p&gt;
 &lt;p&gt;Due to the pandemic (the financial insecurity and flexibility it brought to millions of people), as well as the stimulus checks provided by the government and the rise of free trading platforms such as Robinhood, a lot of people who would typically not dabble with stocks are having fun with the stock market. They&amp;rsquo;re also investing in all sorts of zany things like Dogecoin and GameStop. Institutional Investors (the &amp;ldquo;smart money&amp;rdquo;) and the veterans in the financial media fail to understand this, and they&amp;rsquo;re generally condescending and negative towards these new brand of retail investors.&lt;/p&gt;
@@ -51,7 +51,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/meme-stock-life-cycle.jpg&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-Stocks-Portfolio/meme-stock-life-cycle.jpg&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;&amp;ldquo;To the moon&amp;rdquo; was a popular rallying cry for many holders of these stocks. It was used as a reminding, regardless of how much the price may drop, buy and never sell, because we (retail investors) control the value of the stock, and not institutional investors. There is no doube that it can be exciting to make money day trading and to be part of something bigger than yourself.&lt;/p&gt;
@@ -75,7 +75,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/WSB-Favorite-Stocks/02.PNG&#34; alt=&#34;Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/WSB-Favorite-Stocks/02.PNG&#34; alt=&#34;Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We will construct a portfolio using popular stocks from the WallStreetBets community. In July 2021, I decided to find the most talk-about stocks in the r/WallStreetBets subreddit and narrowed the list down to 20 of the most popular equities on the platform. Six of these assets have recently gone public, and they will be excluded from the experiment.&lt;/p&gt;
@@ -120,7 +120,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/alpha.png&#34; alt=&#34;alpha&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-Stocks-Portfolio/alpha.png&#34; alt=&#34;alpha&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, most of the stocks in our portfolio outperform the S&amp;amp;P 500 by a modest margin. Out of the 20 assets, 8 of them outperform our benchmark at least 1%, and 3 have underperformed our benchmark. If we average the , it comes out to 0.9386, which means that our meme stock portfolio only outperforms the S&amp;amp;P by 0.93% (I got this figure by simply averaging the  for each asset). So, should you invest in a portfolio like this? I suppose it &amp;ldquo;depends&amp;rdquo; on your income goals and overall suitability (after all, this isn&amp;rsquo;t investment advice).&lt;/p&gt;
@@ -144,7 +144,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/beta.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-Stocks-Portfolio/beta.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As mentioned before, most assets (especially stocks) are positively correlated with the broader market. Most of the assets in our portfolio have $\beta$ greater than 1, which means they are more volatile than the overall market. As we see, CLF has a $\beta$ of 1.7, which means we can expect this stock to increase by 1.7% for every 1% increase in the broader market.&lt;/p&gt;
@@ -172,7 +172,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/portfolio.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-Stocks-Portfolio/portfolio.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Now we&amp;rsquo;ve allocated all 20 of our assets based on our risk tolerance. As you can see, our program has plotted 100,000 unique portfolios, with annualized returns ($\alpha$) on our y-axis and annualized volatility ($\beta$) on our x-axis. It&amp;rsquo;s possible to select a random portfolio inside the curve, but there will always be some portfolio out there, with the same number of assets, that will outperform in terms of returns and risk. The optimal or efficient portfolio will always exist somewhere on the edge of the curve, hence, the efficient frontier.&lt;/p&gt;
@@ -194,9 +194,9 @@
     
     <item>
       <title>Forecasting Asset Prices Using VAR and Granger Causality</title>
-      <link>https://kidquant.com/project/forecasting-var-granger-causlity/</link>
+      <link>http://localhost:4321/project/forecasting-var-granger-causlity/</link>
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/forecasting-var-granger-causlity/</guid>
+      <guid>http://localhost:4321/project/forecasting-var-granger-causlity/</guid>
       <description>&lt;p&gt;Forecasting Gold and Oil has garnered major attention from academics, investors and Government agencies alike. These two products are known for their substantial influence on the global economy. However, what is the relationship between these two assets? What generally happens to Gold prices when Oil takes a plunge? We can use a statistical technique known as &lt;em&gt;&lt;strong&gt;Granger Causality&lt;/strong&gt;&lt;/em&gt; to test the relationships of Gold, Oil, and some other variables. We can also use a &lt;strong&gt;VAR model&lt;/strong&gt; to forecast the future Gold &amp;amp; Oil prices.&lt;/p&gt;
 &lt;h2 id=&#34;exploratory-analysis&#34;&gt;Exploratory Analysis&lt;/h2&gt;
 &lt;p&gt;Let&amp;rsquo;s load the data and conduct some analysis with visualizations to understand more of the data. Exploratory data analysis is quite extensive in multivariate time series. I will cover some areas here to get insights into the data. However, it is advisable to conduct all statistical tests to ensure our clear understanding of data distribution.&lt;/p&gt;
@@ -218,7 +218,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/data_analysis.png&#34; alt=&#34;Data Analysis&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/data_analysis.png&#34; alt=&#34;Data Analysis&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;In our dataset, we have six variables: Gold, Silver, Oil, US Dollar, Interest, and a Stock Market Index. The stock market index we&amp;rsquo;ve used was the Dow Jones Industrial Average. We usually use linear regression to determine if there is a correlation between specific variables. Instead, we&amp;rsquo;re going to determine if any of these variables directly causes movement in the other variables.&lt;/p&gt;
@@ -240,7 +240,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/time_series.png&#34; alt=&#34;Time Series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/time_series.png&#34; alt=&#34;Time Series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Here, we can see different trends for six of our variables. It would be helpful if we established whether or not our time series followed a normal (or Gaussian) distribution. We will do this based on the test for normality based on the Jarque-Bera test.&lt;/p&gt;
@@ -285,7 +285,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/test_statistics.png&#34; alt=&#34;Test Statistics&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/test_statistics.png&#34; alt=&#34;Test Statistics&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;These two distributions can provide us with some intuition about the distribution of our data. A value close to 0 for kurtosis indicates a normal distribution where asymmetrical nature is signified by a value between -0.5 and +0.5 for skewness. The tails are heavier for kurtosis greater than 0 and vice versa. Moderate skewness refers to the value between -1 and -0.5 or 0.5 and 1.&lt;/p&gt;
@@ -307,7 +307,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/probability_plot.png&#34; alt=&#34;probability plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/probability_plot.png&#34; alt=&#34;probability plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Based on the normal probability plot, we can see that the dataset is far from normally distributed.&lt;/p&gt;
@@ -340,7 +340,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/autocorrelation.png&#34; alt=&#34;autocorrelation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/autocorrelation.png&#34; alt=&#34;autocorrelation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following plot shows the autocorrelation for the Gold time series. As we can see, each value is highly correlated with the previous value. We have an autocorrelation of +1, which represents a perfect positive correlation. An increase seen in one time series leads to a proportionate increase in the other time series.&lt;/p&gt;
@@ -375,7 +375,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/stationary.png&#34; alt=&#34;stationary&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/stationary.png&#34; alt=&#34;stationary&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;testing-causation-using-grangers-causality-test&#34;&gt;Testing Causation using Granger&amp;rsquo;s Causality Test&lt;/h3&gt;
@@ -427,7 +427,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/granger_causality.PNG&#34; alt=&#34;granger causality&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/granger_causality.PNG&#34; alt=&#34;granger causality&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The row are the responses $Y$ and the columns are the predictors $X$.&lt;/p&gt;
@@ -492,7 +492,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/var_model.PNG&#34; alt=&#34;Var Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/var_model.PNG&#34; alt=&#34;Var Model&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h4 id=&#34;conducting-a-forecast-evaluation&#34;&gt;Conducting a forecast evaluation&lt;/h4&gt;
@@ -515,7 +515,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/granger-var-project/VAR_forecast.png&#34; alt=&#34;Var Forecast&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/granger-var-project/VAR_forecast.png&#34; alt=&#34;Var Forecast&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the forecasted observations are pretty much in line with the historical observations used for forecasting Gold prices. There is a very slight deviation between the historical and forecasted observations started from Janurary 9th, however, this divergence is very slight.&lt;/p&gt;
@@ -528,9 +528,9 @@
     
     <item>
       <title>Pairs Trading Strategies in Python</title>
-      <link>https://kidquant.com/project/pairs-trading-strategies-in-python/</link>
+      <link>http://localhost:4321/project/pairs-trading-strategies-in-python/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/pairs-trading-strategies-in-python/</guid>
+      <guid>http://localhost:4321/project/pairs-trading-strategies-in-python/</guid>
       <description>&lt;h2 id=&#34;pairs-trading-strategies-using-python&#34;&gt;Pairs Trading Strategies Using Python&lt;/h2&gt;
 &lt;p&gt;When it comes to making money in the stock market, there are a myriad of different ways to make money. And it seems that in the finance community, everywhere you go, people are telling you that you should learn Python. After all, Python is a popular programming language which can be used in all types of fields, including data science. There are a large number of packages that can help you meet your goals, and many companies use Python for development of data-centric applications and scientific computation, which is associated with the financial world.&lt;/p&gt;
 &lt;p&gt;Most of all Python can help us utilize many different trading strategies that (without it) would by very difficult to analyze by hand or with spreadsheets. One of the trading strategies we will talk about is referred to as &lt;strong&gt;Pairs Trading.&lt;/strong&gt;&lt;/p&gt;
@@ -575,7 +575,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/statonarity_comparison.png&#34; alt=&#34;stationarity comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/statonarity_comparison.png&#34; alt=&#34;stationarity comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;why-stationarity-is-important&#34;&gt;Why Stationarity is Important&lt;/h3&gt;
@@ -598,7 +598,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/average_timeseries_seriesB.png&#34; alt=&#34;Averge time series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/average_timeseries_seriesB.png&#34; alt=&#34;Averge time series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The computed mean will show that the mean of all data points, but won&amp;rsquo;t be useful for any forecasting of the future state. It&amp;rsquo;s meaningless when compared with any specific time, as it&amp;rsquo;s a collection of different states at different times mashed together. This is just a simple and clear example of why non-stationarity can distort the analysis, much more subtle problems can arise in practice.&lt;/p&gt;
@@ -666,7 +666,7 @@ p-value = 0.7317208279589542 The series B is likely non-stationary.&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/cointegration_spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/cointegration_spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h4 id=&#34;testing-for-cointegration&#34;&gt;Testing for Cointegration&lt;/h4&gt;
@@ -721,7 +721,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/diverge.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/diverge.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Next, we can print the correlation coefficient, $r$, and the cointegration test.&lt;/p&gt;
@@ -752,7 +752,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/squared_wave.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/squared_wave.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Although the correlation is incredibly low, the p-value shows that these time series are cointegrated.&lt;/p&gt;
@@ -799,7 +799,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/heatmap.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/heatmap.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Our algorithm listed two pairs that are cointegrated: AAPL/EBAY, and ABDE/MSFT. We will analyze the ABDE/MSFT equity pair.&lt;/p&gt;
@@ -823,7 +823,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Alternatively, we can examine the ration between the time series.&lt;/p&gt;
@@ -845,7 +845,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/ratio.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/ratio.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Regardless of whether or not we use the spread approach or the ratio approach, we can see that our first plot pair ADBE/SYMC tends to move around the mean. We now need to standardize this ratio because the absolute ratio might not be the most ideal way of analyzing this trend. For this, we need to use z-scores.&lt;/p&gt;
@@ -869,7 +869,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/standard_deviation.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/standard_deviation.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;By setting two other lines placed at the z-score of 1 and -1, we can clearly see that for the most part, any big divergences from the mean eventually converge back. This is precisely what we want for a pairs trading strategy.&lt;/p&gt;
@@ -908,7 +908,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/rolling_mean.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/rolling_mean.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h4 id=&#34;creating-a-model&#34;&gt;Creating a Model&lt;/h4&gt;
@@ -937,7 +937,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Trading_Signals.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Trading_Signals.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;areas-of-improvement-and-further-steps&#34;&gt;Areas of Improvement and Further Steps&lt;/h3&gt;
@@ -957,9 +957,9 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
     
     <item>
       <title>401K Optimization Using Modern Portfolio Theory</title>
-      <link>https://kidquant.com/project/401k-optimization-using-modern-portfolio-theory/</link>
+      <link>http://localhost:4321/project/401k-optimization-using-modern-portfolio-theory/</link>
       <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/401k-optimization-using-modern-portfolio-theory/</guid>
+      <guid>http://localhost:4321/project/401k-optimization-using-modern-portfolio-theory/</guid>
       <description>&lt;h2 id=&#34;401k-optimization-using-modern-portfolio-theory&#34;&gt;401K Optimization Using Modern Portfolio Theory&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve often talked about the benefits of computer programming and using technology in Finance to develop more sophisticated trading strategies. Such strategies usually require a unique understanding of mathematics, data science, and statistics; paired along with a rudimentary knowledge of machine learning and programming.&lt;/p&gt;
 &lt;p&gt;Because of these significant learning curves, maybe algorithmic trading isn&amp;rsquo;t the way to go. As such, we&amp;rsquo;re simply going to purchase 100,000 dollars worth of an asset class and not worry about what investment strategy we&amp;rsquo;re going to adopt. We&amp;rsquo;ve got the easy part figured out. The hard part is figuring out how much to purchase of one asset over another. How do you figure this out? Do we need to conduct lots of research? Maybe. Or maybe not. With a little help with technology, the answers may be more simple than we think.&lt;/p&gt;
@@ -1000,7 +1000,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
                /project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_71f5f4b5be9d056cd47710285bd88a24.webp 400w,
                /project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_86f8354f0442e002a518e4d0b665329f.webp 760w,
                /project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://kidquant.com/project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_71f5f4b5be9d056cd47710285bd88a24.webp&#34;
+               src=&#34;http://localhost:4321/project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_71f5f4b5be9d056cd47710285bd88a24.webp&#34;
                width=&#34;708&#34;
                height=&#34;496&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -1069,7 +1069,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/historical_mutual_funds.png&#34; alt=&#34;Historical Mutual Funds&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/historical_mutual_funds.png&#34; alt=&#34;Historical Mutual Funds&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the asset prices for various different mutual funds range from 50 dollars to only a few dollars. The volatility is also different among our select mutual fund group; however, this may be difficult to see while its presented in the form of a time series. We can create a code that allows us to visualize the volatility of our time series.&lt;/p&gt;
@@ -1091,7 +1091,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/mutual_fund_volatility.png&#34; alt=&#34;Mutual Fund Volatility&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/mutual_fund_volatility.png&#34; alt=&#34;Mutual Fund Volatility&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see from the plot, the ProFunds Semiconductor UltraSector Fund Investor Class (SMPIX) mutual fund is highly volatile. Other mutual funds, while not as volatile, exhibit periods of strong variability. But why is this important? Later on, we will use our understanding of our volatility to calculate the risk-reward trade-off for our select mutual fund portfolio.&lt;/p&gt;
@@ -1198,7 +1198,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/efficient_frontier_1.png&#34; alt=&#34;Efficient Frontier 1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/efficient_frontier_1.png&#34; alt=&#34;Efficient Frontier 1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As you can see, for a maximum return portfolio, we would need to allocate two-thirds of our budget on &lt;strong&gt;Oberweis Micro-Cap Fund (OBMCX)&lt;/strong&gt;. If you take a second look at the daily returns image that we&amp;rsquo;ve plotted earlier, you can see that OBMCX is very volatile. For the best return, our algorithm tells us that we should allocate a signficant portion of our budget to &lt;strong&gt;PRIMECAP Odyssey Aggressive Growth Fund (POAGX)&lt;/strong&gt; as well. For a minimum risk portfolio, we can see that about 60% of our budget is allocated to &lt;strong&gt;Fairholme Focused Income Fund (FOCIX)&lt;/strong&gt;.&lt;/p&gt;
@@ -1313,7 +1313,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/efficient_frontier_2.png&#34; alt=&#34;Efficient Frontier 2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/efficient_frontier_2.png&#34; alt=&#34;Efficient Frontier 2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We have almost the same result as what we have simulated by picking from randomly generated portfolios. The slight difference is that the Scipy&amp;rsquo;s &amp;ldquo;optimize&amp;rdquo; function has not allocated any budget for FOCIX, OBIOX, or SMPIX for the maximum sharpe ratio. For the minimum volatility, our algorithm tells us that we should allocate 59.11% in FOCIX, 33.76% in OBIOX, and 7.14% in OBMCX, while allocating nothing in the other two mutual funds.&lt;/p&gt;
@@ -1326,9 +1326,9 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
     
     <item>
       <title>Option Payoffs, Black-Scholes, and the Greeks</title>
-      <link>https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/</link>
+      <link>http://localhost:4321/project/option-payoffs-black-scholes-and-the-greeks/</link>
       <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/option-payoffs-black-scholes-and-the-greeks/</guid>
+      <guid>http://localhost:4321/project/option-payoffs-black-scholes-and-the-greeks/</guid>
       <description>&lt;p&gt;I wanted to get a better understanding of using the Python programming language to play around with options. We&amp;rsquo;ll have a look at creating some option payoff functions, implementation of Black-Scholes pricing, and then finish up with some sensitivity analysis (Greeks).&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll provide a reasonably high-level overview of what we&amp;rsquo;re doing, but I&amp;rsquo;m by no means an expert in options! However, I found that by implementing them in the Python programming language is good practice in some fundamental skills like list manipulations, maps, plotting, and taking it one step further into object-oriented programming.&lt;/p&gt;
 &lt;h2 id=&#34;black-scholes-equation&#34;&gt;Black-Scholes Equation&lt;/h2&gt;
@@ -1497,7 +1497,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/options_payoffs.png&#34; alt=&#34;Options Payoffs&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/options_payoffs.png&#34; alt=&#34;Options Payoffs&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As one can see, with a long call, the minimum loss will never be greater than 10 dollars. With a strike of 100 dollars, the underlying would need to go north of 110 dollars for you to make a profit. This is known as the &amp;ldquo;break-even&amp;rdquo; point. The inverse is true for long puts, as profit increases when the underlying decreases in value.&lt;/p&gt;
@@ -1548,7 +1548,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/bs_payoff_put_call.png&#34; alt=&#34;Black Scholes&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/bs_payoff_put_call.png&#34; alt=&#34;Black Scholes&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As you saw from the plots we&amp;rsquo;ve previously made, there was a linear relationship, as the only variables we considered was the payoff and the premium. Using BSM, there are more variables to consider; therefore, there is a curvature with the following models.&lt;/p&gt;
@@ -1636,7 +1636,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/first_order_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/first_order_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Plenty of interseting movements and factors illustrated within these plots; however, I want to focus on delta, gamma, and vega.&lt;/p&gt;
@@ -1671,7 +1671,7 @@ calculate the premium of an option, as well as the sensitivities of these equati
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/multivariable_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/multivariable_greeks.png&#34; alt=&#34;first order greeks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We have four subplots: delta, gamma, vega, and charm. Within each subplot, we have three axes. The x-axis represents the price of the underlying; the y-axis represents the time to expiration; and the z-axis represents greek. This plot will examine the relationship using calls.&lt;/p&gt;

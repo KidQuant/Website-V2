@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Investing | KidQuant</title>
-    <link>https://kidquant.com/tag/investing/</link>
-      <atom:link href="https://kidquant.com/tag/investing/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/tag/investing/</link>
+      <atom:link href="http://localhost:4321/tag/investing/index.xml" rel="self" type="application/rss+xml" />
     <description>Investing</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Investing</title>
-      <link>https://kidquant.com/tag/investing/</link>
+      <link>http://localhost:4321/tag/investing/</link>
     </image>
     
     <item>
       <title>The sad reality of ESG and Hashtag Activism</title>
-      <link>https://kidquant.com/post/2019-08-15-the-sad-reality-of-esg-and-cancel-culture/</link>
+      <link>http://localhost:4321/post/2019-08-15-the-sad-reality-of-esg-and-cancel-culture/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/post/2019-08-15-the-sad-reality-of-esg-and-cancel-culture/</guid>
+      <guid>http://localhost:4321/post/2019-08-15-the-sad-reality-of-esg-and-cancel-culture/</guid>
       <description>&lt;p&gt;Most people are very conscious shoppers. Some people are attracted to the brands; others may be attracted to the bargains. Then others are motivated by the social aspects of a firm and how certain businesses strive to make a positive impact on our society. To a certain extent, we all like Corporate Brands to make positive contributions towards environmental, social, and corporate governance (ESG). For the brands that fall short of their &amp;ldquo;Corporate Responsibility,&amp;rdquo; there&amp;rsquo;s always #CancelCulture.&lt;/p&gt;
 &lt;p&gt;#CancelCulture is an environment that propagates a social media campaign to either harass or shame a person/institution into changing their behavior, to correct something they did (or change an opinion they hold). The campaign usually goes viral, which ends up ruining a business or someone&amp;rsquo;s career.&lt;/p&gt;
 &lt;p&gt;At first glance, forcing institutions to change their behavior sounds like mob rule, but #CancelCulture has legitimate uses. Examples involve television/online personalities Charlie Rose and Roseanne Barr has had their careers ended from due to public pressure due to either insensitive comments or inappropriate conduct [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;][&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Billion-dollar corporations like Facebook have had their reputations tarnished due to evidence of seeing the information/betraying the trust of billions of users [&lt;a href=&#34;#3&#34;&gt;3&lt;/a&gt;].&lt;/p&gt;
@@ -52,7 +52,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/ESG_performance.png&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/ESG_performance.png&#34; alt=&#34;your image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Winegarden methodology involved an analysis of 30 individual ESG funds, 18 of which have a 10-year track record and the remaining 12 of which outperformed the S&amp;amp;P 500 over the recent past. I won&amp;rsquo;t get into the deals of the individual funds; however, I&amp;rsquo;ll list the following funds based on their ESG characteristics:&lt;/p&gt;
@@ -84,9 +84,9 @@
     
     <item>
       <title>Mind The Gap</title>
-      <link>https://kidquant.com/publication/mind-the-gap/</link>
+      <link>http://localhost:4321/publication/mind-the-gap/</link>
       <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/publication/mind-the-gap/</guid>
+      <guid>http://localhost:4321/publication/mind-the-gap/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Science | KidQuant</title>
-    <link>https://kidquant.com/tag/data-science/</link>
-      <atom:link href="https://kidquant.com/tag/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/tag/data-science/</link>
+      <atom:link href="http://localhost:4321/tag/data-science/index.xml" rel="self" type="application/rss+xml" />
     <description>Data Science</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 05 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Data Science</title>
-      <link>https://kidquant.com/tag/data-science/</link>
+      <link>http://localhost:4321/tag/data-science/</link>
     </image>
     
     <item>
       <title>Does a r/WallStreetBets Portfolio Significantly Outperform?</title>
-      <link>https://kidquant.com/project/wallstreet-bets-stock-analysis/</link>
+      <link>http://localhost:4321/project/wallstreet-bets-stock-analysis/</link>
       <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/wallstreet-bets-stock-analysis/</guid>
+      <guid>http://localhost:4321/project/wallstreet-bets-stock-analysis/</guid>
       <description>&lt;p&gt;Thanks to the prevalence of COVID-19 in our everyday lives, it&amp;rsquo;s getting increasingly difficult to return to normal for most people. While I&amp;rsquo;ve used this additional flexibility to pick up on old hobbies (gaming, music, etc.), others have used theirs to learn about financial markets. Knowing that I work in finance, some of my friends have reached out to me for financial pointers, while others have opted for the convenience of reading r/WallStreetBets.&lt;/p&gt;
 &lt;p&gt;You may be asking, why am I &amp;ndash; someone who would be considered a &amp;ldquo;sophiscated investor&amp;rdquo; &amp;ndash; would even be interested in a platform such as r/WallStreetBets? For those of you who don&amp;rsquo;t know, I&amp;rsquo;ve written a piece about the subreddit last year. However, it was never clearly explained the buzz around r/WallStreetBets.&lt;/p&gt;
 &lt;p&gt;Due to the pandemic (the financial insecurity and flexibility it brought to millions of people), as well as the stimulus checks provided by the government and the rise of free trading platforms such as Robinhood, a lot of people who would typically not dabble with stocks are having fun with the stock market. They&amp;rsquo;re also investing in all sorts of zany things like Dogecoin and GameStop. Institutional Investors (the &amp;ldquo;smart money&amp;rdquo;) and the veterans in the financial media fail to understand this, and they&amp;rsquo;re generally condescending and negative towards these new brand of retail investors.&lt;/p&gt;
@@ -51,7 +51,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/meme-stock-life-cycle.jpg&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-Stocks-Portfolio/meme-stock-life-cycle.jpg&#34; alt=&#34;image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;&amp;ldquo;To the moon&amp;rdquo; was a popular rallying cry for many holders of these stocks. It was used as a reminding, regardless of how much the price may drop, buy and never sell, because we (retail investors) control the value of the stock, and not institutional investors. There is no doube that it can be exciting to make money day trading and to be part of something bigger than yourself.&lt;/p&gt;
@@ -75,7 +75,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/WSB-Favorite-Stocks/02.PNG&#34; alt=&#34;Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/WSB-Favorite-Stocks/02.PNG&#34; alt=&#34;Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We will construct a portfolio using popular stocks from the WallStreetBets community. In July 2021, I decided to find the most talk-about stocks in the r/WallStreetBets subreddit and narrowed the list down to 20 of the most popular equities on the platform. Six of these assets have recently gone public, and they will be excluded from the experiment.&lt;/p&gt;
@@ -120,7 +120,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/alpha.png&#34; alt=&#34;alpha&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-Stocks-Portfolio/alpha.png&#34; alt=&#34;alpha&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, most of the stocks in our portfolio outperform the S&amp;amp;P 500 by a modest margin. Out of the 20 assets, 8 of them outperform our benchmark at least 1%, and 3 have underperformed our benchmark. If we average the , it comes out to 0.9386, which means that our meme stock portfolio only outperforms the S&amp;amp;P by 0.93% (I got this figure by simply averaging the  for each asset). So, should you invest in a portfolio like this? I suppose it &amp;ldquo;depends&amp;rdquo; on your income goals and overall suitability (after all, this isn&amp;rsquo;t investment advice).&lt;/p&gt;
@@ -144,7 +144,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/beta.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-Stocks-Portfolio/beta.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As mentioned before, most assets (especially stocks) are positively correlated with the broader market. Most of the assets in our portfolio have $\beta$ greater than 1, which means they are more volatile than the overall market. As we see, CLF has a $\beta$ of 1.7, which means we can expect this stock to increase by 1.7% for every 1% increase in the broader market.&lt;/p&gt;
@@ -172,7 +172,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-Stocks-Portfolio/portfolio.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-Stocks-Portfolio/portfolio.png&#34; alt=&#34;beta&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Now we&amp;rsquo;ve allocated all 20 of our assets based on our risk tolerance. As you can see, our program has plotted 100,000 unique portfolios, with annualized returns ($\alpha$) on our y-axis and annualized volatility ($\beta$) on our x-axis. It&amp;rsquo;s possible to select a random portfolio inside the curve, but there will always be some portfolio out there, with the same number of assets, that will outperform in terms of returns and risk. The optimal or efficient portfolio will always exist somewhere on the edge of the curve, hence, the efficient frontier.&lt;/p&gt;
@@ -194,9 +194,9 @@
     
     <item>
       <title>Analyzing News Articles With Python</title>
-      <link>https://kidquant.com/project/analyzing-news-articles-python/</link>
+      <link>http://localhost:4321/project/analyzing-news-articles-python/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/analyzing-news-articles-python/</guid>
+      <guid>http://localhost:4321/project/analyzing-news-articles-python/</guid>
       <description>&lt;p&gt;Never before has America become more polarized than we are today. As such, the news we consume is a function of our polarization. Right-leaning people tend to get their information from Fox News, The Wall Street Journal, National Review, etc. People who lean left tend to get their information from MSNBC, The New York Times, The Huffington Post, etc. There are a handful of neutral publications (Reuters, Politico, Associated Press, etc.). Still, even their alignment falls into question, based on how they report the news.&lt;/p&gt;
 &lt;p&gt;
 
@@ -216,7 +216,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/partisan.gif&#34; alt=&#34;Partisan Divide&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/partisan.gif&#34; alt=&#34;Partisan Divide&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s unclear to what extent news plays a role in fueling the partisan divide in our country. There is some evidence to suggest that people, when given accurate information on controversial issues, will choose to disregard this information to fit commonly held beliefs [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;]. This perhaps can explain the apparent bias for news outlets. Now, more than ever, people should be allowed to sift through news sources that are free from bias, misinformation, and personal polarization.&lt;/p&gt;
@@ -242,7 +242,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides.PNG&#34; alt=&#34;All Sides&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/topics-allsides.PNG&#34; alt=&#34;All Sides&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We can get articles from pretty much any topic: Criminal Justice, Education, and the Economy. All Sides even collects the news perspectives on the most important topic in the world right now, the Coronavirus. (Yes, our society is so divided right now, we&amp;rsquo;ve even managed to politize a deadly virus)&lt;/p&gt;
@@ -265,7 +265,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles.PNG&#34; alt=&#34;example articles&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/example_articles.PNG&#34; alt=&#34;example articles&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The results provide a data frame that we can use as a stepping stone to extract relevant information, such as the body of the article and the authors. Sure, we could have extracted all of that information along with the rest. However, web scraping is very tricky, as no two websites have the same HTML structure and layout. This is especially true for news media websites.&lt;/p&gt;
@@ -292,7 +292,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles2.PNG&#34; alt=&#34;example article #2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/example_articles2.PNG&#34; alt=&#34;example article #2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, Fox News has the largest number of articles in our dataset, with 25 pieces. Reuters is right behind Fox News with 20 articles, followed by the Wall Street Journal (News Section), Washington Times, and The Hill with 20, 17, and 15 articles, respectively.&lt;/p&gt;
@@ -316,7 +316,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides5.PNG&#34; alt=&#34;All Sides&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/topics-allsides5.PNG&#34; alt=&#34;All Sides&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Still, whether or not a news outlet is owned or operated by a particular person has little to do with its overall objectivity and bias. All Sides has conducted an in-depth analysis of major news publications such as The Wall Street Journal and has found that outlet is more aligned to the center than its peers. (Keep in mind, a Center alignment doesn&amp;rsquo;t mean better!) [&lt;a href=&#34;#5&#34;&gt;5&lt;/a&gt;]&lt;/p&gt;
@@ -338,7 +338,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles3.PNG&#34; alt=&#34;example article 3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/example_articles3.PNG&#34; alt=&#34;example article 3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;When everything is extracted, we should get the data frame similar to what we presented above. The author and text columns are highlighted to demonstrate that we have obtained this new information. We&amp;rsquo;ve also included the length of characters for each article (for reasons that will be clear later).&lt;/p&gt;
@@ -379,7 +379,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides7.PNG&#34; alt=&#34;Natural Language&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/topics-allsides7.PNG&#34; alt=&#34;Natural Language&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the process for using the &lt;code&gt;nltk&lt;/code&gt; module is a painstaking process, as you can see. If we compare it with Google&amp;rsquo;s Natural Language API, the process looks a little more like this:&lt;/p&gt;
@@ -401,7 +401,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides8.PNG&#34; alt=&#34;Google API&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/topics-allsides8.PNG&#34; alt=&#34;Google API&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, it&amp;rsquo;s much more manageable. No need to look for specific stop words, tokenize the text, or test/train our dataset to fit the module.&lt;/p&gt;
@@ -429,7 +429,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/example_articles4.PNG&#34; alt=&#34;example article 4&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/example_articles4.PNG&#34; alt=&#34;example article 4&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s important to note that the Natural Language indicates differences between positive and negative emotion in a document, but does not identify specific positive and negative emotions. For example, &amp;ldquo;angry&amp;rdquo; and &amp;ldquo;sad&amp;rdquo; are both considered negative emotions. However, when the Natural Language analyzes text that is considered &amp;ldquo;angry,&amp;rdquo; or text that is considered &amp;ldquo;sad,&amp;rdquo; the response only indicates that the sentiment in the text is negative, not &amp;ldquo;sad&amp;rdquo; or &amp;ldquo;angry.&amp;rdquo;&lt;/p&gt;
@@ -464,7 +464,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/topics-allsides9.PNG&#34; alt=&#34;example boxwhisker&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/topics-allsides9.PNG&#34; alt=&#34;example boxwhisker&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Once we have found the IQR for each dataset, we now need to calculate the lower and upper bounds. The lower bounds can be found by taking Q1 and subtracting by 1.5 times the IQR. The upper bound can be found using the same way, except we are using addition instead of subtraction. To bring this explanation in perspective, I&amp;rsquo;m going to use a few statistics for right-leaning sources.&lt;/p&gt;
@@ -488,7 +488,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Analyzing-News/box-and-whisker.PNG&#34; alt=&#34;example boxwhisker&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Analyzing-News/box-and-whisker.PNG&#34; alt=&#34;example boxwhisker&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;This data suggests that writers for left-leaning outlets are more likely to implement their personal feelings and emotions into the articles they publish. I suppose we can expect this from outlets such as &lt;em&gt;Vox&lt;/em&gt; and perhaps &lt;em&gt;The Guardian&lt;/em&gt;, but the Washington Post and the Los Angeles Times are considered more &amp;ldquo;news-oriented&amp;rdquo; outlets.&lt;/p&gt;
@@ -512,9 +512,9 @@
     
     <item>
       <title>Tracking COVID-19 Cases Globally</title>
-      <link>https://kidquant.com/project/tracking-covid19-cases/</link>
+      <link>http://localhost:4321/project/tracking-covid19-cases/</link>
       <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/tracking-covid19-cases/</guid>
+      <guid>http://localhost:4321/project/tracking-covid19-cases/</guid>
       <description>&lt;p&gt;Unless you&amp;rsquo;ve been living under a rock, you&amp;rsquo;ve probably heard of an illness called Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2), the disease that causes the Coronavirus Disease 2019 (COVID-2019). The disease is considered the most infectious and deadly illness since the Spanish Flu in 1919. In response, schools have closed; Public areas have shut down because; economies have come to a grinding halt because of it, and we&amp;rsquo;re all paranoid about being around other people.&lt;/p&gt;
 &lt;p&gt;Most of us have never lived through a Pandemic (unless you count the 2009 H1N1 Pandemic), so we will have no idea how bad this could possible get. Scientist have attempted to determine how deadly this dieases is compared to others throughout history, as seen in the following chart.&lt;/p&gt;
 &lt;p&gt;Right now, it&amp;rsquo;s assumed that this virus is just as contagious as other diseases such Polio and the Common Cold while being more deadly than these other diseases. As such, the scientific community has devoted all of their resources in finding ways to track the growth of this dieases.&lt;/p&gt;
@@ -537,7 +537,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/comparison.png&#34; alt=&#34;Infectious Disease Comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/comparison.png&#34; alt=&#34;Infectious Disease Comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Right now, it&amp;rsquo;s assumed that this virus is just as contagious as other diseases such Polio and the Common Cold while being more deadly than these other diseases. As such, the scientific community has devoted all of their resources in finding ways to track the growth of this dieases.&lt;/p&gt;
@@ -571,7 +571,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/SIRanimationlow.gif&#34; alt=&#34;Contagion Simulation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/SIRanimationlow.gif&#34; alt=&#34;Contagion Simulation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The following graph shows how an epidemic might spread across a network over time. Blue dots are susceptible individuals, while red dots are infected people. Two dots are connected by a line if they are in contact with each other, and the more connections a person has, the bigger their dot is on the network.&lt;/p&gt;
@@ -597,7 +597,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/cases_df.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/cases_df.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the U.S. has the highest number of COVID causes in the world. The nation crossed that milestone &lt;a href=&#34;https://www.bbc.com/news/world-us-canada-52239261&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sometime last week&lt;/a&gt;. Right behind the U.S. is Spain, Italy, Germany, and France. As mentioned previously, as nations conduct more testing, we can confirm more cases.&lt;/p&gt;
@@ -639,7 +639,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/us_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/us_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Now we&amp;rsquo;ve plotted the trends for all nations with more than 1,000 cases as of April 12th. The U.S. still appears to be on an exponential trend, while Italy and Spain seem to be coming out of it. This should make sense, seeing as Italy&amp;rsquo;s and Spain&amp;rsquo;s lockdowns were more aggressive than the United States.&lt;/p&gt;
@@ -661,7 +661,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/spain_italy_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/spain_italy_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;These two European nations have also started their lockdowns early, with Italy and Spain beginning their lockdowns on March 9th and 14th, respectively. Lockdowns within the U.S. vary by state; however, the most highly impacted states (California and New York) didn&amp;rsquo;t institute any lockdowns until the last week of March.&lt;/p&gt;
@@ -684,7 +684,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/china_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/china_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;China is also currently experiencing a logistic trend. With the exception for the Guangdong province, the nation has not recorded any new cases in any of its provinces since April 7th. China has not had a consistent and reliable metric of reporting GDP figures. For the same reason, people are more or less skeptical of the integrity of their COVID-19 cases.&lt;/p&gt;
@@ -708,7 +708,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/doubing_times_global.PNG&#34; alt=&#34;doubling times&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/doubing_times_global.PNG&#34; alt=&#34;doubling times&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The inferred doubling time represents the growth encountered during the middle of the growth of the epidemic, which gives us a picture of the overall rate of growth of the virus. After all, epidemiologist won&amp;rsquo;t really know whether or not we&amp;rsquo;ve reached the apex of the pandemic until many weeks (or possibly months). In one country that reports 1,000 COVID-19 cases, there could be 5,000 infected people. On the other hand, another country with the same reported figures could have 100,000 infected people.&lt;/p&gt;
@@ -733,7 +733,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/cases_us_df.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/cases_us_df.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, New York has the largest number of confirmed cases in the entire nation; followed by New Jersey, Massachusetts, and then Michigan.&lt;/p&gt;
@@ -755,7 +755,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/tracking-covid-cases/ny_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/tracking-covid-cases/ny_growth_trends.PNG&#34; alt=&#34;Cases by country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;New York&amp;rsquo;s COVID-19 growth appears to be consistent with a logistic trend, but it might be too early to tell. Other states where the growth seems to be more exponential are Illinois, California, and Washington. Most other states appear to be within the starting phase of a logistic trend, but it might be too early to say, based on the average doubling time (which is 5 days).&lt;/p&gt;
@@ -769,9 +769,9 @@
     
     <item>
       <title>Pairs Trading Strategies in Python</title>
-      <link>https://kidquant.com/project/pairs-trading-strategies-in-python/</link>
+      <link>http://localhost:4321/project/pairs-trading-strategies-in-python/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/pairs-trading-strategies-in-python/</guid>
+      <guid>http://localhost:4321/project/pairs-trading-strategies-in-python/</guid>
       <description>&lt;h2 id=&#34;pairs-trading-strategies-using-python&#34;&gt;Pairs Trading Strategies Using Python&lt;/h2&gt;
 &lt;p&gt;When it comes to making money in the stock market, there are a myriad of different ways to make money. And it seems that in the finance community, everywhere you go, people are telling you that you should learn Python. After all, Python is a popular programming language which can be used in all types of fields, including data science. There are a large number of packages that can help you meet your goals, and many companies use Python for development of data-centric applications and scientific computation, which is associated with the financial world.&lt;/p&gt;
 &lt;p&gt;Most of all Python can help us utilize many different trading strategies that (without it) would by very difficult to analyze by hand or with spreadsheets. One of the trading strategies we will talk about is referred to as &lt;strong&gt;Pairs Trading.&lt;/strong&gt;&lt;/p&gt;
@@ -816,7 +816,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/statonarity_comparison.png&#34; alt=&#34;stationarity comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/statonarity_comparison.png&#34; alt=&#34;stationarity comparison&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;why-stationarity-is-important&#34;&gt;Why Stationarity is Important&lt;/h3&gt;
@@ -839,7 +839,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/average_timeseries_seriesB.png&#34; alt=&#34;Averge time series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/average_timeseries_seriesB.png&#34; alt=&#34;Averge time series&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The computed mean will show that the mean of all data points, but won&amp;rsquo;t be useful for any forecasting of the future state. It&amp;rsquo;s meaningless when compared with any specific time, as it&amp;rsquo;s a collection of different states at different times mashed together. This is just a simple and clear example of why non-stationarity can distort the analysis, much more subtle problems can arise in practice.&lt;/p&gt;
@@ -907,7 +907,7 @@ p-value = 0.7317208279589542 The series B is likely non-stationary.&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/cointegration_spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/cointegration_spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h4 id=&#34;testing-for-cointegration&#34;&gt;Testing for Cointegration&lt;/h4&gt;
@@ -962,7 +962,7 @@ $$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/diverge.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/diverge.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Next, we can print the correlation coefficient, $r$, and the cointegration test.&lt;/p&gt;
@@ -993,7 +993,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/squared_wave.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/squared_wave.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Although the correlation is incredibly low, the p-value shows that these time series are cointegrated.&lt;/p&gt;
@@ -1040,7 +1040,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/heatmap.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/heatmap.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Our algorithm listed two pairs that are cointegrated: AAPL/EBAY, and ABDE/MSFT. We will analyze the ABDE/MSFT equity pair.&lt;/p&gt;
@@ -1064,7 +1064,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/spread.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Alternatively, we can examine the ration between the time series.&lt;/p&gt;
@@ -1086,7 +1086,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/ratio.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/ratio.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Regardless of whether or not we use the spread approach or the ratio approach, we can see that our first plot pair ADBE/SYMC tends to move around the mean. We now need to standardize this ratio because the absolute ratio might not be the most ideal way of analyzing this trend. For this, we need to use z-scores.&lt;/p&gt;
@@ -1110,7 +1110,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/standard_deviation.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/standard_deviation.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;By setting two other lines placed at the z-score of 1 and -1, we can clearly see that for the most part, any big divergences from the mean eventually converge back. This is precisely what we want for a pairs trading strategy.&lt;/p&gt;
@@ -1149,7 +1149,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/rolling_mean.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/rolling_mean.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h4 id=&#34;creating-a-model&#34;&gt;Creating a Model&lt;/h4&gt;
@@ -1178,7 +1178,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Trading_Signals.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Trading_Signals.png&#34; alt=&#34;cointegration spread&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;areas-of-improvement-and-further-steps&#34;&gt;Areas of Improvement and Further Steps&lt;/h3&gt;
@@ -1198,9 +1198,9 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
     
     <item>
       <title>401K Optimization Using Modern Portfolio Theory</title>
-      <link>https://kidquant.com/project/401k-optimization-using-modern-portfolio-theory/</link>
+      <link>http://localhost:4321/project/401k-optimization-using-modern-portfolio-theory/</link>
       <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/project/401k-optimization-using-modern-portfolio-theory/</guid>
+      <guid>http://localhost:4321/project/401k-optimization-using-modern-portfolio-theory/</guid>
       <description>&lt;h2 id=&#34;401k-optimization-using-modern-portfolio-theory&#34;&gt;401K Optimization Using Modern Portfolio Theory&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve often talked about the benefits of computer programming and using technology in Finance to develop more sophisticated trading strategies. Such strategies usually require a unique understanding of mathematics, data science, and statistics; paired along with a rudimentary knowledge of machine learning and programming.&lt;/p&gt;
 &lt;p&gt;Because of these significant learning curves, maybe algorithmic trading isn&amp;rsquo;t the way to go. As such, we&amp;rsquo;re simply going to purchase 100,000 dollars worth of an asset class and not worry about what investment strategy we&amp;rsquo;re going to adopt. We&amp;rsquo;ve got the easy part figured out. The hard part is figuring out how much to purchase of one asset over another. How do you figure this out? Do we need to conduct lots of research? Maybe. Or maybe not. With a little help with technology, the answers may be more simple than we think.&lt;/p&gt;
@@ -1241,7 +1241,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
                /project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_71f5f4b5be9d056cd47710285bd88a24.webp 400w,
                /project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_86f8354f0442e002a518e4d0b665329f.webp 760w,
                /project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://kidquant.com/project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_71f5f4b5be9d056cd47710285bd88a24.webp&#34;
+               src=&#34;http://localhost:4321/project/401k-optimization-using-modern-portfolio-theory/efficient_frontier_hufb6cecfc1858aea9fc23a25a84129218_51410_71f5f4b5be9d056cd47710285bd88a24.webp&#34;
                width=&#34;708&#34;
                height=&#34;496&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -1310,7 +1310,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/historical_mutual_funds.png&#34; alt=&#34;Historical Mutual Funds&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/historical_mutual_funds.png&#34; alt=&#34;Historical Mutual Funds&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see, the asset prices for various different mutual funds range from 50 dollars to only a few dollars. The volatility is also different among our select mutual fund group; however, this may be difficult to see while its presented in the form of a time series. We can create a code that allows us to visualize the volatility of our time series.&lt;/p&gt;
@@ -1332,7 +1332,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/mutual_fund_volatility.png&#34; alt=&#34;Mutual Fund Volatility&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/mutual_fund_volatility.png&#34; alt=&#34;Mutual Fund Volatility&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we can see from the plot, the ProFunds Semiconductor UltraSector Fund Investor Class (SMPIX) mutual fund is highly volatile. Other mutual funds, while not as volatile, exhibit periods of strong variability. But why is this important? Later on, we will use our understanding of our volatility to calculate the risk-reward trade-off for our select mutual fund portfolio.&lt;/p&gt;
@@ -1439,7 +1439,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/efficient_frontier_1.png&#34; alt=&#34;Efficient Frontier 1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/efficient_frontier_1.png&#34; alt=&#34;Efficient Frontier 1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As you can see, for a maximum return portfolio, we would need to allocate two-thirds of our budget on &lt;strong&gt;Oberweis Micro-Cap Fund (OBMCX)&lt;/strong&gt;. If you take a second look at the daily returns image that we&amp;rsquo;ve plotted earlier, you can see that OBMCX is very volatile. For the best return, our algorithm tells us that we should allocate a signficant portion of our budget to &lt;strong&gt;PRIMECAP Odyssey Aggressive Growth Fund (POAGX)&lt;/strong&gt; as well. For a minimum risk portfolio, we can see that about 60% of our budget is allocated to &lt;strong&gt;Fairholme Focused Income Fund (FOCIX)&lt;/strong&gt;.&lt;/p&gt;
@@ -1554,7 +1554,7 @@ Cointegration test p-value: 0.915621777573125&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/efficient_frontier_2.png&#34; alt=&#34;Efficient Frontier 2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/efficient_frontier_2.png&#34; alt=&#34;Efficient Frontier 2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We have almost the same result as what we have simulated by picking from randomly generated portfolios. The slight difference is that the Scipy&amp;rsquo;s &amp;ldquo;optimize&amp;rdquo; function has not allocated any budget for FOCIX, OBIOX, or SMPIX for the maximum sharpe ratio. For the minimum volatility, our algorithm tells us that we should allocate 59.11% in FOCIX, 33.76% in OBIOX, and 7.14% in OBMCX, while allocating nothing in the other two mutual funds.&lt;/p&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trump | KidQuant</title>
-    <link>https://kidquant.com/tag/trump/</link>
-      <atom:link href="https://kidquant.com/tag/trump/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/tag/trump/</link>
+      <atom:link href="http://localhost:4321/tag/trump/index.xml" rel="self" type="application/rss+xml" />
     <description>Trump</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kidquant.com/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:4321/media/icon_huf195f9a67bfe19c82d5f0ba6a67922fa_2030_512x512_fill_lanczos_center_3.png</url>
       <title>Trump</title>
-      <link>https://kidquant.com/tag/trump/</link>
+      <link>http://localhost:4321/tag/trump/</link>
     </image>
     
     <item>
       <title>Is DJT a Meme Stock?</title>
-      <link>https://kidquant.com/post/2024-04-02-djt-meme-stock/</link>
+      <link>http://localhost:4321/post/2024-04-02-djt-meme-stock/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://kidquant.com/post/2024-04-02-djt-meme-stock/</guid>
+      <guid>http://localhost:4321/post/2024-04-02-djt-meme-stock/</guid>
       <description>&lt;p&gt;Donald Trump&amp;rsquo;s knock-off Twitter has officially become public for under a week, and the entire country didn&amp;rsquo;t take long to create an investment thesis about it. Just in case you fell asleep, Trump got himself banned from Twitter for&amp;hellip; reasons [&lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
 &lt;p&gt;To combat the bias and censorship that was prevalent at the time, Trump decided to launch his social media network called Truth Social, which was created by T Media Tech LLC in 2021, owned by Trump Media &amp;amp; Technology Group Corp. Since then, the company was acquired via SPAC (Special Purpose Acquisition Vehicle) by Digital World Acquisition Corp.&lt;/p&gt;
 &lt;p&gt;You can find the stock on the NASDAQ exchange under the ticker DTJ, which I&amp;rsquo;m sure is just a coincidence. It&amp;rsquo;s currently trading at $~49$ per share, down from it&amp;rsquo;s peak of $~66$ per share. Trump is currently the majority shareholder, owning $~57%$ of the available shares.&lt;/p&gt;
@@ -40,7 +40,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-DJT/stonks.png&#34; alt=&#34;Stonks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-DJT/stonks.png&#34; alt=&#34;Stonks&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;At least according to the analysis I conducted three years ago is concerned. Recall that I&amp;rsquo;ve created an algorithm that tracks the most frequently mentioned assets on the infamous subreddit: Wall Street Bets [&lt;a href=&#34;#2&#34;&gt;2&lt;/a&gt;]. Three years ago, owning shares of AMC, GME, BB, and some crypto was cool. Today, owning shares of NVDA, AAPL, SPY, RDDT (obviously), and DJT is cool, so it&amp;rsquo;s a mixed bag for the overall &amp;ldquo;memeness.&amp;rdquo; Some of the assets that generate a lot of buzz on the subreddit are definitely at risk. On the other hand, some of the assets are more established, less volatile, positive cash flow generating assets.&lt;/p&gt;
@@ -65,7 +65,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-DJT/diamond.png&#34; alt=&#34;Diamond Handsl&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-DJT/diamond.png&#34; alt=&#34;Diamond Handsl&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;If you hate Trump, DJT is a clear scam; a pump and dump (it&amp;rsquo;s not a pump and dump) and it&amp;rsquo;s going to zero, just like his other businesses.&lt;/p&gt;
@@ -87,7 +87,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://kidquant.com/post/images/Meme-DJT/zero.png&#34; alt=&#34;zero&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://localhost:4321/post/images/Meme-DJT/zero.png&#34; alt=&#34;zero&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Like everything, the truth is probably close to the middle but definitely much closer to zero than the moon. Right now, DJT is receiving a wave of bad press, mostly related to lackluster earnings performance and the uncertainty of the firm&amp;rsquo;s future viability. As expected, the stock took a hit based on that news.&lt;/p&gt;
