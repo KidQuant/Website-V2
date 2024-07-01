@@ -3,7 +3,7 @@ bio:  My research interests involves Quantitative Finance, Mathematics, Data Sci
 
 education:
   courses:
-  - course: Ph.D Candidate - Financial Engineering
+  - course: Ph.D. Candidate - Financial Engineering
     institution: Stevens Institute of Technology
     year: 2028
   - course: BA/MA in Statistics & Applied Mathematics
