@@ -15,7 +15,7 @@ summary:
 
 featured: true
 reading_time: true
-draft: false
+draft: true
 
 markup: mmark
 
