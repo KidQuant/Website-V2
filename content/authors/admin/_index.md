@@ -8,7 +8,10 @@ education:
     year: 2028
   - course: BA/MA in Statistics & Applied Mathematics
     institution: City University of New York - Hunter College
-    year: 2021
+    year: 2024
+  - course: BA Pure Mathematics
+    institution: City University of New York - Hunter College
+    year: 2023
   - course: BBA in Finance
     institution: Pace University, Lubin School of Business
     year: 2019
