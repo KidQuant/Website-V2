@@ -6,10 +6,10 @@ education:
   - course: Ph.D. Candidate - Financial Engineering
     institution: Stevens Institute of Technology
     year: 2028
-  - course: BA/MA in Statistics & Applied Mathematics
+  - course: MA in Statistics & Applied Mathematics
     institution: City University of New York - Hunter College
     year: 2024
-  - course: BA Pure Mathematics
+  - course: BA in Pure Mathematics
     institution: City University of New York - Hunter College
     year: 2023
   - course: BBA in Finance
